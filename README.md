@@ -1,3 +1,5 @@
+<!-- DRAFT: placeholder prose; the author will rewrite this in his own words. -->
+
 # ArangoDB cookbook prototype: GraphRAG over a versioned support knowledge base
 
 > **Status: prototype, stage 1 of 6.** The spec and the KB outline are ready; the data, notebooks and results are not built yet. See [docs/SPEC.md](docs/SPEC.md).
@@ -10,7 +12,7 @@ The knowledge base belongs to **Northwind Auto, a fictional used-car retailer**.
 | Stage | What | Status |
 |---|---|---|
 | 1 | Spec, KB outline, environment check | done |
-| 2 | Knowledge base data + data checks; gold questions written, reviewed, frozen | next |
+| 2 | Knowledge base (68 article versions, entities, stores) + generated support tickets + data checks; gold questions written, reviewed, frozen | next |
 | 3 | Notebook 1: BM25, vectors, hybrid, filters, structural graph, retrieval eval (no API key) | |
 | 4 | Notebook 2: LLM-extracted graph, grounded answers, answer eval (needs an API key) | |
 | 5 | Extras: geo, shortest-path explanations, text-to-AQL | |

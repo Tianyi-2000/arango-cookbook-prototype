@@ -1,3 +1,5 @@
+<!-- DRAFT: placeholder prose; the author will rewrite this in his own words. -->
+
 # Spec: GraphRAG over a versioned support knowledge base, in one ArangoDB
 
 Status: **prototype, draft spec** (stage 1 of 6). Feedback welcome before the build.
@@ -26,10 +28,10 @@ A help center is already a graph. Articles link to each other, cite forms by cod
 9. *(later)* Geo (nearest store that can do a lease buyout), `SHORTEST_PATH` as an explanation ("why do I need this form?"), text-to-AQL, and a comparison with ArangoDB's own GraphRAG tooling
 
 ## Data
-22 articles (30 versions, eight of them rewritten in 2026), 7 forms, 3 fictional states, 3 fictional leasing companies. See `KB_OUTLINE.md`. Everything is fictional and labelled as illustrative.
+51 help-center articles (68 versions: 17 rewritten in 2026, some new, one retired), about 200 past support tickets (2022–2026, not authoritative, some outdated), 15 forms, 5 fictional states, 12 lenders, 6 leasing companies and 25 stores. A few KB problems are left in on purpose (current articles citing retired forms, a broken link). See `KB_OUTLINE.md`. Everything is fictional and labelled as illustrative.
 
 ## Evaluation
-About 40 questions in 7 types: exact, semantic, multi_hop, temporal, conditional, checklist, unanswerable. Each question also lists its **trap** articles.
+About 56 questions in 7 types (8 each): exact, semantic, multi_hop, temporal, conditional, checklist, unanswerable. Each question also lists its **trap** articles and **tricky** tags (time boundary, rule conflict, messy input, messy KB), and the eval reports the tricky ones as their own slice.
 - Retrieval (no LLM): Recall@k, All-gold@k, MRR, **trap@k** and **stale@k**, by question type × method
 - Answers (chapter 2): required facts present, citations valid, correct refusal on unanswerable questions, wrong answers caused by a trap
 - Extraction (chapter 2): precision and recall against a hand-labelled sample
