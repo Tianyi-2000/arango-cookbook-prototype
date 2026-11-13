@@ -1,0 +1,14 @@
+# Python 3.10+. Pinned from a green run on macOS (Apple silicon), Nov 2026.
+# Linux, CPU only: install torch first to skip the CUDA wheels:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+python-arango==8.3.7
+sentence-transformers==6.2.0
+torch==2.15.0
+numpy==2.5.4
+pandas==3.1.1
+python-dotenv==1.2.4
+jupyter==1.1.1
+nbconvert==7.17.2
+ipykernel==7.4.0
+# Chapter 2 only (LLM extraction and answers; needs ANTHROPIC_API_KEY)
+anthropic==2.6.0

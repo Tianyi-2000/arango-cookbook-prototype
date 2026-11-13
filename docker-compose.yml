@@ -1,0 +1,15 @@
+services:
+  arangodb:
+    image: arangodb:3.12.13            # pinned; checked with scripts/verify_env.py
+    container_name: arango-cookbook-prototype
+    # The vector index is off by default. Without --vector-index true, creating one fails
+    # and APPROX_NEAR_COSINE is an unknown function.
+    command: ["arangod", "--vector-index", "true"]
+    environment:
+      ARANGO_ROOT_PASSWORD: ${ARANGO_PASSWORD:-cookbook-local-only}
+    ports:
+      - "127.0.0.1:8535:8529"
+    volumes:
+      - arango_data:/var/lib/arangodb3
+volumes:
+  arango_data:
