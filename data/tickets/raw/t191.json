@@ -1,0 +1,10 @@
+{
+ "customer": "Caller, a veteran in Eastvale selling his electric car, said he's been hunting all over the house for the paper title, thinks it may have been lost in a move, and wanted to know how to replace it before his appointment.",
+ "agent": "Customer asked how to replace a lost title in Eastvale before his appointment. Explained per 'Getting a duplicate title in Eastvale' that he can apply for a duplicate at any Eastvale motor vehicle office with his photo ID and registration, and that main offices print duplicates the same day, while by mail it takes 2 to 3 weeks. Reminded him to bring the duplicate to his appointment.",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2JLLu9miHot7yrcYVPs",
+ "usage": {
+  "input": 759,
+  "output": 215
+ }
+}

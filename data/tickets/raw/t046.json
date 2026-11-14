@@ -1,0 +1,10 @@
+{
+ "customer": "Hello, I'm hoping to sell my minivan before I relocate for a new job, but I can't seem to find the title anywhere. I'm in Brevin. Could you tell me what I should do?",
+ "agent": "Thanks for reaching out, and congratulations on the new job! In Brevin, you can request a duplicate paper title by mail or at any Brevin motor vehicle office, bringing your registration and a photo ID; it takes 4 to 6 weeks to arrive. While you wait, you're welcome to get an offer and book an appointment, though we can't complete the purchase until the duplicate arrives. Offers last a limited time, so you may need a new one, and our article \"How long is my offer good for?\" has the details.",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2HcsKLDw3Jfs24MqzQj",
+ "usage": {
+  "input": 800,
+  "output": 241
+ }
+}

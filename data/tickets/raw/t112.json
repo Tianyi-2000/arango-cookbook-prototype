@@ -1,0 +1,10 @@
+{
+ "customer": "Seriously, between a newborn and zero sleep I haven't had a second to bring my convertible in, and now I'm worried the offer I got is going to vanish. How long do I actually have before it's no good? I'm in Corlan and it's not like I can just drop everything with a baby at home.",
+ "agent": "I completely understand, and congratulations on the new baby! Per our article \"How long is my offer good for?\", your offer is valid for 7 days or 300 additional miles, whichever comes first, and the exact expiration date is on your offer page and in your confirmation email. We'll honor the offer as long as your appraisal appointment is on or before that date. Please note that rescheduling an appointment doesn't extend the offer, but if it does expire, you can request a new one at any time; the new amount reflects current market prices and may be higher or lower.",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2HxRrgugYZ7cSoQghx8",
+ "usage": {
+  "input": 800,
+  "output": 275
+ }
+}

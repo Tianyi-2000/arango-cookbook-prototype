@@ -1,0 +1,10 @@
+{
+ "customer": "I've been trying to sell the midsize SUV that's titled to my small business here in Eastvale, and nobody has told me straight what I actually need to bring. I'm a veteran, I run the company, and I'm tired of getting bounced around. Can someone just give me the list?",
+ "agent": "Thank you for your service, and I'm sorry you've had trouble getting a clear answer. Per our article \"Selling a car owned by a business,\" the person signing must be authorized to sell company property, so please bring the business signing authority letter (form NW-BUS-1) signed by an officer of the company, your photo ID, and the company's tax ID number (EIN). Payment goes to the business, not the individual signer, by direct deposit into the business bank account, and you can find more details in \"When and how you get paid.\"",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2HpPys47FmHpqjKT3c4",
+ "usage": {
+  "input": 779,
+  "output": 264
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "customer": "Seriously, I just found out my wife has to be there too to sell our SUV? We have a newborn at home and getting both of us out the door at the same time is nearly impossible, so is there any way around this?",
+ "agent": "I completely understand how hard that is with a newborn, and congratulations on the new baby! Per our article \"When more than one person owns the car,\" every listed owner has to sign the sale documents, and the easiest way is for all owners to come to the appraisal appointment with their photo IDs. If your wife can't make it, she can sign a power of attorney, form NW-POA-1, which must be notarized. It's also worth checking your title: if your names are joined by 'or,' only one of you needs to sign, but if they're joined by 'and,' both signatures are required.",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2JCmHdfiP9hhcyeDJdP",
+ "usage": {
+  "input": 785,
+  "output": 253
+ }
+}

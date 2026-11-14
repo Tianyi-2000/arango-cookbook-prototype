@@ -1,0 +1,10 @@
+{
+ "customer": "I'm trying to sell my midsize SUV to Northwind and just realized my ex-husband's name is still on the title. We've been divorced for over a year and I really don't want to have to track him down for a signature. Is there any way around this?",
+ "agent": "I understand the frustration, and our article \"My ex is still on the title\" covers this exact situation. Normally an ex-spouse who's still listed on the title has to sign, the same as any co-owner. However, if your divorce decree awarded the SUV to you, just bring a certified copy of the decree and your ex's signature won't be needed. Also, if your name changed in the divorce, take a look at \"The name on the title doesn't match my ID\" as well.",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2HUN3DSyFPojcHGMmG6",
+ "usage": {
+  "input": 776,
+  "output": 232
+ }
+}

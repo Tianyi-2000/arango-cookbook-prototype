@@ -29,6 +29,12 @@ FIRST_DAY, LAST_DAY = date(2022, 3, 1), date(2026, 10, 31)
 N_AGENT_ERRORS = 8  # 4% of 200, picked from the tickets where a mistake is possible
 CHANNELS = [("chat", 0.5), ("email", 0.3), ("phone_note", 0.2)]
 STYLES = ["brief", "rambling", "typos", "polite", "frustrated"]
+# Variety hints (issue I-015): without them, tickets with the same topic and style came out near-identical.
+VEHICLES = ["compact sedan", "pickup truck", "minivan", "hatchback", "midsize SUV", "coupe", "station wagon",
+            "electric car", "hybrid sedan", "convertible", "full-size SUV", "cargo van"]
+PERSONAS = ["relocating for a new job", "upgrading to a bigger car", "going down to one car", "college student",
+            "retiree", "nurse who works night shifts", "small-business owner", "new parent", "long-distance commuter",
+            "just moved to the area", "veteran", "grad student"]
 MODEL = "claude-opus-5-5"
 # Opus 5.5 list prices (USD per million tokens), for the estimate only.
 PRICE_IN, PRICE_OUT = 4.00, 20.00
@@ -47,6 +53,8 @@ Rules:
 forms or steps that aren't in it. The agent may name the article's title.
 - Channel "phone_note": the agent field is the agent's short note after a call, in the third person ("Customer asked..."), \
 and the customer field is a one-line summary of what the caller said.
+- Vary how the customer's message starts, and don't use filler such as "you guys". Use the customer details given.
+- The agent repeats time limits as the article states them; it doesn't work out or state calendar dates from the ticket date.
 - Don't mention AI, test data or that the company is fictional."""
 
 
@@ -85,13 +93,32 @@ def plan_tickets(kb: dict) -> list[dict]:
         t["cites"] = [f"{t['topic']}__2022"]
         t["agent_error"] = True
         t["outdated"] = True
+    rng_detail = random.Random(SEED + 1)  # separate stream: adding these fields doesn't change anything above
+    for t in tickets:
+        t["vehicle"] = rng_detail.choice(VEHICLES)
+        t["persona"] = rng_detail.choice(PERSONAS)
+    # Two tickets with the same topic, state, style and persona came out nearly identical (I-015), so a
+    # repeat of an earlier combination gets a fresh persona from its own RNG. Nothing else in the plan changes.
+    rng_fix = random.Random(SEED + 2)
+    used: dict[tuple, set] = {}
+    for t in tickets:
+        group = (t["topic"], t["state"], t["style"])
+        taken = used.setdefault(group, set())
+        if t["persona"] in taken:
+            t["persona"] = rng_fix.choice([p for p in PERSONAS if p not in taken])
+        taken.add(t["persona"])
     return tickets
+
+
+def plain_text(text: str) -> str:
+    """Article text with [label](kb:doc_id) links turned into just the label."""
+    return LINK_RE.sub(r"\1", text)
 
 
 def build_prompt(t: dict, article: dict) -> str:
     return (f"Ticket date: {t['created_at']}\nChannel: {t['channel']}\nCustomer style: {t['style']}\n"
-            f"Customer's state: {t['state'].title()}\n\n"
-            f"Article the agent used:\nTitle: {article['title']}\n{LINK_RE.sub(r'\\1', article['text'])}\n\n"
+            f"Customer's state: {t['state'].title()}\nCustomer: {t['persona']}, drives a {t['vehicle']}\n\n"
+            f"Article the agent used:\nTitle: {article['title']}\n{plain_text(article['text'])}\n\n"
             "Write the conversation as JSON.")
 
 

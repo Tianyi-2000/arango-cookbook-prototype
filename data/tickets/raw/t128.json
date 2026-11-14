@@ -1,0 +1,10 @@
+{
+ "customer": "Caller, a new parent in Eastvale trading in a compact sedan, was upset that the custom paint and aftermarket exhaust she paid good money for seem to be dragging her offer down instead of raising it.",
+ "agent": "Customer asked why her modifications were lowering her trade-in offer; explained per 'Cars with aftermarket modifications' that mods like loud exhausts and custom paint usually lower the offer because we may need to return the car to factory condition. Advised her to remove anything she wants to keep, such as a custom stereo, before the appraisal. Let her know that if a modification changes the offer, the specialist will show her why, as covered in 'What can change your offer.'",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2J2U7z3UFpUY4AvRGKJ",
+ "usage": {
+  "input": 782,
+  "output": 228
+ }
+}

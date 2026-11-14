@@ -6,7 +6,7 @@
 - There are no 1.1 or 1.2 versions. Smaller changes go in [progress.md](progress.md) (what happened), [decisions.md](decisions.md) (why) and [issues.md](issues.md) (what broke).
 - The newest version is at the top. Older ones stay as they were written.
 
-**Current: v2.5**, a checkpoint under design v2.0 (stage 2 data and checks done; tickets and gold freeze pending).
+**Current: v2.5**, a checkpoint under design v2.0 (stage 2 data, checks and tickets done; gold freeze pending).
 
 | Version | Date | What | Confirmed by |
 |---|---|---|---|
@@ -24,7 +24,7 @@ Built under v2.0, with no design change:
 - **Data:** 51 articles / 68 versions (`data/kb/articles/01_…08_*.json`), `forms`, `states`, `lenders`, `lessors`, `stores`, `known_issues`. The structural graph will be parsed from `kb:` links and `NW-` codes by `cookbook/load.py`.
 - **Checks:** `make check` (counts, version chains, no time travel in links or codes, known issues present, structured records agree with the text, stores, gold, tickets) and `make test-checks` (5 injected faults, all caught).
 - **Gold:** 56 questions with two dates each (`asked_on`, `as_of`, D-019); facts graded by meaning (D-020). 40 drafts await review.
-- **Tickets:** deterministic plan (200; 75 outdated today; 8 agent mistakes that cite the superseded version); generation is scripted but not yet run.
+- **Tickets:** 200 generated with `claude-opus-5-5` (signed in with `ant auth login`) from a deterministic plan: 75 outdated today, 8 agent mistakes that cite the superseded version, and a persona and vehicle on each for variety. They pass the faithfulness and variety gates (D-021).
 - **Not yet built:** loading into ArangoDB, the graph, embeddings, retrieval, notebooks (stage 3).
 
 ---

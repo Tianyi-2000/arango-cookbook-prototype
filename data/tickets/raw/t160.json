@@ -1,0 +1,10 @@
+{
+ "customer": "I've called Granite Bank three times trying to get a payoff letter for my hybrid sedan and keep getting bounced around. I'm a veteran, I live in Aldora, and I just want to trade this car in without jumping through hoops. Do I really need this letter before my appointment?",
+ "agent": "I'm sorry about the runaround. Good news: according to our article \"Lenders in our e-payoff network,\" Granite Bank joined our e-payoff network on March 15, 2026, so you don't need a payoff letter. We'll confirm your payoff directly with Granite Bank the same day, at your appointment, using your loan account number. Just make sure to bring that account number with you.",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2JBg7of1AwhXqMZBbzn",
+ "usage": {
+  "input": 858,
+  "output": 373
+ }
+}

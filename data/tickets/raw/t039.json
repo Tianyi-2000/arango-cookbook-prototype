@@ -1,0 +1,10 @@
+{
+ "customer": "I booked an appointment to sell my full-size SUV and just realized the registration expired last month. I put so many miles on this thing commuting that I honestly lost track of it, and now I'm worried the whole sale is off. I live in Brevin, if that matters.",
+ "agent": "I understand the frustration, and the sale isn't off, but Brevin is the one state where it does matter. Per our article \"My registration is expired,\" in Brevin the registration must be current on the day of the sale, so you'll need to renew it before your appointment. If the SUV is registered in a different state from the one you live in, take a look at \"Selling a car registered in another state,\" since that may apply instead.",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2Hb59RQXmUVs2ze9hos",
+ "usage": {
+  "input": 768,
+  "output": 222
+ }
+}

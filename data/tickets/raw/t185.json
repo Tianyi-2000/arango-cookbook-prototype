@@ -1,0 +1,10 @@
+{
+ "customer": "Caller from Eastvale, annoyed, says he can't find the title for his full-size SUV and is worried it'll hold up trading it in for a bigger vehicle.",
+ "agent": "Customer asked how to replace a lost title before his trade-in appointment. Explained from 'Getting a duplicate title in Eastvale' that he can apply for a duplicate at any Eastvale motor vehicle office with his photo ID and registration, and that main offices print duplicates the same day, while by mail it takes 2 to 3 weeks. Reminded him to bring the duplicate to his appointment.",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2JJn1x6Z4TrGTjyxpLb",
+ "usage": {
+  "input": 770,
+  "output": 199
+ }
+}

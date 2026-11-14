@@ -1,0 +1,10 @@
+{
+ "customer": "So my partner and I have finally decided we really only need one car now that we both mostly work from home here in Dunmore, and the one we're keeping is the electric one, so the other car is just sitting in the driveway doing nothing. I was thinking I'd just swing by one of your stores sometime this week, maybe on a lunch break, but I wasn't sure if I need to book something first or how long the whole thing takes. Also if I like the number, can I just sell it right then or do I have to come back?",
+ "agent": "Thanks for reaching out! According to our article \"Getting a quote at the store,\" you can walk into any Northwind store without an appointment, and a specialist will inspect your car while you wait, usually in 30 to 45 minutes, then give you a written quote that's valid for 7 days or 300 miles. If you accept, you can finish the sale during the same visit, so just bring your photo ID, registration and title, or your payoff information if you still have a loan on the car.",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2Hmg6t3zSVQ3vPsciyZ",
+ "usage": {
+  "input": 806,
+  "output": 314
+ }
+}

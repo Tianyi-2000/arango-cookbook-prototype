@@ -1,0 +1,10 @@
+{
+ "customer": "Good afternoon, I'm a retired gentleman here in Eastvale and I received your offer on my minivan, but I believe I still owe a bit more on the loan than the amount you quoted. Would I still be able to sell it to you, and if so, how would I settle the difference? I had planned to bring a personal check, if that's acceptable. Thank you kindly for your help.",
+ "agent": "Thank you for reaching out. As explained in our article \"If you owe more than our offer,\" you can still sell us your minivan when the loan balance is higher than our offer; you would pay the difference at the appointment, after we compare the offer with your payoff letter. We accept a cashier's check or a debit card, but unfortunately we no longer accept personal checks, and we do not accept credit cards. If you'd prefer not to pay the difference, you're welcome to keep the minivan, since an offer never obliges you to sell.",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2JCEavNhsjRENh7knHk",
+ "usage": {
+  "input": 800,
+  "output": 298
+ }
+}

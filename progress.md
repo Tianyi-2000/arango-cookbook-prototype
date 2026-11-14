@@ -4,6 +4,15 @@ A detailed log, newest first. Add an entry after every working session or run: *
 
 ---
 
+## 2026-11-13 · Tickets generated (stage 2)
+- **Did:** Tianyi installed `ant` and signed in (`ant auth login`, workspace Default); no key file is stored. Removed the empty `ANTHROPIC_API_KEY=` from `.env` and the key gate from the script (I-014). Tested 1 ticket, then generated 200 (batch 1). A new faithfulness check flagged 3 numbers (2 false alarms, 1 invented date; I-017). A bulk variety measure showed near-duplicate messages (I-015). While fixing that, found the `\1` link bug in the prompts (I-016). Added persona and vehicle hints, prompt rules, a variety check (threshold 50%, set in advance) and collision-free personas; regenerated all 200 (batch 2), then the 4 tickets whose persona changed.
+- **Result:** 200 tickets; `make check` passes all 11 checks; `make test-checks` catches 7 of 7 injected faults (2 new ones for tickets). Highest customer-message overlap 39% (was 100%); "you guys" 0 (was 71). Sample: t018 (2026-08) is an agent mistake that still allows personal checks.
+- **Cost:** about $3.10 in total (D-021). Actual usage per ticket ≈ 780 input + 230 output tokens.
+- **Auto-adjustments:** personas re-drawn for t066, t095, t154, t168 (collision rule); those 4 regenerated.
+- **Stuck / waiting:** Tianyi's review of the 40 draft gold questions, then freeze. After that, stage 3.
+
+---
+
 ## 2026-11-13 · Vault folders renamed to 01 / 02 / 03
 - **Did:** renamed `10 Cookbook Demo` → `01 Cookbook Demo`, `20 Internship (placeholder)` → `02 Internship (placeholder)`, `90 Templates` → `03 Templates` (Tianyi found 10/20/90 confusing). Updated every reference in the vault, the vault's `CLAUDE.md`, the Obsidian templates setting, the interview-prep vault's pointers and memory. Older entries below keep the old names as history. `docker compose down` before and `up` after; recreated `.venv` (I-008 again). `make verify`, `make check` and `make test-checks` all pass at the new path. Created `.env` from `.env.example`, with the key left empty for Tianyi.
 - **Why:** Tianyi's preference.

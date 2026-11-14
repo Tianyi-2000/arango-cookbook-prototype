@@ -1,0 +1,10 @@
+{
+ "customer": "I'm retired and trying to sell my station wagon, but the odometer quit working a while back and now the mileage on the dash is just plain wrong. Nobody has told me what I'm supposed to do about that, and I don't want to be accused of hiding anything. How do I handle this without it turning into a big mess?",
+ "agent": "Thanks for raising this up front, and I'm sorry no one has walked you through it yet. As our article \"Broken or replaced odometer\" explains, just let us know about the broken odometer when you request your offer, and at the appointment you'll mark 'not actual mileage' on the odometer statement, form NW-ODO-1. Please be aware that cars marked 'not actual mileage' receive a reduced offer. If you know the wagon's true mileage, bring records that show it, such as service invoices.",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2JMb6DQJ4HSKBJoNMh1",
+ "usage": {
+  "input": 776,
+  "output": 271
+ }
+}

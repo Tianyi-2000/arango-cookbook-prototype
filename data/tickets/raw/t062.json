@@ -1,0 +1,10 @@
+{
+ "customer": "I've been trying to sell my cargo van and every place I call acts like I'm crazy because I'm still making payments on it and can't find the title anywhere. Do I really have to track down a duplicate title before Northwind will even look at it? I'm a veteran on a fixed budget here in Corlan and I'm tired of the runaround.",
+ "agent": "Thank you for your service, and I'm sorry you've been getting the runaround. You can sell us your van while you're still paying it off: while the loan is open, your lender holds the title or electronic title record, so you don't need the title in hand or a duplicate. At the appointment we confirm what you owe and pay your lender directly from our offer, and if the offer is more than the payoff you get the difference (see When and how you get paid), or if it's less, see If you owe more than our offer. To speed things up, it helps to get a payoff letter from your lender before you come in.",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2HhEfa5a7wFW1cGZ5xP",
+ "usage": {
+  "input": 822,
+  "output": 294
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "customer": "hi, my dad passed in march and left me his old sedan, i want to sell it to northwind. i work nights as a nurse so im trying to get evrything sorted before i come in. i still have the power of attorny he signed for me a few years ago, is that enuf? my brother and sister are also heirs if that matters",
+ "agent": "I'm very sorry about your father. Per our article \"Selling a car you inherited,\" the power of attorney he signed is no longer valid, so please bring his death certificate and the court letters that name the executor or administrator of the estate (letters testamentary or letters of administration). Since there are several heirs, the executor is the one who signs. If there's still a loan on the car, please also see our article \"Selling a car you are still paying off.\"",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2HSKKTN9Mty44yXXPLa",
+ "usage": {
+  "input": 786,
+  "output": 248
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "customer": "hey, just moved to dunmore and want to sell my cargo van but my ex wife is stil on the title. do i realy need her to sign anything? we're divorced and the van went to me in the setlement",
+ "agent": "Thanks for reaching out! Per our article \"My ex is still on the title,\" an ex-spouse who's still listed on the title normally has to sign, just like any co-owner. However, if your divorce decree awards the van to you, you can bring a certified copy of the decree and your ex's signature won't be needed. Also, if your name changed in the divorce, take a look at \"The name on the title doesn't match my ID.\"",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2J3tL3RszE9szx8SXXm",
+ "usage": {
+  "input": 774,
+  "output": 211
+ }
+}

@@ -4,6 +4,7 @@ Run: python scripts/check_data.py   (or: make check)
 Prints one line per check, then a summary. Exit code 0 = every check passed.
 What each check means is listed in eval.md ("What `make check` covers").
 """
+import re
 import sys
 from collections import Counter, defaultdict
 from datetime import date
@@ -24,6 +25,8 @@ KINDS = {
     "retired":   [("2022", "2022-01-01", "2026-01-31")],
 }
 SERVICES = {"appraisal", "lease_buyout", "home_pickup", "towing_non_running"}
+MAX_TICKET_OVERLAP = 0.5
+NUMBER_RE = re.compile(r"NW-[A-Z]{2,3}-\d+|\$?\d[\d,]*\d|\$?\d")  # form codes, dollar amounts, plain numbers
 
 failures: list[str] = []
 
@@ -235,6 +238,34 @@ def main() -> int:
             if not t.get("customer") or not t.get("agent"):
                 probs.append(f"{t['_key']}: missing text")
         check(f"tickets ({len(tickets)})", probs)
+
+        # Faithfulness: every number and form code the agent states must appear in the article it used.
+        # The agent saw only that one article, so anything else was invented (a hallucination).
+        probs = []
+        for t in tickets:
+            # the agent may repeat numbers the customer said ("around 80 miles"), so the customer's text counts too
+            source = " ".join(by_key[k]["text"] for k in t["cites"] if k in by_key) + " " + t.get("customer", "")
+            for token in sorted(set(NUMBER_RE.findall(t.get("agent", "")))):
+                # whole-number match: "1" must stand alone in the source, not hide inside "2026" or "NW-ODO-1"
+                if not re.search(rf"(?<![\w$,-]){re.escape(token)}(?!\w|,\d)", source):
+                    probs.append(f"{t['_key']} ({t['cites'][0]}): agent says '{token}', not in the cited article")
+        check("ticket agents state only numbers and form codes from their cited article", probs)
+
+        # Variety: near-duplicate customer messages make retrieval look easier or harder than it is (I-015).
+        # Threshold fixed before the regenerated tickets were checked: no pair may share half its word 4-grams.
+        def grams(text, n=4):
+            w = re.findall(r"[a-z']+", text.lower())
+            return {tuple(w[i:i + n]) for i in range(len(w) - n + 1)}
+        g = {t["_key"]: grams(t.get("customer", "")) for t in tickets}
+        keys = list(g)
+        probs = []
+        for i, a in enumerate(keys):
+            for b in keys[i + 1:]:
+                if g[a] and g[b]:
+                    overlap = len(g[a] & g[b]) / len(g[a] | g[b])
+                    if overlap >= MAX_TICKET_OVERLAP:
+                        probs.append(f"{a} and {b}: customer messages share {overlap:.0%} of their 4-grams")
+        check(f"ticket customer messages aren't near-duplicates (under {MAX_TICKET_OVERLAP:.0%} 4-gram overlap)", probs)
 
     print()
     print("FAILED: " + ", ".join(failures) if failures else "All checks passed.")

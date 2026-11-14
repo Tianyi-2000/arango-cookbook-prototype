@@ -1,0 +1,10 @@
+{
+ "customer": "I'm moving across Eastvale for a new job and need to sell my pickup fast, but I just found out the lift kit and tuned engine might actually hurt my offer? I spent a lot on those upgrades and this is really frustrating. Is that true?",
+ "agent": "I understand the frustration, especially with a move on your plate. According to our article \"Cars with aftermarket modifications,\" changes like lift kits, engine tuning, loud exhausts and custom paint usually lower the offer, because we may need to return the truck to factory condition. If there's anything you'd like to keep, such as a custom stereo, please remove it before the appraisal. If a modification does change your offer, the specialist will show you why.",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2HRFunsBp3rWWMaiLkz",
+ "usage": {
+  "input": 784,
+  "output": 232
+ }
+}

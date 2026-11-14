@@ -1,0 +1,10 @@
+{
+ "customer": "I've been trying to sort this out between night shifts and I'm running out of patience. My SUV is still registered in Dunmore but I've moved since then. Can I even sell it to Northwind, or am I wasting my time driving over?",
+ "agent": "I'm sorry this has been such a hassle, and you're not wasting your time. Per our article \"Selling a car registered in another state,\" we buy cars registered in any state we serve, even if you now live in a different one. Just bring the registration from Dunmore, since that's the state that issued it. If the title has gone missing, Dunmore's duplicate title rules would apply, and our article \"Selling a paid-off car when the title is lost\" covers that.",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2HRXUB8tYLWDdZ1i5Fz",
+ "usage": {
+  "input": 796,
+  "output": 230
+ }
+}

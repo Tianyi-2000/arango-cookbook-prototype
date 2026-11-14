@@ -1,0 +1,10 @@
+{
+ "customer": "I drove my station wagon all the way over hoping to sell it, and now I'm told you won't even make an offer because the title says 'rebuilt.' The car runs perfectly fine and I've kept it up for years as a retiree on a fixed income. Why on earth does one word on the paperwork matter so much?",
+ "agent": "I'm sorry for the frustration, especially after making the trip with your wagon. As explained in our article \"Salvage and rebuilt titles,\" a branded title shows the car was declared a total loss at some point and possibly rebuilt afterward. Northwind doesn't buy cars with salvage, rebuilt or flood titles, so if a title is branded we're unable to make an offer, regardless of how well the car has been maintained since.",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2HjoxrXyM4cXLh1BVbr",
+ "usage": {
+  "input": 751,
+  "output": 250
+ }
+}

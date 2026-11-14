@@ -1,0 +1,10 @@
+{
+ "customer": "Hello, I own a small catering business and I'm thinking of selling my hybrid sedan to you. Last spring the parking lot behind my shop flooded and some water got onto the floor of the cabin, though the car has run fine since. Would that affect whether you can make me an offer? Thank you for your help.",
+ "agent": "Thank you for reaching out and for being upfront about the water. Per our Flood-damaged cars article, cars with flood damage or a flood brand on the title count as branded, and we don't buy them, as covered in Salvage and rebuilt titles. Because water got into the cabin, please be sure to tell us about it when you request an offer.",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2HtBNCGz46aowtLMbvx",
+ "usage": {
+  "input": 737,
+  "output": 216
+ }
+}

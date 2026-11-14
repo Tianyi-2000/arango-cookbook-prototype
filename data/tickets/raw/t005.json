@@ -1,0 +1,10 @@
+{
+ "customer": "Caller, a small-business owner from Corlan, politely asked what he needs to bring to his appraisal appointment for his minivan, mentioning he still has a loan on it and that his business partner is also on the title.",
+ "agent": "Customer asked what to bring to his appraisal appointment; walked him through What to bring to your appraisal appointment: a valid photo ID for every owner on the title, the current registration, all keys and remotes, and the odometer statement, form NW-ODO-1, which he can also fill in at the store. Since he still has a loan, advised him to bring his payoff letter instead of the title and pointed him to Getting a payoff letter. As his partner may not be able to attend, referred him to When more than one person owns the car, and let him know to plan for about an hour.",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2HS75FLNuY2wbgA563H",
+ "usage": {
+  "input": 807,
+  "output": 255
+ }
+}

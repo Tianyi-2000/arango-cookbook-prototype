@@ -1,0 +1,10 @@
+{
+ "customer": "Hi, my EV's odometer was replaced last year so the mileage it shows is off. I'm a student trying to sell it. What do I need to do?",
+ "agent": "Thanks for reaching out. Since your odometer was replaced, please let us know when you request an offer, and at the appointment mark 'not actual mileage' on the odometer statement, form NW-ODO-1. Cars marked 'not actual mileage' receive a reduced offer, but if you know the true mileage, bring records that show it, such as service invoices.",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2HyiNPqYuVpDdroSam4",
+ "usage": {
+  "input": 772,
+  "output": 175
+ }
+}

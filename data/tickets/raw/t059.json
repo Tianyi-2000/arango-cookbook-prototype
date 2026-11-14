@@ -1,0 +1,10 @@
+{
+ "customer": "Seriously, I just moved to Eastvale and I'm trying to sell my full-size SUV, but it has a rebuilt title from an old accident. Every place I try gives me the runaround, so can Northwind make me an offer or not?",
+ "agent": "I'm sorry you've been getting the runaround, and I'll give you a straight answer. As explained in our article \"Salvage and rebuilt titles,\" Northwind doesn't buy cars with salvage, rebuilt or flood titles, so with a rebuilt title we're unable to make an offer on your SUV. A branded title shows that a car was declared a total loss and possibly rebuilt afterward, which is why it falls outside what we purchase.",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2HgUKaFtixTBDKD1322",
+ "usage": {
+  "input": 757,
+  "output": 235
+ }
+}

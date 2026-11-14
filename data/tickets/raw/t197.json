@@ -1,0 +1,10 @@
+{
+ "customer": "Got a recall notice on my SUV that I haven't dealt with yet. Can I still sell it to you, or do I need to get it fixed first?",
+ "agent": "Yes, we buy cars with open safety recalls, and an open recall doesn't change your offer. Recall repairs are free at a dealer for your car's brand, so you're welcome to have it fixed before selling if you like, but you don't have to. You can find more in our article \"Selling a car with an open recall.\"",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2JMtCr62cAbemU6j6mj",
+ "usage": {
+  "input": 736,
+  "output": 159
+ }
+}

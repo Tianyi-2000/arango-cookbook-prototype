@@ -10,7 +10,9 @@
    "getting_paid__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "pickup truck",
+  "persona": "new parent"
  },
  {
   "_key": "t002",
@@ -23,7 +25,9 @@
    "modified_cars__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "pickup truck",
+  "persona": "relocating for a new job"
  },
  {
   "_key": "t003",
@@ -36,7 +40,9 @@
    "out_of_state__2022"
   ],
   "agent_error": true,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "full-size SUV",
+  "persona": "nurse who works night shifts"
  },
  {
   "_key": "t004",
@@ -49,7 +55,9 @@
    "appointment_checklist__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "station wagon",
+  "persona": "veteran"
  },
  {
   "_key": "t005",
@@ -62,7 +70,9 @@
    "appointment_checklist__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "minivan",
+  "persona": "small-business owner"
  },
  {
   "_key": "t006",
@@ -75,7 +85,9 @@
    "inherited_car__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "minivan",
+  "persona": "nurse who works night shifts"
  },
  {
   "_key": "t007",
@@ -88,7 +100,9 @@
    "lessor_buyouts__2026"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "convertible",
+  "persona": "going down to one car"
  },
  {
   "_key": "t008",
@@ -101,7 +115,9 @@
    "license_plates__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "midsize SUV",
+  "persona": "retiree"
  },
  {
   "_key": "t009",
@@ -114,7 +130,9 @@
    "branded_title__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "full-size SUV",
+  "persona": "just moved to the area"
  },
  {
   "_key": "t010",
@@ -127,7 +145,9 @@
    "cancel_insurance__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "pickup truck",
+  "persona": "veteran"
  },
  {
   "_key": "t011",
@@ -140,7 +160,9 @@
    "lease_equity__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "full-size SUV",
+  "persona": "nurse who works night shifts"
  },
  {
   "_key": "t012",
@@ -153,7 +175,9 @@
    "title_name_mismatch__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "midsize SUV",
+  "persona": "upgrading to a bigger car"
  },
  {
   "_key": "t013",
@@ -166,7 +190,9 @@
    "lessor_buyouts__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "midsize SUV",
+  "persona": "veteran"
  },
  {
   "_key": "t014",
@@ -179,7 +205,9 @@
    "divorce_ex_on_title__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "midsize SUV",
+  "persona": "small-business owner"
  },
  {
   "_key": "t015",
@@ -192,7 +220,9 @@
    "modified_cars__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "hybrid sedan",
+  "persona": "college student"
  },
  {
   "_key": "t016",
@@ -205,7 +235,9 @@
    "modified_cars__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "minivan",
+  "persona": "grad student"
  },
  {
   "_key": "t017",
@@ -218,7 +250,9 @@
    "lien_still_on_title__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "coupe",
+  "persona": "nurse who works night shifts"
  },
  {
   "_key": "t018",
@@ -231,7 +265,9 @@
    "negative_equity__2022"
   ],
   "agent_error": true,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "hatchback",
+  "persona": "small-business owner"
  },
  {
   "_key": "t019",
@@ -244,7 +280,9 @@
    "flood_damage__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "electric car",
+  "persona": "small-business owner"
  },
  {
   "_key": "t020",
@@ -257,7 +295,9 @@
    "selling_with_loan__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "minivan",
+  "persona": "new parent"
  },
  {
   "_key": "t021",
@@ -270,7 +310,9 @@
    "title_name_mismatch__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "coupe",
+  "persona": "grad student"
  },
  {
   "_key": "t022",
@@ -283,7 +325,9 @@
    "out_of_state__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "coupe",
+  "persona": "just moved to the area"
  },
  {
   "_key": "t023",
@@ -296,7 +340,9 @@
    "selling_without_buying__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "pickup truck",
+  "persona": "college student"
  },
  {
   "_key": "t024",
@@ -309,7 +355,9 @@
    "cancel_insurance__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "compact sedan",
+  "persona": "nurse who works night shifts"
  },
  {
   "_key": "t025",
@@ -322,7 +370,9 @@
    "title_name_mismatch__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "electric car",
+  "persona": "retiree"
  },
  {
   "_key": "t026",
@@ -335,7 +385,9 @@
    "negative_equity__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "hybrid sedan",
+  "persona": "upgrading to a bigger car"
  },
  {
   "_key": "t027",
@@ -348,7 +400,9 @@
    "open_recalls__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "midsize SUV",
+  "persona": "small-business owner"
  },
  {
   "_key": "t028",
@@ -361,7 +415,9 @@
    "appointment_checklist__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "station wagon",
+  "persona": "just moved to the area"
  },
  {
   "_key": "t029",
@@ -374,7 +430,9 @@
    "duplicate_title_corlan__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "pickup truck",
+  "persona": "going down to one car"
  },
  {
   "_key": "t030",
@@ -387,7 +445,9 @@
    "out_of_state__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "midsize SUV",
+  "persona": "just moved to the area"
  },
  {
   "_key": "t031",
@@ -400,7 +460,9 @@
    "lost_title__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "pickup truck",
+  "persona": "upgrading to a bigger car"
  },
  {
   "_key": "t032",
@@ -413,7 +475,9 @@
    "duplicate_title_dunmore__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "full-size SUV",
+  "persona": "just moved to the area"
  },
  {
   "_key": "t033",
@@ -426,7 +490,9 @@
    "keep_paying_until_confirmed__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "hybrid sedan",
+  "persona": "grad student"
  },
  {
   "_key": "t034",
@@ -439,7 +505,9 @@
    "lessor_buyouts__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "hybrid sedan",
+  "persona": "small-business owner"
  },
  {
   "_key": "t035",
@@ -452,7 +520,9 @@
    "duplicate_title_corlan__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "pickup truck",
+  "persona": "new parent"
  },
  {
   "_key": "t036",
@@ -465,7 +535,9 @@
    "business_car__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "hatchback",
+  "persona": "college student"
  },
  {
   "_key": "t037",
@@ -478,7 +550,9 @@
    "lessor_buyouts__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "compact sedan",
+  "persona": "upgrading to a bigger car"
  },
  {
   "_key": "t038",
@@ -491,7 +565,9 @@
    "title_name_mismatch__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "midsize SUV",
+  "persona": "just moved to the area"
  },
  {
   "_key": "t039",
@@ -504,7 +580,9 @@
    "registration_expired__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "full-size SUV",
+  "persona": "long-distance commuter"
  },
  {
   "_key": "t040",
@@ -517,7 +595,9 @@
    "modified_cars__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "full-size SUV",
+  "persona": "upgrading to a bigger car"
  },
  {
   "_key": "t041",
@@ -530,7 +610,9 @@
    "keep_paying_until_confirmed__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "hybrid sedan",
+  "persona": "relocating for a new job"
  },
  {
   "_key": "t042",
@@ -543,7 +625,9 @@
    "license_plates__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "convertible",
+  "persona": "veteran"
  },
  {
   "_key": "t043",
@@ -556,7 +640,9 @@
    "divorce_ex_on_title__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "pickup truck",
+  "persona": "just moved to the area"
  },
  {
   "_key": "t044",
@@ -569,7 +655,9 @@
    "non_running_cars__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "minivan",
+  "persona": "nurse who works night shifts"
  },
  {
   "_key": "t045",
@@ -582,7 +670,9 @@
    "keep_paying_until_confirmed__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "electric car",
+  "persona": "relocating for a new job"
  },
  {
   "_key": "t046",
@@ -595,7 +685,9 @@
    "duplicate_title_brevin__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "minivan",
+  "persona": "relocating for a new job"
  },
  {
   "_key": "t047",
@@ -608,7 +700,9 @@
    "duplicate_title_brevin__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "compact sedan",
+  "persona": "veteran"
  },
  {
   "_key": "t048",
@@ -621,7 +715,9 @@
    "payoff_letter__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "coupe",
+  "persona": "veteran"
  },
  {
   "_key": "t049",
@@ -634,7 +730,9 @@
    "appointment_checklist__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "coupe",
+  "persona": "long-distance commuter"
  },
  {
   "_key": "t050",
@@ -647,7 +745,9 @@
    "license_plates__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "midsize SUV",
+  "persona": "long-distance commuter"
  },
  {
   "_key": "t051",
@@ -660,7 +760,9 @@
    "selling_for_someone_else__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "station wagon",
+  "persona": "new parent"
  },
  {
   "_key": "t052",
@@ -673,7 +775,9 @@
    "co_owners__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "electric car",
+  "persona": "college student"
  },
  {
   "_key": "t053",
@@ -686,7 +790,9 @@
    "duplicate_title_dunmore__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "station wagon",
+  "persona": "new parent"
  },
  {
   "_key": "t054",
@@ -699,7 +805,9 @@
    "payoff_letter__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "minivan",
+  "persona": "new parent"
  },
  {
   "_key": "t055",
@@ -712,7 +820,9 @@
    "odometer_problems__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "midsize SUV",
+  "persona": "college student"
  },
  {
   "_key": "t056",
@@ -725,7 +835,9 @@
    "flood_damage__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "convertible",
+  "persona": "relocating for a new job"
  },
  {
   "_key": "t057",
@@ -738,7 +850,9 @@
    "duplicate_title_aldora__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "electric car",
+  "persona": "grad student"
  },
  {
   "_key": "t058",
@@ -751,7 +865,9 @@
    "electronic_titles__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "midsize SUV",
+  "persona": "veteran"
  },
  {
   "_key": "t059",
@@ -764,7 +880,9 @@
    "branded_title__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "full-size SUV",
+  "persona": "just moved to the area"
  },
  {
   "_key": "t060",
@@ -777,7 +895,9 @@
    "getting_paid__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "hybrid sedan",
+  "persona": "going down to one car"
  },
  {
   "_key": "t061",
@@ -790,7 +910,9 @@
    "getting_paid__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "hatchback",
+  "persona": "nurse who works night shifts"
  },
  {
   "_key": "t062",
@@ -803,7 +925,9 @@
    "selling_with_loan__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "cargo van",
+  "persona": "veteran"
  },
  {
   "_key": "t063",
@@ -816,7 +940,9 @@
    "how_selling_works__2026"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "full-size SUV",
+  "persona": "college student"
  },
  {
   "_key": "t064",
@@ -829,7 +955,9 @@
    "offer_validity__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "pickup truck",
+  "persona": "upgrading to a bigger car"
  },
  {
   "_key": "t065",
@@ -842,7 +970,9 @@
    "keep_paying_until_confirmed__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "midsize SUV",
+  "persona": "new parent"
  },
  {
   "_key": "t066",
@@ -855,7 +985,9 @@
    "duplicate_title_corlan__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "station wagon",
+  "persona": "small-business owner"
  },
  {
   "_key": "t067",
@@ -868,7 +1000,9 @@
    "co_owners__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "full-size SUV",
+  "persona": "retiree"
  },
  {
   "_key": "t068",
@@ -881,7 +1015,9 @@
    "negative_equity__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "electric car",
+  "persona": "grad student"
  },
  {
   "_key": "t069",
@@ -894,7 +1030,9 @@
    "divorce_ex_on_title__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "minivan",
+  "persona": "retiree"
  },
  {
   "_key": "t070",
@@ -907,7 +1045,9 @@
    "lease_equity__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "cargo van",
+  "persona": "just moved to the area"
  },
  {
   "_key": "t071",
@@ -920,7 +1060,9 @@
    "branded_title__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "station wagon",
+  "persona": "retiree"
  },
  {
   "_key": "t072",
@@ -933,7 +1075,9 @@
    "selling_without_buying__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "coupe",
+  "persona": "college student"
  },
  {
   "_key": "t073",
@@ -946,7 +1090,9 @@
    "keep_paying_until_confirmed__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "convertible",
+  "persona": "long-distance commuter"
  },
  {
   "_key": "t074",
@@ -959,7 +1105,9 @@
    "reschedule_cancel__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "station wagon",
+  "persona": "veteran"
  },
  {
   "_key": "t075",
@@ -972,7 +1120,9 @@
    "negative_equity__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "hybrid sedan",
+  "persona": "relocating for a new job"
  },
  {
   "_key": "t076",
@@ -985,7 +1135,9 @@
    "returns__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "cargo van",
+  "persona": "college student"
  },
  {
   "_key": "t077",
@@ -998,7 +1150,9 @@
    "walk_in_quotes__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "electric car",
+  "persona": "going down to one car"
  },
  {
   "_key": "t078",
@@ -1011,7 +1165,9 @@
    "duplicate_title_eastvale__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "full-size SUV",
+  "persona": "retiree"
  },
  {
   "_key": "t079",
@@ -1024,7 +1180,9 @@
    "how_selling_works__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "minivan",
+  "persona": "going down to one car"
  },
  {
   "_key": "t080",
@@ -1037,7 +1195,9 @@
    "odometer_problems__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "station wagon",
+  "persona": "just moved to the area"
  },
  {
   "_key": "t081",
@@ -1050,7 +1210,9 @@
    "lender_overpayment_refund__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "midsize SUV",
+  "persona": "college student"
  },
  {
   "_key": "t082",
@@ -1063,7 +1225,9 @@
    "keep_paying_until_confirmed__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "midsize SUV",
+  "persona": "nurse who works night shifts"
  },
  {
   "_key": "t083",
@@ -1076,7 +1240,9 @@
    "how_selling_works__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "convertible",
+  "persona": "college student"
  },
  {
   "_key": "t084",
@@ -1089,7 +1255,9 @@
    "license_plates__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "convertible",
+  "persona": "small-business owner"
  },
  {
   "_key": "t085",
@@ -1102,7 +1270,9 @@
    "business_car__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "midsize SUV",
+  "persona": "veteran"
  },
  {
   "_key": "t086",
@@ -1115,7 +1285,9 @@
    "negative_equity__2022"
   ],
   "agent_error": true,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "midsize SUV",
+  "persona": "retiree"
  },
  {
   "_key": "t087",
@@ -1128,7 +1300,9 @@
    "divorce_ex_on_title__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "hatchback",
+  "persona": "upgrading to a bigger car"
  },
  {
   "_key": "t088",
@@ -1141,7 +1315,9 @@
    "branded_title__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "pickup truck",
+  "persona": "college student"
  },
  {
   "_key": "t089",
@@ -1154,7 +1330,9 @@
    "flood_damage__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "midsize SUV",
+  "persona": "small-business owner"
  },
  {
   "_key": "t090",
@@ -1167,7 +1345,9 @@
    "walk_in_quotes__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "pickup truck",
+  "persona": "relocating for a new job"
  },
  {
   "_key": "t091",
@@ -1180,7 +1360,9 @@
    "home_pickup__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "electric car",
+  "persona": "relocating for a new job"
  },
  {
   "_key": "t092",
@@ -1193,7 +1375,9 @@
    "lessor_buyouts__2026"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "cargo van",
+  "persona": "going down to one car"
  },
  {
   "_key": "t093",
@@ -1206,7 +1390,9 @@
    "branded_title__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "compact sedan",
+  "persona": "small-business owner"
  },
  {
   "_key": "t094",
@@ -1219,7 +1405,9 @@
    "how_selling_works__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "full-size SUV",
+  "persona": "just moved to the area"
  },
  {
   "_key": "t095",
@@ -1232,7 +1420,9 @@
    "duplicate_title_eastvale__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "hatchback",
+  "persona": "going down to one car"
  },
  {
   "_key": "t096",
@@ -1245,7 +1435,9 @@
    "selling_with_loan__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "convertible",
+  "persona": "retiree"
  },
  {
   "_key": "t097",
@@ -1258,7 +1450,9 @@
    "flood_damage__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "hybrid sedan",
+  "persona": "small-business owner"
  },
  {
   "_key": "t098",
@@ -1271,7 +1465,9 @@
    "lien_still_on_title__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "pickup truck",
+  "persona": "veteran"
  },
  {
   "_key": "t099",
@@ -1284,7 +1480,9 @@
    "home_pickup__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "pickup truck",
+  "persona": "long-distance commuter"
  },
  {
   "_key": "t100",
@@ -1297,7 +1495,9 @@
    "flood_damage__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "station wagon",
+  "persona": "retiree"
  },
  {
   "_key": "t101",
@@ -1310,7 +1510,9 @@
    "lease_equity__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "pickup truck",
+  "persona": "college student"
  },
  {
   "_key": "t102",
@@ -1323,7 +1525,9 @@
    "flood_damage__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "station wagon",
+  "persona": "long-distance commuter"
  },
  {
   "_key": "t103",
@@ -1336,7 +1540,9 @@
    "title_name_mismatch__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "convertible",
+  "persona": "nurse who works night shifts"
  },
  {
   "_key": "t104",
@@ -1349,7 +1555,9 @@
    "registration_expired__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "full-size SUV",
+  "persona": "college student"
  },
  {
   "_key": "t105",
@@ -1362,7 +1570,9 @@
    "lost_title__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "minivan",
+  "persona": "upgrading to a bigger car"
  },
  {
   "_key": "t106",
@@ -1375,7 +1585,9 @@
    "reschedule_cancel__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "convertible",
+  "persona": "going down to one car"
  },
  {
   "_key": "t107",
@@ -1388,7 +1600,9 @@
    "license_plates__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "full-size SUV",
+  "persona": "nurse who works night shifts"
  },
  {
   "_key": "t108",
@@ -1401,7 +1615,9 @@
    "out_of_state__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "station wagon",
+  "persona": "small-business owner"
  },
  {
   "_key": "t109",
@@ -1414,7 +1630,9 @@
    "keep_paying_until_confirmed__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "cargo van",
+  "persona": "going down to one car"
  },
  {
   "_key": "t110",
@@ -1427,7 +1645,9 @@
    "cancel_insurance__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "cargo van",
+  "persona": "relocating for a new job"
  },
  {
   "_key": "t111",
@@ -1440,7 +1660,9 @@
    "duplicate_title_dunmore__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "minivan",
+  "persona": "relocating for a new job"
  },
  {
   "_key": "t112",
@@ -1453,7 +1675,9 @@
    "offer_validity__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "convertible",
+  "persona": "new parent"
  },
  {
   "_key": "t113",
@@ -1466,7 +1690,9 @@
    "getting_paid__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "cargo van",
+  "persona": "long-distance commuter"
  },
  {
   "_key": "t114",
@@ -1479,7 +1705,9 @@
    "home_pickup__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "coupe",
+  "persona": "college student"
  },
  {
   "_key": "t115",
@@ -1492,7 +1720,9 @@
    "selling_for_someone_else__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "minivan",
+  "persona": "retiree"
  },
  {
   "_key": "t116",
@@ -1505,7 +1735,9 @@
    "lease_vs_turn_in__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "pickup truck",
+  "persona": "college student"
  },
  {
   "_key": "t117",
@@ -1518,7 +1750,9 @@
    "odometer_problems__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "electric car",
+  "persona": "college student"
  },
  {
   "_key": "t118",
@@ -1531,7 +1765,9 @@
    "getting_paid__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "cargo van",
+  "persona": "college student"
  },
  {
   "_key": "t119",
@@ -1544,7 +1780,9 @@
    "odometer_problems__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "pickup truck",
+  "persona": "nurse who works night shifts"
  },
  {
   "_key": "t120",
@@ -1557,7 +1795,9 @@
    "co_owners__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "hatchback",
+  "persona": "upgrading to a bigger car"
  },
  {
   "_key": "t121",
@@ -1570,7 +1810,9 @@
    "lien_still_on_title__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "minivan",
+  "persona": "new parent"
  },
  {
   "_key": "t122",
@@ -1583,7 +1825,9 @@
    "non_running_cars__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "convertible",
+  "persona": "going down to one car"
  },
  {
   "_key": "t123",
@@ -1596,7 +1840,9 @@
    "electronic_titles__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "cargo van",
+  "persona": "long-distance commuter"
  },
  {
   "_key": "t124",
@@ -1609,7 +1855,9 @@
    "lender_overpayment_refund__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "minivan",
+  "persona": "new parent"
  },
  {
   "_key": "t125",
@@ -1622,7 +1870,9 @@
    "leased_car__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "pickup truck",
+  "persona": "small-business owner"
  },
  {
   "_key": "t126",
@@ -1635,7 +1885,9 @@
    "duplicate_title_dunmore__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "hatchback",
+  "persona": "long-distance commuter"
  },
  {
   "_key": "t127",
@@ -1648,7 +1900,9 @@
    "offer_validity__2022"
   ],
   "agent_error": true,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "full-size SUV",
+  "persona": "long-distance commuter"
  },
  {
   "_key": "t128",
@@ -1661,7 +1915,9 @@
    "modified_cars__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "compact sedan",
+  "persona": "new parent"
  },
  {
   "_key": "t129",
@@ -1674,7 +1930,9 @@
    "lender_overpayment_refund__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "minivan",
+  "persona": "going down to one car"
  },
  {
   "_key": "t130",
@@ -1687,7 +1945,9 @@
    "what_changes_offer__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "electric car",
+  "persona": "new parent"
  },
  {
   "_key": "t131",
@@ -1700,7 +1960,9 @@
    "lessor_buyouts__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "hatchback",
+  "persona": "veteran"
  },
  {
   "_key": "t132",
@@ -1713,7 +1975,9 @@
    "branded_title__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "pickup truck",
+  "persona": "college student"
  },
  {
   "_key": "t133",
@@ -1726,7 +1990,9 @@
    "divorce_ex_on_title__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "cargo van",
+  "persona": "just moved to the area"
  },
  {
   "_key": "t134",
@@ -1739,7 +2005,9 @@
    "lien_still_on_title__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "full-size SUV",
+  "persona": "retiree"
  },
  {
   "_key": "t135",
@@ -1752,7 +2020,9 @@
    "inherited_car__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "hybrid sedan",
+  "persona": "upgrading to a bigger car"
  },
  {
   "_key": "t136",
@@ -1765,7 +2035,9 @@
    "what_changes_offer__2022"
   ],
   "agent_error": true,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "hatchback",
+  "persona": "college student"
  },
  {
   "_key": "t137",
@@ -1778,7 +2050,9 @@
    "registration_expired__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "convertible",
+  "persona": "veteran"
  },
  {
   "_key": "t138",
@@ -1791,7 +2065,9 @@
    "duplicate_title_brevin__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "electric car",
+  "persona": "relocating for a new job"
  },
  {
   "_key": "t139",
@@ -1804,7 +2080,9 @@
    "lease_vs_turn_in__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "minivan",
+  "persona": "small-business owner"
  },
  {
   "_key": "t140",
@@ -1817,7 +2095,9 @@
    "duplicate_title_aldora__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "cargo van",
+  "persona": "just moved to the area"
  },
  {
   "_key": "t141",
@@ -1830,7 +2110,9 @@
    "duplicate_title_dunmore__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "convertible",
+  "persona": "retiree"
  },
  {
   "_key": "t142",
@@ -1843,7 +2125,9 @@
    "odometer_problems__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "electric car",
+  "persona": "relocating for a new job"
  },
  {
   "_key": "t143",
@@ -1856,7 +2140,9 @@
    "lessor_buyouts__2022"
   ],
   "agent_error": true,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "cargo van",
+  "persona": "college student"
  },
  {
   "_key": "t144",
@@ -1869,7 +2155,9 @@
    "lost_title__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "station wagon",
+  "persona": "veteran"
  },
  {
   "_key": "t145",
@@ -1882,7 +2170,9 @@
    "branded_title__2026"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "minivan",
+  "persona": "just moved to the area"
  },
  {
   "_key": "t146",
@@ -1895,7 +2185,9 @@
    "lease_equity__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "convertible",
+  "persona": "college student"
  },
  {
   "_key": "t147",
@@ -1908,7 +2200,9 @@
    "non_running_cars__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "midsize SUV",
+  "persona": "upgrading to a bigger car"
  },
  {
   "_key": "t148",
@@ -1921,7 +2215,9 @@
    "what_changes_offer__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "midsize SUV",
+  "persona": "relocating for a new job"
  },
  {
   "_key": "t149",
@@ -1934,7 +2230,9 @@
    "modified_cars__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "station wagon",
+  "persona": "going down to one car"
  },
  {
   "_key": "t150",
@@ -1947,7 +2245,9 @@
    "cancel_insurance__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "convertible",
+  "persona": "retiree"
  },
  {
   "_key": "t151",
@@ -1960,7 +2260,9 @@
    "buy_title_outside_lender__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "midsize SUV",
+  "persona": "small-business owner"
  },
  {
   "_key": "t152",
@@ -1973,7 +2275,9 @@
    "duplicate_title_brevin__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "full-size SUV",
+  "persona": "new parent"
  },
  {
   "_key": "t153",
@@ -1986,7 +2290,9 @@
    "lien_still_on_title__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "midsize SUV",
+  "persona": "going down to one car"
  },
  {
   "_key": "t154",
@@ -1999,7 +2305,9 @@
    "how_selling_works__2022"
   ],
   "agent_error": true,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "minivan",
+  "persona": "relocating for a new job"
  },
  {
   "_key": "t155",
@@ -2012,7 +2320,9 @@
    "returns__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "full-size SUV",
+  "persona": "veteran"
  },
  {
   "_key": "t156",
@@ -2025,7 +2335,9 @@
    "divorce_ex_on_title__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "full-size SUV",
+  "persona": "relocating for a new job"
  },
  {
   "_key": "t157",
@@ -2038,7 +2350,9 @@
    "modified_cars__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "compact sedan",
+  "persona": "relocating for a new job"
  },
  {
   "_key": "t158",
@@ -2051,7 +2365,9 @@
    "electronic_titles__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "minivan",
+  "persona": "grad student"
  },
  {
   "_key": "t159",
@@ -2064,7 +2380,9 @@
    "lien_still_on_title__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "full-size SUV",
+  "persona": "long-distance commuter"
  },
  {
   "_key": "t160",
@@ -2077,7 +2395,9 @@
    "epayoff_network__2026"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "hybrid sedan",
+  "persona": "veteran"
  },
  {
   "_key": "t161",
@@ -2090,7 +2410,9 @@
    "license_plates__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "pickup truck",
+  "persona": "long-distance commuter"
  },
  {
   "_key": "t162",
@@ -2103,7 +2425,9 @@
    "negative_equity__2026"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "minivan",
+  "persona": "retiree"
  },
  {
   "_key": "t163",
@@ -2116,7 +2440,9 @@
    "license_plates__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "electric car",
+  "persona": "going down to one car"
  },
  {
   "_key": "t164",
@@ -2129,7 +2455,9 @@
    "co_owners__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "full-size SUV",
+  "persona": "new parent"
  },
  {
   "_key": "t165",
@@ -2142,7 +2470,9 @@
    "walk_in_quotes__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "coupe",
+  "persona": "grad student"
  },
  {
   "_key": "t166",
@@ -2155,7 +2485,9 @@
    "co_owners__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "convertible",
+  "persona": "college student"
  },
  {
   "_key": "t167",
@@ -2168,7 +2500,9 @@
    "walk_in_quotes__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "coupe",
+  "persona": "veteran"
  },
  {
   "_key": "t168",
@@ -2181,7 +2515,9 @@
    "duplicate_title_eastvale__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "cargo van",
+  "persona": "new parent"
  },
  {
   "_key": "t169",
@@ -2194,7 +2530,9 @@
    "lender_overpayment_refund__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "midsize SUV",
+  "persona": "veteran"
  },
  {
   "_key": "t170",
@@ -2207,7 +2545,9 @@
    "co_owners__2026"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "cargo van",
+  "persona": "new parent"
  },
  {
   "_key": "t171",
@@ -2220,7 +2560,9 @@
    "appointment_checklist__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "coupe",
+  "persona": "relocating for a new job"
  },
  {
   "_key": "t172",
@@ -2233,7 +2575,9 @@
    "leased_car__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "pickup truck",
+  "persona": "nurse who works night shifts"
  },
  {
   "_key": "t173",
@@ -2246,7 +2590,9 @@
    "electronic_titles__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "midsize SUV",
+  "persona": "new parent"
  },
  {
   "_key": "t174",
@@ -2259,7 +2605,9 @@
    "duplicate_title_brevin__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "electric car",
+  "persona": "new parent"
  },
  {
   "_key": "t175",
@@ -2272,7 +2620,9 @@
    "duplicate_title_dunmore__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "compact sedan",
+  "persona": "nurse who works night shifts"
  },
  {
   "_key": "t176",
@@ -2285,7 +2635,9 @@
    "registration_expired__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "cargo van",
+  "persona": "going down to one car"
  },
  {
   "_key": "t177",
@@ -2298,7 +2650,9 @@
    "duplicate_title_eastvale__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "station wagon",
+  "persona": "long-distance commuter"
  },
  {
   "_key": "t178",
@@ -2311,7 +2665,9 @@
    "cancel_insurance__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "hatchback",
+  "persona": "just moved to the area"
  },
  {
   "_key": "t179",
@@ -2324,7 +2680,9 @@
    "returns__2022"
   ],
   "agent_error": true,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "electric car",
+  "persona": "veteran"
  },
  {
   "_key": "t180",
@@ -2337,7 +2695,9 @@
    "lien_still_on_title__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "station wagon",
+  "persona": "nurse who works night shifts"
  },
  {
   "_key": "t181",
@@ -2350,7 +2710,9 @@
    "toll_tags_personal_data__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "electric car",
+  "persona": "new parent"
  },
  {
   "_key": "t182",
@@ -2363,7 +2725,9 @@
    "non_running_cars__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "midsize SUV",
+  "persona": "veteran"
  },
  {
   "_key": "t183",
@@ -2376,7 +2740,9 @@
    "negative_equity__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "coupe",
+  "persona": "nurse who works night shifts"
  },
  {
   "_key": "t184",
@@ -2389,7 +2755,9 @@
    "offer_validity__2026"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "convertible",
+  "persona": "upgrading to a bigger car"
  },
  {
   "_key": "t185",
@@ -2402,7 +2770,9 @@
    "duplicate_title_eastvale__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "full-size SUV",
+  "persona": "upgrading to a bigger car"
  },
  {
   "_key": "t186",
@@ -2415,7 +2785,9 @@
    "license_plates__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "compact sedan",
+  "persona": "upgrading to a bigger car"
  },
  {
   "_key": "t187",
@@ -2428,7 +2800,9 @@
    "keep_paying_until_confirmed__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "pickup truck",
+  "persona": "new parent"
  },
  {
   "_key": "t188",
@@ -2441,7 +2815,9 @@
    "duplicate_title_brevin__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "electric car",
+  "persona": "upgrading to a bigger car"
  },
  {
   "_key": "t189",
@@ -2454,7 +2830,9 @@
    "non_running_cars__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "full-size SUV",
+  "persona": "long-distance commuter"
  },
  {
   "_key": "t190",
@@ -2467,7 +2845,9 @@
    "open_recalls__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "hatchback",
+  "persona": "new parent"
  },
  {
   "_key": "t191",
@@ -2480,7 +2860,9 @@
    "duplicate_title_eastvale__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "electric car",
+  "persona": "veteran"
  },
  {
   "_key": "t192",
@@ -2493,7 +2875,9 @@
    "lender_overpayment_refund__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "compact sedan",
+  "persona": "upgrading to a bigger car"
  },
  {
   "_key": "t193",
@@ -2506,7 +2890,9 @@
    "walk_in_quotes__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "hybrid sedan",
+  "persona": "going down to one car"
  },
  {
   "_key": "t194",
@@ -2519,7 +2905,9 @@
    "lessor_buyouts__2022"
   ],
   "agent_error": false,
-  "outdated": true
+  "outdated": true,
+  "vehicle": "midsize SUV",
+  "persona": "just moved to the area"
  },
  {
   "_key": "t195",
@@ -2532,7 +2920,9 @@
    "electronic_titles__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "full-size SUV",
+  "persona": "retiree"
  },
  {
   "_key": "t196",
@@ -2545,7 +2935,9 @@
    "odometer_problems__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "station wagon",
+  "persona": "retiree"
  },
  {
   "_key": "t197",
@@ -2558,7 +2950,9 @@
    "open_recalls__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "midsize SUV",
+  "persona": "small-business owner"
  },
  {
   "_key": "t198",
@@ -2571,7 +2965,9 @@
    "duplicate_title_brevin__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "pickup truck",
+  "persona": "nurse who works night shifts"
  },
  {
   "_key": "t199",
@@ -2584,7 +2980,9 @@
    "leased_car__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "hybrid sedan",
+  "persona": "long-distance commuter"
  },
  {
   "_key": "t200",
@@ -2597,6 +2995,8 @@
    "leased_car__2022"
   ],
   "agent_error": false,
-  "outdated": false
+  "outdated": false,
+  "vehicle": "station wagon",
+  "persona": "nurse who works night shifts"
  }
 ]

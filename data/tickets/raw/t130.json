@@ -1,0 +1,10 @@
+{
+ "customer": "Caller, a new parent selling their electric car, rambled a bit about sleepless nights before asking whether the offer could drop at the appraisal since they think one key fob went missing during the move and they've added some miles since getting the online quote.",
+ "agent": "Customer asked what could change their offer at the appraisal; walked them through the article What can change your offer at the appraisal. Explained the offer is confirmed unless something wasn't mentioned online, and that a missing key or remote takes $150 off for each missing key, while mileage more than 300 miles above what they entered can also lower the offer. Let them know the specialist will show the reason for any change before they decide, and they can always say no and keep the car.",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2J3BAnzPhUze8pRZdTp",
+ "usage": {
+  "input": 823,
+  "output": 226
+ }
+}

@@ -17,7 +17,10 @@ How we measure the pipeline, how to run the checks, and when the agent has to st
 - every `NW-` code in a text exists in `forms`; every retired code cited by a current article is a listed known issue
 - every state, lender and lessor named in the data exists
 - gold: every `gold_keys` / `trap_keys` entry exists; every question has a type, `answer_facts` (except unanswerable ones) and a valid `as_of`; 8 questions per type
-- tickets: each cites an article version that was in effect on the ticket's date
+- tickets: each cites an article version that was in effect on the ticket's date (except the 8 planned agent mistakes, which cite the superseded version); `outdated` agrees with the dates
+- tickets, faithfulness: every number and form code in an agent reply appears in its cited article or in the customer's message (whole-number match)
+- tickets, variety: no two customer messages share 50% or more of their word 4-grams
+- `make test-checks` injects 7 known faults into a copy of the data; all must be caught
 - counts: 68 article versions, 15 forms, 5 states, 12 lenders, 6 lessors, 25 stores, 56 gold questions
 
 ## Gold set

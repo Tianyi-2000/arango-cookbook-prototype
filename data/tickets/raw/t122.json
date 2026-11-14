@@ -1,0 +1,10 @@
+{
+ "customer": "hey so were downsizing to just one car and i want to sell my convertable. problem is it wont start anymore, been sitting in the garage for months. can i still bring it in or what do i do?",
+ "agent": "Thanks for reaching out, and sorry to hear the convertible won't start. As explained in our article \"Selling a car that doesn't run,\" we don't buy cars that don't run or can't be driven safely to a store. Since it won't start, a local salvage buyer may be a better option for you.",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2Hzz1mXL7Q3n9iuoFGM",
+ "usage": {
+  "input": 708,
+  "output": 165
+ }
+}

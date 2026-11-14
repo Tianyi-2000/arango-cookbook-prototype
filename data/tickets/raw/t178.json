@@ -1,0 +1,10 @@
+{
+ "customer": "Selling my hatchback to you soon, just moved here. When can I drop the insurance on it?",
+ "agent": "Per our article \"When to cancel your insurance,\" keep the car insured until the sale is complete and the car is in our hands, including on the day of a home pickup. Cancel your policy, or remove the car from it, only after you sign the paperwork. You can ask your insurer about a refund for the unused part of your premium. Before handing it over, please also remove toll tags and personal data like garage codes and paired phones.",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2JGtqAfyqZQ7CM4WECm",
+ "usage": {
+  "input": 782,
+  "output": 174
+ }
+}

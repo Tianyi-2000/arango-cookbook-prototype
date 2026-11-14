@@ -1,0 +1,10 @@
+{
+ "customer": "So I picked up this cargo van from Northwind a few days ago, thinking it'd be perfect for hauling my stuff between campus and home here in Dunmore, plus maybe helping friends move for some extra cash, but honestly now that I've had it parked outside my apartment I'm realizing it's way too big for the student lot and I'm kind of panicking about it. I've only really driven it home and to the grocery store once, so it's basically exactly how it was when I got it. Is there any way I can return it, and if so what do I need to do?",
+ "agent": "Thanks for reaching out, and no need to panic. Under our policy, Returning a car you bought from us, you can return a vehicle within 7 days of delivery and before it's been driven 250 miles for a full refund, as long as it's in the same condition as when you received it. You can start the return online or at any of our stores.",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2Hm7oBUCj2EpTgeS259",
+ "usage": {
+  "input": 723,
+  "output": 282
+ }
+}

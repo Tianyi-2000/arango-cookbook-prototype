@@ -1,0 +1,10 @@
+{
+ "customer": "Hello, I'm hoping to sell my minivan before I finish my grad program, and I put in an aftermarket stereo system last year. Would that help my offer at all, or should I take it out first? Thank you for your help!",
+ "agent": "Thanks for reaching out! As our article \"Cars with aftermarket modifications\" explains, aftermarket modifications rarely add value, and some can lower the offer because we may need to return the car to factory condition. If you'd like to keep your custom stereo, please remove it before the appraisal. And if any modification does change your offer, the specialist will show you why.",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2HUrj8wcjt6MNErpRnF",
+ "usage": {
+  "input": 776,
+  "output": 197
+ }
+}

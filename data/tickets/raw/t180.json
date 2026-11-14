@@ -1,0 +1,10 @@
+{
+ "customer": "Hi there, I finished paying off the loan on my station wagon a little while ago, but the title still shows the bank as the lienholder. I'm hoping to sell the car to Northwind, and since I work night shifts it's hard for me to catch the lender during business hours. Is there anything I can do in the meantime?",
+ "agent": "Thanks for reaching out! When the title still lists your lender after a payoff, it means the lien hasn't been released yet, so the first step is to ask your lender for a lien release letter. If you're not able to get one, you can sign our lien release request, form NW-LRL-1, and we'll contact the lender for you, though this can add 1 to 2 weeks. We can still make you an offer and book your appointment while you wait, and if Eastvale uses electronic titles, the lender sends the release to the state electronically.",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2JHXr8WavhkHwZNiHQu",
+ "usage": {
+  "input": 814,
+  "output": 274
+ }
+}

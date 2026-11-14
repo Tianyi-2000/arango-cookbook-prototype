@@ -1,0 +1,10 @@
+{
+ "customer": "Caller (retired, selling his full-size SUV, in Corlan) said he paid off his loan last year but the titel still shows the bank as lienholder and he wants to know if he can still sell.",
+ "agent": "Customer asked why the lender is still on his title after payoff; explained per 'My loan is paid off but the lien is still on the title' that the lien hasn't been released yet and he should ask his lender for a lien release letter. Advised that if he can't get one, he can sign form NW-LRL-1 and we'll contact the lender for him, which can add 1 to 2 weeks. Let him know we can still make an offer and book his appointment while he waits, and that in states with electronic titles the lender sends the release to the state electronically.",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2J47W3tXD2kVgbbc4Ua",
+ "usage": {
+  "input": 811,
+  "output": 241
+ }
+}

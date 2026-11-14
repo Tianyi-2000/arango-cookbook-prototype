@@ -1,0 +1,10 @@
+{
+ "customer": "Lost the title to my station wagon, which I use for my shop. I'm in Corlan and want to sell it to you. What do I do?",
+ "agent": "In Corlan you'll need a duplicate paper title. The duplicate title application must be signed by every owner on the title and notarized, then mailed or taken to a Corlan motor vehicle office. Duplicates take 2 to 3 weeks, but you can get an offer and book an appointment with us while you wait. If any owner can't sign, see our article When more than one person owns the car.",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011Ch2JS72duyeVaMX3tfWWA",
+ "usage": {
+  "input": 776,
+  "output": 177
+ }
+}
