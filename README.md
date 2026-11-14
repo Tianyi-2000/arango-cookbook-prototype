@@ -18,6 +18,16 @@ The knowledge base belongs to **Northwind Auto, a fictional used-car retailer**.
 | 5 | Extras: geo, shortest-path explanations, text-to-AQL | |
 | 6 | Fresh-clone test, final README | |
 
+## Project docs (read these first)
+| File | What |
+|---|---|
+| [stage.md](stage.md) | stages, done criteria, scope |
+| [progress.md](progress.md) | detailed work log |
+| [architecture.md](architecture.md) | the design, by version |
+| [decisions.md](decisions.md) | why we chose what we chose |
+| [issues.md](issues.md) | what broke and how it was fixed |
+| [eval.md](eval.md) | metrics, checks, regression rule |
+
 ## Quickstart (environment check only, for now)
 ```bash
 docker compose up -d                                 # ArangoDB 3.12.13 on localhost:8535
