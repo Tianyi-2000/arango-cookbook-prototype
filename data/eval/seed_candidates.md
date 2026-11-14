@@ -32,7 +32,7 @@ Mark each candidate: `Your call: keep / edit / drop`.
 - Must-include: `NW-LSE-1`
 - What makes it hard: the two codes differ by two letters and both "let Northwind get a payoff number". `text_en` breaks the codes into tokens, and embeddings blur them together. Lease versus loan is the only real difference.
 - Tricky: `messy_input`
-- Why I picked it: it shows why codes get their own exact-match field (see NOTES.md), and it's an entity trap: payoff letter (loan) versus dealer payoff quote (lease).
+- Why I picked it: it shows why codes get their own exact-match field (see issues.md, I-002), and it's an entity trap: payoff letter (loan) versus dealer payoff quote (lease).
 - Your call:
 
 ---
