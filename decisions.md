@@ -101,3 +101,8 @@ Key choices and why we made them: the "why" only. What changed is in [progress.m
 - **Why:** the tickets aren't gold, but they're part of the corpus every method searches, so duplicates or invented facts would distort the evaluation.
 - **Cost:** the first batch ($1.46) was replaced. Total spent on tickets is about $3.10 (batch 1 $1.46, batch 2 $1.57, 4 regenerations and 2 single tests about $0.07). The dry-run estimate ($2.68 per batch) was too high, because output was ~230 tokens per ticket, not 600.
 - **Decided by:** Claude, inside the budget Tianyi chose ($1–3), ending slightly above it
+
+### D-022 · 2026-11-13 · Vague questions: grade what the message says; clarify later
+- **What:** vague questions join the gold set in three cases: missing term, ambiguous, and wrong term (eval.md). Ambiguous ones list every plausible article as gold, and any one counts. When the customer uses the wrong term, the message's literal meaning is the ground truth. Clarifying follow-ups ("Did you mean…?") are planned for stage 5, not built now.
+- **Why:** real traffic is vague; a gold set of precise questions overstates every method. But the system can't be blamed for answering what was literally asked, so wrong-term messages are graded on their words.
+- **Decided by:** Tianyi

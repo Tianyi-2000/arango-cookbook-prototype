@@ -4,6 +4,11 @@ A detailed log, newest first. Add an entry after every working session or run: *
 
 ---
 
+## 2026-11-13 · Vague questions documented (D-022)
+- **Did:** recorded Tianyi's request to add vague questions before the freeze, in three cases (missing term, ambiguous, wrong term), with scoring rules in `eval.md`. Rule: wrong-term messages are graded on what they say. Clarifying follow-ups ("Did you mean…?") added to stage 5 as a plan, not built. Reminder added to the review sheet.
+
+---
+
 ## 2026-11-13 · Reminder added: human-style and off-topic questions
 - **Did:** recorded Tianyi's request as stage-2 done criteria before the freeze: (1) rewrite some gold questions the way people really type (typos, grammar errors, run-ons), and (2) add meaningless or off-topic messages that the assistant should skip, not answer. Added a "to add before the freeze" section to `eval.md` with the two ways to model them, and a reminder box at the top of `data/eval/gold_review.md`.
 - **Stuck / waiting:** Tianyi's review, which now includes these two items.

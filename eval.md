@@ -47,6 +47,19 @@ Real chat traffic includes messages that aren't questions about the KB: gibberis
 - Modeling options, decided when Tianyi adds them: (a) a new type `off_topic` with `answerable: "skip"`, or (b) type `unanswerable` with a new tricky tag `noise`. Either way: no gold articles, no retrieval metrics. The answer eval checks that the reply declines and cites nothing.
 - Why it matters for retrieval: every method returns *something* for any input. The cookbook can show a simple guard, such as a minimum score or "no gold-like hit", and measure how often nonsense gets a confident answer.
 
+### Vague questions (to add before the freeze)
+Customers often don't know the right term, or write something that can mean more than one thing. Three cases, each scored differently:
+
+| Case | Example | Gold | A good answer |
+|---|---|---|---|
+| **A. Missing the term, one meaning** | "the paper that says the car is mine" (= title); "the bank still kinda owns part of it" (= lien) | the one article, as usual (tag `vague`) | answers it, using the right term |
+| **B. Ambiguous, more than one reasonable reading** | "can I return my car?" (a return of a car bought from Northwind, a lease turn-in, or a sale) | every plausible article; `require_all: false`, so finding any one counts. Recall@k also reports how many of the readings were found | covers the readings briefly, or says which detail decides it |
+| **C. The customer says the wrong thing** | says "my lease" but has a loan | the article for **what the message says** | answers what was asked |
+
+**Rule for case C: we grade against what the message says, not what the customer meant.** If the words point to the wrong topic, a wrong answer is the input's fault, not the system's.
+
+**Later (stage 5, not now):** for case B, ask a clarifying question ("Did you mean returning a car you bought, or ending your lease?") instead of guessing. That needs its own metric: asks when the top candidates span different topics, and doesn't ask when the question is clear.
+
 ### Human-style wording
 Most draft questions are cleaner than real messages. Before the freeze, some get rewritten with typos, broken grammar and run-ons (tag `messy_input`). This mostly hurts BM25 (misspelled tokens don't match) and is where fuzzy matching (`LEVENSHTEIN_MATCH`, n-gram analyzers) earns its place.
 

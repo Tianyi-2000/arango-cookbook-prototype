@@ -54,6 +54,7 @@ def main() -> None:
            "> [!todo] Before the freeze: make it sound like real people",
            "> - Rewrite some questions the way people really type: misspellings, broken grammar, run-on sentences, no punctuation, two questions in one.",
            "> - Add a few meaningless or off-topic messages (\"asdf??\", \"whats the weather\", a half-typed line). The right behavior is to skip them: no answer from the KB, just ask to rephrase.",
+           "> - Add a few vague ones: missing the term (\"the paper that says the car is mine\"), ambiguous (\"can I return my car?\"), or the wrong term. Scoring rules: eval.md, Vague questions.",
            "> - Tell Claude in shorthand, e.g. `q12 edit: \"my car dont start no more can u still buy it\"`, or `add off-topic: \"lol ok\"`.",
            ""]
     for t in TYPES:
