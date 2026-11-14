@@ -50,6 +50,11 @@ def main() -> None:
            "",
            "For each draft: would a real customer send it? Is the perfect answer right? Do you agree with what makes it hard? "
            "Mark keep / edit / drop. After your review the gold set is frozen.",
+           "",
+           "> [!todo] Before the freeze: make it sound like real people",
+           "> - Rewrite some questions the way people really type: misspellings, broken grammar, run-on sentences, no punctuation, two questions in one.",
+           "> - Add a few meaningless or off-topic messages (\"asdf??\", \"whats the weather\", a half-typed line). The right behavior is to skip them: no answer from the KB, just ask to rephrase.",
+           "> - Tell Claude in shorthand, e.g. `q12 edit: \"my car dont start no more can u still buy it\"`, or `add off-topic: \"lol ok\"`.",
            ""]
     for t in TYPES:
         qs = [q for q in drafts if q["type"] == t]

@@ -42,6 +42,14 @@ Two dates per question:
 
 Each question also has `trap_keys` (articles that look right but aren't) and `tricky` tags (`time_boundary`, `rule_conflict`, `messy_input`, `messy_kb`). The gold set is frozen (commit + sha256 in `data/eval/FROZEN`) before any method runs. After that, data, questions and parameters don't change to make a pattern appear.
 
+### Off-topic and nonsense questions (to add before the freeze)
+Real chat traffic includes messages that aren't questions about the KB: gibberish, small talk, half-typed lines. For these the assistant should **skip**: it shouldn't answer from whatever article happens to rank first, and it should ask the user to rephrase or say what it can help with.
+- Modeling options, decided when Tianyi adds them: (a) a new type `off_topic` with `answerable: "skip"`, or (b) type `unanswerable` with a new tricky tag `noise`. Either way: no gold articles, no retrieval metrics. The answer eval checks that the reply declines and cites nothing.
+- Why it matters for retrieval: every method returns *something* for any input. The cookbook can show a simple guard, such as a minimum score or "no gold-like hit", and measure how often nonsense gets a confident answer.
+
+### Human-style wording
+Most draft questions are cleaner than real messages. Before the freeze, some get rewritten with typos, broken grammar and run-ons (tag `messy_input`). This mostly hurts BM25 (misspelled tokens don't match) and is where fuzzy matching (`LEVENSHTEIN_MATCH`, n-gram analyzers) earns its place.
+
 ## Retrieval metrics (stage 3+)
 Computed over the top-k articles a method returns, per question, then averaged by question type × method.
 

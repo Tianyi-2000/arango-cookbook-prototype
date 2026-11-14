@@ -4,6 +4,12 @@ A detailed log, newest first. Add an entry after every working session or run: *
 
 ---
 
+## 2026-11-13 · Reminder added: human-style and off-topic questions
+- **Did:** recorded Tianyi's request as stage-2 done criteria before the freeze: (1) rewrite some gold questions the way people really type (typos, grammar errors, run-ons), and (2) add meaningless or off-topic messages that the assistant should skip, not answer. Added a "to add before the freeze" section to `eval.md` with the two ways to model them, and a reminder box at the top of `data/eval/gold_review.md`.
+- **Stuck / waiting:** Tianyi's review, which now includes these two items.
+
+---
+
 ## 2026-11-13 · First pushed to GitHub (private)
 - **Did:** archived the first ticket batch as evidence (`data/tickets/archive/`), added before/after samples to I-015 and I-017, removed a real company name from the seed notes and personal context from two docs, created the private GitHub repo and pushed `main`.
 - **Why:** Tianyi asked to push the current progress.
