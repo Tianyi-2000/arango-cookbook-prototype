@@ -50,6 +50,19 @@ Problems we hit and how we fixed them. Each entry: symptom → root cause → fi
 - **Fix:** delete and recreate `.venv`, then reinstall from `requirements.txt` (about a minute with the pip cache). The Docker volume survived, because the folder name, and so the compose project name, didn't change.
 - **Verified:** `scripts/verify_env.py` prints OK from the new location (2026-11-13).
 
+### I-009 · The data check let an anachronistic link through
+- **Symptom:** a mutation test added a link from `selling_with_loan__2022` (unchanged since 2022) to `epayoff_network` (new in 2026), and `make check` still passed.
+- **Root cause:** the check asked whether the two articles' effective periods *overlap*. An unchanged 2022 article is still in effect in 2026, so it overlaps everything. But its text was written in 2022 and can't mention a 2026 article.
+- **Fix:** a version's links and form codes must exist **on the day the version took effect**. A retired form is allowed only when the same text names its replacement (for example "NW-ODO-2 replaced NW-ODO-1").
+- **Verified:** `make test-checks` catches all 5 injected faults; `make check` passes on the real data.
+- **Lesson:** "valid at some point" isn't the same as "valid when it was written". Time-versioned data needs the second rule.
+
+### I-010 · The first mutation test never applied its mutations
+- **Symptom:** all 5 injected faults reported MISSED, including overlapping versions, which the checker clearly catches when run directly.
+- **Root cause:** the loop copied the data but never called the mutation function on the copy.
+- **Fix:** call `mut(tmp)` before running the checker. The harness now lives in `scripts/test_check_data.py` (`make test-checks`) and exits non-zero if any fault is missed.
+- **Lesson:** a test of the tests needs at least one case known to fail. "Everything missed" is just as suspicious as "everything passed".
+
 ---
 
 ## Checked and fine

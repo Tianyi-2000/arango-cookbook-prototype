@@ -1,0 +1,572 @@
+[
+ {
+  "_key": "aldora_01",
+  "name": "Northwind Aldora City",
+  "city": "Aldora City",
+  "state": "aldora",
+  "location": {
+   "type": "Point",
+   "coordinates": [
+    -97.4262,
+    41.2646
+   ]
+  },
+  "hours": {
+   "mon_fri": "09:00-20:00",
+   "sat": "09:00-18:00",
+   "sun": "11:00-17:00"
+  },
+  "services": [
+   "appraisal",
+   "lease_buyout",
+   "home_pickup",
+   "towing_non_running"
+  ]
+ },
+ {
+  "_key": "aldora_02",
+  "name": "Northwind Fenwick",
+  "city": "Fenwick",
+  "state": "aldora",
+  "location": {
+   "type": "Point",
+   "coordinates": [
+    -97.51,
+    41.0806
+   ]
+  },
+  "hours": {
+   "mon_fri": "09:00-20:00",
+   "sat": "09:00-18:00",
+   "sun": "closed"
+  },
+  "services": [
+   "appraisal",
+   "lease_buyout",
+   "home_pickup"
+  ]
+ },
+ {
+  "_key": "aldora_03",
+  "name": "Northwind Marrow Falls",
+  "city": "Marrow Falls",
+  "state": "aldora",
+  "location": {
+   "type": "Point",
+   "coordinates": [
+    -95.6156,
+    40.5228
+   ]
+  },
+  "hours": {
+   "mon_fri": "09:00-20:00",
+   "sat": "09:00-18:00",
+   "sun": "closed"
+  },
+  "services": [
+   "appraisal",
+   "lease_buyout",
+   "home_pickup"
+  ]
+ },
+ {
+  "_key": "aldora_04",
+  "name": "Northwind Quillton",
+  "city": "Quillton",
+  "state": "aldora",
+  "location": {
+   "type": "Point",
+   "coordinates": [
+    -96.215,
+    41.014
+   ]
+  },
+  "hours": {
+   "mon_fri": "09:00-20:00",
+   "sat": "09:00-18:00",
+   "sun": "closed"
+  },
+  "services": [
+   "appraisal",
+   "home_pickup",
+   "towing_non_running"
+  ]
+ },
+ {
+  "_key": "aldora_05",
+  "name": "Northwind Saltmeadow",
+  "city": "Saltmeadow",
+  "state": "aldora",
+  "location": {
+   "type": "Point",
+   "coordinates": [
+    -96.9049,
+    40.5597
+   ]
+  },
+  "hours": {
+   "mon_fri": "09:00-20:00",
+   "sat": "09:00-18:00",
+   "sun": "closed"
+  },
+  "services": [
+   "appraisal",
+   "home_pickup"
+  ]
+ },
+ {
+  "_key": "brevin_01",
+  "name": "Northwind Brevin Heights",
+  "city": "Brevin Heights",
+  "state": "brevin",
+  "location": {
+   "type": "Point",
+   "coordinates": [
+    -94.8663,
+    39.7469
+   ]
+  },
+  "hours": {
+   "mon_fri": "09:00-20:00",
+   "sat": "09:00-18:00",
+   "sun": "11:00-17:00"
+  },
+  "services": [
+   "appraisal",
+   "lease_buyout",
+   "home_pickup",
+   "towing_non_running"
+  ]
+ },
+ {
+  "_key": "brevin_02",
+  "name": "Northwind Calder",
+  "city": "Calder",
+  "state": "brevin",
+  "location": {
+   "type": "Point",
+   "coordinates": [
+    -95.1493,
+    38.8073
+   ]
+  },
+  "hours": {
+   "mon_fri": "09:00-20:00",
+   "sat": "09:00-18:00",
+   "sun": "closed"
+  },
+  "services": [
+   "appraisal",
+   "lease_buyout",
+   "home_pickup"
+  ]
+ },
+ {
+  "_key": "brevin_03",
+  "name": "Northwind Holloway",
+  "city": "Holloway",
+  "state": "brevin",
+  "location": {
+   "type": "Point",
+   "coordinates": [
+    -94.546,
+    39.754
+   ]
+  },
+  "hours": {
+   "mon_fri": "09:00-20:00",
+   "sat": "09:00-18:00",
+   "sun": "closed"
+  },
+  "services": [
+   "appraisal",
+   "lease_buyout",
+   "home_pickup"
+  ]
+ },
+ {
+  "_key": "brevin_04",
+  "name": "Northwind Linden Cross",
+  "city": "Linden Cross",
+  "state": "brevin",
+  "location": {
+   "type": "Point",
+   "coordinates": [
+    -93.6224,
+    39.1394
+   ]
+  },
+  "hours": {
+   "mon_fri": "09:00-20:00",
+   "sat": "09:00-18:00",
+   "sun": "closed"
+  },
+  "services": [
+   "appraisal",
+   "home_pickup",
+   "towing_non_running"
+  ]
+ },
+ {
+  "_key": "brevin_05",
+  "name": "Northwind Port Ashby",
+  "city": "Port Ashby",
+  "state": "brevin",
+  "location": {
+   "type": "Point",
+   "coordinates": [
+    -93.5493,
+    39.2183
+   ]
+  },
+  "hours": {
+   "mon_fri": "09:00-20:00",
+   "sat": "09:00-18:00",
+   "sun": "closed"
+  },
+  "services": [
+   "appraisal",
+   "home_pickup"
+  ]
+ },
+ {
+  "_key": "corlan_01",
+  "name": "Northwind Corlan Bay",
+  "city": "Corlan Bay",
+  "state": "corlan",
+  "location": {
+   "type": "Point",
+   "coordinates": [
+    -91.6829,
+    42.0736
+   ]
+  },
+  "hours": {
+   "mon_fri": "09:00-20:00",
+   "sat": "09:00-18:00",
+   "sun": "11:00-17:00"
+  },
+  "services": [
+   "appraisal",
+   "lease_buyout",
+   "home_pickup",
+   "towing_non_running"
+  ]
+ },
+ {
+  "_key": "corlan_02",
+  "name": "Northwind Elmstead",
+  "city": "Elmstead",
+  "state": "corlan",
+  "location": {
+   "type": "Point",
+   "coordinates": [
+    -91.665,
+    42.8314
+   ]
+  },
+  "hours": {
+   "mon_fri": "09:00-20:00",
+   "sat": "09:00-18:00",
+   "sun": "closed"
+  },
+  "services": [
+   "appraisal",
+   "lease_buyout",
+   "home_pickup"
+  ]
+ },
+ {
+  "_key": "corlan_03",
+  "name": "Northwind Grayridge",
+  "city": "Grayridge",
+  "state": "corlan",
+  "location": {
+   "type": "Point",
+   "coordinates": [
+    -92.0735,
+    42.8438
+   ]
+  },
+  "hours": {
+   "mon_fri": "09:00-20:00",
+   "sat": "09:00-18:00",
+   "sun": "closed"
+  },
+  "services": [
+   "appraisal",
+   "lease_buyout",
+   "home_pickup"
+  ]
+ },
+ {
+  "_key": "corlan_04",
+  "name": "Northwind Northam",
+  "city": "Northam",
+  "state": "corlan",
+  "location": {
+   "type": "Point",
+   "coordinates": [
+    -92.3622,
+    42.9955
+   ]
+  },
+  "hours": {
+   "mon_fri": "09:00-20:00",
+   "sat": "09:00-18:00",
+   "sun": "closed"
+  },
+  "services": [
+   "appraisal",
+   "home_pickup",
+   "towing_non_running"
+  ]
+ },
+ {
+  "_key": "corlan_05",
+  "name": "Northwind Tamsin",
+  "city": "Tamsin",
+  "state": "corlan",
+  "location": {
+   "type": "Point",
+   "coordinates": [
+    -91.1166,
+    43.2795
+   ]
+  },
+  "hours": {
+   "mon_fri": "09:00-20:00",
+   "sat": "09:00-18:00",
+   "sun": "closed"
+  },
+  "services": [
+   "appraisal",
+   "home_pickup"
+  ]
+ },
+ {
+  "_key": "dunmore_01",
+  "name": "Northwind Dunmore",
+  "city": "Dunmore",
+  "state": "dunmore",
+  "location": {
+   "type": "Point",
+   "coordinates": [
+    -91.3458,
+    40.2311
+   ]
+  },
+  "hours": {
+   "mon_fri": "09:00-20:00",
+   "sat": "09:00-18:00",
+   "sun": "11:00-17:00"
+  },
+  "services": [
+   "appraisal",
+   "lease_buyout",
+   "towing_non_running"
+  ]
+ },
+ {
+  "_key": "dunmore_02",
+  "name": "Northwind Ferris Point",
+  "city": "Ferris Point",
+  "state": "dunmore",
+  "location": {
+   "type": "Point",
+   "coordinates": [
+    -89.5562,
+    39.6328
+   ]
+  },
+  "hours": {
+   "mon_fri": "09:00-20:00",
+   "sat": "09:00-18:00",
+   "sun": "closed"
+  },
+  "services": [
+   "appraisal",
+   "lease_buyout"
+  ]
+ },
+ {
+  "_key": "dunmore_03",
+  "name": "Northwind Kestrel",
+  "city": "Kestrel",
+  "state": "dunmore",
+  "location": {
+   "type": "Point",
+   "coordinates": [
+    -91.2066,
+    40.2085
+   ]
+  },
+  "hours": {
+   "mon_fri": "09:00-20:00",
+   "sat": "09:00-18:00",
+   "sun": "closed"
+  },
+  "services": [
+   "appraisal",
+   "lease_buyout"
+  ]
+ },
+ {
+  "_key": "dunmore_04",
+  "name": "Northwind Oakhurst",
+  "city": "Oakhurst",
+  "state": "dunmore",
+  "location": {
+   "type": "Point",
+   "coordinates": [
+    -89.3264,
+    39.9012
+   ]
+  },
+  "hours": {
+   "mon_fri": "09:00-20:00",
+   "sat": "09:00-18:00",
+   "sun": "closed"
+  },
+  "services": [
+   "appraisal",
+   "towing_non_running"
+  ]
+ },
+ {
+  "_key": "dunmore_05",
+  "name": "Northwind Ravensby",
+  "city": "Ravensby",
+  "state": "dunmore",
+  "location": {
+   "type": "Point",
+   "coordinates": [
+    -89.1014,
+    39.6717
+   ]
+  },
+  "hours": {
+   "mon_fri": "09:00-20:00",
+   "sat": "09:00-18:00",
+   "sun": "closed"
+  },
+  "services": [
+   "appraisal"
+  ]
+ },
+ {
+  "_key": "eastvale_01",
+  "name": "Northwind Eastvale",
+  "city": "Eastvale",
+  "state": "eastvale",
+  "location": {
+   "type": "Point",
+   "coordinates": [
+    -97.6361,
+    38.5604
+   ]
+  },
+  "hours": {
+   "mon_fri": "09:00-20:00",
+   "sat": "09:00-18:00",
+   "sun": "11:00-17:00"
+  },
+  "services": [
+   "appraisal",
+   "lease_buyout",
+   "home_pickup",
+   "towing_non_running"
+  ]
+ },
+ {
+  "_key": "eastvale_02",
+  "name": "Northwind Bramford",
+  "city": "Bramford",
+  "state": "eastvale",
+  "location": {
+   "type": "Point",
+   "coordinates": [
+    -97.9138,
+    38.5194
+   ]
+  },
+  "hours": {
+   "mon_fri": "09:00-20:00",
+   "sat": "09:00-18:00",
+   "sun": "closed"
+  },
+  "services": [
+   "appraisal",
+   "lease_buyout",
+   "home_pickup"
+  ]
+ },
+ {
+  "_key": "eastvale_03",
+  "name": "Northwind Cinder Lake",
+  "city": "Cinder Lake",
+  "state": "eastvale",
+  "location": {
+   "type": "Point",
+   "coordinates": [
+    -97.3178,
+    38.7172
+   ]
+  },
+  "hours": {
+   "mon_fri": "09:00-20:00",
+   "sat": "09:00-18:00",
+   "sun": "closed"
+  },
+  "services": [
+   "appraisal",
+   "lease_buyout",
+   "home_pickup"
+  ]
+ },
+ {
+  "_key": "eastvale_04",
+  "name": "Northwind Moss Hollow",
+  "city": "Moss Hollow",
+  "state": "eastvale",
+  "location": {
+   "type": "Point",
+   "coordinates": [
+    -96.7012,
+    38.9362
+   ]
+  },
+  "hours": {
+   "mon_fri": "09:00-20:00",
+   "sat": "09:00-18:00",
+   "sun": "closed"
+  },
+  "services": [
+   "appraisal",
+   "home_pickup",
+   "towing_non_running"
+  ]
+ },
+ {
+  "_key": "eastvale_05",
+  "name": "Northwind Westmere",
+  "city": "Westmere",
+  "state": "eastvale",
+  "location": {
+   "type": "Point",
+   "coordinates": [
+    -97.2777,
+    37.612
+   ]
+  },
+  "hours": {
+   "mon_fri": "09:00-20:00",
+   "sat": "09:00-18:00",
+   "sun": "closed"
+  },
+  "services": [
+   "appraisal",
+   "home_pickup"
+  ]
+ }
+]

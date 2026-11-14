@@ -1,0 +1,8 @@
+[
+  {"_key": "harbor_leasing", "name": "Harbor Leasing", "third_party_buyout": [{"from": "2022-01-01", "to": null, "allowed": "no"}], "buyout_fee": [], "equity": "n/a (no third-party buyouts)"},
+  {"_key": "summit_auto_lease", "name": "Summit Auto Lease", "third_party_buyout": [{"from": "2022-01-01", "to": null, "allowed": "yes"}], "buyout_fee": [], "equity": "to customer"},
+  {"_key": "crescent_motor_credit", "name": "Crescent Motor Credit", "third_party_buyout": [{"from": "2022-01-01", "to": "2026-01-31", "allowed": "no"}, {"from": "2026-02-01", "to": null, "allowed": "yes"}], "buyout_fee": [], "equity": "to customer"},
+  {"_key": "apex_lease", "name": "Apex Lease Co", "third_party_buyout": [{"from": "2022-01-01", "to": null, "allowed": "yes"}], "buyout_fee": [{"from": "2026-02-01", "to": null, "usd": 350}], "equity": "to customer"},
+  {"_key": "bluewater_leasing", "name": "Bluewater Leasing", "third_party_buyout": [{"from": "2022-01-01", "to": null, "allowed": "only_if_buying_from_northwind"}], "buyout_fee": [], "equity": "applied to the Northwind purchase"},
+  {"_key": "ironwood_lease", "name": "Ironwood Lease", "third_party_buyout": [{"from": "2022-01-01", "to": null, "allowed": "no"}], "buyout_fee": [], "equity": "n/a (no third-party buyouts)"}
+]

@@ -1,0 +1,14 @@
+[
+  {"_key": "bayline_cu", "name": "Bayline Credit Union", "kind": "credit_union", "epayoff_network": true, "joined_network": "2026-02-01"},
+  {"_key": "northwind_finance", "name": "Northwind Auto Finance", "kind": "captive", "epayoff_network": true, "joined_network": "2026-02-01"},
+  {"_key": "meridian_auto", "name": "Meridian Auto Loans", "kind": "finance_company", "epayoff_network": true, "joined_network": "2026-02-01"},
+  {"_key": "pinewood_fcu", "name": "Pinewood Federal Credit Union", "kind": "credit_union", "epayoff_network": true, "joined_network": "2026-02-01"},
+  {"_key": "lakeshore_bank", "name": "Lakeshore Bank", "kind": "bank", "epayoff_network": true, "joined_network": "2026-02-01"},
+  {"_key": "granite_bank", "name": "Granite Bank", "kind": "bank", "epayoff_network": true, "joined_network": "2026-03-15"},
+  {"_key": "redstone_credit", "name": "Redstone Credit", "kind": "finance_company", "epayoff_network": false, "joined_network": null},
+  {"_key": "coastal_cu", "name": "Coastal Credit Union", "kind": "credit_union", "epayoff_network": false, "joined_network": null},
+  {"_key": "oakline_finance", "name": "Oakline Finance", "kind": "finance_company", "epayoff_network": false, "joined_network": null},
+  {"_key": "valley_motor_credit", "name": "Valley Motor Credit", "kind": "finance_company", "epayoff_network": false, "joined_network": null},
+  {"_key": "harbor_trust_bank", "name": "Harbor Trust Bank", "kind": "bank", "epayoff_network": false, "joined_network": null, "note": "Name is close to Harbor Leasing on purpose."},
+  {"_key": "summit_peak_bank", "name": "Summit Peak Bank", "kind": "bank", "epayoff_network": false, "joined_network": null, "note": "Name is close to Summit Auto Lease on purpose."}
+]

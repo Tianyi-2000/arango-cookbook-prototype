@@ -1,0 +1,23 @@
+[
+  {"_key": "buy_title_northwind_finance__2022", "doc_id": "buy_title_northwind_finance", "version": "2022", "kind": "unchanged", "effective_from": "2022-01-01", "effective_to": null, "states": [], "side": "buy", "section": "buying_side",
+   "title": "When will I get my title? (financed with Northwind)",
+   "text": "If you bought a car and financed it with Northwind Auto Finance, we hold the title as the lienholder until the loan is paid in full. After your final payment we release the lien and mail you the title within 10 business days. In states with [electronic titles](kb:electronic_titles), we send the release to the state instead."},
+  {"_key": "buy_title_outside_lender__2022", "doc_id": "buy_title_outside_lender", "version": "2022", "kind": "unchanged", "effective_from": "2022-01-01", "effective_to": null, "states": [], "side": "buy", "section": "buying_side",
+   "title": "When will I get my title? (outside lender)",
+   "text": "If you bought a car from us and financed it through your own bank or credit union, we send the title paperwork to your lender, not to you. Your lender holds the title until the loan is paid off, then releases the lien and sends you the title. Ask your lender about timing; Northwind no longer has the title."},
+  {"_key": "returns__2022", "doc_id": "returns", "version": "2022", "kind": "rewritten", "effective_from": "2022-01-01", "effective_to": "2026-01-31", "states": [], "side": "buy", "section": "buying_side",
+   "title": "Returning a car you bought from us",
+   "text": "You can return a car you bought from us within 7 days of delivery and before you drive it 250 miles, for a full refund. The car must be in the same condition as when you got it. Start a return online or at any store."},
+  {"_key": "returns__2026", "doc_id": "returns", "version": "2026", "kind": "rewritten", "effective_from": "2026-02-01", "effective_to": null, "states": [], "side": "buy", "section": "buying_side",
+   "title": "Returning a car you bought from us",
+   "text": "You can return a car you bought from us within 30 days of delivery and before you drive it 1,500 miles, for a full refund. The car must be in the same condition as when you got it. Start a return online or at any store. Cars bought before February 1, 2026 keep the 7-day return window they were sold with."},
+  {"_key": "trade_in_vs_sell__2022", "doc_id": "trade_in_vs_sell", "version": "2022", "kind": "rewritten", "effective_from": "2022-01-01", "effective_to": "2026-01-31", "states": [], "side": "buy", "section": "buying_side",
+   "title": "Trading in vs. selling outright",
+   "text": "If you buy a car from us and trade in your current car in the same deal, all the states we serve charge sales tax only on the difference between the two prices. This is the trade-in tax credit. Selling outright and buying separately doesn't get the credit. The offer for your car is the same either way ([Do I have to buy a car to sell one?](kb:selling_without_buying)). Use the trade-in tax credit worksheet, form NW-TRD-1, to compare."},
+  {"_key": "trade_in_vs_sell__2026", "doc_id": "trade_in_vs_sell", "version": "2026", "kind": "rewritten", "effective_from": "2026-02-01", "effective_to": null, "states": [], "side": "buy", "section": "buying_side",
+   "title": "Trading in vs. selling outright",
+   "text": "If you buy a car from us and trade in your current car in the same deal, the states we serve charge sales tax only on the difference between the two prices. This is the trade-in tax credit. Since February 1, 2026, Dunmore caps the credit at $5,000 of trade-in value. Selling outright and buying separately doesn't get the credit. The offer for your car is the same either way ([Do I have to buy a car to sell one?](kb:selling_without_buying)). Use the trade-in tax credit worksheet, form NW-TRD-1, to compare."},
+  {"_key": "buy_temp_plates__2022", "doc_id": "buy_temp_plates", "version": "2022", "kind": "unchanged", "effective_from": "2022-01-01", "effective_to": null, "states": [], "side": "buy", "section": "buying_side",
+   "title": "Temporary plates on a car you bought",
+   "text": "A car you buy from us leaves with temporary plates that are valid for 60 days while the state issues your permanent plates and registration. If they haven't arrived 10 days before the temporary plates expire, contact us and we follow up with the state."}
+]

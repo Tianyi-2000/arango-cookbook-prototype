@@ -1,0 +1,8 @@
+[
+  {"id": "KI-1", "type": "retired_form_cited", "article": "selling_for_someone_else__2022", "code": "NW-POA-1",
+   "note": "Unchanged since 2022, still tells readers to use the retired NW-POA-1. Left in on purpose: a graph query finds current articles that point at retired forms."},
+  {"id": "KI-2", "type": "retired_form_cited", "article": "odometer_problems__2022", "code": "NW-ODO-1",
+   "note": "Unchanged since 2022, still names the retired NW-ODO-1. Left in on purpose."},
+  {"id": "KI-3", "type": "broken_link", "article": "toll_tags_personal_data__2022", "target": "account_deletion",
+   "note": "Links to an article that doesn't exist. Left in on purpose."}
+]
