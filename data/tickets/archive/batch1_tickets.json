@@ -1,0 +1,3002 @@
+[
+ {
+  "_key": "t001",
+  "created_at": "2022-10-30",
+  "channel": "phone_note",
+  "style": "brief",
+  "state": "brevin",
+  "topic": "getting_paid",
+  "cites": [
+   "getting_paid__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Caller sold car with a loan on it, wants to know when they get paid and if they still owe payments.",
+  "agent": "Customer asked about payment timing after selling a financed car. Explained per 'When and how you get paid' that once paperwork is signed, the payoff goes to the lender within 2 business days and the customer receives the leftover amount by bank draft at the store, direct deposit (1 to 3 business days), or mailed check (5 to 7 business days). Advised customer to keep making loan payments until the lender confirms the payoff."
+ },
+ {
+  "_key": "t002",
+  "created_at": "2025-07-13",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "eastvale",
+  "topic": "modified_cars",
+  "cites": [
+   "modified_cars__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Seriously? I put thousands into a lift kit and a tuned engine on my truck and your offer came in LOWER than my buddy's stock one got. How does that even make sense? I also have a really nice custom stereo in there I don't want to just hand over.",
+  "agent": "I understand the frustration, especially after investing so much in your truck. As our article \"Cars with aftermarket modifications\" explains, things like lift kits, engine tuning, loud exhausts and custom paint rarely add value and usually lower the offer, because we may need to return the car to factory condition. If you'd like to keep your custom stereo, please remove it before the appraisal. And if a modification changes your offer, the specialist will show you exactly why."
+ },
+ {
+  "_key": "t003",
+  "created_at": "2026-04-05",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "dunmore",
+  "topic": "out_of_state",
+  "cites": [
+   "out_of_state__2022"
+  ],
+  "agent_error": true,
+  "outdated": true,
+  "customer": "I moved to Dunmore last year but my car is still registered back in my old state, and now I'm being told that's a problem for selling it? Do you actually buy cars like mine or am I wasting my time driving over there?",
+  "agent": "I'm sorry for the confusion, and you're not wasting your time. Per our guide \"Selling a car registered in another state,\" we buy cars registered in any state we serve, even if you now live in a different one. Just bring the registration from the state that issued it. If the title has been lost, the duplicate rules of the state that issued it would apply."
+ },
+ {
+  "_key": "t004",
+  "created_at": "2023-07-05",
+  "channel": "chat",
+  "style": "typos",
+  "state": "aldora",
+  "topic": "appointment_checklist",
+  "cites": [
+   "appointment_checklist__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "hi im coming in for my trade in apraisal on friday, what do i need to bring?? i still owe money on the car so i dont have the title, is that a problem",
+  "agent": "No problem at all! Per our article \"What to bring to your appraisal appointment,\" since you still have a loan, bring your payoff letter instead of the title, along with a valid photo ID for every owner listed on the title, the current registration, and all keys and remotes. You'll also need the odometer statement, form NW-ODO-1, which you can fill in at the store if you don't have it yet. Plan for the appointment to take about an hour."
+ },
+ {
+  "_key": "t005",
+  "created_at": "2024-09-06",
+  "channel": "phone_note",
+  "style": "polite",
+  "state": "corlan",
+  "topic": "appointment_checklist",
+  "cites": [
+   "appointment_checklist__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Caller politely asked what documents and items she needs to bring to her upcoming appraisal appointment, mentioning she still has a loan on the car.",
+  "agent": "Customer asked what to bring to her appraisal appointment; walked her through the article \"What to bring to your appraisal appointment.\" Advised her to bring a valid photo ID for every owner listed on the title, the current registration, all keys and remotes, and the odometer statement (form NW-ODO-1), which she can also fill in at the store. Since she still has a loan, told her to bring her payoff letter instead of the title. Let her know to plan for about an hour."
+ },
+ {
+  "_key": "t006",
+  "created_at": "2023-05-05",
+  "channel": "chat",
+  "style": "typos",
+  "state": "dunmore",
+  "topic": "inherited_car",
+  "cites": [
+   "inherited_car__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "hi my dad passed away last month and i want to sell his car to you guys, what do i need to bring? also i had power of atorney for him before he died, does that work? theres also my brother and sister so not sure who has to sign",
+  "agent": "I'm very sorry for your loss. Per our article \"Selling a car you inherited,\" you'll need to bring the death certificate along with the court letters naming the executor or administrator of the estate (letters testamentary or letters of administration). Unfortunately, a power of attorney signed by your father is no longer valid after his passing. Since there are several heirs, the executor is the one who signs for the sale."
+ },
+ {
+  "_key": "t007",
+  "created_at": "2026-05-06",
+  "channel": "chat",
+  "style": "typos",
+  "state": "aldora",
+  "topic": "lessor_buyouts",
+  "cites": [
+   "lessor_buyouts__2026"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "hey so my lease is thru Apex Lease Co and im thinkin about selling the car to you guys insted of turning it in. is that even allowd?? and is ther any extra cost",
+  "agent": "Good news: Apex Lease Co does allow us to buy out your lease. Since February 1, 2026, though, Apex adds a $350 third-party buyout fee to the buyout amount, so keep that in mind when comparing your options. If you'd prefer, you can also buy the car out yourself first and then sell it to us, or return it at the end of the lease."
+ },
+ {
+  "_key": "t008",
+  "created_at": "2025-04-15",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "eastvale",
+  "topic": "license_plates",
+  "cites": [
+   "license_plates__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hi, so I'm selling my old hatchback to you guys this weekend, finally, it's been sitting in the driveway forever, and my brother-in-law says I should leave the plates on but my neighbor says take them off, and honestly I have no idea who's right. I'm here in Eastvale if that matters. Also I might be getting another car soon so I don't know if I can use them on that?",
+  "agent": "Thanks for reaching out! Per our article \"What to do with your license plates,\" please remove your plates before you hand over the car and keep them. What happens to them after that is up to your state's motor vehicle agency, so it's worth checking with Eastvale's agency, though you can usually transfer them to your next car."
+ },
+ {
+  "_key": "t009",
+  "created_at": "2023-11-23",
+  "channel": "email",
+  "style": "typos",
+  "state": "dunmore",
+  "topic": "branded_title",
+  "cites": [
+   "branded_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "hi, i wanted to sell my 2014 civic to you guys but my title says rebuilt on it bc it was in a wreck a few yrs ago. its runs totaly fine now, can you still give me an offer??",
+  "agent": "Thanks for reaching out about your Civic. As explained in our article \"Salvage and rebuilt titles,\" a branded title shows that a car was declared a total loss and possibly rebuilt afterward. Northwind doesn't buy cars with salvage, rebuilt or flood titles, so unfortunately we're unable to make an offer on a car with a rebuilt title. We're sorry we can't help with this one."
+ },
+ {
+  "_key": "t010",
+  "created_at": "2024-07-12",
+  "channel": "phone_note",
+  "style": "frustrated",
+  "state": "dunmore",
+  "topic": "cancel_insurance",
+  "cites": [
+   "cancel_insurance__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Caller was annoyed that she has to keep paying insurance on a car she's already selling to Northwind and wanted to cancel the policy today, ahead of Friday's home pickup.",
+  "agent": "Customer asked whether she could cancel her insurance before the home pickup. Explained per 'When to cancel your insurance' that the car must stay insured until the sale is complete and the car is in our hands, including on pickup day, and that she should cancel or remove the car from her policy only after signing the paperwork. Suggested she ask her insurer about a refund for the unused part of her premium. Also reminded her to remove toll tags and personal data before handing over the car."
+ },
+ {
+  "_key": "t011",
+  "created_at": "2022-10-25",
+  "channel": "phone_note",
+  "style": "frustrated",
+  "state": "dunmore",
+  "topic": "lease_equity",
+  "cites": [
+   "lease_equity__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Caller from Dunmore, frustrated, said Northwind's offer on his leased car is higher than his buyout and he wants to know why he can't just get the extra money in cash, since his lease is with Bluewater Leasing.",
+  "agent": "Customer asked about the lease equity on his Bluewater Leasing vehicle, since our offer is above his buyout amount. Explained per 'If our offer is more than your lease buyout' that who receives the equity depends on the leasing company, and Bluewater Leasing applies it to the car purchased from Northwind rather than paying it out. Noted that Summit Auto Lease, Crescent Motor Credit and Apex Lease Co are the ones that pass equity directly to the customer. Customer was unhappy but understood the policy comes from his leasing company."
+ },
+ {
+  "_key": "t012",
+  "created_at": "2024-05-24",
+  "channel": "chat",
+  "style": "polite",
+  "state": "eastvale",
+  "topic": "title_name_mismatch",
+  "cites": [
+   "title_name_mismatch__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi there, I'm planning to sell my car to Northwind Auto, but I got married last year and the title still has my maiden name while my driver's license shows my new name. Will that be a problem? Thank you so much for your help!",
+  "agent": "Congratulations, and thanks for checking ahead! As our article \"The name on the title doesn't match my ID\" explains, this is common after marriage. Please bring your marriage certificate to your appointment so we can see the name change. You'll also sign the name change affidavit, form NW-NMC-1, while you're there."
+ },
+ {
+  "_key": "t013",
+  "created_at": "2024-11-06",
+  "channel": "phone_note",
+  "style": "frustrated",
+  "state": "brevin",
+  "topic": "lessor_buyouts",
+  "cites": [
+   "lessor_buyouts__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Caller from Brevin was upset that Northwind can't just buy out his Crescent Motor Credit lease and wanted to know why he's stuck.",
+  "agent": "Customer asked why we couldn't buy out his lease directly; explained per 'Which leasing companies allow third-party buyouts' that Crescent Motor Credit does not allow third-party buyouts. Told him his options are to buy the car out himself first and then sell it to us, or return it at the end of the lease. Customer was frustrated but said he'd consider buying it out himself and coming back to us."
+ },
+ {
+  "_key": "t014",
+  "created_at": "2026-06-16",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "aldora",
+  "topic": "divorce_ex_on_title",
+  "cites": [
+   "divorce_ex_on_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Seriously, I'm trying to sell my car and now I'm being told my ex has to sign too?? We've been divorced for over a year and I really don't want to have to track them down for this.",
+  "agent": "I'm sorry this is such a hassle. Per our article \"My ex is still on the title,\" if your ex-spouse is still listed on the title, they do need to sign, the same as any co-owner. However, if your divorce decree awards the car to you, just bring a certified copy of the decree and your ex's signature won't be needed. Also, if your name changed in the divorce, let me know and I can point you to the guidance for that as well."
+ },
+ {
+  "_key": "t015",
+  "created_at": "2026-03-09",
+  "channel": "chat",
+  "style": "polite",
+  "state": "brevin",
+  "topic": "modified_cars",
+  "cites": [
+   "modified_cars__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi there! I'm thinking of selling my truck to you, but I've added a lift kit and a pretty nice aftermarket sound system over the years. Will those help my offer at all? Thanks so much for your help.",
+  "agent": "Thanks for reaching out! As explained in our article \"Cars with aftermarket modifications,\" modifications rarely add value, and things like lift kits usually lower the offer because we may need to return the car to factory condition. If you'd like to keep your sound system, please remove it before the appraisal. If a modification does change your offer, the specialist will show you why."
+ },
+ {
+  "_key": "t016",
+  "created_at": "2022-11-05",
+  "channel": "chat",
+  "style": "polite",
+  "state": "eastvale",
+  "topic": "modified_cars",
+  "cites": [
+   "modified_cars__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi there, I'm thinking of selling my truck to you, but it has a lift kit and an upgraded sound system I put in a couple of years ago. Will those help my offer at all? Thanks so much for your help!",
+  "agent": "Thanks for reaching out! As explained in our article \"Cars with aftermarket modifications,\" changes like lift kits rarely add value and usually lower the offer, since we may need to return the vehicle to factory condition. If there's anything you'd like to keep, such as your custom stereo, please remove it before the appraisal. And if a modification does change your offer, the specialist will show you why."
+ },
+ {
+  "_key": "t017",
+  "created_at": "2023-07-28",
+  "channel": "email",
+  "style": "typos",
+  "state": "eastvale",
+  "topic": "lien_still_on_title",
+  "cites": [
+   "lien_still_on_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi, i finaly paid off my car loan last month but the title still says the bank is the lienholder?? I want to sell the car to you guys, is that gonna be a problem. Not sure what im supposed to do here",
+  "agent": "Thanks for reaching out, and congrats on paying off your loan! If the title still lists your lender as lienholder, the lien just hasn't been released yet, so the first step is to ask your lender for a lien release letter. If you can't get one, you can sign our lien release request, form NW-LRL-1, and we'll contact the lender for you, though this can add 1 to 2 weeks. In the meantime, we can still make you an offer and book your appointment while you wait."
+ },
+ {
+  "_key": "t018",
+  "created_at": "2026-08-24",
+  "channel": "email",
+  "style": "polite",
+  "state": "dunmore",
+  "topic": "negative_equity",
+  "cites": [
+   "negative_equity__2022"
+  ],
+  "agent_error": true,
+  "outdated": true,
+  "customer": "Hello, I'm hoping to sell my car to you, but I think I still owe a bit more on my loan than the offer I received. Is it still possible to go ahead with the sale, and if so, how would I handle the extra amount? Thank you so much for your help.",
+  "agent": "Thank you for reaching out! Yes, you can still sell us your car even if your loan balance is higher than our offer — this is often called negative equity or being upside down, as explained in our article \"If you owe more than our offer.\" You would pay the difference at your appointment once we've compared the offer with your loan payoff amount. For that payment we accept a cashier's check, a debit card or a personal check, but please note we can't accept credit cards."
+ },
+ {
+  "_key": "t019",
+  "created_at": "2023-04-19",
+  "channel": "chat",
+  "style": "brief",
+  "state": "brevin",
+  "topic": "flood_damage",
+  "cites": [
+   "flood_damage__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Do you buy cars with flood damage? Mine had some water in it last year.",
+  "agent": "Per our Flood-damaged cars article, cars with flood damage or a flood brand on the title count as branded, and we don't buy them. If water ever got into the cabin or the engine, please let us know when you request an offer."
+ },
+ {
+  "_key": "t020",
+  "created_at": "2025-11-02",
+  "channel": "phone_note",
+  "style": "frustrated",
+  "state": "dunmore",
+  "topic": "selling_with_loan",
+  "cites": [
+   "selling_with_loan__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Caller in Dunmore, frustrated: wants to sell his car but still owes on the loan, can't find the title anywhere, and is worried he'll have to order a duplicate before he can sell.",
+  "agent": "Customer called upset about a missing title on a car he is still paying off. Explained per 'Selling a car you are still paying off' that we can buy a car with an open loan, and that the lender holds the title or electronic title record, so he doesn't need the title in hand or a duplicate. Told him that at the appointment we confirm what he owes and pay the lender off directly from our offer, and that if the offer is more than the payoff, he gets the difference. Customer calmed down and plans to book an appointment."
+ },
+ {
+  "_key": "t021",
+  "created_at": "2024-03-07",
+  "channel": "chat",
+  "style": "polite",
+  "state": "dunmore",
+  "topic": "title_name_mismatch",
+  "cites": [
+   "title_name_mismatch__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi there, I got married last year and my driver's license has my new last name, but the car title still shows my maiden name. Will that be a problem when I come in to sell my car? Thank you so much for your help!",
+  "agent": "Congratulations, and thanks for checking ahead of time! When the name on the title doesn't match your photo ID after a marriage, please bring your marriage certificate to your appointment so we can see the name change. You'll also sign the name change affidavit, form NW-NMC-1, while you're here. If you notice any spelling mistake on the title itself, you'd need to have your state's motor vehicle agency correct that first."
+ },
+ {
+  "_key": "t022",
+  "created_at": "2025-01-11",
+  "channel": "chat",
+  "style": "polite",
+  "state": "eastvale",
+  "topic": "out_of_state",
+  "cites": [
+   "out_of_state__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hi there, I recently moved and my car is still registered in my old state, but I'm living in Eastvale now. Would you still be able to buy it from me? Thanks so much for your help!",
+  "agent": "Thanks for reaching out! Yes, we buy cars registered in any state we serve, even if you now live in a different one. Just bring the registration from the state that issued it. If the title happens to be lost, the duplicate rules of the issuing state would apply."
+ },
+ {
+  "_key": "t023",
+  "created_at": "2025-11-19",
+  "channel": "phone_note",
+  "style": "typos",
+  "state": "dunmore",
+  "topic": "selling_without_buying",
+  "cites": [
+   "selling_without_buying__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Caller from Dunmore said she wants to sell her car to us but isnt looking to buy one, asked if thats even alowed or if the offer is lower that way.",
+  "agent": "Customer asked whether she has to buy a car in order to sell hers to us. Explained per 'Do I have to buy a car to sell one?' that she can sell without buying from us and the offer is the same either way. Also mentioned that if she later decides to buy, the sale can be used as a trade-in on her purchase, and that sales tax can differ in that case."
+ },
+ {
+  "_key": "t024",
+  "created_at": "2026-09-18",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "corlan",
+  "topic": "cancel_insurance",
+  "cites": [
+   "cancel_insurance__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "I'm selling my car to you guys and I'm paying for insurance on a car I basically don't own anymore. Why can't I just cancel it now? Pickup isn't until next week and this is costing me money.",
+  "agent": "I understand the frustration of paying for coverage while you wait. Per our guidance in \"When to cancel your insurance,\" please keep the car insured until the sale is complete and the car is in our hands, including on the day of your home pickup. Once you've signed the paperwork, you can cancel the policy or remove the car from it, and we recommend asking your insurer about a refund for the unused part of your premium. Before handing over the car, please also remove any toll tags and personal data."
+ },
+ {
+  "_key": "t025",
+  "created_at": "2024-09-13",
+  "channel": "chat",
+  "style": "polite",
+  "state": "dunmore",
+  "topic": "title_name_mismatch",
+  "cites": [
+   "title_name_mismatch__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi there, I recently got married and my driver's license now has my new last name, but the car title still shows my maiden name. Will that be a problem when I come in to sell my car? Thank you so much for your help!",
+  "agent": "Congratulations, and thanks for checking ahead! As explained in our article \"The name on the title doesn't match my ID,\" please bring your marriage certificate to your appointment, since it shows the name change. You'll also sign the name change affidavit, form NW-NMC-1, while you're with us."
+ },
+ {
+  "_key": "t026",
+  "created_at": "2022-07-10",
+  "channel": "phone_note",
+  "style": "typos",
+  "state": "aldora",
+  "topic": "negative_equity",
+  "cites": [
+   "negative_equity__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Caller said she still owes more on her car loan then what Northwind offerd and wanted to know if she can still sell it and if she can pay the diffrence with her credit card.",
+  "agent": "Customer asked about selling her car while owing more on the loan than our offer. Explained per 'If you owe more than our offer' that this is called negative equity (being upside down) and she can still sell to us, paying the difference at the appointment after we compare the offer with her loan details. Advised we accept a cashier's check, a debit card or a personal check for that payment, but cannot accept credit cards."
+ },
+ {
+  "_key": "t027",
+  "created_at": "2023-04-03",
+  "channel": "chat",
+  "style": "polite",
+  "state": "aldora",
+  "topic": "open_recalls",
+  "cites": [
+   "open_recalls__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi there, I'm hoping to sell my car to you, but I just got a letter saying it has an open safety recall. Will you still take it, and would that lower what you'd pay me? Thanks so much for your help!",
+  "agent": "Thanks for reaching out! Yes, we buy cars with open safety recalls, and an open recall doesn't change your offer. Recall repairs are free at a dealer for your car's brand, so you're welcome to have it fixed before selling if you'd like, but you don't have to."
+ },
+ {
+  "_key": "t028",
+  "created_at": "2022-09-05",
+  "channel": "email",
+  "style": "brief",
+  "state": "eastvale",
+  "topic": "appointment_checklist",
+  "cites": [
+   "appointment_checklist__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hi, I have an appraisal appointment coming up. What should I bring with me? I still owe money on the car, if that matters.",
+  "agent": "Thanks for reaching out! Per our guide \"What to bring to your appraisal appointment,\" please bring a valid photo ID for every owner listed on the title, the current registration, and all keys and remotes. Since you still have a loan, bring your payoff letter instead of the title, along with the odometer statement (form NW-ODO-1), which you can also fill in at the store. Plan for the appointment to take about an hour."
+ },
+ {
+  "_key": "t029",
+  "created_at": "2026-08-12",
+  "channel": "chat",
+  "style": "brief",
+  "state": "corlan",
+  "topic": "duplicate_title_corlan",
+  "cites": [
+   "duplicate_title_corlan__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Lost my car title, I'm in Corlan. Can I still sell to you?",
+  "agent": "Sorry to hear the title went missing! Per our article \"Getting a duplicate title in Corlan,\" you'll need a duplicate: the application has to be signed by every owner listed on the title and notarized, then mailed or taken to a Corlan motor vehicle office. Duplicates take 2 to 3 weeks, but you can get an offer and book an appointment with us while you wait."
+ },
+ {
+  "_key": "t030",
+  "created_at": "2025-11-29",
+  "channel": "chat",
+  "style": "brief",
+  "state": "corlan",
+  "topic": "out_of_state",
+  "cites": [
+   "out_of_state__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hi, my car's registered in another state but I live in Corlan now. Can I still sell it to you?",
+  "agent": "Yes, we buy cars registered in any state we serve, even if you now live in a different one. Just bring the registration from the state that issued it. If the title has been lost, the duplicate title rules of the issuing state apply. You can find more in our article \"Selling a car registered in another state.\""
+ },
+ {
+  "_key": "t031",
+  "created_at": "2025-11-21",
+  "channel": "email",
+  "style": "polite",
+  "state": "brevin",
+  "topic": "lost_title",
+  "cites": [
+   "lost_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hello, I'd like to sell you my car, which I paid off a couple of years ago, but I can't find the paper title anywhere. I live in Brevin. Is it still possible to sell it, and how long would I need to wait? Thank you for your help!",
+  "agent": "Thank you for reaching out, and I'm sorry to hear the title has gone missing. Because your car is fully paid off, we'll need a duplicate title from your state before we can complete the purchase. How long a duplicate takes depends on the state, so your state's title office can tell you the timing for Brevin. In the meantime, you can still get an offer from us and book an appointment while you wait."
+ },
+ {
+  "_key": "t032",
+  "created_at": "2025-03-22",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "dunmore",
+  "topic": "duplicate_title_dunmore",
+  "cites": [
+   "duplicate_title_dunmore__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "I've been tearing my house apart looking for the paper title to my car and it's nowhere. I'm supposed to sell it to you guys next week and now I'm worried the whole thing is going to fall apart. What am I supposed to do here?",
+  "agent": "I'm sorry for the stress. The good news is that Dunmore uses electronic titles, so for a sale to Northwind you usually don't need the printed copy, because we transfer the electronic title at your appointment. If you'd still like a printed duplicate for your records, you can request one online from the Dunmore motor vehicle agency, and it arrives in 5 to 7 business days. You can find more in our article \"Getting a duplicate title in Dunmore.\""
+ },
+ {
+  "_key": "t033",
+  "created_at": "2022-08-20",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "eastvale",
+  "topic": "keep_paying_until_confirmed",
+  "cites": [
+   "keep_paying_until_confirmed__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi, so I just traded in my old SUV with you guys last week and the guy at the dealership said Northwind would pay off what I still owe on it, which is great, but now my car payment is due on the 25th and I'm sitting here wondering if I should even bother paying it? Like I don't want to pay twice for a car I don't even have anymore, but I also really don't want to mess up my credit, I've been working hard on that. Sorry if this is a dumb question, I just can't tell what I'm supposed to do here.",
+  "agent": "Not a dumb question at all, and the answer is yes: please keep making your regular loan payments until your lender confirms the loan is paid off. Our payoff covers the amount your lender quoted, and if a payment is missed in the meantime, it can be reported as late on your credit history. If one of your payments ends up going through after the payoff, your lender will refund it to you, so you won't be out that money."
+ },
+ {
+  "_key": "t034",
+  "created_at": "2023-11-17",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "eastvale",
+  "topic": "lessor_buyouts",
+  "cites": [
+   "lessor_buyouts__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hi so I've got this lease through Bluewater Leasing on my SUV, and honestly I'm kind of over it, my sister said you guys sometimes buy cars straight from the leasing company? I'm here in Eastvale and I was also sort of browsing your site for something smaller, but I didn't know if the lease thing even works with Bluewater or if I'm stuck until it ends.",
+  "agent": "Thanks for reaching out! According to our article \"Which leasing companies allow third-party buyouts,\" Bluewater Leasing only allows us to buy out your lease if you also buy a car from Northwind. Since you're already looking at something smaller, that could work out nicely. If you'd rather not buy from us, you can also buy the car out yourself first and then sell it to us, or return it at the end of the lease."
+ },
+ {
+  "_key": "t035",
+  "created_at": "2026-09-08",
+  "channel": "chat",
+  "style": "brief",
+  "state": "corlan",
+  "topic": "duplicate_title_corlan",
+  "cites": [
+   "duplicate_title_corlan__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Lost my car title. I'm in Corlan and want to sell to you guys. What do I do?",
+  "agent": "Sorry to hear the title went missing! Per our article \"Getting a duplicate title in Corlan,\" you'll need to apply for a duplicate paper title: every owner listed on the title has to sign the application and have it notarized, then you can mail it or take it to a Corlan motor vehicle office. Duplicates take 2 to 3 weeks to arrive. In the meantime, you can still get an offer and book your appointment with us while you wait."
+ },
+ {
+  "_key": "t036",
+  "created_at": "2022-07-29",
+  "channel": "chat",
+  "style": "typos",
+  "state": "aldora",
+  "topic": "business_car",
+  "cites": [
+   "business_car__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "hi, my company wants to sell one of our work vans to you guys, its titled under the buisness not me. what do i need to bring?? and can the money go to my personal acount, im the one doing the paperwork lol",
+  "agent": "Thanks for reaching out! Because the van is titled to a business, the person signing must be authorized to sell company property, so please bring the business signing authority letter (form NW-BUS-1) signed by an officer of the company, along with your photo ID and the company's tax ID number (EIN). As explained in our article \"Selling a car owned by a business,\" we pay the business rather than the person who signs, so the money can't go to your personal account. Payment is made by direct deposit into the business bank account."
+ },
+ {
+  "_key": "t037",
+  "created_at": "2022-04-22",
+  "channel": "chat",
+  "style": "typos",
+  "state": "dunmore",
+  "topic": "lessor_buyouts",
+  "cites": [
+   "lessor_buyouts__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "hi so i have a lease thru Bluewater Leasing and wanted to know if you guys can buy it out from them?? trying to get out of it early lol",
+  "agent": "Thanks for reaching out! According to our article \"Which leasing companies allow third-party buyouts,\" Bluewater Leasing only allows us to buy out your lease if you also buy a car from Northwind. If you're not planning to purchase a car from us, another option is to buy the car out yourself first and then sell it to us, or you can return it at the end of the lease."
+ },
+ {
+  "_key": "t038",
+  "created_at": "2023-12-28",
+  "channel": "chat",
+  "style": "polite",
+  "state": "eastvale",
+  "topic": "title_name_mismatch",
+  "cites": [
+   "title_name_mismatch__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi there, I hope you're doing well! I got married a few months ago and my driver's license has my new last name, but the car title still shows my maiden name. Will that be a problem when I come in to sell my car?",
+  "agent": "Congratulations, and thanks for checking ahead! This is covered in our article \"The name on the title doesn't match my ID\": please bring the document that shows the change, which in your case would be your marriage certificate. You'll also sign the name change affidavit, form NW-NMC-1, at your appointment."
+ },
+ {
+  "_key": "t039",
+  "created_at": "2025-08-18",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "brevin",
+  "topic": "registration_expired",
+  "cites": [
+   "registration_expired__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Ugh, I just realized my car's registration lapsed last month and I'm supposed to come in to sell it this week. I live in Brevin. Is this going to blow up the whole sale?",
+  "agent": "I understand the frustration. It won't sink the sale, but in Brevin the registration has to be current on the day of the sale, so you'll need to renew it before your appointment. Once it's renewed, you're all set to come in as planned."
+ },
+ {
+  "_key": "t040",
+  "created_at": "2024-08-05",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "aldora",
+  "topic": "modified_cars",
+  "cites": [
+   "modified_cars__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi, so I'm thinking about selling my truck to you guys, it's got a lift kit I put on a couple years ago and also a pretty nice aftermarket stereo my brother-in-law installed, and honestly I spent a lot on all of it so I'm kind of hoping it bumps the price up? Also I'm in Aldora if that matters at all. Not sure if I should take the stereo out or just leave it, what do people usually do?",
+  "agent": "Thanks for reaching out! Per our article \"Cars with aftermarket modifications,\" modifications like lift kits rarely add value and usually lower the offer, since we may need to return the vehicle to factory condition. If there's anything you'd like to keep, like your custom stereo, please remove it before the appraisal. And if a modification does change your offer, the specialist will show you why."
+ },
+ {
+  "_key": "t041",
+  "created_at": "2025-03-25",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "aldora",
+  "topic": "keep_paying_until_confirmed",
+  "cites": [
+   "keep_paying_until_confirmed__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi so I just sold my car to you guys last week, well traded it in really, and I still had a loan on it with my bank, and now my next payment is due on Friday and I'm sitting here wondering if I'm supposed to just stop paying since you're paying it off? My sister said she kept paying hers and got money back but I don't know if that's how it works here in Aldora or what, I just don't want to throw money away or mess something up.",
+  "agent": "Great question, and yes, please keep making your regular loan payments until your lender confirms the loan is paid off. Our payoff covers the amount your lender quoted, but if a payment is missed in the meantime, it can be reported as late on your credit history. If one of your payments goes through after the payoff, your lender will refund it to you, so you won't lose that money. You can find more in our article \"Should I keep making loan payments?\""
+ },
+ {
+  "_key": "t042",
+  "created_at": "2025-10-18",
+  "channel": "phone_note",
+  "style": "polite",
+  "state": "brevin",
+  "topic": "license_plates",
+  "cites": [
+   "license_plates__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Caller politely asked what she should do with her license plates when she drops off the car she sold to Northwind Auto, and whether she can put them on her next car.",
+  "agent": "Customer asked about handling her license plates when handing over her sold car. Explained per the article \"What to do with your license plates\" that she should remove the plates before handing over the car and keep them. Let her know that what happens to them afterward is up to her state's motor vehicle agency, and that she can usually transfer them to her next car. Suggested she check with the Brevin motor vehicle agency to confirm."
+ },
+ {
+  "_key": "t043",
+  "created_at": "2022-04-11",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "brevin",
+  "topic": "divorce_ex_on_title",
+  "cites": [
+   "divorce_ex_on_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "I'm trying to sell my car to you guys and just found out my ex-husband's name is still on the title. We've been divorced for over a year and I really don't want to have to track him down for a signature. Is there any way around this?",
+  "agent": "I'm sorry for the hassle, and I understand why you'd want to avoid contacting him. Normally an ex-spouse still listed on the title has to sign, the same as any co-owner. However, if your divorce decree awards the car to you, you can bring a certified copy of the decree and his signature won't be needed. If you're not sure what your decree says about the car, it's worth checking before you come in."
+ },
+ {
+  "_key": "t044",
+  "created_at": "2023-01-23",
+  "channel": "chat",
+  "style": "typos",
+  "state": "dunmore",
+  "topic": "non_running_cars",
+  "cites": [
+   "non_running_cars__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "hi my old honda wont start anymore, been sitting in the driveway for months. can i still sell it to u guys? i dont really want to pay for a tow if u wont take it",
+  "agent": "Thanks for reaching out, and sorry to hear the Honda is giving you trouble. Per our article \"Selling a car that doesn't run,\" we don't buy cars that don't run or can't be driven safely to a store, so we wouldn't be able to purchase it in its current condition. Since it won't start, a local salvage buyer may be a better option for you."
+ },
+ {
+  "_key": "t045",
+  "created_at": "2025-02-24",
+  "channel": "chat",
+  "style": "typos",
+  "state": "brevin",
+  "topic": "keep_paying_until_confirmed",
+  "cites": [
+   "keep_paying_until_confirmed__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "hi so i just sold my car to you guys and theres still a loan on it, do i still hav to keep paying the monthly payment?? its due friday and i dont want to pay twice lol",
+  "agent": "Yes, please keep making your regular loan payments until your lender confirms the loan is paid off. Our payoff covers the amount your lender quoted, and a missed payment in the meantime could be reported as late on your credit history. If a payment goes through after the payoff, your lender will refund it to you, so you won't end up paying twice."
+ },
+ {
+  "_key": "t046",
+  "created_at": "2024-02-03",
+  "channel": "chat",
+  "style": "polite",
+  "state": "brevin",
+  "topic": "duplicate_title_brevin",
+  "cites": [
+   "duplicate_title_brevin__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi there, I'm hoping to sell my car to you, but I've misplaced the title somewhere. I live in Brevin, so could you tell me what I'd need to do? Thanks so much for your help!",
+  "agent": "Thanks for reaching out, and no worries, this is a common situation! Per our article \"Getting a duplicate title in Brevin,\" you can request a duplicate paper title by mail or at any Brevin motor vehicle office, bringing your registration and a photo ID, and it typically takes 4 to 6 weeks to arrive. In the meantime, you're welcome to get an offer and book an appointment with us, though we can't complete the purchase until the duplicate title arrives. Just keep in mind that offers last a limited time, so you may need to get a new one once your title comes in."
+ },
+ {
+  "_key": "t047",
+  "created_at": "2024-10-13",
+  "channel": "email",
+  "style": "polite",
+  "state": "brevin",
+  "topic": "duplicate_title_brevin",
+  "cites": [
+   "duplicate_title_brevin__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hello, I'd like to sell my car to Northwind Auto, but I'm afraid I've misplaced the title. Could you tell me how I can get a replacement here in Brevin, and whether I can still move forward with selling in the meantime? Thank you so much for your help.",
+  "agent": "Thank you for reaching out. Per our guide \"Getting a duplicate title in Brevin,\" you can request a duplicate by mail or at any Brevin motor vehicle office, bringing your registration and a photo ID, and it typically takes 4 to 6 weeks to arrive. While you wait, you're welcome to get an offer and book an appointment, though we can't complete the purchase until the duplicate title arrives. Please keep in mind that offers last a limited time, so you may need a new one once your title is in hand."
+ },
+ {
+  "_key": "t048",
+  "created_at": "2025-02-12",
+  "channel": "email",
+  "style": "brief",
+  "state": "brevin",
+  "topic": "payoff_letter",
+  "cites": [
+   "payoff_letter__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hi, I'm trading in my car at my appraisal next week and still owe on it. What do I need from my lender?",
+  "agent": "Thanks for reaching out! Per our guide \"Getting a payoff letter from your lender,\" you'll need a payoff letter, which most lenders let you download from your online account, or you can call them for one. It should show your account number, the payoff amount, the date it's good through, and where to send payment. Please ask for a 10-day payoff amount, since daily interest changes the total, and bring the letter with you to your appraisal appointment."
+ },
+ {
+  "_key": "t049",
+  "created_at": "2023-06-17",
+  "channel": "chat",
+  "style": "polite",
+  "state": "corlan",
+  "topic": "appointment_checklist",
+  "cites": [
+   "appointment_checklist__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hi there, I have an appraisal appointment coming up this weekend and wanted to make sure I don't forget anything. Could you tell me what I should bring? I'm still paying off a loan on the car, if that matters. Thank you!",
+  "agent": "Thanks for checking ahead! Per our article \"What to bring to your appraisal appointment,\" please bring a valid photo ID for every owner listed on the title, the current registration, all keys and remotes, and the odometer statement (form NW-ODO-1), which you can also fill in at the store. Since you still have a loan, bring your payoff letter instead of the title. Plan for the appointment to take about an hour."
+ },
+ {
+  "_key": "t050",
+  "created_at": "2024-06-13",
+  "channel": "phone_note",
+  "style": "rambling",
+  "state": "aldora",
+  "topic": "license_plates",
+  "cites": [
+   "license_plates__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Caller rambled a bit about selling her old sedan to us next week, mentioned she's in Aldora and her brother-in-law told her something different, then asked what she's supposed to do with the license plates.",
+  "agent": "Customer asked what to do with her license plates when handing over her car. Explained per 'What to do with your license plates' that she should remove the plates before handing over the car and keep them. Let her know that what happens to them afterward is up to her state's motor vehicle agency, and that she can usually transfer them to her next car."
+ },
+ {
+  "_key": "t051",
+  "created_at": "2024-02-19",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "eastvale",
+  "topic": "selling_for_someone_else",
+  "cites": [
+   "selling_for_someone_else__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "This is the third time I'm asking. My dad is in a care home and can't come in, so how am I supposed to sell his car for him? Nobody has given me a straight answer.",
+  "agent": "I'm sorry you've been going back and forth on this, and I'm happy to clear it up. According to our article \"Selling a family member's car for them,\" you can sell your dad's car if he gives you a power of attorney. He'll need to sign form NW-POA-1 in front of a notary. Then bring the signed form, your own photo ID, and the car's documents when you come in to sell it."
+ },
+ {
+  "_key": "t052",
+  "created_at": "2023-05-18",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "eastvale",
+  "topic": "co_owners",
+  "cites": [
+   "co_owners__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "I'm trying to sell my car to you guys and now I'm being told my ex-husband has to be involved because his name is still on the title?? We barely speak and he lives two hours away. Is there seriously no way around this?",
+  "agent": "I'm sorry this is adding stress to the sale. Per our article \"When more than one person owns the car,\" it depends on how the names appear on your title: if they're joined by 'or,' only one owner needs to sign, but if they're joined by 'and,' every owner has to sign the sale documents. If his signature is required and he can't come to the appraisal appointment with his photo ID, he can sign a power of attorney, form NW-POA-1, which must be notarized. That way he wouldn't need to make the trip in person."
+ },
+ {
+  "_key": "t053",
+  "created_at": "2026-04-06",
+  "channel": "chat",
+  "style": "typos",
+  "state": "dunmore",
+  "topic": "duplicate_title_dunmore",
+  "cites": [
+   "duplicate_title_dunmore__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "hi so im selling my car to you guys next week but i cant find the title anywere, do i need to get a new one printed before my apointment?? im in dunmore",
+  "agent": "Good news: Dunmore uses electronic titles, so for a sale to Northwind you usually don't need a printed copy, because we transfer the electronic title at your appointment. If you'd still like a printed duplicate, you can request one online from the Dunmore motor vehicle agency, and it arrives in 5 to 7 business days. You can find more details in our article \"Getting a duplicate title in Dunmore.\""
+ },
+ {
+  "_key": "t054",
+  "created_at": "2022-09-24",
+  "channel": "chat",
+  "style": "polite",
+  "state": "brevin",
+  "topic": "payoff_letter",
+  "cites": [
+   "payoff_letter__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hi there, I'm trading in my car at my appraisal next week and still owe money on it. Could you tell me what I need from my bank beforehand? Thank you so much!",
+  "agent": "Thanks for reaching out! You'll want a payoff letter from your lender, which states exactly how much it takes to close your loan. Most lenders let you download one from your online account, or you can call them. Make sure it shows your account number, the payoff amount, the date it's good through, and where to send payment. Ask for a 10-day payoff amount since daily interest changes the total, and bring the letter to your appraisal appointment."
+ },
+ {
+  "_key": "t055",
+  "created_at": "2022-10-04",
+  "channel": "email",
+  "style": "rambling",
+  "state": "aldora",
+  "topic": "odometer_problems",
+  "cites": [
+   "odometer_problems__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi there, so I'm thinking about selling my old SUV to you guys, but here's the thing, a couple years back the dashboard cluster went out and the shop swapped in a used one from a junkyard, so the number on it now is way lower than what the car has actually driven. I honestly don't remember exactly how many miles it had before, though I think I've got a pile of oil change receipts somewhere in the glovebox or the garage. Is this going to be a problem, and what do I need to do? I'm over in Aldora if that matters.",
+  "agent": "Thanks for letting us know about the replaced cluster. Per our article \"Broken or replaced odometer,\" please mention this when you request your offer, and at the appointment you'll mark 'not actual mileage' on the odometer statement, form NW-ODO-1. Please note that cars with 'not actual mileage' receive a reduced offer. If you can piece together the true mileage, bring records that show it, such as those service invoices or oil change receipts."
+ },
+ {
+  "_key": "t056",
+  "created_at": "2025-01-01",
+  "channel": "email",
+  "style": "brief",
+  "state": "corlan",
+  "topic": "flood_damage",
+  "cites": [
+   "flood_damage__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi, my car sat in some floodwater last fall and water got into the cabin. Can I still sell it to you?",
+  "agent": "Thanks for being upfront about this. Per our Flood-damaged cars article, cars with flood damage or a flood brand on the title count as branded, and we don't buy them. If you're not sure whether your car falls into that category, just let us know about the water in the cabin when you request an offer."
+ },
+ {
+  "_key": "t057",
+  "created_at": "2023-12-05",
+  "channel": "chat",
+  "style": "brief",
+  "state": "aldora",
+  "topic": "duplicate_title_aldora",
+  "cites": [
+   "duplicate_title_aldora__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Lost my car title, I'm in Aldora. Can I still sell to you guys?",
+  "agent": "Good news: Aldora uses electronic titles, so there's usually no paper title to lose in the first place. If you'd like a printed copy, you can request a duplicate title online from the Aldora motor vehicle agency, and it typically arrives in about a week. Just bring the printout or the confirmation email to your appointment with us."
+ },
+ {
+  "_key": "t058",
+  "created_at": "2026-07-08",
+  "channel": "phone_note",
+  "style": "brief",
+  "state": "aldora",
+  "topic": "electronic_titles",
+  "cites": [
+   "electronic_titles__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Caller from Aldora is selling her car and wanted to know which paper title she should bring to the appointment.",
+  "agent": "Customer asked what title paperwork to bring when selling her car. Agent explained per 'States with electronic titles' that Aldora uses electronic titles, so the title is a record at the state and there is no paper title to bring. Agent confirmed the title will be transferred electronically at the appointment, and if there was a loan, the lender releases the lien electronically as well."
+ },
+ {
+  "_key": "t059",
+  "created_at": "2023-06-25",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "eastvale",
+  "topic": "branded_title",
+  "cites": [
+   "branded_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "I just found out my title says 'rebuilt' and now your site won't give me a quote. The car runs perfectly fine and I've put a ton of money into it. Why can't you guys just make me an offer?",
+  "agent": "I'm sorry for the frustration, especially after all the work you've put into the car. As explained in our article 'Salvage and rebuilt titles,' a branded title like 'rebuilt' shows the car was declared a total loss at some point and then rebuilt. Northwind doesn't buy cars with salvage, rebuilt or flood titles, so unfortunately we're unable to make an offer on this one, regardless of its current condition."
+ },
+ {
+  "_key": "t060",
+  "created_at": "2024-02-16",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "aldora",
+  "topic": "getting_paid",
+  "cites": [
+   "getting_paid__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "I sold you guys my car three days ago and still haven't seen a dime. I also still owe on it, so am I supposed to keep paying my lender or what? Nobody told me anything.",
+  "agent": "I'm sorry for the confusion, and I understand how stressful this is. Per our article \"When and how you get paid,\" since there's a loan on the car, we send the payoff to your lender within 2 business days and you receive the amount left over, either by bank draft at the store, by direct deposit (1 to 3 business days), or by check mailed to your address (5 to 7 business days). Please keep making your loan payments until your lender confirms the payoff."
+ },
+ {
+  "_key": "t061",
+  "created_at": "2024-06-05",
+  "channel": "chat",
+  "style": "polite",
+  "state": "dunmore",
+  "topic": "getting_paid",
+  "cites": [
+   "getting_paid__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hi there, I'm selling my car to you this week and still owe a bit on it. Could you tell me how the payment works and whether I should keep paying my loan in the meantime? Thank you!",
+  "agent": "Thanks for reaching out! Once the paperwork is signed, we'll send the payoff to your lender within 2 business days, and you'll receive whatever amount is left over. You can choose to get that by bank draft at the store, by direct deposit (1 to 3 business days), or by a check mailed to your address (5 to 7 business days). Please keep making your loan payments until your lender confirms the payoff, as explained in our article \"When and how you get paid.\""
+ },
+ {
+  "_key": "t062",
+  "created_at": "2025-12-14",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "corlan",
+  "topic": "selling_with_loan",
+  "cites": [
+   "selling_with_loan__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "I've been tearing my house apart for two days looking for my title and it's nowhere. I still owe on the car and want to sell it to you, but now I'm worried I have to go through the whole state process in Corlan just to get a replacement. Can I even sell it without the title?",
+  "agent": "I'm sorry you've spent two days searching. You can stop looking: while your loan is still open, your lender holds the title (or the electronic title record), so you don't need it in hand, and you don't need a duplicate. At your appointment we'll confirm how much you owe and pay your lender directly from our offer. If the offer is more than your payoff, you'll get the difference. More details are in our article \"Selling a car you are still paying off.\""
+ },
+ {
+  "_key": "t063",
+  "created_at": "2026-09-28",
+  "channel": "email",
+  "style": "polite",
+  "state": "aldora",
+  "topic": "how_selling_works",
+  "cites": [
+   "how_selling_works__2026"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hello, I'm in Aldora and I'm thinking about selling my car to Northwind. Could I just drive over to my local store and get a quote, or how does the process work? Thank you for your help!",
+  "agent": "Thanks for reaching out! As explained in our article \"Selling your car to Northwind: how it works,\" our stores no longer give walk-in quotes, so the first step is getting an instant offer online using your VIN or license plate. After that, you book an appraisal appointment at a store (or at your home in most states), and a specialist inspects the car in about 30 minutes and confirms the offer. Finally, you sign the paperwork and get paid—just keep in mind that offers last a limited time."
+ },
+ {
+  "_key": "t064",
+  "created_at": "2023-10-15",
+  "channel": "email",
+  "style": "brief",
+  "state": "corlan",
+  "topic": "offer_validity",
+  "cites": [
+   "offer_validity__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hi, how long do I have before my offer runs out? I might not be able to bring the car in until next week.",
+  "agent": "Your offer is good for 7 days or 300 additional miles, whichever comes first, and you can find the exact expiration date on your offer page and in your confirmation email. As long as your appraisal appointment is on or before that date, we'll honor the offer. Just note that rescheduling an appointment doesn't extend it. If it does expire, you can request a new offer at any time, though the amount will reflect current market prices and may be higher or lower."
+ },
+ {
+  "_key": "t065",
+  "created_at": "2026-06-20",
+  "channel": "email",
+  "style": "brief",
+  "state": "eastvale",
+  "topic": "keep_paying_until_confirmed",
+  "cites": [
+   "keep_paying_until_confirmed__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi, I traded in my car last week and you're paying off the loan. Do I still need to make my payment due on the 28th?",
+  "agent": "Yes, please keep making your regular loan payments until your lender confirms the loan is paid off. Our payoff covers the amount your lender quoted, and a missed payment in the meantime can be reported as late on your credit history. If a payment goes through after the payoff, your lender will refund it to you. You can find more in our article \"Should I keep making loan payments?\""
+ },
+ {
+  "_key": "t066",
+  "created_at": "2024-01-31",
+  "channel": "chat",
+  "style": "brief",
+  "state": "corlan",
+  "topic": "duplicate_title_corlan",
+  "cites": [
+   "duplicate_title_corlan__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Lost my car title. I'm in Corlan and want to sell to you. What do I do?",
+  "agent": "You'll need to request a duplicate title from Corlan, which issues paper titles. The duplicate title application has to be signed by every owner listed on the title and notarized, then mailed or taken to a Corlan motor vehicle office. Duplicates take 2 to 3 weeks, but you can get an offer and book an appointment with us while you wait."
+ },
+ {
+  "_key": "t067",
+  "created_at": "2025-08-19",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "corlan",
+  "topic": "co_owners",
+  "cites": [
+   "co_owners__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Seriously, I showed up to sell my car and got told I can't finish because my ex-husband's name is on the title too. He lives two states away and there's no way he's driving to Corlan for this. What am I supposed to do now?",
+  "agent": "I'm sorry this caught you off guard. Per our guide \"When more than one person owns the car,\" if the names on the title are joined by 'and,' every owner has to sign, but if they're joined by 'or,' only one owner needs to sign. If it does say 'and,' your ex-husband doesn't have to come in person; he can sign a power of attorney, form NW-POA-1, which must be notarized. Could you check how the names are joined on your title so we know which applies?"
+ },
+ {
+  "_key": "t068",
+  "created_at": "2025-07-05",
+  "channel": "email",
+  "style": "brief",
+  "state": "dunmore",
+  "topic": "negative_equity",
+  "cites": [
+   "negative_equity__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hi, I still owe more on my car loan than you offered me. Can I still sell it to you, and how would I cover the gap?",
+  "agent": "Yes, you can still sell us the car even if your loan balance is higher than our offer, which is often called negative equity or being upside down. You would pay the difference at your appointment, once we've compared our offer with what you owe on the loan. For that payment we accept a cashier's check, a debit card or a personal check, but we can't accept credit cards. You can find more in our article \"If you owe more than our offer.\""
+ },
+ {
+  "_key": "t069",
+  "created_at": "2025-05-28",
+  "channel": "chat",
+  "style": "polite",
+  "state": "brevin",
+  "topic": "divorce_ex_on_title",
+  "cites": [
+   "divorce_ex_on_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi there, I'm hoping to sell my car to you, but my ex-husband's name is still on the title alongside mine. Does he need to be involved, or is there a way around that? Thank you so much for your help.",
+  "agent": "Thanks for reaching out, and happy to help! Per our article \"My ex is still on the title,\" an ex-spouse listed on the title needs to sign too, just like any co-owner. The exception is if your divorce decree awards the car to you: in that case, bring a certified copy of the decree and his signature isn't needed. If your name changed in the divorce, that article also points to separate guidance on that situation."
+ },
+ {
+  "_key": "t070",
+  "created_at": "2026-07-08",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "brevin",
+  "topic": "lease_equity",
+  "cites": [
+   "lease_equity__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi, so I've got my car leased through Bluewater Leasing and I was kind of thinking about getting out of it early, my sister did something like this last year but with a different company so I'm not sure it's the same. Anyway I got an offer from you guys and it looks like it's a bit more than my buyout amount? Does that extra money come back to me or how does that work, sorry if this is a dumb question.",
+  "agent": "Not a dumb question at all! When our offer is higher than your lease buyout amount, the difference is called lease equity, and who receives it depends on the leasing company. With Bluewater Leasing, that equity is applied to the car you buy from Northwind rather than paid out to you. If you have any other questions about your offer, just let me know."
+ },
+ {
+  "_key": "t071",
+  "created_at": "2025-03-16",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "eastvale",
+  "topic": "branded_title",
+  "cites": [
+   "branded_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "I just found out my car has a rebuilt title and now your site won't give me an offer. It drives perfectly fine and I put a lot of money into fixing it. Why won't you even look at it?",
+  "agent": "I'm sorry for the frustration, and I understand you've invested a lot in the repairs. As explained in our article \"Salvage and rebuilt titles,\" a branded title shows that a car was declared a total loss and possibly rebuilt afterward. Northwind doesn't buy cars with salvage, rebuilt or flood titles, so unfortunately we're unable to make an offer on a car with a branded title."
+ },
+ {
+  "_key": "t072",
+  "created_at": "2024-05-21",
+  "channel": "email",
+  "style": "rambling",
+  "state": "aldora",
+  "topic": "selling_without_buying",
+  "cites": [
+   "selling_without_buying__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi there, so I've got this old sedan sitting in my driveway in Aldora that I barely drive anymore since I started working from home, and my neighbor said you guys buy cars. Thing is, I'm not really in the market for another car right now, maybe someday but not anytime soon. Do I have to buy something from you to sell mine, or can I just sell it outright? And would I get a worse offer if I'm not buying?",
+  "agent": "Thanks for reaching out! You don't have to buy a car from us to sell yours. You can sell it to us on its own, and the offer is the same either way. If you do decide to buy from us down the road, you can use the sale as a trade-in on that purchase, and sales tax can differ when you do it that way."
+ },
+ {
+  "_key": "t073",
+  "created_at": "2024-11-05",
+  "channel": "phone_note",
+  "style": "rambling",
+  "state": "eastvale",
+  "topic": "keep_paying_until_confirmed",
+  "cites": [
+   "keep_paying_until_confirmed__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Caller from Eastvale explained at length that she traded in her SUV last week, isn't sure whether Northwind has paid off her loan yet, and wondered whether she can skip this month's payment since it's due Friday and she doesn't want to pay twice.",
+  "agent": "Customer asked whether to keep paying her auto loan after her trade-in. Advised her, per 'Should I keep making loan payments?', to keep making regular payments until her lender confirms the loan is paid off, since a missed payment in the meantime can be reported as late on her credit history. Explained that our payoff covers the amount the lender quoted, and if a payment goes through after the payoff, the lender refunds it to her. Customer said she'll make Friday's payment as usual."
+ },
+ {
+  "_key": "t074",
+  "created_at": "2022-08-31",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "corlan",
+  "topic": "reschedule_cancel",
+  "cites": [
+   "reschedule_cancel__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "I've been trying to move my appraisal appointment for two days and I'm getting really fed up. Something came up at work and I can't make it Friday, but I'm worried that if I push it back I'll lose the offer you gave me on my car. Can someone just tell me straight how this works?",
+  "agent": "I'm sorry for the frustration, and I can clear this up for you. Per our article \"Rescheduling or canceling an appointment,\" you can reschedule your appraisal online or by replying to your confirmation text, as long as you do it up to 2 hours before the appointment starts. Your offer stays in place as long as the new time is on or before the offer's expiration date, so pick a slot within that window and you're all set. If you'd rather cancel instead, that's free, and even if an appointment is missed, the offer stays valid until it expires and you can book again."
+ },
+ {
+  "_key": "t075",
+  "created_at": "2024-01-27",
+  "channel": "email",
+  "style": "typos",
+  "state": "aldora",
+  "topic": "negative_equity",
+  "cites": [
+   "negative_equity__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "hi, i got ur offer for my civic but i still owe more on the loan then what you offered me. can i even sell it to you guys? and can i just put the diffrence on my credit card?",
+  "agent": "Thanks for reaching out! Yes, you can still sell us your car even if you owe more on the loan than our offer. This is called negative equity, or being upside down, and you'd pay the difference at your appointment once we've compared the offer with what you owe. Unfortunately, we can't accept credit cards for this payment, but a cashier's check, a debit card or a personal check all work."
+ },
+ {
+  "_key": "t076",
+  "created_at": "2025-11-07",
+  "channel": "email",
+  "style": "rambling",
+  "state": "dunmore",
+  "topic": "returns",
+  "cites": [
+   "returns__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hi there, so I picked up the SUV from you guys last Saturday, it got dropped off at my place here in Dunmore, and honestly it's a great car and nothing's wrong with it, but my sister-in-law just offered to sell us hers for way less and my husband thinks we should take that deal instead, which, long story. Anyway, I've only driven it to work and back a few times, maybe 90 miles total, and it's in the same shape it came in. Am I still able to send it back and get my money back, and how do I even start that?",
+  "agent": "Thanks for reaching out, and congratulations on the family deal! Under our 'Returning a car you bought from us' policy, you can return a car within 7 days of delivery and before it's been driven 250 miles for a full refund, as long as it's in the same condition as when you got it. Since your car was delivered last Saturday, November 1, your 7 days run through tomorrow, so please start the return soon, and at around 90 miles you're well under the mileage limit. You can start the return online or at any of our stores."
+ },
+ {
+  "_key": "t077",
+  "created_at": "2022-06-28",
+  "channel": "email",
+  "style": "rambling",
+  "state": "dunmore",
+  "topic": "walk_in_quotes",
+  "cites": [
+   "walk_in_quotes__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hi there, so I've been going back and forth about selling my old SUV, it's been sitting in the driveway since my daughter went off to college and my husband keeps asking when I'm going to deal with it. I'm not great with doing things online and I'd honestly rather just drive it over to your Dunmore store and have someone look at it, but do I need to book a time first? And if they give me a number, how long do I have to think it over, and what paperwork should I bring? I still owe a little on it, if that matters.",
+  "agent": "Thanks for reaching out! You can walk into any Northwind store without an appointment, and a specialist will inspect your SUV while you wait, usually in 30 to 45 minutes, then give you a written quote that's valid for 7 days or 300 miles. If you decide to accept, you can finish the sale during that same visit. Since you still have a loan, please bring your photo ID, registration, and your payoff information."
+ },
+ {
+  "_key": "t078",
+  "created_at": "2026-08-05",
+  "channel": "phone_note",
+  "style": "typos",
+  "state": "eastvale",
+  "topic": "duplicate_title_eastvale",
+  "cites": [
+   "duplicate_title_eastvale__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Caller said she lost her car titel and has an apointment with us next week, wants to know how to get a new one in Eastvale.",
+  "agent": "Customer asked how to replace a lost title before her upcoming appointment. Agent referred to 'Getting a duplicate title in Eastvale' and explained she can apply for a duplicate at any Eastvale motor vehicle office with her photo ID and registration. Agent noted the main offices print duplicates the same day, while by mail it takes 2 to 3 weeks, and reminded her to bring the duplicate to her appointment."
+ },
+ {
+  "_key": "t079",
+  "created_at": "2024-04-06",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "dunmore",
+  "topic": "how_selling_works",
+  "cites": [
+   "how_selling_works__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "I've been trying to figure out how to sell my car to you guys and your website is going in circles. Do I seriously have to buy one of your cars just to get rid of mine? I'm in Dunmore and I just want a straight answer on how this works.",
+  "agent": "I'm sorry the website has been confusing, and no, you don't have to buy a car from us to sell yours. As our article \"Selling your car to Northwind: how it works\" explains, you can request an offer online with your VIN or license plate, or walk into any store for a quote on the spot. Next you book an appraisal appointment, where a specialist inspects the car in about 30 minutes and confirms the offer. After that you sign the paperwork and get paid, but keep in mind offers only last a limited time, so it's best to book your appraisal soon after you get one."
+ },
+ {
+  "_key": "t080",
+  "created_at": "2026-08-02",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "dunmore",
+  "topic": "odometer_problems",
+  "cites": [
+   "odometer_problems__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi, so I'm in Dunmore and I was thinking about selling my old sedan to you guys, but here's the thing, the odometer got swapped out a couple years ago when the dash cluster died, and now it says something like 40,000 miles which is definitely not right, it's way more than that. I'm not sure if that's a deal breaker or what I'm supposed to do about it, I've still got a bunch of oil change receipts in the glovebox somewhere if that matters?",
+  "agent": "Thanks for letting us know. That's not a deal breaker. Per our article \"Broken or replaced odometer,\" please mention the replaced odometer when you request your offer, and at the appointment you'll mark 'not actual mileage' on the odometer statement, form NW-ODO-1. Cars marked 'not actual mileage' do get a reduced offer, but since you know the true mileage, please bring those oil change receipts or other service invoices that show it."
+ },
+ {
+  "_key": "t081",
+  "created_at": "2023-01-09",
+  "channel": "chat",
+  "style": "typos",
+  "state": "eastvale",
+  "topic": "lender_overpayment_refund",
+  "cites": [
+   "lender_overpayment_refund__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "hi so i traded in my car with you guys but my autopay still went thru to my lender after you paid it off?? do i get that mony back or is it just gone",
+  "agent": "Good news, that extra payment belongs to you, so it isn't lost. As explained in our article \"Getting back an extra loan payment,\" your lender refunds the overpayment directly to you, usually within 2 to 4 weeks after the loan is closed. Northwind doesn't receive or forward overpayments, so if the refund doesn't show up, please contact your lender directly."
+ },
+ {
+  "_key": "t082",
+  "created_at": "2026-02-06",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "aldora",
+  "topic": "keep_paying_until_confirmed",
+  "cites": [
+   "keep_paying_until_confirmed__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi, so I just sold my old SUV to you guys last week, which went great by the way, and now my loan payment is due on the 12th and I'm sitting here wondering if I even need to pay it anymore? Like you're paying off the loan, right, so it feels weird to keep paying on a car I don't have, but I also don't want to mess anything up. Sorry, I'm overthinking this, but what should I do?",
+  "agent": "Not overthinking at all, it's a good question! Yes, please keep making your regular loan payments until your lender confirms the loan is paid off. Our payoff covers the amount your lender quoted, and a missed payment in the meantime could be reported as late on your credit history. If a payment goes through after the payoff, your lender will refund it to you."
+ },
+ {
+  "_key": "t083",
+  "created_at": "2023-11-03",
+  "channel": "email",
+  "style": "rambling",
+  "state": "aldora",
+  "topic": "how_selling_works",
+  "cites": [
+   "how_selling_works__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hi there, so my aunt is moving overseas and left me her old sedan, which is nice of her but honestly I already have a car and don't need two, and my neighbor said Northwind buys cars? I'm not really looking to buy anything from you right now, I just want to get rid of this one without a big hassle. How does it actually work, and do I have to come in or can I start from home here in Aldora?",
+  "agent": "Thanks for reaching out, and congrats on the inheritance! As explained in our article \"Selling your car to Northwind: how it works,\" you can start from home by requesting an offer online with the car's VIN or license plate, or you can walk into any store for a quote on the spot. After that, you book an appraisal appointment, a specialist inspects the car in about 30 minutes and confirms the offer, and then you sign the paperwork and get paid. You don't need to buy a car from us to sell one, but keep in mind that offers only last a limited time."
+ },
+ {
+  "_key": "t084",
+  "created_at": "2022-04-07",
+  "channel": "phone_note",
+  "style": "frustrated",
+  "state": "corlan",
+  "topic": "license_plates",
+  "cites": [
+   "license_plates__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Caller was irritated that nobody had told them what to do with their plates and wanted to know if they had to leave them on the car they're selling to Northwind Auto.",
+  "agent": "Customer asked whether to leave the license plates on the car at handover. Explained per 'What to do with your license plates' that they should remove the plates before handing over the car and keep them. Advised that what happens with the plates afterward is up to their state's motor vehicle agency in Corlan, and that they can usually transfer them to their next car. Customer calmer by end of call."
+ },
+ {
+  "_key": "t085",
+  "created_at": "2025-05-16",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "eastvale",
+  "topic": "business_car",
+  "cites": [
+   "business_car__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Seriously, I've been bounced around twice already. I'm trying to sell my company's work truck to you guys and nobody can tell me what I actually need to bring. Can someone just give me a straight answer?",
+  "agent": "I'm sorry you've been bounced around. Here's the full list from our guide, Selling a car owned by a business. Since the truck is titled to your company, whoever signs has to be authorized to sell company property. Please bring form NW-BUS-1, the business signing authority letter, signed by an officer of the company, along with your photo ID and the company's tax ID number (EIN). Payment goes to the business rather than to the person signing, by direct deposit into the business bank account."
+ },
+ {
+  "_key": "t086",
+  "created_at": "2026-09-19",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "aldora",
+  "topic": "negative_equity",
+  "cites": [
+   "negative_equity__2022"
+  ],
+  "agent_error": true,
+  "outdated": true,
+  "customer": "Seriously? Your offer is lower than what I still owe on my loan, so now I'm stuck with this car? Can I even sell it to you or not?",
+  "agent": "I understand the frustration, and yes, you can still sell us the car even when the loan balance is higher than our offer, which is called negative equity or being upside down. Per our article \"If you owe more than our offer,\" you'd pay the difference at your appointment once we've compared the offer with what's left on the loan. You can pay that difference with a cashier's check, a debit card or a personal check, but we can't accept credit cards."
+ },
+ {
+  "_key": "t087",
+  "created_at": "2022-08-23",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "corlan",
+  "topic": "divorce_ex_on_title",
+  "cites": [
+   "divorce_ex_on_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Seriously, my ex's name is STILL on the car title and now I can't sell it without dealing with them? We've been divorced for over a year, this is ridiculous. Is there any way around getting their signature?",
+  "agent": "I'm sorry for the frustration. According to our article \"My ex is still on the title,\" an ex-spouse who's still listed on the title has to sign just like any co-owner would. However, if your divorce decree awards the car to you, you can bring a certified copy of the decree instead, and your ex's signature won't be needed."
+ },
+ {
+  "_key": "t088",
+  "created_at": "2023-11-26",
+  "channel": "email",
+  "style": "rambling",
+  "state": "brevin",
+  "topic": "branded_title",
+  "cites": [
+   "branded_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hi there, so I've got this 2014 sedan I've been meaning to sell for a while now, my brother-in-law actually fixed it up after it got wrecked a couple years back and honestly it runs great, better than before if you ask me. Anyway, the title says 'rebuilt' on it, which I didn't think was a big deal, but my neighbor said that might be a problem? I'm here in Brevin and was hoping to just bring it by and get an offer, so let me know if that works.",
+  "agent": "Thanks for reaching out and for sharing the details about your sedan. A rebuilt title is a branded title, which shows the car was declared a total loss at some point and then rebuilt afterward. Unfortunately, Northwind doesn't buy cars with salvage, rebuilt or flood titles, so we're unable to make an offer on this one. You can find more in our article \"Salvage and rebuilt titles.\""
+ },
+ {
+  "_key": "t089",
+  "created_at": "2023-10-21",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "dunmore",
+  "topic": "flood_damage",
+  "cites": [
+   "flood_damage__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi, so I've got this sedan I was hoping to sell you guys, and it's been a good car mostly, but back in the spring we had that big storm here in Dunmore and the street flooded pretty bad. I think some water got in under the doors and the carpets were soaked for a while, though it runs fine now and the title is clean as far as I know. Does that matter if I want an offer from you?",
+  "agent": "Thanks for being upfront about the storm, that's really helpful. Per our Flood-damaged cars guidelines, cars with flood damage or a flood brand on the title count as branded, and we don't buy them. Since water got into the cabin, please be sure to tell us that when you request an offer."
+ },
+ {
+  "_key": "t090",
+  "created_at": "2023-03-22",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "dunmore",
+  "topic": "walk_in_quotes",
+  "cites": [
+   "walk_in_quotes__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "I've been trying to get someone to look at my car for a week and every time I call I get the runaround about scheduling. Do I really need an appointment just to find out what you'll pay me? I live in Dunmore and I'm about ready to take it somewhere else.",
+  "agent": "I'm sorry for the frustration. Per our article \"Getting a quote at the store,\" you don't need an appointment: you can walk into any Northwind store and a specialist will inspect your car while you wait, usually in 30 to 45 minutes, and give you a written quote. That quote is valid for 7 days or 300 miles, and if you accept it you can finish the sale during the same visit. Just bring your photo ID, registration and title, or your payoff information if you still have a loan."
+ },
+ {
+  "_key": "t091",
+  "created_at": "2024-07-13",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "brevin",
+  "topic": "home_pickup",
+  "cites": [
+   "home_pickup__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "I've been trying to sell my car to you for two weeks and I can't keep taking time off work to drive across Brevin for an appraisal. Is there any way you can just come to me, or do I have to lose another afternoon? I'm getting really fed up.",
+  "agent": "I'm sorry about the hassle. Under our Home pickup service, available in every state we serve, a Northwind specialist can come to your home or office, inspect the car and complete the sale on the spot, at no charge. The specialist brings the paperwork and pays you by bank draft, so you won't need another trip. Just book home pickup when you schedule your appraisal, and park the car where it can be inspected in daylight."
+ },
+ {
+  "_key": "t092",
+  "created_at": "2026-03-18",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "brevin",
+  "topic": "lessor_buyouts",
+  "cites": [
+   "lessor_buyouts__2026"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "I've been trying to sell you my leased car for a week and now I'm hearing there's some extra fee?? My lease is through Apex Lease Co. Can you actually buy it out or not, and what's this charge about?",
+  "agent": "I'm sorry for the runaround. Yes, Apex Lease Co does allow us to buy out your lease. Since February 1, 2026, though, Apex adds a $350 third-party buyout fee to the buyout amount, and that's the charge you heard about. This is all covered in our article \"Which leasing companies allow third-party buyouts.\""
+ },
+ {
+  "_key": "t093",
+  "created_at": "2023-01-30",
+  "channel": "chat",
+  "style": "brief",
+  "state": "corlan",
+  "topic": "branded_title",
+  "cites": [
+   "branded_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hi, my car has a rebuilt title. Can I still sell it to you guys?",
+  "agent": "Thanks for checking with us before starting. Unfortunately, Northwind doesn't buy cars with salvage, rebuilt or flood titles, so we're unable to make an offer on a car with a branded title. A branded title means the car was declared a total loss at some point and possibly rebuilt afterward. You can find more details in our article \"Salvage and rebuilt titles.\""
+ },
+ {
+  "_key": "t094",
+  "created_at": "2022-07-09",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "eastvale",
+  "topic": "how_selling_works",
+  "cites": [
+   "how_selling_works__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hi, so I've got this old sedan sitting in my driveway in Eastvale and honestly I'm not even sure I want another car right now, my sister says I should just sell it to you guys but I don't know how any of that works. Do I have to buy something from you to sell it? And what's the actual process, like do I just show up or what?",
+  "agent": "Good news: you don't have to buy a car from us to sell one. As our article \"Selling your car to Northwind: how it works\" explains, you can get an offer online with your VIN or license plate, or walk into any store for a quote on the spot, then book an appraisal appointment. A specialist inspects the car in about 30 minutes and confirms the offer, and then you sign the paperwork and get paid. Just keep in mind that offers last a limited time."
+ },
+ {
+  "_key": "t095",
+  "created_at": "2025-08-01",
+  "channel": "chat",
+  "style": "typos",
+  "state": "eastvale",
+  "topic": "duplicate_title_eastvale",
+  "cites": [
+   "duplicate_title_eastvale__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "hi so i lost my title somwhere when i moved and i have an apointment with you guys next week to sell my car. im in eastvale, how do i get a new one fast??",
+  "agent": "Sorry to hear about the lost title! In Eastvale you can apply for a duplicate at any Eastvale motor vehicle office by bringing your photo ID and registration. The main offices print duplicates the same day, while applying by mail takes 2 to 3 weeks, so visiting a main office is your fastest option before next week. Just bring the duplicate title with you to your appointment."
+ },
+ {
+  "_key": "t096",
+  "created_at": "2022-10-06",
+  "channel": "email",
+  "style": "polite",
+  "state": "corlan",
+  "topic": "selling_with_loan",
+  "cites": [
+   "selling_with_loan__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hello, I'm hoping to sell my car to Northwind Auto, but I still have a loan on it and I can't seem to find the title anywhere. Would that be a problem? I'd really appreciate any guidance. Thank you!",
+  "agent": "Thank you for reaching out. Per our article \"Selling a car you are still paying off,\" you can sell us a car you still owe money on. While the loan is open, your lender holds the title or the electronic title record, so you don't need the title in hand or a duplicate. At your appointment we'll confirm what you owe and pay your lender directly from our offer, and if the offer is more than the payoff, you receive the difference."
+ },
+ {
+  "_key": "t097",
+  "created_at": "2025-08-15",
+  "channel": "chat",
+  "style": "polite",
+  "state": "dunmore",
+  "topic": "flood_damage",
+  "cites": [
+   "flood_damage__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi there, I'm in Dunmore and was hoping to get an offer on my sedan. Last spring a storm flooded our street and some water got into the cabin, though it dried out and runs fine now. Would you still be able to buy it?",
+  "agent": "Thank you for being upfront about that! Per our Flood-damaged cars guidelines, cars with flood damage, or with a flood brand on the title, count as branded, and we don't buy them. If you do go ahead with an offer request, please let us know about the water that got into the cabin when you submit it."
+ },
+ {
+  "_key": "t098",
+  "created_at": "2022-11-03",
+  "channel": "chat",
+  "style": "typos",
+  "state": "dunmore",
+  "topic": "lien_still_on_title",
+  "cites": [
+   "lien_still_on_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "hi i paid off my car loan like a month ago but the title still says the bank is the lienholder?? im trying to sell to you guys, do i have to wait for that to get fixed first",
+  "agent": "Thanks for reaching out! If the lender is still listed as lienholder, the lien hasn't been released yet, so please ask your lender for a lien release letter. If you can't get one, you can sign our lien release request (form NW-LRL-1) and we'll contact the lender for you, though that can add 1 to 2 weeks. In the meantime, we can still make you an offer and book your appointment while you wait."
+ },
+ {
+  "_key": "t099",
+  "created_at": "2025-06-11",
+  "channel": "chat",
+  "style": "brief",
+  "state": "dunmore",
+  "topic": "home_pickup",
+  "cites": [
+   "home_pickup__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Can someone come to my place in Dunmore to buy my car? Is there a fee?",
+  "agent": "Yes, per our Home pickup service, a Northwind specialist can come to your home or office in Dunmore, inspect the car, and complete the sale on the spot at no charge. The specialist brings the paperwork and pays you by bank draft. You can book home pickup when you schedule your appraisal, and please park the car where it can be inspected in daylight."
+ },
+ {
+  "_key": "t100",
+  "created_at": "2026-07-11",
+  "channel": "email",
+  "style": "rambling",
+  "state": "brevin",
+  "topic": "flood_damage",
+  "cites": [
+   "flood_damage__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi there, so I've been meaning to write for a while now — I've got an older sedan sitting in my driveway here in Brevin and I'm thinking it's finally time to sell it. The thing is, a couple of years back we had that really bad storm and the street flooded, and I'm pretty sure some water got into the floorboards, though it dried out and it's been running fine ever since, mostly. I never did anything official about it and I don't think the title says anything, but I figured I should ask before I go through the whole offer process. Would you still be interested in buying it?",
+  "agent": "Thanks for reaching out and for being upfront about the storm. Under our Flood-damaged cars policy, cars with flood damage, or with a flood brand on the title, count as branded, and we don't buy them. Since water got into the cabin, please mention that when you request an offer so we have the full picture."
+ },
+ {
+  "_key": "t101",
+  "created_at": "2023-12-26",
+  "channel": "email",
+  "style": "typos",
+  "state": "dunmore",
+  "topic": "lease_equity",
+  "cites": [
+   "lease_equity__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "hi, my lease is thru Crescent Motor Credit and your offer came back higher then what i owe on the buyout. do i actualy get that extra money or does it go somewhere else?? kinda confused",
+  "agent": "Thanks for reaching out! When our offer is higher than your lease buyout amount, the difference is called lease equity, and who receives it depends on the leasing company. Crescent Motor Credit is one of the companies that passes lease equity to you, so that extra amount would be yours. You can find more details in our article \"If our offer is more than your lease buyout.\""
+ },
+ {
+  "_key": "t102",
+  "created_at": "2024-06-03",
+  "channel": "chat",
+  "style": "polite",
+  "state": "brevin",
+  "topic": "flood_damage",
+  "cites": [
+   "flood_damage__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi there, I'm in Brevin and was hoping to sell you my sedan. A few years ago some water got into the cabin during a heavy storm, but it was cleaned up and the title doesn't show anything. Would that still be a problem?",
+  "agent": "Thanks for being upfront about that! As our Flood-damaged cars article explains, cars with flood damage, or with a flood brand on the title, count as branded, and we don't buy them. Since water got into the cabin, please be sure to mention it when you request an offer."
+ },
+ {
+  "_key": "t103",
+  "created_at": "2026-01-10",
+  "channel": "email",
+  "style": "typos",
+  "state": "dunmore",
+  "topic": "title_name_mismatch",
+  "cites": [
+   "title_name_mismatch__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "hi, i got married last year and my license has my new last name but the car title still has my maiden name on it. will that be a problem when i bring the car in?? what do i need to bring with me",
+  "agent": "Congratulations, and thanks for checking ahead! As explained in our article \"The name on the title doesn't match my ID,\" please bring the document that shows your name change, which in your case would be your marriage certificate. You'll also sign the name change affidavit, form NW-NMC-1, at your appointment."
+ },
+ {
+  "_key": "t104",
+  "created_at": "2026-10-29",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "dunmore",
+  "topic": "registration_expired",
+  "cites": [
+   "registration_expired__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi, so I've been meaning to sell my old sedan for a while now and finally booked something, but then I was digging through the glovebox last night and realized the registration expired back in the summer, which, honestly, I completely forgot about with everything going on. I'm in Dunmore if that matters. Does this mess up my sale or lower what you'd pay me for it?",
+  "agent": "Thanks for checking before your appointment! Per our article \"My registration is expired,\" you can still sell us your car with an expired registration, and it won't change the offer. Please bring the expired registration card with you anyway. The only state where the registration has to be current on the day of sale is Brevin, so being in Dunmore you're all set."
+ },
+ {
+  "_key": "t105",
+  "created_at": "2026-04-30",
+  "channel": "email",
+  "style": "polite",
+  "state": "corlan",
+  "topic": "lost_title",
+  "cites": [
+   "lost_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hello, I'd like to sell my car to you, but I've misplaced the title somewhere during a move. The car is completely paid off and I live in Corlan. Is there any way we can still go ahead with the sale? Thank you so much for your help.",
+  "agent": "Thank you for reaching out, and sorry to hear the title went missing during your move. Since your car is fully paid off, you'll need to get a duplicate title from your state before we can complete the purchase, as we can't buy a paid-off car without a title. In the meantime, you're welcome to get an offer and book an appointment with us while you wait. How long a duplicate takes depends on your state, so Corlan's processing time will determine when we can finalize the sale."
+ },
+ {
+  "_key": "t106",
+  "created_at": "2024-01-03",
+  "channel": "chat",
+  "style": "polite",
+  "state": "corlan",
+  "topic": "reschedule_cancel",
+  "cites": [
+   "reschedule_cancel__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi there, I have an appraisal appointment booked for later today but something came up at work. Would it be possible to move it to next week instead, and would I still keep my offer if I do?",
+  "agent": "Of course! You can reschedule your appraisal appointment online or by replying to your confirmation text, as long as you do it at least 2 hours before the appointment starts. Your offer will carry over only if the new time is on or before the offer's expiration date, so please check that date before picking a day next week. If you'd rather just cancel for now, canceling is free."
+ },
+ {
+  "_key": "t107",
+  "created_at": "2022-12-23",
+  "channel": "chat",
+  "style": "typos",
+  "state": "brevin",
+  "topic": "license_plates",
+  "cites": [
+   "license_plates__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "hi im selling my car to you guys tomorow, do i leave the plates on it or what?? live in brevin if that matters",
+  "agent": "Thanks for reaching out! Please remove your license plates before you hand over the car, and keep them. What you do with them afterward is up to your state's motor vehicle agency, so check with Brevin's agency. You can usually transfer them to your next car."
+ },
+ {
+  "_key": "t108",
+  "created_at": "2025-04-23",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "dunmore",
+  "topic": "out_of_state",
+  "cites": [
+   "out_of_state__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "I moved to Dunmore last year but my car is still registered back in my old state, and now I'm getting the runaround about whether you'll even buy it. Can you just give me a straight answer? Do I have to re-register it here first or what?",
+  "agent": "I'm sorry for the confusion. Per our article \"Selling a car registered in another state,\" we buy cars registered in any state we serve, even if you now live somewhere else. Just bring the registration from the state that issued it. If the title happens to be lost, the duplicate title rules of that issuing state apply."
+ },
+ {
+  "_key": "t109",
+  "created_at": "2025-09-17",
+  "channel": "chat",
+  "style": "typos",
+  "state": "dunmore",
+  "topic": "keep_paying_until_confirmed",
+  "cites": [
+   "keep_paying_until_confirmed__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "hi so i traded in my car with you guys last week, do i still need to pay my loan this month?? dont want to pay twice lol",
+  "agent": "Yes, please keep making your regular loan payments until your lender confirms the loan is paid off. Our payoff covers the amount your lender quoted, and a missed payment in the meantime can be reported as late on your credit history. If a payment goes through after the payoff, your lender will refund it to you, so you won't lose that money."
+ },
+ {
+  "_key": "t110",
+  "created_at": "2024-01-19",
+  "channel": "email",
+  "style": "polite",
+  "state": "eastvale",
+  "topic": "cancel_insurance",
+  "cites": [
+   "cancel_insurance__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hello, I'm selling my car to Northwind Auto and you're picking it up from my home next week. Could you tell me when it's safe to cancel my insurance? I'd like to avoid paying for coverage I don't need, but I also don't want to cancel too early.",
+  "agent": "Thank you for reaching out, and great question! As explained in our article \"When to cancel your insurance,\" please keep your car insured until the sale is complete and the car is in our hands, including on the day of your home pickup. Once you've signed the paperwork, you can cancel your policy or remove the car from it, and we'd suggest asking your insurer about a refund for the unused part of your premium. Before handing over the car, please also remember to remove any toll tags and your personal data."
+ },
+ {
+  "_key": "t111",
+  "created_at": "2025-01-22",
+  "channel": "chat",
+  "style": "typos",
+  "state": "dunmore",
+  "topic": "duplicate_title_dunmore",
+  "cites": [
+   "duplicate_title_dunmore__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "hi so i lost my paper titel for my car and im supposed to sell it to you guys next week, do i need to get a new one printed first?? im in dunmore",
+  "agent": "Good news: Dunmore uses electronic titles, so for a sale to Northwind you usually don't need a printed copy, because we transfer the electronic title at your appointment. If you'd still like a printed duplicate for your records, you can request it online from the Dunmore motor vehicle agency. It arrives in 5 to 7 business days."
+ },
+ {
+  "_key": "t112",
+  "created_at": "2024-05-27",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "corlan",
+  "topic": "offer_validity",
+  "cites": [
+   "offer_validity__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Seriously? I got my offer last week and now I'm hearing it might not be good anymore because I had to push my appointment back. Nobody told me rescheduling would mess anything up. How long does this offer actually last?",
+  "agent": "I'm sorry for the frustration, and I understand how confusing that must be. Your offer is valid for 7 days or 300 additional miles, whichever comes first, and you can find the exact expiration date on your offer page and in your confirmation email. We'll honor it as long as your appraisal appointment is on or before that date, but rescheduling doesn't extend the offer. If it has expired, you can request a new one at any time, though the new amount will reflect current market prices and could be higher or lower."
+ },
+ {
+  "_key": "t113",
+  "created_at": "2022-11-23",
+  "channel": "email",
+  "style": "polite",
+  "state": "dunmore",
+  "topic": "getting_paid",
+  "cites": [
+   "getting_paid__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hello, I'm planning to sell my car to Northwind Auto next week, but I still have a loan on it. Could you let me know how the payment would work in that case, and whether I should stop making my monthly loan payments? Thank you so much for your help.",
+  "agent": "Thank you for reaching out! As explained in our article \"When and how you get paid,\" once the paperwork is signed we send the payoff to your lender within 2 business days, and you receive whatever amount is left over by bank draft at the store, direct deposit (1 to 3 business days), or a check mailed to your address (5 to 7 business days). Please keep making your loan payments until your lender confirms the payoff."
+ },
+ {
+  "_key": "t114",
+  "created_at": "2024-11-14",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "aldora",
+  "topic": "home_pickup",
+  "cites": [
+   "home_pickup__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hi there, so I've been thinking about selling my old hatchback for a while now, my sister keeps telling me to just do it already, and the thing is I work pretty long hours here in Aldora so I really can't be driving across town to drop it off somewhere. Is there any way someone could just come to me instead? Like at my house or even my office, and would that cost me extra?",
+  "agent": "Good news, we offer exactly that through our Home pickup service, available in every state we serve. A Northwind specialist can come to your home or office, inspect the car, and complete the sale right there at no charge, bringing the paperwork and paying you by bank draft. You can book home pickup when you schedule your appraisal, and it helps to have the car parked where it can be inspected in daylight."
+ },
+ {
+  "_key": "t115",
+  "created_at": "2025-11-13",
+  "channel": "chat",
+  "style": "brief",
+  "state": "brevin",
+  "topic": "selling_for_someone_else",
+  "cites": [
+   "selling_for_someone_else__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi, can I sell my dad's car for him? He's alive, just can't get out much these days.",
+  "agent": "Yes, you can sell a family member's car for them as long as they give you a power of attorney. Have your dad sign form NW-POA-1 in front of a notary. Then bring that form along with your own photo ID and the car's documents. Our article \"Selling a family member's car for them\" covers this too if you'd like it for reference."
+ },
+ {
+  "_key": "t116",
+  "created_at": "2026-08-06",
+  "channel": "chat",
+  "style": "typos",
+  "state": "aldora",
+  "topic": "lease_vs_turn_in",
+  "cites": [
+   "lease_vs_turn_in__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "hey my lease is up next month and im not sure if i shoud just turn it in or sell it?? whats the diffrence and which one makes more sence",
+  "agent": "Great question! Turning the car in to the leasing company is the simpler option, but you may end up paying for extra miles or wear. Selling can make sense when the car is worth more than the buyout amount. Our article \"Selling vs. turning in at lease end\" recommends getting an offer from us before your turn-in date and comparing it with your buyout quote."
+ },
+ {
+  "_key": "t117",
+  "created_at": "2025-04-12",
+  "channel": "email",
+  "style": "brief",
+  "state": "aldora",
+  "topic": "odometer_problems",
+  "cites": [
+   "odometer_problems__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi, my car's odometer stopped working a while back so the mileage on it isn't right. Can I still sell it to you?",
+  "agent": "Thanks for letting us know. Per our article \"Broken or replaced odometer,\" please mention the broken odometer when you request your offer, and at the appointment mark 'not actual mileage' on the odometer statement, form NW-ODO-1. Cars marked 'not actual mileage' receive a reduced offer, but if you know the true mileage, bringing records that show it, such as service invoices, will help."
+ },
+ {
+  "_key": "t118",
+  "created_at": "2023-01-14",
+  "channel": "chat",
+  "style": "polite",
+  "state": "brevin",
+  "topic": "getting_paid",
+  "cites": [
+   "getting_paid__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hi there, I just signed the paperwork to sell my car to you and I still owe a bit on my loan. Could you tell me how the payoff works and when I'll get the rest of the money? Thank you so much!",
+  "agent": "Thanks for reaching out, and congratulations on completing your sale! Per our article \"When and how you get paid,\" we send the payoff to your lender within 2 business days, and you receive whatever amount is left over by bank draft at the store, direct deposit (1 to 3 business days), or a mailed check (5 to 7 business days). Please keep making your loan payments until your lender confirms the payoff."
+ },
+ {
+  "_key": "t119",
+  "created_at": "2025-07-24",
+  "channel": "email",
+  "style": "brief",
+  "state": "eastvale",
+  "topic": "odometer_problems",
+  "cites": [
+   "odometer_problems__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi, my odometer got swapped out a couple years ago so the mileage on it isn't right. Can I still sell my car to you?",
+  "agent": "Thanks for reaching out. Please let us know about the replaced odometer when you request your offer, and at the appointment you'll mark 'not actual mileage' on the odometer statement, form NW-ODO-1. Cars marked 'not actual mileage' receive a reduced offer. If you know the true mileage, please bring records that show it, such as service invoices."
+ },
+ {
+  "_key": "t120",
+  "created_at": "2022-11-28",
+  "channel": "chat",
+  "style": "polite",
+  "state": "aldora",
+  "topic": "co_owners",
+  "cites": [
+   "co_owners__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hi there, my sister and I are both on the title of the car I'd like to sell, but she lives a few hours away and probably can't make it to the appointment. Is there a way to go ahead without her being there? Thank you so much for your help!",
+  "agent": "Thanks for reaching out! Our article \"When more than one person owns the car\" covers this: if your names are joined by \"and\" on the title, every owner needs to sign, but if they're joined by \"or,\" only one of you has to sign. If your sister does need to sign and can't attend the appraisal appointment, she can sign a power of attorney, form NW-POA-1, which must be notarized. Otherwise, the easiest option is for both of you to come to the appointment with your photo IDs."
+ },
+ {
+  "_key": "t121",
+  "created_at": "2023-03-15",
+  "channel": "email",
+  "style": "rambling",
+  "state": "dunmore",
+  "topic": "lien_still_on_title",
+  "cites": [
+   "lien_still_on_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi there, so this is a bit of a long story, but I finally finished paying off my car loan back in January (felt amazing, honestly) and I was thinking about selling the car to you guys. But when I dug the title out of my filing cabinet, it still shows the bank as the lienholder, which confused me because I thought that was all done. I'm in Dunmore, if that matters. Do I need to sort this out before I can sell, or what's the deal?",
+  "agent": "Thanks for reaching out, and congratulations on paying off your loan! If the title still lists your lender as lienholder, the lien hasn't been released yet, so the first step is to ask your lender for a lien release letter. If you can't get one, you can sign our lien release request, form NW-LRL-1, and we'll contact the lender for you, though this can add 1 to 2 weeks. In the meantime, we can still make you an offer and book your appointment while you wait."
+ },
+ {
+  "_key": "t122",
+  "created_at": "2025-11-07",
+  "channel": "chat",
+  "style": "typos",
+  "state": "eastvale",
+  "topic": "non_running_cars",
+  "cites": [
+   "non_running_cars__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "hey my old civic wont start anymore, battery and starter both seem dead. can i still sell it to u guys? im in eastvale if that matters",
+  "agent": "Thanks for reaching out, and sorry to hear about the Civic. Per our article \"Selling a car that doesn't run,\" we aren't able to buy cars that don't run or can't be driven safely to a store. Since yours won't start, a local salvage buyer may be a better option for you."
+ },
+ {
+  "_key": "t123",
+  "created_at": "2024-11-07",
+  "channel": "phone_note",
+  "style": "typos",
+  "state": "aldora",
+  "topic": "electronic_titles",
+  "cites": [
+   "electronic_titles__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Caller from Aldora said she cant find her paper title anywere for the car shes selling and is worried she cant sell it, also still had a loan on it a while back.",
+  "agent": "Customer asked about selling her car without a paper title. Explained that Aldora uses electronic titles, so the title is a record at the state and there's no paper title to bring; we transfer the title electronically at the appointment. Also let her know that if there was a loan, the lender releases the lien electronically too, per the article \"States with electronic titles.\""
+ },
+ {
+  "_key": "t124",
+  "created_at": "2025-10-09",
+  "channel": "chat",
+  "style": "typos",
+  "state": "corlan",
+  "topic": "lender_overpayment_refund",
+  "cites": [
+   "lender_overpayment_refund__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "hi so i traded my car in at northwind and my old loan was suposed to be paid off but i already made my normal payment that month too?? do i get that mony back or is it just gone. also do u guys send it to me",
+  "agent": "Good news, that extra payment isn't lost. When your lender receives both our payoff and one of your regular payments, the extra amount belongs to you, and your lender refunds it directly to you, usually within 2 to 4 weeks after the loan is closed. Northwind doesn't receive or forward overpayments, so if the refund doesn't arrive, please reach out to your lender directly."
+ },
+ {
+  "_key": "t125",
+  "created_at": "2026-05-25",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "dunmore",
+  "topic": "leased_car",
+  "cites": [
+   "leased_car__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "I've been trying to sell you my leased SUV for a week and nobody will give me a straight answer. The payoff number my leasing company gave me apparently isn't the right one? I just want to know what I actually need to do.",
+  "agent": "Sorry for the runaround. Because the leasing company owns your SUV, selling it to us is really a buyout from them, so first check that they allow third-party buyouts. If they do, ask them for a dealer payoff quote, which can be different from the payoff they quoted to you, or sign our lease buyout authorization (form NW-LSE-1) and we'll request the dealer payoff quote for you. Either way, just bring that quote to your appointment."
+ },
+ {
+  "_key": "t126",
+  "created_at": "2023-11-13",
+  "channel": "chat",
+  "style": "polite",
+  "state": "dunmore",
+  "topic": "duplicate_title_dunmore",
+  "cites": [
+   "duplicate_title_dunmore__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi there, I'm planning to sell my car to Northwind but I can't find my paper title anywhere. I live in Dunmore. Could you tell me what I should do?",
+  "agent": "Thanks for reaching out, and no need to worry! Dunmore uses electronic titles, so for a sale to Northwind you usually don't need a printed copy; we transfer the electronic title at your appointment. If you'd still like a printed duplicate for your records, you can request it online from the Dunmore motor vehicle agency, and it arrives in 5 to 7 business days."
+ },
+ {
+  "_key": "t127",
+  "created_at": "2026-03-26",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "corlan",
+  "topic": "offer_validity",
+  "cites": [
+   "offer_validity__2022"
+  ],
+  "agent_error": true,
+  "outdated": true,
+  "customer": "I got an offer on my car last week and now I'm worried it's already dead because I couldn't get to the appointment. Nobody told me there was a deadline! How long do these offers actually last before you pull the rug out?",
+  "agent": "I'm sorry for the confusion. Per our article \"How long is my offer good for?\", your offer is valid for 7 days or 300 additional miles, whichever comes first, and the expiration date is shown on your offer page and in your confirmation email. We'll honor the offer as long as your appraisal appointment is on or before that date, though rescheduling an appointment doesn't extend it. If your offer has expired, you can request a new one at any time; the new amount reflects current market prices and may be higher or lower."
+ },
+ {
+  "_key": "t128",
+  "created_at": "2024-11-13",
+  "channel": "phone_note",
+  "style": "frustrated",
+  "state": "eastvale",
+  "topic": "modified_cars",
+  "cites": [
+   "modified_cars__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Caller from Eastvale was upset that the offer on his lifted, tuned truck came in lower than expected and said the thousands he spent on upgrades should count for something.",
+  "agent": "Customer asked why his aftermarket lift kit and engine tune reduced his offer instead of raising it. Explained per 'Cars with aftermarket modifications' that modifications rarely add value and that lift kits, tuning, loud exhausts and custom paint usually lower the offer because we may need to return the car to factory condition. Advised him to remove anything he wants to keep, such as his custom stereo, before the appraisal. Let him know that if a modification changes the offer, the specialist will show him why."
+ },
+ {
+  "_key": "t129",
+  "created_at": "2023-12-26",
+  "channel": "email",
+  "style": "typos",
+  "state": "brevin",
+  "topic": "lender_overpayment_refund",
+  "cites": [
+   "lender_overpayment_refund__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "hi so i traded my car in at northwind and my auto pay still went thru to my old lender after you guys paid it off?? does that mean i lost that money or do u send it back to me. kinda stressing since its right after christmas",
+  "agent": "Hi there, I understand the timing is stressful, but you haven't lost that money. When a lender receives both our payoff and one of your regular payments, the extra amount belongs to you, and your lender refunds it directly to you, usually within 2 to 4 weeks after the loan is closed. Northwind doesn't receive or forward overpayments, so if the refund doesn't arrive, please contact your lender directly."
+ },
+ {
+  "_key": "t130",
+  "created_at": "2022-08-07",
+  "channel": "phone_note",
+  "style": "rambling",
+  "state": "corlan",
+  "topic": "what_changes_offer",
+  "cites": [
+   "what_changes_offer__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Caller said they got an online offer, then mentioned they've driven a fair bit since, maybe a few hundred miles, plus they can only find one of the two keys and there's a little dent on the rear bumper they forgot to list, and wanted to know if all that would mess up the price.",
+  "agent": "Customer asked whether extra mileage, a missing key, and an unreported dent could change their online offer at the appraisal. Explained per 'What can change your offer at the appraisal' that the appraisal confirms the offer unless something wasn't mentioned online: undisclosed damage can lower it, each missing key is $150 off, and mileage more than 300 miles above what they entered can also reduce it. Let them know the specialist will show the reason for any change before they decide, and they can always say no and keep the car."
+ },
+ {
+  "_key": "t131",
+  "created_at": "2025-02-14",
+  "channel": "chat",
+  "style": "brief",
+  "state": "eastvale",
+  "topic": "lessor_buyouts",
+  "cites": [
+   "lessor_buyouts__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hi, my lease is with Crescent Motor Credit. Can you guys buy it out directly?",
+  "agent": "Thanks for reaching out! According to our article \"Which leasing companies allow third-party buyouts,\" Crescent Motor Credit doesn't allow us to buy out your lease directly. You can still buy the car out yourself first and then sell it to us, or return it at the end of the lease."
+ },
+ {
+  "_key": "t132",
+  "created_at": "2023-05-14",
+  "channel": "chat",
+  "style": "polite",
+  "state": "eastvale",
+  "topic": "branded_title",
+  "cites": [
+   "branded_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hello, I was hoping to sell my car to you. It was in a bad accident a few years ago and the title now says rebuilt, but it runs great. Would you still be able to give me an offer?",
+  "agent": "Thank you for reaching out, and I'm glad to hear the car is running well. Unfortunately, Northwind doesn't buy cars with salvage, rebuilt or flood titles, so since your title is branded as rebuilt, we're unable to make an offer. You can find more details in our article \"Salvage and rebuilt titles.\""
+ },
+ {
+  "_key": "t133",
+  "created_at": "2025-02-11",
+  "channel": "chat",
+  "style": "typos",
+  "state": "dunmore",
+  "topic": "divorce_ex_on_title",
+  "cites": [
+   "divorce_ex_on_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "hi so im trying to sell my car to u guys but my ex husbands name is still on the titel. do i realy need him to sign?? we're divorced and the judge gave me the car",
+  "agent": "Thanks for reaching out! Normally, an ex-spouse who's still listed on the title needs to sign just like any co-owner would. However, since your divorce decree awards the car to you, just bring a certified copy of the decree and your ex's signature won't be needed. Also, if your name changed in the divorce, please let me know and I can point you to the right information for that."
+ },
+ {
+  "_key": "t134",
+  "created_at": "2022-12-05",
+  "channel": "phone_note",
+  "style": "typos",
+  "state": "corlan",
+  "topic": "lien_still_on_title",
+  "cites": [
+   "lien_still_on_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Caller said she payed off her car loan a while ago but the title stil shows the bank as lienholder and she wants to sell to us, asked what she needs to do.",
+  "agent": "Customer asked about selling a vehicle whose title still lists her lender after payoff. Explained per 'My loan is paid off but the lien is still on the title' that the lien hasn't been released yet and she should ask her lender for a lien release letter. Advised that if she can't get one, she can sign the lien release request, form NW-LRL-1, and we'll contact the lender for her, which can add 1 to 2 weeks. Let her know we can still make an offer and book her appointment while she waits."
+ },
+ {
+  "_key": "t135",
+  "created_at": "2025-10-23",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "brevin",
+  "topic": "inherited_car",
+  "cites": [
+   "inherited_car__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "I've been trying to sell my late father's truck for weeks and every time I call I get a different answer about what paperwork you want. I even have the power of attorney he signed before he passed, so why isn't that enough? I just want to get this done.",
+  "agent": "I'm sorry for your loss, and I'm sorry you've been getting mixed answers. Our article \"Selling a car you inherited\" explains that a power of attorney signed by the person who passed away is no longer valid. To sell the truck, please bring the death certificate along with the court letters naming you executor or administrator of the estate (letters testamentary or letters of administration). If there are other heirs, the executor is the one who signs."
+ },
+ {
+  "_key": "t136",
+  "created_at": "2026-02-11",
+  "channel": "email",
+  "style": "rambling",
+  "state": "eastvale",
+  "topic": "what_changes_offer",
+  "cites": [
+   "what_changes_offer__2022"
+  ],
+  "agent_error": true,
+  "outdated": true,
+  "customer": "Hi there, so I got an online offer for my 2017 Honda Accord last week and I've got my appraisal scheduled for Saturday, but I'm a little nervous because my brother-in-law said these places always knock the price down once you show up. Thing is, I only have one key — I swear the second one is somewhere in my kitchen junk drawer but I haven't found it — and I've also put maybe a few hundred miles on it since I filled out the form because I've been driving back and forth to Eastvale for work. Is any of that going to change my offer, and if it does, am I stuck with it?",
+  "agent": "Thanks for reaching out, and good questions to ask before Saturday! As explained in our article \"What can change your offer at the appraisal,\" the appraisal confirms your offer unless we find something your online answers didn't mention. A missing key is $150 off per key, and mileage only affects the offer if it's more than 300 miles above what you entered, so it's worth checking your odometer and giving that junk drawer one more look. If anything does change, the specialist will show you the reason before you decide, and you can always say no and keep your car."
+ },
+ {
+  "_key": "t137",
+  "created_at": "2022-07-04",
+  "channel": "phone_note",
+  "style": "typos",
+  "state": "corlan",
+  "topic": "registration_expired",
+  "cites": [
+   "registration_expired__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Caller from Corlan said her registraton expired last month and wanted to know if she can still sell the car or if she has to renew it frist and if it lowers the offer.",
+  "agent": "Customer asked whether an expired registration stops her from selling her car to us. Agent explained, per \"My registration is expired,\" that we can still buy a car with an expired registration and it doesn't change the offer. Advised her to bring the expired registration card to the appointment anyway. Renewing beforehand is only required in Brevin, and she is in Corlan, so it doesn't apply to her."
+ },
+ {
+  "_key": "t138",
+  "created_at": "2026-10-04",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "brevin",
+  "topic": "duplicate_title_brevin",
+  "cites": [
+   "duplicate_title_brevin__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Seriously, I lost my car title and now I'm stuck? I live in Brevin and just want to sell my car to you guys without this dragging on forever. What do I actually have to do?",
+  "agent": "I'm sorry for the hassle. Per our article \"Getting a duplicate title in Brevin,\" you can request a duplicate by mail or at any Brevin motor vehicle office, bringing your registration and a photo ID, and it typically takes 4 to 6 weeks to arrive. In the meantime, you can still get an offer and book an appointment with us, though we can't complete the purchase until the duplicate title arrives. Just keep in mind offers last a limited time, so you may need a new one by then."
+ },
+ {
+  "_key": "t139",
+  "created_at": "2022-11-18",
+  "channel": "chat",
+  "style": "brief",
+  "state": "brevin",
+  "topic": "lease_vs_turn_in",
+  "cites": [
+   "lease_vs_turn_in__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Lease ends next month. Should I just return the car or sell it to you guys?",
+  "agent": "Both are options at lease end: turning the car in to the leasing company is simpler, but you may be charged for extra miles or wear. Selling can make sense if the car is worth more than your buyout amount. We'd suggest getting an offer from us before your turn-in date and comparing it with your buyout quote. You can find more in our article \"Selling vs. turning in at lease end.\""
+ },
+ {
+  "_key": "t140",
+  "created_at": "2025-12-22",
+  "channel": "email",
+  "style": "polite",
+  "state": "aldora",
+  "topic": "duplicate_title_aldora",
+  "cites": [
+   "duplicate_title_aldora__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hello, I'm hoping to sell my car to Northwind Auto, but I can't seem to find the title anywhere. Could you tell me what I need to do to get a replacement here in Aldora? Thank you so much for your help.",
+  "agent": "Thank you for reaching out, and no need to worry! Aldora uses electronic titles, so there usually isn't a paper title to lose in the first place. If you'd like a printed copy, you can request a duplicate title online from the Aldora motor vehicle agency, and it typically arrives in about a week. Please bring either the printout or the confirmation email with you to your appointment."
+ },
+ {
+  "_key": "t141",
+  "created_at": "2023-11-06",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "dunmore",
+  "topic": "duplicate_title_dunmore",
+  "cites": [
+   "duplicate_title_dunmore__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "I've been tearing my house apart looking for my car title and I can't find it anywhere. My appointment to sell to you guys is coming up and I'm stressed out. Do I have to cancel until I get a replacement?",
+  "agent": "I'm sorry for the stress, but you most likely don't need to cancel. Dunmore uses electronic titles, and for a sale to Northwind you usually don't need a printed copy because we transfer the electronic title at the appointment. If you'd still like a printed duplicate for your own records, you can request it online from the Dunmore motor vehicle agency, and it arrives in 5 to 7 business days."
+ },
+ {
+  "_key": "t142",
+  "created_at": "2024-10-09",
+  "channel": "chat",
+  "style": "typos",
+  "state": "brevin",
+  "topic": "odometer_problems",
+  "cites": [
+   "odometer_problems__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "hi so my odometer quit working like 2 yrs ago and the mechanic swaped the cluster, now it shows way less miles then the car actualy has. can i still sell it to you guys or is that a problem??",
+  "agent": "You can still sell it to us. Just let us know about the odometer issue when you request your offer, and at the appointment you'll mark 'not actual mileage' on the odometer statement, form NW-ODO-1. Cars marked 'not actual mileage' do get a reduced offer. If you know the true mileage, please bring records that show it, such as service invoices."
+ },
+ {
+  "_key": "t143",
+  "created_at": "2026-03-03",
+  "channel": "chat",
+  "style": "brief",
+  "state": "aldora",
+  "topic": "lessor_buyouts",
+  "cites": [
+   "lessor_buyouts__2022"
+  ],
+  "agent_error": true,
+  "outdated": true,
+  "customer": "Hi, my lease is with Bluewater Leasing. Can you guys buy it out if I want to sell you the car?",
+  "agent": "Per our article \"Which leasing companies allow third-party buyouts,\" Bluewater Leasing only lets us buy out the lease if you also buy a car from Northwind. If you'd rather not purchase a car from us, you can buy the car out yourself first and then sell it to us, or return it at the end of the lease."
+ },
+ {
+  "_key": "t144",
+  "created_at": "2024-02-21",
+  "channel": "email",
+  "style": "typos",
+  "state": "corlan",
+  "topic": "lost_title",
+  "cites": [
+   "lost_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "hi, i want to sell my car to you guys, its totaly paid off but i cant find the title anywere, think it got thrown out when we moved. im in Corlan. can i still sell it or am i stuck??",
+  "agent": "Thanks for reaching out! As explained in our article \"Selling a paid-off car when the title is lost,\" since your car is fully paid off, you'll need to get a duplicate title from your state before we can complete the purchase, because we can't buy a paid-off car without a title. In the meantime, you can still get an offer and book an appointment while you wait. How long a duplicate takes depends on the state, so your state's title office is the best place to check the timing for Corlan."
+ },
+ {
+  "_key": "t145",
+  "created_at": "2026-05-28",
+  "channel": "email",
+  "style": "brief",
+  "state": "dunmore",
+  "topic": "branded_title",
+  "cites": [
+   "branded_title__2026"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi, my car has a rebuilt title. Will you still buy it?",
+  "agent": "Thanks for reaching out! Yes, we now buy cars with rebuilt titles, though the offer is reduced to reflect the title brand, and our specialist confirms the final amount at the appraisal. When you request your offer, please select the rebuilt title brand, since an offer made for a clean title will change at the appraisal if the title turns out to be branded. You can find more details in our article \"Salvage and rebuilt titles.\""
+ },
+ {
+  "_key": "t146",
+  "created_at": "2025-11-18",
+  "channel": "phone_note",
+  "style": "rambling",
+  "state": "brevin",
+  "topic": "lease_equity",
+  "cites": [
+   "lease_equity__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Caller said she's leasing through Bluewater Leasing, got an offer from us that's higher than her buyout, and after going back and forth about her kids' school schedule she wanted to know whether she'd get the extra money as a check.",
+  "agent": "Customer asked who receives the difference when our offer exceeds her lease buyout amount. Explained, per 'If our offer is more than your lease buyout,' that the difference is called lease equity and who gets it depends on the leasing company. Advised that Bluewater Leasing applies the equity to the car she buys from Northwind rather than passing it to her directly. Customer said she'd think it over."
+ },
+ {
+  "_key": "t147",
+  "created_at": "2023-06-04",
+  "channel": "chat",
+  "style": "typos",
+  "state": "brevin",
+  "topic": "non_running_cars",
+  "cites": [
+   "non_running_cars__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "hi so my old honda wont start at all, battery and somthing else is shot i think. can i still sell it to you guys? i cant really drive it in",
+  "agent": "Thanks for reaching out, and sorry to hear about the Honda. Unfortunately, we don't buy cars that don't run or can't be driven safely to one of our stores. Since yours won't start, a local salvage buyer may be a better option for you. You can find more details in our article \"Selling a car that doesn't run.\""
+ },
+ {
+  "_key": "t148",
+  "created_at": "2025-03-02",
+  "channel": "chat",
+  "style": "polite",
+  "state": "dunmore",
+  "topic": "what_changes_offer",
+  "cites": [
+   "what_changes_offer__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hi there, I got an online offer for my car and have the appraisal coming up next week. I only have one key since I lost the spare a while back, and I've driven a few hundred miles since I filled out the form. Could either of those change my offer? Thank you!",
+  "agent": "Thanks for checking ahead of time! According to our article \"What can change your offer at the appraisal,\" a missing key or remote takes $150 off the offer for each missing key, and mileage more than 300 miles above what you entered can also lower it. If anything does change, the specialist will show you the reason before you decide. You can always say no and keep your car."
+ },
+ {
+  "_key": "t149",
+  "created_at": "2023-11-23",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "eastvale",
+  "topic": "modified_cars",
+  "cites": [
+   "modified_cars__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "I put thousands into a lift kit and a tuned engine on my truck and your appraisal came in LOWER than my buddy's stock one?? How does that even make sense? I'm in Eastvale and honestly this feels like a ripoff.",
+  "agent": "I understand the frustration, especially after investing that much in your truck. As our article 'Cars with aftermarket modifications' explains, mods like lift kits, engine tuning, loud exhausts and custom paint rarely add value and usually lower the offer, because we may need to return the car to factory condition. If a modification changed your offer, the specialist will show you why, so you can see exactly how it affected the number. And if there's anything you'd like to keep, like a custom stereo, be sure to remove it before the appraisal."
+ },
+ {
+  "_key": "t150",
+  "created_at": "2024-11-11",
+  "channel": "phone_note",
+  "style": "rambling",
+  "state": "aldora",
+  "topic": "cancel_insurance",
+  "cites": [
+   "cancel_insurance__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Caller rambled a bit about her schedule and the home pickup next week, then asked whether she can cancel her car insurance now since she's selling the car to us anyway.",
+  "agent": "Customer asked if she could cancel her insurance ahead of her scheduled home pickup. Agent explained per 'When to cancel your insurance' that the car must stay insured until the sale is complete and the car is in our hands, including on the pickup day, and that she should cancel the policy or remove the car from it only after signing the paperwork. Agent suggested she ask her insurer about a refund for the unused part of her premium. Agent also reminded her to remove toll tags and personal data before handing over the car."
+ },
+ {
+  "_key": "t151",
+  "created_at": "2026-05-27",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "brevin",
+  "topic": "buy_title_outside_lender",
+  "cites": [
+   "buy_title_outside_lender__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "I bought my car from you guys over a month ago and I STILL don't have the title in my hands. I financed through my credit union, but come on, how long does this take? Where is it?",
+  "agent": "I'm sorry for the frustration, and I understand wanting that paperwork in hand. Because you financed through your own credit union, we sent the title paperwork to them rather than to you, so Northwind no longer has the title. Your credit union will hold the title until the loan is paid off, then release the lien and send the title to you. For any questions about timing, your credit union is the best place to check, and you can find more details in our article \"When will I get my title? (outside lender).\""
+ },
+ {
+  "_key": "t152",
+  "created_at": "2022-10-22",
+  "channel": "email",
+  "style": "rambling",
+  "state": "brevin",
+  "topic": "duplicate_title_brevin",
+  "cites": [
+   "duplicate_title_brevin__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi there, so I've been meaning to sell my old sedan for a while now and finally got around to it, but of course when I went digging through my filing cabinet the title was nowhere to be found, I think it might have gotten tossed when we moved last spring, who knows. Anyway I live in Brevin and I'm wondering what I'm supposed to do now, and whether I can still sell the car to you folks or if I'm stuck waiting. Sorry for the long email, just a bit frustrated!",
+  "agent": "No need to apologize, and thanks for reaching out! As explained in our article \"Getting a duplicate title in Brevin,\" you can request a duplicate paper title by mail or at any Brevin motor vehicle office, bringing your registration and a photo ID, and it typically takes 4 to 6 weeks to arrive. In the meantime you're welcome to get an offer and book an appointment with us, though we won't be able to complete the purchase until the duplicate title arrives. Just keep in mind that offers last a limited time, so you may need a new one once your title is in hand."
+ },
+ {
+  "_key": "t153",
+  "created_at": "2022-05-02",
+  "channel": "chat",
+  "style": "typos",
+  "state": "corlan",
+  "topic": "lien_still_on_title",
+  "cites": [
+   "lien_still_on_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "hi so i payed off my car loan like a month ago but the title stil says the bank is the lienholder?? does that mean i cant sell it to you guys, im in corlan if that matters",
+  "agent": "Congrats on paying it off! Per our article \"My loan is paid off but the lien is still on the title,\" this means your lender hasn't released the lien yet, so the first step is to ask them for a lien release letter. If you can't get one, you can sign our lien release request, form NW-LRL-1, and we'll contact the lender for you, though that can add 1 to 2 weeks. Either way, we can still make you an offer and book your appointment while you wait."
+ },
+ {
+  "_key": "t154",
+  "created_at": "2026-04-22",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "dunmore",
+  "topic": "how_selling_works",
+  "cites": [
+   "how_selling_works__2022"
+  ],
+  "agent_error": true,
+  "outdated": true,
+  "customer": "I've been trying to figure out how to sell my car to you guys for two days and nobody gives me a straight answer. Do I seriously have to buy one of your cars just to get rid of mine? I just want to know what the actual process is.",
+  "agent": "Sorry for the runaround. You don't have to buy a car from us to sell one, and the process from our article \"Selling your car to Northwind: how it works\" is four steps: get an offer online with your VIN or license plate (or walk into any store for an on-the-spot quote), book an appraisal appointment, have a specialist inspect the car in about 30 minutes to confirm the offer, then sign the paperwork and get paid. Just keep in mind that offers last a limited time, so it's best to book your appraisal soon after you get one."
+ },
+ {
+  "_key": "t155",
+  "created_at": "2023-09-11",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "aldora",
+  "topic": "returns",
+  "cites": [
+   "returns__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hi so I picked up the SUV from you guys last Wednesday, it got delivered to my place here in Aldora, and honestly it's fine, nothing wrong with it really, but my sister keeps saying I overpaid and now I'm second-guessing everything and the back seat feels smaller than I remember? Anyway I've only driven it to work and back a few times, maybe 80 miles or so, and I'm wondering if I can just give it back or if I'm stuck with it now.",
+  "agent": "Thanks for reaching out, and no worries at all. Per our article 'Returning a car you bought from us,' you can return a car within 7 days of delivery and before you've driven it 250 miles for a full refund, as long as it's in the same condition as when you got it. Since it was delivered last Wednesday and you're around 80 miles, you're still within that window, so you can start a return online or at any of our stores."
+ },
+ {
+  "_key": "t156",
+  "created_at": "2026-08-11",
+  "channel": "chat",
+  "style": "typos",
+  "state": "dunmore",
+  "topic": "divorce_ex_on_title",
+  "cites": [
+   "divorce_ex_on_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "hi so im trying to sell my car to you guys but my ex husband is stil on the title?? we're divorced now and honestly i dont really want to have to track him down for anything. do i have too?",
+  "agent": "Thanks for reaching out! Per our article \"My ex is still on the title,\" if your ex-spouse is still listed on the title, they would normally need to sign too, just like any co-owner. The exception is if your divorce decree awards the car to you: in that case, just bring a certified copy of the decree and his signature isn't needed. Also, if your name changed in the divorce, let us know and we can point you to the info on that."
+ },
+ {
+  "_key": "t157",
+  "created_at": "2024-04-11",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "corlan",
+  "topic": "modified_cars",
+  "cites": [
+   "modified_cars__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "I just got an appraisal offer for my truck and it's way lower than I expected. I spent thousands on a lift kit and a tuned engine, and now it feels like you're punishing me for upgrades instead of paying for them. Why would modifications make my truck worth less?",
+  "agent": "I understand how frustrating that is after investing so much in your truck. As our article \"Cars with aftermarket modifications\" explains, aftermarket changes like lift kits, engine tuning, loud exhausts and custom paint rarely add value and usually lower the offer, because we may need to return the car to factory condition. If a modification changed your offer, the specialist will show you why. And if there's anything you'd like to keep, such as a custom stereo, please remove it before the appraisal."
+ },
+ {
+  "_key": "t158",
+  "created_at": "2026-05-25",
+  "channel": "email",
+  "style": "polite",
+  "state": "dunmore",
+  "topic": "electronic_titles",
+  "cites": [
+   "electronic_titles__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hello, I'm planning to sell my car to Northwind Auto and I live in Dunmore. I can't seem to find a paper title anywhere in my files, and I still have a small loan on the car. Could you let me know what I need to bring regarding the title? Thank you so much!",
+  "agent": "Thank you for reaching out, and no need to worry about the missing paper. As explained in our article \"States with electronic titles,\" Dunmore uses electronic titles, so your title is a record held by the state rather than a paper document, and there's no paper title to bring. We'll transfer the title electronically at your appointment, and since you have a loan, your lender releases the lien electronically as well."
+ },
+ {
+  "_key": "t159",
+  "created_at": "2024-02-07",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "aldora",
+  "topic": "lien_still_on_title",
+  "cites": [
+   "lien_still_on_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "I paid off my car loan weeks ago and my title STILL shows the bank as the lienholder. I'm trying to sell to you guys and now I'm stuck. What am I supposed to do here?",
+  "agent": "I'm sorry for the frustration. Your title still shows the lender because the lien hasn't been released yet, so the first step is to ask your lender for a lien release letter. If you can't get one, you can sign our lien release request, form NW-LRL-1, and we'll contact the lender for you, though this can add 1 to 2 weeks. You're not stuck in the meantime: we can still make you an offer and book your appointment while you wait."
+ },
+ {
+  "_key": "t160",
+  "created_at": "2026-09-22",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "aldora",
+  "topic": "epayoff_network",
+  "cites": [
+   "epayoff_network__2026"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "I've been running around trying to get a payoff letter from Granite Bank for two days and nobody there can tell me how long it'll take. My appointment to trade in my car is this week. Do I really need this letter or not?",
+  "agent": "I'm sorry for the hassle. Good news: Granite Bank joined our e-payoff network on March 15, 2026, so you don't need a payoff letter. Just bring your loan account number to your appointment, and we'll confirm the payoff directly with Granite Bank the same day. You can find more details in our article \"Lenders in our e-payoff network.\""
+ },
+ {
+  "_key": "t161",
+  "created_at": "2022-07-22",
+  "channel": "chat",
+  "style": "brief",
+  "state": "dunmore",
+  "topic": "license_plates",
+  "cites": [
+   "license_plates__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Selling my car to you guys this week. Do I leave the plates on or take them?",
+  "agent": "Please take your license plates off before you hand over the car, and hang on to them. What happens with them after that depends on your state's motor vehicle agency, but you can usually transfer them to your next car. You can find more in our article \"What to do with your license plates.\""
+ },
+ {
+  "_key": "t162",
+  "created_at": "2026-08-23",
+  "channel": "email",
+  "style": "polite",
+  "state": "eastvale",
+  "topic": "negative_equity",
+  "cites": [
+   "negative_equity__2026"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hello, I'm hoping to sell my car to you, but I think I still owe a bit more on the loan than the offer you gave me. Is that going to be a problem, and if not, how would I take care of the extra amount? Thank you for your help.",
+  "agent": "Thank you for reaching out. Owing more than our offer doesn't stop you from selling us the car; you would simply pay the difference at your appointment, once we've compared the offer with what's left on your loan. We accept a cashier's check or a debit card, but not personal checks or credit cards. If you decide you'd rather not pay the difference, you're welcome to keep the car, as an offer never obliges you to sell."
+ },
+ {
+  "_key": "t163",
+  "created_at": "2024-11-05",
+  "channel": "chat",
+  "style": "typos",
+  "state": "brevin",
+  "topic": "license_plates",
+  "cites": [
+   "license_plates__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "hey so im selling my car to you guys this week, do i leave the plates on it or what?? im in brevin if that matters",
+  "agent": "Good question! Please take your license plates off before you hand over the car, and hang on to them. What happens with them after that depends on your state's motor vehicle agency, but you can usually transfer them to your next car. You can find more in our article \"What to do with your license plates.\""
+ },
+ {
+  "_key": "t164",
+  "created_at": "2022-04-24",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "corlan",
+  "topic": "co_owners",
+  "cites": [
+   "co_owners__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Seriously, I showed up to sell my car and got told I can't finish because my ex-wife's name is on the title too. She lives three hours away and there's no way she's driving here. How am I supposed to sell my own car?",
+  "agent": "I'm sorry for the hassle. Per our article \"When more than one person owns the car,\" it depends on how the names are joined on the title: if they're joined by 'or,' only one owner needs to sign, but if they're joined by 'and,' every owner has to sign. If her signature is required and she can't come to the appraisal appointment, she can sign a power of attorney, form NW-POA-1, which must be notarized. Could you check your title and let me know whether it says 'and' or 'or' between your names?"
+ },
+ {
+  "_key": "t165",
+  "created_at": "2022-04-07",
+  "channel": "email",
+  "style": "brief",
+  "state": "eastvale",
+  "topic": "walk_in_quotes",
+  "cites": [
+   "walk_in_quotes__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Do I need an appointment to get my car appraised at your Eastvale store? And what should I bring?",
+  "agent": "No appointment needed. You can walk into any Northwind store and a specialist will inspect your car while you wait, usually in 30 to 45 minutes, and give you a written quote that's valid for 7 days or 300 miles. If you'd like to sell during that visit, please bring your photo ID, registration and title, or your payoff information if you still have a loan on the car."
+ },
+ {
+  "_key": "t166",
+  "created_at": "2025-01-30",
+  "channel": "phone_note",
+  "style": "typos",
+  "state": "brevin",
+  "topic": "co_owners",
+  "cites": [
+   "co_owners__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Caller said her and her brother are both on the title for the car shes selling but he lives out of state and cant make the apraisal apointment, wanted to know if she can sign for him.",
+  "agent": "Customer asked whether she could sign alone since her brother is also listed as an owner and can't attend the appraisal. Agent explained per 'When more than one person owns the car' that every owner has to sign the sale documents, and the easiest way is for all owners to come to the appointment with photo IDs. Agent advised the brother can instead sign a power of attorney, form NW-POA-1, which must be notarized. Agent also told her to check the title: if the names are joined by 'or' only one owner needs to sign, but if joined by 'and' every owner must sign."
+ },
+ {
+  "_key": "t167",
+  "created_at": "2023-11-19",
+  "channel": "chat",
+  "style": "polite",
+  "state": "brevin",
+  "topic": "walk_in_quotes",
+  "cites": [
+   "walk_in_quotes__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hi there, I was hoping to get a quote on my car this weekend but I haven't booked anything. Is it okay to just stop by one of your stores, and how long would it take? Thank you so much!",
+  "agent": "Absolutely, you can walk into any Northwind store without an appointment and get a quote on the spot. A specialist will inspect your car while you wait, usually in 30 to 45 minutes, and you'll get a written quote that's valid for 7 days or 300 miles. If you decide to accept, you can finish the sale during the same visit, so bring your photo ID, registration and title, or your payoff information if you still have a loan."
+ },
+ {
+  "_key": "t168",
+  "created_at": "2024-05-28",
+  "channel": "phone_note",
+  "style": "typos",
+  "state": "eastvale",
+  "topic": "duplicate_title_eastvale",
+  "cites": [
+   "duplicate_title_eastvale__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Caller said she lost her car titel and has an apointment with us comming up, wants to know how to get a new one in Eastvale.",
+  "agent": "Customer asked how to replace a lost title before her appointment. Explained per 'Getting a duplicate title in Eastvale' that she can apply for a duplicate at any Eastvale motor vehicle office with her photo ID and registration. Let her know the main offices print duplicates the same day, while by mail it takes 2 to 3 weeks. Reminded her to bring the duplicate to her appointment."
+ },
+ {
+  "_key": "t169",
+  "created_at": "2022-05-24",
+  "channel": "email",
+  "style": "polite",
+  "state": "brevin",
+  "topic": "lender_overpayment_refund",
+  "cites": [
+   "lender_overpayment_refund__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hello, I traded in my car with you earlier this month and I think my last auto-loan payment went through right after you paid off the loan. Could you tell me how I get that extra payment back? Thank you so much for your help.",
+  "agent": "Thank you for reaching out, and congratulations on your purchase! As explained in our article \"Getting back an extra loan payment,\" if your lender received both our payoff and one of your regular payments, that extra amount belongs to you, and your lender refunds it directly to you, usually within 2 to 4 weeks after the loan is closed. Northwind doesn't receive or forward overpayments, so if the refund doesn't arrive, please contact your lender directly."
+ },
+ {
+  "_key": "t170",
+  "created_at": "2026-06-22",
+  "channel": "chat",
+  "style": "polite",
+  "state": "dunmore",
+  "topic": "co_owners",
+  "cites": [
+   "co_owners__2026"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi there, my sister and I are both listed as owners on the car we're selling to you, but she won't be able to make it to the appointment. Is there a way she can still sign off on it from home? We're in Dunmore, if that matters.",
+  "agent": "Thanks for reaching out! Since you're both listed as owners, every owner needs to sign the sale documents, but your sister can sign power of attorney form NW-POA-2 instead of attending. In Dunmore, NW-POA-2 can be signed electronically and doesn't need a notary. One more tip: if your names are joined by 'or' on the title rather than 'and', only one of you needs to sign."
+ },
+ {
+  "_key": "t171",
+  "created_at": "2025-02-18",
+  "channel": "phone_note",
+  "style": "polite",
+  "state": "aldora",
+  "topic": "appointment_checklist",
+  "cites": [
+   "appointment_checklist__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Caller politely asked what documents she needs to bring to her trade-in appraisal appointment next week, mentioning she still has a loan on the car.",
+  "agent": "Customer asked what to bring to her appraisal appointment, so the agent went over 'What to bring to your appraisal appointment' with her. She was told to bring a valid photo ID for every owner listed on the title, the current registration, all keys and remotes, and the odometer statement (form NW-ODO-1), which she can also fill in at the store. Since she still has a loan, she was advised to bring her payoff letter instead of the title. The agent also let her know to plan for about an hour."
+ },
+ {
+  "_key": "t172",
+  "created_at": "2025-02-17",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "eastvale",
+  "topic": "leased_car",
+  "cites": [
+   "leased_car__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi, so I've got this car I'm leasing, been driving it about two years now, and honestly I'm thinking I'd rather just sell it to you guys than keep paying on it, but I'm not totally sure how that even works since it's technically not mine? My neighbor said something about a payoff number but then I called the leasing company and they gave me a number and I don't know if that's the right one. Anyway, what do I actually need to do here?",
+  "agent": "Great question! Since the leasing company owns the car, selling it to us is really a buyout from them, so first check that your leasing company allows third-party buyouts. Then ask them for a dealer payoff quote specifically, because it can be different from the payoff they quoted to you. If you'd rather not deal with that, you can sign the lease buyout authorization, form NW-LSE-1, and we'll request the dealer payoff quote for you. Either way, just bring the quote to your appointment."
+ },
+ {
+  "_key": "t173",
+  "created_at": "2023-12-03",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "aldora",
+  "topic": "electronic_titles",
+  "cites": [
+   "electronic_titles__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "I've torn my whole house apart looking for the title to my car and it's nowhere. I live in Aldora and my appointment to sell is this week, so am I going to have to cancel over a piece of paper?",
+  "agent": "I'm sorry for the stress, but you don't need to cancel. Aldora uses electronic titles, so your title is a record held by the state rather than a paper document, and there's no paper title to bring. We transfer the title electronically at your appointment. If you had a loan on the car, the lender releases the lien electronically too."
+ },
+ {
+  "_key": "t174",
+  "created_at": "2025-01-28",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "brevin",
+  "topic": "duplicate_title_brevin",
+  "cites": [
+   "duplicate_title_brevin__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "I lost the title to my car and now I'm being told I can't sell it to you until I have it?? This is ridiculous, I just want to get this done. What am I supposed to do now?",
+  "agent": "I'm sorry for the hassle. Since Brevin issues paper titles, you can request a duplicate by mail or at any Brevin motor vehicle office; just bring your registration and a photo ID. Duplicates take 4 to 6 weeks to arrive, and in the meantime you can still get an offer and book an appointment with us, though we can't complete the purchase until the duplicate is in hand. Offers last a limited time, so you may need a new one once your title arrives."
+ },
+ {
+  "_key": "t175",
+  "created_at": "2026-09-06",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "dunmore",
+  "topic": "duplicate_title_dunmore",
+  "cites": [
+   "duplicate_title_dunmore__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi, so I'm planning to sell my car to you guys and I've been tearing the house apart looking for the paper title, which I honestly don't think I ever got because I think Dunmore does it all electronically now? Anyway, do I need to get a printed copy before my appointment, and if so how do I even do that and how long does it take?",
+  "agent": "Good news: for a sale to Northwind you usually don't need a printout, because Dunmore uses electronic titles and we transfer the electronic title at the appointment. If you'd still like a printed duplicate for your records, you can request it online from the Dunmore motor vehicle agency, and it arrives in 5 to 7 business days. You can find these details in our article \"Getting a duplicate title in Dunmore.\""
+ },
+ {
+  "_key": "t176",
+  "created_at": "2024-06-08",
+  "channel": "phone_note",
+  "style": "polite",
+  "state": "dunmore",
+  "topic": "registration_expired",
+  "cites": [
+   "registration_expired__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Caller from Dunmore politely asked whether they can still sell their car to Northwind Auto even though the registration has expired.",
+  "agent": "Customer asked if an expired registration would stop them from selling their car to us. Confirmed per the article \"My registration is expired\" that we can still buy the car with an expired registration and that it doesn't change the offer. Advised the customer to bring the expired registration card to the appointment anyway. Customer thanked us and said they would bring it along."
+ },
+ {
+  "_key": "t177",
+  "created_at": "2022-03-12",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "eastvale",
+  "topic": "duplicate_title_eastvale",
+  "cites": [
+   "duplicate_title_eastvale__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi, so I'm supposed to be selling my car to you guys next week and I went digging through my filing cabinet, the junk drawer, even the glovebox, and I cannot find the title anywhere. I think it might have gotten tossed when we moved last fall, honestly no idea. I'm in Eastvale if that matters. Is there any way to still do this or do I need to cancel?",
+  "agent": "No need to cancel. Per our article \"Getting a duplicate title in Eastvale,\" you can apply for a duplicate paper title at any Eastvale motor vehicle office by bringing your photo ID and registration. The main offices print duplicates the same day, while requesting one by mail takes 2 to 3 weeks, so going in person is your best bet with your appointment next week. Just bring the duplicate with you to your appointment."
+ },
+ {
+  "_key": "t178",
+  "created_at": "2024-04-05",
+  "channel": "chat",
+  "style": "brief",
+  "state": "brevin",
+  "topic": "cancel_insurance",
+  "cites": [
+   "cancel_insurance__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Selling my car to you guys, pickup is next week. Can I cancel my insurance now?",
+  "agent": "Please keep your car insured until the sale is complete and the car is in our hands, including on the day of your home pickup. You can cancel your policy, or remove the car from it, once you've signed the paperwork, and it's worth asking your insurer about a refund for the unused part of your premium. Before you hand over the car, also remember to remove any toll tags and your personal data."
+ },
+ {
+  "_key": "t179",
+  "created_at": "2026-02-15",
+  "channel": "phone_note",
+  "style": "frustrated",
+  "state": "aldora",
+  "topic": "returns",
+  "cites": [
+   "returns__2022"
+  ],
+  "agent_error": true,
+  "outdated": true,
+  "customer": "Caller, upset, said the car he bought last week just isn't working out for his family and he wants to know if he can still send it back before he's stuck with it.",
+  "agent": "Customer asked about returning his recently purchased car and was frustrated about the situation. Explained per 'Returning a car you bought from us' that a full refund is available if the car is returned within 7 days of delivery and before it's driven 250 miles, and it must be in the same condition as when he received it. Advised he can start the return online or at any store; customer said he would check his delivery date and mileage before starting."
+ },
+ {
+  "_key": "t180",
+  "created_at": "2024-09-02",
+  "channel": "chat",
+  "style": "polite",
+  "state": "eastvale",
+  "topic": "lien_still_on_title",
+  "cites": [
+   "lien_still_on_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi there, I finished paying off my car loan a while ago, but my title still shows the bank as the lienholder. I was hoping to sell the car to you — is that still possible, and what should I do about the title? Thank you!",
+  "agent": "Thanks for reaching out! When the title still lists the lender after payoff, it means the lien hasn't been released yet, so the first step is to ask your lender for a lien release letter. If you can't get one, you can sign our lien release request, form NW-LRL-1, and we'll contact the lender for you, though that can add 1 to 2 weeks. In the meantime, we can still make you an offer and book your appointment while you wait."
+ },
+ {
+  "_key": "t181",
+  "created_at": "2025-09-12",
+  "channel": "phone_note",
+  "style": "rambling",
+  "state": "dunmore",
+  "topic": "toll_tags_personal_data",
+  "cites": [
+   "toll_tags_personal_data__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Caller from Dunmore said she's selling her old car to Northwind next week and went on for a while about her late husband's garage opener and the toll thing on the windshield, then asked what she should clear out of the car before handing it over and whether her phone would still be connected.",
+  "agent": "Customer asked what to remove from her car before selling. Agent went through the article 'Toll tags, garage codes and paired phones': take off toll tags and parking stickers, clear the garage door codes, and unpair her phone from the car's system. Agent also advised that if the car has a connected-car app, she should remove the car from her account so the next owner can't see her data."
+ },
+ {
+  "_key": "t182",
+  "created_at": "2023-02-08",
+  "channel": "chat",
+  "style": "brief",
+  "state": "corlan",
+  "topic": "non_running_cars",
+  "cites": [
+   "non_running_cars__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hi, my car won't start anymore. Can I still sell it to you guys?",
+  "agent": "Sorry to hear about your car! As explained in our article \"Selling a car that doesn't run,\" we don't buy cars that don't run or can't be driven safely to a store. Since yours won't start, a local salvage buyer may be a better option for you."
+ },
+ {
+  "_key": "t183",
+  "created_at": "2025-08-17",
+  "channel": "chat",
+  "style": "typos",
+  "state": "aldora",
+  "topic": "negative_equity",
+  "cites": [
+   "negative_equity__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "hi so i still owe like 3k more on my loan then what you guys offerd me for my car, can i even still sell it to you? and can i just put the diffrence on my credit card",
+  "agent": "Yes, you can still sell us the car even if you owe more on the loan than our offer, which is called negative equity or being upside down. You'd pay the difference at your appointment, after we compare our offer with what's left on your loan. For that payment we accept a cashier's check, a debit card, or a personal check, but unfortunately we can't accept credit cards."
+ },
+ {
+  "_key": "t184",
+  "created_at": "2026-02-03",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "eastvale",
+  "topic": "offer_validity",
+  "cites": [
+   "offer_validity__2026"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Seriously? I got my offer last week and now I'm hearing it might already be expired? Nobody told me there was a time limit, and I had to push my appraisal back because of work. How long do I actually have before this thing runs out?",
+  "agent": "I'm sorry for the frustration. Per our article \"How long is my offer good for?\", offers issued before February 1, 2026 keep their original terms of 7 days or 300 additional miles, whichever comes first, and you can find your exact expiration date on your offer page and in your confirmation email. We'll honor the offer as long as your appraisal appointment is on or before that date, but rescheduling doesn't extend it. If it does expire, you can request a new offer at any time, though the amount will reflect current market prices and may be higher or lower."
+ },
+ {
+  "_key": "t185",
+  "created_at": "2025-03-11",
+  "channel": "phone_note",
+  "style": "frustrated",
+  "state": "eastvale",
+  "topic": "duplicate_title_eastvale",
+  "cites": [
+   "duplicate_title_eastvale__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Caller is upset because he can't find his car title and has a Northwind Auto appointment coming up, and he's worried he'll have to cancel.",
+  "agent": "Customer asked how to replace a lost title in Eastvale. Explained per 'Getting a duplicate title in Eastvale' that he can apply for a duplicate at any Eastvale motor vehicle office with his photo ID and registration, and that the main offices print duplicates the same day while mail takes 2 to 3 weeks. Advised him to bring the duplicate title to his appointment."
+ },
+ {
+  "_key": "t186",
+  "created_at": "2023-06-11",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "aldora",
+  "topic": "license_plates",
+  "cites": [
+   "license_plates__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hi there, so I'm finally selling my old Corolla to you guys next week, which is kind of bittersweet honestly because I've had it since college, but anyway I was wondering about the license plates? Like do I leave them on for you or take them off or what, I'm in Aldora if that matters. I'm also getting a new car soon so I don't know if I need them for that.",
+  "agent": "Congrats on the sale, and I get that it's bittersweet after so many years! Per our article \"What to do with your license plates,\" please remove the plates before you hand over the car and keep them. What you do with them afterward is up to your state's motor vehicle agency, so check with Aldora's agency, but you can usually transfer them to your next car."
+ },
+ {
+  "_key": "t187",
+  "created_at": "2022-03-31",
+  "channel": "email",
+  "style": "polite",
+  "state": "eastvale",
+  "topic": "keep_paying_until_confirmed",
+  "cites": [
+   "keep_paying_until_confirmed__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hello, I recently sold my car to Northwind Auto and I still have a loan on it. Should I keep paying my monthly loan bill, or can I stop now that you're handling the payoff? Thank you for your help.",
+  "agent": "Thank you for reaching out, and yes, please keep making your regular loan payments until your lender confirms the loan is paid off. Our payoff covers the amount your lender quoted, but a missed payment in the meantime could be reported as late on your credit history. If one of your payments goes through after the payoff, your lender will refund it to you. You can find more details in our article \"Should I keep making loan payments?\""
+ },
+ {
+  "_key": "t188",
+  "created_at": "2023-03-01",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "brevin",
+  "topic": "duplicate_title_brevin",
+  "cites": [
+   "duplicate_title_brevin__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi, so I'm thinking about selling my car to you guys, but I think I lost the title somewhere, maybe when I moved last year? I've looked through every box in the garage and no luck. I live in Brevin if that matters. Can I still sell it, or am I stuck until I find it?",
+  "agent": "Sorry to hear the title went missing in the move, but you can request a duplicate in Brevin, either by mail or at any Brevin motor vehicle office, as long as you bring your registration and a photo ID. Duplicates take 4 to 6 weeks to arrive. You can still get an offer and book an appointment with us while you wait, but we can't complete the purchase until the duplicate title arrives. Offers last a limited time, so you may need a new one once your title comes in."
+ },
+ {
+  "_key": "t189",
+  "created_at": "2025-10-14",
+  "channel": "chat",
+  "style": "brief",
+  "state": "corlan",
+  "topic": "non_running_cars",
+  "cites": [
+   "non_running_cars__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hi, my car won't start anymore. Can I still sell it to you guys?",
+  "agent": "Sorry to hear about your car! Unfortunately, we don't buy cars that don't run or can't be driven safely to one of our stores. Since yours won't start, a local salvage buyer may be a better option for you."
+ },
+ {
+  "_key": "t190",
+  "created_at": "2022-07-31",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "eastvale",
+  "topic": "open_recalls",
+  "cites": [
+   "open_recalls__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Seriously, I just got a recall notice in the mail for my car and now I'm worried you won't take it. I was planning to sell it to you guys this week and I really don't have time to deal with another hassle. Is this going to tank my offer?",
+  "agent": "I understand the frustration, and the good news is this won't get in your way. As our article \"Selling a car with an open recall\" explains, we do buy cars with open safety recalls, and an open recall doesn't change your offer. Recall repairs are free at a dealer for your car's brand, so you're welcome to get it fixed first if you'd like, but you don't have to."
+ },
+ {
+  "_key": "t191",
+  "created_at": "2026-07-13",
+  "channel": "phone_note",
+  "style": "rambling",
+  "state": "eastvale",
+  "topic": "duplicate_title_eastvale",
+  "cites": [
+   "duplicate_title_eastvale__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Caller explained at length that they've torn the house apart looking for their car title before their trade-in appointment, think it may have gone out with old paperwork, and asked how to get a replacement in Eastvale.",
+  "agent": "Customer asked how to replace a lost title in Eastvale; walked them through the 'Getting a duplicate title in Eastvale' article. Explained they can apply for a duplicate at any Eastvale motor vehicle office with their photo ID and registration, and that the main offices print duplicates the same day, while applying by mail takes 2 to 3 weeks. Reminded customer to bring the duplicate title to their appointment."
+ },
+ {
+  "_key": "t192",
+  "created_at": "2023-02-23",
+  "channel": "chat",
+  "style": "brief",
+  "state": "dunmore",
+  "topic": "lender_overpayment_refund",
+  "cites": [
+   "lender_overpayment_refund__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi, I traded in my car with you guys but my auto payment still went out to my lender after you paid it off. How do I get that money back?",
+  "agent": "That extra payment belongs to you, and your lender will refund it directly to you, usually within 2 to 4 weeks after the loan is closed. Northwind doesn't receive or forward overpayments, so it won't come through us. If the refund doesn't arrive in that window, please reach out to your lender directly. You can find more in our article \"Getting back an extra loan payment.\""
+ },
+ {
+  "_key": "t193",
+  "created_at": "2022-08-31",
+  "channel": "chat",
+  "style": "polite",
+  "state": "eastvale",
+  "topic": "walk_in_quotes",
+  "cites": [
+   "walk_in_quotes__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "Hi there! I'm in Eastvale and was hoping to get my car looked at for a quote this weekend. Do I need to book an appointment first, and is there anything I should bring along? Thank you!",
+  "agent": "Hi, thanks for reaching out! No appointment is needed. You can walk into any Northwind store, and a specialist will inspect your car while you wait, usually in 30 to 45 minutes, then give you a written quote that's valid for 7 days or 300 miles. If you decide to accept it, you can finish the sale during the same visit, so it helps to bring your photo ID, registration and title, or your payoff information if you still have a loan."
+ },
+ {
+  "_key": "t194",
+  "created_at": "2024-01-23",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "aldora",
+  "topic": "lessor_buyouts",
+  "cites": [
+   "lessor_buyouts__2022"
+  ],
+  "agent_error": false,
+  "outdated": true,
+  "customer": "I've been trying to sell my leased car to you guys for a week and now someone tells me Crescent Motor Credit won't even let you buy it out?? Why didn't anyone say this upfront? What am I supposed to do now?",
+  "agent": "I'm sorry for the frustration and the runaround. According to our article \"Which leasing companies allow third-party buyouts,\" Crescent Motor Credit doesn't allow us to buy out the lease directly. You still have options, though: you can buy the car out yourself first and then sell it to us, or return it at the end of your lease."
+ },
+ {
+  "_key": "t195",
+  "created_at": "2025-10-22",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "dunmore",
+  "topic": "electronic_titles",
+  "cites": [
+   "electronic_titles__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Hi, so I'm planning to sell my car to you guys next week and I've been tearing the house apart looking for the title, checked the filing cabinet, the glovebox, even my mom's place since she helped me buy it years ago, and nothing. I live in Dunmore if that matters, and I did have a loan on it that I paid off a while back, so I'm not even sure who'd have the title now. Do I need to order a replacement before my appointment or what?",
+  "agent": "Good news, you can stop searching! Dunmore uses electronic titles, so your title is a record held by the state, not a paper document, and there's no paper title to bring to your appointment. We'll transfer the title electronically when you come in. Since you had a loan, the lender releases the lien electronically as well, as explained in our article \"States with electronic titles.\""
+ },
+ {
+  "_key": "t196",
+  "created_at": "2025-06-30",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "brevin",
+  "topic": "odometer_problems",
+  "cites": [
+   "odometer_problems__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "I'm honestly fed up. My dashboard mileage display died months ago and the shop swapped in a used cluster that shows way fewer miles than my car actually has. Now I want to sell it to you and I have no idea if this is going to wreck the whole deal or get me accused of something. What am I supposed to do?",
+  "agent": "I'm sorry this has been such a headache. Please let us know about the replaced odometer when you request your offer, and at your appointment you'll mark 'not actual mileage' on the odometer statement, form NW-ODO-1. Cars marked 'not actual mileage' do receive a reduced offer, but if you know the true mileage, bringing records that show it, such as service invoices, will help. You can find more details in our article 'Broken or replaced odometer.'"
+ },
+ {
+  "_key": "t197",
+  "created_at": "2023-11-19",
+  "channel": "chat",
+  "style": "brief",
+  "state": "corlan",
+  "topic": "open_recalls",
+  "cites": [
+   "open_recalls__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "hey, my car has a recall that hasn't been fixed yet. can i still sell it to you?",
+  "agent": "Yes, we buy cars with open safety recalls, and the open recall won't change your offer. Recall repairs are free at a dealer for your car's brand, so you're welcome to get it fixed first if you'd like, but you don't have to. You can find more in our article \"Selling a car with an open recall.\""
+ },
+ {
+  "_key": "t198",
+  "created_at": "2026-04-16",
+  "channel": "chat",
+  "style": "brief",
+  "state": "brevin",
+  "topic": "duplicate_title_brevin",
+  "cites": [
+   "duplicate_title_brevin__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Lost my title, I'm in Brevin. Can I still sell my car to you?",
+  "agent": "Sorry to hear that! Per our article \"Getting a duplicate title in Brevin,\" you can request a duplicate by mail or at any Brevin motor vehicle office, bringing your registration and a photo ID, and it takes 4 to 6 weeks to arrive. You can get an offer and book an appointment while you wait, but we can't complete the purchase until the duplicate arrives. Just note that offers last a limited time, so you may need a new one once your title comes in."
+ },
+ {
+  "_key": "t199",
+  "created_at": "2025-11-20",
+  "channel": "phone_note",
+  "style": "frustrated",
+  "state": "eastvale",
+  "topic": "leased_car",
+  "cites": [
+   "leased_car__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "Caller from Eastvale, frustrated, said he's trying to sell his leased car to Northwind but keeps getting a different payoff number than he expected and doesn't understand why the process is so complicated.",
+  "agent": "Customer asked why selling his leased car is so involved; explained that the leasing company owns the car, so a sale to us is really a buyout from the leasing company, per 'Selling a car that you lease.' Advised him to first confirm his leasing company allows third-party buyouts, then request a dealer payoff quote, noting it can differ from the payoff they quote to him directly. Offered the option of signing the lease buyout authorization, form NW-LSE-1, so we can request the dealer payoff quote on his behalf. Reminded him to bring the quote to his appointment."
+ },
+ {
+  "_key": "t200",
+  "created_at": "2025-11-16",
+  "channel": "chat",
+  "style": "brief",
+  "state": "eastvale",
+  "topic": "leased_car",
+  "cites": [
+   "leased_car__2022"
+  ],
+  "agent_error": false,
+  "outdated": false,
+  "customer": "I lease my car. Can I still sell it to you guys?",
+  "agent": "Yes. Since the leasing company owns the car, selling it to us works as a buyout from them, so first check that your leasing company allows third-party buyouts. Then ask them for a dealer payoff quote, which can be different from the payoff they quote to you. Or you can sign our lease buyout authorization, form NW-LSE-1, and we'll request the dealer payoff quote for you. Either way, please bring the quote to your appointment."
+ }
+]

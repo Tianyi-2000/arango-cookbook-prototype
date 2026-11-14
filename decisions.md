@@ -65,8 +65,8 @@ Key choices and why we made them: the "why" only. What changed is in [progress.m
 
 ### D-014 · 2026-11-13 · A separate Obsidian vault for Arango, with the repo inside it
 - **What:** the vault is `~/Projects/Arango/`, with the repo at `01 Cookbook Demo/arango-cookbook-prototype/` and an internship placeholder next to it.
-- **Why:** one home for Arango work, separate from interview prep. The harness files live in the repo, so git versions them and Obsidian shows them.
-- **Rejected:** a vault holding only the docs, with the repo left in the interview-prep vault (docs and code in two places).
+- **Why:** one home for Arango work, separate from other notes. The harness files live in the repo, so git versions them and Obsidian shows them.
+- **Rejected:** a vault holding only the docs, with the repo left in another notes vault (docs and code in two places).
 - **Decided by:** Tianyi
 
 ### D-015 · 2026-11-13 · Six harness files, versioned architecture

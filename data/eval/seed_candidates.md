@@ -46,7 +46,7 @@ Mark each candidate: `Your call: keep / edit / drop`.
 - Must-include: `yes` · `pay off the lender`
 - What makes it hard: "pink slip" and "bank" share no words with "title" and "lienholder". The lost-title article ("we cannot buy without a title") is the trap that looks closest.
 - Tricky: `messy_input` (slang)
-- Why I picked it: it's the CarMax story told in slang. If vector search lands on the lost-title article, the bot gives exactly the wrong answer the chatbot gave.
+- Why I picked it: it's the origin story (a retailer's chatbot that said no title, no sale) told in slang. If vector search lands on the lost-title article, the bot gives exactly the wrong answer the chatbot gave.
 - Your call:
 
 ### 2B
@@ -190,7 +190,7 @@ Mark each candidate: `Your call: keep / edit / drop`.
 - Must-include: `no` · `pays the lender`
 - What makes it hard: a false premise. The lost-title article seems to confirm it ("we cannot buy … without a title"), and bots tend to agree with the user.
 - Tricky: `rule_conflict` (false premise)
-- Why I picked it: this is the CarMax moment. The signature question for the whole cookbook.
+- Why I picked it: this is the origin story's moment. The signature question for the whole cookbook.
 - Your call:
 
 ### 8B

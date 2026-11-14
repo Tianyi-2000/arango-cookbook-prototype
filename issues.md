@@ -90,6 +90,13 @@ Problems we hit and how we fixed them. Each entry: symptom → root cause → fi
 - **Root cause:** tickets with the same topic, style and state got almost the same prompt, and the model (at low effort) wrote almost the same message.
 - **Fix:** every ticket now gets a vehicle and a customer persona, drawn from a separate seeded RNG so the rest of the plan didn't change. The prompt asks for varied openings and no filler. A repeat of an earlier (topic, state, style, persona) combination gets a fresh persona from a third RNG; this changed t066, t095, t154 and t168. A new check fails any pair of customer messages sharing 50% or more of their 4-grams. The threshold was set before the regenerated tickets were checked, and it flags 5 pairs in the first batch.
 - **Verified:** the second batch has 0 "you guys" and 153 distinct 4-word openings. Its highest overlap is 39% (it was 100%), and `make check` passes.
+- **Before and after** (same planned tickets):
+  - Batch 1, t182: *"Hi, my car won't start anymore. Can I still sell it to you guys?"*
+  - Batch 1, t189: *"Hi, my car won't start anymore. Can I still sell it to you guys?"* (identical)
+  - Batch 2, t182 (veteran, midsize SUV): *"Hi, my midsize SUV won't start anymore. Can I still sell it to Northwind Auto? I'm in Corlan."*
+  - Batch 2, t189 (long-distance commuter, full-size SUV): *"My SUV won't start anymore. Can I still sell it to you? I'm in Corlan."*
+- **What's left, honestly:** short ("brief") messages on the same topic still look alike. This pair is at 35%, under the 50% gate, because there are only so many ways to say "my car won't start". Real customers write like that too, so they stay.
+- **Evidence:** the full first batch is kept in `data/tickets/archive/batch1_tickets.json` (not loaded by anything).
 - **Lesson:** look at generated data in bulk, not one sample. One sample looked fine; 200 showed the template.
 
 ### I-016 · Ticket prompts said "\1" instead of the link text
@@ -102,6 +109,7 @@ Problems we hit and how we fixed them. Each entry: symptom → root cause → fi
 ### I-017 · Faithfulness check: two false alarms and one real finding
 - **Symptom:** the new "numbers must come from the cited article" check flagged t076 ("90", "1") and t155 ("80").
 - **Root cause:** "90" and "80" were the customer's own mileage, repeated by the agent: a false alarm. "1" came from the agent working out "last Saturday, November 1" from the ticket date: a real finding, because that fact isn't in any source. The first matching version was also too loose ("1" matched inside "2026"), and a too-strict version then missed "NW-ODO-1," before a comma.
+- **The invented date** (batch 1, t076, ticket dated 2025-11-07): *"Since your car was delivered last Saturday, November 1, your 7 days run through tomorrow…"* The arithmetic is right, but the delivery date appears in neither the article nor the customer's message.
 - **Fix:** the source text now includes the customer's message; numbers match as whole numbers (a unit test with 9 cases passes); and the prompt tells the agent not to work out calendar dates.
 - **Verified:** the second batch passes; the archived first batch still fails on t076 "1", as it should.
 
