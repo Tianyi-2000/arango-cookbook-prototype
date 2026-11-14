@@ -5,7 +5,7 @@ A detailed log, newest first. Add an entry after every working session or run: *
 ---
 
 ## 2026-11-14 · Candidates drafted: messy wording, off-topic, vague
-- **Did:** drafted 35 candidates in `data/eval/candidates.json`: 18 human-style variants of existing questions (typos in key terms like "odomoter" and "notorized", run-ons, no punctuation, abbreviations, a mangled code "nw lrl 1"; covering all 7 types), 9 off-topic messages (gibberish, small talk, a greeting, a half-typed line, a prompt-injection attempt, one borderline car question), and 8 vague questions (3 missing the term, 3 ambiguous, 2 wrong term). Kept out of `gold.json` until Tianyi decides how to model them. `make check` validates them; `make test-checks` has an 8th fault for them (caught). They appear at the end of `gold_review.md`.
+- **Did:** drafted 35 candidates in `data/eval/candidates.json`: 18 human-style variants of existing questions (typos in key terms like "odomoter" and "notorized", run-ons, no punctuation, abbreviations, a mangled code "nw lrl 1"; covering all 7 types), 9 off-topic messages (gibberish, small talk, a greeting, a half-typed line, a prompt-injection attempt, one borderline car question), and 8 vague questions (3 missing the term, 3 ambiguous, 2 wrong term). Kept out of `gold.json` until Tianyi decides how to model them. `make check` validates them; `make test-checks` has an 8th fault for them. It was MISSED at first: the check read the real file instead of going through the loader (I-018). Fixed; now 8 of 8 are caught. They appear at the end of `gold_review.md`.
 - **Stuck / waiting:** Tianyi's review (tomorrow): the 40 drafts plus these 35, and two modeling decisions.
 
 ---

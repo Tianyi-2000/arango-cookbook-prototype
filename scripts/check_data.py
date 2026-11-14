@@ -11,7 +11,7 @@ from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from cookbook.load import REWRITE_DATE, TODAY, in_effect, load_gold, load_kb, load_tickets  # noqa: E402
+from cookbook.load import REWRITE_DATE, TODAY, in_effect, load_candidates, load_gold, load_kb, load_tickets  # noqa: E402
 
 EXPECTED = {"articles": 68, "doc_ids": 51, "forms": 15, "states": 5, "lenders": 12, "lessors": 6, "stores": 25}
 GOLD_TYPES = ["exact", "semantic", "multi_hop", "temporal", "conditional", "checklist", "unanswerable"]
@@ -220,10 +220,9 @@ def main() -> int:
         check(f"gold set ({len(gold)} questions)", probs)
 
     # --- candidates (drafts not yet in the gold set) --------------------------------------------------
-    cand_path = Path(__file__).resolve().parents[1] / "data" / "eval" / "candidates.json"
-    if cand_path.exists():
-        import json
-        cand = json.loads(cand_path.read_text())
+    # loaded through cookbook.load like everything else, so tests can point it at a copy (I-018)
+    cand = load_candidates()
+    if cand:
         gold_by_id = {q["id"]: q for q in gold}
         probs = []
         for m in cand.get("messy_variants", []):

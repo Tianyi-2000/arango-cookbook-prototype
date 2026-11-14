@@ -46,6 +46,12 @@ def load_gold() -> list[dict]:
     return load_json(path)["questions"] if path.exists() else []
 
 
+def load_candidates() -> dict:
+    """Draft questions not yet in the gold set (messy variants, off-topic, vague); empty if none."""
+    path = DATA / "eval" / "candidates.json"
+    return load_json(path) if path.exists() else {}
+
+
 def load_tickets() -> list[dict]:
     path = DATA / "tickets" / "tickets.json"
     return load_json(path) if path.exists() else []

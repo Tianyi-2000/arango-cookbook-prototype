@@ -113,6 +113,13 @@ Problems we hit and how we fixed them. Each entry: symptom → root cause → fi
 - **Fix:** the source text now includes the customer's message; numbers match as whole numbers (a unit test with 9 cases passes); and the prompt tells the agent not to work out calendar dates.
 - **Verified:** the second batch passes; the archived first batch still fails on t076 "1", as it should.
 
+### I-018 · The candidates check read the real file, so its test missed
+- **Symptom:** `make test-checks` reported MISSED for "ambiguous candidate requires all readings", right after the candidates check was added.
+- **Root cause:** the check built the path to `candidates.json` from its own file location instead of going through `cookbook.load`, so the test's patched data folder was ignored and the real (correct) file was checked every time. Also, the commit that added it went in before the test run was read, and its progress note wrongly said "caught".
+- **Fix:** `load_candidates()` in `cookbook/load.py`, used by the check. The progress note was corrected.
+- **Verified:** `make test-checks` catches 8 of 8; `make check` passes.
+- **Lesson:** every data read goes through one loader, or tests can't redirect it. Read the test output before committing.
+
 ---
 
 ## Checked and fine
