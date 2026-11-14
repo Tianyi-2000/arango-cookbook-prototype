@@ -29,8 +29,10 @@ def mut_ticket_number(tmp):
     f = tmp / "tickets" / "tickets.json"; t = json.loads(f.read_text()); t[0]["agent"] += " There is also a $999 fee."; f.write_text(json.dumps(t))
 def mut_ticket_flag(tmp):
     f = tmp / "tickets" / "tickets.json"; t = json.loads(f.read_text()); t[0]["agent_error"] = not t[0]["agent_error"]; f.write_text(json.dumps(t))
+def mut_candidate(tmp):
+    f = tmp / "eval" / "candidates.json"; c = json.loads(f.read_text()); c["vague"][3]["require_all"] = True; f.write_text(json.dumps(c))
 missed = 0
-for name, mut in [("anachronistic link", mut_link), ("retired form without replacement", mut_code), ("known issue missing", mut_known), ("network lender missing from text", mut_lender), ("overlapping versions", mut_dates), ("ticket agent invents a number", mut_ticket_number), ("ticket agent_error flag flipped", mut_ticket_flag)]:
+for name, mut in [("anachronistic link", mut_link), ("retired form without replacement", mut_code), ("known issue missing", mut_known), ("network lender missing from text", mut_lender), ("overlapping versions", mut_dates), ("ticket agent invents a number", mut_ticket_number), ("ticket agent_error flag flipped", mut_ticket_flag), ("ambiguous candidate requires all readings", mut_candidate)]:
     tmp = Path(tempfile.mkdtemp()) / "data"; shutil.copytree(R / "data", tmp)
     mut(tmp); L.KB, L.DATA = tmp / "kb", tmp; check_data.failures.clear()
     out = io.StringIO()

@@ -42,6 +42,8 @@ Two dates per question:
 
 Each question also has `trap_keys` (articles that look right but aren't) and `tricky` tags (`time_boundary`, `rule_conflict`, `messy_input`, `messy_kb`). The gold set is frozen (commit + sha256 in `data/eval/FROZEN`) before any method runs. After that, data, questions and parameters don't change to make a pattern appear.
 
+Drafts for the next three sections live in `data/eval/candidates.json` (validated by `make check`, shown at the end of `gold_review.md`) until Tianyi decides how they join the gold set.
+
 ### Off-topic and nonsense questions (to add before the freeze)
 Real chat traffic includes messages that aren't questions about the KB: gibberish, small talk, half-typed lines. For these the assistant should **skip**: it shouldn't answer from whatever article happens to rank first, and it should ask the user to rephrase or say what it can help with.
 - Modeling options, decided when Tianyi adds them: (a) a new type `off_topic` with `answerable: "skip"`, or (b) type `unanswerable` with a new tricky tag `noise`. Either way: no gold articles, no retrieval metrics. The answer eval checks that the reply declines and cites nothing.

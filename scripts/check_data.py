@@ -219,6 +219,35 @@ def main() -> int:
                     probs.append(f"{qid}: missing {field}")
         check(f"gold set ({len(gold)} questions)", probs)
 
+    # --- candidates (drafts not yet in the gold set) --------------------------------------------------
+    cand_path = Path(__file__).resolve().parents[1] / "data" / "eval" / "candidates.json"
+    if cand_path.exists():
+        import json
+        cand = json.loads(cand_path.read_text())
+        gold_by_id = {q["id"]: q for q in gold}
+        probs = []
+        for m in cand.get("messy_variants", []):
+            orig = gold_by_id.get(m["variant_of"])
+            if orig is None:
+                probs.append(f"{m['id']}: variant_of unknown question {m['variant_of']}")
+            elif m["question"].strip().lower() == orig["question"].strip().lower():
+                probs.append(f"{m['id']}: wording is the same as {m['variant_of']}")
+        for o in cand.get("off_topic", []):
+            if o["gold_keys"] or o["answerable"] != "skip":
+                probs.append(f"{o['id']}: off-topic messages have no gold articles and answerable 'skip'")
+        for v in cand.get("vague", []):
+            if v["vague_case"] not in {"A", "B", "C"}:
+                probs.append(f"{v['id']}: vague_case must be A, B or C")
+            if v["vague_case"] == "B" and (len(v["gold_keys"]) < 2 or v["require_all"]):
+                probs.append(f"{v['id']}: an ambiguous (B) question lists 2+ readings with require_all false")
+            for k in v["gold_keys"] + v["trap_keys"]:
+                if k not in by_key:
+                    probs.append(f"{v['id']}: unknown article {k}")
+                elif k in v["gold_keys"] and not in_effect(by_key[k], v["as_of"]):
+                    probs.append(f"{v['id']}: gold {k} isn't in effect on {v['as_of']}")
+        n = sum(len(cand.get(g, [])) for g in ["messy_variants", "off_topic", "vague"])
+        check(f"candidates ({n} drafts, not yet in the gold set)", probs)
+
     # --- tickets -----------------------------------------------------------------------------------
     tickets = load_tickets()
     if not tickets:

@@ -23,7 +23,7 @@ def block(q, arts, with_call=True):
     if q["as_of"] != q["asked_on"]:
         when.append(f"rules as of {q['as_of']}")
     meta = " · ".join(when + ([f"state: {q['state']}"] if q["state"] else []) + ([f"tricky: {', '.join(q['tricky'])}"] if q["tricky"] else []))
-    lines = [f"### {q['id']} · {q['type']}" + (f" · seed {q['seed']}" if q["seed"] else ""),
+    lines = [f"### {q['id']} · {q['type']}" + (f" · seed {q['seed']}" if q.get("seed") else "") + (f" · vague case {q['vague_case']}" if q.get("vague_case") else ""),
              f"**\"{q['question']}\"**"]
     if meta:
         lines.append(f"- {meta}")
@@ -60,6 +60,27 @@ def main() -> None:
     for t in TYPES:
         qs = [q for q in drafts if q["type"] == t]
         out += [f"## {t} ({len(qs)} drafts)", ""] + [block(q, arts) + "\n" for q in qs]
+    cand_path = DATA / "eval" / "candidates.json"
+    if cand_path.exists():
+        import json
+        cand = json.loads(cand_path.read_text())
+        by_id = {q["id"]: q for q in gold}
+        out += ["---", "", "## New candidates (drafted 2026-11-14): human-style wording, off-topic, vague", "",
+                "Not in the gold set yet. Two things to decide while reviewing:",
+                "1. **Messy variants:** replace the original question, or keep both? Keeping both lets the eval show how much messy wording costs each method (same gold, different words).",
+                "2. **Off-topic messages:** a new type `off_topic`, or type `unanswerable` with a `noise` tag? (eval.md)",
+                "",
+                f"### Human-style variants ({len(cand['messy_variants'])})", "",
+                "| id | original | messy version | what's messy | your call |", "|---|---|---|---|---|"]
+        for m in cand["messy_variants"]:
+            o = by_id[m["variant_of"]]
+            out.append(f"| {m['id']} | {m['variant_of']} ({o['type']}): {o['question']} | **{m['question']}** | {', '.join(m['messy_kinds'])} | keep / edit / drop |")
+        out += ["", f"### Off-topic and nonsense messages ({len(cand['off_topic'])}). Right behavior: skip, no KB answer", "",
+                "| id | message | why it's here | your call |", "|---|---|---|---|"]
+        for o in cand["off_topic"]:
+            out.append(f"| {o['id']} | **{o['question']}** | {o['why']} | keep / edit / drop |")
+        out += ["", f"### Vague questions ({len(cand['vague'])}): A = missing the term · B = ambiguous · C = wrong term (graded on what it says)", ""]
+        out += [block(v, arts) + "\n" for v in cand["vague"]]
     out += ["---", "", "## Seeds already kept (2026-11-13), for reference", ""] + [block(q, arts, with_call=False) + "\n" for q in seeds]
     path = DATA / "eval" / "gold_review.md"
     path.write_text("\n".join(out), encoding="utf-8")
