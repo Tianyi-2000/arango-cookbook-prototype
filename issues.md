@@ -72,7 +72,7 @@ Problems we hit and how we fixed them. Each entry: symptom → root cause → fi
 
 ### I-012 · Two small vault mistakes
 - **Symptom:** the Home page's run command `cd "~/Projects/Arango/..."` fails, because `~` doesn't expand inside quotes. The internship page's `[[stage]]` link was ambiguous, because the vault has two `stage.md` files.
-- **Fix:** `cd ~/Projects/Arango/"10 Cookbook Demo"/arango-cookbook-prototype`, and full-path wikilinks (`[[20 Internship (placeholder)/stage|stage]]`).
+- **Fix:** `cd ~/Projects/Arango/"01 Cookbook Demo"/arango-cookbook-prototype`, and full-path wikilinks (`[[02 Internship (placeholder)/stage|stage]]`).
 - **Verified:** ran the `cd` line in a shell; both links point to the placeholder files.
 
 ### I-013 · Random store services didn't match "select stores"

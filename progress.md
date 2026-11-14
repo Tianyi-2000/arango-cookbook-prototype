@@ -4,6 +4,13 @@ A detailed log, newest first. Add an entry after every working session or run: *
 
 ---
 
+## 2026-11-13 · Vault folders renamed to 01 / 02 / 03
+- **Did:** renamed `10 Cookbook Demo` → `01 Cookbook Demo`, `20 Internship (placeholder)` → `02 Internship (placeholder)`, `90 Templates` → `03 Templates` (Tianyi found 10/20/90 confusing). Updated every reference in the vault, the vault's `CLAUDE.md`, the Obsidian templates setting, the interview-prep vault's pointers and memory. Older entries below keep the old names as history. `docker compose down` before and `up` after; recreated `.venv` (I-008 again). `make verify`, `make check` and `make test-checks` all pass at the new path. Created `.env` from `.env.example`, with the key left empty for Tianyi.
+- **Why:** Tianyi's preference.
+- **Stuck / waiting:** the API key in `.env`; the review of the 40 draft questions.
+
+---
+
 ## 2026-11-13 · Stage 2: data, checks, gold set, ticket plan (checkpoint v2.5)
 - **Did:** wrote the knowledge base: 51 articles / 68 versions in 8 section files, with `kb:` links and `NW-` codes in the text; `forms` (15), `states` (5), `lenders` (12), `lessors` (6), `stores` (25), `known_issues` (3). Wrote `cookbook/load.py` and `scripts/check_data.py` (`make check`). Mutation-tested the checker with 5 injected faults: the first harness never applied them (I-010); after fixing that, the anachronism check missed one (I-009); after that fix, all 5 are caught (`make test-checks`). Built the gold set: 56 questions, 8 per type (16 kept seeds + 40 drafts), plus `make review` for a readable sheet. Checked every answer fact against its gold articles: 24 are paraphrases or computed values, none contradicts an article, so facts will be graded by meaning (D-020). Wrote `scripts/generate_tickets.py`: a deterministic plan (200 tickets, 75 outdated today, 8 agent mistakes, about $2.68 estimated) and a dry run; the API path is written but not yet run.
 - **Changed:** `data/kb/**`, `data/eval/gold.json`, `data/eval/gold_review.md`, `data/tickets/plan.json`, `cookbook/load.py`, `scripts/{check_data,test_check_data,render_gold_review,generate_tickets}.py`, `Makefile` (check, test-checks, review, tickets-plan, tickets-one, tickets). One article edit made the Apex fee unambiguous (it's added to the buyout amount).
