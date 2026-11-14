@@ -33,6 +33,10 @@ How we measure the pipeline, how to run the checks, and when the agent has to st
 | checklist | the complete list, gathered from several articles |
 | unanswerable | the KB doesn't say, so refuse instead of guessing |
 
+Two dates per question:
+- `asked_on`: when the customer sends the message (default: "today", 2026-11-01).
+- `as_of`: the date whose rules decide the answer. Usually the same as `asked_on`; different when the question is about the past ("back in December 2025…") or the future ("my appointment is July 10"). Every gold article must be in effect on `as_of`, and **stale@k is measured against `as_of`**. A method that filters on `asked_on` is wrong on purpose for the historical questions (q28, q30).
+
 Each question also has `trap_keys` (articles that look right but aren't) and `tricky` tags (`time_boundary`, `rule_conflict`, `messy_input`, `messy_kb`). The gold set is frozen (commit + sha256 in `data/eval/FROZEN`) before any method runs. After that, data, questions and parameters don't change to make a pattern appear.
 
 ## Retrieval metrics (stage 3+)
@@ -51,7 +55,7 @@ Computed over the top-k articles a method returns, per question, then averaged b
 - Unanswerable questions have no gold articles. They're reported in the answer eval, not in Recall.
 
 ## Answer metrics (stage 4+, needs an API key)
-- **Facts:** share of `answer_facts` found in the answer
+- **Facts:** share of `answer_facts` present in the answer, judged **by meaning, not exact string** (an LLM judge gets the answer and the fact list). Many facts are paraphrases ("300 miles" vs. "300 additional miles") or computed (q20: $2,000 − $350 = $1,650).
 - **Citations:** every cited key is one of the retrieved articles
 - **Refusals:** unanswerable questions get "not covered"; the answerable parts of half-answerable questions still get answered
 - **Trap-caused errors:** wrong answers whose citations include a trap article

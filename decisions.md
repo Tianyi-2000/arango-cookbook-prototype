@@ -87,3 +87,11 @@ Key choices and why we made them: the "why" only. What changed is in [progress.m
 - **What:** at the end of every stage, run the checks in `eval.md`. If a score drops and no change was meant to cause it, stop and wait for Tianyi.
 - **Why:** if the agent adjusts things on its own, a drop must never slip through.
 - **Decided by:** Tianyi
+
+### D-019 · 2026-11-13 · Two dates per question: `asked_on` and `as_of`
+- **Why:** some questions ask about the past or the future, so the rules that apply aren't always today's. The gold articles and stale@k use `as_of`. Filtering by `asked_on` is the naive approach, and it fails on purpose for the historical questions.
+- **Decided by:** Claude, while drafting the gold set (to be confirmed by Tianyi in his review)
+
+### D-020 · 2026-11-13 · Answer facts are graded by meaning
+- **Why:** `answer_facts` are short paraphrases or computed values, and an exact string match would mark correct answers wrong. A script check over the 40 answerable questions found 24 facts that aren't verbatim in their gold articles, none of them contradictions.
+- **Decided by:** Claude (stage 4 implements the judge)

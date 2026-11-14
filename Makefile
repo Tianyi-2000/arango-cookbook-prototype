@@ -1,6 +1,6 @@
 PY := .venv/bin/python
 
-.PHONY: up down venv verify check test-checks
+.PHONY: up down venv verify check test-checks review
 up:      ## start ArangoDB on localhost:8535
 	docker compose up -d
 down:
@@ -13,3 +13,5 @@ check:   ## data consistency: KB, gold set, tickets (see eval.md)
 	$(PY) scripts/check_data.py
 test-checks:  ## inject known faults into a copy of data/ and confirm make check catches each one
 	$(PY) scripts/test_check_data.py
+review:  ## render data/eval/gold_review.md from gold.json for human review
+	$(PY) scripts/render_gold_review.py
