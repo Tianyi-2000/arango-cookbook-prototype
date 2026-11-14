@@ -1,6 +1,6 @@
 PY := .venv/bin/python
 
-.PHONY: up down venv verify check test-checks review
+.PHONY: up down venv verify check test-checks review tickets-plan tickets-one tickets
 up:      ## start ArangoDB on localhost:8535
 	docker compose up -d
 down:
@@ -15,3 +15,9 @@ test-checks:  ## inject known faults into a copy of data/ and confirm make check
 	$(PY) scripts/test_check_data.py
 review:  ## render data/eval/gold_review.md from gold.json for human review
 	$(PY) scripts/render_gold_review.py
+tickets-plan:  ## dry run: ticket plan, cost estimate, one example prompt (no API calls)
+	$(PY) scripts/generate_tickets.py
+tickets-one:   ## generate one ticket to test the API path (needs ANTHROPIC_API_KEY in .env)
+	$(PY) scripts/generate_tickets.py --one
+tickets:       ## generate all missing tickets (needs ANTHROPIC_API_KEY in .env)
+	$(PY) scripts/generate_tickets.py --all

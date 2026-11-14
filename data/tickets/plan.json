@@ -1,0 +1,2602 @@
+[
+ {
+  "_key": "t001",
+  "created_at": "2022-10-30",
+  "channel": "phone_note",
+  "style": "brief",
+  "state": "brevin",
+  "topic": "getting_paid",
+  "cites": [
+   "getting_paid__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t002",
+  "created_at": "2025-07-13",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "eastvale",
+  "topic": "modified_cars",
+  "cites": [
+   "modified_cars__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t003",
+  "created_at": "2026-04-05",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "dunmore",
+  "topic": "out_of_state",
+  "cites": [
+   "out_of_state__2022"
+  ],
+  "agent_error": true,
+  "outdated": true
+ },
+ {
+  "_key": "t004",
+  "created_at": "2023-07-05",
+  "channel": "chat",
+  "style": "typos",
+  "state": "aldora",
+  "topic": "appointment_checklist",
+  "cites": [
+   "appointment_checklist__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t005",
+  "created_at": "2024-09-06",
+  "channel": "phone_note",
+  "style": "polite",
+  "state": "corlan",
+  "topic": "appointment_checklist",
+  "cites": [
+   "appointment_checklist__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t006",
+  "created_at": "2023-05-05",
+  "channel": "chat",
+  "style": "typos",
+  "state": "dunmore",
+  "topic": "inherited_car",
+  "cites": [
+   "inherited_car__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t007",
+  "created_at": "2026-05-06",
+  "channel": "chat",
+  "style": "typos",
+  "state": "aldora",
+  "topic": "lessor_buyouts",
+  "cites": [
+   "lessor_buyouts__2026"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t008",
+  "created_at": "2025-04-15",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "eastvale",
+  "topic": "license_plates",
+  "cites": [
+   "license_plates__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t009",
+  "created_at": "2023-11-23",
+  "channel": "email",
+  "style": "typos",
+  "state": "dunmore",
+  "topic": "branded_title",
+  "cites": [
+   "branded_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t010",
+  "created_at": "2024-07-12",
+  "channel": "phone_note",
+  "style": "frustrated",
+  "state": "dunmore",
+  "topic": "cancel_insurance",
+  "cites": [
+   "cancel_insurance__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t011",
+  "created_at": "2022-10-25",
+  "channel": "phone_note",
+  "style": "frustrated",
+  "state": "dunmore",
+  "topic": "lease_equity",
+  "cites": [
+   "lease_equity__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t012",
+  "created_at": "2024-05-24",
+  "channel": "chat",
+  "style": "polite",
+  "state": "eastvale",
+  "topic": "title_name_mismatch",
+  "cites": [
+   "title_name_mismatch__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t013",
+  "created_at": "2024-11-06",
+  "channel": "phone_note",
+  "style": "frustrated",
+  "state": "brevin",
+  "topic": "lessor_buyouts",
+  "cites": [
+   "lessor_buyouts__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t014",
+  "created_at": "2026-06-16",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "aldora",
+  "topic": "divorce_ex_on_title",
+  "cites": [
+   "divorce_ex_on_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t015",
+  "created_at": "2026-03-09",
+  "channel": "chat",
+  "style": "polite",
+  "state": "brevin",
+  "topic": "modified_cars",
+  "cites": [
+   "modified_cars__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t016",
+  "created_at": "2022-11-05",
+  "channel": "chat",
+  "style": "polite",
+  "state": "eastvale",
+  "topic": "modified_cars",
+  "cites": [
+   "modified_cars__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t017",
+  "created_at": "2023-07-28",
+  "channel": "email",
+  "style": "typos",
+  "state": "eastvale",
+  "topic": "lien_still_on_title",
+  "cites": [
+   "lien_still_on_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t018",
+  "created_at": "2026-08-24",
+  "channel": "email",
+  "style": "polite",
+  "state": "dunmore",
+  "topic": "negative_equity",
+  "cites": [
+   "negative_equity__2022"
+  ],
+  "agent_error": true,
+  "outdated": true
+ },
+ {
+  "_key": "t019",
+  "created_at": "2023-04-19",
+  "channel": "chat",
+  "style": "brief",
+  "state": "brevin",
+  "topic": "flood_damage",
+  "cites": [
+   "flood_damage__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t020",
+  "created_at": "2025-11-02",
+  "channel": "phone_note",
+  "style": "frustrated",
+  "state": "dunmore",
+  "topic": "selling_with_loan",
+  "cites": [
+   "selling_with_loan__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t021",
+  "created_at": "2024-03-07",
+  "channel": "chat",
+  "style": "polite",
+  "state": "dunmore",
+  "topic": "title_name_mismatch",
+  "cites": [
+   "title_name_mismatch__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t022",
+  "created_at": "2025-01-11",
+  "channel": "chat",
+  "style": "polite",
+  "state": "eastvale",
+  "topic": "out_of_state",
+  "cites": [
+   "out_of_state__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t023",
+  "created_at": "2025-11-19",
+  "channel": "phone_note",
+  "style": "typos",
+  "state": "dunmore",
+  "topic": "selling_without_buying",
+  "cites": [
+   "selling_without_buying__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t024",
+  "created_at": "2026-09-18",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "corlan",
+  "topic": "cancel_insurance",
+  "cites": [
+   "cancel_insurance__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t025",
+  "created_at": "2024-09-13",
+  "channel": "chat",
+  "style": "polite",
+  "state": "dunmore",
+  "topic": "title_name_mismatch",
+  "cites": [
+   "title_name_mismatch__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t026",
+  "created_at": "2022-07-10",
+  "channel": "phone_note",
+  "style": "typos",
+  "state": "aldora",
+  "topic": "negative_equity",
+  "cites": [
+   "negative_equity__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t027",
+  "created_at": "2023-04-03",
+  "channel": "chat",
+  "style": "polite",
+  "state": "aldora",
+  "topic": "open_recalls",
+  "cites": [
+   "open_recalls__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t028",
+  "created_at": "2022-09-05",
+  "channel": "email",
+  "style": "brief",
+  "state": "eastvale",
+  "topic": "appointment_checklist",
+  "cites": [
+   "appointment_checklist__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t029",
+  "created_at": "2026-08-12",
+  "channel": "chat",
+  "style": "brief",
+  "state": "corlan",
+  "topic": "duplicate_title_corlan",
+  "cites": [
+   "duplicate_title_corlan__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t030",
+  "created_at": "2025-11-29",
+  "channel": "chat",
+  "style": "brief",
+  "state": "corlan",
+  "topic": "out_of_state",
+  "cites": [
+   "out_of_state__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t031",
+  "created_at": "2025-11-21",
+  "channel": "email",
+  "style": "polite",
+  "state": "brevin",
+  "topic": "lost_title",
+  "cites": [
+   "lost_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t032",
+  "created_at": "2025-03-22",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "dunmore",
+  "topic": "duplicate_title_dunmore",
+  "cites": [
+   "duplicate_title_dunmore__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t033",
+  "created_at": "2022-08-20",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "eastvale",
+  "topic": "keep_paying_until_confirmed",
+  "cites": [
+   "keep_paying_until_confirmed__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t034",
+  "created_at": "2023-11-17",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "eastvale",
+  "topic": "lessor_buyouts",
+  "cites": [
+   "lessor_buyouts__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t035",
+  "created_at": "2026-09-08",
+  "channel": "chat",
+  "style": "brief",
+  "state": "corlan",
+  "topic": "duplicate_title_corlan",
+  "cites": [
+   "duplicate_title_corlan__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t036",
+  "created_at": "2022-07-29",
+  "channel": "chat",
+  "style": "typos",
+  "state": "aldora",
+  "topic": "business_car",
+  "cites": [
+   "business_car__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t037",
+  "created_at": "2022-04-22",
+  "channel": "chat",
+  "style": "typos",
+  "state": "dunmore",
+  "topic": "lessor_buyouts",
+  "cites": [
+   "lessor_buyouts__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t038",
+  "created_at": "2023-12-28",
+  "channel": "chat",
+  "style": "polite",
+  "state": "eastvale",
+  "topic": "title_name_mismatch",
+  "cites": [
+   "title_name_mismatch__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t039",
+  "created_at": "2025-08-18",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "brevin",
+  "topic": "registration_expired",
+  "cites": [
+   "registration_expired__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t040",
+  "created_at": "2024-08-05",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "aldora",
+  "topic": "modified_cars",
+  "cites": [
+   "modified_cars__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t041",
+  "created_at": "2025-03-25",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "aldora",
+  "topic": "keep_paying_until_confirmed",
+  "cites": [
+   "keep_paying_until_confirmed__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t042",
+  "created_at": "2025-10-18",
+  "channel": "phone_note",
+  "style": "polite",
+  "state": "brevin",
+  "topic": "license_plates",
+  "cites": [
+   "license_plates__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t043",
+  "created_at": "2022-04-11",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "brevin",
+  "topic": "divorce_ex_on_title",
+  "cites": [
+   "divorce_ex_on_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t044",
+  "created_at": "2023-01-23",
+  "channel": "chat",
+  "style": "typos",
+  "state": "dunmore",
+  "topic": "non_running_cars",
+  "cites": [
+   "non_running_cars__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t045",
+  "created_at": "2025-02-24",
+  "channel": "chat",
+  "style": "typos",
+  "state": "brevin",
+  "topic": "keep_paying_until_confirmed",
+  "cites": [
+   "keep_paying_until_confirmed__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t046",
+  "created_at": "2024-02-03",
+  "channel": "chat",
+  "style": "polite",
+  "state": "brevin",
+  "topic": "duplicate_title_brevin",
+  "cites": [
+   "duplicate_title_brevin__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t047",
+  "created_at": "2024-10-13",
+  "channel": "email",
+  "style": "polite",
+  "state": "brevin",
+  "topic": "duplicate_title_brevin",
+  "cites": [
+   "duplicate_title_brevin__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t048",
+  "created_at": "2025-02-12",
+  "channel": "email",
+  "style": "brief",
+  "state": "brevin",
+  "topic": "payoff_letter",
+  "cites": [
+   "payoff_letter__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t049",
+  "created_at": "2023-06-17",
+  "channel": "chat",
+  "style": "polite",
+  "state": "corlan",
+  "topic": "appointment_checklist",
+  "cites": [
+   "appointment_checklist__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t050",
+  "created_at": "2024-06-13",
+  "channel": "phone_note",
+  "style": "rambling",
+  "state": "aldora",
+  "topic": "license_plates",
+  "cites": [
+   "license_plates__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t051",
+  "created_at": "2024-02-19",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "eastvale",
+  "topic": "selling_for_someone_else",
+  "cites": [
+   "selling_for_someone_else__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t052",
+  "created_at": "2023-05-18",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "eastvale",
+  "topic": "co_owners",
+  "cites": [
+   "co_owners__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t053",
+  "created_at": "2026-04-06",
+  "channel": "chat",
+  "style": "typos",
+  "state": "dunmore",
+  "topic": "duplicate_title_dunmore",
+  "cites": [
+   "duplicate_title_dunmore__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t054",
+  "created_at": "2022-09-24",
+  "channel": "chat",
+  "style": "polite",
+  "state": "brevin",
+  "topic": "payoff_letter",
+  "cites": [
+   "payoff_letter__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t055",
+  "created_at": "2022-10-04",
+  "channel": "email",
+  "style": "rambling",
+  "state": "aldora",
+  "topic": "odometer_problems",
+  "cites": [
+   "odometer_problems__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t056",
+  "created_at": "2025-01-01",
+  "channel": "email",
+  "style": "brief",
+  "state": "corlan",
+  "topic": "flood_damage",
+  "cites": [
+   "flood_damage__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t057",
+  "created_at": "2023-12-05",
+  "channel": "chat",
+  "style": "brief",
+  "state": "aldora",
+  "topic": "duplicate_title_aldora",
+  "cites": [
+   "duplicate_title_aldora__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t058",
+  "created_at": "2026-07-08",
+  "channel": "phone_note",
+  "style": "brief",
+  "state": "aldora",
+  "topic": "electronic_titles",
+  "cites": [
+   "electronic_titles__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t059",
+  "created_at": "2023-06-25",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "eastvale",
+  "topic": "branded_title",
+  "cites": [
+   "branded_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t060",
+  "created_at": "2024-02-16",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "aldora",
+  "topic": "getting_paid",
+  "cites": [
+   "getting_paid__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t061",
+  "created_at": "2024-06-05",
+  "channel": "chat",
+  "style": "polite",
+  "state": "dunmore",
+  "topic": "getting_paid",
+  "cites": [
+   "getting_paid__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t062",
+  "created_at": "2025-12-14",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "corlan",
+  "topic": "selling_with_loan",
+  "cites": [
+   "selling_with_loan__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t063",
+  "created_at": "2026-09-28",
+  "channel": "email",
+  "style": "polite",
+  "state": "aldora",
+  "topic": "how_selling_works",
+  "cites": [
+   "how_selling_works__2026"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t064",
+  "created_at": "2023-10-15",
+  "channel": "email",
+  "style": "brief",
+  "state": "corlan",
+  "topic": "offer_validity",
+  "cites": [
+   "offer_validity__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t065",
+  "created_at": "2026-06-20",
+  "channel": "email",
+  "style": "brief",
+  "state": "eastvale",
+  "topic": "keep_paying_until_confirmed",
+  "cites": [
+   "keep_paying_until_confirmed__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t066",
+  "created_at": "2024-01-31",
+  "channel": "chat",
+  "style": "brief",
+  "state": "corlan",
+  "topic": "duplicate_title_corlan",
+  "cites": [
+   "duplicate_title_corlan__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t067",
+  "created_at": "2025-08-19",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "corlan",
+  "topic": "co_owners",
+  "cites": [
+   "co_owners__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t068",
+  "created_at": "2025-07-05",
+  "channel": "email",
+  "style": "brief",
+  "state": "dunmore",
+  "topic": "negative_equity",
+  "cites": [
+   "negative_equity__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t069",
+  "created_at": "2025-05-28",
+  "channel": "chat",
+  "style": "polite",
+  "state": "brevin",
+  "topic": "divorce_ex_on_title",
+  "cites": [
+   "divorce_ex_on_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t070",
+  "created_at": "2026-07-08",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "brevin",
+  "topic": "lease_equity",
+  "cites": [
+   "lease_equity__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t071",
+  "created_at": "2025-03-16",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "eastvale",
+  "topic": "branded_title",
+  "cites": [
+   "branded_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t072",
+  "created_at": "2024-05-21",
+  "channel": "email",
+  "style": "rambling",
+  "state": "aldora",
+  "topic": "selling_without_buying",
+  "cites": [
+   "selling_without_buying__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t073",
+  "created_at": "2024-11-05",
+  "channel": "phone_note",
+  "style": "rambling",
+  "state": "eastvale",
+  "topic": "keep_paying_until_confirmed",
+  "cites": [
+   "keep_paying_until_confirmed__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t074",
+  "created_at": "2022-08-31",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "corlan",
+  "topic": "reschedule_cancel",
+  "cites": [
+   "reschedule_cancel__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t075",
+  "created_at": "2024-01-27",
+  "channel": "email",
+  "style": "typos",
+  "state": "aldora",
+  "topic": "negative_equity",
+  "cites": [
+   "negative_equity__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t076",
+  "created_at": "2025-11-07",
+  "channel": "email",
+  "style": "rambling",
+  "state": "dunmore",
+  "topic": "returns",
+  "cites": [
+   "returns__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t077",
+  "created_at": "2022-06-28",
+  "channel": "email",
+  "style": "rambling",
+  "state": "dunmore",
+  "topic": "walk_in_quotes",
+  "cites": [
+   "walk_in_quotes__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t078",
+  "created_at": "2026-08-05",
+  "channel": "phone_note",
+  "style": "typos",
+  "state": "eastvale",
+  "topic": "duplicate_title_eastvale",
+  "cites": [
+   "duplicate_title_eastvale__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t079",
+  "created_at": "2024-04-06",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "dunmore",
+  "topic": "how_selling_works",
+  "cites": [
+   "how_selling_works__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t080",
+  "created_at": "2026-08-02",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "dunmore",
+  "topic": "odometer_problems",
+  "cites": [
+   "odometer_problems__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t081",
+  "created_at": "2023-01-09",
+  "channel": "chat",
+  "style": "typos",
+  "state": "eastvale",
+  "topic": "lender_overpayment_refund",
+  "cites": [
+   "lender_overpayment_refund__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t082",
+  "created_at": "2026-02-06",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "aldora",
+  "topic": "keep_paying_until_confirmed",
+  "cites": [
+   "keep_paying_until_confirmed__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t083",
+  "created_at": "2023-11-03",
+  "channel": "email",
+  "style": "rambling",
+  "state": "aldora",
+  "topic": "how_selling_works",
+  "cites": [
+   "how_selling_works__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t084",
+  "created_at": "2022-04-07",
+  "channel": "phone_note",
+  "style": "frustrated",
+  "state": "corlan",
+  "topic": "license_plates",
+  "cites": [
+   "license_plates__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t085",
+  "created_at": "2025-05-16",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "eastvale",
+  "topic": "business_car",
+  "cites": [
+   "business_car__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t086",
+  "created_at": "2026-09-19",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "aldora",
+  "topic": "negative_equity",
+  "cites": [
+   "negative_equity__2022"
+  ],
+  "agent_error": true,
+  "outdated": true
+ },
+ {
+  "_key": "t087",
+  "created_at": "2022-08-23",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "corlan",
+  "topic": "divorce_ex_on_title",
+  "cites": [
+   "divorce_ex_on_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t088",
+  "created_at": "2023-11-26",
+  "channel": "email",
+  "style": "rambling",
+  "state": "brevin",
+  "topic": "branded_title",
+  "cites": [
+   "branded_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t089",
+  "created_at": "2023-10-21",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "dunmore",
+  "topic": "flood_damage",
+  "cites": [
+   "flood_damage__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t090",
+  "created_at": "2023-03-22",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "dunmore",
+  "topic": "walk_in_quotes",
+  "cites": [
+   "walk_in_quotes__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t091",
+  "created_at": "2024-07-13",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "brevin",
+  "topic": "home_pickup",
+  "cites": [
+   "home_pickup__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t092",
+  "created_at": "2026-03-18",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "brevin",
+  "topic": "lessor_buyouts",
+  "cites": [
+   "lessor_buyouts__2026"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t093",
+  "created_at": "2023-01-30",
+  "channel": "chat",
+  "style": "brief",
+  "state": "corlan",
+  "topic": "branded_title",
+  "cites": [
+   "branded_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t094",
+  "created_at": "2022-07-09",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "eastvale",
+  "topic": "how_selling_works",
+  "cites": [
+   "how_selling_works__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t095",
+  "created_at": "2025-08-01",
+  "channel": "chat",
+  "style": "typos",
+  "state": "eastvale",
+  "topic": "duplicate_title_eastvale",
+  "cites": [
+   "duplicate_title_eastvale__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t096",
+  "created_at": "2022-10-06",
+  "channel": "email",
+  "style": "polite",
+  "state": "corlan",
+  "topic": "selling_with_loan",
+  "cites": [
+   "selling_with_loan__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t097",
+  "created_at": "2025-08-15",
+  "channel": "chat",
+  "style": "polite",
+  "state": "dunmore",
+  "topic": "flood_damage",
+  "cites": [
+   "flood_damage__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t098",
+  "created_at": "2022-11-03",
+  "channel": "chat",
+  "style": "typos",
+  "state": "dunmore",
+  "topic": "lien_still_on_title",
+  "cites": [
+   "lien_still_on_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t099",
+  "created_at": "2025-06-11",
+  "channel": "chat",
+  "style": "brief",
+  "state": "dunmore",
+  "topic": "home_pickup",
+  "cites": [
+   "home_pickup__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t100",
+  "created_at": "2026-07-11",
+  "channel": "email",
+  "style": "rambling",
+  "state": "brevin",
+  "topic": "flood_damage",
+  "cites": [
+   "flood_damage__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t101",
+  "created_at": "2023-12-26",
+  "channel": "email",
+  "style": "typos",
+  "state": "dunmore",
+  "topic": "lease_equity",
+  "cites": [
+   "lease_equity__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t102",
+  "created_at": "2024-06-03",
+  "channel": "chat",
+  "style": "polite",
+  "state": "brevin",
+  "topic": "flood_damage",
+  "cites": [
+   "flood_damage__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t103",
+  "created_at": "2026-01-10",
+  "channel": "email",
+  "style": "typos",
+  "state": "dunmore",
+  "topic": "title_name_mismatch",
+  "cites": [
+   "title_name_mismatch__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t104",
+  "created_at": "2026-10-29",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "dunmore",
+  "topic": "registration_expired",
+  "cites": [
+   "registration_expired__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t105",
+  "created_at": "2026-04-30",
+  "channel": "email",
+  "style": "polite",
+  "state": "corlan",
+  "topic": "lost_title",
+  "cites": [
+   "lost_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t106",
+  "created_at": "2024-01-03",
+  "channel": "chat",
+  "style": "polite",
+  "state": "corlan",
+  "topic": "reschedule_cancel",
+  "cites": [
+   "reschedule_cancel__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t107",
+  "created_at": "2022-12-23",
+  "channel": "chat",
+  "style": "typos",
+  "state": "brevin",
+  "topic": "license_plates",
+  "cites": [
+   "license_plates__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t108",
+  "created_at": "2025-04-23",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "dunmore",
+  "topic": "out_of_state",
+  "cites": [
+   "out_of_state__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t109",
+  "created_at": "2025-09-17",
+  "channel": "chat",
+  "style": "typos",
+  "state": "dunmore",
+  "topic": "keep_paying_until_confirmed",
+  "cites": [
+   "keep_paying_until_confirmed__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t110",
+  "created_at": "2024-01-19",
+  "channel": "email",
+  "style": "polite",
+  "state": "eastvale",
+  "topic": "cancel_insurance",
+  "cites": [
+   "cancel_insurance__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t111",
+  "created_at": "2025-01-22",
+  "channel": "chat",
+  "style": "typos",
+  "state": "dunmore",
+  "topic": "duplicate_title_dunmore",
+  "cites": [
+   "duplicate_title_dunmore__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t112",
+  "created_at": "2024-05-27",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "corlan",
+  "topic": "offer_validity",
+  "cites": [
+   "offer_validity__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t113",
+  "created_at": "2022-11-23",
+  "channel": "email",
+  "style": "polite",
+  "state": "dunmore",
+  "topic": "getting_paid",
+  "cites": [
+   "getting_paid__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t114",
+  "created_at": "2024-11-14",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "aldora",
+  "topic": "home_pickup",
+  "cites": [
+   "home_pickup__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t115",
+  "created_at": "2025-11-13",
+  "channel": "chat",
+  "style": "brief",
+  "state": "brevin",
+  "topic": "selling_for_someone_else",
+  "cites": [
+   "selling_for_someone_else__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t116",
+  "created_at": "2026-08-06",
+  "channel": "chat",
+  "style": "typos",
+  "state": "aldora",
+  "topic": "lease_vs_turn_in",
+  "cites": [
+   "lease_vs_turn_in__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t117",
+  "created_at": "2025-04-12",
+  "channel": "email",
+  "style": "brief",
+  "state": "aldora",
+  "topic": "odometer_problems",
+  "cites": [
+   "odometer_problems__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t118",
+  "created_at": "2023-01-14",
+  "channel": "chat",
+  "style": "polite",
+  "state": "brevin",
+  "topic": "getting_paid",
+  "cites": [
+   "getting_paid__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t119",
+  "created_at": "2025-07-24",
+  "channel": "email",
+  "style": "brief",
+  "state": "eastvale",
+  "topic": "odometer_problems",
+  "cites": [
+   "odometer_problems__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t120",
+  "created_at": "2022-11-28",
+  "channel": "chat",
+  "style": "polite",
+  "state": "aldora",
+  "topic": "co_owners",
+  "cites": [
+   "co_owners__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t121",
+  "created_at": "2023-03-15",
+  "channel": "email",
+  "style": "rambling",
+  "state": "dunmore",
+  "topic": "lien_still_on_title",
+  "cites": [
+   "lien_still_on_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t122",
+  "created_at": "2025-11-07",
+  "channel": "chat",
+  "style": "typos",
+  "state": "eastvale",
+  "topic": "non_running_cars",
+  "cites": [
+   "non_running_cars__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t123",
+  "created_at": "2024-11-07",
+  "channel": "phone_note",
+  "style": "typos",
+  "state": "aldora",
+  "topic": "electronic_titles",
+  "cites": [
+   "electronic_titles__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t124",
+  "created_at": "2025-10-09",
+  "channel": "chat",
+  "style": "typos",
+  "state": "corlan",
+  "topic": "lender_overpayment_refund",
+  "cites": [
+   "lender_overpayment_refund__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t125",
+  "created_at": "2026-05-25",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "dunmore",
+  "topic": "leased_car",
+  "cites": [
+   "leased_car__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t126",
+  "created_at": "2023-11-13",
+  "channel": "chat",
+  "style": "polite",
+  "state": "dunmore",
+  "topic": "duplicate_title_dunmore",
+  "cites": [
+   "duplicate_title_dunmore__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t127",
+  "created_at": "2026-03-26",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "corlan",
+  "topic": "offer_validity",
+  "cites": [
+   "offer_validity__2022"
+  ],
+  "agent_error": true,
+  "outdated": true
+ },
+ {
+  "_key": "t128",
+  "created_at": "2024-11-13",
+  "channel": "phone_note",
+  "style": "frustrated",
+  "state": "eastvale",
+  "topic": "modified_cars",
+  "cites": [
+   "modified_cars__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t129",
+  "created_at": "2023-12-26",
+  "channel": "email",
+  "style": "typos",
+  "state": "brevin",
+  "topic": "lender_overpayment_refund",
+  "cites": [
+   "lender_overpayment_refund__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t130",
+  "created_at": "2022-08-07",
+  "channel": "phone_note",
+  "style": "rambling",
+  "state": "corlan",
+  "topic": "what_changes_offer",
+  "cites": [
+   "what_changes_offer__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t131",
+  "created_at": "2025-02-14",
+  "channel": "chat",
+  "style": "brief",
+  "state": "eastvale",
+  "topic": "lessor_buyouts",
+  "cites": [
+   "lessor_buyouts__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t132",
+  "created_at": "2023-05-14",
+  "channel": "chat",
+  "style": "polite",
+  "state": "eastvale",
+  "topic": "branded_title",
+  "cites": [
+   "branded_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t133",
+  "created_at": "2025-02-11",
+  "channel": "chat",
+  "style": "typos",
+  "state": "dunmore",
+  "topic": "divorce_ex_on_title",
+  "cites": [
+   "divorce_ex_on_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t134",
+  "created_at": "2022-12-05",
+  "channel": "phone_note",
+  "style": "typos",
+  "state": "corlan",
+  "topic": "lien_still_on_title",
+  "cites": [
+   "lien_still_on_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t135",
+  "created_at": "2025-10-23",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "brevin",
+  "topic": "inherited_car",
+  "cites": [
+   "inherited_car__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t136",
+  "created_at": "2026-02-11",
+  "channel": "email",
+  "style": "rambling",
+  "state": "eastvale",
+  "topic": "what_changes_offer",
+  "cites": [
+   "what_changes_offer__2022"
+  ],
+  "agent_error": true,
+  "outdated": true
+ },
+ {
+  "_key": "t137",
+  "created_at": "2022-07-04",
+  "channel": "phone_note",
+  "style": "typos",
+  "state": "corlan",
+  "topic": "registration_expired",
+  "cites": [
+   "registration_expired__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t138",
+  "created_at": "2026-10-04",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "brevin",
+  "topic": "duplicate_title_brevin",
+  "cites": [
+   "duplicate_title_brevin__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t139",
+  "created_at": "2022-11-18",
+  "channel": "chat",
+  "style": "brief",
+  "state": "brevin",
+  "topic": "lease_vs_turn_in",
+  "cites": [
+   "lease_vs_turn_in__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t140",
+  "created_at": "2025-12-22",
+  "channel": "email",
+  "style": "polite",
+  "state": "aldora",
+  "topic": "duplicate_title_aldora",
+  "cites": [
+   "duplicate_title_aldora__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t141",
+  "created_at": "2023-11-06",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "dunmore",
+  "topic": "duplicate_title_dunmore",
+  "cites": [
+   "duplicate_title_dunmore__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t142",
+  "created_at": "2024-10-09",
+  "channel": "chat",
+  "style": "typos",
+  "state": "brevin",
+  "topic": "odometer_problems",
+  "cites": [
+   "odometer_problems__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t143",
+  "created_at": "2026-03-03",
+  "channel": "chat",
+  "style": "brief",
+  "state": "aldora",
+  "topic": "lessor_buyouts",
+  "cites": [
+   "lessor_buyouts__2022"
+  ],
+  "agent_error": true,
+  "outdated": true
+ },
+ {
+  "_key": "t144",
+  "created_at": "2024-02-21",
+  "channel": "email",
+  "style": "typos",
+  "state": "corlan",
+  "topic": "lost_title",
+  "cites": [
+   "lost_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t145",
+  "created_at": "2026-05-28",
+  "channel": "email",
+  "style": "brief",
+  "state": "dunmore",
+  "topic": "branded_title",
+  "cites": [
+   "branded_title__2026"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t146",
+  "created_at": "2025-11-18",
+  "channel": "phone_note",
+  "style": "rambling",
+  "state": "brevin",
+  "topic": "lease_equity",
+  "cites": [
+   "lease_equity__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t147",
+  "created_at": "2023-06-04",
+  "channel": "chat",
+  "style": "typos",
+  "state": "brevin",
+  "topic": "non_running_cars",
+  "cites": [
+   "non_running_cars__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t148",
+  "created_at": "2025-03-02",
+  "channel": "chat",
+  "style": "polite",
+  "state": "dunmore",
+  "topic": "what_changes_offer",
+  "cites": [
+   "what_changes_offer__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t149",
+  "created_at": "2023-11-23",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "eastvale",
+  "topic": "modified_cars",
+  "cites": [
+   "modified_cars__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t150",
+  "created_at": "2024-11-11",
+  "channel": "phone_note",
+  "style": "rambling",
+  "state": "aldora",
+  "topic": "cancel_insurance",
+  "cites": [
+   "cancel_insurance__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t151",
+  "created_at": "2026-05-27",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "brevin",
+  "topic": "buy_title_outside_lender",
+  "cites": [
+   "buy_title_outside_lender__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t152",
+  "created_at": "2022-10-22",
+  "channel": "email",
+  "style": "rambling",
+  "state": "brevin",
+  "topic": "duplicate_title_brevin",
+  "cites": [
+   "duplicate_title_brevin__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t153",
+  "created_at": "2022-05-02",
+  "channel": "chat",
+  "style": "typos",
+  "state": "corlan",
+  "topic": "lien_still_on_title",
+  "cites": [
+   "lien_still_on_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t154",
+  "created_at": "2026-04-22",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "dunmore",
+  "topic": "how_selling_works",
+  "cites": [
+   "how_selling_works__2022"
+  ],
+  "agent_error": true,
+  "outdated": true
+ },
+ {
+  "_key": "t155",
+  "created_at": "2023-09-11",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "aldora",
+  "topic": "returns",
+  "cites": [
+   "returns__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t156",
+  "created_at": "2026-08-11",
+  "channel": "chat",
+  "style": "typos",
+  "state": "dunmore",
+  "topic": "divorce_ex_on_title",
+  "cites": [
+   "divorce_ex_on_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t157",
+  "created_at": "2024-04-11",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "corlan",
+  "topic": "modified_cars",
+  "cites": [
+   "modified_cars__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t158",
+  "created_at": "2026-05-25",
+  "channel": "email",
+  "style": "polite",
+  "state": "dunmore",
+  "topic": "electronic_titles",
+  "cites": [
+   "electronic_titles__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t159",
+  "created_at": "2024-02-07",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "aldora",
+  "topic": "lien_still_on_title",
+  "cites": [
+   "lien_still_on_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t160",
+  "created_at": "2026-09-22",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "aldora",
+  "topic": "epayoff_network",
+  "cites": [
+   "epayoff_network__2026"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t161",
+  "created_at": "2022-07-22",
+  "channel": "chat",
+  "style": "brief",
+  "state": "dunmore",
+  "topic": "license_plates",
+  "cites": [
+   "license_plates__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t162",
+  "created_at": "2026-08-23",
+  "channel": "email",
+  "style": "polite",
+  "state": "eastvale",
+  "topic": "negative_equity",
+  "cites": [
+   "negative_equity__2026"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t163",
+  "created_at": "2024-11-05",
+  "channel": "chat",
+  "style": "typos",
+  "state": "brevin",
+  "topic": "license_plates",
+  "cites": [
+   "license_plates__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t164",
+  "created_at": "2022-04-24",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "corlan",
+  "topic": "co_owners",
+  "cites": [
+   "co_owners__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t165",
+  "created_at": "2022-04-07",
+  "channel": "email",
+  "style": "brief",
+  "state": "eastvale",
+  "topic": "walk_in_quotes",
+  "cites": [
+   "walk_in_quotes__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t166",
+  "created_at": "2025-01-30",
+  "channel": "phone_note",
+  "style": "typos",
+  "state": "brevin",
+  "topic": "co_owners",
+  "cites": [
+   "co_owners__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t167",
+  "created_at": "2023-11-19",
+  "channel": "chat",
+  "style": "polite",
+  "state": "brevin",
+  "topic": "walk_in_quotes",
+  "cites": [
+   "walk_in_quotes__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t168",
+  "created_at": "2024-05-28",
+  "channel": "phone_note",
+  "style": "typos",
+  "state": "eastvale",
+  "topic": "duplicate_title_eastvale",
+  "cites": [
+   "duplicate_title_eastvale__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t169",
+  "created_at": "2022-05-24",
+  "channel": "email",
+  "style": "polite",
+  "state": "brevin",
+  "topic": "lender_overpayment_refund",
+  "cites": [
+   "lender_overpayment_refund__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t170",
+  "created_at": "2026-06-22",
+  "channel": "chat",
+  "style": "polite",
+  "state": "dunmore",
+  "topic": "co_owners",
+  "cites": [
+   "co_owners__2026"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t171",
+  "created_at": "2025-02-18",
+  "channel": "phone_note",
+  "style": "polite",
+  "state": "aldora",
+  "topic": "appointment_checklist",
+  "cites": [
+   "appointment_checklist__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t172",
+  "created_at": "2025-02-17",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "eastvale",
+  "topic": "leased_car",
+  "cites": [
+   "leased_car__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t173",
+  "created_at": "2023-12-03",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "aldora",
+  "topic": "electronic_titles",
+  "cites": [
+   "electronic_titles__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t174",
+  "created_at": "2025-01-28",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "brevin",
+  "topic": "duplicate_title_brevin",
+  "cites": [
+   "duplicate_title_brevin__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t175",
+  "created_at": "2026-09-06",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "dunmore",
+  "topic": "duplicate_title_dunmore",
+  "cites": [
+   "duplicate_title_dunmore__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t176",
+  "created_at": "2024-06-08",
+  "channel": "phone_note",
+  "style": "polite",
+  "state": "dunmore",
+  "topic": "registration_expired",
+  "cites": [
+   "registration_expired__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t177",
+  "created_at": "2022-03-12",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "eastvale",
+  "topic": "duplicate_title_eastvale",
+  "cites": [
+   "duplicate_title_eastvale__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t178",
+  "created_at": "2024-04-05",
+  "channel": "chat",
+  "style": "brief",
+  "state": "brevin",
+  "topic": "cancel_insurance",
+  "cites": [
+   "cancel_insurance__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t179",
+  "created_at": "2026-02-15",
+  "channel": "phone_note",
+  "style": "frustrated",
+  "state": "aldora",
+  "topic": "returns",
+  "cites": [
+   "returns__2022"
+  ],
+  "agent_error": true,
+  "outdated": true
+ },
+ {
+  "_key": "t180",
+  "created_at": "2024-09-02",
+  "channel": "chat",
+  "style": "polite",
+  "state": "eastvale",
+  "topic": "lien_still_on_title",
+  "cites": [
+   "lien_still_on_title__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t181",
+  "created_at": "2025-09-12",
+  "channel": "phone_note",
+  "style": "rambling",
+  "state": "dunmore",
+  "topic": "toll_tags_personal_data",
+  "cites": [
+   "toll_tags_personal_data__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t182",
+  "created_at": "2023-02-08",
+  "channel": "chat",
+  "style": "brief",
+  "state": "corlan",
+  "topic": "non_running_cars",
+  "cites": [
+   "non_running_cars__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t183",
+  "created_at": "2025-08-17",
+  "channel": "chat",
+  "style": "typos",
+  "state": "aldora",
+  "topic": "negative_equity",
+  "cites": [
+   "negative_equity__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t184",
+  "created_at": "2026-02-03",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "eastvale",
+  "topic": "offer_validity",
+  "cites": [
+   "offer_validity__2026"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t185",
+  "created_at": "2025-03-11",
+  "channel": "phone_note",
+  "style": "frustrated",
+  "state": "eastvale",
+  "topic": "duplicate_title_eastvale",
+  "cites": [
+   "duplicate_title_eastvale__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t186",
+  "created_at": "2023-06-11",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "aldora",
+  "topic": "license_plates",
+  "cites": [
+   "license_plates__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t187",
+  "created_at": "2022-03-31",
+  "channel": "email",
+  "style": "polite",
+  "state": "eastvale",
+  "topic": "keep_paying_until_confirmed",
+  "cites": [
+   "keep_paying_until_confirmed__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t188",
+  "created_at": "2023-03-01",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "brevin",
+  "topic": "duplicate_title_brevin",
+  "cites": [
+   "duplicate_title_brevin__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t189",
+  "created_at": "2025-10-14",
+  "channel": "chat",
+  "style": "brief",
+  "state": "corlan",
+  "topic": "non_running_cars",
+  "cites": [
+   "non_running_cars__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t190",
+  "created_at": "2022-07-31",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "eastvale",
+  "topic": "open_recalls",
+  "cites": [
+   "open_recalls__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t191",
+  "created_at": "2026-07-13",
+  "channel": "phone_note",
+  "style": "rambling",
+  "state": "eastvale",
+  "topic": "duplicate_title_eastvale",
+  "cites": [
+   "duplicate_title_eastvale__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t192",
+  "created_at": "2023-02-23",
+  "channel": "chat",
+  "style": "brief",
+  "state": "dunmore",
+  "topic": "lender_overpayment_refund",
+  "cites": [
+   "lender_overpayment_refund__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t193",
+  "created_at": "2022-08-31",
+  "channel": "chat",
+  "style": "polite",
+  "state": "eastvale",
+  "topic": "walk_in_quotes",
+  "cites": [
+   "walk_in_quotes__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t194",
+  "created_at": "2024-01-23",
+  "channel": "chat",
+  "style": "frustrated",
+  "state": "aldora",
+  "topic": "lessor_buyouts",
+  "cites": [
+   "lessor_buyouts__2022"
+  ],
+  "agent_error": false,
+  "outdated": true
+ },
+ {
+  "_key": "t195",
+  "created_at": "2025-10-22",
+  "channel": "chat",
+  "style": "rambling",
+  "state": "dunmore",
+  "topic": "electronic_titles",
+  "cites": [
+   "electronic_titles__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t196",
+  "created_at": "2025-06-30",
+  "channel": "email",
+  "style": "frustrated",
+  "state": "brevin",
+  "topic": "odometer_problems",
+  "cites": [
+   "odometer_problems__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t197",
+  "created_at": "2023-11-19",
+  "channel": "chat",
+  "style": "brief",
+  "state": "corlan",
+  "topic": "open_recalls",
+  "cites": [
+   "open_recalls__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t198",
+  "created_at": "2026-04-16",
+  "channel": "chat",
+  "style": "brief",
+  "state": "brevin",
+  "topic": "duplicate_title_brevin",
+  "cites": [
+   "duplicate_title_brevin__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t199",
+  "created_at": "2025-11-20",
+  "channel": "phone_note",
+  "style": "frustrated",
+  "state": "eastvale",
+  "topic": "leased_car",
+  "cites": [
+   "leased_car__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ },
+ {
+  "_key": "t200",
+  "created_at": "2025-11-16",
+  "channel": "chat",
+  "style": "brief",
+  "state": "eastvale",
+  "topic": "leased_car",
+  "cites": [
+   "leased_car__2022"
+  ],
+  "agent_error": false,
+  "outdated": false
+ }
+]

@@ -63,6 +63,22 @@ Problems we hit and how we fixed them. Each entry: symptom → root cause → fi
 - **Fix:** call `mut(tmp)` before running the checker. The harness now lives in `scripts/test_check_data.py` (`make test-checks`) and exits non-zero if any fault is missed.
 - **Lesson:** a test of the tests needs at least one case known to fail. "Everything missed" is just as suspicious as "everything passed".
 
+### I-011 · The ticket plan had zero agent mistakes
+- **Symptom:** the first dry run planned 200 tickets with `agent errors: 0`; the design calls for about 4%.
+- **Root cause:** a 4% coin flip was applied only to tickets that could have the mistake (dated after the rewrite, on a rewritten article), which is about 10 tickets, so the expected count was under 1.
+- **Fix:** collect the eligible tickets, then pick exactly `N_AGENT_ERRORS = 8` of them with the seeded RNG.
+- **Verified:** the dry run shows 8; the same seed gives the same `plan.json` (identical sha) on two runs; every planned ticket passes the ticket rules from `check_data.py`.
+- **Lesson:** when a rare event has a target count, sample the count directly instead of hoping a probability produces it.
+
+### I-012 · Two small vault mistakes
+- **Symptom:** the Home page's run command `cd "~/Projects/Arango/..."` fails, because `~` doesn't expand inside quotes. The internship page's `[[stage]]` link was ambiguous, because the vault has two `stage.md` files.
+- **Fix:** `cd ~/Projects/Arango/"10 Cookbook Demo"/arango-cookbook-prototype`, and full-path wikilinks (`[[20 Internship (placeholder)/stage|stage]]`).
+- **Verified:** ran the `cd` line in a shell; both links point to the placeholder files.
+
+### I-013 · Random store services didn't match "select stores"
+- **Symptom:** the seeded random draws gave towing at 17 of 25 stores, which doesn't fit the article's "select stores".
+- **Fix:** services and Sunday hours are set by store position within each state (towing at 2 per state = 10, lease buyouts at 3 per state = 15, Sunday at 1 per state = 5; no home pickup in Dunmore). This is a design choice, not noise.
+
 ---
 
 ## Checked and fine

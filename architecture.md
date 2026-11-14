@@ -6,15 +6,26 @@
 - There are no 1.1 or 1.2 versions. Smaller changes go in [progress.md](progress.md) (what happened), [decisions.md](decisions.md) (why) and [issues.md](issues.md) (what broke).
 - The newest version is at the top. Older ones stay as they were written.
 
-**Current: v2.0**, in progress. It becomes v2.5 when stage 2's first stretch of work is done.
+**Current: v2.5**, a checkpoint under design v2.0 (stage 2 data and checks done; tickets and gold freeze pending).
 
 | Version | Date | What | Confirmed by |
 |---|---|---|---|
+| v2.5 | 2026-11-13 | Checkpoint: KB data, data checks (mutation-tested), 56-question gold set, ticket plan | — |
 | v2.0 | 2026-11-12 | Medium-size KB: tickets, lenders, stores, four kinds of tricky cases | Tianyi (answers on size, tickets, tricky cases) |
 | v1.5 | 2026-11-12 | Checkpoint: stage 1 done under v1.0 | — |
 | v1.0 | 2026-11-12 | A cookbook for developers: versioned KB, structural + LLM graph, gold set with traps | Tianyi (plan approval) |
 | v0.5 | 2026-11-12 | Checkpoint: kitchen steps 0–3 running | — |
 | v0.0 | 2026-11-12 | "GraphRAG kitchen": a step-by-step learning lab | Tianyi (chose the data and the LLM option) |
+
+---
+
+## v2.5: checkpoint, stage 2 data and checks (2026-11-13)
+Built under v2.0, with no design change:
+- **Data:** 51 articles / 68 versions (`data/kb/articles/01_…08_*.json`), `forms`, `states`, `lenders`, `lessors`, `stores`, `known_issues`. The structural graph will be parsed from `kb:` links and `NW-` codes by `cookbook/load.py`.
+- **Checks:** `make check` (counts, version chains, no time travel in links or codes, known issues present, structured records agree with the text, stores, gold, tickets) and `make test-checks` (5 injected faults, all caught).
+- **Gold:** 56 questions with two dates each (`asked_on`, `as_of`, D-019); facts graded by meaning (D-020). 40 drafts await review.
+- **Tickets:** deterministic plan (200; 75 outdated today; 8 agent mistakes that cite the superseded version); generation is scripted but not yet run.
+- **Not yet built:** loading into ArangoDB, the graph, embeddings, retrieval, notebooks (stage 3).
 
 ---
 

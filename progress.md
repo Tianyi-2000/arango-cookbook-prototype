@@ -4,6 +4,14 @@ A detailed log, newest first. Add an entry after every working session or run: *
 
 ---
 
+## 2026-11-13 · Stage 2: data, checks, gold set, ticket plan (checkpoint v2.5)
+- **Did:** wrote the knowledge base: 51 articles / 68 versions in 8 section files, with `kb:` links and `NW-` codes in the text; `forms` (15), `states` (5), `lenders` (12), `lessors` (6), `stores` (25), `known_issues` (3). Wrote `cookbook/load.py` and `scripts/check_data.py` (`make check`). Mutation-tested the checker with 5 injected faults: the first harness never applied them (I-010); after fixing that, the anachronism check missed one (I-009); after that fix, all 5 are caught (`make test-checks`). Built the gold set: 56 questions, 8 per type (16 kept seeds + 40 drafts), plus `make review` for a readable sheet. Checked every answer fact against its gold articles: 24 are paraphrases or computed values, none contradicts an article, so facts will be graded by meaning (D-020). Wrote `scripts/generate_tickets.py`: a deterministic plan (200 tickets, 75 outdated today, 8 agent mistakes, about $2.68 estimated) and a dry run; the API path is written but not yet run.
+- **Changed:** `data/kb/**`, `data/eval/gold.json`, `data/eval/gold_review.md`, `data/tickets/plan.json`, `cookbook/load.py`, `scripts/{check_data,test_check_data,render_gold_review,generate_tickets}.py`, `Makefile` (check, test-checks, review, tickets-plan, tickets-one, tickets). One article edit made the Apex fee unambiguous (it's added to the buyout amount).
+- **Auto-adjustments:** store services made explicit (I-013); agent mistakes picked by count (I-011); `kb:` link markup stripped from ticket prompts.
+- **Stuck / waiting:** (1) `ANTHROPIC_API_KEY` in `.env` to run `make tickets-one`, then `make tickets`. (2) Tianyi's review of the 40 draft questions in `data/eval/gold_review.md`, then freeze.
+
+---
+
 ## 2026-11-13 · Harness and vault (architecture v2.0)
 - **Did:** created the Obsidian vault `~/Projects/Arango/` (Home, CLAUDE.md, internship placeholder, templates, Minimal theme). Moved this repo from the interview-prep vault to `10 Cookbook Demo/`. Ran `docker compose down` before the move and `up` after; the volume `arango-cookbook-prototype_arango_data` survived. Recreated `.venv` (I-008). `verify_env.py` passes in the new location. Deleted the v0 kitchen: folder, container `arango-kitchen`, volume `arango-graphrag-kitchen_kitchen_data` (D-016). Wrote the six harness files. Folded `NOTES.md` into `issues.md` and deleted it, to keep one source of truth.
 - **Changed:** `stage.md`, `progress.md`, `architecture.md`, `decisions.md`, `issues.md`, `eval.md` (new); `NOTES.md` (removed); `.gitignore` (+ `.obsidian/`); README (links to the harness files).
