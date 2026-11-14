@@ -6,7 +6,7 @@ state, channel, customer style, whether it's outdated today, and whether the age
 so the text can't drift from the plan (D-010).
 
     python scripts/generate_tickets.py            # dry run: plan + cost estimate + one example prompt (no API calls)
-    python scripts/generate_tickets.py --one      # generate the first missing ticket (needs ANTHROPIC_API_KEY)
+    python scripts/generate_tickets.py --one      # generate the first missing ticket (needs `ant auth login` or an API key)
     python scripts/generate_tickets.py --all      # generate every missing ticket, then assemble tickets.json
 
 Each generated ticket is cached in data/tickets/raw/<key>.json, so reruns never pay twice.
@@ -168,19 +168,25 @@ def main() -> int:
         print("\n--- example prompt (first ticket) ---\n" + build_prompt(plan[0], by_key[plan[0]["cites"][0]]))
         print("\nDry run only. Use --one to generate one ticket, --all for the rest.")
         return 0
-    if not os.getenv("ANTHROPIC_API_KEY"):
-        from dotenv import load_dotenv
-        load_dotenv()
-    if not os.getenv("ANTHROPIC_API_KEY"):
-        print("ANTHROPIC_API_KEY is not set (put it in .env). Nothing generated.")
+    if os.getenv("ANTHROPIC_API_KEY") == "":
+        print("ANTHROPIC_API_KEY is set but empty, which would hide your `ant auth login` sign-in. Remove it from .env.")
         return 1
 
     import anthropic
+    # No key check here: the SDK finds credentials itself, from ANTHROPIC_API_KEY or from an
+    # `ant auth login` sign-in on this machine (issue I-014).
     client = anthropic.Anthropic()
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     todo = missing[:1] if args.one else missing
     for i, t in enumerate(todo, 1):
-        body = generate_one(client, t, by_key[t["cites"][0]])
+        try:
+            body = generate_one(client, t, by_key[t["cites"][0]])
+        except anthropic.AuthenticationError as e:
+            print(f"Not signed in: run `ant auth login` (or set ANTHROPIC_API_KEY in .env). Details: {e}")
+            return 1
+        except TypeError as e:  # the SDK raises this when it finds no credentials at all
+            print(f"No credentials found: run `ant auth login`. Details: {e}")
+            return 1
         (RAW_DIR / f"{t['_key']}.json").write_text(json.dumps(body, indent=1, ensure_ascii=False) + "\n")
         print(f"[{i}/{len(todo)}] {t['_key']} {t['created_at']} {t['topic']}: {body['usage']}")
         if args.one:

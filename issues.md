@@ -79,6 +79,12 @@ Problems we hit and how we fixed them. Each entry: symptom → root cause → fi
 - **Symptom:** the seeded random draws gave towing at 17 of 25 stores, which doesn't fit the article's "select stores".
 - **Fix:** services and Sunday hours are set by store position within each state (towing at 2 per state = 10, lease buyouts at 3 per state = 15, Sunday at 1 per state = 5; no home pickup in Dunmore). This is a design choice, not noise.
 
+### I-014 · An empty `ANTHROPIC_API_KEY` would hide the `ant auth login` sign-in (caught before it happened)
+- **Symptom (expected):** Tianyi chose to sign in with `ant auth login` instead of an API key. `.env` (copied from `.env.example`) contained `ANTHROPIC_API_KEY=` with no value, and `cookbook/db.py` loads `.env` on import. An env var set to an empty string can be taken as "a key is set" and win over the sign-in. Separately, `generate_tickets.py` refused to run without the variable.
+- **Fix:** `.env.example` and `.env` now have the line commented out, with a note. The script no longer checks the variable: the SDK resolves credentials itself (API key, or the `ant` sign-in). The script stops with a clear message if the variable is set but empty, and on authentication errors.
+- **Verified:** the dry run still works with no credentials; the first real call (`make tickets-one`) after sign-in is the end-to-end test.
+- **Lesson:** don't gate on one credential source when the SDK supports several, and never ship a template that sets a secret to an empty value.
+
 ---
 
 ## Checked and fine
