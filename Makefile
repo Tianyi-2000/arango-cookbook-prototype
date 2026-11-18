@@ -1,6 +1,6 @@
 PY := .venv/bin/python
 
-.PHONY: up down venv verify check test-checks review tickets-plan tickets-one tickets load test-retrieve freeze eval eval-reserve fresh
+.PHONY: up down venv verify check test-checks review tickets-plan tickets-one tickets load test-retrieve freeze eval eval-reserve fresh answers answers-run answers-report
 up:      ## start ArangoDB on localhost:8535
 	docker compose up -d
 down:
@@ -33,3 +33,9 @@ eval-reserve:  ## the same eval on the reserve questions, for debugging (writes 
 	$(PY) scripts/run_eval.py --reserve
 fresh:   ## freshness demo in northwind_kb_demo: change a policy, ask again -> data/eval/fresh_demo.md
 	$(PY) scripts/fresh_demo.py
+answers:  ## dry run of the answer eval: prompts and cost estimate, no API calls
+	$(PY) scripts/run_answers.py
+answers-run:  ## answer eval with Claude (M2 vs M4, judged); stops before the $6 cap
+	$(PY) scripts/run_answers.py --run
+answers-report:  ## answer eval tables from the cached answers -> data/eval/scores/answers.md
+	$(PY) scripts/run_answers.py --report
