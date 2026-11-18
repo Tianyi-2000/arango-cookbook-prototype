@@ -5,6 +5,8 @@
    and still returns a full top-k
 3. ArangoSearch view + BM25
 4. how text_en tokenizes a form code such as NW-POA-2 (why the cookbook keeps codes in their own field)
+5. a document inserted after the vector index was built is found by the next query, with no rebuild
+   (the freshness demo depends on this), and COSINE_SIMILARITY exists (graph expansion uses it)
 
 Runs in a throwaway database that is dropped at the end. Exit code 0 = OK.
 Run: python scripts/verify_env.py   (or: make verify)
@@ -32,6 +34,7 @@ def main() -> int:
         check_vector(db)
         check_bm25(db)
         check_code_tokens(db)
+        check_insert_after_index(db)
     finally:
         sys_db.delete_database(SCRATCH_DB, ignore_missing=True)
     print("OK")
@@ -101,6 +104,26 @@ def check_code_tokens(db) -> None:
     print(f"text_en tokens for 'Use form NW-POA-2, not NW-POA-1.': {tokens}")
     # The two codes differ by a single token ("2" vs "1"), so plain BM25 can barely tell them apart.
     assert "nw" in tokens and "poa" in tokens
+
+
+def check_insert_after_index(db) -> None:
+    rng = random.Random(7)
+    col = db.create_collection("fresh_check")
+    col.import_bulk([{"_key": f"f{i}", "embedding": [rng.uniform(-1, 1) for _ in range(DIM)]} for i in range(N_DOCS)])
+    col.add_index({"type": "vector", "name": "fresh_check_cosine", "fields": ["embedding"],
+                   "params": {"metric": "cosine", "dimension": DIM, "nLists": 2, "defaultNProbe": 2}})
+    new_vec = [rng.uniform(-1, 1) for _ in range(DIM)]
+    col.insert({"_key": "new_doc", "embedding": new_vec})  # after the index was trained
+    query = """
+    FOR d IN fresh_check
+      LET s = APPROX_NEAR_COSINE(d.embedding, @qv)
+      SORT s DESC LIMIT 3
+      RETURN {key: d._key, s: s, exact: COSINE_SIMILARITY(d.embedding, @qv)}
+    """
+    rows = list(db.aql.execute(query, bind_vars={"qv": new_vec}))
+    print(f"insert after index -> top-3 {[r['key'] for r in rows]}  top score {rows[0]['s']:.3f}  COSINE_SIMILARITY {rows[0]['exact']:.3f}")
+    assert rows[0]["key"] == "new_doc", "a document inserted after the index was built is not found"
+    assert abs(rows[0]["exact"] - 1.0) < 1e-6
 
 
 if __name__ == "__main__":

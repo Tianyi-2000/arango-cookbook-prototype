@@ -120,9 +120,24 @@ Problems we hit and how we fixed them. Each entry: symptom → root cause → fi
 - **Verified:** `make test-checks` catches 8 of 8; `make check` passes.
 - **Lesson:** every data read goes through one loader, or tests can't redirect it. Read the test output before committing.
 
+### I-019 · M4 credited the graph for hits it didn't make
+- **Symptom:** on a reserve question, M4 showed the top hit `lease_equity__2022` as reached "via negative_equity__2026", although it was the first entry point.
+- **Root cause:** candidates were scored with `APPROX_NEAR_COSINE` (float32) and neighbours with `COSINE_SIMILARITY` (float64). The same article's two scores differ by about 1e-8, so its "neighbour" row won the tie and carried a `via` path.
+- **Fix:** M4 ranks candidates with the index but scores every row with `COSINE_SIMILARITY`; `via` is set only when the inherited score is higher than the article's own.
+- **Verified:** the same question shows no `via` on entry points; `make test-retrieve` passes.
+- **Lesson:** when two code paths score the same thing, make them use the same function, or ties go to whichever is a hair larger.
+
+### I-020 · Vector search fails with two FILTER statements (ArangoDB 3.12.13)
+- **Symptom:** M3 and M4 failed on q43 (state Georgia) with `ERR 1554: Vector search could not be applied … filtering can be applied in trivial cases`. They worked on every question without a state.
+- **Root cause:** the date filter and the state filter were two `FILTER` statements before `APPROX_NEAR_COSINE`. When `@state` is null the optimizer folds the second one away, so only one is left and the index is used; with a state, two remain and the vector-index rule refuses. Each filter alone, or both joined with `AND` in one `FILTER`, works.
+- **Fix:** one `FILTER` statement (`_FRESH` in `cookbook/retrieve.py`), with a comment saying why.
+- **Verified:** all 26 reserve questions × 4 methods run; `scripts/test_retrieve.py` (`make test-retrieve`) checks index use with a state set, and that M3/M4 return no stale or wrong-state version.
+- **Lesson:** a query that works on some inputs can fail on others when the optimizer folds bind variables. Test with every kind of input, including the non-null ones.
+
 ---
 
 ## Checked and fine
 - **A filtered vector search still uses the index.** With `FILTER d.current == true` before `APPROX_NEAR_COSINE`, the plan shows `EnumerateNearVectorNode`, and `LIMIT 5` still returns 5 matching documents. So "current versions only" can be filtered inside the vector query (`verify_env.py`, 30 random vectors, half of them current).
 - **A small corpus is fine for the vector index.** `nLists` 1, 2 and 4 all train on 30 documents. Load the documents before creating the index, because it learns its clusters from vectors that already exist.
+- **A document inserted after the vector index was built is found by the next query** (no rebuild, 2026-11-17, `verify_env.py` check 5). The freshness demo depends on this. `COSINE_SIMILARITY` exists in 3.12.13.
 - **`text_en` keeps stopwords and stems words** ("the" stays; "paying" → "pay", "loans" → "loan"). BM25's IDF makes the common tokens cheap.

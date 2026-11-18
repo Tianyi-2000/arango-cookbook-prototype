@@ -1,6 +1,6 @@
 PY := .venv/bin/python
 
-.PHONY: up down venv verify check test-checks review tickets-plan tickets-one tickets
+.PHONY: up down venv verify check test-checks review tickets-plan tickets-one tickets load test-retrieve
 up:      ## start ArangoDB on localhost:8535
 	docker compose up -d
 down:
@@ -21,3 +21,7 @@ tickets-one:   ## generate one ticket to test the API path (needs ANTHROPIC_API_
 	$(PY) scripts/generate_tickets.py --one
 tickets:       ## generate all missing tickets (needs ANTHROPIC_API_KEY in .env)
 	$(PY) scripts/generate_tickets.py --all
+load:    ## rebuild database northwind_kb from data/: documents, parsed edges, graph, BM25 view, vector index
+	$(PY) -m cookbook.build
+test-retrieve:  ## run M1-M4 on the reserve questions: index use, no stale or wrong-state hits (needs make load)
+	$(PY) scripts/test_retrieve.py
