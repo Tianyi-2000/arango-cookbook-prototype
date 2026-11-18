@@ -113,3 +113,20 @@ Key choices and why we made them: the "why" only. What changed is in [progress.m
 - **Risk accepted:** a reader may take a synthetic rule as real law. Mitigated by the disclaimer; no rule was changed to look more realistic.
 - **Rejected:** keeping fictional states (D-004); renaming only the cities (gives "Austin, Aldora").
 - **Decided by:** Tianyi (2026-11-17)
+
+### D-024 · 2026-11-17 · The gold set is 30 questions, chosen from the questions alone
+- **What:** 16 seeds Tianyi kept + 14 drafts, in the mix multi_hop 7, checklist 5, temporal 5, conditional 4, exact 3, semantic 3, unanswerable 3. Each added draft has a written reason (`why_in_30`). The other 26 go to `data/eval/gold_reserve.json` unchanged; retrieval code is debugged on the reserve, never on the 30. Frozen after Tianyi's review (commit + sha256 in `data/eval/FROZEN`).
+- **Why:** Tianyi can review 30 in about 25 minutes, not 56. The mix leans to the types where the KB's structure should matter (multi_hop, checklist, temporal), because that is the claim being tested; the README says so. No method existed when the 30 were picked, so the choice can't be fitted to results.
+- **Rejected:** equal counts per type (fewer questions that test the graph); adding messy/vague candidates now (longer review; they come later).
+- **Decided by:** Tianyi (approach); Claude (the 14 picks, pending Tianyi's review)
+
+### D-025 · 2026-11-17 · Four retrieval methods, one change each; the graph rule is fixed before any run
+- **What:** M1 BM25 over all versions · M2 vector over all versions · M3 = M2 + filter (in effect on `as_of`, applies to the customer's state) · M4 = M3 + graph expansion. M4's rule: candidates are M3's top 10; the top 5 are entry points; from each entry, walk `kb_graph` to other articles over `links_to` (either direction, 1 hop) or through one shared form, lender or lessor (article → form/lender/lessor ← article, 2 hops; `uses_form` → `replaced_by` → `uses_form` is 3 hops). Never through another article, a state (`applies_in` connects everything in a state) or `supersedes`. Neighbors must pass M3's filter. A candidate's score = max(its own cosine similarity, parent score × 0.8^hops). Sort, take top k. The graph can add or raise an article, never lower one.
+- **Why:** each step adds one thing, so the table shows what the filter adds and what the graph adds on top (an ablation). 0.8 and "top 5 entries" are picked a priori, not tuned; any later sensitivity table will be reported as such, without switching to the best value.
+- **Rejected:** three methods (can't tell the filter's gain from the graph's); hybrid RRF as a fifth (later); LLM-extracted graph (later, stage 4).
+- **Decided by:** Tianyi (ladder); Claude (the expansion rule)
+
+### D-026 · 2026-11-17 · Recall@5 is the headline; no precision (replaces D-017's Recall@10)
+- **What:** per question, over the top-k article versions: Recall@5 (headline), Recall@10, All-gold@5, MRR@10, nDCG@5 (binary relevance), stale@5 (a version not in effect on `as_of`), trap@5. Averaged by type and for a multi-hop + checklist slice; each cell says how many questions it covers. The 3 unanswerable questions are left out of retrieval metrics (eval.md) and scored in the answer eval. A per-question win/loss list (M4 vs M3) is part of the output.
+- **Why:** the KB has 50 current articles, so K=10 is a fifth of it and hides differences. Questions have 1.5 gold articles on average, so Precision@10 can't go above about 0.15: it says nothing here.
+- **Decided by:** Tianyi (approved with the plan, 2026-11-17)
