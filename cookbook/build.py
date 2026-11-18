@@ -37,30 +37,38 @@ VECTOR_INDEX = "articles_embedding_cosine"
 N_LISTS = 4  # tiny corpus; defaultNProbe = nLists, so every list is searched (exact top-k)
 
 
+def article_edges(a: dict, kb: dict, by_doc: dict) -> dict[str, list[dict]]:
+    """The outgoing edges of one article version, parsed from its own fields and text."""
+    src = f"articles/{a['_key']}"
+    forms = {f["_key"] for f in kb["forms"]}
+    e = defaultdict(list)
+    for doc_id in sorted(set(a["links"])):
+        for b in by_doc.get(doc_id, []):  # a link to a missing article (a known KB issue) makes no edge
+            e["links_to"].append({"_from": src, "_to": f"articles/{b['_key']}", "doc_id": doc_id})
+    for code in a["codes"]:
+        if code in forms:
+            e["uses_form"].append({"_from": src, "_to": f"forms/{code}"})
+    for s in a["states"]:
+        e["applies_in"].append({"_from": src, "_to": f"states/{s}"})
+    for l in kb["lenders"]:
+        if l["name"] in a["text"]:
+            e["about_lender"].append({"_from": src, "_to": f"lenders/{l['_key']}"})
+    for l in kb["lessors"]:
+        if l["name"] in a["text"]:
+            e["about_lessor"].append({"_from": src, "_to": f"lessors/{l['_key']}"})
+    return e
+
+
 def parse_edges(kb: dict, tickets: list[dict]) -> dict[str, list[dict]]:
     """Every edge, parsed from the data. Returns {edge collection: [edge documents]}."""
     arts = kb["articles"]
     by_doc = defaultdict(list)
     for a in arts:
         by_doc[a["doc_id"]].append(a)
-    forms = {f["_key"] for f in kb["forms"]}
     e = defaultdict(list)
     for a in arts:
-        src = f"articles/{a['_key']}"
-        for doc_id in sorted(set(a["links"])):
-            for b in by_doc.get(doc_id, []):  # a link to a missing article (a known KB issue) makes no edge
-                e["links_to"].append({"_from": src, "_to": f"articles/{b['_key']}", "doc_id": doc_id})
-        for code in a["codes"]:
-            if code in forms:
-                e["uses_form"].append({"_from": src, "_to": f"forms/{code}"})
-        for s in a["states"]:
-            e["applies_in"].append({"_from": src, "_to": f"states/{s}"})
-        for l in kb["lenders"]:
-            if l["name"] in a["text"]:
-                e["about_lender"].append({"_from": src, "_to": f"lenders/{l['_key']}"})
-        for l in kb["lessors"]:
-            if l["name"] in a["text"]:
-                e["about_lessor"].append({"_from": src, "_to": f"lessors/{l['_key']}"})
+        for name, rows in article_edges(a, kb, by_doc).items():
+            e[name] += rows
     for versions in by_doc.values():
         versions.sort(key=lambda v: v["effective_from"])
         for old, new in zip(versions, versions[1:]):

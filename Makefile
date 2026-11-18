@@ -1,6 +1,6 @@
 PY := .venv/bin/python
 
-.PHONY: up down venv verify check test-checks review tickets-plan tickets-one tickets load test-retrieve
+.PHONY: up down venv verify check test-checks review tickets-plan tickets-one tickets load test-retrieve freeze eval eval-reserve fresh
 up:      ## start ArangoDB on localhost:8535
 	docker compose up -d
 down:
@@ -25,3 +25,11 @@ load:    ## rebuild database northwind_kb from data/: documents, parsed edges, g
 	$(PY) -m cookbook.build
 test-retrieve:  ## run M1-M4 on the reserve questions: index use, no stale or wrong-state hits (needs make load)
 	$(PY) scripts/test_retrieve.py
+freeze:  ## freeze the gold set: write data/eval/FROZEN (sha256 of gold.json)
+	$(PY) scripts/freeze_gold.py
+eval:    ## retrieval eval on the frozen gold set -> data/eval/scores/latest.{json,md} (needs make load)
+	$(PY) scripts/run_eval.py
+eval-reserve:  ## the same eval on the reserve questions, for debugging (writes nothing)
+	$(PY) scripts/run_eval.py --reserve
+fresh:   ## freshness demo in northwind_kb_demo: change a policy, ask again -> data/eval/fresh_demo.md
+	$(PY) scripts/fresh_demo.py

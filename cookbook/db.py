@@ -29,7 +29,18 @@ def run(db, aql: str, bind_vars: dict | None = None, show: bool = True) -> list:
     if show:
         print("AQL>", aql.strip().replace("\n", "\n     "))
         if bind_vars:
-            shown = {k: (f"<{len(v)} floats>" if isinstance(v, list) and len(v) > 8 else v)
-                     for k, v in bind_vars.items()}
-            print("bind:", shown)
+            print("bind:", _short(bind_vars))
     return list(db.aql.execute(aql, bind_vars=bind_vars or {}))
+
+
+def _short(v):
+    """Bind variables for printing: long float lists (embeddings) become "<384 floats>", at any depth."""
+    if isinstance(v, dict):
+        return {k: _short(x) for k, x in v.items()}
+    if isinstance(v, list) and len(v) > 8 and all(isinstance(x, float) for x in v):
+        return f"<{len(v)} floats>"
+    if isinstance(v, list):
+        return [_short(x) for x in v]
+    if isinstance(v, str) and len(v) > 160:
+        return v[:157] + "..."
+    return v
