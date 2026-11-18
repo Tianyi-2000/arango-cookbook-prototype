@@ -1,7 +1,7 @@
 {
  "version": "draft-2026-11-13",
  "today": "2026-11-01",
- "note": "Gold articles are the ones a correct answer must cite, decided when the question was written. Seeds (status kept) were chosen by Tianyi on 2026-11-13; drafts await his review. Frozen only after review.",
+ "note": "Gold articles are the ones a correct answer must cite, decided when the question was written. Seeds (status kept) were chosen by Tianyi on 2026-11-13; drafts await his review. Frozen only after review. Cut to 30 on 2026-11-17 (D-024); the rest are in gold_reserve.json.",
  "questions": [
   {
    "id": "q01",
@@ -58,32 +58,6 @@
    "reviewed_by": "tianyi 2026-11-13"
   },
   {
-   "id": "q03",
-   "type": "exact",
-   "question": "Does Apex Lease Co charge anything if you buy out my lease?",
-   "asked_on": "2026-11-01",
-   "as_of": "2026-11-01",
-   "state": null,
-   "tricky": [
-    "time_boundary"
-   ],
-   "gold_keys": [
-    "lessor_buyouts__2026"
-   ],
-   "require_all": true,
-   "trap_keys": [],
-   "answer_facts": [
-    "$350"
-   ],
-   "answerable": "yes",
-   "perfect_answer": "Yes. Since February 1, 2026, Apex adds a $350 third-party buyout fee to the buyout amount.",
-   "what_makes_it_hard": "The 2022 version lists Apex as allowed with no fee; the fee is one clause inside a list of six companies.",
-   "author": "claude",
-   "status": "draft",
-   "seed": null,
-   "reviewed_by": null
-  },
-  {
    "id": "q04",
    "type": "exact",
    "question": "What's form NW-LRL-1 for?",
@@ -107,118 +81,8 @@
    "author": "claude",
    "status": "draft",
    "seed": null,
-   "reviewed_by": null
-  },
-  {
-   "id": "q05",
-   "type": "exact",
-   "question": "Do I need NW-EST-1 or court letters to sell my late father's car?",
-   "asked_on": "2026-11-01",
-   "as_of": "2026-11-01",
-   "state": null,
-   "tricky": [
-    "rule_conflict"
-   ],
-   "gold_keys": [
-    "inherited_car__2026"
-   ],
-   "require_all": true,
-   "trap_keys": [
-    "selling_for_someone_else__2022"
-   ],
-   "answer_facts": [
-    "small estate",
-    "probate"
-   ],
-   "answerable": "yes",
-   "perfect_answer": "Either, together with the death certificate: NW-EST-1 is accepted for a small estate that doesn't go through probate court; otherwise bring court letters naming the executor or administrator.",
-   "what_makes_it_hard": "The 2022 version knows only court letters, and the family-car article suggests a power of attorney, which ends at death.",
-   "author": "claude",
-   "status": "draft",
-   "seed": null,
-   "reviewed_by": null
-  },
-  {
-   "id": "q06",
-   "type": "exact",
-   "question": "What is the NW-PU-1 form, and do I have to pay for it?",
-   "asked_on": "2026-11-01",
-   "as_of": "2026-11-01",
-   "state": null,
-   "tricky": [
-    "time_boundary"
-   ],
-   "gold_keys": [
-    "home_pickup__2026"
-   ],
-   "require_all": true,
-   "trap_keys": [],
-   "answer_facts": [
-    "home pickup agreement",
-    "$99"
-   ],
-   "answerable": "yes",
-   "perfect_answer": "It's the home pickup agreement you sign when you book home pickup. The form is free, but home pickup costs $99, taken out of your payment, and it isn't available in Texas.",
-   "what_makes_it_hard": "The 2022 home-pickup article says pickup is free and never names the form.",
-   "author": "claude",
-   "status": "draft",
-   "seed": null,
-   "reviewed_by": null
-  },
-  {
-   "id": "q07",
-   "type": "exact",
-   "question": "Does Bluewater Leasing let you buy my leased car?",
-   "asked_on": "2026-11-01",
-   "as_of": "2026-11-01",
-   "state": null,
-   "tricky": [
-    "rule_conflict"
-   ],
-   "gold_keys": [
-    "lessor_buyouts__2026",
-    "lease_equity__2022"
-   ],
-   "require_all": false,
-   "trap_keys": [],
-   "answer_facts": [
-    "only if you also buy"
-   ],
-   "answerable": "yes",
-   "perfect_answer": "Only if you also buy a car from Northwind. Any lease equity then goes toward that purchase.",
-   "what_makes_it_hard": "A conditional 'yes' hidden in a list; a bot that sees 'allowed' stops reading.",
-   "author": "claude",
-   "status": "draft",
-   "seed": null,
-   "reviewed_by": null
-  },
-  {
-   "id": "q08",
-   "type": "exact",
-   "question": "What do I put on the odometer form if my odometer was replaced?",
-   "asked_on": "2026-11-01",
-   "as_of": "2026-11-01",
-   "state": null,
-   "tricky": [
-    "messy_kb"
-   ],
-   "gold_keys": [
-    "odometer_problems__2022",
-    "appointment_checklist__2026"
-   ],
-   "require_all": true,
-   "trap_keys": [],
-   "answer_facts": [
-    "not actual mileage",
-    "NW-ODO-2"
-   ],
-   "answerable": "yes",
-   "perfect_answer": "Mark 'not actual mileage' on the odometer disclosure statement, which is NW-ODO-2 now (NW-ODO-1 was retired on February 1, 2026). Expect a reduced offer, and bring records of the true mileage if you have them.",
-   "what_makes_it_hard": "The odometer article still names the retired NW-ODO-1 (KB rot); the current code is only in the checklist.",
-   "author": "claude",
-   "status": "draft",
-   "seed": null,
-   "reviewed_by": null
+   "reviewed_by": null,
+   "why_in_30": "A bare form code: tests the exact-match `codes` field (I-002). The payoff-letter article is a look-alike trap."
   },
   {
    "id": "q09",
@@ -279,148 +143,6 @@
    "reviewed_by": "tianyi 2026-11-13"
   },
   {
-   "id": "q11",
-   "type": "semantic",
-   "question": "My car got totaled by the insurance company years ago and then it was fixed up. Would you still take it?",
-   "asked_on": "2026-11-01",
-   "as_of": "2026-11-01",
-   "state": null,
-   "tricky": [
-    "time_boundary"
-   ],
-   "gold_keys": [
-    "branded_title__2026"
-   ],
-   "require_all": true,
-   "trap_keys": [
-    "flood_damage__2022"
-   ],
-   "answer_facts": [
-    "yes",
-    "reduced offer"
-   ],
-   "answerable": "yes",
-   "perfect_answer": "Yes. That's a rebuilt title, and since February 1, 2026 Northwind buys rebuilt-title cars at a reduced offer. Salvage and flood titles are still not accepted.",
-   "what_makes_it_hard": "No 'rebuilt' or 'branded' in the question, and the 2022 version says no.",
-   "author": "claude",
-   "status": "draft",
-   "seed": null,
-   "reviewed_by": null
-  },
-  {
-   "id": "q12",
-   "type": "semantic",
-   "question": "My car won't even start anymore. Is it worth contacting you?",
-   "asked_on": "2026-11-01",
-   "as_of": "2026-11-01",
-   "state": null,
-   "tricky": [
-    "time_boundary"
-   ],
-   "gold_keys": [
-    "non_running_cars__2026"
-   ],
-   "require_all": true,
-   "trap_keys": [
-    "home_pickup__2026"
-   ],
-   "answer_facts": [
-    "yes",
-    "tow"
-   ],
-   "answerable": "yes",
-   "perfect_answer": "Yes. Since 2026 Northwind buys cars that don't run, and select stores tow them in for free. It can't go through home pickup.",
-   "what_makes_it_hard": "'Won't start' vs. 'doesn't run'; the 2022 version says no; home pickup looks like the convenient answer but excludes these cars.",
-   "author": "claude",
-   "status": "draft",
-   "seed": null,
-   "reviewed_by": null
-  },
-  {
-   "id": "q13",
-   "type": "semantic",
-   "question": "Someone called saying they're from your company and that I have to pay a processing fee before they can release the money for my car. Is that real?",
-   "asked_on": "2026-11-01",
-   "as_of": "2026-11-01",
-   "state": null,
-   "tricky": [],
-   "gold_keys": [
-    "offer_scams__2026"
-   ],
-   "require_all": true,
-   "trap_keys": [
-    "getting_paid__2026"
-   ],
-   "answer_facts": [
-    "no",
-    "never asks"
-   ],
-   "answerable": "yes",
-   "perfect_answer": "No. Northwind never asks you to pay anything to receive or release an offer. Don't pay, and report it through the Help Center.",
-   "what_makes_it_hard": "It reads like a payment question, so the getting-paid article looks relevant.",
-   "author": "claude",
-   "status": "draft",
-   "seed": null,
-   "reviewed_by": null
-  },
-  {
-   "id": "q14",
-   "type": "semantic",
-   "question": "My husband and I both own the car, but he's working abroad for a few months. How can I sell it without him here?",
-   "asked_on": "2026-11-01",
-   "as_of": "2026-11-01",
-   "state": null,
-   "tricky": [
-    "rule_conflict"
-   ],
-   "gold_keys": [
-    "co_owners__2026"
-   ],
-   "require_all": true,
-   "trap_keys": [
-    "military_deployed__2026",
-    "selling_for_someone_else__2022"
-   ],
-   "answer_facts": [
-    "NW-POA-2",
-    "electronically"
-   ],
-   "answerable": "yes",
-   "perfect_answer": "He can sign power of attorney NW-POA-2 electronically, with no notary (in Georgia it must be notarized). You bring it with your photo ID.",
-   "what_makes_it_hard": "'Abroad' pulls toward the deployment article (NW-MIL-1), which is for the military only, and the family-car article still pushes the retired NW-POA-1.",
-   "author": "claude",
-   "status": "draft",
-   "seed": null,
-   "reviewed_by": null
-  },
-  {
-   "id": "q15",
-   "type": "semantic",
-   "question": "My autopay went out the same week you paid off my loan. Who sends me that money back?",
-   "asked_on": "2026-11-01",
-   "as_of": "2026-11-01",
-   "state": null,
-   "tricky": [],
-   "gold_keys": [
-    "lender_overpayment_refund__2022"
-   ],
-   "require_all": true,
-   "trap_keys": [
-    "getting_paid__2026"
-   ],
-   "answer_facts": [
-    "your lender",
-    "2 to 4 weeks"
-   ],
-   "answerable": "yes",
-   "perfect_answer": "Your lender refunds the extra payment to you directly, usually 2 to 4 weeks after the loan is closed. Northwind doesn't receive or forward it.",
-   "what_makes_it_hard": "'Autopay' and 'money back' share no words with 'extra loan payment' or 'refund'.",
-   "author": "claude",
-   "status": "draft",
-   "seed": null,
-   "reviewed_by": null
-  },
-  {
    "id": "q16",
    "type": "semantic",
    "question": "Do I need to get rid of my stuff in the car's computer before you take it?",
@@ -445,7 +167,8 @@
    "author": "claude",
    "status": "draft",
    "seed": null,
-   "reviewed_by": null
+   "reviewed_by": null,
+   "why_in_30": "Shares almost no words with its article ('stuff in the car's computer' = personal data, paired phones): the purest paraphrase test."
   },
   {
    "id": "q17",
@@ -535,35 +258,6 @@
    "reviewed_by": "tianyi 2026-11-13"
   },
   {
-   "id": "q20",
-   "type": "multi_hop",
-   "question": "I lease from Apex and your offer is $2,000 more than my buyout. How much of that do I get?",
-   "asked_on": "2026-11-01",
-   "as_of": "2026-11-01",
-   "state": null,
-   "tricky": [
-    "time_boundary"
-   ],
-   "gold_keys": [
-    "lease_equity__2022",
-    "lessor_buyouts__2026"
-   ],
-   "require_all": true,
-   "trap_keys": [
-    "negative_equity__2026"
-   ],
-   "answer_facts": [
-    "$1,650"
-   ],
-   "answerable": "yes",
-   "perfect_answer": "About $1,650. Apex passes lease equity to you, but since February 1, 2026 it adds a $350 third-party buyout fee to the buyout amount.",
-   "what_makes_it_hard": "The equity rule and the fee live in two articles; the 2022 buyout article has no fee, which gives $2,000.",
-   "author": "claude",
-   "status": "draft",
-   "seed": null,
-   "reviewed_by": null
-  },
-  {
    "id": "q21",
    "type": "multi_hop",
    "question": "I'm using home pickup and I still owe Pinewood Federal. When does Pinewood get paid, and is anything taken out of what I get?",
@@ -590,7 +284,8 @@
    "author": "claude",
    "status": "draft",
    "seed": null,
-   "reviewed_by": null
+   "reviewed_by": null,
+   "why_in_30": "Needs three articles (home pickup, getting paid, e-payoff network); only the first looks like the question. The lender name is the bridge."
   },
   {
    "id": "q22",
@@ -616,7 +311,8 @@
    "author": "claude",
    "status": "draft",
    "seed": null,
-   "reviewed_by": null
+   "reviewed_by": null,
+   "why_in_30": "A state article (duplicate title in North Carolina) plus the offer-validity article; the price answer is only in the second."
   },
   {
    "id": "q23",
@@ -647,7 +343,8 @@
    "author": "claude",
    "status": "draft",
    "seed": null,
-   "reviewed_by": null
+   "reviewed_by": null,
+   "why_in_30": "Starts on the buying side and ends on the selling side, with a trap that looks closer (Northwind-financed titles)."
   },
   {
    "id": "q24",
@@ -676,7 +373,8 @@
    "author": "claude",
    "status": "draft",
    "seed": null,
-   "reviewed_by": null
+   "reviewed_by": null,
+   "why_in_30": "Inheritance + loan + e-payoff network; the lender name is the only path to the third article."
   },
   {
    "id": "q25",
@@ -737,33 +435,6 @@
    "reviewed_by": "tianyi 2026-11-13"
   },
   {
-   "id": "q27",
-   "type": "temporal",
-   "question": "Can I just drive over to one of your stores and have someone look at my car and give me a price?",
-   "asked_on": "2026-11-01",
-   "as_of": "2026-11-01",
-   "state": null,
-   "tricky": [
-    "time_boundary"
-   ],
-   "gold_keys": [
-    "how_selling_works__2026"
-   ],
-   "require_all": true,
-   "trap_keys": [],
-   "answer_facts": [
-    "online",
-    "no walk-in"
-   ],
-   "answerable": "yes",
-   "perfect_answer": "Not anymore. Since February 1, 2026 offers are online only: get an instant offer online, then book an appraisal appointment at a store.",
-   "what_makes_it_hard": "The retired walk-in article matches the question almost word for word.",
-   "author": "claude",
-   "status": "draft",
-   "seed": null,
-   "reviewed_by": null
-  },
-  {
    "id": "q28",
    "type": "temporal",
    "question": "Back in December 2025 I got an offer. How many miles could I put on the car before it expired?",
@@ -787,7 +458,8 @@
    "author": "claude",
    "status": "draft",
    "seed": null,
-   "reviewed_by": null
+   "reviewed_by": null,
+   "why_in_30": "About December 2025, so the 2022 version is right; a method that filters on 'today' instead of as_of fails on purpose (D-019)."
   },
   {
    "id": "q29",
@@ -814,34 +486,8 @@
    "author": "claude",
    "status": "draft",
    "seed": null,
-   "reviewed_by": null
-  },
-  {
-   "id": "q30",
-   "type": "temporal",
-   "question": "In 2023 I tried to return a car I'd bought from you, 10 days after delivery, and they said it was too late. Was that right?",
-   "asked_on": "2026-11-01",
-   "as_of": "2023-06-15",
-   "state": null,
-   "tricky": [
-    "time_boundary"
-   ],
-   "gold_keys": [
-    "returns__2022"
-   ],
-   "require_all": true,
-   "trap_keys": [],
-   "answer_facts": [
-    "yes",
-    "7 days"
-   ],
-   "answerable": "yes",
-   "perfect_answer": "Yes. Back then the return window was 7 days (and 250 miles). Since February 1, 2026 it's 30 days, but that doesn't apply to cars bought before then.",
-   "what_makes_it_hard": "The current 30-day rule would say the store was wrong.",
-   "author": "claude",
-   "status": "draft",
-   "seed": null,
-   "reviewed_by": null
+   "reviewed_by": null,
+   "why_in_30": "The answer is a lender's joining date in the e-payoff network, checked against the appointment date."
   },
   {
    "id": "q31",
@@ -868,33 +514,8 @@
    "author": "claude",
    "status": "draft",
    "seed": null,
-   "reviewed_by": null
-  },
-  {
-   "id": "q32",
-   "type": "temporal",
-   "question": "How much do you take off the offer if I only have one key?",
-   "asked_on": "2026-11-01",
-   "as_of": "2026-11-01",
-   "state": null,
-   "tricky": [
-    "time_boundary"
-   ],
-   "gold_keys": [
-    "what_changes_offer__2026"
-   ],
-   "require_all": true,
-   "trap_keys": [],
-   "answer_facts": [
-    "$250"
-   ],
-   "answerable": "yes",
-   "perfect_answer": "$250 for each missing key (it was $150 before February 1, 2026).",
-   "what_makes_it_hard": "Two versions with different numbers in the same sentence position.",
-   "author": "claude",
-   "status": "draft",
-   "seed": null,
-   "reviewed_by": null
+   "reviewed_by": null,
+   "why_in_30": "The friend's 2023 mailed check matches the old version: the 'agent repeats an outdated answer' case this cookbook is about."
   },
   {
    "id": "q33",
@@ -1007,114 +628,8 @@
    "author": "claude",
    "status": "draft",
    "seed": null,
-   "reviewed_by": null
-  },
-  {
-   "id": "q37",
-   "type": "conditional",
-   "question": "My registration expired last month. I'm in North Carolina. Can I still sell this weekend?",
-   "asked_on": "2026-11-01",
-   "as_of": "2026-11-01",
-   "state": "north_carolina",
-   "tricky": [
-    "rule_conflict"
-   ],
-   "gold_keys": [
-    "registration_expired__2022"
-   ],
-   "require_all": true,
-   "trap_keys": [],
-   "answer_facts": [
-    "renew",
-    "must be current"
-   ],
-   "answerable": "yes",
-   "perfect_answer": "In North Carolina the registration has to be current on the day of the sale, so renew it first. In the other states an expired registration is fine.",
-   "what_makes_it_hard": "The article's headline says yes; the North Carolina exception is one sentence.",
-   "author": "claude",
-   "status": "draft",
-   "seed": null,
-   "reviewed_by": null
-  },
-  {
-   "id": "q38",
-   "type": "conditional",
-   "question": "I'm in Virginia. Do I need to bring my paper title?",
-   "asked_on": "2026-11-01",
-   "as_of": "2026-11-01",
-   "state": "virginia",
-   "tricky": [],
-   "gold_keys": [
-    "electronic_titles__2022"
-   ],
-   "require_all": true,
-   "trap_keys": [
-    "lost_title__2022"
-   ],
-   "answer_facts": [
-    "no paper title",
-    "electronically"
-   ],
-   "answerable": "yes",
-   "perfect_answer": "No. Virginia uses electronic titles, so there's no paper title to bring; Northwind transfers the title electronically at the appointment.",
-   "what_makes_it_hard": "The lost-title article (which demands a title) and the checklist ('bring the title') both look relevant.",
-   "author": "claude",
-   "status": "draft",
-   "seed": null,
-   "reviewed_by": null
-  },
-  {
-   "id": "q39",
-   "type": "conditional",
-   "question": "Can I show my ID on my phone instead of my physical license? I live in California.",
-   "asked_on": "2026-11-01",
-   "as_of": "2026-11-01",
-   "state": "california",
-   "tricky": [
-    "rule_conflict"
-   ],
-   "gold_keys": [
-    "appointment_checklist__2026"
-   ],
-   "require_all": true,
-   "trap_keys": [],
-   "answer_facts": [
-    "physical card",
-    "only in Virginia"
-   ],
-   "answerable": "yes",
-   "perfect_answer": "Not in California. A state mobile ID is accepted only in Virginia; everywhere else, bring the physical card.",
-   "what_makes_it_hard": "The checklist says mobile ID is accepted, but only for one state.",
-   "author": "claude",
-   "status": "draft",
-   "seed": null,
-   "reviewed_by": null
-  },
-  {
-   "id": "q40",
-   "type": "conditional",
-   "question": "I'm in Texas and trading in a car worth $9,000 on one of yours. How much of the trade-in counts against the sales tax?",
-   "asked_on": "2026-11-01",
-   "as_of": "2026-11-01",
-   "state": "texas",
-   "tricky": [
-    "time_boundary"
-   ],
-   "gold_keys": [
-    "trade_in_vs_sell__2026"
-   ],
-   "require_all": true,
-   "trap_keys": [],
-   "answer_facts": [
-    "$5,000"
-   ],
-   "answerable": "yes",
-   "perfect_answer": "$5,000. Since February 1, 2026, Texas caps the trade-in tax credit at $5,000 of trade-in value.",
-   "what_makes_it_hard": "The 2022 version says every state taxes only the difference, which suggests the full $9,000.",
-   "author": "claude",
-   "status": "draft",
-   "seed": null,
-   "reviewed_by": null
+   "reviewed_by": null,
+   "why_in_30": "The 2022 version says pickup works in every state; the current one excludes Texas."
   },
   {
    "id": "q41",
@@ -1181,38 +696,6 @@
    "reviewed_by": "tianyi 2026-11-13"
   },
   {
-   "id": "q43",
-   "type": "checklist",
-   "question": "I'm deployed overseas and my wife is selling our car in Georgia. We both own it. What does she need to bring?",
-   "asked_on": "2026-11-01",
-   "as_of": "2026-11-01",
-   "state": "georgia",
-   "tricky": [
-    "rule_conflict"
-   ],
-   "gold_keys": [
-    "appointment_checklist__2026",
-    "military_deployed__2026",
-    "co_owners__2026"
-   ],
-   "require_all": true,
-   "trap_keys": [
-    "selling_for_someone_else__2022"
-   ],
-   "answer_facts": [
-    "NW-MIL-1",
-    "deployment orders",
-    "NW-ODO-2"
-   ],
-   "answerable": "yes",
-   "perfect_answer": "Her photo ID, the registration, all keys, the title, NW-ODO-2, and your NW-MIL-1 signed electronically with a copy of your deployment orders. No notary is needed, even in Georgia.",
-   "what_makes_it_hard": "Three articles, and Georgia's notary rule plus the family-car article (notarized NW-POA-1) both point the wrong way.",
-   "author": "claude",
-   "status": "draft",
-   "seed": null,
-   "reviewed_by": null
-  },
-  {
    "id": "q44",
    "type": "checklist",
    "question": "My car is paid off but I lost the title, and I'm in California. Walk me through everything I need to do to sell it.",
@@ -1241,62 +724,8 @@
    "author": "claude",
    "status": "draft",
    "seed": null,
-   "reviewed_by": null
-  },
-  {
-   "id": "q45",
-   "type": "checklist",
-   "question": "My mom passed away and left me her paid-off car. It's a small estate and we're not going through probate. What do I bring?",
-   "asked_on": "2026-11-01",
-   "as_of": "2026-11-01",
-   "state": null,
-   "tricky": [],
-   "gold_keys": [
-    "inherited_car__2026",
-    "appointment_checklist__2026"
-   ],
-   "require_all": true,
-   "trap_keys": [
-    "selling_for_someone_else__2022"
-   ],
-   "answer_facts": [
-    "death certificate",
-    "NW-EST-1",
-    "title"
-   ],
-   "answerable": "yes",
-   "perfect_answer": "The death certificate, affidavit NW-EST-1 signed by the heir, your photo ID, the title, the registration, all keys, and NW-ODO-2.",
-   "what_makes_it_hard": "The family-car article (power of attorney) looks closer than the inheritance article, and a power of attorney ends at death.",
-   "author": "claude",
-   "status": "draft",
-   "seed": null,
-   "reviewed_by": null
-  },
-  {
-   "id": "q46",
-   "type": "checklist",
-   "question": "I'm selling a car that belongs to my LLC. What paperwork do I need?",
-   "asked_on": "2026-11-01",
-   "as_of": "2026-11-01",
-   "state": null,
-   "tricky": [],
-   "gold_keys": [
-    "business_car__2022",
-    "appointment_checklist__2026"
-   ],
-   "require_all": true,
-   "trap_keys": [],
-   "answer_facts": [
-    "NW-BUS-1",
-    "EIN"
-   ],
-   "answerable": "yes",
-   "perfect_answer": "NW-BUS-1 signed by an officer of the company, your photo ID, the company's EIN, the title, the registration, all keys and NW-ODO-2. Payment goes to the business bank account.",
-   "what_makes_it_hard": "'LLC' never appears in the KB, which says 'business' and 'company'.",
-   "author": "claude",
-   "status": "draft",
-   "seed": null,
-   "reviewed_by": null
+   "reviewed_by": null,
+   "why_in_30": "Four articles across titles, a state's duplicate-title process and plates: the list is spread out."
   },
   {
    "id": "q47",
@@ -1326,7 +755,8 @@
    "author": "claude",
    "status": "draft",
    "seed": null,
-   "reviewed_by": null
+   "reviewed_by": null,
+   "why_in_30": "Negative equity, payoff letter, e-payoff network and the appointment checklist: four articles from one lender name."
   },
   {
    "id": "q48",
@@ -1356,7 +786,8 @@
    "author": "claude",
    "status": "draft",
    "seed": null,
-   "reviewed_by": null
+   "reviewed_by": null,
+   "why_in_30": "Insurance, plates and toll tags: three articles that look unrelated, plus a state rule."
   },
   {
    "id": "q49",
@@ -1410,28 +841,6 @@
    "reviewed_by": "tianyi 2026-11-13"
   },
   {
-   "id": "q51",
-   "type": "unanswerable",
-   "question": "Do you buy motorcycles?",
-   "asked_on": "2026-11-01",
-   "as_of": "2026-11-01",
-   "state": null,
-   "tricky": [],
-   "gold_keys": [],
-   "require_all": true,
-   "trap_keys": [
-    "how_selling_works__2026"
-   ],
-   "answer_facts": [],
-   "answerable": "no",
-   "perfect_answer": "The help center doesn't cover motorcycles; please contact a store.",
-   "what_makes_it_hard": "'How selling works' sounds relevant enough to answer 'yes, get an instant offer'.",
-   "author": "claude",
-   "status": "draft",
-   "seed": null,
-   "reviewed_by": null
-  },
-  {
    "id": "q52",
    "type": "unanswerable",
    "question": "What interest rate would I get if I finance my next car with Northwind Auto Finance?",
@@ -1451,106 +860,8 @@
    "author": "claude",
    "status": "draft",
    "seed": null,
-   "reviewed_by": null
-  },
-  {
-   "id": "q53",
-   "type": "unanswerable",
-   "question": "Could you sell my car for me on consignment so I get a higher price?",
-   "asked_on": "2026-11-01",
-   "as_of": "2026-11-01",
-   "state": null,
-   "tricky": [],
-   "gold_keys": [],
-   "require_all": true,
-   "trap_keys": [
-    "selling_for_someone_else__2022"
-   ],
-   "answer_facts": [],
-   "answerable": "no",
-   "perfect_answer": "The help center doesn't cover consignment; Northwind's process is an offer to buy the car outright.",
-   "what_makes_it_hard": "'Sell my car for me' matches 'Selling a family member's car for them' almost word for word.",
-   "author": "claude",
-   "status": "draft",
-   "seed": null,
-   "reviewed_by": null
-  },
-  {
-   "id": "q54",
-   "type": "unanswerable",
-   "question": "Do you buy imported right-hand-drive cars?",
-   "asked_on": "2026-11-01",
-   "as_of": "2026-11-01",
-   "state": null,
-   "tricky": [],
-   "gold_keys": [],
-   "require_all": true,
-   "trap_keys": [
-    "modified_cars__2022"
-   ],
-   "answer_facts": [],
-   "answerable": "no",
-   "perfect_answer": "The help center doesn't say; please contact a store.",
-   "what_makes_it_hard": "The modified-cars article talks about non-factory cars and invites a guess about the offer.",
-   "author": "claude",
-   "status": "draft",
-   "seed": null,
-   "reviewed_by": null
-  },
-  {
-   "id": "q55",
-   "type": "unanswerable",
-   "question": "Do you buy boats? And would you take my car if it has an open recall?",
-   "asked_on": "2026-11-01",
-   "as_of": "2026-11-01",
-   "state": null,
-   "tricky": [
-    "messy_kb"
-   ],
-   "gold_keys": [
-    "open_recalls__2022"
-   ],
-   "require_all": true,
-   "trap_keys": [],
-   "answer_facts": [
-    "recall: yes",
-    "boats: not covered"
-   ],
-   "answerable": "partial",
-   "perfect_answer": "For the car: yes, an open recall doesn't stop the sale or change the offer. Boats aren't covered by the help center; please contact a store.",
-   "what_makes_it_hard": "Half answerable, with the unanswerable half first.",
-   "author": "claude",
-   "status": "draft",
-   "seed": null,
-   "reviewed_by": null
-  },
-  {
-   "id": "q56",
-   "type": "unanswerable",
-   "question": "How long does Ironwood Lease take to send you a dealer payoff quote?",
-   "asked_on": "2026-11-01",
-   "as_of": "2026-11-01",
-   "state": null,
-   "tricky": [
-    "rule_conflict"
-   ],
-   "gold_keys": [
-    "lessor_buyouts__2026"
-   ],
-   "require_all": true,
-   "trap_keys": [
-    "leased_car__2022"
-   ],
-   "answer_facts": [
-    "Ironwood doesn't allow third-party buyouts"
-   ],
-   "answerable": "partial",
-   "perfect_answer": "The help center doesn't say how long Ironwood takes, and it doesn't matter here: Ironwood Lease doesn't allow third-party buyouts, so Northwind can't buy the leased car from them. You could buy it out yourself first.",
-   "what_makes_it_hard": "The timing isn't in the KB, and the question hides a false premise (that a quote is coming at all).",
-   "author": "claude",
-   "status": "draft",
-   "seed": null,
-   "reviewed_by": null
+   "reviewed_by": null,
+   "why_in_30": "The Northwind-financing article looks like the place to answer from, but the KB never gives rates: should refuse."
   }
  ]
 }

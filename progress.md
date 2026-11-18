@@ -4,6 +4,14 @@ A detailed log, newest first. Add an entry after every working session or run: *
 
 ---
 
+## 2026-11-17 · Real place names; gold set cut to 30 (architecture v3.0 confirmed)
+- **Did:** Tianyi approved today's plan, which is design v3.0: real state names, a 30-question gold set, a four-step retrieval ladder (BM25 → vector → vector + filter → + graph), a live freshness demo, then Opus 5.5 answers under an $8 cap. (1) `scripts/rename_places.py` replaced the five fictional states with Virginia, North Carolina, Georgia, Texas and California, and the 25 store cities with real ones (approximate coordinates). It edits raw file text with five ordered rules (key strings, `duplicate_title_*` ids, prose by case, "an Eastvale" → "a California"), then fails if any old name is left outside `data/tickets/archive/`. One row in `docs/KB_OUTLINE.md` used an abbreviated form (`` `_brevin` ``) that the rules missed; fixed by hand. Disclaimers added to `README.md` and `data/kb/README.md` (D-023). (2) `scripts/select_gold30.py` kept the 16 seeds and added 14 drafts, each with a written reason (D-024). The other 26 are in `data/eval/gold_reserve.json`. `make review` now writes `data/eval/gold30_review.md`; the old `gold_review.md` was removed.
+- **Changed:** 159 data/doc files from the rename; `cookbook/load.py` (+`load_reserve`); `scripts/check_data.py` (`GOLD_MIX` replaces 8 per type; reserve and candidates are checked against gold + reserve); `scripts/render_gold_review.py`.
+- **Result:** `make check` passes, `make test-checks` 8 of 8 caught. Cost $0: nothing was regenerated.
+- **Stuck / waiting:** Tianyi reviews the 14 drafts in `data/eval/gold30_review.md`, then the freeze. Meanwhile: loading into ArangoDB and the retrieval methods (no gold needed).
+
+---
+
 ## 2026-11-14 · Candidates drafted: messy wording, off-topic, vague
 - **Did:** drafted 35 candidates in `data/eval/candidates.json`: 18 human-style variants of existing questions (typos in key terms like "odomoter" and "notorized", run-ons, no punctuation, abbreviations, a mangled code "nw lrl 1"; covering all 7 types), 9 off-topic messages (gibberish, small talk, a greeting, a half-typed line, a prompt-injection attempt, one borderline car question), and 8 vague questions (3 missing the term, 3 ambiguous, 2 wrong term). Kept out of `gold.json` until Tianyi decides how to model them. `make check` validates them; `make test-checks` has an 8th fault for them. It was MISSED at first: the check read the real file instead of going through the loader (I-018). Fixed; now 8 of 8 are caught. They appear at the end of `gold_review.md`.
 - **Stuck / waiting:** Tianyi's review (tomorrow): the 40 drafts plus these 35, and two modeling decisions.

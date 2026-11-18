@@ -11,11 +11,12 @@ from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from cookbook.load import REWRITE_DATE, TODAY, in_effect, load_candidates, load_gold, load_kb, load_tickets  # noqa: E402
+from cookbook.load import REWRITE_DATE, TODAY, in_effect, load_candidates, load_gold, load_kb, load_reserve, load_tickets  # noqa: E402
 
 EXPECTED = {"articles": 68, "doc_ids": 51, "forms": 15, "states": 5, "lenders": 12, "lessors": 6, "stores": 25}
 GOLD_TYPES = ["exact", "semantic", "multi_hop", "temporal", "conditional", "checklist", "unanswerable"]
-GOLD_PER_TYPE = 8
+# D-024: the frozen gold set is 30 questions in this mix; the other 26 are in gold_reserve.json
+GOLD_MIX = {"exact": 3, "semantic": 3, "multi_hop": 7, "temporal": 5, "conditional": 4, "checklist": 5, "unanswerable": 3}
 TRICKY = {"time_boundary", "rule_conflict", "messy_input", "messy_kb"}
 KINDS = {
     # kind: list of (version, effective_from, effective_to) the doc must have, in order
@@ -184,11 +185,12 @@ def main() -> int:
         print("skip  gold set (data/eval/gold.json not found)")
     else:
         probs = []
-        ids = Counter(q["id"] for q in gold)
-        probs += [f"duplicate id {i}" for i, n in ids.items() if n > 1]
+        reserve = load_reserve()
+        ids = Counter(q["id"] for q in gold + reserve)
+        probs += [f"duplicate id {i} (gold and reserve together)" for i, n in ids.items() if n > 1]
         per_type = Counter(q["type"] for q in gold)
-        probs += [f"type {t}: {per_type.get(t, 0)} questions, expected {GOLD_PER_TYPE}" for t in GOLD_TYPES if per_type.get(t, 0) != GOLD_PER_TYPE]
-        for q in gold:
+        probs += [f"type {t}: {per_type.get(t, 0)} questions, expected {n}" for t, n in GOLD_MIX.items() if per_type.get(t, 0) != n]
+        for q in gold + reserve:
             qid = q["id"]
             if q["type"] not in GOLD_TYPES:
                 probs.append(f"{qid}: unknown type {q['type']}")
@@ -217,13 +219,13 @@ def main() -> int:
             for field in ["question", "perfect_answer", "what_makes_it_hard", "author", "status"]:
                 if not q.get(field):
                     probs.append(f"{qid}: missing {field}")
-        check(f"gold set ({len(gold)} questions)", probs)
+        check(f"gold set ({len(gold)} questions) and reserve ({len(reserve)})", probs)
 
     # --- candidates (drafts not yet in the gold set) --------------------------------------------------
     # loaded through cookbook.load like everything else, so tests can point it at a copy (I-018)
     cand = load_candidates()
     if cand:
-        gold_by_id = {q["id"]: q for q in gold}
+        gold_by_id = {q["id"]: q for q in gold + load_reserve()}
         probs = []
         for m in cand.get("messy_variants", []):
             orig = gold_by_id.get(m["variant_of"])
