@@ -7,8 +7,10 @@ How we measure the pipeline, how to run the checks, and when the agent has to st
 |---|---|---|
 | any | `make verify` | the ArangoDB features the cookbook needs work (vector index, filtered vector search, BM25) |
 | 2 | `make check` | the data is consistent (list below), and the counts match `stage.md` |
-| 3+ | `make eval` | retrieval scores are produced and none dropped without an intended change |
-| 4+ | `make eval-answers` | answer scores are produced (needs an API key) |
+| 3+ | `make test-retrieve` | every method runs on every reserve question, uses the vector index (also with a state set), and M3/M4 return no stale or wrong-state version |
+| 3+ | `make eval` | retrieval scores are produced on the frozen gold set and none dropped without an intended change (refuses to run if `gold.json` doesn't match `FROZEN`) |
+| 3+ | `make fresh` | the changed policy is returned by M3/M4 right after the transaction |
+| 4+ | `make answers` → `make answers-run` → `make answers-report` | answer scores are produced; spend stays under the $6 cap |
 
 ### What `make check` covers (stage 2)
 - every `_key` is unique, and each article `_key` is `<doc_id>__<version>`
@@ -16,15 +18,15 @@ How we measure the pipeline, how to run the checks, and when the agent has to st
 - every `kb:` link points to an existing `doc_id`, except the broken links listed as known issues
 - every `NW-` code in a text exists in `forms`; every retired code cited by a current article is a listed known issue
 - every state, lender and lessor named in the data exists
-- gold: every `gold_keys` / `trap_keys` entry exists; every question has a type, `answer_facts` (except unanswerable ones) and a valid `as_of`; 8 questions per type
+- gold and reserve: every `gold_keys` / `trap_keys` entry exists; every question has a type, `answer_facts` (except unanswerable ones) and a valid `as_of`; the gold set has the D-024 mix
 - tickets: each cites an article version that was in effect on the ticket's date (except the 8 planned agent mistakes, which cite the superseded version); `outdated` agrees with the dates
 - tickets, faithfulness: every number and form code in an agent reply appears in its cited article or in the customer's message (whole-number match)
 - tickets, variety: no two customer messages share 50% or more of their word 4-grams
-- `make test-checks` injects 7 known faults into a copy of the data; all must be caught
-- counts: 68 article versions, 15 forms, 5 states, 12 lenders, 6 lessors, 25 stores, 56 gold questions
+- `make test-checks` injects 8 known faults into a copy of the data; all must be caught
+- counts: 68 article versions, 15 forms, 5 states, 12 lenders, 6 lessors, 25 stores; gold in the D-024 mix, ids unique across gold and reserve
 
 ## Gold set
-`data/eval/gold.json`, about 56 questions, 8 per type.
+`data/eval/gold.json`: **30 questions** (D-024): multi_hop 7, checklist 5, temporal 5, conditional 4, exact 3, semantic 3, unanswerable 3. 16 are the seeds Tianyi kept; 14 are drafts, each with a written reason (`why_in_30`). The other 26 are in `data/eval/gold_reserve.json` and are used to debug code, never to score it. The tables below say what each type tests.
 
 | Type | Tests |
 |---|---|
@@ -65,26 +67,31 @@ Customers often don't know the right term, or write something that can mean more
 ### Human-style wording
 Most draft questions are cleaner than real messages. Before the freeze, some get rewritten with typos, broken grammar and run-ons (tag `messy_input`). This mostly hurts BM25 (misspelled tokens don't match) and is where fuzzy matching (`LEVENSHTEIN_MATCH`, n-gram analyzers) earns its place.
 
-## Retrieval metrics (stage 3+)
-Computed over the top-k articles a method returns, per question, then averaged by question type × method.
+## Retrieval metrics (stage 3+, D-026)
+Computed over the top-k article versions a method returns, per question, then averaged by question type, over all answerable questions (27) and over the multi_hop + checklist slice (12). Every cell says how many questions it covers.
 
 | Metric | Definition |
 |---|---|
-| **Recall@10** (headline), Recall@5 | share of a question's gold articles found in the top k |
-| All-gold@k | 1 if *every* gold article is in the top k, else 0; the strict metric for multi_hop and checklist |
+| **Recall@5** (headline), Recall@10 | share of a question's gold articles found in the top k |
+| All-gold@5 | 1 if *every* gold article is in the top 5, else 0; the strict metric for multi_hop and checklist |
 | MRR@10 | 1 / rank of the first gold article, 0 if none |
-| trap@k | 1 if any trap article is in the top k; lower is better |
-| stale@k | 1 if a version not in effect on `as_of` is in the top k; lower is better |
+| nDCG@5 | binary-relevance DCG of the top 5, divided by the best possible |
+| stale@5 | 1 if a version not in effect on `as_of` is in the top 5; lower is better |
+| trap@5 | 1 if any trap article is in the top 5; lower is better |
 
-- **Baseline:** M1 BM25. **First comparison:** M2 vector, at Recall@10 (D-017).
-- The table always says how many questions each cell covers (8 per type, so one question = 0.125).
-- Unanswerable questions have no gold articles. They're reported in the answer eval, not in Recall.
+- **Why @5:** the KB has 50 current articles; K=10 is a fifth of it. **No precision:** questions average 1.5 gold articles, so Precision@10 can't pass about 0.15.
+- **Baseline:** M1 BM25. **The ladder:** M2 vector, M3 vector + filter, M4 GraphRAG; each step adds one thing (D-025).
+- The output also lists, per question, where M2 → M3 and M3 → M4 changed Recall@5, with the graph path that brought a gold article in.
+- 30 questions is small: a difference of one or two questions is noise.
+- Unanswerable questions have no retrieval metrics; they are scored in the answer eval.
 
-## Answer metrics (stage 4+, needs an API key)
-- **Facts:** share of `answer_facts` present in the answer, judged **by meaning, not exact string** (an LLM judge gets the answer and the fact list). Many facts are paraphrases ("300 miles" vs. "300 additional miles") or computed (q20: $2,000 − $350 = $1,650).
-- **Citations:** every cited key is one of the retrieved articles
-- **Refusals:** unanswerable questions get "not covered"; the answerable parts of half-answerable questions still get answered
-- **Trap-caused errors:** wrong answers whose citations include a trap article
+## Answer metrics (stage 4, D-028)
+M2 and M4 each give their top 5 (key, title, text; no dates) to `claude-opus-5-5`, which answers as JSON with citations. A second call checks every `answer_fact` by meaning (D-020) and whether uncovered parts were declined.
+- **Facts found:** share of `answer_facts` present (answerable questions); **all facts:** every fact present
+- **Cites a stale version / cites a trap:** citations that point at a version not in effect on `as_of`, or at a trap article
+- **Declines when not covered:** the 3 unanswerable questions (one is half-answerable)
+- **Cost:** from each response's `usage`; the run stops before the $6 cap
+- A human spot-check of about 5 judgements comes before the numbers go in the README.
 
 ## Regression rule (D-018)
 1. `make eval` writes `data/eval/scores/latest.json`, and copies the previous run to `data/eval/scores/history/<date>.json`.
@@ -92,7 +99,7 @@ Computed over the top-k articles a method returns, per question, then averaged b
 3. If a score dropped and the change log in `progress.md` doesn't name a change meant to cause it, **stop and wait for Tianyi**. Record it in `progress.md`, and in `issues.md` if it turns out to be a bug.
 
 ## Current scores
-None yet. Retrieval starts in stage 3.
+None on the gold set yet: `make eval` runs after the freeze. A debugging run on the reserve questions (2026-11-17) is in progress.md; it is not a result.
 
 ## Honest limits (will go into the README)
 - The data and most of the questions come from the same author, so the results show how the mechanism works, not real-world accuracy.

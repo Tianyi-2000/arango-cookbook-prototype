@@ -6,16 +6,67 @@
 - There are no 1.1 or 1.2 versions. Smaller changes go in [progress.md](progress.md) (what happened), [decisions.md](decisions.md) (why) and [issues.md](issues.md) (what broke).
 - The newest version is at the top. Older ones stay as they were written.
 
-**Current: v2.5**, a checkpoint under design v2.0 (stage 2 data, checks and tickets done; gold freeze pending).
+**Current: v3.0** (2026-11-17): real place names, a 30-question gold set, retrieval in ArangoDB as a four-step ladder, a live freshness demo, and an answer eval.
 
 | Version | Date | What | Confirmed by |
 |---|---|---|---|
+| v3.0 | 2026-11-17 | Retrieval in ArangoDB: M1–M4 ladder, freshness demo, gold 30, real place names, answer eval | Tianyi (plan approval, 2026-11-17) |
 | v2.5 | 2026-11-13 | Checkpoint: KB data, data checks (mutation-tested), 56-question gold set, ticket plan | — |
 | v2.0 | 2026-11-12 | Medium-size KB: tickets, lenders, stores, four kinds of tricky cases | Tianyi (answers on size, tickets, tricky cases) |
 | v1.5 | 2026-11-12 | Checkpoint: stage 1 done under v1.0 | — |
 | v1.0 | 2026-11-12 | A cookbook for developers: versioned KB, structural + LLM graph, gold set with traps | Tianyi (plan approval) |
 | v0.5 | 2026-11-12 | Checkpoint: kitchen steps 0–3 running | — |
 | v0.0 | 2026-11-12 | "GraphRAG kitchen": a step-by-step learning lab | Tianyi (chose the data and the LLM option) |
+
+---
+
+## v3.0: retrieval in ArangoDB, measured (2026-11-17)
+**Confirmed by:** Tianyi (approved the 2026-11-17 plan, including Recall@5 as the headline) · **Status:** in progress (gold freeze pending)
+
+### Why this version
+Tianyi's goal for the day: a pipeline that runs end to end, with numbers showing what ArangoDB's graph adds to retrieval, and an LLM answer step under $10. v2.0 had the data but no retrieval at all, and 56 questions were too many to review.
+
+### What changed from v2.5
+| Area | v2.5 | v3.0 | Why |
+|---|---|---|---|
+| Place names | 5 fictional states, 25 fictional cities | VA, NC, GA, TX, CA; 25 real cities; rules still synthetic, disclaimer on top | D-023 |
+| Gold | 56 (8 per type), drafts unreviewed | 30 (16 seeds + 14 drafts with reasons), 26 in reserve | D-024 |
+| Methods | M1–M7 planned | M1–M4, one change per step; graph rule fixed in advance | D-025 |
+| Headline metric | Recall@10 | Recall@5; nDCG@5 added; no precision | D-026 |
+| LLM steps | graph extraction + answers (stage 4) | answers + judge now (M2 vs M4, $6 cap); LLM-extracted graph later | D-028 |
+| Freshness | versions in the data | a live policy change in one transaction (`make fresh`) | D-027 |
+
+### Pipeline
+```
+data/kb/*.json, data/tickets/tickets.json
+   │  make load (cookbook/build.py): parse links, codes, versions, names → edges; embed articles (MiniLM, local)
+   ▼
+ArangoDB northwind_kb ── documents: articles 68 · tickets 200 · forms 15 · states 5 · lenders 12 · lessors 6 · stores 25
+                      ── edges:     links_to 138 · supersedes 17 · uses_form 24 · replaced_by 2 · applies_in 7
+                                    about_lender 7 · about_lessor 18 · cites 200           (graph: kb_graph)
+                      ── kb_view (ArangoSearch: BM25 on title/text, exact codes) · vector index on articles.embedding
+   │
+question ──► M1 BM25 │ M2 vector │ M3 vector + filter (as_of, state) │ M4 = M3 + graph expansion   (one AQL each)
+   │
+   ├─► make eval: Recall@5/10, All-gold@5, MRR, nDCG@5, stale@5, trap@5 by type → data/eval/scores/latest.{json,md}
+   ├─► make answers-run: top 5 → Opus 5.5 answer (JSON, citations) → judge by meaning → data/eval/answers/
+   └─► make fresh: new policy version + supersedes edge in one transaction → same question, new answer
+```
+
+### M4, the GraphRAG step (D-025)
+M3's top 10 are candidates; the top 5 are entry points. From each, one traversal of `kb_graph` reaches other articles through `links_to` (1 hop) or through a shared form, lender or lessor (2 hops; 3 with `replaced_by`). `PRUNE` stops at the first article, so a path never runs through another article; states and `supersedes` are not walked. Neighbours must pass M3's filter. Score = max(own cosine, parent × 0.8^hops); best row per article wins; top k. Each result carries the path that raised it (`via`), which explains the hit.
+
+### What ArangoDB provides vs what this repo builds
+- **ArangoDB Community Edition 3.12.13:** document and edge collections, named graph and traversal (`PRUNE`, `edgeCollections`), ArangoSearch with BM25 and analyzers, the vector index with `APPROX_NEAR_COSINE` and pre-filters, `COSINE_SIMILARITY`, stream transactions. All in one database and one query language.
+- **This repo:** the KB and gold data, the edge parsing, the four queries, the score-propagation rule, the metrics and the eval harness, the freshness demo, the answer and judge prompts. No LangChain or LlamaIndex; no ArangoDB GraphRAG product.
+
+### Engine limits found (and how the code works around them)
+- Vector search accepts filters only in simple shapes: two `FILTER` statements fail with ERR 1554 once a state is set; one `FILTER … AND …` works (I-020).
+- `APPROX_NEAR_COSINE` (float32) and `COSINE_SIMILARITY` (float64) differ by about 1e-8; M4 scores with one of them only (I-019).
+- A document inserted after the vector index was built is found by the next query, with no rebuild (verified).
+
+### Not built yet
+Running the eval on the frozen 30; the answer run; the LLM-extracted semantic graph (was stage 4, now later); hybrid RRF; entering the graph from names in the question (lender, lessor, form code); numbered chapter notebooks; README in Tianyi's words.
 
 ---
 
@@ -29,7 +80,7 @@ Built under v2.0, with no design change:
 
 ---
 
-## v2.0: medium-size knowledge base with tricky cases (current)
+## v2.0: medium-size knowledge base with tricky cases
 **Date:** 2026-11-12 · **Confirmed by:** Tianyi · **Status:** in progress (stage 2)
 
 ### Why this version
