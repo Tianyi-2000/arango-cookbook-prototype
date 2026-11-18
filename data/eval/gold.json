@@ -158,7 +158,7 @@
     "$99"
    ],
    "answerable": "yes",
-   "perfect_answer": "It's the home pickup agreement you sign when you book home pickup. The form is free, but home pickup costs $99, taken out of your payment, and it isn't available in Dunmore.",
+   "perfect_answer": "It's the home pickup agreement you sign when you book home pickup. The form is free, but home pickup costs $99, taken out of your payment, and it isn't available in Texas.",
    "what_makes_it_hard": "The 2022 home-pickup article says pickup is free and never names the form.",
    "author": "claude",
    "status": "draft",
@@ -386,7 +386,7 @@
     "electronically"
    ],
    "answerable": "yes",
-   "perfect_answer": "He can sign power of attorney NW-POA-2 electronically, with no notary (in Corlan it must be notarized). You bring it with your photo ID.",
+   "perfect_answer": "He can sign power of attorney NW-POA-2 electronically, with no notary (in Georgia it must be notarized). You bring it with your photo ID.",
    "what_makes_it_hard": "'Abroad' pulls toward the deployment article (NW-MIL-1), which is for the military only, and the family-car article still pushes the retired NW-POA-1.",
    "author": "claude",
    "status": "draft",
@@ -595,13 +595,13 @@
   {
    "id": "q22",
    "type": "multi_hop",
-   "question": "My offer expired while I was waiting for a duplicate title from Brevin. Do I have to start over, and will the price be the same?",
+   "question": "My offer expired while I was waiting for a duplicate title from North Carolina. Do I have to start over, and will the price be the same?",
    "asked_on": "2026-11-01",
    "as_of": "2026-11-01",
-   "state": "brevin",
+   "state": "north_carolina",
    "tricky": [],
    "gold_keys": [
-    "duplicate_title_brevin__2022",
+    "duplicate_title_north_carolina__2022",
     "offer_validity__2026"
    ],
    "require_all": true,
@@ -611,7 +611,7 @@
     "higher or lower"
    ],
    "answerable": "yes",
-   "perfect_answer": "Yes, request a new offer; the amount reflects current market prices and may be higher or lower. Brevin duplicates take 4 to 6 weeks, so book the appointment for when it arrives.",
+   "perfect_answer": "Yes, request a new offer; the amount reflects current market prices and may be higher or lower. North Carolina duplicates take 4 to 6 weeks, so book the appointment for when it arrives.",
    "what_makes_it_hard": "The duplicate-title article only says you 'may need a new one'; what happens to the price is in the offer article.",
    "author": "claude",
    "status": "draft",
@@ -899,10 +899,10 @@
   {
    "id": "q33",
    "type": "conditional",
-   "question": "I live in Corlan. My brother co-owns the car but he's deployed overseas with the Army. Does his power of attorney have to be notarized?",
+   "question": "I live in Georgia. My brother co-owns the car but he's deployed overseas with the Army. Does his power of attorney have to be notarized?",
    "asked_on": "2026-11-01",
    "as_of": "2026-11-01",
-   "state": "corlan",
+   "state": "georgia",
    "tricky": [
     "rule_conflict"
    ],
@@ -913,15 +913,15 @@
    "require_all": false,
    "trap_keys": [
     "selling_for_someone_else__2022",
-    "duplicate_title_corlan__2022"
+    "duplicate_title_georgia__2022"
    ],
    "answer_facts": [
     "no",
     "NW-MIL-1"
    ],
    "answerable": "yes",
-   "perfect_answer": "No. A deployed owner can sign NW-MIL-1, which replaces a notarized power of attorney in every state, including Corlan.",
-   "what_makes_it_hard": "The co-owners article says Corlan always requires a notary, the obvious and wrong answer here: an exception to an exception.",
+   "perfect_answer": "No. A deployed owner can sign NW-MIL-1, which replaces a notarized power of attorney in every state, including Georgia.",
+   "what_makes_it_hard": "The co-owners article says Georgia always requires a notary, the obvious and wrong answer here: an exception to an exception.",
    "author": "claude",
    "status": "kept",
    "seed": "5A",
@@ -930,10 +930,10 @@
   {
    "id": "q34",
    "type": "conditional",
-   "question": "I moved from Eastvale to Brevin last year, but the car is still registered in Eastvale. What do I do with the plates when I sell?",
+   "question": "I moved from California to North Carolina last year, but the car is still registered in California. What do I do with the plates when I sell?",
    "asked_on": "2026-11-01",
    "as_of": "2026-11-01",
-   "state": "brevin",
+   "state": "north_carolina",
    "tricky": [
     "rule_conflict"
    ],
@@ -949,8 +949,8 @@
     "NW-PLT-1"
    ],
    "answerable": "yes",
-   "perfect_answer": "Plates follow the state that issued them. They're Eastvale plates, so return them to Eastvale within 10 days and keep the NW-PLT-1 receipt.",
-   "what_makes_it_hard": "Two states in one question. Brevin's rule (plates stay on the car) matches where the customer lives, and it's the wrong one.",
+   "perfect_answer": "Plates follow the state that issued them. They're California plates, so return them to California within 10 days and keep the NW-PLT-1 receipt.",
+   "what_makes_it_hard": "Two states in one question. North Carolina's rule (plates stay on the car) matches where the customer lives, and it's the wrong one.",
    "author": "claude",
    "status": "kept",
    "seed": "5B",
@@ -988,7 +988,7 @@
   {
    "id": "q36",
    "type": "conditional",
-   "question": "I live in Dunmore. Can someone come pick up my car?",
+   "question": "I live in Texas. Can someone come pick up my car?",
    "asked_on": "2026-11-01",
    "as_of": "2026-11-01",
    "state": null,
@@ -999,10 +999,10 @@
    "require_all": true,
    "trap_keys": [],
    "answer_facts": [
-    "not available in Dunmore"
+    "not available in Texas"
    ],
    "answerable": "yes",
-   "perfect_answer": "Not in Dunmore: home pickup isn't available there, so bring the car to a store.",
+   "perfect_answer": "Not in Texas: home pickup isn't available there, so bring the car to a store.",
    "what_makes_it_hard": "The 2022 version says pickup is available in every state.",
    "author": "claude",
    "status": "draft",
@@ -1012,10 +1012,10 @@
   {
    "id": "q37",
    "type": "conditional",
-   "question": "My registration expired last month. I'm in Brevin. Can I still sell this weekend?",
+   "question": "My registration expired last month. I'm in North Carolina. Can I still sell this weekend?",
    "asked_on": "2026-11-01",
    "as_of": "2026-11-01",
-   "state": "brevin",
+   "state": "north_carolina",
    "tricky": [
     "rule_conflict"
    ],
@@ -1029,8 +1029,8 @@
     "must be current"
    ],
    "answerable": "yes",
-   "perfect_answer": "In Brevin the registration has to be current on the day of the sale, so renew it first. In the other states an expired registration is fine.",
-   "what_makes_it_hard": "The article's headline says yes; the Brevin exception is one sentence.",
+   "perfect_answer": "In North Carolina the registration has to be current on the day of the sale, so renew it first. In the other states an expired registration is fine.",
+   "what_makes_it_hard": "The article's headline says yes; the North Carolina exception is one sentence.",
    "author": "claude",
    "status": "draft",
    "seed": null,
@@ -1039,10 +1039,10 @@
   {
    "id": "q38",
    "type": "conditional",
-   "question": "I'm in Aldora. Do I need to bring my paper title?",
+   "question": "I'm in Virginia. Do I need to bring my paper title?",
    "asked_on": "2026-11-01",
    "as_of": "2026-11-01",
-   "state": "aldora",
+   "state": "virginia",
    "tricky": [],
    "gold_keys": [
     "electronic_titles__2022"
@@ -1056,7 +1056,7 @@
     "electronically"
    ],
    "answerable": "yes",
-   "perfect_answer": "No. Aldora uses electronic titles, so there's no paper title to bring; Northwind transfers the title electronically at the appointment.",
+   "perfect_answer": "No. Virginia uses electronic titles, so there's no paper title to bring; Northwind transfers the title electronically at the appointment.",
    "what_makes_it_hard": "The lost-title article (which demands a title) and the checklist ('bring the title') both look relevant.",
    "author": "claude",
    "status": "draft",
@@ -1066,10 +1066,10 @@
   {
    "id": "q39",
    "type": "conditional",
-   "question": "Can I show my ID on my phone instead of my physical license? I live in Eastvale.",
+   "question": "Can I show my ID on my phone instead of my physical license? I live in California.",
    "asked_on": "2026-11-01",
    "as_of": "2026-11-01",
-   "state": "eastvale",
+   "state": "california",
    "tricky": [
     "rule_conflict"
    ],
@@ -1080,10 +1080,10 @@
    "trap_keys": [],
    "answer_facts": [
     "physical card",
-    "only in Aldora"
+    "only in Virginia"
    ],
    "answerable": "yes",
-   "perfect_answer": "Not in Eastvale. A state mobile ID is accepted only in Aldora; everywhere else, bring the physical card.",
+   "perfect_answer": "Not in California. A state mobile ID is accepted only in Virginia; everywhere else, bring the physical card.",
    "what_makes_it_hard": "The checklist says mobile ID is accepted, but only for one state.",
    "author": "claude",
    "status": "draft",
@@ -1093,10 +1093,10 @@
   {
    "id": "q40",
    "type": "conditional",
-   "question": "I'm in Dunmore and trading in a car worth $9,000 on one of yours. How much of the trade-in counts against the sales tax?",
+   "question": "I'm in Texas and trading in a car worth $9,000 on one of yours. How much of the trade-in counts against the sales tax?",
    "asked_on": "2026-11-01",
    "as_of": "2026-11-01",
-   "state": "dunmore",
+   "state": "texas",
    "tricky": [
     "time_boundary"
    ],
@@ -1109,7 +1109,7 @@
     "$5,000"
    ],
    "answerable": "yes",
-   "perfect_answer": "$5,000. Since February 1, 2026, Dunmore caps the trade-in tax credit at $5,000 of trade-in value.",
+   "perfect_answer": "$5,000. Since February 1, 2026, Texas caps the trade-in tax credit at $5,000 of trade-in value.",
    "what_makes_it_hard": "The 2022 version says every state taxes only the difference, which suggests the full $9,000.",
    "author": "claude",
    "status": "draft",
@@ -1119,10 +1119,10 @@
   {
    "id": "q41",
    "type": "checklist",
-   "question": "I inherited my uncle's car in Brevin. There's still a loan on it and nobody can find the title. What do I need to bring to sell it?",
+   "question": "I inherited my uncle's car in North Carolina. There's still a loan on it and nobody can find the title. What do I need to bring to sell it?",
    "asked_on": "2026-11-01",
    "as_of": "2026-11-01",
-   "state": "brevin",
+   "state": "north_carolina",
    "tricky": [
     "rule_conflict"
    ],
@@ -1136,7 +1136,7 @@
    "require_all": true,
    "trap_keys": [
     "lost_title__2022",
-    "duplicate_title_brevin__2022"
+    "duplicate_title_north_carolina__2022"
    ],
    "answer_facts": [
     "no duplicate title needed",
@@ -1144,8 +1144,8 @@
     "payoff letter"
    ],
    "answerable": "yes",
-   "perfect_answer": "You don't need the title: the lender holds it while the loan is open. Bring your photo ID, the death certificate, court letters or NW-EST-1 for a small estate, a 15-day payoff letter (not needed if the lender is in the e-payoff network), a current registration (Brevin requires it), all keys, and NW-ODO-2.",
-   "what_makes_it_hard": "The lost-title and Brevin duplicate-title articles look most relevant and would send the customer on a 4 to 6 week detour that isn't needed. The real items are spread across five articles.",
+   "perfect_answer": "You don't need the title: the lender holds it while the loan is open. Bring your photo ID, the death certificate, court letters or NW-EST-1 for a small estate, a 15-day payoff letter (not needed if the lender is in the e-payoff network), a current registration (North Carolina requires it), all keys, and NW-ODO-2.",
+   "what_makes_it_hard": "The lost-title and North Carolina duplicate-title articles look most relevant and would send the customer on a 4 to 6 week detour that isn't needed. The real items are spread across five articles.",
    "author": "claude",
    "status": "kept",
    "seed": "6A",
@@ -1154,10 +1154,10 @@
   {
    "id": "q42",
    "type": "checklist",
-   "question": "I want to sell my leased car using home pickup. I'm in Dunmore. What do I need to have ready?",
+   "question": "I want to sell my leased car using home pickup. I'm in Texas. What do I need to have ready?",
    "asked_on": "2026-11-01",
    "as_of": "2026-11-01",
-   "state": "dunmore",
+   "state": "texas",
    "tricky": [
     "rule_conflict"
    ],
@@ -1169,11 +1169,11 @@
    "require_all": true,
    "trap_keys": [],
    "answer_facts": [
-    "no home pickup in Dunmore",
+    "no home pickup in Texas",
     "dealer payoff quote"
    ],
    "answerable": "yes",
-   "perfect_answer": "Home pickup isn't available in Dunmore, so you'll need to bring the car to a store. Bring your photo ID, the registration, all keys, the dealer payoff quote from your leasing company (or sign NW-LSE-1 so Northwind requests it), and NW-ODO-2.",
+   "perfect_answer": "Home pickup isn't available in Texas, so you'll need to bring the car to a store. Bring your photo ID, the registration, all keys, the dealer payoff quote from your leasing company (or sign NW-LSE-1 so Northwind requests it), and NW-ODO-2.",
    "what_makes_it_hard": "The checklist rests on a premise that's false in this state; a bot that just collects requirements lists NW-PU-1 and pickup steps.",
    "author": "claude",
    "status": "kept",
@@ -1183,10 +1183,10 @@
   {
    "id": "q43",
    "type": "checklist",
-   "question": "I'm deployed overseas and my wife is selling our car in Corlan. We both own it. What does she need to bring?",
+   "question": "I'm deployed overseas and my wife is selling our car in Georgia. We both own it. What does she need to bring?",
    "asked_on": "2026-11-01",
    "as_of": "2026-11-01",
-   "state": "corlan",
+   "state": "georgia",
    "tricky": [
     "rule_conflict"
    ],
@@ -1205,8 +1205,8 @@
     "NW-ODO-2"
    ],
    "answerable": "yes",
-   "perfect_answer": "Her photo ID, the registration, all keys, the title, NW-ODO-2, and your NW-MIL-1 signed electronically with a copy of your deployment orders. No notary is needed, even in Corlan.",
-   "what_makes_it_hard": "Three articles, and Corlan's notary rule plus the family-car article (notarized NW-POA-1) both point the wrong way.",
+   "perfect_answer": "Her photo ID, the registration, all keys, the title, NW-ODO-2, and your NW-MIL-1 signed electronically with a copy of your deployment orders. No notary is needed, even in Georgia.",
+   "what_makes_it_hard": "Three articles, and Georgia's notary rule plus the family-car article (notarized NW-POA-1) both point the wrong way.",
    "author": "claude",
    "status": "draft",
    "seed": null,
@@ -1215,14 +1215,14 @@
   {
    "id": "q44",
    "type": "checklist",
-   "question": "My car is paid off but I lost the title, and I'm in Eastvale. Walk me through everything I need to do to sell it.",
+   "question": "My car is paid off but I lost the title, and I'm in California. Walk me through everything I need to do to sell it.",
    "asked_on": "2026-11-01",
    "as_of": "2026-11-01",
-   "state": "eastvale",
+   "state": "california",
    "tricky": [],
    "gold_keys": [
     "lost_title__2022",
-    "duplicate_title_eastvale__2022",
+    "duplicate_title_california__2022",
     "appointment_checklist__2026",
     "license_plates__2026"
    ],
@@ -1236,7 +1236,7 @@
     "return the plates"
    ],
    "answerable": "yes",
-   "perfect_answer": "Get a duplicate title at an Eastvale motor vehicle office (same day at the main offices, 2 to 3 weeks by mail); you can get an offer and book meanwhile. Bring your photo ID, the registration, all keys, the duplicate title and NW-ODO-2. After the sale, return the plates to Eastvale within 10 days with the NW-PLT-1 receipt.",
+   "perfect_answer": "Get a duplicate title at a California motor vehicle office (same day at the main offices, 2 to 3 weeks by mail); you can get an offer and book meanwhile. Bring your photo ID, the registration, all keys, the duplicate title and NW-ODO-2. After the sale, return the plates to California within 10 days with the NW-PLT-1 receipt.",
    "what_makes_it_hard": "Four articles, and the plate rule is easy to forget because it applies after the sale.",
    "author": "claude",
    "status": "draft",
@@ -1331,10 +1331,10 @@
   {
    "id": "q48",
    "type": "checklist",
-   "question": "Before I hand my car over to you, what should I do about my insurance, plates, toll tag and all that? I'm in Brevin.",
+   "question": "Before I hand my car over to you, what should I do about my insurance, plates, toll tag and all that? I'm in North Carolina.",
    "asked_on": "2026-11-01",
    "as_of": "2026-11-01",
-   "state": "brevin",
+   "state": "north_carolina",
    "tricky": [
     "rule_conflict"
    ],
@@ -1351,7 +1351,7 @@
     "toll tag"
    ],
    "answerable": "yes",
-   "perfect_answer": "Keep the car insured until the sale is complete, then cancel. Leave the plates on the car (in Brevin, plates stay with the vehicle). Remove the toll tag, clear garage codes and unpair your phone.",
+   "perfect_answer": "Keep the car insured until the sale is complete, then cancel. Leave the plates on the car (in North Carolina, plates stay with the vehicle). Remove the toll tag, clear garage codes and unpair your phone.",
    "what_makes_it_hard": "The 2022 plates article says always remove them, and three small topics live in three articles.",
    "author": "claude",
    "status": "draft",

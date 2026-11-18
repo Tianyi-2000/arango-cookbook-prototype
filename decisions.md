@@ -106,3 +106,10 @@ Key choices and why we made them: the "why" only. What changed is in [progress.m
 - **What:** vague questions join the gold set in three cases: missing term, ambiguous, and wrong term (eval.md). Ambiguous ones list every plausible article as gold, and any one counts. When the customer uses the wrong term, the message's literal meaning is the ground truth. Clarifying follow-ups ("Did you mean…?") are planned for stage 5, not built now.
 - **Why:** real traffic is vague; a gold set of precise questions overstates every method. But the system can't be blamed for answering what was literally asked, so wrong-term messages are graded on their words.
 - **Decided by:** Tianyi
+
+### D-023 · 2026-11-17 · Real state and city names; rules stay synthetic (reverses D-004)
+- **What:** Aldora → Virginia, Brevin → North Carolina, Corlan → Georgia, Dunmore → Texas, Eastvale → California; 25 store cities replaced by real ones with approximate coordinates. Rules, policies, companies and numbers are unchanged. Done by `scripts/rename_places.py` before the gold freeze and before any embeddings, so nothing had to be re-generated ($0). The archived ticket batch keeps the old names as evidence.
+- **Why:** Tianyi wants the demo to read like a real retailer's KB. Real names make the conditional questions recognisable; a disclaimer at the top of the README and `data/kb/README.md` says the rules are synthetic.
+- **Risk accepted:** a reader may take a synthetic rule as real law. Mitigated by the disclaimer; no rule was changed to look more realistic.
+- **Rejected:** keeping fictional states (D-004); renaming only the cities (gives "Austin, Aldora").
+- **Decided by:** Tianyi (2026-11-17)

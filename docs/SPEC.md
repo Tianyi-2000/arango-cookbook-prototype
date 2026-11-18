@@ -28,7 +28,7 @@ A help center is already a graph. Articles link to each other, cite forms by cod
 9. *(later)* Geo (nearest store that can do a lease buyout), `SHORTEST_PATH` as an explanation ("why do I need this form?"), text-to-AQL, and a comparison with ArangoDB's own GraphRAG tooling
 
 ## Data
-51 help-center articles (68 versions: 17 rewritten in 2026, some new, one retired), about 200 past support tickets (2022–2026, not authoritative, some outdated), 15 forms, 5 fictional states, 12 lenders, 6 leasing companies and 25 stores. A few KB problems are left in on purpose (current articles citing retired forms, a broken link). See `KB_OUTLINE.md`. Everything is fictional and labelled as illustrative.
+51 help-center articles (68 versions: 17 rewritten in 2026, some new, one retired), about 200 past support tickets (2022–2026, not authoritative, some outdated), 15 forms, 5 real US states (with synthetic rules), 12 lenders, 6 leasing companies and 25 stores. A few KB problems are left in on purpose (current articles citing retired forms, a broken link). See `KB_OUTLINE.md`. Everything except the state and city names is fictional and labelled as illustrative.
 
 ## Evaluation
 About 56 questions in 7 types (8 each): exact, semantic, multi_hop, temporal, conditional, checklist, unanswerable. Each question also lists its **trap** articles and **tricky** tags (time boundary, rule conflict, messy input, messy KB), and the eval reports the tricky ones as their own slice.

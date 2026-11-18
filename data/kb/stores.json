@@ -1,14 +1,14 @@
 [
  {
-  "_key": "aldora_01",
-  "name": "Northwind Aldora City",
-  "city": "Aldora City",
-  "state": "aldora",
+  "_key": "virginia_01",
+  "name": "Northwind Richmond",
+  "city": "Richmond",
+  "state": "virginia",
   "location": {
    "type": "Point",
    "coordinates": [
-    -97.4262,
-    41.2646
+    -77.436,
+    37.5407
    ]
   },
   "hours": {
@@ -24,15 +24,15 @@
   ]
  },
  {
-  "_key": "aldora_02",
-  "name": "Northwind Fenwick",
-  "city": "Fenwick",
-  "state": "aldora",
+  "_key": "virginia_02",
+  "name": "Northwind Virginia Beach",
+  "city": "Virginia Beach",
+  "state": "virginia",
   "location": {
    "type": "Point",
    "coordinates": [
-    -97.51,
-    41.0806
+    -75.978,
+    36.8529
    ]
   },
   "hours": {
@@ -47,15 +47,15 @@
   ]
  },
  {
-  "_key": "aldora_03",
-  "name": "Northwind Marrow Falls",
-  "city": "Marrow Falls",
-  "state": "aldora",
+  "_key": "virginia_03",
+  "name": "Northwind Arlington",
+  "city": "Arlington",
+  "state": "virginia",
   "location": {
    "type": "Point",
    "coordinates": [
-    -95.6156,
-    40.5228
+    -77.1068,
+    38.8816
    ]
   },
   "hours": {
@@ -70,15 +70,15 @@
   ]
  },
  {
-  "_key": "aldora_04",
-  "name": "Northwind Quillton",
-  "city": "Quillton",
-  "state": "aldora",
+  "_key": "virginia_04",
+  "name": "Northwind Roanoke",
+  "city": "Roanoke",
+  "state": "virginia",
   "location": {
    "type": "Point",
    "coordinates": [
-    -96.215,
-    41.014
+    -79.9414,
+    37.271
    ]
   },
   "hours": {
@@ -93,15 +93,15 @@
   ]
  },
  {
-  "_key": "aldora_05",
-  "name": "Northwind Saltmeadow",
-  "city": "Saltmeadow",
-  "state": "aldora",
+  "_key": "virginia_05",
+  "name": "Northwind Charlottesville",
+  "city": "Charlottesville",
+  "state": "virginia",
   "location": {
    "type": "Point",
    "coordinates": [
-    -96.9049,
-    40.5597
+    -78.4767,
+    38.0293
    ]
   },
   "hours": {
@@ -115,15 +115,15 @@
   ]
  },
  {
-  "_key": "brevin_01",
-  "name": "Northwind Brevin Heights",
-  "city": "Brevin Heights",
-  "state": "brevin",
+  "_key": "north_carolina_01",
+  "name": "Northwind Charlotte",
+  "city": "Charlotte",
+  "state": "north_carolina",
   "location": {
    "type": "Point",
    "coordinates": [
-    -94.8663,
-    39.7469
+    -80.8431,
+    35.2271
    ]
   },
   "hours": {
@@ -139,15 +139,15 @@
   ]
  },
  {
-  "_key": "brevin_02",
-  "name": "Northwind Calder",
-  "city": "Calder",
-  "state": "brevin",
+  "_key": "north_carolina_02",
+  "name": "Northwind Raleigh",
+  "city": "Raleigh",
+  "state": "north_carolina",
   "location": {
    "type": "Point",
    "coordinates": [
-    -95.1493,
-    38.8073
+    -78.6382,
+    35.7796
    ]
   },
   "hours": {
@@ -162,15 +162,15 @@
   ]
  },
  {
-  "_key": "brevin_03",
-  "name": "Northwind Holloway",
-  "city": "Holloway",
-  "state": "brevin",
+  "_key": "north_carolina_03",
+  "name": "Northwind Greensboro",
+  "city": "Greensboro",
+  "state": "north_carolina",
   "location": {
    "type": "Point",
    "coordinates": [
-    -94.546,
-    39.754
+    -79.792,
+    36.0726
    ]
   },
   "hours": {
@@ -185,15 +185,15 @@
   ]
  },
  {
-  "_key": "brevin_04",
-  "name": "Northwind Linden Cross",
-  "city": "Linden Cross",
-  "state": "brevin",
+  "_key": "north_carolina_04",
+  "name": "Northwind Durham",
+  "city": "Durham",
+  "state": "north_carolina",
   "location": {
    "type": "Point",
    "coordinates": [
-    -93.6224,
-    39.1394
+    -78.8986,
+    35.994
    ]
   },
   "hours": {
@@ -208,15 +208,15 @@
   ]
  },
  {
-  "_key": "brevin_05",
-  "name": "Northwind Port Ashby",
-  "city": "Port Ashby",
-  "state": "brevin",
+  "_key": "north_carolina_05",
+  "name": "Northwind Wilmington",
+  "city": "Wilmington",
+  "state": "north_carolina",
   "location": {
    "type": "Point",
    "coordinates": [
-    -93.5493,
-    39.2183
+    -77.9447,
+    34.2257
    ]
   },
   "hours": {
@@ -230,15 +230,15 @@
   ]
  },
  {
-  "_key": "corlan_01",
-  "name": "Northwind Corlan Bay",
-  "city": "Corlan Bay",
-  "state": "corlan",
+  "_key": "georgia_01",
+  "name": "Northwind Atlanta",
+  "city": "Atlanta",
+  "state": "georgia",
   "location": {
    "type": "Point",
    "coordinates": [
-    -91.6829,
-    42.0736
+    -84.388,
+    33.749
    ]
   },
   "hours": {
@@ -254,15 +254,15 @@
   ]
  },
  {
-  "_key": "corlan_02",
-  "name": "Northwind Elmstead",
-  "city": "Elmstead",
-  "state": "corlan",
+  "_key": "georgia_02",
+  "name": "Northwind Savannah",
+  "city": "Savannah",
+  "state": "georgia",
   "location": {
    "type": "Point",
    "coordinates": [
-    -91.665,
-    42.8314
+    -81.0998,
+    32.0809
    ]
   },
   "hours": {
@@ -277,15 +277,15 @@
   ]
  },
  {
-  "_key": "corlan_03",
-  "name": "Northwind Grayridge",
-  "city": "Grayridge",
-  "state": "corlan",
+  "_key": "georgia_03",
+  "name": "Northwind Augusta",
+  "city": "Augusta",
+  "state": "georgia",
   "location": {
    "type": "Point",
    "coordinates": [
-    -92.0735,
-    42.8438
+    -81.9748,
+    33.4735
    ]
   },
   "hours": {
@@ -300,15 +300,15 @@
   ]
  },
  {
-  "_key": "corlan_04",
-  "name": "Northwind Northam",
-  "city": "Northam",
-  "state": "corlan",
+  "_key": "georgia_04",
+  "name": "Northwind Macon",
+  "city": "Macon",
+  "state": "georgia",
   "location": {
    "type": "Point",
    "coordinates": [
-    -92.3622,
-    42.9955
+    -83.6324,
+    32.8407
    ]
   },
   "hours": {
@@ -323,15 +323,15 @@
   ]
  },
  {
-  "_key": "corlan_05",
-  "name": "Northwind Tamsin",
-  "city": "Tamsin",
-  "state": "corlan",
+  "_key": "georgia_05",
+  "name": "Northwind Athens",
+  "city": "Athens",
+  "state": "georgia",
   "location": {
    "type": "Point",
    "coordinates": [
-    -91.1166,
-    43.2795
+    -83.3576,
+    33.9519
    ]
   },
   "hours": {
@@ -345,15 +345,15 @@
   ]
  },
  {
-  "_key": "dunmore_01",
-  "name": "Northwind Dunmore",
-  "city": "Dunmore",
-  "state": "dunmore",
+  "_key": "texas_01",
+  "name": "Northwind Houston",
+  "city": "Houston",
+  "state": "texas",
   "location": {
    "type": "Point",
    "coordinates": [
-    -91.3458,
-    40.2311
+    -95.3698,
+    29.7604
    ]
   },
   "hours": {
@@ -368,15 +368,15 @@
   ]
  },
  {
-  "_key": "dunmore_02",
-  "name": "Northwind Ferris Point",
-  "city": "Ferris Point",
-  "state": "dunmore",
+  "_key": "texas_02",
+  "name": "Northwind Dallas",
+  "city": "Dallas",
+  "state": "texas",
   "location": {
    "type": "Point",
    "coordinates": [
-    -89.5562,
-    39.6328
+    -96.797,
+    32.7767
    ]
   },
   "hours": {
@@ -390,15 +390,15 @@
   ]
  },
  {
-  "_key": "dunmore_03",
-  "name": "Northwind Kestrel",
-  "city": "Kestrel",
-  "state": "dunmore",
+  "_key": "texas_03",
+  "name": "Northwind Austin",
+  "city": "Austin",
+  "state": "texas",
   "location": {
    "type": "Point",
    "coordinates": [
-    -91.2066,
-    40.2085
+    -97.7431,
+    30.2672
    ]
   },
   "hours": {
@@ -412,15 +412,15 @@
   ]
  },
  {
-  "_key": "dunmore_04",
-  "name": "Northwind Oakhurst",
-  "city": "Oakhurst",
-  "state": "dunmore",
+  "_key": "texas_04",
+  "name": "Northwind San Antonio",
+  "city": "San Antonio",
+  "state": "texas",
   "location": {
    "type": "Point",
    "coordinates": [
-    -89.3264,
-    39.9012
+    -98.4936,
+    29.4241
    ]
   },
   "hours": {
@@ -434,15 +434,15 @@
   ]
  },
  {
-  "_key": "dunmore_05",
-  "name": "Northwind Ravensby",
-  "city": "Ravensby",
-  "state": "dunmore",
+  "_key": "texas_05",
+  "name": "Northwind El Paso",
+  "city": "El Paso",
+  "state": "texas",
   "location": {
    "type": "Point",
    "coordinates": [
-    -89.1014,
-    39.6717
+    -106.485,
+    31.7619
    ]
   },
   "hours": {
@@ -455,15 +455,15 @@
   ]
  },
  {
-  "_key": "eastvale_01",
-  "name": "Northwind Eastvale",
-  "city": "Eastvale",
-  "state": "eastvale",
+  "_key": "california_01",
+  "name": "Northwind Los Angeles",
+  "city": "Los Angeles",
+  "state": "california",
   "location": {
    "type": "Point",
    "coordinates": [
-    -97.6361,
-    38.5604
+    -118.2437,
+    34.0522
    ]
   },
   "hours": {
@@ -479,15 +479,15 @@
   ]
  },
  {
-  "_key": "eastvale_02",
-  "name": "Northwind Bramford",
-  "city": "Bramford",
-  "state": "eastvale",
+  "_key": "california_02",
+  "name": "Northwind San Diego",
+  "city": "San Diego",
+  "state": "california",
   "location": {
    "type": "Point",
    "coordinates": [
-    -97.9138,
-    38.5194
+    -117.1611,
+    32.7157
    ]
   },
   "hours": {
@@ -502,15 +502,15 @@
   ]
  },
  {
-  "_key": "eastvale_03",
-  "name": "Northwind Cinder Lake",
-  "city": "Cinder Lake",
-  "state": "eastvale",
+  "_key": "california_03",
+  "name": "Northwind San Jose",
+  "city": "San Jose",
+  "state": "california",
   "location": {
    "type": "Point",
    "coordinates": [
-    -97.3178,
-    38.7172
+    -121.8863,
+    37.3382
    ]
   },
   "hours": {
@@ -525,15 +525,15 @@
   ]
  },
  {
-  "_key": "eastvale_04",
-  "name": "Northwind Moss Hollow",
-  "city": "Moss Hollow",
-  "state": "eastvale",
+  "_key": "california_04",
+  "name": "Northwind Sacramento",
+  "city": "Sacramento",
+  "state": "california",
   "location": {
    "type": "Point",
    "coordinates": [
-    -96.7012,
-    38.9362
+    -121.4944,
+    38.5816
    ]
   },
   "hours": {
@@ -548,15 +548,15 @@
   ]
  },
  {
-  "_key": "eastvale_05",
-  "name": "Northwind Westmere",
-  "city": "Westmere",
-  "state": "eastvale",
+  "_key": "california_05",
+  "name": "Northwind Fresno",
+  "city": "Fresno",
+  "state": "california",
   "location": {
    "type": "Point",
    "coordinates": [
-    -97.2777,
-    37.612
+    -119.7871,
+    36.7378
    ]
   },
   "hours": {

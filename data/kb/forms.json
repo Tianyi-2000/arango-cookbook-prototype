@@ -1,6 +1,6 @@
 [
   {"_key": "NW-POA-1", "name": "Power of attorney (notarized)", "side": "sell", "status": "retired", "effective_from": "2022-01-01", "retired_on": "2026-02-01", "replaced_by": "NW-POA-2", "accepted_until": "2026-06-30", "note": "Copies signed before 2026-02-01 are accepted until 2026-06-30."},
-  {"_key": "NW-POA-2", "name": "Power of attorney (e-sign)", "side": "sell", "status": "current", "effective_from": "2026-02-01", "retired_on": null, "replaced_by": null, "accepted_until": null, "note": "Corlan still requires a notary."},
+  {"_key": "NW-POA-2", "name": "Power of attorney (e-sign)", "side": "sell", "status": "current", "effective_from": "2026-02-01", "retired_on": null, "replaced_by": null, "accepted_until": null, "note": "Georgia still requires a notary."},
   {"_key": "NW-ODO-1", "name": "Odometer statement", "side": "sell", "status": "retired", "effective_from": "2022-01-01", "retired_on": "2026-02-01", "replaced_by": "NW-ODO-2", "accepted_until": null, "note": null},
   {"_key": "NW-ODO-2", "name": "Odometer disclosure statement", "side": "sell", "status": "current", "effective_from": "2026-02-01", "retired_on": null, "replaced_by": null, "accepted_until": null, "note": null},
   {"_key": "NW-DMG-1", "name": "Damage disclosure", "side": "sell", "status": "current", "effective_from": "2026-02-01", "retired_on": null, "replaced_by": null, "accepted_until": null, "note": "New in 2026."},
@@ -10,8 +10,8 @@
   {"_key": "NW-EST-1", "name": "Heir and estate affidavit", "side": "sell", "status": "current", "effective_from": "2026-02-01", "retired_on": null, "replaced_by": null, "accepted_until": null, "note": "Accepted for small estates that don't go through probate."},
   {"_key": "NW-BUS-1", "name": "Business signing authority letter", "side": "sell", "status": "current", "effective_from": "2022-01-01", "retired_on": null, "replaced_by": null, "accepted_until": null, "note": null},
   {"_key": "NW-NMC-1", "name": "Name change affidavit", "side": "sell", "status": "current", "effective_from": "2022-01-01", "retired_on": null, "replaced_by": null, "accepted_until": null, "note": null},
-  {"_key": "NW-MIL-1", "name": "Deployed owner authorization", "side": "sell", "status": "current", "effective_from": "2026-02-01", "retired_on": null, "replaced_by": null, "accepted_until": null, "note": "New in 2026. Replaces a notarized power of attorney in every state, including Corlan."},
+  {"_key": "NW-MIL-1", "name": "Deployed owner authorization", "side": "sell", "status": "current", "effective_from": "2026-02-01", "retired_on": null, "replaced_by": null, "accepted_until": null, "note": "New in 2026. Replaces a notarized power of attorney in every state, including Georgia."},
   {"_key": "NW-PU-1", "name": "Home pickup agreement", "side": "sell", "status": "current", "effective_from": "2022-01-01", "retired_on": null, "replaced_by": null, "accepted_until": null, "note": null},
-  {"_key": "NW-PLT-1", "name": "Plate return receipt (Eastvale)", "side": "sell", "status": "current", "effective_from": "2026-02-01", "retired_on": null, "replaced_by": null, "accepted_until": null, "note": "New in 2026."},
+  {"_key": "NW-PLT-1", "name": "Plate return receipt (California)", "side": "sell", "status": "current", "effective_from": "2026-02-01", "retired_on": null, "replaced_by": null, "accepted_until": null, "note": "New in 2026."},
   {"_key": "NW-TRD-1", "name": "Trade-in tax credit worksheet", "side": "buy", "status": "current", "effective_from": "2022-01-01", "retired_on": null, "replaced_by": null, "accepted_until": null, "note": null}
 ]

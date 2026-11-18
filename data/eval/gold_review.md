@@ -45,7 +45,7 @@ For each draft: would a real customer send it? Is the perfect answer right? Do y
 ### q06 · exact
 **"What is the NW-PU-1 form, and do I have to pay for it?"**
 - tricky: time_boundary
-- Perfect answer: It's the home pickup agreement you sign when you book home pickup. The form is free, but home pickup costs $99, taken out of your payment, and it isn't available in Dunmore.
+- Perfect answer: It's the home pickup agreement you sign when you book home pickup. The form is free, but home pickup costs $99, taken out of your payment, and it isn't available in Texas.
 - Must-include: `home pickup agreement` · `$99`
 - Gold articles (all needed): Home pickup service `[2026]`
 - Traps: —
@@ -106,7 +106,7 @@ For each draft: would a real customer send it? Is the perfect answer right? Do y
 ### q14 · semantic
 **"My husband and I both own the car, but he's working abroad for a few months. How can I sell it without him here?"**
 - tricky: rule_conflict
-- Perfect answer: He can sign power of attorney NW-POA-2 electronically, with no notary (in Corlan it must be notarized). You bring it with your photo ID.
+- Perfect answer: He can sign power of attorney NW-POA-2 electronically, with no notary (in Georgia it must be notarized). You bring it with your photo ID.
 - Must-include: `NW-POA-2` · `electronically`
 - Gold articles (all needed): When more than one person owns the car `[2026]`
 - Traps: Selling while deployed `[2026]`; Selling a family member's car for them `[2022]`
@@ -153,11 +153,11 @@ For each draft: would a real customer send it? Is the perfect answer right? Do y
 - Your call: keep / edit / drop
 
 ### q22 · multi_hop
-**"My offer expired while I was waiting for a duplicate title from Brevin. Do I have to start over, and will the price be the same?"**
-- state: brevin
-- Perfect answer: Yes, request a new offer; the amount reflects current market prices and may be higher or lower. Brevin duplicates take 4 to 6 weeks, so book the appointment for when it arrives.
+**"My offer expired while I was waiting for a duplicate title from North Carolina. Do I have to start over, and will the price be the same?"**
+- state: north_carolina
+- Perfect answer: Yes, request a new offer; the amount reflects current market prices and may be higher or lower. North Carolina duplicates take 4 to 6 weeks, so book the appointment for when it arrives.
 - Must-include: `new offer` · `higher or lower`
-- Gold articles (all needed): Getting a duplicate title in Brevin `[2022]`; How long is my offer good for? `[2026]`
+- Gold articles (all needed): Getting a duplicate title in North Carolina `[2022]`; How long is my offer good for? `[2026]`
 - Traps: —
 - What makes it hard: The duplicate-title article only says you 'may need a new one'; what happens to the price is in the offer article.
 - Your call: keep / edit / drop
@@ -246,28 +246,28 @@ For each draft: would a real customer send it? Is the perfect answer right? Do y
 ## conditional (5 drafts)
 
 ### q36 · conditional
-**"I live in Dunmore. Can someone come pick up my car?"**
-- Perfect answer: Not in Dunmore: home pickup isn't available there, so bring the car to a store.
-- Must-include: `not available in Dunmore`
+**"I live in Texas. Can someone come pick up my car?"**
+- Perfect answer: Not in Texas: home pickup isn't available there, so bring the car to a store.
+- Must-include: `not available in Texas`
 - Gold articles (all needed): Home pickup service `[2026]`
 - Traps: —
 - What makes it hard: The 2022 version says pickup is available in every state.
 - Your call: keep / edit / drop
 
 ### q37 · conditional
-**"My registration expired last month. I'm in Brevin. Can I still sell this weekend?"**
-- state: brevin · tricky: rule_conflict
-- Perfect answer: In Brevin the registration has to be current on the day of the sale, so renew it first. In the other states an expired registration is fine.
+**"My registration expired last month. I'm in North Carolina. Can I still sell this weekend?"**
+- state: north_carolina · tricky: rule_conflict
+- Perfect answer: In North Carolina the registration has to be current on the day of the sale, so renew it first. In the other states an expired registration is fine.
 - Must-include: `renew` · `must be current`
 - Gold articles (all needed): My registration is expired `[2022]`
 - Traps: —
-- What makes it hard: The article's headline says yes; the Brevin exception is one sentence.
+- What makes it hard: The article's headline says yes; the North Carolina exception is one sentence.
 - Your call: keep / edit / drop
 
 ### q38 · conditional
-**"I'm in Aldora. Do I need to bring my paper title?"**
-- state: aldora
-- Perfect answer: No. Aldora uses electronic titles, so there's no paper title to bring; Northwind transfers the title electronically at the appointment.
+**"I'm in Virginia. Do I need to bring my paper title?"**
+- state: virginia
+- Perfect answer: No. Virginia uses electronic titles, so there's no paper title to bring; Northwind transfers the title electronically at the appointment.
 - Must-include: `no paper title` · `electronically`
 - Gold articles (all needed): States with electronic titles `[2022]`
 - Traps: Selling a paid-off car when the title is lost `[2022]`
@@ -275,19 +275,19 @@ For each draft: would a real customer send it? Is the perfect answer right? Do y
 - Your call: keep / edit / drop
 
 ### q39 · conditional
-**"Can I show my ID on my phone instead of my physical license? I live in Eastvale."**
-- state: eastvale · tricky: rule_conflict
-- Perfect answer: Not in Eastvale. A state mobile ID is accepted only in Aldora; everywhere else, bring the physical card.
-- Must-include: `physical card` · `only in Aldora`
+**"Can I show my ID on my phone instead of my physical license? I live in California."**
+- state: california · tricky: rule_conflict
+- Perfect answer: Not in California. A state mobile ID is accepted only in Virginia; everywhere else, bring the physical card.
+- Must-include: `physical card` · `only in Virginia`
 - Gold articles (all needed): What to bring to your appraisal appointment `[2026]`
 - Traps: —
 - What makes it hard: The checklist says mobile ID is accepted, but only for one state.
 - Your call: keep / edit / drop
 
 ### q40 · conditional
-**"I'm in Dunmore and trading in a car worth $9,000 on one of yours. How much of the trade-in counts against the sales tax?"**
-- state: dunmore · tricky: time_boundary
-- Perfect answer: $5,000. Since February 1, 2026, Dunmore caps the trade-in tax credit at $5,000 of trade-in value.
+**"I'm in Texas and trading in a car worth $9,000 on one of yours. How much of the trade-in counts against the sales tax?"**
+- state: texas · tricky: time_boundary
+- Perfect answer: $5,000. Since February 1, 2026, Texas caps the trade-in tax credit at $5,000 of trade-in value.
 - Must-include: `$5,000`
 - Gold articles (all needed): Trading in vs. selling outright `[2026]`
 - Traps: —
@@ -297,21 +297,21 @@ For each draft: would a real customer send it? Is the perfect answer right? Do y
 ## checklist (6 drafts)
 
 ### q43 · checklist
-**"I'm deployed overseas and my wife is selling our car in Corlan. We both own it. What does she need to bring?"**
-- state: corlan · tricky: rule_conflict
-- Perfect answer: Her photo ID, the registration, all keys, the title, NW-ODO-2, and your NW-MIL-1 signed electronically with a copy of your deployment orders. No notary is needed, even in Corlan.
+**"I'm deployed overseas and my wife is selling our car in Georgia. We both own it. What does she need to bring?"**
+- state: georgia · tricky: rule_conflict
+- Perfect answer: Her photo ID, the registration, all keys, the title, NW-ODO-2, and your NW-MIL-1 signed electronically with a copy of your deployment orders. No notary is needed, even in Georgia.
 - Must-include: `NW-MIL-1` · `deployment orders` · `NW-ODO-2`
 - Gold articles (all needed): What to bring to your appraisal appointment `[2026]`; Selling while deployed `[2026]`; When more than one person owns the car `[2026]`
 - Traps: Selling a family member's car for them `[2022]`
-- What makes it hard: Three articles, and Corlan's notary rule plus the family-car article (notarized NW-POA-1) both point the wrong way.
+- What makes it hard: Three articles, and Georgia's notary rule plus the family-car article (notarized NW-POA-1) both point the wrong way.
 - Your call: keep / edit / drop
 
 ### q44 · checklist
-**"My car is paid off but I lost the title, and I'm in Eastvale. Walk me through everything I need to do to sell it."**
-- state: eastvale
-- Perfect answer: Get a duplicate title at an Eastvale motor vehicle office (same day at the main offices, 2 to 3 weeks by mail); you can get an offer and book meanwhile. Bring your photo ID, the registration, all keys, the duplicate title and NW-ODO-2. After the sale, return the plates to Eastvale within 10 days with the NW-PLT-1 receipt.
+**"My car is paid off but I lost the title, and I'm in California. Walk me through everything I need to do to sell it."**
+- state: california
+- Perfect answer: Get a duplicate title at a California motor vehicle office (same day at the main offices, 2 to 3 weeks by mail); you can get an offer and book meanwhile. Bring your photo ID, the registration, all keys, the duplicate title and NW-ODO-2. After the sale, return the plates to California within 10 days with the NW-PLT-1 receipt.
 - Must-include: `duplicate title` · `NW-ODO-2` · `return the plates`
-- Gold articles (all needed): Selling a paid-off car when the title is lost `[2022]`; Getting a duplicate title in Eastvale `[2022]`; What to bring to your appraisal appointment `[2026]`; What to do with your license plates `[2026]`
+- Gold articles (all needed): Selling a paid-off car when the title is lost `[2022]`; Getting a duplicate title in California `[2022]`; What to bring to your appraisal appointment `[2026]`; What to do with your license plates `[2026]`
 - Traps: Selling a car you are still paying off `[2022]`
 - What makes it hard: Four articles, and the plate rule is easy to forget because it applies after the sale.
 - Your call: keep / edit / drop
@@ -345,9 +345,9 @@ For each draft: would a real customer send it? Is the perfect answer right? Do y
 - Your call: keep / edit / drop
 
 ### q48 · checklist
-**"Before I hand my car over to you, what should I do about my insurance, plates, toll tag and all that? I'm in Brevin."**
-- state: brevin · tricky: rule_conflict
-- Perfect answer: Keep the car insured until the sale is complete, then cancel. Leave the plates on the car (in Brevin, plates stay with the vehicle). Remove the toll tag, clear garage codes and unpair your phone.
+**"Before I hand my car over to you, what should I do about my insurance, plates, toll tag and all that? I'm in North Carolina."**
+- state: north_carolina · tricky: rule_conflict
+- Perfect answer: Keep the car insured until the sale is complete, then cancel. Leave the plates on the car (in North Carolina, plates stay with the vehicle). Remove the toll tag, clear garage codes and unpair your phone.
 - Must-include: `keep insurance until` · `leave the plates` · `toll tag`
 - Gold articles (all needed): When to cancel your insurance `[2022]`; What to do with your license plates `[2026]`; Toll tags, garage codes and paired phones `[2022]`
 - Traps: —
@@ -432,14 +432,14 @@ Not in the gold set yet. Two things to decide while reviewing:
 | m06 | q14 (semantic): My husband and I both own the car, but he's working abroad for a few months. How can I sell it without him here? | **me and my husband are both on the title but hes working overseas for a few months how do i sell it w/o him** | grammar, abbreviation, run_on | keep / edit / drop |
 | m07 | q17 (multi_hop): I still have a loan with Bayline Credit Union. Do I need to get a payoff letter before I come in? | **still have a loan w bayline cu do i need a payoff letter b4 i come in** | abbreviation, lowercase | keep / edit / drop |
 | m08 | q20 (multi_hop): I lease from Apex and your offer is $2,000 more than my buyout. How much of that do I get? | **leasing from apex & ur offer is like 2000 more than my buyout how much of that do i actually get** | abbreviation, no_punctuation | keep / edit / drop |
-| m09 | q22 (multi_hop): My offer expired while I was waiting for a duplicate title from Brevin. Do I have to start over, and will the price be the same? | **ugh my offer expired while i was waiting on the duplicat title from brevin do i have to start all over and will the price be the same??** | typo_in_key_term, run_on, two_questions | keep / edit / drop |
+| m09 | q22 (multi_hop): My offer expired while I was waiting for a duplicate title from North Carolina. Do I have to start over, and will the price be the same? | **ugh my offer expired while i was waiting on the duplicat title from north carolina do i have to start all over and will the price be the same??** | typo_in_key_term, run_on, two_questions | keep / edit / drop |
 | m10 | q25 (temporal): I got my offer on January 28 and I can't come in until February 4. The website says offers last 5 days. Did mine expire? | **got my offer jan 28 cant come in til feb 4 website says offers last 5 days so did mine expire or** | abbreviation, run_on, trailing_off | keep / edit / drop |
 | m11 | q26 (temporal): My mom signed the old notarized power of attorney for me back in January. My appointment is July 10. Can I still use it? | **my mom signed the old notorized power of atorney thing for me in january, my appt is july 10 can i still use it** | typo_in_key_term, abbreviation, run_on | keep / edit / drop |
 | m12 | q31 (temporal): Can you mail me a check for my car like you did for my friend in 2023? | **can u mail me a check for the car like u did for my freind in 2023** | typo, abbreviation | keep / edit / drop |
-| m13 | q36 (conditional): I live in Dunmore. Can someone come pick up my car? | **im in dunmore can someone come get my car** | lowercase, no_punctuation | keep / edit / drop |
-| m14 | q37 (conditional): My registration expired last month. I'm in Brevin. Can I still sell this weekend? | **registraton expired last month im in brevin can i still sell this weekend or nah** | typo_in_key_term, slang, no_punctuation | keep / edit / drop |
-| m15 | q39 (conditional): Can I show my ID on my phone instead of my physical license? I live in Eastvale. | **can i just show my id on my phone instead of my actual license? live in eastvale** | grammar, lowercase | keep / edit / drop |
-| m16 | q41 (checklist): I inherited my uncle's car in Brevin. There's still a loan on it and nobody can find the title. What do I need to bring to sell it? | **so my uncle passed and left me his car here in brevin but theres still a loan on it and nobody can find the title anywhere what do i need to bring to sell it to you** | run_on, no_punctuation | keep / edit / drop |
+| m13 | q36 (conditional): I live in Texas. Can someone come pick up my car? | **im in texas can someone come get my car** | lowercase, no_punctuation | keep / edit / drop |
+| m14 | q37 (conditional): My registration expired last month. I'm in North Carolina. Can I still sell this weekend? | **registraton expired last month im in north carolina can i still sell this weekend or nah** | typo_in_key_term, slang, no_punctuation | keep / edit / drop |
+| m15 | q39 (conditional): Can I show my ID on my phone instead of my physical license? I live in California. | **can i just show my id on my phone instead of my actual license? live in california** | grammar, lowercase | keep / edit / drop |
+| m16 | q41 (checklist): I inherited my uncle's car in North Carolina. There's still a loan on it and nobody can find the title. What do I need to bring to sell it? | **so my uncle passed and left me his car here in north carolina but theres still a loan on it and nobody can find the title anywhere what do i need to bring to sell it to you** | run_on, no_punctuation | keep / edit / drop |
 | m17 | q47 (checklist): I owe more on my car than your offer, and my loan is with Coastal Credit Union. What do I bring to finish the sale? | **i owe more then your offer and my loan is with coastel credit union what do i need to bring to finish the sale** | grammar, typo_in_name, no_punctuation | keep / edit / drop |
 | m18 | q51 (unanswerable): Do you buy motorcycles? | **do yall buy motorcycles** | slang, lowercase | keep / edit / drop |
 
@@ -462,7 +462,7 @@ Not in the gold set yet. Two things to decide while reviewing:
 ### v01 · semantic · vague case A
 **"what's that form you sign so someone else can sign for you when you can't come in?"**
 - tricky: vague
-- Perfect answer: That's a power of attorney: NW-POA-2, which can be signed electronically (in Corlan it must be notarized). A deployed owner can use NW-MIL-1 instead.
+- Perfect answer: That's a power of attorney: NW-POA-2, which can be signed electronically (in Georgia it must be notarized). A deployed owner can use NW-MIL-1 instead.
 - Must-include: `power of attorney` · `NW-POA-2`
 - Gold articles (any one is enough): When more than one person owns the car `[2026]`
 - Traps: Selling a family member's car for them `[2022]`
@@ -625,22 +625,22 @@ Not in the gold set yet. Two things to decide while reviewing:
 - What makes it hard: The code is never said ('the old notarized one' = NW-POA-1), the deadline falls between the question and the appointment, and an unchanged article still cites NW-POA-1 as current.
 
 ### q33 · conditional · seed 5A
-**"I live in Corlan. My brother co-owns the car but he's deployed overseas with the Army. Does his power of attorney have to be notarized?"**
-- state: corlan · tricky: rule_conflict
-- Perfect answer: No. A deployed owner can sign NW-MIL-1, which replaces a notarized power of attorney in every state, including Corlan.
+**"I live in Georgia. My brother co-owns the car but he's deployed overseas with the Army. Does his power of attorney have to be notarized?"**
+- state: georgia · tricky: rule_conflict
+- Perfect answer: No. A deployed owner can sign NW-MIL-1, which replaces a notarized power of attorney in every state, including Georgia.
 - Must-include: `no` · `NW-MIL-1`
 - Gold articles (any one is enough): Selling while deployed `[2026]`; When more than one person owns the car `[2026]`
-- Traps: Selling a family member's car for them `[2022]`; Getting a duplicate title in Corlan `[2022]`
-- What makes it hard: The co-owners article says Corlan always requires a notary, the obvious and wrong answer here: an exception to an exception.
+- Traps: Selling a family member's car for them `[2022]`; Getting a duplicate title in Georgia `[2022]`
+- What makes it hard: The co-owners article says Georgia always requires a notary, the obvious and wrong answer here: an exception to an exception.
 
 ### q34 · conditional · seed 5B
-**"I moved from Eastvale to Brevin last year, but the car is still registered in Eastvale. What do I do with the plates when I sell?"**
-- state: brevin · tricky: rule_conflict
-- Perfect answer: Plates follow the state that issued them. They're Eastvale plates, so return them to Eastvale within 10 days and keep the NW-PLT-1 receipt.
+**"I moved from California to North Carolina last year, but the car is still registered in California. What do I do with the plates when I sell?"**
+- state: north_carolina · tricky: rule_conflict
+- Perfect answer: Plates follow the state that issued them. They're California plates, so return them to California within 10 days and keep the NW-PLT-1 receipt.
 - Must-include: `return` · `10 days` · `NW-PLT-1`
 - Gold articles (any one is enough): What to do with your license plates `[2026]`; Selling a car registered in another state `[2026]`
 - Traps: —
-- What makes it hard: Two states in one question. Brevin's rule (plates stay on the car) matches where the customer lives, and it's the wrong one.
+- What makes it hard: Two states in one question. North Carolina's rule (plates stay on the car) matches where the customer lives, and it's the wrong one.
 
 ### q35 · conditional · seed 8A
 **"Since you guys won't buy a car unless I have the title in my hand, I guess I have to pay off my whole loan first?"**
@@ -652,19 +652,19 @@ Not in the gold set yet. Two things to decide while reviewing:
 - What makes it hard: A false premise. The lost-title article seems to confirm it ('we cannot buy ... without a title'), and bots tend to agree with the user.
 
 ### q41 · checklist · seed 6A
-**"I inherited my uncle's car in Brevin. There's still a loan on it and nobody can find the title. What do I need to bring to sell it?"**
-- state: brevin · tricky: rule_conflict
-- Perfect answer: You don't need the title: the lender holds it while the loan is open. Bring your photo ID, the death certificate, court letters or NW-EST-1 for a small estate, a 15-day payoff letter (not needed if the lender is in the e-payoff network), a current registration (Brevin requires it), all keys, and NW-ODO-2.
+**"I inherited my uncle's car in North Carolina. There's still a loan on it and nobody can find the title. What do I need to bring to sell it?"**
+- state: north_carolina · tricky: rule_conflict
+- Perfect answer: You don't need the title: the lender holds it while the loan is open. Bring your photo ID, the death certificate, court letters or NW-EST-1 for a small estate, a 15-day payoff letter (not needed if the lender is in the e-payoff network), a current registration (North Carolina requires it), all keys, and NW-ODO-2.
 - Must-include: `no duplicate title needed` · `NW-EST-1` · `payoff letter`
 - Gold articles (all needed): Selling a car you inherited `[2026]`; Selling a car you are still paying off `[2022]`; Getting a payoff letter from your lender `[2026]`; What to bring to your appraisal appointment `[2026]`; My registration is expired `[2022]`
-- Traps: Selling a paid-off car when the title is lost `[2022]`; Getting a duplicate title in Brevin `[2022]`
-- What makes it hard: The lost-title and Brevin duplicate-title articles look most relevant and would send the customer on a 4 to 6 week detour that isn't needed. The real items are spread across five articles.
+- Traps: Selling a paid-off car when the title is lost `[2022]`; Getting a duplicate title in North Carolina `[2022]`
+- What makes it hard: The lost-title and North Carolina duplicate-title articles look most relevant and would send the customer on a 4 to 6 week detour that isn't needed. The real items are spread across five articles.
 
 ### q42 · checklist · seed 6B
-**"I want to sell my leased car using home pickup. I'm in Dunmore. What do I need to have ready?"**
-- state: dunmore · tricky: rule_conflict
-- Perfect answer: Home pickup isn't available in Dunmore, so you'll need to bring the car to a store. Bring your photo ID, the registration, all keys, the dealer payoff quote from your leasing company (or sign NW-LSE-1 so Northwind requests it), and NW-ODO-2.
-- Must-include: `no home pickup in Dunmore` · `dealer payoff quote`
+**"I want to sell my leased car using home pickup. I'm in Texas. What do I need to have ready?"**
+- state: texas · tricky: rule_conflict
+- Perfect answer: Home pickup isn't available in Texas, so you'll need to bring the car to a store. Bring your photo ID, the registration, all keys, the dealer payoff quote from your leasing company (or sign NW-LSE-1 so Northwind requests it), and NW-ODO-2.
+- Must-include: `no home pickup in Texas` · `dealer payoff quote`
 - Gold articles (all needed): Home pickup service `[2026]`; Selling a car that you lease `[2022]`; What to bring to your appraisal appointment `[2026]`
 - Traps: —
 - What makes it hard: The checklist rests on a premise that's false in this state; a bot that just collects requirements lists NW-PU-1 and pickup steps.

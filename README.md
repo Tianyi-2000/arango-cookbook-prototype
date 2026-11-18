@@ -6,7 +6,9 @@
 
 A support assistant has to answer from the *current* policy, for the customer's *state* and *situation*, and it often needs facts from more than one article. This cookbook shows how to do that in one ArangoDB database: keyword search, vector search, version and state filters, and graph traversal over the knowledge base's own structure (links, form references, version chains), combined in single AQL queries. It also shows how to measure each piece.
 
-The knowledge base belongs to **Northwind Auto, a fictional used-car retailer**. All companies, states and policies are invented for illustration and are not legal information.
+The knowledge base belongs to **Northwind Auto, a fictional used-car retailer**.
+
+> **Synthetic data.** State names are real; every rule, policy, company and number is synthetic and not legal information. Northwind Auto is fictional, and this project is not affiliated with any real retailer.
 
 ## Plan
 | Stage | What | Status |

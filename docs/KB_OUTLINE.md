@@ -37,9 +37,9 @@ The help center was rewritten on **2026-02-01**. Each article is one of four kin
 | `walk_in_quotes` | Getting a quote at the store | Walk in and get a quote on the spot | ✖ retired 2026-01-31 |
 | `offer_validity` | How long is my offer good for? | How long an offer lasts and what happens when it expires | ★ 7 days / 300 miles → 5 days / 250 miles (transition rule above) |
 | `what_changes_offer` | What can change your offer at the appraisal | Undisclosed damage, missing keys, aftermarket parts | ★ missing key: $150 → $250 off; new damage disclosure form NW-DMG-1 |
-| `appointment_checklist` | What to bring to your appraisal appointment | IDs, registration, keys, title or payoff letter | ★ NW-ODO-1 → NW-ODO-2; mobile ID accepted, in Aldora only |
+| `appointment_checklist` | What to bring to your appraisal appointment | IDs, registration, keys, title or payoff letter | ★ NW-ODO-1 → NW-ODO-2; mobile ID accepted, in Virginia only |
 | `reschedule_cancel` | Rescheduling or canceling an appointment | Rescheduling keeps the offer if it's still valid | unchanged |
-| `home_pickup` | Home pickup service | Northwind picks up the car and pays on the spot | ★ free → $99 fee; not available in Dunmore; needs NW-PU-1 |
+| `home_pickup` | Home pickup service | Northwind picks up the car and pays on the spot | ★ free → $99 fee; not available in Texas; needs NW-PU-1 |
 | `selling_without_buying` | Do I have to buy a car to sell one? | No; the offer is the same either way | unchanged |
 | `offer_scams` | Protecting yourself from offer scams | Northwind never asks for payment or gift cards | ✚ new |
 
@@ -59,19 +59,19 @@ The help center was rewritten on **2026-02-01**. Each article is one of four kin
 | doc_id | Title | One line | Kind |
 |---|---|---|---|
 | `lost_title` | Selling a paid-off car when the title is lost | You need a duplicate title before Northwind can buy | unchanged |
-| `duplicate_title_aldora` · `_brevin` · `_corlan` · `_dunmore` · `_eastvale` | Getting a duplicate title in *State* | Process and timing in each state (5 articles) | unchanged |
+| `duplicate_title_virginia` · `_north_carolina` · `_georgia` · `_texas` · `_california` | Getting a duplicate title in *State* | Process and timing in each state (5 articles) | unchanged |
 | `branded_title` | Salvage and rebuilt titles | Which branded titles Northwind buys | ★ rebuilt titles now bought at a reduced offer; salvage still not |
 | `title_name_mismatch` | The name on the title doesn't match my ID | Name changes (marriage, court order); form NW-NMC-1 | unchanged |
-| `electronic_titles` | States with electronic titles | Aldora and Dunmore: no paper title; the release is electronic | unchanged |
+| `electronic_titles` | States with electronic titles | Virginia and Texas: no paper title; the release is electronic | unchanged |
 
 ### Who owns the car
 | doc_id | Title | One line | Kind |
 |---|---|---|---|
-| `co_owners` | When more than one person owns the car | Every owner signs; a power of attorney if one can't come | ★ NW-POA-1 (notarized) → NW-POA-2 (e-sign); Corlan still requires a notary |
+| `co_owners` | When more than one person owns the car | Every owner signs; a power of attorney if one can't come | ★ NW-POA-1 (notarized) → NW-POA-2 (e-sign); Georgia still requires a notary |
 | `inherited_car` | Selling a car you inherited | Heir or executor paperwork | ★ 2026 accepts affidavit NW-EST-1 in place of court letters for small estates |
 | `business_car` | Selling a car owned by a business | An authorized signer and form NW-BUS-1 | unchanged |
 | `divorce_ex_on_title` | My ex is still on the title | Both sign, or bring the court order that awards you the car | unchanged |
-| `military_deployed` | Selling while deployed | Form NW-MIL-1 replaces a notarized power of attorney, in every state including Corlan | ✚ new |
+| `military_deployed` | Selling while deployed | Form NW-MIL-1 replaces a notarized power of attorney, in every state including Georgia | ✚ new |
 | `selling_for_someone_else` | Selling a family member's car for them | You need their power of attorney | unchanged (still cites NW-POA-1, see "KB problems" below) |
 
 ### Leased cars
@@ -85,11 +85,11 @@ The help center was rewritten on **2026-02-01**. Each article is one of four kin
 ### Registration, plates, insurance
 | doc_id | Title | One line | Kind |
 |---|---|---|---|
-| `registration_expired` | My registration is expired | You can still sell; Brevin requires it to be current | unchanged |
-| `license_plates` | What to do with your license plates | Keep, leave, or return them, by state | ★ was "always remove"; 2026: in Brevin plates stay with the car; in Eastvale return them within 10 days with NW-PLT-1 |
+| `registration_expired` | My registration is expired | You can still sell; North Carolina requires it to be current | unchanged |
+| `license_plates` | What to do with your license plates | Keep, leave, or return them, by state | ★ was "always remove"; 2026: in North Carolina plates stay with the car; in California return them within 10 days with NW-PLT-1 |
 | `cancel_insurance` | When to cancel your insurance | Only after the sale is complete | unchanged |
 | `toll_tags_personal_data` | Toll tags, garage codes and paired phones | Remove them before you sell | unchanged (has a broken link, see below) |
-| `out_of_state` | Selling a car registered in another state | Extra paperwork depends on the state | ★ 2026 adds Eastvale's plate rule |
+| `out_of_state` | Selling a car registered in another state | Extra paperwork depends on the state | ★ 2026 adds California's plate rule |
 
 ### Vehicle condition
 | doc_id | Title | One line | Kind |
@@ -106,14 +106,14 @@ The help center was rewritten on **2026-02-01**. Each article is one of four kin
 | `buy_title_northwind_finance` | When will I get my title? (financed with Northwind) | Northwind holds it until the loan is paid | unchanged |
 | `buy_title_outside_lender` | When will I get my title? (outside lender) | Your lender holds it, not Northwind | unchanged |
 | `returns` | Returning a car you bought from us | The return window | ★ 7 days → 30 days |
-| `trade_in_vs_sell` | Trading in vs. selling outright | The trade-in tax credit differs by state | ★ 2026: Dunmore caps the credit at $5,000 |
+| `trade_in_vs_sell` | Trading in vs. selling outright | The trade-in tax credit differs by state | ★ 2026: Texas caps the credit at $5,000 |
 | `buy_temp_plates` | Temporary plates on a car you bought | How long they last | unchanged |
 
 ## Forms
 | Code | Name | Status |
 |---|---|---|
 | NW-POA-1 | Power of attorney (notarized) | retired 2026-02-01 → NW-POA-2; copies signed before then accepted until 2026-06-30 |
-| NW-POA-2 | Power of attorney (e-sign) | current; Corlan still requires a notary |
+| NW-POA-2 | Power of attorney (e-sign) | current; Georgia still requires a notary |
 | NW-ODO-1 | Odometer statement | retired 2026-02-01 → NW-ODO-2 |
 | NW-ODO-2 | Odometer disclosure statement | current |
 | NW-DMG-1 | Damage disclosure | new in 2026 |
@@ -125,17 +125,17 @@ The help center was rewritten on **2026-02-01**. Each article is one of four kin
 | NW-NMC-1 | Name change affidavit | current |
 | NW-MIL-1 | Deployed owner authorization | new in 2026 |
 | NW-PU-1 | Home pickup agreement | current |
-| NW-PLT-1 | Plate return receipt (Eastvale) | new in 2026 |
+| NW-PLT-1 | Plate return receipt (California) | new in 2026 |
 | NW-TRD-1 | Trade-in tax credit worksheet | current (buying side) |
 
 ## States (fictional)
 | State | What is different |
 |---|---|
-| Aldora | Electronic titles; duplicate titles online in about a week; mobile ID accepted at appointments |
-| Brevin | Paper titles; duplicates take 4–6 weeks; cars from other states need an emissions certificate; plates stay with the car; registration must be current to sell |
-| Corlan | Paper titles; a power of attorney must be notarized, even NW-POA-2 (NW-MIL-1 is the exception) |
-| Dunmore | Electronic titles; no home pickup; trade-in tax credit capped at $5,000 |
-| Eastvale | Paper titles; plates go back to the state within 10 days (NW-PLT-1) |
+| Virginia | Electronic titles; duplicate titles online in about a week; mobile ID accepted at appointments |
+| North Carolina | Paper titles; duplicates take 4–6 weeks; cars from other states need an emissions certificate; plates stay with the car; registration must be current to sell |
+| Georgia | Paper titles; a power of attorney must be notarized, even NW-POA-2 (NW-MIL-1 is the exception) |
+| Texas | Electronic titles; no home pickup; trade-in tax credit capped at $5,000 |
+| California | Paper titles; plates go back to the state within 10 days (NW-PLT-1) |
 
 ## Lenders (fictional): e-payoff network or not
 - **In the network** (same-day payoff confirmation): Bayline Credit Union, Northwind Auto Finance, Meridian Auto Loans, Pinewood Federal Credit Union, Lakeshore Bank, and Granite Bank (joined in 2026).
@@ -164,7 +164,7 @@ About 200 short conversations from 2022-03 to 2026-10, in chat, email and phone-
 
 ## Tricky cases to aim at
 - **Time boundaries:** an offer issued on Jan 28, 2026, used on Feb 4; an NW-POA-1 signed in January and used in May (or in July); a question asked on 2026-02-01 itself; asking in 2023 about something that only exists since 2026.
-- **Rule conflicts and combinations:** a state exception beats the general rule (Corlan notary), and an exception to the exception (NW-MIL-1 in Corlan); three conditions at once (inherited + loan still open + title lost); a false premise ("since you can't buy a car without the title…").
+- **Rule conflicts and combinations:** a state exception beats the general rule (Georgia notary), and an exception to the exception (NW-MIL-1 in Georgia); three conditions at once (inherited + loan still open + title lost); a false premise ("since you can't buy a car without the title…").
 - **Messy input:** typos ("Cresent", "lein holder", "Brevn"), slang ("pink slip" = title, "underwater" or "upside down" = negative equity), synonyms (lender = lienholder = bank), near-identical names (Harbor Leasing vs Harbor Trust Bank).
 - **Messy KB:** a current article citing a retired form; an old ticket that contradicts the current article; a question that's half answerable.
 

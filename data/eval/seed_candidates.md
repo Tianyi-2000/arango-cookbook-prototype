@@ -112,21 +112,21 @@ Mark each candidate: `Your call: keep / edit / drop`.
 ## 5. conditional: depends on the state or the situation
 
 ### 5A
-**"I live in Corlan. My brother co-owns the car but he's deployed overseas with the Army. Does his power of attorney have to be notarized?"**
-- Asked on: — · State: Corlan
-- Perfect answer: No. A deployed owner can sign NW-MIL-1, which replaces a notarized power of attorney in every state, including Corlan.
+**"I live in Georgia. My brother co-owns the car but he's deployed overseas with the Army. Does his power of attorney have to be notarized?"**
+- Asked on: — · State: Georgia
+- Perfect answer: No. A deployed owner can sign NW-MIL-1, which replaces a notarized power of attorney in every state, including Georgia.
 - Must-include: `no` · `NW-MIL-1`
-- What makes it hard: the co-owners article says Corlan always requires a notary, which is the obvious answer and wrong here. It's an exception to an exception.
+- What makes it hard: the co-owners article says Georgia always requires a notary, which is the obvious answer and wrong here. It's an exception to an exception.
 - Tricky: `rule_conflict`
 - Why I picked it: precedence between rules is where retrieve-the-closest-article fails, and a graph (state → rule → exception) makes the precedence visible.
 - Your call:
 
 ### 5B
-**"I moved from Eastvale to Brevin last year, but the car is still registered in Eastvale. What do I do with the plates when I sell?"**
-- Asked on: — · State: Brevin (lives) / Eastvale (registration)
-- Perfect answer: Follow the rule of the state that issued the plates. They're Eastvale plates, so return them to Eastvale within 10 days and keep the NW-PLT-1 receipt.
+**"I moved from California to North Carolina last year, but the car is still registered in California. What do I do with the plates when I sell?"**
+- Asked on: — · State: North Carolina (lives) / California (registration)
+- Perfect answer: Follow the rule of the state that issued the plates. They're California plates, so return them to California within 10 days and keep the NW-PLT-1 receipt.
 - Must-include: `return` · `10 days` · `NW-PLT-1`
-- What makes it hard: two states in one question. Brevin's rule (plates stay with the car) matches where the customer lives, but it's the wrong one.
+- What makes it hard: two states in one question. North Carolina's rule (plates stay with the car) matches where the customer lives, but it's the wrong one.
 - Tricky: `rule_conflict`
 - Why I picked it: a state filter needs the *right* state, not just any state mentioned.
 - Your call:
@@ -136,20 +136,20 @@ Mark each candidate: `Your call: keep / edit / drop`.
 ## 6. checklist: the customer needs the complete list
 
 ### 6A
-**"I inherited my uncle's car in Brevin. There's still a loan on it and nobody can find the title. What do I need to bring to sell it?"**
-- Asked on: — · State: Brevin
-- Perfect answer: You don't need the title, because the lender holds it while the loan is open. Bring your photo ID, the death certificate, court letters or NW-EST-1 for a small estate, a 15-day payoff letter (not needed if the lender is in the e-payoff network), a current registration (Brevin requires it), all keys, and NW-ODO-2.
+**"I inherited my uncle's car in North Carolina. There's still a loan on it and nobody can find the title. What do I need to bring to sell it?"**
+- Asked on: — · State: North Carolina
+- Perfect answer: You don't need the title, because the lender holds it while the loan is open. Bring your photo ID, the death certificate, court letters or NW-EST-1 for a small estate, a 15-day payoff letter (not needed if the lender is in the e-payoff network), a current registration (North Carolina requires it), all keys, and NW-ODO-2.
 - Must-include: `no duplicate title needed` · `NW-EST-1` · `payoff letter`
-- What makes it hard: the lost-title and Brevin duplicate-title articles look most relevant and would send the customer on a 4–6 week detour that isn't needed. The real items are spread across four or five articles.
+- What makes it hard: the lost-title and North Carolina duplicate-title articles look most relevant and would send the customer on a 4–6 week detour that isn't needed. The real items are spread across four or five articles.
 - Tricky: `rule_conflict` (three conditions at once)
 - Why I picked it: the strongest "graph wins" question. Completeness plus a confident wrong detour.
 - Your call:
 
 ### 6B
-**"I want to sell my leased car using home pickup. I'm in Dunmore. What do I need to have ready?"**
-- Asked on: — · State: Dunmore
-- Perfect answer: Home pickup isn't available in Dunmore, so you'll need to bring the car to a store. Bring your photo ID, the registration, all keys, the dealer payoff quote from your leasing company (or sign NW-LSE-1 so Northwind requests it), and NW-ODO-2.
-- Must-include: `no home pickup in Dunmore` · `dealer payoff quote`
+**"I want to sell my leased car using home pickup. I'm in Texas. What do I need to have ready?"**
+- Asked on: — · State: Texas
+- Perfect answer: Home pickup isn't available in Texas, so you'll need to bring the car to a store. Bring your photo ID, the registration, all keys, the dealer payoff quote from your leasing company (or sign NW-LSE-1 so Northwind requests it), and NW-ODO-2.
+- Must-include: `no home pickup in Texas` · `dealer payoff quote`
 - What makes it hard: the checklist rests on a premise that's false in this state. A bot that just collects requirements will list NW-PU-1 and pickup steps.
 - Tricky: `rule_conflict`
 - Why I picked it: checklist and conditional together, and the right answer starts by correcting the plan.

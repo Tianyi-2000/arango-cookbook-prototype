@@ -97,7 +97,7 @@
   {
    "id": "m09",
    "variant_of": "q22",
-   "question": "ugh my offer expired while i was waiting on the duplicat title from brevin do i have to start all over and will the price be the same??",
+   "question": "ugh my offer expired while i was waiting on the duplicat title from north carolina do i have to start all over and will the price be the same??",
    "messy_kinds": [
     "typo_in_key_term",
     "run_on",
@@ -144,7 +144,7 @@
   {
    "id": "m13",
    "variant_of": "q36",
-   "question": "im in dunmore can someone come get my car",
+   "question": "im in texas can someone come get my car",
    "messy_kinds": [
     "lowercase",
     "no_punctuation"
@@ -155,7 +155,7 @@
   {
    "id": "m14",
    "variant_of": "q37",
-   "question": "registraton expired last month im in brevin can i still sell this weekend or nah",
+   "question": "registraton expired last month im in north carolina can i still sell this weekend or nah",
    "messy_kinds": [
     "typo_in_key_term",
     "slang",
@@ -167,7 +167,7 @@
   {
    "id": "m15",
    "variant_of": "q39",
-   "question": "can i just show my id on my phone instead of my actual license? live in eastvale",
+   "question": "can i just show my id on my phone instead of my actual license? live in california",
    "messy_kinds": [
     "grammar",
     "lowercase"
@@ -178,7 +178,7 @@
   {
    "id": "m16",
    "variant_of": "q41",
-   "question": "so my uncle passed and left me his car here in brevin but theres still a loan on it and nobody can find the title anywhere what do i need to bring to sell it to you",
+   "question": "so my uncle passed and left me his car here in north carolina but theres still a loan on it and nobody can find the title anywhere what do i need to bring to sell it to you",
    "messy_kinds": [
     "run_on",
     "no_punctuation"
@@ -362,7 +362,7 @@
     "NW-POA-2"
    ],
    "answerable": "yes",
-   "perfect_answer": "That's a power of attorney: NW-POA-2, which can be signed electronically (in Corlan it must be notarized). A deployed owner can use NW-MIL-1 instead.",
+   "perfect_answer": "That's a power of attorney: NW-POA-2, which can be signed electronically (in Georgia it must be notarized). A deployed owner can use NW-MIL-1 instead.",
    "what_makes_it_hard": "The customer doesn't know the term 'power of attorney', and the family-car article still points at the retired NW-POA-1.",
    "author": "claude",
    "status": "draft"

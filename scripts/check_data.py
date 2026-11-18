@@ -174,8 +174,8 @@ def main() -> int:
             probs.append(f"{s['_key']}: location must be a GeoJSON Point [lon, lat]")
         if not set(s["services"]) <= SERVICES or "appraisal" not in s["services"]:
             probs.append(f"{s['_key']}: bad services {s['services']}")
-        if s["state"] == "dunmore" and "home_pickup" in s["services"]:
-            probs.append(f"{s['_key']}: Dunmore has no home pickup")
+        if s["state"] == "texas" and "home_pickup" in s["services"]:
+            probs.append(f"{s['_key']}: Texas has no home pickup")
     check("stores", probs)
 
     # --- gold set ----------------------------------------------------------------------------------
