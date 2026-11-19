@@ -134,8 +134,26 @@ M2 and M4 each give their top 5 (key, title, text; no dates) to `claude-opus-5-5
 - Semantic layer quality (`make check-semantic`): concept recall 0.88, agreement 0.72 on 10 hand-listed versions.
 - Answer scores: `data/eval/scores/answers.md` (`make answers-report`).
 
+## Current scores, gold v2 (run 2026-11-18; `data/eval/scores/v2_latest.md`, `v2_answers.md`)
+| method | Recall@5 chain (12) | Recall@5 list (8) | facts found (20) | exact list (8) | says not covered |
+|---|---|---|---|---|---|
+| M1 BM25 | 0.82 | 0.79 | – | – | – |
+| M3 Vector + filter | 0.82 | 0.50 | 0.64 | 0.38 | 0.35 |
+| M4 Graph: structural | 0.86 | 0.50 | 0.64 | 0.38 | 0.43 |
+| M7 Graph: + names | 0.86 | 0.50 | 0.64 | 0.38 | 0.43 |
+| M8 Wide → narrow | 0.89 | 0.79 | 0.74 | 0.50 | 0.33 |
+| M8n Wide → narrow, no graph | 0.86 | 0.79 | 0.74 | 0.50 | 0.33 |
+| M9s Agent: search only | – | – | 0.88 | 0.75 | 0.15 |
+| M9 Agent: search + graph tools | – | – | 0.98 | 1.00 | 0.03 |
+| CE\* (diagnostic) | 0.93 | 0.79 | – | – | – |
+
+- Pool recall (chain gold articles): BM25 0.87, vector 0.83, graph 0.87, name 0.22; BM25 ∪ vector 0.87, all four 0.91.
+- Answer runs vary by at most 0.05 on facts and list scores. Judge spot-check (v2): Claude agrees with 5 of 5; Tianyi's check is optional.
+- v1 (seen) with the new methods: Recall@5 M7 0.80, M8 0.85, M8n 0.85; M1–M6 unchanged.
+
 ## Honest limits (will go into the README)
 - M3–M6 get `as_of` and `state` from the gold set, so stale@5 = 0 holds by construction. Inferring the date and state from a real message is not built or measured (a later step).
 - The data and most of the questions come from the same author, so the results show how the mechanism works, not real-world accuracy.
 - 8 questions per type is small; differences of one or two questions are noise.
+- Gold v2 was written by the same author *to need a graph*; M9's list wins rest on structured records that this KB has.
 - The semantic graph is scored against a small hand-labelled sample.

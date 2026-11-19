@@ -110,7 +110,7 @@ stale@5: share of questions with an outdated policy version in the top 5. *Seen*
 API cost in the spend ledger (semantic layer, 960 answers and their judgements, agents included): $14.63; the tickets cost $3.10 before the ledger existed.
 
 ### Freshness demo (`make fresh`)
-Payment timing changes from "1 to 3 business days" to "within minutes". In one 8–12 ms transaction the new version goes in, the old one is closed and a `supersedes` edge is added. Right after the commit, M3–M6 return the new version; plain vector search (M2) still ranks the 2022 version first. Transcript: [data/eval/fresh_demo.md](data/eval/fresh_demo.md).
+Payment timing changes from "1 to 3 business days" to "within minutes". In one transaction (8–25 ms across runs) the new version goes in, the old one is closed and a `supersedes` edge is added. Right after the commit, every filtered method (M3–M8n) returns the new version; plain vector search (M2) still ranks the 2022 version first. Transcript: [data/eval/fresh_demo.md](data/eval/fresh_demo.md).
 
 ## Why a graph matters more in a large, messy KB (argued, not measured here)
 This KB is small and tidy: about 50 articles in effect on any day, one author, consistent names and links. That is why vector search already reaches most of the second articles a chain question needs, and why CE\* (rerank every article) is even possible. A real help center differs in ways that each favour the graph:

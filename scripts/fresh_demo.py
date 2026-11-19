@@ -120,7 +120,7 @@ def main() -> int:
 
     t0 = time.perf_counter()
     show_results(db, "### 3. The same question, right after the commit")
-    print(f"\n(all four queries after the commit: {(time.perf_counter() - t0) * 1000:.0f} ms)")
+    print(f"\n(every method after the commit: {(time.perf_counter() - t0) * 1000:.0f} ms)")
 
     print("\n### 4. What the current answer replaced: walk `supersedes`")
     for r in run(db, HISTORY, {"start": f"articles/{new['_key']}"}):

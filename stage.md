@@ -2,7 +2,7 @@
 
 The high-level plan: what each stage is for, when it counts as done, and what it must not touch. Work-by-work detail goes in [progress.md](progress.md); the design itself is in [architecture.md](architecture.md).
 
-**Current design:** architecture **v4.0** (2026-11-18) · **Current stage:** 5, questions that need a graph (gold v2, M7–M9)
+**Current design:** architecture v4.0, checkpoint **v4.5** (2026-11-18) · **Current stage:** 5 done; 6 (publish) needs Tianyi's own words and his OK to push
 
 | # | Stage | Status |
 |---|---|---|
@@ -10,7 +10,7 @@ The high-level plan: what each stage is for, when it counts as done, and what it
 | 2 | Knowledge-base data, data checks, gold set | done 2026-11-18 (gold frozen) |
 | 3 | Retrieval in ArangoDB: load, M1–M6, retrieval eval, freshness demo | done 2026-11-18 (README is a draft) |
 | 4 | Semantic layer; grounded answers and answer eval (Opus 5.5 answers, Fable 5.2 judge, $50 ledger) | done 2026-11-18 |
-| 5 | v4.0: questions that need a graph (gold v2), names → graph (M7), wide → narrow (M8), graph tools (M9) | in progress |
+| 5 | v4.0: questions that need a graph (gold v2), names → graph (M7), wide → narrow (M8), graph tools (M9) | done 2026-11-18 |
 | 6 | Publish: chapter notebooks, quickstart, README in Tianyi's words, fresh-clone test | in progress |
 | 7 | Extras: hybrid RRF, geo, text-to-AQL, clarifying questions, inferring the date and state | planned, not scheduled |
 
@@ -60,24 +60,24 @@ Rule for every stage: when it ends, run the checks in [eval.md](eval.md). If a s
 - [x] `make answers-run`: M1–M6 × 30 × 3 runs, Fable 5.2 judge; `make answers-report` (2026-11-18, $7.01 in total)
 - [x] a human spot-check of 5 judgements (`data/eval/scores/judge_spotcheck.md`): Tianyi agrees with all 5 (2026-11-18)
 
-## Stage 5: questions that need a graph (v4.0, in progress)
+## Stage 5: questions that need a graph (v4.0, done 2026-11-18)
 **Goal:** measure the graph on questions where it should matter (chain and list questions), with rules fixed before the run and ablations that isolate what the graph adds.
 **Done when:**
-- [ ] gold v2 (12 chain + 8 structural) and 8 dev questions written; structural answers recomputed from the records by `make check`; `make freeze-v2` (D-031)
-- [ ] M7 names → graph, M8 wide → narrow with a cross-encoder, M8n; debugged on dev + v1 reserve only; rules committed before the gold v2 run (D-032, D-033)
-- [ ] `make eval-v2`: retrieval on gold v2 and pool recall per source; `make eval` on v1 (seen) with M1–M6 unchanged
-- [ ] M9 agent and M9s (D-034); answer eval on gold v2: M3, M4, M7, M8, M8n, M9s, M9 × 3 runs; item precision/recall; spend within the $50 ledger
-- [ ] README: v4.0 results, why a graph matters more in a large, messy KB (argued, no invented numbers)
+- [x] gold v2 (12 chain + 8 structural) and 8 dev questions written; structural answers recomputed from the records by `make check`; `make freeze-v2` (D-031)
+- [x] M7 names → graph, M8 wide → narrow with a cross-encoder, M8n; debugged on dev + v1 reserve only; rules committed before the gold v2 run (D-032, D-033)
+- [x] `make eval-v2`: retrieval on gold v2 and pool recall per source; `make eval` on v1 (seen) with M1–M6 unchanged
+- [x] M9 agent and M9s (D-034); answer eval on gold v2: M3, M4, M7, M8, M8n, M9s, M9 × 3 runs; item precision/recall; spend within the $50 ledger
+- [x] README: v4.0 results, why a graph matters more in a large, messy KB (argued, no invented numbers)
 
 **Out of scope:** changing gold v2 or any v4.0 rule after its first run; a bigger KB; text-to-AQL.
 
 ## Stage 6: publish
 **Done when:**
-- [ ] a three-command quickstart in the README
-- [ ] a "what you'll learn" opening per chapter (DRAFT)
-- [x] five numbered chapter notebooks (01 setup · 02 data model · 03 freshness · 04 retrieval · 05 evaluation) that run with `make nb`, outputs saved (all five run, 2026-11-18)
+- [x] a three-command quickstart in the README
+- [x] a "what you'll learn" opening per chapter (DRAFT)
+- [x] numbered chapter notebooks (01 setup · 02 data model · 03 freshness · 04 retrieval · 05 evaluation · 06 graph questions) that run with `make nb`, outputs saved (all six run, 2026-11-18)
 - [ ] Tianyi has rewritten the README, SPEC and notebook prose in his own words
-- [ ] a fresh clone in a new folder works by copy-pasting the README commands
+- [x] a fresh clone in a new folder works by copy-pasting the README commands (2026-11-18: `make setup`, `make load`, `make demo`; same tables)
 - [ ] a one-page spec is sent to the reviewers
 
 ## Stage 7: extras (planned, not scheduled)

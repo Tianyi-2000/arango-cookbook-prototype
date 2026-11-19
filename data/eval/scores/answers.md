@@ -15,8 +15,12 @@ Answers: claude-opus-5-5 (effort medium), top 5 articles, text only. Judge: clau
 
 Spend (ledger, from 2026-11-18):
 ```
+  agent_M9               claude-opus-5-5     182 calls  $  1.24
+  agent_M9s              claude-opus-5-5     164 calls  $  1.42
+  agent_dev              claude-opus-5-5       3 calls  $  0.03
   answers                claude-opus-5-5     327 calls  $  3.51
+  answers_v2             claude-opus-5-5     159 calls  $  2.07
   extract_semantic       claude-opus-5-5      68 calls  $  0.85
-  judge                  claude-fable-5-2    327 calls  $  2.65
-  total $7.01 of $50.00
+  judge                  claude-fable-5-2    606 calls  $  5.52
+  total $14.63 of $50.00
 ```

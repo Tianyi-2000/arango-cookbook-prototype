@@ -6,10 +6,11 @@
 - There are no 1.1 or 1.2 versions. Smaller changes go in [progress.md](progress.md) (what happened), [decisions.md](decisions.md) (why) and [issues.md](issues.md) (what broke).
 - The newest version is at the top. Older ones stay as they were written.
 
-**Current: v4.0** (2026-11-18), design: questions that need a graph (gold v2), entering the graph from names (M7), retrieve wide and rank narrow with a cross-encoder (M8), and an answer agent with graph tools (M9).
+**Current: v4.5** (2026-11-18), a checkpoint under design v4.0: gold v2 frozen and measured; M7, M8/M8n and the M9/M9s agents built and evaluated; quickstart and fresh-clone test done.
 
 | Version | Date | What | Confirmed by |
 |---|---|---|---|
+| v4.5 | 2026-11-18 | Checkpoint: gold v2 measured; M9 graph tools get every list right (8/8), M8 lifts list recall, graph retrieval adds one chain question; quickstart + fresh clone | — |
 | v4.0 | 2026-11-18 | Graph questions: gold v2 (chain + structural), M7 names → graph, M8 wide → narrow (cross-encoder), M9 graph tools | Tianyi ("v4.0 ok", 2026-11-18) |
 | v3.5 | 2026-11-18 | Checkpoint: gold frozen; semantic layer (Claude-extracted concepts) + M5/M6; first eval on the frozen 30; answers judged by Fable 5.2; notebooks | — |
 | v3.0 | 2026-11-17 | Retrieval in ArangoDB: M1–M4 ladder, freshness demo, gold 30, real place names, answer eval | Tianyi (plan approval, 2026-11-17) |
@@ -22,8 +23,19 @@
 
 ---
 
+## v4.5: checkpoint, gold v2 measured (2026-11-18)
+Built under v4.0 with no design change (one small rule added before the gold run: lender `note`s hidden from the tools, D-034):
+- **Gold v2** frozen before any method ran (`FROZEN_v2`, sha256 59bba6c5…); list answers recomputed from the records by `make check`.
+- **Retrieval:** chain Recall@5 0.82 (M3) → 0.86 (graph walk, one question through a link) → 0.89 (M8); M8 − M8n is one question (v2c01, through the lender's name). List Recall@5: 0.50 for every vector method, 0.79 for BM25 and M8. CE\* 0.93 on chain shows the pool is M8's limit (v2c05 never enters it).
+- **Answers:** facts found 0.64 (M3) → 0.74 (M8) → 0.88 (M9s, search only) → 0.98 (M9, graph tools); exact lists 3 → 4 → 6 → 8 of 8. Most list gains come from reading records (`list_records`); edge walks decided the audit and impact questions. M9 costs about the same as a RAG answer ($0.03, prompt caching).
+- **Not fixed by the graph:** a rule from another state than the customer's (v2c08; the hard state filter removes it). KB conflicts (v2c06/07) were answered correctly by every method.
+- **Engineering:** `make setup` / `make load` / `make demo` quickstart; fresh clone reproduces every table; six notebooks; ledger at $14.63 of $50.
+- **Next design question (not decided):** a soft state rule (prefer the customer's state, but let an article about the issuing state through), inferring `as_of` and state from the message, and a bigger, messier KB to test the argument in the README.
+
+---
+
 ## v4.0: questions that need a graph (2026-11-18)
-**Confirmed by:** Tianyi ("v4.0 ok, lets go!", 2026-11-18; gold v2 approved without a separate review) · **Status:** in progress
+**Confirmed by:** Tianyi ("v4.0 ok, lets go!", 2026-11-18; gold v2 approved without a separate review) · **Status:** built and measured (checkpoint v4.5)
 
 ### Why this version
 v3.5 measured the graph on questions where vector search already finds most gold articles, so graph expansion came out neutral (one win, one loss) and the semantic layer changed nothing. Tianyi asked for real graph problems, without cheating: (1) chain questions whose bridge isn't a shared word or meaning but a link, a form, a lender or a leasing company; (2) questions vector search can't do at all: lists, "which ones", and checks across records. And "retrieve wide, rank narrow". No bigger or messier KB is built; the README explains, without numbers, why a graph matters more in one.
