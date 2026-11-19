@@ -6,10 +6,12 @@ The judge checks each required fact by meaning (D-020) and whether unsupported q
 """
 import json
 
+from cookbook import spend
 from cookbook.load import LINK_RE
 
-MODEL = "claude-opus-5-5"
-PRICE_IN, PRICE_OUT = 4.00, 20.00  # $ per million tokens (Opus 5.5)
+MODEL = "claude-opus-5-5"         # answers (and semantic extraction)
+JUDGE_MODEL = "claude-fable-5-2"  # a different, stronger model grades the answers (D-029)
+PRICE_IN, PRICE_OUT = spend.PRICES[MODEL]
 CONTEXT_K = 5
 
 ANSWER_SYSTEM = """You answer customer questions for Northwind Auto, a used-car retailer, using only the help-center articles provided.
@@ -61,25 +63,34 @@ def judge_prompt(q: dict, answer: str) -> str:
             f"Answer to grade:\n{answer}")
 
 
-def cost(usage) -> float:
-    return usage.input_tokens / 1e6 * PRICE_IN + usage.output_tokens / 1e6 * PRICE_OUT
+class OverBudget(RuntimeError):
+    """The next call could push the spend ledger over its cap (D-029)."""
 
 
-def call(client, system: str, prompt: str, schema: dict, effort: str):
-    """One structured call; same request shape as scripts/generate_tickets.py (fallbacks on)."""
+def call(client, system: str, prompt: str, schema: dict, effort: str, model: str = MODEL,
+         script: str = "answers", estimate: float = 0.05, max_tokens: int = 8000):
+    """One structured call with server-side fallbacks (as in scripts/generate_tickets.py).
+
+    Checks the shared ledger before the call and records the real usage after it.
+    No `thinking` parameter: Opus 5.5 and Fable 5.2 think adaptively; `effort` sets how much.
+    """
+    if not spend.can_spend(estimate):
+        raise OverBudget(f"ledger at ${spend.total():.2f}; a call of ~${estimate:.2f} could cross ${spend.CAP:.2f}")
     response = client.beta.messages.create(
-        model=MODEL,
-        max_tokens=4000,
+        model=model,
+        max_tokens=max_tokens,
         betas=["server-side-fallback-2026-07-01"],
         fallbacks="default",
         output_config={"effort": effort, "format": {"type": "json_schema", "schema": schema}},
         system=system,
         messages=[{"role": "user", "content": prompt}],
     )
+    c = spend.record(script, response.model, response.usage.input_tokens, response.usage.output_tokens,
+                     note=response._request_id or "")
     if response.stop_reason != "end_turn":
         raise RuntimeError(f"stop_reason={response.stop_reason}, request {response._request_id}")
     body = json.loads(next(b.text for b in response.content if b.type == "text"))
     meta = {"model": response.model, "request_id": response._request_id,
             "usage": {"input": response.usage.input_tokens, "output": response.usage.output_tokens},
-            "cost": round(cost(response.usage), 5)}
+            "cost": round(c, 5)}
     return body, meta

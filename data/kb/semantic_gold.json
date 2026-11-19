@@ -1,0 +1,510 @@
+{
+ "note": "Expected concepts for 10 article versions, written by Claude on 2026-11-18 BEFORE any LLM extraction ran (committed first). Each item is a set of acceptable names. Company names, form codes and state names are excluded: they are in the structural layer. Match rule (fixed now): names are normalised (lowercase; '-' and punctuation to spaces; leading a/an/the/your/our dropped; a trailing 's' dropped from the last word if it is longer than 3 letters and doesn't end in 'ss'); an extracted concept matches an item if it equals one of its names, or if one contains the other as whole words and the contained one has at least 2 words. Recall = share of items matched by some extracted concept. Agreement = share of extracted concepts that match some item (a lower bound on precision: a valid concept missing from this list counts as a miss).",
+ "articles": {
+  "selling_with_loan__2022": [
+   {
+    "names": [
+     "loan",
+     "car loan",
+     "open loan"
+    ]
+   },
+   {
+    "names": [
+     "lender",
+     "lienholder",
+     "lien holder"
+    ]
+   },
+   {
+    "names": [
+     "title",
+     "car title",
+     "vehicle title"
+    ]
+   },
+   {
+    "names": [
+     "electronic title",
+     "electronic title record"
+    ]
+   },
+   {
+    "names": [
+     "payoff",
+     "payoff amount"
+    ]
+   },
+   {
+    "names": [
+     "payoff letter"
+    ]
+   },
+   {
+    "names": [
+     "duplicate title"
+    ]
+   },
+   {
+    "names": [
+     "offer"
+    ]
+   },
+   {
+    "names": [
+     "appointment"
+    ]
+   }
+  ],
+  "payoff_letter__2026": [
+   {
+    "names": [
+     "payoff letter"
+    ]
+   },
+   {
+    "names": [
+     "lender"
+    ]
+   },
+   {
+    "names": [
+     "loan"
+    ]
+   },
+   {
+    "names": [
+     "account number",
+     "loan account number"
+    ]
+   },
+   {
+    "names": [
+     "payoff amount",
+     "payoff"
+    ]
+   },
+   {
+    "names": [
+     "15-day payoff amount",
+     "good-through date"
+    ]
+   },
+   {
+    "names": [
+     "daily interest",
+     "interest"
+    ]
+   },
+   {
+    "names": [
+     "lender payoff authorization"
+    ]
+   },
+   {
+    "names": [
+     "lease"
+    ]
+   },
+   {
+    "names": [
+     "e-payoff network"
+    ]
+   }
+  ],
+  "epayoff_network__2026": [
+   {
+    "names": [
+     "e-payoff network"
+    ]
+   },
+   {
+    "names": [
+     "payoff amount",
+     "payoff"
+    ]
+   },
+   {
+    "names": [
+     "payoff letter"
+    ]
+   },
+   {
+    "names": [
+     "lender",
+     "network lender"
+    ]
+   },
+   {
+    "names": [
+     "loan account number",
+     "account number"
+    ]
+   },
+   {
+    "names": [
+     "appointment"
+    ]
+   }
+  ],
+  "inherited_car__2026": [
+   {
+    "names": [
+     "inherited car",
+     "inheritance"
+    ]
+   },
+   {
+    "names": [
+     "death certificate"
+    ]
+   },
+   {
+    "names": [
+     "executor",
+     "administrator",
+     "estate executor"
+    ]
+   },
+   {
+    "names": [
+     "court letters",
+     "letters testamentary"
+    ]
+   },
+   {
+    "names": [
+     "small estate"
+    ]
+   },
+   {
+    "names": [
+     "probate",
+     "probate court"
+    ]
+   },
+   {
+    "names": [
+     "heir and estate affidavit",
+     "estate affidavit"
+    ]
+   },
+   {
+    "names": [
+     "heir"
+    ]
+   },
+   {
+    "names": [
+     "power of attorney"
+    ]
+   },
+   {
+    "names": [
+     "loan"
+    ]
+   },
+   {
+    "names": [
+     "title",
+     "lost title"
+    ]
+   }
+  ],
+  "co_owners__2026": [
+   {
+    "names": [
+     "co-owner",
+     "owner",
+     "multiple owners"
+    ]
+   },
+   {
+    "names": [
+     "sale documents",
+     "signature"
+    ]
+   },
+   {
+    "names": [
+     "photo id"
+    ]
+   },
+   {
+    "names": [
+     "appointment"
+    ]
+   },
+   {
+    "names": [
+     "power of attorney"
+    ]
+   },
+   {
+    "names": [
+     "notarization",
+     "notary"
+    ]
+   },
+   {
+    "names": [
+     "military deployment",
+     "active military deployment",
+     "deployment"
+    ]
+   },
+   {
+    "names": [
+     "electronic signature"
+    ]
+   },
+   {
+    "names": [
+     "title"
+    ]
+   }
+  ],
+  "military_deployed__2026": [
+   {
+    "names": [
+     "military deployment",
+     "active military deployment",
+     "deployment"
+    ]
+   },
+   {
+    "names": [
+     "co-owner"
+    ]
+   },
+   {
+    "names": [
+     "deployed owner authorization"
+    ]
+   },
+   {
+    "names": [
+     "power of attorney"
+    ]
+   },
+   {
+    "names": [
+     "notarization",
+     "notary"
+    ]
+   },
+   {
+    "names": [
+     "deployment orders"
+    ]
+   },
+   {
+    "names": [
+     "photo id"
+    ]
+   },
+   {
+    "names": [
+     "electronic signature"
+    ]
+   }
+  ],
+  "home_pickup__2026": [
+   {
+    "names": [
+     "home pickup",
+     "home pickup service"
+    ]
+   },
+   {
+    "names": [
+     "specialist",
+     "northwind specialist"
+    ]
+   },
+   {
+    "names": [
+     "home pickup fee",
+     "fee"
+    ]
+   },
+   {
+    "names": [
+     "home pickup agreement"
+    ]
+   },
+   {
+    "names": [
+     "bank draft"
+    ]
+   },
+   {
+    "names": [
+     "direct deposit"
+    ]
+   },
+   {
+    "names": [
+     "appointment checklist"
+    ]
+   },
+   {
+    "names": [
+     "car that doesn't run",
+     "non-running car"
+    ]
+   },
+   {
+    "names": [
+     "inspection"
+    ]
+   }
+  ],
+  "lease_equity__2022": [
+   {
+    "names": [
+     "lease equity"
+    ]
+   },
+   {
+    "names": [
+     "lease buyout",
+     "buyout amount",
+     "lease buyout amount"
+    ]
+   },
+   {
+    "names": [
+     "leasing company",
+     "lessor"
+    ]
+   },
+   {
+    "names": [
+     "offer"
+    ]
+   },
+   {
+    "names": [
+     "third-party buyout"
+    ]
+   },
+   {
+    "names": [
+     "negative equity"
+    ]
+   },
+   {
+    "names": [
+     "lease"
+    ]
+   }
+  ],
+  "license_plates__2026": [
+   {
+    "names": [
+     "license plate",
+     "plate"
+    ]
+   },
+   {
+    "names": [
+     "registration",
+     "vehicle registration"
+    ]
+   },
+   {
+    "names": [
+     "plate return receipt"
+    ]
+   },
+   {
+    "names": [
+     "motor vehicle agency"
+    ]
+   },
+   {
+    "names": [
+     "issuing state",
+     "state of registration"
+    ]
+   },
+   {
+    "names": [
+     "out-of-state registration",
+     "moved"
+    ]
+   }
+  ],
+  "appointment_checklist__2026": [
+   {
+    "names": [
+     "photo id"
+    ]
+   },
+   {
+    "names": [
+     "owner"
+    ]
+   },
+   {
+    "names": [
+     "title"
+    ]
+   },
+   {
+    "names": [
+     "mobile id",
+     "state mobile id"
+    ]
+   },
+   {
+    "names": [
+     "registration",
+     "current registration"
+    ]
+   },
+   {
+    "names": [
+     "keys and remotes",
+     "keys"
+    ]
+   },
+   {
+    "names": [
+     "odometer disclosure statement"
+    ]
+   },
+   {
+    "names": [
+     "payoff letter"
+    ]
+   },
+   {
+    "names": [
+     "loan"
+    ]
+   },
+   {
+    "names": [
+     "e-payoff network"
+    ]
+   },
+   {
+    "names": [
+     "lease"
+    ]
+   },
+   {
+    "names": [
+     "dealer payoff quote"
+    ]
+   },
+   {
+    "names": [
+     "appointment"
+    ]
+   }
+  ]
+ }
+}
