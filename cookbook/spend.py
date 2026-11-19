@@ -18,6 +18,8 @@ PRICES = {  # (input, output) $ per million tokens
     "claude-sonnet-5-5": (2.00, 10.00),
     "claude-haiku-5-5": (0.10, 0.50),
 }
+CACHE_READ = {"claude-opus-5-5": 0.05, "claude-fable-5-2": 0.025}  # cache reads, as a share of the input price
+CACHE_WRITE = 1.25                                                   # 5-minute cache writes, same
 _LOCK = threading.RLock()  # answers run in threads: reads and writes of the ledger take turns
 WORST = (8.00, 40.00)  # unknown model (e.g. a fallback): count it at the highest price
 
@@ -26,9 +28,11 @@ def price(model: str) -> tuple[float, float]:
     return next((p for m, p in PRICES.items() if model.startswith(m)), WORST)
 
 
-def cost(model: str, input_tokens: int, output_tokens: int) -> float:
+def cost(model: str, input_tokens: int, output_tokens: int, cache_write: int = 0, cache_read: int = 0) -> float:
+    """input_tokens are the uncached ones; cached prompt tokens are priced separately (prompt caching)."""
     pi, po = price(model)
-    return input_tokens / 1e6 * pi + output_tokens / 1e6 * po
+    read = next((r for m, r in CACHE_READ.items() if model.startswith(m)), 0.1)
+    return (input_tokens + cache_write * CACHE_WRITE + cache_read * read) / 1e6 * pi + output_tokens / 1e6 * po
 
 
 def _rows() -> list[dict]:
@@ -44,15 +48,19 @@ def can_spend(estimate: float) -> bool:
     return total() + estimate <= CAP
 
 
-def record(script: str, model: str, input_tokens: int, output_tokens: int, note: str = "") -> float:
+def record(script: str, model: str, input_tokens: int, output_tokens: int, note: str = "",
+           cache_write: int = 0, cache_read: int = 0) -> float:
     with _LOCK:
-        return _record(script, model, input_tokens, output_tokens, note)
+        return _record(script, model, input_tokens, output_tokens, note, cache_write, cache_read)
 
 
-def _record(script, model, input_tokens, output_tokens, note) -> float:
-    c = round(cost(model, input_tokens, output_tokens), 6)
-    rows = _rows() + [{"at": datetime.now().isoformat(timespec="seconds"), "script": script, "model": model,
-                       "input": input_tokens, "output": output_tokens, "cost": c, "note": note}]
+def _record(script, model, input_tokens, output_tokens, note, cache_write=0, cache_read=0) -> float:
+    c = round(cost(model, input_tokens, output_tokens, cache_write, cache_read), 6)
+    row = {"at": datetime.now().isoformat(timespec="seconds"), "script": script, "model": model,
+           "input": input_tokens, "output": output_tokens, "cost": c, "note": note}
+    if cache_write or cache_read:
+        row.update({"cache_write": cache_write, "cache_read": cache_read})
+    rows = _rows() + [row]
     tmp = LEDGER.with_suffix(".tmp")
     tmp.write_text(json.dumps({"cap": CAP, "note": "API spend from 2026-11-18 on (D-029); tickets before that cost $3.10 (D-021)",
                                   "total": round(sum(r["cost"] for r in rows), 4), "calls": rows}, indent=1) + "\n")

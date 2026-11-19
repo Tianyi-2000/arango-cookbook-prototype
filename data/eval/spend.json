@@ -1,7 +1,7 @@
 {
  "cap": 50.0,
  "note": "API spend from 2026-11-18 on (D-029); tickets before that cost $3.10 (D-021)",
- "total": 7.0105,
+ "total": 7.1041,
  "calls": [
   {
    "at": "2026-11-18T17:08:10",
@@ -6500,6 +6500,99 @@
    "output": 50,
    "cost": 0.007056,
    "note": "req_011ChBQyqqhodVWqSniqDMqH"
+  },
+  {
+   "at": "2026-11-18T20:05:19",
+   "script": "agent_dev",
+   "model": "claude-opus-5-5",
+   "input": 4,
+   "output": 129,
+   "cost": 0.010651,
+   "note": "req_011ChBdDmW3gz9uFHKRtXm4T",
+   "cache_write": 1611,
+   "cache_read": 0
+  },
+  {
+   "at": "2026-11-18T20:05:27",
+   "script": "agent_dev",
+   "model": "claude-opus-5-5",
+   "input": 2,
+   "output": 99,
+   "cost": 0.010205,
+   "note": "req_011ChBdEYqahsboWMDnc11Ec",
+   "cache_write": 1579,
+   "cache_read": 1611
+  },
+  {
+   "at": "2026-11-18T20:05:30",
+   "script": "agent_dev",
+   "model": "claude-opus-5-5",
+   "input": 2,
+   "output": 245,
+   "cost": 0.011196,
+   "note": "req_011ChBdEfbdcB4MXobb9sLCk",
+   "cache_write": 1130,
+   "cache_read": 3190
+  },
+  {
+   "at": "2026-11-18T20:05:58",
+   "script": "agent_M9",
+   "model": "claude-opus-5-5",
+   "input": 4,
+   "output": 141,
+   "cost": 0.011006,
+   "note": "req_011ChBdGiwMVNUozqmj8cgGe",
+   "cache_write": 1634,
+   "cache_read": 0
+  },
+  {
+   "at": "2026-11-18T20:05:59",
+   "script": "agent_M9",
+   "model": "claude-opus-5-5",
+   "input": 2,
+   "output": 55,
+   "cost": 0.008195,
+   "note": "req_011ChBdGve4UmqsrZxq7U49v",
+   "cache_write": 1352,
+   "cache_read": 1634
+  },
+  {
+   "at": "2026-11-18T20:06:01",
+   "script": "answers_v2",
+   "model": "claude-opus-5-5",
+   "input": 1405,
+   "output": 486,
+   "cost": 0.01534,
+   "note": "req_011ChBdGioQiRZH9GEgKanJm"
+  },
+  {
+   "at": "2026-11-18T20:06:01",
+   "script": "agent_M9",
+   "model": "claude-opus-5-5",
+   "input": 2,
+   "output": 221,
+   "cost": 0.006865,
+   "note": "req_011ChBdGzAdg7zmpbQJBdePN",
+   "cache_write": 368,
+   "cache_read": 2986
+  },
+  {
+   "at": "2026-11-18T20:06:03",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 771,
+   "output": 95,
+   "cost": 0.009968,
+   "note": "req_011ChBdH9Q1k9kB4ADc3TgYx"
+  },
+  {
+   "at": "2026-11-18T20:06:04",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 798,
+   "output": 95,
+   "cost": 0.010184,
+   "note": "req_011ChBdH9Q2BB7JBdKYbT3us"
   }
  ]
 }

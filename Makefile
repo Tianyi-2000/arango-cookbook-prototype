@@ -1,6 +1,6 @@
 PY := .venv/bin/python
 
-.PHONY: freeze-v2 eval-v2 eval-v2-dev up down venv verify check test-checks review tickets-plan tickets-one tickets load test-retrieve freeze eval eval-reserve fresh answers answers-run answers-report extract check-semantic nb
+.PHONY: freeze-v2 eval-v2 eval-v2-dev answers-v2 answers-v2-run answers-v2-report up down venv verify check test-checks review tickets-plan tickets-one tickets load test-retrieve freeze eval eval-reserve fresh answers answers-run answers-report extract check-semantic nb
 up:      ## start ArangoDB on localhost:8535
 	docker compose up -d
 down:
@@ -45,6 +45,12 @@ answers-run:  ## answer eval: M1-M6 x 30 x 3 runs, Opus 5.5 answers, Fable 5.2 j
 	$(PY) scripts/run_answers.py --run
 answers-report:  ## answer eval tables from the cached answers -> data/eval/scores/answers.md
 	$(PY) scripts/run_answers.py --report
+answers-v2:  ## dry run of the gold v2 answer eval (RAG M3/M4/M7/M8/M8n + agents M9s/M9): cost estimate, no API calls
+	$(PY) scripts/run_answers.py --v2
+answers-v2-run:  ## gold v2 answer eval, 3 runs; stops at the $50 ledger cap
+	$(PY) scripts/run_answers.py --v2 --run
+answers-v2-report:  ## gold v2 answer tables -> data/eval/scores/v2_answers.md, v2_answers_per_question.md
+	$(PY) scripts/run_answers.py --v2 --report
 extract:  ## dry run of the semantic extraction (Claude); --one / --run via scripts/extract_semantic.py
 	$(PY) scripts/extract_semantic.py
 check-semantic:  ## score extracted concepts against the hand-written list for 10 versions

@@ -5,6 +5,9 @@ then have a different model judge the answer. Three runs, to see run-to-run nois
   python scripts/run_answers.py --one            # one answer + one judgement (checks both models work)
   python scripts/run_answers.py --run            # everything not cached yet; stops at the $50 ledger cap
   python scripts/run_answers.py --report         # tables from the cache -> data/eval/scores/answers.md
+  python scripts/run_answers.py --v2 [--one | --run | --report]   # gold v2 (D-034, D-035): M3, M4, M7, M8, M8n
+                                                  # from their top 5, and the agents M9s / M9; cache data/eval/answers_v2/
+  python scripts/run_answers.py --v2 --dev-one     # one M9 agent answer on a dev question (smoke test, not cached)
 
 Cache: data/eval/answers/run<N>/<method>/<qid>.json. Within one run, methods that retrieved exactly the same
 top 5 share one answer and one judgement (same prompt; the second copy is marked `shared_from` and costs $0).
@@ -24,7 +27,7 @@ from cookbook import answer as A  # noqa: E402
 from cookbook import retrieve as R  # noqa: E402
 from cookbook import spend  # noqa: E402
 from cookbook.db import get_db  # noqa: E402
-from cookbook.load import DATA, in_effect, load_articles, load_gold  # noqa: E402
+from cookbook.load import DATA, in_effect, load_articles, load_gold, load_gold_v2  # noqa: E402
 from run_eval import frozen_ok  # noqa: E402
 
 METHODS = list(R.METHODS)
@@ -130,7 +133,12 @@ def main() -> int:
     ap.add_argument("--one", action="store_true")
     ap.add_argument("--run", action="store_true")
     ap.add_argument("--report", action="store_true")
+    ap.add_argument("--v2", action="store_true")
+    ap.add_argument("--dev-one", action="store_true")
     args = ap.parse_args()
+    if args.v2:
+        import answers_v2
+        return answers_v2.main(args)
     ok, why = frozen_ok()
     if not ok:
         print("refusing to run on the gold set:", why)

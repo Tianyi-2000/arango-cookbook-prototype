@@ -58,8 +58,37 @@ def judge_prompt(q: dict, answer: str) -> str:
             f"Answer to grade:\n{answer}")
 
 
+# --- gold v2 (D-034, D-035): the same rules plus `items` for list questions ------------------------------------
+ITEMS_RULE = ("- items: if the question asks for a list, give each item exactly as the sources name it (form code, company "
+              "name, state, or article title); otherwise an empty list.")
+ANSWER_SYSTEM_V2 = (ANSWER_SYSTEM.replace("customer questions", "questions from customers and support staff")
+                    .replace("- Answer in 2 to 4 plain sentences.", "- Answer in 2 to 4 plain sentences; a list question may need more.")
+                    + "\n" + ITEMS_RULE)
+ANSWER_SCHEMA_V2 = {**ANSWER_SCHEMA,
+                    "properties": {**ANSWER_SCHEMA["properties"], "items": {"type": "array", "items": {"type": "string"}}},
+                    "required": ANSWER_SCHEMA["required"] + ["items"]}
+ASKER = {"customer": "a customer", "support_agent": "a support agent", "kb_maintainer": "the help-center team"}
+
+
+def header_v2(q: dict) -> str:
+    state = f" The customer is in {q['state'].replace('_', ' ').title()}." if q.get("state") else ""
+    return f"Today is {q['asked_on']}.{state}"
+
+
+def answer_prompt_v2(q: dict, articles: list[dict]) -> str:
+    ctx = "\n\n".join(f"[{a['_key']}] {a['title']}\n{plain(a['text'])}" for a in articles)
+    return f"{header_v2(q)}\n\nArticles:\n\n{ctx}\n\nQuestion from {ASKER[q['asker']]}: {q['question']}"
+
+
 class OverBudget(RuntimeError):
     """The next call could push the spend ledger over its cap (D-029)."""
+
+
+def record_usage(script: str, response) -> float:
+    u = response.usage
+    return spend.record(script, response.model, u.input_tokens, u.output_tokens, note=response._request_id or "",
+                        cache_write=getattr(u, "cache_creation_input_tokens", 0) or 0,
+                        cache_read=getattr(u, "cache_read_input_tokens", 0) or 0)
 
 
 def call(client, system: str, prompt: str, schema: dict, effort: str, model: str = MODEL,
@@ -80,8 +109,7 @@ def call(client, system: str, prompt: str, schema: dict, effort: str, model: str
         system=system,
         messages=[{"role": "user", "content": prompt}],
     )
-    c = spend.record(script, response.model, response.usage.input_tokens, response.usage.output_tokens,
-                     note=response._request_id or "")
+    c = record_usage(script, response)
     if response.stop_reason != "end_turn":
         raise RuntimeError(f"stop_reason={response.stop_reason}, request {response._request_id}")
     body = json.loads(next(b.text for b in response.content if b.type == "text"))
