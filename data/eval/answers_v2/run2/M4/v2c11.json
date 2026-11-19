@@ -1,0 +1,54 @@
+{
+ "qid": "v2c11",
+ "method": "M4",
+ "run": 2,
+ "retrieved": [
+  "epayoff_network__2026",
+  "payoff_letter__2026",
+  "getting_paid__2026",
+  "negative_equity__2026",
+  "selling_with_loan__2022"
+ ],
+ "answer": "You pay the difference at your appointment by cashier's check or debit card; personal checks and credit cards aren't accepted. You don't need a payoff letter, because Lakeshore Bank is in our e-payoff network. We confirm the payoff directly with them the same day, at your appointment, using your loan account number. If you'd rather not pay the difference, you can keep the car, since an offer never obliges you to sell.",
+ "cited_keys": [
+  "negative_equity__2026",
+  "epayoff_network__2026"
+ ],
+ "not_covered": false,
+ "items": [],
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBdWByuBHmyAHFJueXWw",
+  "usage": {
+   "input": 1599,
+   "output": 292
+  },
+  "cost": 0.01224
+ },
+ "prompt_sha1": "527065b4a9ab",
+ "judge": {
+  "facts": [
+   {
+    "fact": "pay the difference at the appointment by cashier's check or debit card (no personal checks or credit cards)",
+    "present": true
+   },
+   {
+    "fact": "no payoff letter is needed, because Lakeshore Bank is in the e-payoff network",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBdWUXK8PE1U6pRWNJh7",
+  "usage": {
+   "input": 756,
+   "output": 103
+  },
+  "cost": 0.01017
+ },
+ "cost": 0.02241,
+ "shared_from": "M3",
+ "cost_own": 0.0
+}

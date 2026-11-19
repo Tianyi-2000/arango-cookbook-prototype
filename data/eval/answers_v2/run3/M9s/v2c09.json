@@ -1,0 +1,75 @@
+{
+ "qid": "v2c09",
+ "method": "M9s",
+ "run": 3,
+ "retrieved": [],
+ "answer": "No, you probably can't keep this offer if you move to November 4. Offers last 5 days or 250 additional miles, whichever comes first, so an offer you got on October 29 should expire around November 3. Your exact expiration date is on your offer page and in your confirmation email. Moving your appointment keeps your offer only if the new time is on or before that date, and rescheduling doesn't extend the offer. If you need November 4, you can reschedule online or by replying to your confirmation text, as long as it's at least 2 hours before your appointment starts. Then request a new offer, which will be based on current market prices and could be higher or lower.",
+ "cited_keys": [
+  "offer_validity__2026",
+  "reschedule_cancel__2022"
+ ],
+ "not_covered": false,
+ "items": [],
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBdjET6rBn4LB6uoyJbB",
+  "usage": {
+   "input": 6,
+   "output": 380,
+   "cache_write": 1025,
+   "cache_read": 2100
+  },
+  "cost": 0.01317
+ },
+ "agent_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBdjET6rBn4LB6uoyJbB",
+  "turns": 2,
+  "tool_calls": 1,
+  "trace": [
+   {
+    "tool": "search_help_center",
+    "input": {
+     "query": "offer valid how long reschedule appointment"
+    },
+    "error": false,
+    "result_chars": 2882,
+    "result_head": "[{\"key\": \"reschedule_cancel__2022\", \"title\": \"Rescheduling or canceling an appointment\", \"text\": \"You can reschedule or cancel your appraisal appointment online, or by replying to your confirmation text, up to 2 hours before it starts. Rescheduling keeps your offer only if the new time is on or befo"
+   }
+  ],
+  "usage": {
+   "input": 6,
+   "output": 380,
+   "cache_write": 1025,
+   "cache_read": 2100
+  },
+  "cost": 0.01317
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "no: rescheduling keeps the offer only if the new time is on or before the offer's expiration date",
+    "present": true
+   },
+   {
+    "fact": "offers are valid for 5 days (or 250 miles), so this one expires before November 4",
+    "present": true
+   },
+   {
+    "fact": "you can request a new offer, which may be higher or lower",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBdjTzS727r74oC9Tb1i",
+  "usage": {
+   "input": 832,
+   "output": 126
+  },
+  "cost": 0.0117
+ },
+ "cost": 0.02487
+}

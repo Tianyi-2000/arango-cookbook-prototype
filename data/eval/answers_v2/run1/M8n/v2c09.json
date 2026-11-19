@@ -1,0 +1,58 @@
+{
+ "qid": "v2c09",
+ "method": "M8n",
+ "run": 1,
+ "retrieved": [
+  "reschedule_cancel__2022",
+  "offer_validity__2026",
+  "negative_equity__2026",
+  "selling_with_loan__2022",
+  "registration_expired__2022"
+ ],
+ "answer": "Probably not. Your offer was issued after February 1, 2026, so it is valid for 5 days or 250 additional miles, whichever comes first, which puts the expiration around November 3. Rescheduling keeps your offer only if the new appointment is on or before the expiration date, and rescheduling doesn't extend it. Check the exact expiration date on your offer page or confirmation email; if November 4 is past it, you can request a new offer, which may be higher or lower, or pick a time on or before the expiration date. You can reschedule online or by replying to your confirmation text up to 2 hours before your appointment.",
+ "cited_keys": [
+  "offer_validity__2026",
+  "reschedule_cancel__2022"
+ ],
+ "not_covered": false,
+ "items": [],
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBdMFRGsYJhy7m2gFAYp",
+  "usage": {
+   "input": 1401,
+   "output": 461
+  },
+  "cost": 0.01482
+ },
+ "prompt_sha1": "3f443cf76eb6",
+ "judge": {
+  "facts": [
+   {
+    "fact": "no: rescheduling keeps the offer only if the new time is on or before the offer's expiration date",
+    "present": true
+   },
+   {
+    "fact": "offers are valid for 5 days (or 250 miles), so this one expires before November 4",
+    "present": true
+   },
+   {
+    "fact": "you can request a new offer, which may be higher or lower",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBdMfoiPsS8QXwpCmBbm",
+  "usage": {
+   "input": 827,
+   "output": 126
+  },
+  "cost": 0.01166
+ },
+ "cost": 0.02648,
+ "shared_from": "M3",
+ "cost_own": 0.0
+}

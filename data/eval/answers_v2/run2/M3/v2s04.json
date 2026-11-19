@@ -1,0 +1,68 @@
+{
+ "qid": "v2s04",
+ "method": "M3",
+ "run": 2,
+ "retrieved": [
+  "epayoff_network__2026",
+  "payoff_letter__2026",
+  "lien_still_on_title__2022",
+  "selling_with_loan__2022",
+  "getting_paid__2026"
+ ],
+ "answer": "The help center doesn't list lenders outside the e-payoff network, so I can't name them; please contact a store or check your internal records for that list. What the articles do say is that the network includes Bayline Credit Union, Northwind Auto Finance, Meridian Auto Loans, Pinewood Federal Credit Union, Lakeshore Bank and Granite Bank, which joined on March 15, 2026. Customers with any other lender need to bring a payoff letter or sign form NW-LPA-1 so we can request one, which takes about 2 business days. NW-LPA-1 is for loans only; leases use form NW-LSE-1.",
+ "cited_keys": [
+  "epayoff_network__2026",
+  "payoff_letter__2026"
+ ],
+ "not_covered": true,
+ "items": [],
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBdWdJQbF89Nq7WjF5TB",
+  "usage": {
+   "input": 1595,
+   "output": 527
+  },
+  "cost": 0.01692
+ },
+ "prompt_sha1": "ceb5e7fffeb5",
+ "judge": {
+  "facts": [
+   {
+    "fact": "Redstone Credit",
+    "present": false
+   },
+   {
+    "fact": "Coastal Credit Union",
+    "present": false
+   },
+   {
+    "fact": "Oakline Finance",
+    "present": false
+   },
+   {
+    "fact": "Valley Motor Credit",
+    "present": false
+   },
+   {
+    "fact": "Harbor Trust Bank",
+    "present": false
+   },
+   {
+    "fact": "Summit Peak Bank",
+    "present": false
+   }
+  ],
+  "declines_uncovered": false
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBdX1jXw7tbZbTR8NkT2",
+  "usage": {
+   "input": 814,
+   "output": 137
+  },
+  "cost": 0.01199
+ },
+ "cost": 0.02891
+}

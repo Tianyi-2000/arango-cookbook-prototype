@@ -1,0 +1,58 @@
+{
+ "qid": "v2c10",
+ "method": "M7",
+ "run": 1,
+ "retrieved": [
+  "offer_scams__2026",
+  "epayoff_network__2026",
+  "negative_equity__2026",
+  "lender_overpayment_refund__2022",
+  "payoff_letter__2026"
+ ],
+ "answer": "No, that is not legitimate. Northwind never asks for wire transfers, and if you owe more than our offer (negative equity), the only payment you make to us is for that difference, and only in person at your appointment, after we compare the offer with your payoff letter. We accept a cashier's check or a debit card for it; we don't accept personal checks or credit cards. Don't respond to the text, and report it through the Help Center.",
+ "cited_keys": [
+  "offer_scams__2026",
+  "negative_equity__2026"
+ ],
+ "not_covered": false,
+ "items": [],
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBdNcEC7Mbw2HuxpkBqA",
+  "usage": {
+   "input": 1533,
+   "output": 179
+  },
+  "cost": 0.00971
+ },
+ "prompt_sha1": "b6b487e40504",
+ "judge": {
+  "facts": [
+   {
+    "fact": "no: Northwind never asks for wire transfers",
+    "present": true
+   },
+   {
+    "fact": "the difference (negative equity) is paid only in person at the appointment",
+    "present": true
+   },
+   {
+    "fact": "by cashier's check or debit card",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBdNyR9pm1ihXwzi9Jhg",
+  "usage": {
+   "input": 746,
+   "output": 98
+  },
+  "cost": 0.00989
+ },
+ "cost": 0.0196,
+ "shared_from": "M4",
+ "cost_own": 0.0
+}

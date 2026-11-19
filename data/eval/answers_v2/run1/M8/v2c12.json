@@ -1,0 +1,53 @@
+{
+ "qid": "v2c12",
+ "method": "M8",
+ "run": 1,
+ "retrieved": [
+  "lease_equity__2022",
+  "lessor_buyouts__2026",
+  "payoff_letter__2026",
+  "leased_car__2022",
+  "negative_equity__2026"
+ ],
+ "answer": "Yes. Summit Auto Lease allows third-party buyouts, so you can sign the lease buyout authorization, form NW-LSE-1, and we'll request the dealer payoff quote from them for you. Note that the dealer payoff quote can be different from the payoff Summit quotes to you directly. Bring the quote to your appointment, and if our offer is higher than the buyout, Summit passes the difference (lease equity) to you.",
+ "cited_keys": [
+  "leased_car__2022",
+  "lessor_buyouts__2026",
+  "lease_equity__2022"
+ ],
+ "not_covered": false,
+ "items": [],
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBdQHSttY3vRxASshZ8f",
+  "usage": {
+   "input": 1654,
+   "output": 201
+  },
+  "cost": 0.01064
+ },
+ "prompt_sha1": "7f0506c1e5d5",
+ "judge": {
+  "facts": [
+   {
+    "fact": "sign the lease buyout authorization, form NW-LSE-1, and Northwind requests the dealer payoff quote",
+    "present": true
+   },
+   {
+    "fact": "Summit Auto Lease allows third-party buyouts",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBdQTMxRnvinzkWcPUfp",
+  "usage": {
+   "input": 752,
+   "output": 98
+  },
+  "cost": 0.00994
+ },
+ "cost": 0.02058
+}

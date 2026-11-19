@@ -1,0 +1,60 @@
+{
+ "qid": "v2s05",
+ "method": "M4",
+ "run": 3,
+ "retrieved": [
+  "leased_car__2022",
+  "lease_equity__2022",
+  "lessor_buyouts__2026",
+  "appointment_checklist__2026",
+  "payoff_letter__2026"
+ ],
+ "answer": "Summit Auto Lease, Crescent Motor Credit and Apex Lease Co pass lease equity to the customer. Note that since February 1, 2026, Apex adds a $350 third-party buyout fee to the buyout amount, which raises the buyout and so reduces any equity. By contrast, Bluewater Leasing applies the equity to the car the customer buys from Northwind, and Harbor Leasing and Ironwood Lease don't allow third-party buyouts at all.",
+ "cited_keys": [
+  "lease_equity__2022",
+  "lessor_buyouts__2026"
+ ],
+ "not_covered": false,
+ "items": [
+  "Summit Auto Lease",
+  "Crescent Motor Credit",
+  "Apex Lease Co"
+ ],
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBdgWVQoi1oyLFMm7Ayb",
+  "usage": {
+   "input": 1721,
+   "output": 477
+  },
+  "cost": 0.01642
+ },
+ "prompt_sha1": "1afd2a491ed5",
+ "judge": {
+  "facts": [
+   {
+    "fact": "Summit Auto Lease",
+    "present": true
+   },
+   {
+    "fact": "Crescent Motor Credit",
+    "present": true
+   },
+   {
+    "fact": "Apex Lease Co",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBdh7BEt2GkkcTGJFcTF",
+  "usage": {
+   "input": 724,
+   "output": 80
+  },
+  "cost": 0.00899
+ },
+ "cost": 0.02541
+}

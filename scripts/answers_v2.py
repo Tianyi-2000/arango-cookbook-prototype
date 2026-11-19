@@ -131,6 +131,23 @@ def per_question(gold: list[dict]) -> str:
     return "\n".join(L)
 
 
+def spotcheck(gold: list[dict], n: int = 5) -> str:
+    import random
+    rng = random.Random(18)
+    picks = rng.sample([(m, q) for m in RAG + list(AGENTS) for q in gold
+                        if cached(1, m, q["id"]).get("judge") and not cached(1, m, q["id"]).get("shared_from")], n)
+    L = ["# Judge spot-check, gold v2 (5 random judgements from run 1)", "",
+         "For each: does the judge's verdict match what the answer says? Mark agree / disagree.", ""]
+    for m, q in picks:
+        r = cached(1, m, q["id"])
+        L += [f"## {q['id']} · {m} · {q['type']}", f"**Question:** {q['question']}", "", f"**Answer:** {r['answer']}", ""]
+        if q["type"] == "structural":
+            L += [f"**Items:** {r['items']} → {item_scores(q, r['items'])}", ""]
+        L += ["**Judge:**"] + [f"- {'✅' if f['present'] else '❌'} {f['fact']}" for f in r["judge"]["facts"]]
+        L += ["", "Your call: agree / disagree", ""]
+    return "\n".join(L)
+
+
 def main(args) -> int:
     if args.dev_one:
         return dev_one()
@@ -144,6 +161,7 @@ def main(args) -> int:
         print(md)
         (DATA / "eval" / "scores" / "v2_answers.md").write_text(f"# Answer eval, gold v2\n\n{md}\n")
         (DATA / "eval" / "scores" / "v2_answers_per_question.md").write_text(per_question(gold) + "\n")
+        (DATA / "eval" / "scores" / "v2_judge_spotcheck.md").write_text(spotcheck(gold) + "\n")
         return 0
 
     arts = {a["_key"]: a for a in load_articles()}

@@ -1,0 +1,108 @@
+{
+ "qid": "v2s02",
+ "method": "M9",
+ "run": 2,
+ "retrieved": [],
+ "answer": "Seven current forms took effect on February 1, 2026, the date of the rewrite. Four of them are brand new, and the form records mark them \"New in 2026\": NW-DMG-1 (Damage disclosure), NW-LPA-1 (Lender payoff authorization, for loans only, since leases use NW-LSE-1), NW-MIL-1 (Deployed owner authorization) and NW-PLT-1 (Plate return receipt (California)). NW-EST-1 (Heir and estate affidavit) also started that day, though its record doesn't call it new. The other two replaced older forms: NW-ODO-2 (Odometer disclosure statement) replaced NW-ODO-1, and NW-POA-2 (Power of attorney (e-sign)) replaced the notarized NW-POA-1. An NW-POA-1 signed before February 1 was accepted until June 30, 2026.",
+ "cited_keys": [
+  "co_owners__2026",
+  "appointment_checklist__2026"
+ ],
+ "not_covered": false,
+ "items": [
+  "NW-DMG-1",
+  "NW-EST-1",
+  "NW-LPA-1",
+  "NW-MIL-1",
+  "NW-ODO-2",
+  "NW-PLT-1",
+  "NW-POA-2"
+ ],
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBddogvvoqEGtr7aVNcq",
+  "usage": {
+   "input": 8,
+   "output": 703,
+   "cache_write": 2949,
+   "cache_read": 6420
+  },
+  "cost": 0.03012
+ },
+ "agent_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBddogvvoqEGtr7aVNcq",
+  "turns": 3,
+  "tool_calls": 2,
+  "trace": [
+   {
+    "tool": "list_records",
+    "input": {
+     "kind": "form"
+    },
+    "error": false,
+    "result_chars": 3483,
+    "result_head": "[{\"_key\": \"NW-BUS-1\", \"accepted_until\": null, \"effective_from\": \"2022-01-01\", \"name\": \"Business signing authority letter\", \"note\": null, \"replaced_by\": null, \"retired_on\": null, \"side\": \"sell\", \"status\": \"current\"}, {\"_key\": \"NW-DMG-1\", \"accepted_until\": null, \"effective_from\": \"2026-02-01\", \"name\":"
+   },
+   {
+    "tool": "search_help_center",
+    "input": {
+     "query": "what's new in 2026 forms rewrite"
+    },
+    "error": false,
+    "result_chars": 3400,
+    "result_head": "[{\"key\": \"co_owners__2026\", \"title\": \"When more than one person owns the car\", \"text\": \"If two or more people are listed as owners, every owner has to sign the sale documents. The easiest way is for all owners to come to the appointment with their photo IDs. If an owner can't come, they can sign pow"
+   }
+  ],
+  "usage": {
+   "input": 8,
+   "output": 703,
+   "cache_write": 2949,
+   "cache_read": 6420
+  },
+  "cost": 0.03012
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "NW-POA-2",
+    "present": true
+   },
+   {
+    "fact": "NW-ODO-2",
+    "present": true
+   },
+   {
+    "fact": "NW-DMG-1",
+    "present": true
+   },
+   {
+    "fact": "NW-LPA-1",
+    "present": true
+   },
+   {
+    "fact": "NW-EST-1",
+    "present": true
+   },
+   {
+    "fact": "NW-MIL-1",
+    "present": true
+   },
+   {
+    "fact": "NW-PLT-1",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBde6q4uU8PXva3snxsR",
+  "usage": {
+   "input": 897,
+   "output": 151
+  },
+  "cost": 0.01322
+ },
+ "cost": 0.04334
+}

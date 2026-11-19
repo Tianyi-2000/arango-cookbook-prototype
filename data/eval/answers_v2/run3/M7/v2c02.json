@@ -1,0 +1,58 @@
+{
+ "qid": "v2c02",
+ "method": "M7",
+ "run": 3,
+ "retrieved": [
+  "lien_still_on_title__2022",
+  "buy_title_outside_lender__2022",
+  "buy_title_northwind_finance__2022",
+  "electronic_titles__2022",
+  "selling_with_loan__2022"
+ ],
+ "answer": "Texas uses electronic titles, so there's no paper title to bring, and your lender sends the lien release to the state electronically rather than as a paper document. Ask your bank to release the lien. If you can't get them to do it, you can sign our lien release request, form NW-LRL-1, and we'll contact the lender for you, though this can add 1 to 2 weeks. We can still make you an offer and book your appointment while you wait.",
+ "cited_keys": [
+  "lien_still_on_title__2022",
+  "electronic_titles__2022"
+ ],
+ "not_covered": false,
+ "items": [],
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBdePrFJawawZ16WPyXT",
+  "usage": {
+   "input": 1351,
+   "output": 497
+  },
+  "cost": 0.01534
+ },
+ "prompt_sha1": "6378cfefd939",
+ "judge": {
+  "facts": [
+   {
+    "fact": "Texas uses electronic titles, so the lender sends the lien release to the state electronically",
+    "present": true
+   },
+   {
+    "fact": "ask the lender for a lien release, or sign NW-LRL-1 so Northwind contacts the lender (this can add 1 to 2 weeks)",
+    "present": true
+   },
+   {
+    "fact": "you can still get an offer and book an appointment while you wait",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBdes5MKPFNuqC7J3G7q",
+  "usage": {
+   "input": 797,
+   "output": 146
+  },
+  "cost": 0.01222
+ },
+ "cost": 0.02756,
+ "shared_from": "M3",
+ "cost_own": 0.0
+}

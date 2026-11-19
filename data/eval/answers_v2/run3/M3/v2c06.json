@@ -1,0 +1,52 @@
+{
+ "qid": "v2c06",
+ "method": "M3",
+ "run": 3,
+ "retrieved": [
+  "odometer_problems__2022",
+  "appointment_checklist__2026",
+  "how_selling_works__2026",
+  "payoff_letter__2026",
+  "registration_expired__2022"
+ ],
+ "answer": "No, use form NW-ODO-2 instead. NW-ODO-2 replaced NW-ODO-1 on February 1, 2026, and it is the odometer disclosure statement to bring to your appraisal appointment. If your odometer is broken, was replaced, or shows the wrong mileage, tell us when you request an offer, and bring records such as service invoices that show the true mileage if you have them.",
+ "cited_keys": [
+  "appointment_checklist__2026",
+  "odometer_problems__2022"
+ ],
+ "not_covered": false,
+ "items": [],
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBdenJdBDqj1w5Yn271G",
+  "usage": {
+   "input": 1546,
+   "output": 181
+  },
+  "cost": 0.0098
+ },
+ "prompt_sha1": "bef49ff99f83",
+ "judge": {
+  "facts": [
+   {
+    "fact": "no: NW-ODO-1 was replaced on February 1, 2026",
+    "present": true
+   },
+   {
+    "fact": "use the odometer disclosure statement, form NW-ODO-2",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBdf2Y7pSsHtLbmqo5M7",
+  "usage": {
+   "input": 731,
+   "output": 86
+  },
+  "cost": 0.00929
+ },
+ "cost": 0.01909
+}

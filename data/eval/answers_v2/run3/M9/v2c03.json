@@ -1,0 +1,81 @@
+{
+ "qid": "v2c03",
+ "method": "M9",
+ "run": 3,
+ "retrieved": [],
+ "answer": "Yes, you can sell it at a North Carolina store. We buy cars registered in any state we serve, but you'll need to do two things first. In North Carolina, the registration must be current on the day of the sale, so you'll need to renew the expired Virginia registration before your appointment. A car registered in another state also needs an emissions certificate from a North Carolina inspection station before a North Carolina store can buy it. Bring the Virginia registration with you, and because the plates are from Virginia, take them off the car and keep them.",
+ "cited_keys": [
+  "registration_expired__2022",
+  "out_of_state__2026",
+  "license_plates__2026"
+ ],
+ "not_covered": false,
+ "items": [],
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBdkzx3g1kxYXmqX34F5",
+  "usage": {
+   "input": 8,
+   "output": 495,
+   "cache_write": 321,
+   "cache_read": 6905
+  },
+  "cost": 0.01292
+ },
+ "agent_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBdkzx3g1kxYXmqX34F5",
+  "turns": 3,
+  "tool_calls": 2,
+  "trace": [
+   {
+    "tool": "search_help_center",
+    "input": {
+     "query": "selling a car registered in another state expired registration"
+    },
+    "error": false,
+    "result_chars": 2890,
+    "result_head": "[{\"key\": \"registration_expired__2022\", \"title\": \"My registration is expired\", \"text\": \"You can still sell us a car with an expired registration, and it doesn't change the offer. Bring the expired registration card anyway. The exception is North Carolina: there, the registration must be current on th"
+   },
+   {
+    "tool": "read_article",
+    "input": {
+     "doc_id": "registration_expired"
+    },
+    "error": false,
+    "result_chars": 557,
+    "result_head": "{\"key\": \"registration_expired__2022\", \"title\": \"My registration is expired\", \"text\": \"You can still sell us a car with an expired registration, and it doesn't change the offer. Bring the expired registration card anyway. The exception is North Carolina: there, the registration must be current on the"
+   }
+  ],
+  "usage": {
+   "input": 8,
+   "output": 495,
+   "cache_write": 321,
+   "cache_read": 6905
+  },
+  "cost": 0.01292
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "renew the registration before the appointment, because in North Carolina it must be current on the day of the sale",
+    "present": true
+   },
+   {
+    "fact": "get an emissions certificate from a North Carolina inspection station",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBdmGzCdxSuJVpe7UJtN",
+  "usage": {
+   "input": 776,
+   "output": 90
+  },
+  "cost": 0.00981
+ },
+ "cost": 0.02273
+}

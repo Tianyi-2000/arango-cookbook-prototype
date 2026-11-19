@@ -1,0 +1,102 @@
+{
+ "qid": "v2c08",
+ "method": "M9",
+ "run": 2,
+ "retrieved": [],
+ "answer": "Texas rules apply. When a car is registered in a different state from the one you live in and the title is lost, the duplicate title rules of the state that issued the title are the ones that count. Your car is registered in Texas, so you need a duplicate title from Texas, not Georgia. Since your car is paid off, we can't complete the purchase until you have that duplicate. You can still get an offer and book an appointment while you wait. The help center does say that how long a duplicate takes depends on the state, but I couldn't find the Texas timing or steps, so please contact a store about that. Georgia's 2-to-3-week timeline is only for Georgia titles and doesn't apply to your car.",
+ "cited_keys": [
+  "out_of_state__2026",
+  "lost_title__2022"
+ ],
+ "not_covered": true,
+ "items": [],
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBddUKMe2AdqNCBwb9CH",
+  "usage": {
+   "input": 12,
+   "output": 624,
+   "cache_write": 2494,
+   "cache_read": 11834
+  },
+  "cost": 0.02737
+ },
+ "agent_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBddUKMe2AdqNCBwb9CH",
+  "turns": 5,
+  "tool_calls": 4,
+  "trace": [
+   {
+    "tool": "search_help_center",
+    "input": {
+     "query": "duplicate title lost title moved states registered in another state"
+    },
+    "error": false,
+    "result_chars": 2823,
+    "result_head": "[{\"key\": \"out_of_state__2026\", \"title\": \"Selling a car registered in another state\", \"text\": \"We buy cars registered in any state we serve, even if you now live in a different one. Bring the registration from the state that issued it. In North Carolina, a car registered in another state needs an emi"
+   },
+   {
+    "tool": "read_article",
+    "input": {
+     "doc_id": "duplicate_title_texas"
+    },
+    "error": true,
+    "result_chars": 80,
+    "result_head": "No article 'duplicate_title_texas' is in effect on 2026-11-01 for this customer."
+   },
+   {
+    "tool": "read_article",
+    "input": {
+     "doc_id": "lost_title"
+    },
+    "error": false,
+    "result_chars": 955,
+    "result_head": "{\"key\": \"lost_title__2022\", \"title\": \"Selling a paid-off car when the title is lost\", \"text\": \"If you own your car outright and the paper title is lost or damaged, you need a duplicate title from your state before we can complete the purchase. We cannot buy a car that is fully paid off without a tit"
+   },
+   {
+    "tool": "search_help_center",
+    "input": {
+     "query": "Texas duplicate title how long"
+    },
+    "error": false,
+    "result_chars": 2741,
+    "result_head": "[{\"key\": \"lost_title__2022\", \"title\": \"Selling a paid-off car when the title is lost\", \"text\": \"If you own your car outright and the paper title is lost or damaged, you need a duplicate title from your state before we can complete the purchase. We cannot buy a car that is fully paid off without a ti"
+   }
+  ],
+  "usage": {
+   "input": 12,
+   "output": 624,
+   "cache_write": 2494,
+   "cache_read": 11834
+  },
+  "cost": 0.02737
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "the duplicate rules of the state that issued the title (Texas) apply",
+    "present": true
+   },
+   {
+    "fact": "Texas titles are electronic, so for the sale you usually don't need a printed duplicate",
+    "present": false
+   },
+   {
+    "fact": "a printed Texas duplicate takes 5 to 7 business days online",
+    "present": false
+   }
+  ],
+  "declines_uncovered": false
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBddq1ZimyEnqv5nVFZh",
+  "usage": {
+   "input": 862,
+   "output": 125
+  },
+  "cost": 0.0119
+ },
+ "cost": 0.03927
+}

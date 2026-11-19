@@ -1,0 +1,113 @@
+{
+ "qid": "v2c04",
+ "method": "M9",
+ "run": 2,
+ "retrieved": [],
+ "answer": "Your ex has to sign the sale documents too, the same as any co-owner. The easiest way is for them to come to the appointment with their photo ID. If they can't come, they can sign power of attorney form NW-POA-2 electronically with no notary, except in Georgia, where it must be notarized. You don't need their signature if your divorce decree awards the car to you; just bring a certified copy of the decree. If the names on the title are joined by 'or' instead of 'and,' only one owner needs to sign. For the name mismatch, bring the document that shows your name change, such as your divorce decree or a court order, and sign the name change affidavit, form NW-NMC-1, at the appointment.",
+ "cited_keys": [
+  "divorce_ex_on_title__2022",
+  "co_owners__2026",
+  "title_name_mismatch__2022"
+ ],
+ "not_covered": false,
+ "items": [],
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBdct83mGnkFL9ADee78",
+  "usage": {
+   "input": 10,
+   "output": 613,
+   "cache_write": 3038,
+   "cache_read": 10930
+  },
+  "cost": 0.02968
+ },
+ "agent_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBdct83mGnkFL9ADee78",
+  "turns": 4,
+  "tool_calls": 5,
+  "trace": [
+   {
+    "tool": "search_help_center",
+    "input": {
+     "query": "selling car co-owner ex-spouse on title divorce"
+    },
+    "error": false,
+    "result_chars": 2743,
+    "result_head": "[{\"key\": \"divorce_ex_on_title__2022\", \"title\": \"My ex is still on the title\", \"text\": \"If your ex-spouse is still listed on the title, they have to sign too, the same as any co-owner (When more than one person owns the car). The exception: if your divorce decree awards the car to you, bring a certif"
+   },
+   {
+    "tool": "search_help_center",
+    "input": {
+     "query": "name change ID doesn't match title"
+    },
+    "error": false,
+    "result_chars": 2449,
+    "result_head": "[{\"key\": \"title_name_mismatch__2022\", \"title\": \"The name on the title doesn't match my ID\", \"text\": \"If the name on the title doesn't match your photo ID, for example after marriage or a legal name change, bring the document that shows the change: a marriage certificate, divorce decree or court orde"
+   },
+   {
+    "tool": "lookup",
+    "input": {
+     "kind": "form",
+     "name": "NW-NMC-1"
+    },
+    "error": false,
+    "result_chars": 360,
+    "result_head": "{\"_key\": \"NW-NMC-1\", \"accepted_until\": null, \"effective_from\": \"2022-01-01\", \"name\": \"Name change affidavit\", \"note\": null, \"replaced_by\": null, \"retired_on\": null, \"side\": \"sell\", \"status\": \"current\", \"replaces_form\": [], \"replaced_by_form\": [], \"current_articles\": [{\"key\": \"title_name_mismatch__20"
+   },
+   {
+    "tool": "read_article",
+    "input": {
+     "doc_id": "divorce_ex_on_title"
+    },
+    "error": false,
+    "result_chars": 576,
+    "result_head": "{\"key\": \"divorce_ex_on_title__2022\", \"title\": \"My ex is still on the title\", \"text\": \"If your ex-spouse is still listed on the title, they have to sign too, the same as any co-owner (When more than one person owns the car). The exception: if your divorce decree awards the car to you, bring a certifi"
+   },
+   {
+    "tool": "read_article",
+    "input": {
+     "doc_id": "co_owners"
+    },
+    "error": false,
+    "result_chars": 1315,
+    "result_head": "{\"key\": \"co_owners__2026\", \"title\": \"When more than one person owns the car\", \"text\": \"If two or more people are listed as owners, every owner has to sign the sale documents. The easiest way is for all owners to come to the appointment with their photo IDs. If an owner can't come, they can sign powe"
+   }
+  ],
+  "usage": {
+   "input": 10,
+   "output": 613,
+   "cache_write": 3038,
+   "cache_read": 10930
+  },
+  "cost": 0.02968
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "your ex has to sign too, unless the divorce decree awards the car to you (then bring a certified copy of the decree)",
+    "present": true
+   },
+   {
+    "fact": "bring the document that shows the name change, such as the divorce decree",
+    "present": true
+   },
+   {
+    "fact": "sign the name change affidavit, form NW-NMC-1",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBdd7oaeoCi24y1hKQqa",
+  "usage": {
+   "input": 859,
+   "output": 128
+  },
+  "cost": 0.01199
+ },
+ "cost": 0.04167
+}

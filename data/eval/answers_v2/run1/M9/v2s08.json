@@ -1,0 +1,87 @@
+{
+ "qid": "v2s08",
+ "method": "M9",
+ "run": 1,
+ "retrieved": [],
+ "answer": "Of the states we serve, three use paper titles: California, Georgia and North Carolina. The other two, Texas and Virginia, use electronic titles. With an electronic title there's no paper title for the customer to bring, because we transfer the title electronically at the appointment. The state records and the help center agree on this.",
+ "cited_keys": [
+  "electronic_titles__2022"
+ ],
+ "not_covered": false,
+ "items": [
+  "California",
+  "Georgia",
+  "North Carolina"
+ ],
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBdVTndeT3ePek1wJRrQ",
+  "usage": {
+   "input": 8,
+   "output": 307,
+   "cache_write": 3210,
+   "cache_read": 3947
+  },
+  "cost": 0.02301
+ },
+ "agent_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBdVTndeT3ePek1wJRrQ",
+  "turns": 3,
+  "tool_calls": 2,
+  "trace": [
+   {
+    "tool": "list_records",
+    "input": {
+     "kind": "state"
+    },
+    "error": false,
+    "result_chars": 1679,
+    "result_head": "[{\"_key\": \"california\", \"duplicate_title_time\": \"same day at main offices, 2-3 weeks by mail\", \"home_pickup\": true, \"mobile_id_accepted\": false, \"name\": \"California\", \"out_of_state_emissions_certificate\": false, \"plates\": \"return_within_10_days\", \"poa_notary_required\": false, \"registration_must_be_c"
+   },
+   {
+    "tool": "search_help_center",
+    "input": {
+     "query": "paper title vs electronic title states"
+    },
+    "error": false,
+    "result_chars": 2325,
+    "result_head": "[{\"key\": \"electronic_titles__2022\", \"title\": \"States with electronic titles\", \"text\": \"Virginia and Texas use electronic titles: the title is a record at the state, not a paper document. When you sell a car with an electronic title, there's no paper title to bring; we transfer the title electronical"
+   }
+  ],
+  "usage": {
+   "input": 8,
+   "output": 307,
+   "cache_write": 3210,
+   "cache_read": 3947
+  },
+  "cost": 0.02301
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "North Carolina",
+    "present": true
+   },
+   {
+    "fact": "Georgia",
+    "present": true
+   },
+   {
+    "fact": "California",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBdVdMMJbvpi3JwZTqwg",
+  "usage": {
+   "input": 640,
+   "output": 63
+  },
+  "cost": 0.00764
+ },
+ "cost": 0.03065
+}

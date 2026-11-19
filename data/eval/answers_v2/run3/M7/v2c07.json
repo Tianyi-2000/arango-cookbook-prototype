@@ -1,0 +1,55 @@
+{
+ "qid": "v2c07",
+ "method": "M7",
+ "run": 3,
+ "retrieved": [
+  "co_owners__2026",
+  "selling_for_someone_else__2022",
+  "inherited_car__2026",
+  "military_deployed__2026",
+  "appointment_checklist__2026"
+ ],
+ "answer": "No. Since February 1, 2026, the power of attorney is form NW-POA-2, which your dad can sign electronically with no notary; only Georgia still requires notarization. The older notarized form NW-POA-1 is no longer accepted, because the grace period for it ended June 30, 2026. Bring the signed NW-POA-2, your own photo ID (in Virginia, a state mobile ID on your phone is accepted), and the car's documents.",
+ "cited_keys": [
+  "co_owners__2026",
+  "selling_for_someone_else__2022",
+  "appointment_checklist__2026"
+ ],
+ "not_covered": false,
+ "items": [],
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBdg1Jz3f3LE6pywQrSW",
+  "usage": {
+   "input": 1654,
+   "output": 375
+  },
+  "cost": 0.01412
+ },
+ "prompt_sha1": "3e7c4a86102c",
+ "judge": {
+  "facts": [
+   {
+    "fact": "no notary is needed in Virginia (only Georgia requires one)",
+    "present": true
+   },
+   {
+    "fact": "he can sign power of attorney form NW-POA-2 electronically",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBdgMwiacDe2o1X2vYfQ",
+  "usage": {
+   "input": 746,
+   "output": 84
+  },
+  "cost": 0.00933
+ },
+ "cost": 0.02345,
+ "shared_from": "M4",
+ "cost_own": 0.0
+}

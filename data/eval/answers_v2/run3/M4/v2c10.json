@@ -1,0 +1,56 @@
+{
+ "qid": "v2c10",
+ "method": "M4",
+ "run": 3,
+ "retrieved": [
+  "offer_scams__2026",
+  "epayoff_network__2026",
+  "negative_equity__2026",
+  "lender_overpayment_refund__2022",
+  "payoff_letter__2026"
+ ],
+ "answer": "No, that text is not legitimate. Northwind never asks for wire transfers, and the only payment you ever make to us is for negative equity (owing more on your loan than our offer), which you pay only in person at the appointment, by cashier's check or debit card. Don't respond to the text, and report it through the Help Center. Real offers come only from northwind-auto.example and the Northwind app.",
+ "cited_keys": [
+  "offer_scams__2026",
+  "negative_equity__2026"
+ ],
+ "not_covered": false,
+ "items": [],
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBdg65yNdgqGzMGSbhaD",
+  "usage": {
+   "input": 1533,
+   "output": 170
+  },
+  "cost": 0.00953
+ },
+ "prompt_sha1": "b6b487e40504",
+ "judge": {
+  "facts": [
+   {
+    "fact": "no: Northwind never asks for wire transfers",
+    "present": true
+   },
+   {
+    "fact": "the difference (negative equity) is paid only in person at the appointment",
+    "present": true
+   },
+   {
+    "fact": "by cashier's check or debit card",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBdgHhDxvcZWP8NnPB6W",
+  "usage": {
+   "input": 737,
+   "output": 98
+  },
+  "cost": 0.00982
+ },
+ "cost": 0.01935
+}

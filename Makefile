@@ -1,6 +1,12 @@
 PY := .venv/bin/python
 
-.PHONY: freeze-v2 eval-v2 eval-v2-dev answers-v2 answers-v2-run answers-v2-report up down venv verify check test-checks review tickets-plan tickets-one tickets load test-retrieve freeze eval eval-reserve fresh answers answers-run answers-report extract check-semantic nb
+.PHONY: setup demo freeze-v2 eval-v2 eval-v2-dev answers-v2 answers-v2-run answers-v2-report up down venv verify check test-checks review tickets-plan tickets-one tickets load test-retrieve freeze eval eval-reserve fresh answers answers-run answers-report extract check-semantic nb
+setup:   ## quickstart 1/3: start ArangoDB, create .venv, wait for the database, check its features
+	$(MAKE) up venv
+	$(PY) scripts/wait_db.py
+	$(MAKE) verify
+demo:    ## quickstart 3/3 (after make load): data checks, every retrieval eval, the freshness demo, answer tables from the cache; no API key
+	$(MAKE) check eval eval-v2 fresh answers-report answers-v2-report
 up:      ## start ArangoDB on localhost:8535
 	docker compose up -d
 down:
@@ -55,6 +61,6 @@ extract:  ## dry run of the semantic extraction (Claude); --one / --run via scri
 	$(PY) scripts/extract_semantic.py
 check-semantic:  ## score extracted concepts against the hand-written list for 10 versions
 	$(PY) scripts/check_semantic.py
-nb:      ## write the five chapter notebooks and run them in place (outputs saved; needs make up)
+nb:      ## write the six chapter notebooks and run them in place (outputs saved; needs make up)
 	$(PY) scripts/make_notebooks.py
-	cd notebooks && JUPYTER_PATH="$(CURDIR)/.venv/share/jupyter" ../.venv/bin/jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=600 01_setup.ipynb 02_data_model.ipynb 03_freshness.ipynb 04_retrieval.ipynb 05_evaluation.ipynb
+	cd notebooks && JUPYTER_PATH="$(CURDIR)/.venv/share/jupyter" ../.venv/bin/jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=600 01_setup.ipynb 02_data_model.ipynb 03_freshness.ipynb 04_retrieval.ipynb 05_evaluation.ipynb 06_graph_questions.ipynb

@@ -1,0 +1,53 @@
+{
+ "qid": "v2c01",
+ "method": "M8n",
+ "run": 1,
+ "retrieved": [
+  "lender_overpayment_refund__2022",
+  "buy_title_northwind_finance__2022",
+  "buy_title_outside_lender__2022",
+  "keep_paying_until_confirmed__2022",
+  "selling_with_loan__2022"
+ ],
+ "answer": "When you sell us a car you're still paying off, we confirm what you owe at the appointment and pay your lender off directly from your offer, but the help center doesn't say how long it takes for the loan to show as paid off, so please contact a store for timing. No, don't skip your next payment: keep making your regular loan payments until your lender confirms the loan is paid off, because a missed payment in the meantime can be reported as late on your credit history. If a payment goes through after the payoff, the extra amount belongs to you and the lender refunds it, usually within 2 to 4 weeks after the loan is closed.",
+ "cited_keys": [
+  "selling_with_loan__2022",
+  "keep_paying_until_confirmed__2022",
+  "lender_overpayment_refund__2022"
+ ],
+ "not_covered": true,
+ "items": [],
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBdR4bGZQ2Mf19RtqTcu",
+  "usage": {
+   "input": 1289,
+   "output": 445
+  },
+  "cost": 0.01406
+ },
+ "prompt_sha1": "590768b4dd9a",
+ "judge": {
+  "facts": [
+   {
+    "fact": "the payoff goes to the lender the same day, because Northwind Auto Finance is in the e-payoff network",
+    "present": false
+   },
+   {
+    "fact": "keep making payments until the lender confirms the loan is paid off",
+    "present": true
+   }
+  ],
+  "declines_uncovered": false
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBdRR9mqnqfW52W98oLv",
+  "usage": {
+   "input": 804,
+   "output": 95
+  },
+  "cost": 0.01023
+ },
+ "cost": 0.02429
+}

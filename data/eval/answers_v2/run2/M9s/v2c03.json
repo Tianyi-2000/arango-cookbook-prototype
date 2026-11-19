@@ -1,0 +1,72 @@
+{
+ "qid": "v2c03",
+ "method": "M9s",
+ "run": 2,
+ "retrieved": [],
+ "answer": "Yes, you can sell it at a North Carolina store, but you'll need to do two things first. North Carolina stores require the registration to be current on the day of the sale, so you'll need to renew your expired Virginia registration before your appointment. Because the car is registered in another state, you'll also need an emissions certificate from a North Carolina inspection station before we can buy it there. Bring the Virginia registration, and take the Virginia plates off the car and keep them.",
+ "cited_keys": [
+  "registration_expired__2022",
+  "out_of_state__2026",
+  "license_plates__2026"
+ ],
+ "not_covered": false,
+ "items": [],
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBda1LYy3kosvSY41JrA",
+  "usage": {
+   "input": 6,
+   "output": 405,
+   "cache_write": 981,
+   "cache_read": 2136
+  },
+  "cost": 0.01346
+ },
+ "agent_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBda1LYy3kosvSY41JrA",
+  "turns": 2,
+  "tool_calls": 1,
+  "trace": [
+   {
+    "tool": "search_help_center",
+    "input": {
+     "query": "sell car registered in another state expired registration"
+    },
+    "error": false,
+    "result_chars": 2890,
+    "result_head": "[{\"key\": \"registration_expired__2022\", \"title\": \"My registration is expired\", \"text\": \"You can still sell us a car with an expired registration, and it doesn't change the offer. Bring the expired registration card anyway. The exception is North Carolina: there, the registration must be current on th"
+   }
+  ],
+  "usage": {
+   "input": 6,
+   "output": 405,
+   "cache_write": 981,
+   "cache_read": 2136
+  },
+  "cost": 0.01346
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "renew the registration before the appointment, because in North Carolina it must be current on the day of the sale",
+    "present": true
+   },
+   {
+    "fact": "get an emissions certificate from a North Carolina inspection station",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBdaJJmMiv4NmnrYvyoU",
+  "usage": {
+   "input": 757,
+   "output": 90
+  },
+  "cost": 0.00966
+ },
+ "cost": 0.02312
+}

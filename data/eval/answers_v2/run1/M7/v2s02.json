@@ -1,0 +1,73 @@
+{
+ "qid": "v2s02",
+ "method": "M7",
+ "run": 1,
+ "retrieved": [
+  "duplicate_title_north_carolina__2022",
+  "branded_title__2026",
+  "duplicate_title_california__2022",
+  "electronic_titles__2022",
+  "lost_title__2022"
+ ],
+ "answer": "The help center doesn't cover this: none of the provided articles mention a February 1, 2026 rewrite or name any forms, new or otherwise. The only 2026 article, \"Salvage and rebuilt titles,\" describes a policy change (we now buy cars with rebuilt titles at a reduced offer) but doesn't introduce any forms. Please check with a store or the team that maintains the forms for an accurate list.",
+ "cited_keys": [
+  "branded_title__2026"
+ ],
+ "not_covered": true,
+ "items": [],
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBdNqeq6rYXvnc3Zk8Xh",
+  "usage": {
+   "input": 1349,
+   "output": 230
+  },
+  "cost": 0.01
+ },
+ "prompt_sha1": "440edbbfe93b",
+ "judge": {
+  "facts": [
+   {
+    "fact": "NW-POA-2",
+    "present": false
+   },
+   {
+    "fact": "NW-ODO-2",
+    "present": false
+   },
+   {
+    "fact": "NW-DMG-1",
+    "present": false
+   },
+   {
+    "fact": "NW-LPA-1",
+    "present": false
+   },
+   {
+    "fact": "NW-EST-1",
+    "present": false
+   },
+   {
+    "fact": "NW-MIL-1",
+    "present": false
+   },
+   {
+    "fact": "NW-PLT-1",
+    "present": false
+   }
+  ],
+  "declines_uncovered": false
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBdP6a1ihN3eX2Yqya5y",
+  "usage": {
+   "input": 735,
+   "output": 151
+  },
+  "cost": 0.01192
+ },
+ "cost": 0.02192,
+ "shared_from": "M4",
+ "cost_own": 0.0
+}

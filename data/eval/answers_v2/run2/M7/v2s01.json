@@ -1,0 +1,53 @@
+{
+ "qid": "v2s01",
+ "method": "M7",
+ "run": 2,
+ "retrieved": [
+  "lender_overpayment_refund__2022",
+  "buy_title_northwind_finance__2022",
+  "getting_paid__2026",
+  "keep_paying_until_confirmed__2022",
+  "offer_scams__2026"
+ ],
+ "answer": "The help center doesn't cover which forms Northwind retired in 2026 or what replaced them, since none of the articles mention retired or replacement forms. The only related 2026 change in the articles is a payment method, not a form: Northwind no longer mails checks and now pays sellers by bank draft or by direct deposit (arriving in 1 to 3 business days). For details on retired forms, please contact a store.",
+ "cited_keys": [
+  "getting_paid__2026"
+ ],
+ "not_covered": true,
+ "items": [],
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBdXgC4ehCzxM2j3sPiT",
+  "usage": {
+   "input": 1349,
+   "output": 168
+  },
+  "cost": 0.00876
+ },
+ "prompt_sha1": "868a7a18cad9",
+ "judge": {
+  "facts": [
+   {
+    "fact": "NW-POA-1 was replaced by NW-POA-2",
+    "present": false
+   },
+   {
+    "fact": "NW-ODO-1 was replaced by NW-ODO-2",
+    "present": false
+   }
+  ],
+  "declines_uncovered": false
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBdXx9FtBuhYpGY3kX6t",
+  "usage": {
+   "input": 712,
+   "output": 84
+  },
+  "cost": 0.00906
+ },
+ "cost": 0.01782,
+ "shared_from": "M4",
+ "cost_own": 0.0
+}

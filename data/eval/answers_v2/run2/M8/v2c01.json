@@ -1,0 +1,53 @@
+{
+ "qid": "v2c01",
+ "method": "M8",
+ "run": 2,
+ "retrieved": [
+  "lender_overpayment_refund__2022",
+  "buy_title_northwind_finance__2022",
+  "buy_title_outside_lender__2022",
+  "epayoff_network__2026",
+  "keep_paying_until_confirmed__2022"
+ ],
+ "answer": "Because Northwind Auto Finance is in our e-payoff network, you don't need a payoff letter; we confirm the payoff amount directly with the lender the same day, at your appointment, using your loan account number. However, the help center doesn't say how long it takes for the loan to actually be paid off and closed after the sale, so please contact a store for that timing. Don't skip your next payment: keep making regular payments until your lender confirms the loan is paid off, because a missed payment can be reported as late on your credit history. If a payment goes through after the payoff, your lender refunds the extra amount directly to you, usually within 2 to 4 weeks after the loan is closed.",
+ "cited_keys": [
+  "epayoff_network__2026",
+  "keep_paying_until_confirmed__2022",
+  "lender_overpayment_refund__2022"
+ ],
+ "not_covered": true,
+ "items": [],
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBdY52ks9Mef3Yen1dWM",
+  "usage": {
+   "input": 1320,
+   "output": 486
+  },
+  "cost": 0.015
+ },
+ "prompt_sha1": "7a5b42756d5d",
+ "judge": {
+  "facts": [
+   {
+    "fact": "the payoff goes to the lender the same day, because Northwind Auto Finance is in the e-payoff network",
+    "present": false
+   },
+   {
+    "fact": "keep making payments until the lender confirms the loan is paid off",
+    "present": true
+   }
+  ],
+  "declines_uncovered": false
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBdYTe3GuZPtCQR1NvXw",
+  "usage": {
+   "input": 827,
+   "output": 95
+  },
+  "cost": 0.01042
+ },
+ "cost": 0.02542
+}

@@ -10,7 +10,11 @@ How we measure the pipeline, how to run the checks, and when the agent has to st
 | 3+ | `make test-retrieve` | every method runs on every reserve question, uses the vector index (also with a state set), and M3/M4 return no stale or wrong-state version |
 | 3+ | `make eval` | retrieval scores are produced on the frozen gold set and none dropped without an intended change (refuses to run if `gold.json` doesn't match `FROZEN`) |
 | 3+ | `make fresh` | the changed policy is returned by M3/M4 right after the transaction |
-| 4+ | `make answers` → `make answers-run` → `make answers-report` | answer scores are produced; spend stays under the $6 cap |
+| 4+ | `make answers` → `make answers-run` → `make answers-report` | answer scores are produced; spend stays under the $50 ledger cap |
+| 5 | `make check` (gold v2 part) | gold v2 ids are unique, its articles exist and are in effect, and every structural answer equals the one recomputed from the records |
+| 5 | `make test-retrieve` | also M7–M8n, on the reserve + v2 dev questions: vector index used, nothing stale or for another state, M8's pool contains M8n's, same result twice |
+| 5 | `make eval-v2` | gold v2 retrieval scores and pool recall per source (refuses unless `gold_v2.json` matches `FROZEN_v2`) |
+| 5 | `make answers-v2` → `make answers-v2-run` → `make answers-v2-report` | gold v2 answer scores for M3, M4, M7, M8, M8n, M9s, M9 × 3 runs; spend within the ledger cap |
 
 ### What `make check` covers (stage 2)
 - every `_key` is unique, and each article `_key` is `<doc_id>__<version>`
@@ -66,6 +70,23 @@ Customers often don't know the right term, or write something that can mean more
 
 ### Human-style wording
 Most draft questions are cleaner than real messages. Before the freeze, some get rewritten with typos, broken grammar and run-ons (tag `messy_input`). This mostly hurts BM25 (misspelled tokens don't match) and is where fuzzy matching (`LEVENSHTEIN_MATCH`, n-gram analyzers) earns its place.
+
+## Gold v2 (stage 5, D-031)
+`data/eval/gold_v2.json`: **20 test questions**, frozen in `data/eval/FROZEN_v2` before any method ran on them; `data/eval/gold_v2_dev.json`: 8 dev questions for debugging. Readable version: `data/eval/gold_v2_review.md`.
+
+| Type | n | What it tests | Example |
+|---|---|---|---|
+| chain | 12 | an article reached through a link, a shared form, a form's replacement, or a lender or leasing company the question names | "My loan is through Northwind Auto Finance. How soon is it paid off?" (the lender's name → the e-payoff network article) |
+| structural | 8 | a list: forms, lenders, leasing companies, states or articles. 4 need records or many articles; 4 are controls that one article answers | "Which help-center articles in effect today still tell customers to use a retired form?" |
+
+- Structural questions have `answer_items` (keys), and `make check` recomputes each from the records, so the gold can't disagree with the data.
+- Two chain questions hit a known KB conflict (`trap_keys`: a current article still naming a retired form); one needs a rule from a state other than the customer's, which the state filter removes (v2c08).
+- Same author as the KB, and written to need a graph: the scores show how each method handles this kind of question, not how often customers ask it.
+
+### v4.0 metrics (D-035)
+- Retrieval: as below, by type (chain, structural), plus **pool recall** for M8/M8n: the share of gold articles each source (BM25, vector, graph, name) puts into the pool, and **CE\*** (the cross-encoder over every article in effect): if CE\* beats M8, the pool is the limit.
+- Answers: facts found (Fable 5.2 judge, all 20), and for the 8 list questions **item recall** (expected items in the answer's `items`), **item precision** (items that are right; an item the name dictionary can't map counts as wrong; a form item maps to the first code it contains) and **exact list**. Also: cites the KB-conflict article, says "not covered", tool calls and $ per answer.
+- v1's 30 questions get M7–M8n too, reported as a seen set (the v4.0 rules were written after reading v1 results).
 
 ## Retrieval metrics (stage 3+, D-026)
 Computed over the top-k article versions a method returns, per question, then averaged by question type, over all answerable questions (27) and over the multi_hop + checklist slice (12). Every cell says how many questions it covers.

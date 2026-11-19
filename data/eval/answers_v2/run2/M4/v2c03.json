@@ -1,0 +1,53 @@
+{
+ "qid": "v2c03",
+ "method": "M4",
+ "run": 2,
+ "retrieved": [
+  "registration_expired__2022",
+  "out_of_state__2026",
+  "license_plates__2026",
+  "lost_title__2022",
+  "duplicate_title_north_carolina__2022"
+ ],
+ "answer": "Yes, Northwind buys cars registered in any state it serves, even if you now live in a different one, so bring your Virginia registration card. Because the car is registered outside North Carolina, you'll also need an emissions certificate from a North Carolina inspection station before a North Carolina store can buy it. An expired registration normally doesn't stop a sale or change the offer, but in North Carolina the registration must be current on the day of the sale. The help center doesn't say clearly whether that rule covers a Virginia registration sold at a North Carolina store, so please contact the store, or renew before your appointment to be safe. Since plates follow the state that issued them, remove your Virginia plates and keep them.",
+ "cited_keys": [
+  "out_of_state__2026",
+  "registration_expired__2022",
+  "license_plates__2026"
+ ],
+ "not_covered": true,
+ "items": [],
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBdX8BEXkgdXGhVHPBNc",
+  "usage": {
+   "input": 1456,
+   "output": 818
+  },
+  "cost": 0.02218
+ },
+ "prompt_sha1": "77e167a5fe1f",
+ "judge": {
+  "facts": [
+   {
+    "fact": "renew the registration before the appointment, because in North Carolina it must be current on the day of the sale",
+    "present": false
+   },
+   {
+    "fact": "get an emissions certificate from a North Carolina inspection station",
+    "present": true
+   }
+  ],
+  "declines_uncovered": false
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBdXnowCv1FNqB6o81WC",
+  "usage": {
+   "input": 833,
+   "output": 90
+  },
+  "cost": 0.01026
+ },
+ "cost": 0.03244
+}

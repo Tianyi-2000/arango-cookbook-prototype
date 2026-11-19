@@ -1,0 +1,85 @@
+{
+ "qid": "v2c04",
+ "method": "M9s",
+ "run": 3,
+ "retrieved": [],
+ "answer": "Because your ex is still on the title, they have to sign the sale documents like any co-owner. If they can't come to the appointment, they can sign power of attorney form NW-POA-2, which can be signed electronically with no notary (in Georgia it must be notarized). If the title joins your names with 'or' instead of 'and', only one owner has to sign. If your divorce decree awards the car to you, bring a certified copy of it and your ex doesn't need to sign at all. Because your name changed, also bring the divorce decree or court order that shows the change and your photo ID, and you'll sign the name change affidavit, form NW-NMC-1, at the appointment.",
+ "cited_keys": [
+  "divorce_ex_on_title__2022",
+  "title_name_mismatch__2022",
+  "co_owners__2026"
+ ],
+ "not_covered": false,
+ "items": [],
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBdifXwMZvjRjdwQDyx9",
+  "usage": {
+   "input": 6,
+   "output": 479,
+   "cache_write": 0,
+   "cache_read": 4132
+  },
+  "cost": 0.01043
+ },
+ "agent_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBdifXwMZvjRjdwQDyx9",
+  "turns": 2,
+  "tool_calls": 2,
+  "trace": [
+   {
+    "tool": "search_help_center",
+    "input": {
+     "query": "selling car co-owner on title divorce"
+    },
+    "error": false,
+    "result_chars": 3058,
+    "result_head": "[{\"key\": \"divorce_ex_on_title__2022\", \"title\": \"My ex is still on the title\", \"text\": \"If your ex-spouse is still listed on the title, they have to sign too, the same as any co-owner (When more than one person owns the car). The exception: if your divorce decree awards the car to you, bring a certif"
+   },
+   {
+    "tool": "search_help_center",
+    "input": {
+     "query": "name change ID doesn't match title"
+    },
+    "error": false,
+    "result_chars": 2449,
+    "result_head": "[{\"key\": \"title_name_mismatch__2022\", \"title\": \"The name on the title doesn't match my ID\", \"text\": \"If the name on the title doesn't match your photo ID, for example after marriage or a legal name change, bring the document that shows the change: a marriage certificate, divorce decree or court orde"
+   }
+  ],
+  "usage": {
+   "input": 6,
+   "output": 479,
+   "cache_write": 0,
+   "cache_read": 4132
+  },
+  "cost": 0.01043
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "your ex has to sign too, unless the divorce decree awards the car to you (then bring a certified copy of the decree)",
+    "present": true
+   },
+   {
+    "fact": "bring the document that shows the name change, such as the divorce decree",
+    "present": true
+   },
+   {
+    "fact": "sign the name change affidavit, form NW-NMC-1",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBdj2AfLLdhK4wUHBXr6",
+  "usage": {
+   "input": 850,
+   "output": 128
+  },
+  "cost": 0.01192
+ },
+ "cost": 0.02235
+}

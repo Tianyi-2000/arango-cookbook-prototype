@@ -1,0 +1,112 @@
+{
+ "qid": "v2c08",
+ "method": "M9",
+ "run": 1,
+ "retrieved": [],
+ "answer": "Texas rules apply. Your car is still registered in Texas, and when the title is lost, the duplicate rules of the state that issued it apply, not Georgia's. Northwind's records show a Texas duplicate takes 5-7 business days if you apply online. Texas uses electronic titles. Because the car is paid off, you'll need the duplicate before we can complete the purchase, but you can still get an offer and book an appointment while you wait.",
+ "cited_keys": [
+  "out_of_state__2026",
+  "lost_title__2022"
+ ],
+ "not_covered": false,
+ "items": [],
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBdUPac262RaijqP2xML",
+  "usage": {
+   "input": 12,
+   "output": 667,
+   "cache_write": 4550,
+   "cache_read": 12155
+  },
+  "cost": 0.03857
+ },
+ "agent_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBdUPac262RaijqP2xML",
+  "turns": 5,
+  "tool_calls": 5,
+  "trace": [
+   {
+    "tool": "search_help_center",
+    "input": {
+     "query": "duplicate title lost title moved states"
+    },
+    "error": false,
+    "result_chars": 2909,
+    "result_head": "[{\"key\": \"lost_title__2022\", \"title\": \"Selling a paid-off car when the title is lost\", \"text\": \"If you own your car outright and the paper title is lost or damaged, you need a duplicate title from your state before we can complete the purchase. We cannot buy a car that is fully paid off without a ti"
+   },
+   {
+    "tool": "search_help_center",
+    "input": {
+     "query": "Getting a duplicate title in Texas"
+    },
+    "error": false,
+    "result_chars": 2764,
+    "result_head": "[{\"key\": \"lost_title__2022\", \"title\": \"Selling a paid-off car when the title is lost\", \"text\": \"If you own your car outright and the paper title is lost or damaged, you need a duplicate title from your state before we can complete the purchase. We cannot buy a car that is fully paid off without a ti"
+   },
+   {
+    "tool": "read_article",
+    "input": {
+     "doc_id": "lost_title"
+    },
+    "error": false,
+    "result_chars": 955,
+    "result_head": "{\"key\": \"lost_title__2022\", \"title\": \"Selling a paid-off car when the title is lost\", \"text\": \"If you own your car outright and the paper title is lost or damaged, you need a duplicate title from your state before we can complete the purchase. We cannot buy a car that is fully paid off without a tit"
+   },
+   {
+    "tool": "read_article",
+    "input": {
+     "doc_id": "duplicate_title_texas"
+    },
+    "error": true,
+    "result_chars": 80,
+    "result_head": "No article 'duplicate_title_texas' is in effect on 2026-11-01 for this customer."
+   },
+   {
+    "tool": "lookup",
+    "input": {
+     "kind": "state",
+     "name": "Texas"
+    },
+    "error": false,
+    "result_chars": 562,
+    "result_head": "{\"_key\": \"texas\", \"duplicate_title_time\": \"5-7 business days (online)\", \"home_pickup\": false, \"mobile_id_accepted\": false, \"name\": \"Texas\", \"out_of_state_emissions_certificate\": false, \"plates\": \"keep\", \"poa_notary_required\": false, \"registration_must_be_current\": false, \"title_system\": \"electronic\""
+   }
+  ],
+  "usage": {
+   "input": 12,
+   "output": 667,
+   "cache_write": 4550,
+   "cache_read": 12155
+  },
+  "cost": 0.03857
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "the duplicate rules of the state that issued the title (Texas) apply",
+    "present": true
+   },
+   {
+    "fact": "Texas titles are electronic, so for the sale you usually don't need a printed duplicate",
+    "present": false
+   },
+   {
+    "fact": "a printed Texas duplicate takes 5 to 7 business days online",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBdUjUvop5Kurqjj7vTS",
+  "usage": {
+   "input": 789,
+   "output": 125
+  },
+  "cost": 0.01131
+ },
+ "cost": 0.04988
+}

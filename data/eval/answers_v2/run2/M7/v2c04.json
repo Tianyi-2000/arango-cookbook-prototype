@@ -1,0 +1,59 @@
+{
+ "qid": "v2c04",
+ "method": "M7",
+ "run": 2,
+ "retrieved": [
+  "divorce_ex_on_title__2022",
+  "title_name_mismatch__2022",
+  "co_owners__2026",
+  "lost_title__2022",
+  "out_of_state__2026"
+ ],
+ "answer": "If your divorce decree awards the car to you, bring a certified copy of the decree and your ex's signature isn't needed; otherwise your ex has to sign, the same as any co-owner. An owner who can't come to the appointment can sign power of attorney form NW-POA-2 electronically with no notary, except in Georgia, where it must be notarized. For the name mismatch, bring the document that shows your name change, such as the divorce decree or a court order. You'll also sign the name change affidavit, form NW-NMC-1, at the appointment.",
+ "cited_keys": [
+  "divorce_ex_on_title__2022",
+  "title_name_mismatch__2022",
+  "co_owners__2026"
+ ],
+ "not_covered": false,
+ "items": [],
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBdX8VaM7S47zvM4iskr",
+  "usage": {
+   "input": 1565,
+   "output": 387
+  },
+  "cost": 0.014
+ },
+ "prompt_sha1": "9930bd26d1b4",
+ "judge": {
+  "facts": [
+   {
+    "fact": "your ex has to sign too, unless the divorce decree awards the car to you (then bring a certified copy of the decree)",
+    "present": true
+   },
+   {
+    "fact": "bring the document that shows the name change, such as the divorce decree",
+    "present": true
+   },
+   {
+    "fact": "sign the name change affidavit, form NW-NMC-1",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBdXWf5fEMzDxusm3cXR",
+  "usage": {
+   "input": 814,
+   "output": 128
+  },
+  "cost": 0.01163
+ },
+ "cost": 0.02563,
+ "shared_from": "M4",
+ "cost_own": 0.0
+}
