@@ -91,6 +91,7 @@ make answers         # dry run with a cost estimate; make answers-run to call th
 
 ## Honest limits
 - The data and the questions come from the same author, and the multi-hop questions were written so a second article is needed: the results show how the mechanism behaves, not real-world accuracy.
+- **The filter is given the right date and state.** Each gold question carries the date whose rules apply (`as_of`) and the customer's state, and M3–M6 use them as they are. That is why stale@5 is exactly 0: it holds by construction when the version dates are correct and the date is known. A real assistant has to get the state from the customer's account and work out the date from the message ("back in December 2025…"); that step can fail and isn't measured here.
 - 30 questions is small: a difference of one or two questions is noise.
 - The semantic layer's name merging is rule-based; synonyms such as "lender" and "lienholder" stay separate.
 - Answers are judged by an LLM (a different model from the one answering); a human spot-check is in `data/eval/scores/judge_spotcheck.md`.

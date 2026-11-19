@@ -114,6 +114,7 @@ M2 and M4 each give their top 5 (key, title, text; no dates) to `claude-opus-5-5
 - Answer scores: `data/eval/scores/answers.md` (`make answers-report`).
 
 ## Honest limits (will go into the README)
+- M3–M6 get `as_of` and `state` from the gold set, so stale@5 = 0 holds by construction. Inferring the date and state from a real message is not built or measured (a later step).
 - The data and most of the questions come from the same author, so the results show how the mechanism works, not real-world accuracy.
 - 8 questions per type is small; differences of one or two questions are noise.
 - The semantic graph is scored against a small hand-labelled sample.
