@@ -1,0 +1,53 @@
+{
+ "qid": "q21",
+ "method": "M3",
+ "run": 2,
+ "retrieved": [
+  "getting_paid__2026",
+  "home_pickup__2026",
+  "lender_overpayment_refund__2022",
+  "epayoff_network__2026",
+  "payoff_letter__2026"
+ ],
+ "prompt_sha1": "c0efbce7f84b",
+ "answer": "Pinewood Federal Credit Union is in our e-payoff network, so we confirm the payoff with them electronically at your appointment and send the payoff the same day. You won't need a payoff letter, just your loan account number. You receive whatever is left after the loan payoff, minus the $99 home pickup fee, by bank draft or direct deposit (direct deposit arrives in 1 to 3 business days). Keep making your loan payments until Pinewood confirms the payoff, and if they receive an extra payment, they refund it directly to you.",
+ "cited_keys": [
+  "getting_paid__2026",
+  "epayoff_network__2026",
+  "home_pickup__2026",
+  "lender_overpayment_refund__2022"
+ ],
+ "not_covered": false,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQpdLsdaWJVDDAV9kkR",
+  "usage": {
+   "input": 1460,
+   "output": 240
+  },
+  "cost": 0.01064
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "same day",
+    "present": true
+   },
+   {
+    "fact": "$99",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQps8b9QJpcjG7e6XrL",
+  "usage": {
+   "input": 740,
+   "output": 46
+  },
+  "cost": 0.00776
+ },
+ "cost": 0.0184
+}

@@ -1,0 +1,50 @@
+{
+ "qid": "q19",
+ "method": "M1",
+ "run": 2,
+ "retrieved": [
+  "divorce_ex_on_title__2022",
+  "offer_validity__2022",
+  "offer_validity__2026",
+  "title_name_mismatch__2022",
+  "lien_still_on_title__2022"
+ ],
+ "prompt_sha1": "e02fe567789f",
+ "answer": "Sorry, the help center doesn't explain how to get a loan payoff number or whether Northwind Auto provides one, so please contact a store directly for help with your Harbor payoff. If your loan is already paid off but Harbor is still listed as lienholder on the title, ask Harbor for a lien release letter. If you can't get one, you can sign form NW-LRL-1 and we'll contact the lender for you, which can add 1 to 2 weeks.",
+ "cited_keys": [
+  "lien_still_on_title__2022"
+ ],
+ "not_covered": true,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQm9HaiwQdSVY4eoABW",
+  "usage": {
+   "input": 1302,
+   "output": 382
+  },
+  "cost": 0.01285
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "payoff letter",
+    "present": false
+   },
+   {
+    "fact": "NW-LPA-1",
+    "present": false
+   }
+  ],
+  "declines_uncovered": false
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQmUWynj4qbWesdEi8G",
+  "usage": {
+   "input": 698,
+   "output": 55
+  },
+  "cost": 0.00778
+ },
+ "cost": 0.02063
+}

@@ -1,0 +1,48 @@
+{
+ "qid": "q36",
+ "method": "M2",
+ "run": 1,
+ "retrieved": [
+  "home_pickup__2026",
+  "home_pickup__2022",
+  "non_running_cars__2026",
+  "how_selling_works__2026",
+  "walk_in_quotes__2022"
+ ],
+ "prompt_sha1": "15e5b281b214",
+ "answer": "No. Northwind's home pickup service isn't available in Texas, so you'll need to book your appraisal appointment at a store instead. Where home pickup is offered, it costs $99, and cars that don't run can't use it. If your car doesn't run, select stores will tow it to the store at no charge, and your offer page shows which stores near you offer towing.",
+ "cited_keys": [
+  "home_pickup__2026",
+  "how_selling_works__2026",
+  "non_running_cars__2026"
+ ],
+ "not_covered": false,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQhXeNjCPWz3PuqL2TX",
+  "usage": {
+   "input": 1290,
+   "output": 165
+  },
+  "cost": 0.00846
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "not available in Texas",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQhiwXQdtCksiNyhk23",
+  "usage": {
+   "input": 651,
+   "output": 37
+  },
+  "cost": 0.00669
+ },
+ "cost": 0.01515
+}

@@ -1,0 +1,52 @@
+{
+ "qid": "q18",
+ "method": "M3",
+ "run": 2,
+ "retrieved": [
+  "lease_equity__2022",
+  "lessor_buyouts__2026",
+  "leased_car__2022",
+  "lease_vs_turn_in__2022",
+  "negative_equity__2026"
+ ],
+ "prompt_sha1": "5a0a72f9326e",
+ "answer": "Yes. Crescent Motor Credit passes lease equity to you, and lease equity is the difference when our offer is higher than your lease buyout amount. Crescent has allowed third-party buyouts since February 1, 2026, so we can buy out your lease. To get started, either ask Crescent for a dealer payoff quote or sign form NW-LSE-1 so we can request it for you, then bring the quote to your appointment.",
+ "cited_keys": [
+  "lease_equity__2022",
+  "lessor_buyouts__2026",
+  "leased_car__2022"
+ ],
+ "not_covered": false,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQpaZCGVnpMCpmJtgoV",
+  "usage": {
+   "input": 1451,
+   "output": 191
+  },
+  "cost": 0.00962
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "yes",
+    "present": true
+   },
+   {
+    "fact": "since 2026",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQq4SEr5sUHTckjHzLJ",
+  "usage": {
+   "input": 691,
+   "output": 48
+  },
+  "cost": 0.00745
+ },
+ "cost": 0.01707
+}

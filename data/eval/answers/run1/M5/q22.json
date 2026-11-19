@@ -1,0 +1,52 @@
+{
+ "qid": "q22",
+ "method": "M5",
+ "run": 1,
+ "retrieved": [
+  "duplicate_title_north_carolina__2022",
+  "registration_expired__2022",
+  "lost_title__2022",
+  "buy_title_northwind_finance__2022",
+  "selling_with_loan__2022"
+ ],
+ "prompt_sha1": "d9a3e9f52944",
+ "answer": "Offers last a limited time, so if yours expired while you waited for your North Carolina duplicate title, you may need to get a new offer. The help center doesn't say whether the new offer will match your original price or what else you'd need to redo, so please contact a store for those details. We can complete the purchase once the duplicate arrives. In North Carolina your registration must also be current on the day of the sale, so renew it before your appointment if needed.",
+ "cited_keys": [
+  "duplicate_title_north_carolina__2022",
+  "registration_expired__2022"
+ ],
+ "not_covered": true,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQiNzkPdh5VzJe4c8KQ",
+  "usage": {
+   "input": 1275,
+   "output": 360
+  },
+  "cost": 0.0123
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "new offer",
+    "present": true
+   },
+   {
+    "fact": "higher or lower",
+    "present": false
+   }
+  ],
+  "declines_uncovered": false
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQijBCjUN3GmJYfoCsS",
+  "usage": {
+   "input": 701,
+   "output": 50
+  },
+  "cost": 0.00761
+ },
+ "cost": 0.0,
+ "shared_from": "M3"
+}

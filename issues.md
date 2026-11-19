@@ -141,6 +141,13 @@ Problems we hit and how we fixed them. Each entry: symptom → root cause → fi
 - **Verified:** against the snapshot, every question has the same score sequence and the same articles above the tied group at the cut; only the order inside tied groups changed. `make test-retrieve` now runs M4–M6 twice and fails if the lists differ.
 - **Lesson:** a ranking with ties isn't reproducible until the tie-break is explicit. Snapshot outputs before a refactor and compare after.
 
+### I-022 · Notebooks ran on a kernel that no longer exists
+- **Symptom:** `jupyter nbconvert --execute` failed with `FileNotFoundError: …/anaconda3/bin/python`.
+- **Root cause:** a user-level kernel named `python3` (`~/Library/Jupyter/kernels/python3`) points at a removed Anaconda install, and Jupyter looks in the user folder before the virtualenv's own kernels.
+- **Fix:** `make nb` sets `JUPYTER_PATH` to `.venv/share/jupyter`, so the project's own `python3` kernel is found first. Nothing outside the repo was changed.
+- **Verified:** chapter 01 runs and its output is saved in the notebook.
+- **Lesson:** a fresh-clone test must include the notebooks; a kernel name says nothing about which Python it starts.
+
 ---
 
 ## Checked and fine

@@ -1,0 +1,50 @@
+{
+ "qid": "q29",
+ "method": "M5",
+ "run": 1,
+ "retrieved": [
+  "epayoff_network__2026",
+  "appointment_checklist__2026",
+  "buy_title_outside_lender__2022",
+  "electronic_titles__2022",
+  "getting_paid__2026"
+ ],
+ "prompt_sha1": "33672d6931a2",
+ "answer": "Not yet. Granite Bank joins our e-payoff network on March 15, 2026, so it won't be part of the network for an appointment next week. For any lender outside the network, bring a payoff letter or sign form NW-LPA-1 so we can request one for you.",
+ "cited_keys": [
+  "epayoff_network__2026"
+ ],
+ "not_covered": false,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQkbcLk6jFAsSemPhBE",
+  "usage": {
+   "input": 1405,
+   "output": 119
+  },
+  "cost": 0.008
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "not yet",
+    "present": true
+   },
+   {
+    "fact": "March 15",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQkjni5fQzUJiiuwbAM",
+  "usage": {
+   "input": 633,
+   "output": 48
+  },
+  "cost": 0.00698
+ },
+ "cost": 0.01498
+}

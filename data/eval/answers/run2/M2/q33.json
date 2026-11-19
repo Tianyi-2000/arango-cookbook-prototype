@@ -1,0 +1,51 @@
+{
+ "qid": "q33",
+ "method": "M2",
+ "run": 2,
+ "retrieved": [
+  "co_owners__2026",
+  "military_deployed__2026",
+  "selling_for_someone_else__2022",
+  "inherited_car__2026",
+  "co_owners__2022"
+ ],
+ "prompt_sha1": "b55499d1017a",
+ "answer": "No. Because your brother is on active military deployment, he can sign the deployed owner authorization, form NW-MIL-1, instead of a notarized power of attorney, and it is accepted in Georgia. He can sign it electronically and attach a copy of his deployment orders. Other powers of attorney in Georgia, including NW-POA-2, would still need to be notarized, and whoever brings the car needs their own photo ID.",
+ "cited_keys": [
+  "military_deployed__2026",
+  "co_owners__2026"
+ ],
+ "not_covered": false,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQoWiVTPXTg3hYmUqBK",
+  "usage": {
+   "input": 1453,
+   "output": 177
+  },
+  "cost": 0.00935
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "no",
+    "present": true
+   },
+   {
+    "fact": "NW-MIL-1",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQoioWMkVdEGucjZz1j",
+  "usage": {
+   "input": 708,
+   "output": 51
+  },
+  "cost": 0.0077
+ },
+ "cost": 0.01705
+}

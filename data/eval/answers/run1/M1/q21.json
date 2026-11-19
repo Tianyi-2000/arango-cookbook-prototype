@@ -1,0 +1,51 @@
+{
+ "qid": "q21",
+ "method": "M1",
+ "run": 1,
+ "retrieved": [
+  "getting_paid__2026",
+  "home_pickup__2026",
+  "getting_paid__2022",
+  "selling_with_loan__2022",
+  "home_pickup__2022"
+ ],
+ "prompt_sha1": "7061b9d23a85",
+ "answer": "We send the payoff to your lender within 2 business days, or the same day if the lender is in our e-payoff network. The help center doesn't say whether Pinewood Federal is in that network, so please contact a store to confirm. From your offer, we deduct the loan payoff and the $99 home pickup fee, and you receive what's left by bank draft or direct deposit. Keep making your loan payments until Pinewood confirms the payoff.",
+ "cited_keys": [
+  "getting_paid__2026",
+  "home_pickup__2026"
+ ],
+ "not_covered": true,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQesokUQhao9yNRSMSe",
+  "usage": {
+   "input": 1345,
+   "output": 296
+  },
+  "cost": 0.0113
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "same day",
+    "present": false
+   },
+   {
+    "fact": "$99",
+    "present": true
+   }
+  ],
+  "declines_uncovered": false
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQf9nRqVfom9UULhSGF",
+  "usage": {
+   "input": 705,
+   "output": 424
+  },
+  "cost": 0.0226
+ },
+ "cost": 0.0339
+}

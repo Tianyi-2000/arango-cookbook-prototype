@@ -4,6 +4,8 @@ Every script records each call's real `usage` here and checks the total before t
 $50 cap holds across scripts and reruns. Prices are $ per million tokens; thinking tokens are output.
 """
 import json
+import os
+import threading
 from datetime import datetime
 
 from cookbook.load import DATA
@@ -16,6 +18,7 @@ PRICES = {  # (input, output) $ per million tokens
     "claude-sonnet-5-5": (2.00, 10.00),
     "claude-haiku-5-5": (0.10, 0.50),
 }
+_LOCK = threading.RLock()  # answers run in threads: reads and writes of the ledger take turns
 WORST = (8.00, 40.00)  # unknown model (e.g. a fallback): count it at the highest price
 
 
@@ -33,7 +36,8 @@ def _rows() -> list[dict]:
 
 
 def total() -> float:
-    return round(sum(r["cost"] for r in _rows()), 4)
+    with _LOCK:
+        return round(sum(r["cost"] for r in _rows()), 4)
 
 
 def can_spend(estimate: float) -> bool:
@@ -41,11 +45,18 @@ def can_spend(estimate: float) -> bool:
 
 
 def record(script: str, model: str, input_tokens: int, output_tokens: int, note: str = "") -> float:
+    with _LOCK:
+        return _record(script, model, input_tokens, output_tokens, note)
+
+
+def _record(script, model, input_tokens, output_tokens, note) -> float:
     c = round(cost(model, input_tokens, output_tokens), 6)
     rows = _rows() + [{"at": datetime.now().isoformat(timespec="seconds"), "script": script, "model": model,
                        "input": input_tokens, "output": output_tokens, "cost": c, "note": note}]
-    LEDGER.write_text(json.dumps({"cap": CAP, "note": "API spend from 2026-11-18 on (D-029); tickets before that cost $3.10 (D-021)",
+    tmp = LEDGER.with_suffix(".tmp")
+    tmp.write_text(json.dumps({"cap": CAP, "note": "API spend from 2026-11-18 on (D-029); tickets before that cost $3.10 (D-021)",
                                   "total": round(sum(r["cost"] for r in rows), 4), "calls": rows}, indent=1) + "\n")
+    os.replace(tmp, LEDGER)  # atomic: a reader never sees half a file
     return c
 
 

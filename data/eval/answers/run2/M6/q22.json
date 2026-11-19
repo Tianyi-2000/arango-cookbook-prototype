@@ -1,0 +1,52 @@
+{
+ "qid": "q22",
+ "method": "M6",
+ "run": 2,
+ "retrieved": [
+  "duplicate_title_north_carolina__2022",
+  "registration_expired__2022",
+  "lost_title__2022",
+  "offer_validity__2026",
+  "buy_title_northwind_finance__2022"
+ ],
+ "prompt_sha1": "28c569bdeb28",
+ "answer": "You don't need to start the whole process over; you can simply request a new offer at any time. The new offer will reflect current market prices, so it may be higher or lower than your original one. North Carolina duplicate titles take 4 to 6 weeks to arrive, and we can't complete the purchase until yours does. Your appraisal appointment needs to be on or before the new offer's expiration date (5 days or 250 additional miles, whichever comes first), so it may help to request the new offer once the duplicate arrives.",
+ "cited_keys": [
+  "offer_validity__2026",
+  "duplicate_title_north_carolina__2022"
+ ],
+ "not_covered": false,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQr9uBWZvm8pq3pjAp5",
+  "usage": {
+   "input": 1278,
+   "output": 209
+  },
+  "cost": 0.00929
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "new offer",
+    "present": true
+   },
+   {
+    "fact": "higher or lower",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQrPH6Jn2oZRPg83N4q",
+  "usage": {
+   "input": 726,
+   "output": 50
+  },
+  "cost": 0.00781
+ },
+ "cost": 0.0,
+ "shared_from": "M4"
+}

@@ -1,0 +1,52 @@
+{
+ "qid": "q29",
+ "method": "M1",
+ "run": 3,
+ "retrieved": [
+  "epayoff_network__2026",
+  "appointment_checklist__2026",
+  "payoff_letter__2026",
+  "registration_expired__2022",
+  "getting_paid__2026"
+ ],
+ "prompt_sha1": "36895b6654ad",
+ "answer": "Not yet: Granite Bank joins our e-payoff network on March 15, 2026, so it won't be in the network for an appointment next week. For any lender outside the network, bring a payoff letter to your appointment or sign form NW-LPA-1 so we can request one for you. If you use NW-LPA-1, allow 2 business days for the letter. If you get the letter yourself, it must show your account number, the payoff amount, the date it is good through, and where to send payment; ask for a 15-day payoff amount.",
+ "cited_keys": [
+  "epayoff_network__2026",
+  "payoff_letter__2026",
+  "appointment_checklist__2026"
+ ],
+ "not_covered": false,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQt5Leo3sTb1Ft3axvm",
+  "usage": {
+   "input": 1500,
+   "output": 294
+  },
+  "cost": 0.01188
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "not yet",
+    "present": true
+   },
+   {
+    "fact": "March 15",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQtMbCrAJm5WP54ynhu",
+  "usage": {
+   "input": 713,
+   "output": 48
+  },
+  "cost": 0.00762
+ },
+ "cost": 0.0195
+}

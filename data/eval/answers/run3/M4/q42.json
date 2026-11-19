@@ -1,0 +1,52 @@
+{
+ "qid": "q42",
+ "method": "M4",
+ "run": 3,
+ "retrieved": [
+  "home_pickup__2026",
+  "appointment_checklist__2026",
+  "getting_paid__2026",
+  "how_selling_works__2026",
+  "non_running_cars__2026"
+ ],
+ "prompt_sha1": "c61f1fab4cba",
+ "answer": "Home pickup isn't available in Texas, so you'd need to book an appraisal appointment at a store instead. For that appointment, bring a physical photo ID for every owner on the title, the current registration, all keys and remotes, the title if you have it, and the odometer disclosure statement (form NW-ODO-2). Because the car is leased, also bring your dealer payoff quote. Plan for the appointment to take about an hour.",
+ "cited_keys": [
+  "home_pickup__2026",
+  "appointment_checklist__2026",
+  "how_selling_works__2026"
+ ],
+ "not_covered": false,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQyBCkqzdkx7YuUEuiq",
+  "usage": {
+   "input": 1459,
+   "output": 402
+  },
+  "cost": 0.01388
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "no home pickup in Texas",
+    "present": true
+   },
+   {
+    "fact": "dealer payoff quote",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQyWz941uBbioebfP5K",
+  "usage": {
+   "input": 703,
+   "output": 59
+  },
+  "cost": 0.00798
+ },
+ "cost": 0.02186
+}

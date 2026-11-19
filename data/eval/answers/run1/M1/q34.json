@@ -1,0 +1,55 @@
+{
+ "qid": "q34",
+ "method": "M1",
+ "run": 1,
+ "retrieved": [
+  "license_plates__2026",
+  "out_of_state__2026",
+  "license_plates__2022",
+  "how_selling_works__2022",
+  "out_of_state__2022"
+ ],
+ "prompt_sha1": "b230fad3e709",
+ "answer": "What you do with the plates depends on the state that issued them, not the state you live in now. Because your car has California plates, you should remove them and return them to the California motor vehicle agency within 10 days. We'll give you the plate return receipt, form NW-PLT-1, which shows the car was sold. Also note that to sell a California-registered car at a North Carolina store, you'll need your California registration and an emissions certificate from a North Carolina inspection station.",
+ "cited_keys": [
+  "license_plates__2026",
+  "out_of_state__2026"
+ ],
+ "not_covered": false,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQfcS42N1nZzZ7KDLfP",
+  "usage": {
+   "input": 1317,
+   "output": 183
+  },
+  "cost": 0.00893
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "return",
+    "present": true
+   },
+   {
+    "fact": "10 days",
+    "present": true
+   },
+   {
+    "fact": "NW-PLT-1",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQfopAQdn9GM3daZX7m",
+  "usage": {
+   "input": 711,
+   "output": 65
+  },
+  "cost": 0.00829
+ },
+ "cost": 0.01722
+}

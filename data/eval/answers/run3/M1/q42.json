@@ -1,0 +1,51 @@
+{
+ "qid": "q42",
+ "method": "M1",
+ "run": 3,
+ "retrieved": [
+  "home_pickup__2026",
+  "selling_without_buying__2022",
+  "home_pickup__2022",
+  "how_selling_works__2022",
+  "trade_in_vs_sell__2026"
+ ],
+ "prompt_sha1": "88fd8afbaced",
+ "answer": "Home pickup isn't available in Texas, so you'd need to sell your car another way, such as booking an appraisal appointment or walking into any store for a quote on the spot. The 2026 home pickup article only mentions an \"appointment checklist\" and doesn't list what's on it. The help center doesn't cover selling a leased car or what you'd need for one, so please contact a store for those details.",
+ "cited_keys": [
+  "home_pickup__2026",
+  "how_selling_works__2022"
+ ],
+ "not_covered": true,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQtUxxA9vMUL8RSGYen",
+  "usage": {
+   "input": 1311,
+   "output": 168
+  },
+  "cost": 0.0086
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "no home pickup in Texas",
+    "present": true
+   },
+   {
+    "fact": "dealer payoff quote",
+    "present": false
+   }
+  ],
+  "declines_uncovered": false
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQtfumLFpeofQQVMrJx",
+  "usage": {
+   "input": 689,
+   "output": 59
+  },
+  "cost": 0.00787
+ },
+ "cost": 0.01647
+}

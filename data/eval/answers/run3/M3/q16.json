@@ -1,0 +1,51 @@
+{
+ "qid": "q16",
+ "method": "M3",
+ "run": 3,
+ "retrieved": [
+  "toll_tags_personal_data__2022",
+  "license_plates__2026",
+  "cancel_insurance__2022",
+  "selling_without_buying__2022",
+  "returns__2026"
+ ],
+ "prompt_sha1": "b442f390224d",
+ "answer": "Yes. Before you sell, unpair your phone from the car's system, clear any garage door codes, and remove toll tags and parking stickers. If the car has a connected-car app, remove the car from your account so the next owner can't see your data. To delete the personal data Northwind holds about you, see the Deleting your Northwind account article.",
+ "cited_keys": [
+  "toll_tags_personal_data__2022",
+  "cancel_insurance__2022"
+ ],
+ "not_covered": false,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQvv6rcjRR98nG7GAQv",
+  "usage": {
+   "input": 1148,
+   "output": 154
+  },
+  "cost": 0.00767
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "unpair your phone",
+    "present": true
+   },
+   {
+    "fact": "garage",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQw78PUQxA8tcuAXTjb",
+  "usage": {
+   "input": 654,
+   "output": 50
+  },
+  "cost": 0.00723
+ },
+ "cost": 0.0149
+}

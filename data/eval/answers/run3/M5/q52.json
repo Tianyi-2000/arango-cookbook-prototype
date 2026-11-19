@@ -1,0 +1,42 @@
+{
+ "qid": "q52",
+ "method": "M5",
+ "run": 3,
+ "retrieved": [
+  "lender_overpayment_refund__2022",
+  "how_selling_works__2026",
+  "buy_title_northwind_finance__2022",
+  "buy_title_outside_lender__2022",
+  "home_pickup__2026"
+ ],
+ "prompt_sha1": "a0d15c716c7e",
+ "answer": "The help center doesn't cover the interest rates offered by Northwind Auto Finance, so I can't say what rate you would get. The articles only explain that when you finance with Northwind Auto Finance, we hold the title as the lienholder until the loan is paid in full. After your final payment, we release the lien and mail you the title within 10 business days. For rate details, please contact a Northwind store.",
+ "cited_keys": [
+  "buy_title_northwind_finance__2022"
+ ],
+ "not_covered": true,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQxCBm92nUCoFZZHsaE",
+  "usage": {
+   "input": 1239,
+   "output": 163
+  },
+  "cost": 0.00822
+ },
+ "judge": {
+  "facts": [],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQxNztYS5LCeFXrQgcz",
+  "usage": {
+   "input": 682,
+   "output": 20
+  },
+  "cost": 0.00626
+ },
+ "cost": 0.0,
+ "shared_from": "M3"
+}

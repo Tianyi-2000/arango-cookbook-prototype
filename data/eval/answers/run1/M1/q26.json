@@ -1,0 +1,54 @@
+{
+ "qid": "q26",
+ "method": "M1",
+ "run": 1,
+ "retrieved": [
+  "divorce_ex_on_title__2022",
+  "co_owners__2026",
+  "military_deployed__2026",
+  "title_name_mismatch__2022",
+  "selling_for_someone_else__2022"
+ ],
+ "prompt_sha1": "afb762752b99",
+ "answer": "Unfortunately, no. An NW-POA-1 signed before February 1, 2026 is only accepted until June 30, 2026, so it won't be valid for a July 10 appointment. Your mom can sign the newer form, NW-POA-2, which can be signed electronically with no notary. The exception is Georgia, where a power of attorney, including NW-POA-2, must still be notarized.",
+ "cited_keys": [
+  "co_owners__2026"
+ ],
+ "not_covered": false,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQfGK5aXeTmHzmCVnZq",
+  "usage": {
+   "input": 1381,
+   "output": 312
+  },
+  "cost": 0.01176
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "no",
+    "present": true
+   },
+   {
+    "fact": "June 30",
+    "present": true
+   },
+   {
+    "fact": "NW-POA-2",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQfYZeQapZ3uqVcXHfH",
+  "usage": {
+   "input": 694,
+   "output": 64
+  },
+  "cost": 0.00811
+ },
+ "cost": 0.01987
+}

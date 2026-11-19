@@ -1,0 +1,48 @@
+{
+ "qid": "q31",
+ "method": "M1",
+ "run": 1,
+ "retrieved": [
+  "duplicate_title_north_carolina__2022",
+  "offer_validity__2022",
+  "offer_validity__2026",
+  "selling_for_someone_else__2022",
+  "leased_car__2022"
+ ],
+ "prompt_sha1": "fc90ddc76d50",
+ "answer": "I'm sorry, but the help center doesn't cover payment methods, so I can't confirm whether we can mail you a check. Please contact a Northwind Auto store, and they can tell you how payment works for your sale.",
+ "cited_keys": [],
+ "not_covered": true,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQfTVYoCyfiEJivqpoo",
+  "usage": {
+   "input": 1327,
+   "output": 93
+  },
+  "cost": 0.00717
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "no",
+    "present": false
+   },
+   {
+    "fact": "direct deposit",
+    "present": false
+   }
+  ],
+  "declines_uncovered": false
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQfd519spEZZpoKSN3Z",
+  "usage": {
+   "input": 615,
+   "output": 48
+  },
+  "cost": 0.00684
+ },
+ "cost": 0.01401
+}

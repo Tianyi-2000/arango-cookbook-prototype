@@ -1,0 +1,41 @@
+{
+ "qid": "q49",
+ "method": "M4",
+ "run": 2,
+ "retrieved": [
+  "selling_without_buying__2022",
+  "out_of_state__2026",
+  "registration_expired__2022",
+  "buy_title_outside_lender__2022",
+  "trade_in_vs_sell__2026"
+ ],
+ "prompt_sha1": "2c113cfe5135",
+ "answer": "The help center doesn't say whether we can buy a car registered in Canada. It only says we buy cars registered in any state we serve, even if you now live in a different one, and you'd bring the registration from the state that issued it. Please contact a store to ask about a Canadian-registered car.",
+ "cited_keys": [
+  "out_of_state__2026"
+ ],
+ "not_covered": true,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQrmgUyZNpaQHVuHPw4",
+  "usage": {
+   "input": 1202,
+   "output": 121
+  },
+  "cost": 0.00723
+ },
+ "judge": {
+  "facts": [],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQrwFwgNNK4rLxXkjsw",
+  "usage": {
+   "input": 636,
+   "output": 20
+  },
+  "cost": 0.00589
+ },
+ "cost": 0.01312
+}

@@ -1,0 +1,53 @@
+{
+ "qid": "q23",
+ "method": "M3",
+ "run": 3,
+ "retrieved": [
+  "selling_with_loan__2022",
+  "buy_title_outside_lender__2022",
+  "lost_title__2022",
+  "lien_still_on_title__2022",
+  "payoff_letter__2026"
+ ],
+ "prompt_sha1": "001823f17640",
+ "answer": "Since you financed through Bayline Credit Union, your lender holds the title (or electronic title record) until the loan is paid off, so you don't need the title in hand to sell the car to us. A payoff letter isn't strictly required, but getting one before your appointment speeds things up; it should show your account number, a 15-day payoff amount, the good-through date, and where to send payment. You can get it from Bayline yourself, or sign form NW-LPA-1 and we'll request it for you (allow 2 business days). If your lender is in our e-payoff network, you don't need a letter at all, but the help center doesn't say whether Bayline is in that network, so please contact a store to confirm.",
+ "cited_keys": [
+  "buy_title_outside_lender__2022",
+  "selling_with_loan__2022",
+  "payoff_letter__2026"
+ ],
+ "not_covered": true,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQuRAXxsLs5gsmxeYfN",
+  "usage": {
+   "input": 1396,
+   "output": 489
+  },
+  "cost": 0.01536
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "Bayline holds the title",
+    "present": true
+   },
+   {
+    "fact": "no payoff letter",
+    "present": false
+   }
+  ],
+  "declines_uncovered": false
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQuqN5ZHQQvud9bK99b",
+  "usage": {
+   "input": 803,
+   "output": 56
+  },
+  "cost": 0.00866
+ },
+ "cost": 0.0,
+ "shared_from": "M2"
+}

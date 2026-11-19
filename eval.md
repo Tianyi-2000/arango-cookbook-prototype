@@ -98,8 +98,20 @@ M2 and M4 each give their top 5 (key, title, text; no dates) to `claude-opus-5-5
 2. It compares every method × type × headline metric with the previous run.
 3. If a score dropped and the change log in `progress.md` doesn't name a change meant to cause it, **stop and wait for Tianyi**. Record it in `progress.md`, and in `issues.md` if it turns out to be a bug.
 
-## Current scores
-None on the gold set yet: `make eval` runs after the freeze. A debugging run on the reserve questions (2026-11-17) is in progress.md; it is not a result.
+## Current scores (frozen 30, run 2026-11-18; full tables in `data/eval/scores/latest.md`)
+| method | Recall@5 (27) | Recall@10 (27) | Recall@5 multi_hop + checklist (12) | All-gold@5 (12) | MRR@10 | stale@5 | trap@5 |
+|---|---|---|---|---|---|---|---|
+| M1 BM25 | 0.63 | 0.75 | 0.50 | 0.25 | 0.69 | 0.78 | 0.26 |
+| M2 Vector | 0.77 | 0.84 | 0.66 | 0.42 | 0.73 | 0.78 | 0.41 |
+| M3 Vector + filter | 0.80 | 0.88 | 0.71 | 0.50 | 0.79 | 0.00 | 0.37 |
+| M4 Graph: structural | 0.80 | 0.88 | 0.72 | 0.50 | 0.79 | 0.00 | 0.37 |
+| M5 Graph: semantic | 0.80 | 0.88 | 0.71 | 0.50 | 0.79 | 0.00 | 0.33 |
+| M6 Graph: both layers | 0.80 | 0.88 | 0.72 | 0.50 | 0.79 | 0.00 | 0.37 |
+
+- The filter (M3) removes every outdated version from the top 5 (78% of questions → 0%).
+- Graph expansion is about neutral at K=5: M4/M6 gain q22 (multi_hop, through a structural link) and lose q42 (checklist: neighbours of a strong first hit push a gold article out). M5 changes no question.
+- Semantic layer quality (`make check-semantic`): concept recall 0.88, agreement 0.72 on 10 hand-listed versions.
+- Answer scores: `data/eval/scores/answers.md` (`make answers-report`).
 
 ## Honest limits (will go into the README)
 - The data and most of the questions come from the same author, so the results show how the mechanism works, not real-world accuracy.

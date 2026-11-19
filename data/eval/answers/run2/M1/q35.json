@@ -1,0 +1,50 @@
+{
+ "qid": "q35",
+ "method": "M1",
+ "run": 2,
+ "retrieved": [
+  "selling_without_buying__2022",
+  "how_selling_works__2022",
+  "selling_with_loan__2022",
+  "trade_in_vs_sell__2026",
+  "buy_title_outside_lender__2022"
+ ],
+ "prompt_sha1": "1d74bb036471",
+ "answer": "No, you don't need to pay off your loan first, and you don't need the title in hand. While the loan is open, your lender holds the title (or the electronic title record), and you don't need a duplicate if you can't find one. At the appointment, we confirm what you owe and pay your lender directly from your offer, and if the offer is more than the payoff, you get the difference. To speed things up, get a payoff letter from your lender before you come in.",
+ "cited_keys": [
+  "selling_with_loan__2022"
+ ],
+ "not_covered": false,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQn12XeHWE2Gbe6Mt7V",
+  "usage": {
+   "input": 1301,
+   "output": 170
+  },
+  "cost": 0.0086
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "no",
+    "present": true
+   },
+   {
+    "fact": "pays the lender",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQnBs8erZGpSG5fQJVV",
+  "usage": {
+   "input": 696,
+   "output": 48
+  },
+  "cost": 0.00749
+ },
+ "cost": 0.01609
+}

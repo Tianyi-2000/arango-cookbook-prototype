@@ -1,0 +1,52 @@
+{
+ "qid": "q47",
+ "method": "M2",
+ "run": 2,
+ "retrieved": [
+  "selling_with_loan__2022",
+  "how_selling_works__2022",
+  "how_selling_works__2026",
+  "negative_equity__2026",
+  "trade_in_vs_sell__2026"
+ ],
+ "prompt_sha1": "9c0a30b70efc",
+ "answer": "Bring a payoff letter from Coastal Credit Union, because we compare it with our offer at the appointment, and you don't need the title since your lender holds it while the loan is open. Because you owe more than the offer, you'll pay the difference at the appointment with a cashier's check or a debit card; personal checks and credit cards aren't accepted. The help center mentions an appointment checklist but doesn't list everything on it, so please contact a store for the full list. If you'd rather not pay the difference, you can keep the car, since an offer never obliges you to sell.",
+ "cited_keys": [
+  "negative_equity__2026",
+  "selling_with_loan__2022",
+  "how_selling_works__2026"
+ ],
+ "not_covered": true,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQorwQxpNGNocmx5JBo",
+  "usage": {
+   "input": 1452,
+   "output": 381
+  },
+  "cost": 0.01343
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "payoff letter",
+    "present": true
+   },
+   {
+    "fact": "cashier's check or debit",
+    "present": true
+   }
+  ],
+  "declines_uncovered": false
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQpCjXhMRD4e5XXFMtt",
+  "usage": {
+   "input": 748,
+   "output": 55
+  },
+  "cost": 0.00818
+ },
+ "cost": 0.02161
+}

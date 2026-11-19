@@ -1,0 +1,50 @@
+{
+ "qid": "q50",
+ "method": "M1",
+ "run": 1,
+ "retrieved": [
+  "open_recalls__2022",
+  "selling_with_loan__2022",
+  "branded_title__2026",
+  "cancel_insurance__2022",
+  "reschedule_cancel__2022"
+ ],
+ "prompt_sha1": "8a0951c6f401",
+ "answer": "Yes, an open safety recall won't stop us from buying your car, and it doesn't change your offer. Recall repairs are free at a dealer for your car's brand, so you can have it fixed before selling if you like, but you don't have to. The help center doesn't cover how an open insurance claim or hail damage affects a sale, so please contact a store about that part.",
+ "cited_keys": [
+  "open_recalls__2022"
+ ],
+ "not_covered": true,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQg1CmouTqgxAzQjULu",
+  "usage": {
+   "input": 1234,
+   "output": 146
+  },
+  "cost": 0.00786
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "recall: yes",
+    "present": true
+   },
+   {
+    "fact": "insurance claim: not covered",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQgC29JaYYwSNVmFbYr",
+  "usage": {
+   "input": 677,
+   "output": 56
+  },
+  "cost": 0.00766
+ },
+ "cost": 0.01552
+}

@@ -1,0 +1,50 @@
+{
+ "qid": "q19",
+ "method": "M1",
+ "run": 1,
+ "retrieved": [
+  "divorce_ex_on_title__2022",
+  "offer_validity__2022",
+  "offer_validity__2026",
+  "title_name_mismatch__2022",
+  "lien_still_on_title__2022"
+ ],
+ "prompt_sha1": "e02fe567789f",
+ "answer": "Sorry, the help center doesn't explain how to get a payoff amount or how we work with a lender like Harbor on an active loan, so please contact a store directly for help with that. If your loan is already paid off but Harbor is still listed as lienholder on the title, ask Harbor for a lien release letter. If you can't get one, you can sign our lien release request (form NW-LRL-1) and we'll contact the lender for you, which can add 1 to 2 weeks. We can still make an offer and book your appointment while you wait.",
+ "cited_keys": [
+  "lien_still_on_title__2022"
+ ],
+ "not_covered": true,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQesBHu7cyz91Tsh1JZ",
+  "usage": {
+   "input": 1302,
+   "output": 381
+  },
+  "cost": 0.01283
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "payoff letter",
+    "present": false
+   },
+   {
+    "fact": "NW-LPA-1",
+    "present": false
+   }
+  ],
+  "declines_uncovered": false
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQfDaPNtohcX8U49M5w",
+  "usage": {
+   "input": 719,
+   "output": 55
+  },
+  "cost": 0.00795
+ },
+ "cost": 0.02078
+}

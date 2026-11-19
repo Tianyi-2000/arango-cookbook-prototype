@@ -1,0 +1,47 @@
+{
+ "qid": "q28",
+ "method": "M1",
+ "run": 2,
+ "retrieved": [
+  "how_selling_works__2022",
+  "offer_validity__2022",
+  "offer_validity__2026",
+  "reschedule_cancel__2022",
+  "registration_expired__2022"
+ ],
+ "prompt_sha1": "381b6636c936",
+ "answer": "Offers issued before February 1, 2026 keep their original terms, so an offer from December 2025 was good for 300 additional miles or 7 days, whichever came first. Since that window has long passed, the offer has expired, but you can request a new one at any time. The new amount will reflect current market prices and may be higher or lower.",
+ "cited_keys": [
+  "offer_validity__2026",
+  "offer_validity__2022"
+ ],
+ "not_covered": false,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQmg9Tvp57D4QyEwcDT",
+  "usage": {
+   "input": 1315,
+   "output": 144
+  },
+  "cost": 0.00814
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "300 miles",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQmsfWDJnvoVguNmsXV",
+  "usage": {
+   "input": 651,
+   "output": 35
+  },
+  "cost": 0.00661
+ },
+ "cost": 0.01475
+}

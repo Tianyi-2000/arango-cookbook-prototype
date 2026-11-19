@@ -1,0 +1,55 @@
+{
+ "qid": "q41",
+ "method": "M1",
+ "run": 2,
+ "retrieved": [
+  "how_selling_works__2022",
+  "duplicate_title_north_carolina__2022",
+  "out_of_state__2026",
+  "inherited_car__2022",
+  "divorce_ex_on_title__2022"
+ ],
+ "prompt_sha1": "b5ff47c8e298",
+ "answer": "To sell an inherited car, bring the death certificate and the court letters naming you executor or administrator of the estate (letters testamentary or letters of administration); if there are several heirs, the executor signs. For a missing North Carolina title, a duplicate can be requested by mail or at any North Carolina motor vehicle office with the registration and a photo ID, and it takes 4 to 6 weeks to arrive. You can get an offer and book an appointment while you wait, but we can't complete the purchase until the duplicate arrives, and you may need a new offer since offers last a limited time. The help center doesn't cover selling a car that still has a loan, or how the loan affects getting the title, so please contact a store about that part.",
+ "cited_keys": [
+  "inherited_car__2022",
+  "duplicate_title_north_carolina__2022"
+ ],
+ "not_covered": true,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQn14FtxUQ6gaqfz5gC",
+  "usage": {
+   "input": 1364,
+   "output": 627
+  },
+  "cost": 0.018
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "no duplicate title needed",
+    "present": false
+   },
+   {
+    "fact": "NW-EST-1",
+    "present": false
+   },
+   {
+    "fact": "payoff letter",
+    "present": false
+   }
+  ],
+  "declines_uncovered": false
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQnWpA8MRBQ8SUYLC7X",
+  "usage": {
+   "input": 812,
+   "output": 73
+  },
+  "cost": 0.00942
+ },
+ "cost": 0.02742
+}

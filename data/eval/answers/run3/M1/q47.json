@@ -1,0 +1,50 @@
+{
+ "qid": "q47",
+ "method": "M1",
+ "run": 3,
+ "retrieved": [
+  "divorce_ex_on_title__2022",
+  "negative_equity__2026",
+  "how_selling_works__2022",
+  "license_plates__2022",
+  "negative_equity__2022"
+ ],
+ "prompt_sha1": "67ab3f35d2ea",
+ "answer": "You can still sell us the car, but you'll pay the difference between our offer and your loan balance at the appointment, after we compare the offer with your payoff letter. For that payment, bring a cashier's check or a debit card, since we no longer accept personal checks and don't accept credit cards. The help center doesn't cover anything specific to loans with Coastal Credit Union or give a full list of documents to bring, so please contact a store to confirm. If you'd rather not pay the difference, you can keep the car, because an offer never obliges you to sell.",
+ "cited_keys": [
+  "negative_equity__2026"
+ ],
+ "not_covered": true,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQtbvukzDRHj7Tex5f4",
+  "usage": {
+   "input": 1207,
+   "output": 374
+  },
+  "cost": 0.01231
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "payoff letter",
+    "present": true
+   },
+   {
+    "fact": "cashier's check or debit",
+    "present": true
+   }
+  ],
+  "declines_uncovered": false
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQtxFHRWMKkfz27SV7c",
+  "usage": {
+   "input": 742,
+   "output": 55
+  },
+  "cost": 0.00814
+ },
+ "cost": 0.02045
+}

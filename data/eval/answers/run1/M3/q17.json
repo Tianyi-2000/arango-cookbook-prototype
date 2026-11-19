@@ -1,0 +1,56 @@
+{
+ "qid": "q17",
+ "method": "M3",
+ "run": 1,
+ "retrieved": [
+  "epayoff_network__2026",
+  "payoff_letter__2026",
+  "keep_paying_until_confirmed__2022",
+  "getting_paid__2026",
+  "lien_still_on_title__2022"
+ ],
+ "prompt_sha1": "15d1d144180b",
+ "answer": "No. Bayline Credit Union is in our e-payoff network, so you don't need a payoff letter. We confirm the payoff with Bayline directly on the same day, at your appointment, using your loan account number, so bring that number with you. Keep making your regular loan payments until Bayline confirms the loan is paid off.",
+ "cited_keys": [
+  "epayoff_network__2026",
+  "payoff_letter__2026",
+  "keep_paying_until_confirmed__2022"
+ ],
+ "not_covered": false,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQiKjZKKknDst4Yfaqa",
+  "usage": {
+   "input": 1448,
+   "output": 162
+  },
+  "cost": 0.00903
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "no",
+    "present": true
+   },
+   {
+    "fact": "e-payoff",
+    "present": true
+   },
+   {
+    "fact": "same day",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQiWc9VWHY46NgVcAv6",
+  "usage": {
+   "input": 663,
+   "output": 61
+  },
+  "cost": 0.00774
+ },
+ "cost": 0.01677
+}

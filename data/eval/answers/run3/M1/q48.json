@@ -1,0 +1,56 @@
+{
+ "qid": "q48",
+ "method": "M1",
+ "run": 3,
+ "retrieved": [
+  "cancel_insurance__2022",
+  "license_plates__2022",
+  "license_plates__2026",
+  "toll_tags_personal_data__2022",
+  "duplicate_title_north_carolina__2022"
+ ],
+ "prompt_sha1": "0b3073dda478",
+ "answer": "Keep your car insured until the sale is complete and the car is in our hands (including on the day of a home pickup), then cancel the policy or remove the car only after you sign the paperwork, and ask your insurer about a refund for the unused premium. If your plates were issued by North Carolina, leave them on the car, since North Carolina plates stay with the vehicle; what you do depends on the state that issued the plates, not where you live. Before handing over the car, remove toll tags and parking stickers, clear garage door codes, unpair your phone, and remove the car from any connected-car app account.",
+ "cited_keys": [
+  "cancel_insurance__2022",
+  "license_plates__2026",
+  "toll_tags_personal_data__2022"
+ ],
+ "not_covered": false,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQtcNSomNY2CqCcAuFf",
+  "usage": {
+   "input": 1206,
+   "output": 374
+  },
+  "cost": 0.0123
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "keep insurance until",
+    "present": true
+   },
+   {
+    "fact": "leave the plates",
+    "present": true
+   },
+   {
+    "fact": "toll tag",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQtuT7GpuVoZSRneZi2",
+  "usage": {
+   "input": 760,
+   "output": 68
+  },
+  "cost": 0.0088
+ },
+ "cost": 0.0211
+}

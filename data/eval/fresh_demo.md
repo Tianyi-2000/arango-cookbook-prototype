@@ -12,7 +12,9 @@ Question (asked 2026-11-01): "How will you pay me for my car, and how long does 
 | M1 BM25 | `how_selling_works__2026` current | none |
 | M2 Vector | `getting_paid__2022` **STALE** | #1 `getting_paid__2022` **STALE** |
 | M3 Vector + filter | `how_selling_works__2026` current | #4 `getting_paid__2026` current |
-| M4 GraphRAG (M3 + graph) | `how_selling_works__2026` current | #4 `getting_paid__2026` current |
+| M4 Graph: structural | `how_selling_works__2026` current | #4 `getting_paid__2026` current |
+| M5 Graph: semantic | `how_selling_works__2026` current | #4 `getting_paid__2026` current |
+| M6 Graph: both layers | `how_selling_works__2026` current | #4 `getting_paid__2026` current |
 
 ### 2. The policy changes: one stream transaction
 AQL> INSERT @doc INTO articles RETURN NEW._key
@@ -32,7 +34,7 @@ AQL> FOR e IN links_to
 bind: {'old': 'articles/getting_paid__2026', 'new': 'articles/getting_paid__2026-11'}
 re-linked: ['articles/how_selling_works__2022', 'articles/how_selling_works__2026', 'articles/home_pickup__2026', 'articles/selling_with_loan__2022', 'articles/business_car__2022']
 
-embedding the new version: 20 ms · transaction: 8 ms · nothing re-indexed
+embedding the new version: 22 ms · transaction: 9 ms · nothing re-indexed
 
 ### 3. The same question, right after the commit
 | method | #1 | getting_paid versions in the top 5 |
@@ -40,9 +42,11 @@ embedding the new version: 20 ms · transaction: 8 ms · nothing re-indexed
 | M1 BM25 | `how_selling_works__2026` current | none |
 | M2 Vector | `getting_paid__2022` **STALE** | #1 `getting_paid__2022` **STALE** |
 | M3 Vector + filter | `how_selling_works__2026` current | #5 `getting_paid__2026-11` current |
-| M4 GraphRAG (M3 + graph) | `how_selling_works__2026` current | #5 `getting_paid__2026-11` current |
+| M4 Graph: structural | `how_selling_works__2026` current | #5 `getting_paid__2026-11` current |
+| M5 Graph: semantic | `how_selling_works__2026` current | #5 `getting_paid__2026-11` current |
+| M6 Graph: both layers | `how_selling_works__2026` current | #5 `getting_paid__2026-11` current |
 
-(all four queries after the commit: 22 ms)
+(all four queries after the commit: 146 ms)
 
 ### 4. What the current answer replaced: walk `supersedes`
 AQL> FOR v, e IN 0..5 OUTBOUND @start supersedes

@@ -1,0 +1,50 @@
+{
+ "qid": "q22",
+ "method": "M1",
+ "run": 1,
+ "retrieved": [
+  "duplicate_title_north_carolina__2022",
+  "lost_title__2022",
+  "selling_without_buying__2022",
+  "registration_expired__2022",
+  "duplicate_title_georgia__2022"
+ ],
+ "prompt_sha1": "6d87fa346468",
+ "answer": "Yes, you'll likely need a new offer. Offers last a limited time, and because a North Carolina duplicate title takes 4 to 6 weeks to arrive, your offer can expire before the purchase can be completed. The help center doesn't say whether a new offer will match your original price, so please contact a store for details.",
+ "cited_keys": [
+  "duplicate_title_north_carolina__2022"
+ ],
+ "not_covered": true,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQetBZoBwYDRjgRS7kE",
+  "usage": {
+   "input": 1214,
+   "output": 223
+  },
+  "cost": 0.00932
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "new offer",
+    "present": true
+   },
+   {
+    "fact": "higher or lower",
+    "present": false
+   }
+  ],
+  "declines_uncovered": false
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQf8cjVM6UJtV5AtZfz",
+  "usage": {
+   "input": 666,
+   "output": 50
+  },
+  "cost": 0.00733
+ },
+ "cost": 0.01665
+}

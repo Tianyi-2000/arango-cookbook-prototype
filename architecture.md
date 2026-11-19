@@ -6,10 +6,11 @@
 - There are no 1.1 or 1.2 versions. Smaller changes go in [progress.md](progress.md) (what happened), [decisions.md](decisions.md) (why) and [issues.md](issues.md) (what broke).
 - The newest version is at the top. Older ones stay as they were written.
 
-**Current: v3.0** (2026-11-17): real place names, a 30-question gold set, retrieval in ArangoDB as a four-step ladder, a live freshness demo, and an answer eval.
+**Current: v3.5** (2026-11-18), a checkpoint under design v3.0: gold frozen, semantic layer and M5/M6 added, retrieval eval run on the frozen 30, answer eval with an independent judge.
 
 | Version | Date | What | Confirmed by |
 |---|---|---|---|
+| v3.5 | 2026-11-18 | Checkpoint: gold frozen; semantic layer (Claude-extracted concepts) + M5/M6; first eval on the frozen 30; answers judged by Fable 5.2; notebooks | — |
 | v3.0 | 2026-11-17 | Retrieval in ArangoDB: M1–M4 ladder, freshness demo, gold 30, real place names, answer eval | Tianyi (plan approval, 2026-11-17) |
 | v2.5 | 2026-11-13 | Checkpoint: KB data, data checks (mutation-tested), 56-question gold set, ticket plan | — |
 | v2.0 | 2026-11-12 | Medium-size KB: tickets, lenders, stores, four kinds of tricky cases | Tianyi (answers on size, tickets, tricky cases) |
@@ -17,6 +18,18 @@
 | v1.0 | 2026-11-12 | A cookbook for developers: versioned KB, structural + LLM graph, gold set with traps | Tianyi (plan approval) |
 | v0.5 | 2026-11-12 | Checkpoint: kitchen steps 0–3 running | — |
 | v0.0 | 2026-11-12 | "GraphRAG kitchen": a step-by-step learning lab | Tianyi (chose the data and the LLM option) |
+
+---
+
+## v3.5: checkpoint, measured on the frozen 30 (2026-11-18)
+Built under v3.0, with additions Tianyi approved on 2026-11-18 (D-029, D-030):
+- **Gold frozen:** all 14 drafts kept; `data/eval/FROZEN` (sha256 5935c443…).
+- **Semantic layer:** Claude (Opus 5.5) lists concepts and relations per article version (68 calls, $0.85); our rule merges names; 365 `concepts`, 689 `mentions`, 453 `relates` in `kb_graph`. Checked against a hand list written first: recall 0.88, agreement 0.72.
+- **M5 / M6:** M4's query over the semantic edges / over both layers, chosen by a bind variable; the walk stops at concepts named by more than 10 articles. Rules committed before the gold run.
+- **Retrieval on the frozen 30:** Recall@5 0.63 (BM25) → 0.77 (vector) → 0.80 (vector + filter) → 0.80 (every graph method). stale@5 0.78 → 0.00 with the filter. Graph expansion: one win (q22), one loss (q42); the semantic layer changes nothing at K=5.
+- **Answers:** every method's top 5 → Opus 5.5 answers; Fable 5.2 judges; 3 runs; one $50 ledger for all API calls (`data/eval/spend.json`).
+- **Engineering:** deterministic tie-break (I-021); notebooks run on the project's own kernel (I-022); five chapter notebooks (`make nb`).
+- **Next design question (not decided):** the graph adds little because vector search already reaches most gold articles and inherited scores rarely beat the entries. Candidates for a v4.0: entering the graph from names in the question, giving graph hits reserved slots instead of competing scores, a bigger or messier KB where vector search misses more. Any of them needs new questions, not the frozen 30.
 
 ---
 

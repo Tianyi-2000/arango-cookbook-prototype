@@ -1,0 +1,51 @@
+{
+ "qid": "q10",
+ "method": "M4",
+ "run": 3,
+ "retrieved": [
+  "selling_for_someone_else__2022",
+  "inherited_car__2026",
+  "appointment_checklist__2026",
+  "lost_title__2022",
+  "co_owners__2026"
+ ],
+ "prompt_sha1": "e0d8f8ba081c",
+ "answer": "I'm sorry for your loss. To sell a car you inherited, bring your father's death certificate plus either court letters naming you executor or administrator of the estate, or, for a small estate that doesn't go through probate court, the heir and estate affidavit (form NW-EST-1) signed by the heir. If there are several heirs, either the executor signs or every heir signs NW-EST-1, and a power of attorney your father signed can't be used because it ended when he died. If there's still a loan on the car, the lender holds the title, and if it's paid off but the title is lost, you'll need a duplicate title from your state before we can complete the purchase.",
+ "cited_keys": [
+  "inherited_car__2026",
+  "lost_title__2022"
+ ],
+ "not_covered": false,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQxT9vX9KxnTWyvpkqb",
+  "usage": {
+   "input": 1539,
+   "output": 444
+  },
+  "cost": 0.01504
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "NW-EST-1",
+    "present": true
+   },
+   {
+    "fact": "death certificate",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQxoYX5C7VYNP8kXHcz",
+  "usage": {
+   "input": 756,
+   "output": 53
+  },
+  "cost": 0.00817
+ },
+ "cost": 0.02321
+}

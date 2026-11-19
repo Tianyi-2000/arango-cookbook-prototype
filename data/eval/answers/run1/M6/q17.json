@@ -1,0 +1,57 @@
+{
+ "qid": "q17",
+ "method": "M6",
+ "run": 1,
+ "retrieved": [
+  "epayoff_network__2026",
+  "payoff_letter__2026",
+  "keep_paying_until_confirmed__2022",
+  "appointment_checklist__2026",
+  "getting_paid__2026"
+ ],
+ "prompt_sha1": "bc7e0f80d70a",
+ "answer": "No, you don't need a payoff letter. Bayline Credit Union is in our e-payoff network, so we confirm your payoff directly with them electronically on the same day, at your appointment, using your loan account number. Bring your loan account number along with the other items on the appointment checklist, such as a valid photo ID for every owner on the title, the current registration, all keys and remotes, and form NW-ODO-2.",
+ "cited_keys": [
+  "epayoff_network__2026",
+  "payoff_letter__2026",
+  "appointment_checklist__2026"
+ ],
+ "not_covered": false,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQjp7tYu5CXUS6uKBsp",
+  "usage": {
+   "input": 1523,
+   "output": 185
+  },
+  "cost": 0.00979
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "no",
+    "present": true
+   },
+   {
+    "fact": "e-payoff",
+    "present": true
+   },
+   {
+    "fact": "same day",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQk1TWJqLrumq2dvB1x",
+  "usage": {
+   "input": 691,
+   "output": 61
+  },
+  "cost": 0.00797
+ },
+ "cost": 0.0,
+ "shared_from": "M4"
+}

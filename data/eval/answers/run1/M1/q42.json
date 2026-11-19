@@ -1,0 +1,51 @@
+{
+ "qid": "q42",
+ "method": "M1",
+ "run": 1,
+ "retrieved": [
+  "home_pickup__2026",
+  "selling_without_buying__2022",
+  "home_pickup__2022",
+  "how_selling_works__2022",
+  "trade_in_vs_sell__2026"
+ ],
+ "prompt_sha1": "88fd8afbaced",
+ "answer": "Unfortunately, home pickup isn't available in Texas, so you'd need to sell your car through a store appraisal appointment instead. The process is to get an offer online with your VIN or license plate or at any store, book an appraisal appointment, have a specialist inspect the car in about 30 minutes to confirm the offer, and then sign the paperwork and get paid. The help center doesn't cover selling a leased car or list exactly what documents to bring, so please contact a store for those details.",
+ "cited_keys": [
+  "home_pickup__2026",
+  "how_selling_works__2022"
+ ],
+ "not_covered": true,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQfiPUkvS8Dx6ff1aCD",
+  "usage": {
+   "input": 1311,
+   "output": 197
+  },
+  "cost": 0.00918
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "no home pickup in Texas",
+    "present": true
+   },
+   {
+    "fact": "dealer payoff quote",
+    "present": false
+   }
+  ],
+  "declines_uncovered": false
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQfvZDt4mrP8XfNS3qz",
+  "usage": {
+   "input": 720,
+   "output": 59
+  },
+  "cost": 0.00812
+ },
+ "cost": 0.0173
+}

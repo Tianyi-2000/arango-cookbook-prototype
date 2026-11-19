@@ -1,0 +1,51 @@
+{
+ "qid": "q50",
+ "method": "M3",
+ "run": 2,
+ "retrieved": [
+  "open_recalls__2022",
+  "cancel_insurance__2022",
+  "flood_damage__2022",
+  "what_changes_offer__2026",
+  "branded_title__2026"
+ ],
+ "prompt_sha1": "601243eba28f",
+ "answer": "Yes, an open safety recall won't stop us from buying your car, and it doesn't change your offer; you can have the free recall repair done at a dealer for your car's brand first if you like, but you don't have to. If the hailstorm left damage, list it on the damage disclosure form NW-DMG-1 before the inspection, since disclosed damage is already priced into your offer and won't lower it again. The help center doesn't cover selling a car with an open insurance claim, so please contact a store about that part.",
+ "cited_keys": [
+  "open_recalls__2022",
+  "what_changes_offer__2026"
+ ],
+ "not_covered": true,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQqbNq5fDriiy59M9Qo",
+  "usage": {
+   "input": 1208,
+   "output": 313
+  },
+  "cost": 0.01109
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "recall: yes",
+    "present": true
+   },
+   {
+    "fact": "insurance claim: not covered",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQqtAdJxXA9WAWaaoVY",
+  "usage": {
+   "input": 722,
+   "output": 56
+  },
+  "cost": 0.00802
+ },
+ "cost": 0.01911
+}

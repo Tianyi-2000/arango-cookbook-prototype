@@ -1,6 +1,6 @@
 PY := .venv/bin/python
 
-.PHONY: up down venv verify check test-checks review tickets-plan tickets-one tickets load test-retrieve freeze eval eval-reserve fresh answers answers-run answers-report extract check-semantic
+.PHONY: up down venv verify check test-checks review tickets-plan tickets-one tickets load test-retrieve freeze eval eval-reserve fresh answers answers-run answers-report extract check-semantic nb
 up:      ## start ArangoDB on localhost:8535
 	docker compose up -d
 down:
@@ -33,9 +33,9 @@ eval-reserve:  ## the same eval on the reserve questions, for debugging (writes 
 	$(PY) scripts/run_eval.py --reserve
 fresh:   ## freshness demo in northwind_kb_demo: change a policy, ask again -> data/eval/fresh_demo.md
 	$(PY) scripts/fresh_demo.py
-answers:  ## dry run of the answer eval: prompts and cost estimate, no API calls
+answers:  ## dry run of the answer eval: cost estimate and one prompt, no API calls
 	$(PY) scripts/run_answers.py
-answers-run:  ## answer eval with Claude (M2 vs M4, judged); stops before the $6 cap
+answers-run:  ## answer eval: M1-M6 x 30 x 3 runs, Opus 5.5 answers, Fable 5.2 judge; stops at the $50 ledger cap
 	$(PY) scripts/run_answers.py --run
 answers-report:  ## answer eval tables from the cached answers -> data/eval/scores/answers.md
 	$(PY) scripts/run_answers.py --report
@@ -43,3 +43,6 @@ extract:  ## dry run of the semantic extraction (Claude); --one / --run via scri
 	$(PY) scripts/extract_semantic.py
 check-semantic:  ## score extracted concepts against the hand-written list for 10 versions
 	$(PY) scripts/check_semantic.py
+nb:      ## write the five chapter notebooks and run them in place (outputs saved; needs make up)
+	$(PY) scripts/make_notebooks.py
+	cd notebooks && JUPYTER_PATH="$(CURDIR)/.venv/share/jupyter" ../.venv/bin/jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=600 01_setup.ipynb 02_data_model.ipynb 03_freshness.ipynb 04_retrieval.ipynb 05_evaluation.ipynb

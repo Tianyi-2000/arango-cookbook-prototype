@@ -1,0 +1,53 @@
+{
+ "qid": "q24",
+ "method": "M4",
+ "run": 1,
+ "retrieved": [
+  "payoff_letter__2026",
+  "inherited_car__2026",
+  "selling_for_someone_else__2022",
+  "selling_with_loan__2022",
+  "lost_title__2022"
+ ],
+ "prompt_sha1": "d5cc200d565d",
+ "answer": "A payoff letter isn't strictly required: when you sell a car that's still financed, we confirm what's owed at the appointment and pay the lender directly from our offer, but getting a payoff letter beforehand speeds things up, and if the lender is in our e-payoff network you don't need a letter at all. The help center doesn't say whether Lakeshore Bank is in that network, so please contact a store to check. Because you inherited the car, also bring the death certificate plus either court letters naming you executor or administrator, or the heir and estate affidavit (form NW-EST-1) for a small estate that doesn't go through probate court. A power of attorney your dad signed ended when he passed away, so it can't be used.",
+ "cited_keys": [
+  "selling_with_loan__2022",
+  "payoff_letter__2026",
+  "inherited_car__2026"
+ ],
+ "not_covered": true,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQiWkqQrEzKVWQEyLrC",
+  "usage": {
+   "input": 1440,
+   "output": 487
+  },
+  "cost": 0.0155
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "no payoff letter",
+    "present": true
+   },
+   {
+    "fact": "death certificate",
+    "present": true
+   }
+  ],
+  "declines_uncovered": false
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQivJft7pd4e2Rg3F28",
+  "usage": {
+   "input": 791,
+   "output": 52
+  },
+  "cost": 0.00841
+ },
+ "cost": 0.0,
+ "shared_from": "M3"
+}

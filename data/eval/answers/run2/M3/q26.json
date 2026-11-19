@@ -1,0 +1,54 @@
+{
+ "qid": "q26",
+ "method": "M3",
+ "run": 2,
+ "retrieved": [
+  "co_owners__2026",
+  "selling_for_someone_else__2022",
+  "inherited_car__2026",
+  "registration_expired__2022",
+  "military_deployed__2026"
+ ],
+ "prompt_sha1": "0a71891b4094",
+ "answer": "Unfortunately, no. The old notarized form NW-POA-1 was replaced by NW-POA-2 on February 1, 2026, and an NW-POA-1 signed before that date is only accepted until June 30, 2026, which is before your July 10 appointment. Your mom can sign the new NW-POA-2 instead, which can be signed electronically with no notary. If you're in Georgia, though, NW-POA-2 must still be notarized.",
+ "cited_keys": [
+  "co_owners__2026"
+ ],
+ "not_covered": false,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQprTvGLnsM9m69TYVf",
+  "usage": {
+   "input": 1415,
+   "output": 366
+  },
+  "cost": 0.01298
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "no",
+    "present": true
+   },
+   {
+    "fact": "June 30",
+    "present": true
+   },
+   {
+    "fact": "NW-POA-2",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQqAb5r9PVZnSCV1jyR",
+  "usage": {
+   "input": 713,
+   "output": 64
+  },
+  "cost": 0.00826
+ },
+ "cost": 0.02124
+}

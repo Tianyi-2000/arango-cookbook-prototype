@@ -1,7 +1,7 @@
 {
  "cap": 50.0,
  "note": "API spend from 2026-11-18 on (D-029); tickets before that cost $3.10 (D-021)",
- "total": 0.8477,
+ "total": 7.0105,
  "calls": [
   {
    "at": "2026-11-18T17:08:10",
@@ -614,6 +614,5892 @@
    "output": 338,
    "cost": 0.01076,
    "note": "req_011ChBQ7HMwojAHpaawhAH8H"
+  },
+  {
+   "at": "2026-11-18T17:19:20",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1551,
+   "output": 161,
+   "cost": 0.009424,
+   "note": "req_011ChBQZeF2aXYBVYDwj1RJ4"
+  },
+  {
+   "at": "2026-11-18T17:19:22",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 661,
+   "output": 51,
+   "cost": 0.007328,
+   "note": "req_011ChBQZuJemMmorqpc4ruCa"
+  },
+  {
+   "at": "2026-11-18T17:20:25",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1418,
+   "output": 149,
+   "cost": 0.008652,
+   "note": "req_011ChBQea2vNvmTrFT8DJKWW"
+  },
+  {
+   "at": "2026-11-18T17:20:25",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1295,
+   "output": 156,
+   "cost": 0.0083,
+   "note": "req_011ChBQeZMyxuMtRfS6ww2Pv"
+  },
+  {
+   "at": "2026-11-18T17:20:26",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1694,
+   "output": 157,
+   "cost": 0.009916,
+   "note": "req_011ChBQeZTSCDHx8SP57BinB"
+  },
+  {
+   "at": "2026-11-18T17:20:26",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1427,
+   "output": 162,
+   "cost": 0.008948,
+   "note": "req_011ChBQeZvxgURVVToDY3ADJ"
+  },
+  {
+   "at": "2026-11-18T17:20:26",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1338,
+   "output": 154,
+   "cost": 0.008432,
+   "note": "req_011ChBQea8N7L52YnTqbHyav"
+  },
+  {
+   "at": "2026-11-18T17:20:27",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1340,
+   "output": 289,
+   "cost": 0.01114,
+   "note": "req_011ChBQeZGHaDMEWenMY64xL"
+  },
+  {
+   "at": "2026-11-18T17:20:27",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 645,
+   "output": 34,
+   "cost": 0.00652,
+   "note": "req_011ChBQej4eHvx2pgwmiUpnx"
+  },
+  {
+   "at": "2026-11-18T17:20:27",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 679,
+   "output": 50,
+   "cost": 0.007432,
+   "note": "req_011ChBQeji6BZiZ3QijTc95v"
+  },
+  {
+   "at": "2026-11-18T17:20:27",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 668,
+   "output": 39,
+   "cost": 0.006904,
+   "note": "req_011ChBQekTUcUycgRMms88Yr"
+  },
+  {
+   "at": "2026-11-18T17:20:27",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 669,
+   "output": 50,
+   "cost": 0.007352,
+   "note": "req_011ChBQemBPksvf41hSKRS7D"
+  },
+  {
+   "at": "2026-11-18T17:20:27",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 663,
+   "output": 61,
+   "cost": 0.007744,
+   "note": "req_011ChBQekhrVDFnRDvFMjopx"
+  },
+  {
+   "at": "2026-11-18T17:20:29",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 710,
+   "output": 53,
+   "cost": 0.0078,
+   "note": "req_011ChBQerPRkEsMCz9dQa9HK"
+  },
+  {
+   "at": "2026-11-18T17:20:30",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1489,
+   "output": 180,
+   "cost": 0.009556,
+   "note": "req_011ChBQerZqJzkxtp1J2DQeA"
+  },
+  {
+   "at": "2026-11-18T17:20:31",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1214,
+   "output": 223,
+   "cost": 0.009316,
+   "note": "req_011ChBQetBZoBwYDRjgRS7kE"
+  },
+  {
+   "at": "2026-11-18T17:20:31",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1345,
+   "output": 296,
+   "cost": 0.0113,
+   "note": "req_011ChBQesokUQhao9yNRSMSe"
+  },
+  {
+   "at": "2026-11-18T17:20:32",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 680,
+   "output": 48,
+   "cost": 0.00736,
+   "note": "req_011ChBQf4AqJJrbPbgaeueQL"
+  },
+  {
+   "at": "2026-11-18T17:20:32",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1302,
+   "output": 381,
+   "cost": 0.012828,
+   "note": "req_011ChBQesBHu7cyz91Tsh1JZ"
+  },
+  {
+   "at": "2026-11-18T17:20:32",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1333,
+   "output": 453,
+   "cost": 0.014392,
+   "note": "req_011ChBQetURrc5zMLrnSA9rX"
+  },
+  {
+   "at": "2026-11-18T17:20:33",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 666,
+   "output": 50,
+   "cost": 0.007328,
+   "note": "req_011ChBQf8cjVM6UJtV5AtZfz"
+  },
+  {
+   "at": "2026-11-18T17:20:33",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1460,
+   "output": 310,
+   "cost": 0.01204,
+   "note": "req_011ChBQeyxL4fNHx6dhjXn8r"
+  },
+  {
+   "at": "2026-11-18T17:20:34",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 719,
+   "output": 55,
+   "cost": 0.007952,
+   "note": "req_011ChBQfDaPNtohcX8U49M5w"
+  },
+  {
+   "at": "2026-11-18T17:20:34",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 694,
+   "output": 52,
+   "cost": 0.007632,
+   "note": "req_011ChBQfHF9XQJ4kMbvqoeHH"
+  },
+  {
+   "at": "2026-11-18T17:20:35",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 785,
+   "output": 215,
+   "cost": 0.01488,
+   "note": "req_011ChBQfE9riLRU8htBES48S"
+  },
+  {
+   "at": "2026-11-18T17:20:36",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 705,
+   "output": 424,
+   "cost": 0.0226,
+   "note": "req_011ChBQf9nRqVfom9UULhSGF"
+  },
+  {
+   "at": "2026-11-18T17:20:36",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1281,
+   "output": 398,
+   "cost": 0.013084,
+   "note": "req_011ChBQfBoyFJqXVdZ46f2yw"
+  },
+  {
+   "at": "2026-11-18T17:20:36",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1381,
+   "output": 312,
+   "cost": 0.011764,
+   "note": "req_011ChBQfGK5aXeTmHzmCVnZq"
+  },
+  {
+   "at": "2026-11-18T17:20:37",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1315,
+   "output": 167,
+   "cost": 0.0086,
+   "note": "req_011ChBQfMZcEphN6nzWmDtM1"
+  },
+  {
+   "at": "2026-11-18T17:20:37",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 710,
+   "output": 48,
+   "cost": 0.0076,
+   "note": "req_011ChBQfXvwrHxAnL85c62Lf"
+  },
+  {
+   "at": "2026-11-18T17:20:37",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1327,
+   "output": 93,
+   "cost": 0.007168,
+   "note": "req_011ChBQfTVYoCyfiEJivqpoo"
+  },
+  {
+   "at": "2026-11-18T17:20:37",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 694,
+   "output": 64,
+   "cost": 0.008112,
+   "note": "req_011ChBQfYZeQapZ3uqVcXHfH"
+  },
+  {
+   "at": "2026-11-18T17:20:37",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 683,
+   "output": 35,
+   "cost": 0.006864,
+   "note": "req_011ChBQfZHYW9Yh3yeB7nsDb"
+  },
+  {
+   "at": "2026-11-18T17:20:38",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1500,
+   "output": 343,
+   "cost": 0.01286,
+   "note": "req_011ChBQfMfYXPnqBz8mCHuaX"
+  },
+  {
+   "at": "2026-11-18T17:20:38",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 615,
+   "output": 48,
+   "cost": 0.00684,
+   "note": "req_011ChBQfd519spEZZpoKSN3Z"
+  },
+  {
+   "at": "2026-11-18T17:20:39",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1378,
+   "output": 168,
+   "cost": 0.008872,
+   "note": "req_011ChBQfXSuzfVJCsHzsYqoL"
+  },
+  {
+   "at": "2026-11-18T17:20:39",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 732,
+   "output": 48,
+   "cost": 0.007776,
+   "note": "req_011ChBQfe9zKvUi8pHkE5ab4"
+  },
+  {
+   "at": "2026-11-18T17:20:40",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 699,
+   "output": 51,
+   "cost": 0.007632,
+   "note": "req_011ChBQfi5NpSS9WSWdEdW4F"
+  },
+  {
+   "at": "2026-11-18T17:20:40",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1301,
+   "output": 171,
+   "cost": 0.008624,
+   "note": "req_011ChBQfd8jA9zhpEMy54iVJ"
+  },
+  {
+   "at": "2026-11-18T17:20:40",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1317,
+   "output": 183,
+   "cost": 0.008928,
+   "note": "req_011ChBQfcS42N1nZzZ7KDLfP"
+  },
+  {
+   "at": "2026-11-18T17:20:40",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1256,
+   "output": 136,
+   "cost": 0.007744,
+   "note": "req_011ChBQfdU5HhAMiPP57FLbi"
+  },
+  {
+   "at": "2026-11-18T17:20:41",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 711,
+   "output": 65,
+   "cost": 0.008288,
+   "note": "req_011ChBQfopAQdn9GM3daZX7m"
+  },
+  {
+   "at": "2026-11-18T17:20:42",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1311,
+   "output": 197,
+   "cost": 0.009184,
+   "note": "req_011ChBQfiPUkvS8Dx6ff1aCD"
+  },
+  {
+   "at": "2026-11-18T17:20:42",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 697,
+   "output": 48,
+   "cost": 0.007496,
+   "note": "req_011ChBQfopug5mMdbZ3iKgxY"
+  },
+  {
+   "at": "2026-11-18T17:20:42",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 638,
+   "output": 37,
+   "cost": 0.006584,
+   "note": "req_011ChBQfpjUoKQmwL3J2WXVA"
+  },
+  {
+   "at": "2026-11-18T17:20:43",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 720,
+   "output": 59,
+   "cost": 0.00812,
+   "note": "req_011ChBQfvZDt4mrP8XfNS3qz"
+  },
+  {
+   "at": "2026-11-18T17:20:44",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1364,
+   "output": 484,
+   "cost": 0.015136,
+   "note": "req_011ChBQfhUAtd4gHuS6SYRtK"
+  },
+  {
+   "at": "2026-11-18T17:20:45",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1459,
+   "output": 412,
+   "cost": 0.014076,
+   "note": "req_011ChBQfnUYtK5uUC6psJNBC"
+  },
+  {
+   "at": "2026-11-18T17:20:45",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1252,
+   "output": 132,
+   "cost": 0.007648,
+   "note": "req_011ChBQfy6GsfRexkbjKzqXx"
+  },
+  {
+   "at": "2026-11-18T17:20:45",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1234,
+   "output": 146,
+   "cost": 0.007856,
+   "note": "req_011ChBQg1CmouTqgxAzQjULu"
+  },
+  {
+   "at": "2026-11-18T17:20:46",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 647,
+   "output": 20,
+   "cost": 0.005976,
+   "note": "req_011ChBQg9nxgKdxBxBKvTYN3"
+  },
+  {
+   "at": "2026-11-18T17:20:46",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 758,
+   "output": 70,
+   "cost": 0.008864,
+   "note": "req_011ChBQg9pC8aaViZAu5vMjf"
+  },
+  {
+   "at": "2026-11-18T17:20:46",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 819,
+   "output": 73,
+   "cost": 0.009472,
+   "note": "req_011ChBQg6wK3irWE8QcmFzi7"
+  },
+  {
+   "at": "2026-11-18T17:20:46",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1206,
+   "output": 402,
+   "cost": 0.012864,
+   "note": "req_011ChBQfw3ywUyHShnA7XhLS"
+  },
+  {
+   "at": "2026-11-18T17:20:46",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 677,
+   "output": 56,
+   "cost": 0.007656,
+   "note": "req_011ChBQgC29JaYYwSNVmFbYr"
+  },
+  {
+   "at": "2026-11-18T17:20:47",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1207,
+   "output": 415,
+   "cost": 0.013128,
+   "note": "req_011ChBQftibYy9ymREc4id1t"
+  },
+  {
+   "at": "2026-11-18T17:20:47",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 770,
+   "output": 68,
+   "cost": 0.00888,
+   "note": "req_011ChBQgFh9kyzbd9Vbp87gx"
+  },
+  {
+   "at": "2026-11-18T17:20:48",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1223,
+   "output": 140,
+   "cost": 0.007692,
+   "note": "req_011ChBQgDo3scUsaxiFdN5q2"
+  },
+  {
+   "at": "2026-11-18T17:20:48",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 716,
+   "output": 55,
+   "cost": 0.007928,
+   "note": "req_011ChBQgJuP8K8eRV6FyLaiJ"
+  },
+  {
+   "at": "2026-11-18T17:20:48",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1448,
+   "output": 149,
+   "cost": 0.008772,
+   "note": "req_011ChBQgERGTnUU1bdGXsuLE"
+  },
+  {
+   "at": "2026-11-18T17:20:48",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1529,
+   "output": 162,
+   "cost": 0.009356,
+   "note": "req_011ChBQgEpaL8qmPKqZT17Bb"
+  },
+  {
+   "at": "2026-11-18T17:20:49",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1435,
+   "output": 166,
+   "cost": 0.00906,
+   "note": "req_011ChBQgGdDfpH8sSgTgX9Bb"
+  },
+  {
+   "at": "2026-11-18T17:20:49",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 648,
+   "output": 51,
+   "cost": 0.007224,
+   "note": "req_011ChBQgQuJQ6redE8vrwgKw"
+  },
+  {
+   "at": "2026-11-18T17:20:49",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 659,
+   "output": 20,
+   "cost": 0.006072,
+   "note": "req_011ChBQgNuzcbb1xcYJxzefE"
+  },
+  {
+   "at": "2026-11-18T17:20:49",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 674,
+   "output": 39,
+   "cost": 0.006952,
+   "note": "req_011ChBQgSHPkgQaaoyDjDCfz"
+  },
+  {
+   "at": "2026-11-18T17:20:49",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1204,
+   "output": 194,
+   "cost": 0.008696,
+   "note": "req_011ChBQgLRuffqJpBBj1WpsF"
+  },
+  {
+   "at": "2026-11-18T17:20:50",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 664,
+   "output": 34,
+   "cost": 0.006672,
+   "note": "req_011ChBQgU2aEeHZuc17DyrMB"
+  },
+  {
+   "at": "2026-11-18T17:20:51",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1215,
+   "output": 228,
+   "cost": 0.00942,
+   "note": "req_011ChBQgPC7FM7ZXFDAPJm9J"
+  },
+  {
+   "at": "2026-11-18T17:20:51",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 708,
+   "output": 50,
+   "cost": 0.007664,
+   "note": "req_011ChBQgWTv9E4LLhPZ3h4nC"
+  },
+  {
+   "at": "2026-11-18T17:20:51",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1111,
+   "output": 133,
+   "cost": 0.007104,
+   "note": "req_011ChBQgV74CHKXk36aPVtxx"
+  },
+  {
+   "at": "2026-11-18T17:20:52",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 740,
+   "output": 53,
+   "cost": 0.00804,
+   "note": "req_011ChBQgcbkW41bdakTfbLd8"
+  },
+  {
+   "at": "2026-11-18T17:20:52",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1424,
+   "output": 198,
+   "cost": 0.009656,
+   "note": "req_011ChBQgVugLmP7gudmuKFog"
+  },
+  {
+   "at": "2026-11-18T17:20:52",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1490,
+   "output": 211,
+   "cost": 0.01018,
+   "note": "req_011ChBQgWGGD4JXVCARwjaxf"
+  },
+  {
+   "at": "2026-11-18T17:20:53",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 633,
+   "output": 50,
+   "cost": 0.007064,
+   "note": "req_011ChBQgfE1xpSb3ZQbdFMWH"
+  },
+  {
+   "at": "2026-11-18T17:20:53",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 690,
+   "output": 61,
+   "cost": 0.00796,
+   "note": "req_011ChBQghnJ3UtQAAW9osWvb"
+  },
+  {
+   "at": "2026-11-18T17:20:53",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 711,
+   "output": 48,
+   "cost": 0.007608,
+   "note": "req_011ChBQgipZ1Gf8RinGgReJG"
+  },
+  {
+   "at": "2026-11-18T17:20:55",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1465,
+   "output": 465,
+   "cost": 0.01516,
+   "note": "req_011ChBQgY6t3Gk4q9hEbgG69"
+  },
+  {
+   "at": "2026-11-18T17:20:55",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1373,
+   "output": 320,
+   "cost": 0.011892,
+   "note": "req_011ChBQgeXbQD6s32WSGP6ZY"
+  },
+  {
+   "at": "2026-11-18T17:20:56",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 716,
+   "output": 55,
+   "cost": 0.007928,
+   "note": "req_011ChBQgutZyPcRT5fmaDn38"
+  },
+  {
+   "at": "2026-11-18T17:20:56",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1217,
+   "output": 361,
+   "cost": 0.012088,
+   "note": "req_011ChBQgh1g1bjvxoYwBUEwm"
+  },
+  {
+   "at": "2026-11-18T17:20:56",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 706,
+   "output": 46,
+   "cost": 0.007488,
+   "note": "req_011ChBQgwY33b5XgqYCjVfjG"
+  },
+  {
+   "at": "2026-11-18T17:20:58",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1396,
+   "output": 470,
+   "cost": 0.014984,
+   "note": "req_011ChBQgjZxF25csnVnY9hLa"
+  },
+  {
+   "at": "2026-11-18T17:20:58",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 701,
+   "output": 50,
+   "cost": 0.007608,
+   "note": "req_011ChBQh1gaR63768T66X1hL"
+  },
+  {
+   "at": "2026-11-18T17:20:58",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1215,
+   "output": 426,
+   "cost": 0.01338,
+   "note": "req_011ChBQgo6Hqd2KdeKcpjpGw"
+  },
+  {
+   "at": "2026-11-18T17:20:59",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1147,
+   "output": 151,
+   "cost": 0.007608,
+   "note": "req_011ChBQh1gpBQewxDjsmm1YK"
+  },
+  {
+   "at": "2026-11-18T17:20:59",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1370,
+   "output": 518,
+   "cost": 0.01584,
+   "note": "req_011ChBQgo7XdDPZkwRHTiC6u"
+  },
+  {
+   "at": "2026-11-18T17:20:59",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1394,
+   "output": 292,
+   "cost": 0.011416,
+   "note": "req_011ChBQgzFFY4ynSDJrzWL1j"
+  },
+  {
+   "at": "2026-11-18T17:21:00",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 667,
+   "output": 35,
+   "cost": 0.006736,
+   "note": "req_011ChBQhCgNEGJrm34dScQZD"
+  },
+  {
+   "at": "2026-11-18T17:21:00",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 727,
+   "output": 48,
+   "cost": 0.007736,
+   "note": "req_011ChBQh9VsWc6ry6fesSBwm"
+  },
+  {
+   "at": "2026-11-18T17:21:00",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 771,
+   "output": 52,
+   "cost": 0.008248,
+   "note": "req_011ChBQhCrnRhB2ufdVYWjTJ"
+  },
+  {
+   "at": "2026-11-18T17:21:01",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 684,
+   "output": 64,
+   "cost": 0.008032,
+   "note": "req_011ChBQhFPaCDBpGBJEhqdiC"
+  },
+  {
+   "at": "2026-11-18T17:21:02",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1463,
+   "output": 295,
+   "cost": 0.011752,
+   "note": "req_011ChBQh9V8Z46JirynVpFm3"
+  },
+  {
+   "at": "2026-11-18T17:21:02",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1207,
+   "output": 178,
+   "cost": 0.008388,
+   "note": "req_011ChBQhHDDZYuJDuUAqCxFs"
+  },
+  {
+   "at": "2026-11-18T17:21:02",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1453,
+   "output": 173,
+   "cost": 0.009272,
+   "note": "req_011ChBQhGfj42cgg69Jw8pVo"
+  },
+  {
+   "at": "2026-11-18T17:21:03",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1260,
+   "output": 244,
+   "cost": 0.00992,
+   "note": "req_011ChBQhGbWKcUui51owPBtx"
+  },
+  {
+   "at": "2026-11-18T17:21:03",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 799,
+   "output": 538,
+   "cost": 0.027912,
+   "note": "req_011ChBQh713n5e8EvwLvoweV"
+  },
+  {
+   "at": "2026-11-18T17:21:03",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 704,
+   "output": 48,
+   "cost": 0.007552,
+   "note": "req_011ChBQhQt6CgDhGvsR8LD5F"
+  },
+  {
+   "at": "2026-11-18T17:21:04",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1253,
+   "output": 167,
+   "cost": 0.008352,
+   "note": "req_011ChBQhLPDrEVB848nRkFwK"
+  },
+  {
+   "at": "2026-11-18T17:21:04",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 706,
+   "output": 65,
+   "cost": 0.008248,
+   "note": "req_011ChBQhT8mdAdD9vPaEHBht"
+  },
+  {
+   "at": "2026-11-18T17:21:04",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 704,
+   "output": 51,
+   "cost": 0.007672,
+   "note": "req_011ChBQhTgWUURjt2Xe7zLdP"
+  },
+  {
+   "at": "2026-11-18T17:21:04",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 650,
+   "output": 48,
+   "cost": 0.00712,
+   "note": "req_011ChBQhXB74ZtcY1uNULh2R"
+  },
+  {
+   "at": "2026-11-18T17:21:05",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 685,
+   "output": 48,
+   "cost": 0.0074,
+   "note": "req_011ChBQhZQYHq7P9SPpyFi2x"
+  },
+  {
+   "at": "2026-11-18T17:21:06",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1290,
+   "output": 165,
+   "cost": 0.00846,
+   "note": "req_011ChBQhXeNjCPWz3PuqL2TX"
+  },
+  {
+   "at": "2026-11-18T17:21:07",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 651,
+   "output": 37,
+   "cost": 0.006688,
+   "note": "req_011ChBQhiwXQdtCksiNyhk23"
+  },
+  {
+   "at": "2026-11-18T17:21:09",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1328,
+   "output": 508,
+   "cost": 0.015472,
+   "note": "req_011ChBQhY8ttxRaMqY8xYz95"
+  },
+  {
+   "at": "2026-11-18T17:21:09",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1429,
+   "output": 481,
+   "cost": 0.015336,
+   "note": "req_011ChBQhaRK2agLHry8EG7HQ"
+  },
+  {
+   "at": "2026-11-18T17:21:09",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1391,
+   "output": 356,
+   "cost": 0.012684,
+   "note": "req_011ChBQhbBhr7qkzh1RHfNSL"
+  },
+  {
+   "at": "2026-11-18T17:21:09",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1452,
+   "output": 402,
+   "cost": 0.013848,
+   "note": "req_011ChBQhbL8jnrXqrULnFyDu"
+  },
+  {
+   "at": "2026-11-18T17:21:09",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1161,
+   "output": 179,
+   "cost": 0.008224,
+   "note": "req_011ChBQhnnDMjUwZ9S984Rq5"
+  },
+  {
+   "at": "2026-11-18T17:21:10",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1233,
+   "output": 490,
+   "cost": 0.014732,
+   "note": "req_011ChBQhdLguM8Qm7Dd8tWuL"
+  },
+  {
+   "at": "2026-11-18T17:21:10",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 702,
+   "output": 70,
+   "cost": 0.008416,
+   "note": "req_011ChBQhxJwtKckMirsXW1pa"
+  },
+  {
+   "at": "2026-11-18T17:21:10",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 641,
+   "output": 20,
+   "cost": 0.005928,
+   "note": "req_011ChBQhyi3MGc79nE6vJ4YM"
+  },
+  {
+   "at": "2026-11-18T17:21:10",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 769,
+   "output": 73,
+   "cost": 0.009072,
+   "note": "req_011ChBQhvbG4G3DxbVFpNiSL"
+  },
+  {
+   "at": "2026-11-18T17:21:10",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 740,
+   "output": 59,
+   "cost": 0.00828,
+   "note": "req_011ChBQhvkS7toxRe9dqzNHc"
+  },
+  {
+   "at": "2026-11-18T17:21:11",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 818,
+   "output": 68,
+   "cost": 0.009264,
+   "note": "req_011ChBQi22h47gLDzLVmbcKe"
+  },
+  {
+   "at": "2026-11-18T17:21:12",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1319,
+   "output": 125,
+   "cost": 0.007776,
+   "note": "req_011ChBQi3CdQpDcNnTkxUAFd"
+  },
+  {
+   "at": "2026-11-18T17:21:13",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 725,
+   "output": 349,
+   "cost": 0.01976,
+   "note": "req_011ChBQhxfXqJHKC54mjhdKH"
+  },
+  {
+   "at": "2026-11-18T17:21:13",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1415,
+   "output": 174,
+   "cost": 0.00914,
+   "note": "req_011ChBQi44yNEctYrGoDNMbX"
+  },
+  {
+   "at": "2026-11-18T17:21:13",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 644,
+   "output": 20,
+   "cost": 0.005952,
+   "note": "req_011ChBQiChPSunUQqqe43SDM"
+  },
+  {
+   "at": "2026-11-18T17:21:13",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1425,
+   "output": 186,
+   "cost": 0.00942,
+   "note": "req_011ChBQi42zDFMAdMEUTNT6Q"
+  },
+  {
+   "at": "2026-11-18T17:21:14",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1243,
+   "output": 196,
+   "cost": 0.008892,
+   "note": "req_011ChBQi6SMLByQqyaZofLwm"
+  },
+  {
+   "at": "2026-11-18T17:21:14",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1139,
+   "output": 317,
+   "cost": 0.010896,
+   "note": "req_011ChBQi2oKYVKEK6iLHEy7j"
+  },
+  {
+   "at": "2026-11-18T17:21:14",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 665,
+   "output": 51,
+   "cost": 0.00736,
+   "note": "req_011ChBQiFVKKtupUpdrhy2Tt"
+  },
+  {
+   "at": "2026-11-18T17:21:14",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 676,
+   "output": 34,
+   "cost": 0.006768,
+   "note": "req_011ChBQiH3a1oGsjnWFb7hjx"
+  },
+  {
+   "at": "2026-11-18T17:21:15",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 710,
+   "output": 50,
+   "cost": 0.00768,
+   "note": "req_011ChBQiJdKh95zhChj8JCaM"
+  },
+  {
+   "at": "2026-11-18T17:21:15",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 719,
+   "output": 56,
+   "cost": 0.007992,
+   "note": "req_011ChBQiJmW3fRkWpuT3sZ5C"
+  },
+  {
+   "at": "2026-11-18T17:21:16",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1148,
+   "output": 125,
+   "cost": 0.007092,
+   "note": "req_011ChBQiGdmC65UT33kmsM5w"
+  },
+  {
+   "at": "2026-11-18T17:21:17",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1448,
+   "output": 162,
+   "cost": 0.009032,
+   "note": "req_011ChBQiKjZKKknDst4Yfaqa"
+  },
+  {
+   "at": "2026-11-18T17:21:17",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 625,
+   "output": 50,
+   "cost": 0.007,
+   "note": "req_011ChBQiSiFXBqBPMmSfHxwu"
+  },
+  {
+   "at": "2026-11-18T17:21:17",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1303,
+   "output": 323,
+   "cost": 0.011672,
+   "note": "req_011ChBQiE21TUWaAfnjy3jmz"
+  },
+  {
+   "at": "2026-11-18T17:21:18",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 663,
+   "output": 61,
+   "cost": 0.007744,
+   "note": "req_011ChBQiWc9VWHY46NgVcAv6"
+  },
+  {
+   "at": "2026-11-18T17:21:18",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 745,
+   "output": 53,
+   "cost": 0.00808,
+   "note": "req_011ChBQiXvnL8W8Y5qcPS6Az"
+  },
+  {
+   "at": "2026-11-18T17:21:18",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1460,
+   "output": 263,
+   "cost": 0.0111,
+   "note": "req_011ChBQiNzGR4EbCFSsFb2Ao"
+  },
+  {
+   "at": "2026-11-18T17:21:19",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 763,
+   "output": 46,
+   "cost": 0.007944,
+   "note": "req_011ChBQidkWV9dbrytqjxCWR"
+  },
+  {
+   "at": "2026-11-18T17:21:19",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1451,
+   "output": 489,
+   "cost": 0.015584,
+   "note": "req_011ChBQiLwip15DTtXWbu84H"
+  },
+  {
+   "at": "2026-11-18T17:21:20",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1275,
+   "output": 360,
+   "cost": 0.0123,
+   "note": "req_011ChBQiNzkPdh5VzJe4c8KQ"
+  },
+  {
+   "at": "2026-11-18T17:21:20",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 688,
+   "output": 48,
+   "cost": 0.007424,
+   "note": "req_011ChBQiiRoY9LEj9J7ESC2A"
+  },
+  {
+   "at": "2026-11-18T17:21:21",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 701,
+   "output": 50,
+   "cost": 0.007608,
+   "note": "req_011ChBQijBCjUN3GmJYfoCsS"
+  },
+  {
+   "at": "2026-11-18T17:21:22",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1415,
+   "output": 343,
+   "cost": 0.01252,
+   "note": "req_011ChBQibwczxpzdUAHiF5Sr"
+  },
+  {
+   "at": "2026-11-18T17:21:22",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1167,
+   "output": 337,
+   "cost": 0.011408,
+   "note": "req_011ChBQiasdSLdBvPtsRnhjg"
+  },
+  {
+   "at": "2026-11-18T17:21:22",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1440,
+   "output": 487,
+   "cost": 0.0155,
+   "note": "req_011ChBQiWkqQrEzKVWQEyLrC"
+  },
+  {
+   "at": "2026-11-18T17:21:23",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 691,
+   "output": 64,
+   "cost": 0.008088,
+   "note": "req_011ChBQitSZgYFtveFwNx4ej"
+  },
+  {
+   "at": "2026-11-18T17:21:23",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 704,
+   "output": 48,
+   "cost": 0.007552,
+   "note": "req_011ChBQitifr39DSr4FAQvAQ"
+  },
+  {
+   "at": "2026-11-18T17:21:23",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 791,
+   "output": 52,
+   "cost": 0.008408,
+   "note": "req_011ChBQivJft7pd4e2Rg3F28"
+  },
+  {
+   "at": "2026-11-18T17:21:23",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1268,
+   "output": 205,
+   "cost": 0.009172,
+   "note": "req_011ChBQioe5yxQ5ripFSpxXQ"
+  },
+  {
+   "at": "2026-11-18T17:21:24",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1487,
+   "output": 291,
+   "cost": 0.011768,
+   "note": "req_011ChBQinkkZK15VxHF3ARtv"
+  },
+  {
+   "at": "2026-11-18T17:21:25",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1165,
+   "output": 435,
+   "cost": 0.01336,
+   "note": "req_011ChBQihch1HMdm5F3FBzEU"
+  },
+  {
+   "at": "2026-11-18T17:21:25",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 648,
+   "output": 48,
+   "cost": 0.007104,
+   "note": "req_011ChBQizq2UfpNJWDufjN4B"
+  },
+  {
+   "at": "2026-11-18T17:21:25",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 705,
+   "output": 48,
+   "cost": 0.00756,
+   "note": "req_011ChBQj46EqKwWJTobiQkFk"
+  },
+  {
+   "at": "2026-11-18T17:21:25",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1314,
+   "output": 187,
+   "cost": 0.008996,
+   "note": "req_011ChBQixkWu4VmALGqd2Nrw"
+  },
+  {
+   "at": "2026-11-18T17:21:25",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1445,
+   "output": 177,
+   "cost": 0.00932,
+   "note": "req_011ChBQixmGQoT3uT7GJTxMp"
+  },
+  {
+   "at": "2026-11-18T17:21:26",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 659,
+   "output": 35,
+   "cost": 0.006672,
+   "note": "req_011ChBQj76Zo1KmdLFgvj46n"
+  },
+  {
+   "at": "2026-11-18T17:21:26",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1218,
+   "output": 182,
+   "cost": 0.008512,
+   "note": "req_011ChBQizsmBGikmikjQLg7R"
+  },
+  {
+   "at": "2026-11-18T17:21:26",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 715,
+   "output": 65,
+   "cost": 0.00832,
+   "note": "req_011ChBQj9q1z3MMxXSQgP6Pf"
+  },
+  {
+   "at": "2026-11-18T17:21:26",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 708,
+   "output": 51,
+   "cost": 0.007704,
+   "note": "req_011ChBQj9szgzEp3XjdMdTdm"
+  },
+  {
+   "at": "2026-11-18T17:21:27",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 668,
+   "output": 37,
+   "cost": 0.006824,
+   "note": "req_011ChBQjCDtRwXbgPdu5xkpr"
+  },
+  {
+   "at": "2026-11-18T17:21:29",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1434,
+   "output": 392,
+   "cost": 0.013576,
+   "note": "req_011ChBQj8C3zJowhKL757KRJ"
+  },
+  {
+   "at": "2026-11-18T17:21:29",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1353,
+   "output": 364,
+   "cost": 0.012692,
+   "note": "req_011ChBQj82No7pZQxYckw5jv"
+  },
+  {
+   "at": "2026-11-18T17:21:30",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1415,
+   "output": 327,
+   "cost": 0.0122,
+   "note": "req_011ChBQjApYknZB2BoDvCTtU"
+  },
+  {
+   "at": "2026-11-18T17:21:30",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1145,
+   "output": 212,
+   "cost": 0.00882,
+   "note": "req_011ChBQjFnCyGAAN8RFi1tbU"
+  },
+  {
+   "at": "2026-11-18T17:21:30",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 750,
+   "output": 59,
+   "cost": 0.00836,
+   "note": "req_011ChBQjRzrvHDYZP9byi8TG"
+  },
+  {
+   "at": "2026-11-18T17:21:31",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 769,
+   "output": 73,
+   "cost": 0.009072,
+   "note": "req_011ChBQjTty67xc2fhXnFV4w"
+  },
+  {
+   "at": "2026-11-18T17:21:31",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 739,
+   "output": 55,
+   "cost": 0.008112,
+   "note": "req_011ChBQjUNEgeqxczsd2R2C4"
+  },
+  {
+   "at": "2026-11-18T17:21:31",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1208,
+   "output": 328,
+   "cost": 0.011392,
+   "note": "req_011ChBQjG359JkrwSQ1qu4wV"
+  },
+  {
+   "at": "2026-11-18T17:21:31",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 640,
+   "output": 20,
+   "cost": 0.00592,
+   "note": "req_011ChBQjUoYJESy9XPktJBUL"
+  },
+  {
+   "at": "2026-11-18T17:21:31",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1367,
+   "output": 463,
+   "cost": 0.014728,
+   "note": "req_011ChBQjFjUdJ6Yy4QRMjrHY"
+  },
+  {
+   "at": "2026-11-18T17:21:32",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 732,
+   "output": 56,
+   "cost": 0.008096,
+   "note": "req_011ChBQjZzaTvntETGfSp8gH"
+  },
+  {
+   "at": "2026-11-18T17:21:32",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 813,
+   "output": 68,
+   "cost": 0.009224,
+   "note": "req_011ChBQjbapnWDJ7wDgdZ76f"
+  },
+  {
+   "at": "2026-11-18T17:21:33",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1487,
+   "output": 171,
+   "cost": 0.009368,
+   "note": "req_011ChBQjZx6UrAZBUxffWUNm"
+  },
+  {
+   "at": "2026-11-18T17:21:33",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1558,
+   "output": 166,
+   "cost": 0.009552,
+   "note": "req_011ChBQjZwrKHawh2NeWH7M5"
+  },
+  {
+   "at": "2026-11-18T17:21:33",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1239,
+   "output": 147,
+   "cost": 0.007896,
+   "note": "req_011ChBQjZucXrecChgtgQh28"
+  },
+  {
+   "at": "2026-11-18T17:21:34",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 678,
+   "output": 39,
+   "cost": 0.006984,
+   "note": "req_011ChBQji329hhp4T5tnzNyD"
+  },
+  {
+   "at": "2026-11-18T17:21:34",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1470,
+   "output": 205,
+   "cost": 0.00998,
+   "note": "req_011ChBQjbPAiB6w7qhwWBgHZ"
+  },
+  {
+   "at": "2026-11-18T17:21:34",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 666,
+   "output": 20,
+   "cost": 0.006128,
+   "note": "req_011ChBQjksB82yDTJpdP2NvX"
+  },
+  {
+   "at": "2026-11-18T17:21:35",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1231,
+   "output": 131,
+   "cost": 0.007544,
+   "note": "req_011ChBQjg7RkoxQMotvBbKER"
+  },
+  {
+   "at": "2026-11-18T17:21:35",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 692,
+   "output": 34,
+   "cost": 0.006896,
+   "note": "req_011ChBQjp7ssBjbN6iDYgbdP"
+  },
+  {
+   "at": "2026-11-18T17:21:35",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 661,
+   "output": 51,
+   "cost": 0.007328,
+   "note": "req_011ChBQjhJ7ia34pghiogt22"
+  },
+  {
+   "at": "2026-11-18T17:21:36",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 631,
+   "output": 50,
+   "cost": 0.007048,
+   "note": "req_011ChBQjrCA11ZrYCsrSZHKX"
+  },
+  {
+   "at": "2026-11-18T17:21:37",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1523,
+   "output": 185,
+   "cost": 0.009792,
+   "note": "req_011ChBQjp7tYu5CXUS6uKBsp"
+  },
+  {
+   "at": "2026-11-18T17:21:38",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1357,
+   "output": 220,
+   "cost": 0.009828,
+   "note": "req_011ChBQjphc4gzLvdwmrmrU6"
+  },
+  {
+   "at": "2026-11-18T17:21:38",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1278,
+   "output": 219,
+   "cost": 0.009492,
+   "note": "req_011ChBQjtMP97XheLAkisDWE"
+  },
+  {
+   "at": "2026-11-18T17:21:39",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 720,
+   "output": 46,
+   "cost": 0.0076,
+   "note": "req_011ChBQk49jiUA96QKTxK3qf"
+  },
+  {
+   "at": "2026-11-18T17:21:39",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 691,
+   "output": 61,
+   "cost": 0.007968,
+   "note": "req_011ChBQk1TWJqLrumq2dvB1x"
+  },
+  {
+   "at": "2026-11-18T17:21:39",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1539,
+   "output": 746,
+   "cost": 0.021076,
+   "note": "req_011ChBQjeRihkSj51rqtieuv"
+  },
+  {
+   "at": "2026-11-18T17:21:39",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 728,
+   "output": 50,
+   "cost": 0.007824,
+   "note": "req_011ChBQk7mmkNdjozzhcANVD"
+  },
+  {
+   "at": "2026-11-18T17:21:39",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1331,
+   "output": 388,
+   "cost": 0.013084,
+   "note": "req_011ChBQjuFxGvVzAPqaNFFjr"
+  },
+  {
+   "at": "2026-11-18T17:21:40",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1513,
+   "output": 346,
+   "cost": 0.012972,
+   "note": "req_011ChBQjvc498VLrLZWJPK8J"
+  },
+  {
+   "at": "2026-11-18T17:21:40",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 773,
+   "output": 53,
+   "cost": 0.008304,
+   "note": "req_011ChBQkA7R5sCKVFBnAJmno"
+  },
+  {
+   "at": "2026-11-18T17:21:41",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 751,
+   "output": 48,
+   "cost": 0.007928,
+   "note": "req_011ChBQkCPLkr8gTfzUxbU5G"
+  },
+  {
+   "at": "2026-11-18T17:21:41",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1255,
+   "output": 136,
+   "cost": 0.00774,
+   "note": "req_011ChBQk8fMf859kwmTJFnKN"
+  },
+  {
+   "at": "2026-11-18T17:21:41",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 706,
+   "output": 64,
+   "cost": 0.008208,
+   "note": "req_011ChBQkEemgSpSTQNBGk6gw"
+  },
+  {
+   "at": "2026-11-18T17:21:42",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 652,
+   "output": 35,
+   "cost": 0.006616,
+   "note": "req_011ChBQkKBcbhUadf6G83jeZ"
+  },
+  {
+   "at": "2026-11-18T17:21:42",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1497,
+   "output": 280,
+   "cost": 0.011588,
+   "note": "req_011ChBQk8p2K88neqXn3nAan"
+  },
+  {
+   "at": "2026-11-18T17:21:42",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1483,
+   "output": 181,
+   "cost": 0.009552,
+   "note": "req_011ChBQkCM77w3cmVHML16C3"
+  },
+  {
+   "at": "2026-11-18T17:21:43",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1279,
+   "output": 180,
+   "cost": 0.008716,
+   "note": "req_011ChBQkEiyvBYsK7WjvL6QZ"
+  },
+  {
+   "at": "2026-11-18T17:21:43",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 701,
+   "output": 48,
+   "cost": 0.007528,
+   "note": "req_011ChBQkPWKLLxoQgvxLv6CD"
+  },
+  {
+   "at": "2026-11-18T17:21:43",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 712,
+   "output": 51,
+   "cost": 0.007736,
+   "note": "req_011ChBQkPdkY5CJgapuoj2Ub"
+  },
+  {
+   "at": "2026-11-18T17:21:44",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 708,
+   "output": 65,
+   "cost": 0.008264,
+   "note": "req_011ChBQkSjnnDtu6izzHN2du"
+  },
+  {
+   "at": "2026-11-18T17:21:44",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1436,
+   "output": 204,
+   "cost": 0.009824,
+   "note": "req_011ChBQkHTveXs2d7Jy4uGGC"
+  },
+  {
+   "at": "2026-11-18T17:21:45",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 690,
+   "output": 37,
+   "cost": 0.007,
+   "note": "req_011ChBQkXwq2rtvrQueWWcue"
+  },
+  {
+   "at": "2026-11-18T17:21:45",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1235,
+   "output": 146,
+   "cost": 0.00786,
+   "note": "req_011ChBQkTyCeXuZMyw5X4NSN"
+  },
+  {
+   "at": "2026-11-18T17:21:45",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1202,
+   "output": 133,
+   "cost": 0.007468,
+   "note": "req_011ChBQkTMzSdNeBLTB7AvUv"
+  },
+  {
+   "at": "2026-11-18T17:21:46",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 657,
+   "output": 50,
+   "cost": 0.007256,
+   "note": "req_011ChBQkcYeAQf1aBL5eqs2D"
+  },
+  {
+   "at": "2026-11-18T17:21:46",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1459,
+   "output": 461,
+   "cost": 0.015056,
+   "note": "req_011ChBQkK6QXLc8FCsYWVqRo"
+  },
+  {
+   "at": "2026-11-18T17:21:47",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1367,
+   "output": 419,
+   "cost": 0.013848,
+   "note": "req_011ChBQkNvrAXQPWNHfkDdwr"
+  },
+  {
+   "at": "2026-11-18T17:21:47",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1405,
+   "output": 119,
+   "cost": 0.008,
+   "note": "req_011ChBQkbcLk6jFAsSemPhBE"
+  },
+  {
+   "at": "2026-11-18T17:21:47",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 648,
+   "output": 20,
+   "cost": 0.005984,
+   "note": "req_011ChBQke6f8dY4zzQi2BDPD"
+  },
+  {
+   "at": "2026-11-18T17:21:47",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 742,
+   "output": 59,
+   "cost": 0.008296,
+   "note": "req_011ChBQkhbko33FpWLuuV3A3"
+  },
+  {
+   "at": "2026-11-18T17:21:48",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 788,
+   "output": 68,
+   "cost": 0.009024,
+   "note": "req_011ChBQkiudkM1sVZL9cAPcd"
+  },
+  {
+   "at": "2026-11-18T17:21:48",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 633,
+   "output": 48,
+   "cost": 0.006984,
+   "note": "req_011ChBQkjni5fQzUJiiuwbAM"
+  },
+  {
+   "at": "2026-11-18T17:21:48",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1368,
+   "output": 377,
+   "cost": 0.013012,
+   "note": "req_011ChBQkXX1w2gh1jaBfmRrQ"
+  },
+  {
+   "at": "2026-11-18T17:21:49",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1558,
+   "output": 181,
+   "cost": 0.009852,
+   "note": "req_011ChBQkgmtzg82XQbWoUVxH"
+  },
+  {
+   "at": "2026-11-18T17:21:49",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1270,
+   "output": 160,
+   "cost": 0.00828,
+   "note": "req_011ChBQkkkFezTZ8YsfBsxu4"
+  },
+  {
+   "at": "2026-11-18T17:21:49",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 734,
+   "output": 48,
+   "cost": 0.007792,
+   "note": "req_011ChBQks1HaWWyuJMVGswWt"
+  },
+  {
+   "at": "2026-11-18T17:21:50",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1203,
+   "output": 156,
+   "cost": 0.007932,
+   "note": "req_011ChBQkmuTrZCG62GfXYdCU"
+  },
+  {
+   "at": "2026-11-18T17:21:50",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 712,
+   "output": 51,
+   "cost": 0.007736,
+   "note": "req_011ChBQksgipaM4hzU2ZeJ6o"
+  },
+  {
+   "at": "2026-11-18T17:21:50",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 646,
+   "output": 37,
+   "cost": 0.006648,
+   "note": "req_011ChBQkuT92tyCBidDYVcxW"
+  },
+  {
+   "at": "2026-11-18T17:21:50",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1551,
+   "output": 169,
+   "cost": 0.009584,
+   "note": "req_011ChBQkoUiJTsBkzwZeEXrK"
+  },
+  {
+   "at": "2026-11-18T17:21:50",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1694,
+   "output": 203,
+   "cost": 0.010836,
+   "note": "req_011ChBQkocQDkf7VcmyYAr8C"
+  },
+  {
+   "at": "2026-11-18T17:21:51",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 656,
+   "output": 50,
+   "cost": 0.007248,
+   "note": "req_011ChBQkwXtq81g9CZ8sEWf2"
+  },
+  {
+   "at": "2026-11-18T17:21:51",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 714,
+   "output": 39,
+   "cost": 0.007272,
+   "note": "req_011ChBQkzvoFnmmjRqRt5LFR"
+  },
+  {
+   "at": "2026-11-18T17:21:51",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 669,
+   "output": 51,
+   "cost": 0.007392,
+   "note": "req_011ChBQkzj9EigifKugAPYBg"
+  },
+  {
+   "at": "2026-11-18T17:21:51",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1418,
+   "output": 145,
+   "cost": 0.008572,
+   "note": "req_011ChBQkw1u1hcaeAjXgZPce"
+  },
+  {
+   "at": "2026-11-18T17:21:52",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1295,
+   "output": 155,
+   "cost": 0.00828,
+   "note": "req_011ChBQkwk3kGWE7ZqutEHgV"
+  },
+  {
+   "at": "2026-11-18T17:21:52",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 641,
+   "output": 34,
+   "cost": 0.006488,
+   "note": "req_011ChBQm5AHVqCNRBv7ceeQ3"
+  },
+  {
+   "at": "2026-11-18T17:21:53",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 678,
+   "output": 50,
+   "cost": 0.007424,
+   "note": "req_011ChBQm8TUg7jmqDdwpVKHS"
+  },
+  {
+   "at": "2026-11-18T17:21:53",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1338,
+   "output": 143,
+   "cost": 0.008212,
+   "note": "req_011ChBQm2ZX6XQHyG2iXza4F"
+  },
+  {
+   "at": "2026-11-18T17:21:54",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1427,
+   "output": 175,
+   "cost": 0.009208,
+   "note": "req_011ChBQm4fWsatsdRnKmcS3S"
+  },
+  {
+   "at": "2026-11-18T17:21:54",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1489,
+   "output": 195,
+   "cost": 0.009856,
+   "note": "req_011ChBQm4hzpcWdh1PxprY3P"
+  },
+  {
+   "at": "2026-11-18T17:21:54",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1340,
+   "output": 325,
+   "cost": 0.01186,
+   "note": "req_011ChBQkyn6DbndD19rUkruK"
+  },
+  {
+   "at": "2026-11-18T17:21:54",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 660,
+   "output": 50,
+   "cost": 0.00728,
+   "note": "req_011ChBQmDmDG8mt4wNR3jozc"
+  },
+  {
+   "at": "2026-11-18T17:21:55",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 676,
+   "output": 61,
+   "cost": 0.007848,
+   "note": "req_011ChBQmFkmbeAt7PvhoxXAi"
+  },
+  {
+   "at": "2026-11-18T17:21:55",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 714,
+   "output": 53,
+   "cost": 0.007832,
+   "note": "req_011ChBQmH3u7TYDwNWPqX4pY"
+  },
+  {
+   "at": "2026-11-18T17:21:55",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 695,
+   "output": 48,
+   "cost": 0.00748,
+   "note": "req_011ChBQmGzRpLA7p4WCumgYG"
+  },
+  {
+   "at": "2026-11-18T17:21:56",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1345,
+   "output": 288,
+   "cost": 0.01114,
+   "note": "req_011ChBQmCZHGXERTinLkYQRp"
+  },
+  {
+   "at": "2026-11-18T17:21:57",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1302,
+   "output": 382,
+   "cost": 0.012848,
+   "note": "req_011ChBQm9HaiwQdSVY4eoABW"
+  },
+  {
+   "at": "2026-11-18T17:21:58",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1460,
+   "output": 249,
+   "cost": 0.01082,
+   "note": "req_011ChBQmLzHkc6qp58w2aJf5"
+  },
+  {
+   "at": "2026-11-18T17:21:58",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1214,
+   "output": 267,
+   "cost": 0.010196,
+   "note": "req_011ChBQmHjpmxw9evzz72fkJ"
+  },
+  {
+   "at": "2026-11-18T17:21:59",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 698,
+   "output": 55,
+   "cost": 0.007784,
+   "note": "req_011ChBQmUWynj4qbWesdEi8G"
+  },
+  {
+   "at": "2026-11-18T17:21:59",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 694,
+   "output": 50,
+   "cost": 0.007552,
+   "note": "req_011ChBQmZdoJVwyJRW8MfCC9"
+  },
+  {
+   "at": "2026-11-18T17:21:59",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 689,
+   "output": 52,
+   "cost": 0.007592,
+   "note": "req_011ChBQmYiEqmMkQbzz4Hupg"
+  },
+  {
+   "at": "2026-11-18T17:22:00",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1333,
+   "output": 416,
+   "cost": 0.013652,
+   "note": "req_011ChBQmKw3LkQR2fLeJPpp5"
+  },
+  {
+   "at": "2026-11-18T17:22:00",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 701,
+   "output": 373,
+   "cost": 0.020528,
+   "note": "req_011ChBQmSsFkLn5qP8cn5EPg"
+  },
+  {
+   "at": "2026-11-18T17:22:00",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1281,
+   "output": 433,
+   "cost": 0.013784,
+   "note": "req_011ChBQmM3WjrvMuKZXFc6pC"
+  },
+  {
+   "at": "2026-11-18T17:22:01",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 784,
+   "output": 56,
+   "cost": 0.008512,
+   "note": "req_011ChBQmh5mmz4kr6JVszNuy"
+  },
+  {
+   "at": "2026-11-18T17:22:01",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 722,
+   "output": 48,
+   "cost": 0.007696,
+   "note": "req_011ChBQmjAYShogqUn7LVQBU"
+  },
+  {
+   "at": "2026-11-18T17:22:02",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1327,
+   "output": 96,
+   "cost": 0.007228,
+   "note": "req_011ChBQmi25x517PbhsgsjDg"
+  },
+  {
+   "at": "2026-11-18T17:22:02",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1315,
+   "output": 144,
+   "cost": 0.00814,
+   "note": "req_011ChBQmg9Tvp57D4QyEwcDT"
+  },
+  {
+   "at": "2026-11-18T17:22:03",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1381,
+   "output": 370,
+   "cost": 0.012924,
+   "note": "req_011ChBQmbjJcFWrQnRshAakg"
+  },
+  {
+   "at": "2026-11-18T17:22:03",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1500,
+   "output": 281,
+   "cost": 0.01162,
+   "note": "req_011ChBQmgBhHdFxA2M2GGTWA"
+  },
+  {
+   "at": "2026-11-18T17:22:03",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1378,
+   "output": 186,
+   "cost": 0.009232,
+   "note": "req_011ChBQmm8rL8KrUdq9KmqUd"
+  },
+  {
+   "at": "2026-11-18T17:22:04",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 618,
+   "output": 48,
+   "cost": 0.006864,
+   "note": "req_011ChBQmsZ4xLNk6PQVom5So"
+  },
+  {
+   "at": "2026-11-18T17:22:04",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 651,
+   "output": 35,
+   "cost": 0.006608,
+   "note": "req_011ChBQmsfWDJnvoVguNmsXV"
+  },
+  {
+   "at": "2026-11-18T17:22:04",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 700,
+   "output": 48,
+   "cost": 0.00752,
+   "note": "req_011ChBQmvbcpoioCkQU4xLwu"
+  },
+  {
+   "at": "2026-11-18T17:22:04",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1317,
+   "output": 189,
+   "cost": 0.009048,
+   "note": "req_011ChBQmo6RoLRM4qjPMGjg2"
+  },
+  {
+   "at": "2026-11-18T17:22:04",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 726,
+   "output": 64,
+   "cost": 0.008368,
+   "note": "req_011ChBQmvWeyfUDJFRjQWcNK"
+  },
+  {
+   "at": "2026-11-18T17:22:04",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 717,
+   "output": 51,
+   "cost": 0.007776,
+   "note": "req_011ChBQmxVUViQ4zZ3DY2AA3"
+  },
+  {
+   "at": "2026-11-18T17:22:05",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 717,
+   "output": 65,
+   "cost": 0.008336,
+   "note": "req_011ChBQn17UfmnDopaPa5ip7"
+  },
+  {
+   "at": "2026-11-18T17:22:06",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1301,
+   "output": 170,
+   "cost": 0.008604,
+   "note": "req_011ChBQn12XeHWE2Gbe6Mt7V"
+  },
+  {
+   "at": "2026-11-18T17:22:06",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1256,
+   "output": 150,
+   "cost": 0.008024,
+   "note": "req_011ChBQn14kgKhQuL25rSrzo"
+  },
+  {
+   "at": "2026-11-18T17:22:07",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1311,
+   "output": 204,
+   "cost": 0.009324,
+   "note": "req_011ChBQn17UkUFYShWfJx4Hu"
+  },
+  {
+   "at": "2026-11-18T17:22:07",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 696,
+   "output": 48,
+   "cost": 0.007488,
+   "note": "req_011ChBQnBs8erZGpSG5fQJVV"
+  },
+  {
+   "at": "2026-11-18T17:22:07",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 652,
+   "output": 37,
+   "cost": 0.006696,
+   "note": "req_011ChBQnBuNUYF86TPj2U7zK"
+  },
+  {
+   "at": "2026-11-18T17:22:08",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 727,
+   "output": 59,
+   "cost": 0.008176,
+   "note": "req_011ChBQnDYM5WW35uSJXnaZo"
+  },
+  {
+   "at": "2026-11-18T17:22:09",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1459,
+   "output": 462,
+   "cost": 0.015076,
+   "note": "req_011ChBQn2rQozZRGYR681CHe"
+  },
+  {
+   "at": "2026-11-18T17:22:09",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1207,
+   "output": 346,
+   "cost": 0.011748,
+   "note": "req_011ChBQn5JW91b8TWw8aWdbg"
+  },
+  {
+   "at": "2026-11-18T17:22:10",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 766,
+   "output": 70,
+   "cost": 0.008928,
+   "note": "req_011ChBQnMsuGMNQ6NUfwJXJi"
+  },
+  {
+   "at": "2026-11-18T17:22:10",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1252,
+   "output": 131,
+   "cost": 0.007628,
+   "note": "req_011ChBQnGbtsjXFKZgJn6SFi"
+  },
+  {
+   "at": "2026-11-18T17:22:10",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1234,
+   "output": 143,
+   "cost": 0.007796,
+   "note": "req_011ChBQnJ9fDTjV5n7qLkGre"
+  },
+  {
+   "at": "2026-11-18T17:22:11",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 738,
+   "output": 55,
+   "cost": 0.008104,
+   "note": "req_011ChBQnNnDMtN8ZjwHz3roh"
+  },
+  {
+   "at": "2026-11-18T17:22:11",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 646,
+   "output": 20,
+   "cost": 0.005968,
+   "note": "req_011ChBQnSsY1zcV4XQf7Tooy"
+  },
+  {
+   "at": "2026-11-18T17:22:11",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1364,
+   "output": 627,
+   "cost": 0.017996,
+   "note": "req_011ChBQn14FtxUQ6gaqfz5gC"
+  },
+  {
+   "at": "2026-11-18T17:22:11",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 674,
+   "output": 56,
+   "cost": 0.007632,
+   "note": "req_011ChBQnU1zBY1LrqKBpxy95"
+  },
+  {
+   "at": "2026-11-18T17:22:12",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 812,
+   "output": 73,
+   "cost": 0.009416,
+   "note": "req_011ChBQnWpA8MRBQ8SUYLC7X"
+  },
+  {
+   "at": "2026-11-18T17:22:12",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1206,
+   "output": 390,
+   "cost": 0.012624,
+   "note": "req_011ChBQnGceGvQaS8zfDyher"
+  },
+  {
+   "at": "2026-11-18T17:22:12",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1223,
+   "output": 170,
+   "cost": 0.008292,
+   "note": "req_011ChBQnSKYSNAwzZjEjYLGC"
+  },
+  {
+   "at": "2026-11-18T17:22:13",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 689,
+   "output": 20,
+   "cost": 0.006312,
+   "note": "req_011ChBQncC7suonqVZxwnwPD"
+  },
+  {
+   "at": "2026-11-18T17:22:13",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 752,
+   "output": 68,
+   "cost": 0.008736,
+   "note": "req_011ChBQnbaQHx9qaKhBkQN8b"
+  },
+  {
+   "at": "2026-11-18T17:22:13",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1448,
+   "output": 145,
+   "cost": 0.008692,
+   "note": "req_011ChBQnVjBhHxJTQAJodsuD"
+  },
+  {
+   "at": "2026-11-18T17:22:13",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1529,
+   "output": 149,
+   "cost": 0.009096,
+   "note": "req_011ChBQnWqeiCrYN3MpXNrkS"
+  },
+  {
+   "at": "2026-11-18T17:22:14",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 644,
+   "output": 51,
+   "cost": 0.007192,
+   "note": "req_011ChBQng8zxTQByxtb5cu7P"
+  },
+  {
+   "at": "2026-11-18T17:22:14",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 672,
+   "output": 39,
+   "cost": 0.006936,
+   "note": "req_011ChBQngW4t9ecNSDFtNoQh"
+  },
+  {
+   "at": "2026-11-18T17:22:14",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1435,
+   "output": 166,
+   "cost": 0.00906,
+   "note": "req_011ChBQnYFyfEHZKfnJagcC1"
+  },
+  {
+   "at": "2026-11-18T17:22:15",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1111,
+   "output": 131,
+   "cost": 0.007064,
+   "note": "req_011ChBQng8FJMubijkJjJ8om"
+  },
+  {
+   "at": "2026-11-18T17:22:15",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1204,
+   "output": 197,
+   "cost": 0.008756,
+   "note": "req_011ChBQnbM1YYy5NGc2bjd3k"
+  },
+  {
+   "at": "2026-11-18T17:22:15",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 664,
+   "output": 34,
+   "cost": 0.006672,
+   "note": "req_011ChBQnkVRqEFfXUbPYaMsR"
+  },
+  {
+   "at": "2026-11-18T17:22:16",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 631,
+   "output": 50,
+   "cost": 0.007048,
+   "note": "req_011ChBQnoJbv4E7Zq8bAAUw9"
+  },
+  {
+   "at": "2026-11-18T17:22:16",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 711,
+   "output": 50,
+   "cost": 0.007688,
+   "note": "req_011ChBQnoQoCTzFXato7F1TP"
+  },
+  {
+   "at": "2026-11-18T17:22:16",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1424,
+   "output": 149,
+   "cost": 0.008676,
+   "note": "req_011ChBQnkM1CSX9H6iC4LiTw"
+  },
+  {
+   "at": "2026-11-18T17:22:17",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1490,
+   "output": 186,
+   "cost": 0.00968,
+   "note": "req_011ChBQnkRUY7bKpd2fr3B4A"
+  },
+  {
+   "at": "2026-11-18T17:22:17",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1215,
+   "output": 336,
+   "cost": 0.01158,
+   "note": "req_011ChBQng9zWoBPE2vvEpHjW"
+  },
+  {
+   "at": "2026-11-18T17:22:18",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 686,
+   "output": 48,
+   "cost": 0.007408,
+   "note": "req_011ChBQnxB9zsL8snNACG38b"
+  },
+  {
+   "at": "2026-11-18T17:22:18",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 657,
+   "output": 61,
+   "cost": 0.007696,
+   "note": "req_011ChBQnvVCdVLzgeG2VpaqB"
+  },
+  {
+   "at": "2026-11-18T17:22:18",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 742,
+   "output": 53,
+   "cost": 0.008056,
+   "note": "req_011ChBQnzeEfRSVBbL8XTGTv"
+  },
+  {
+   "at": "2026-11-18T17:22:20",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1373,
+   "output": 347,
+   "cost": 0.012432,
+   "note": "req_011ChBQnsMC4CcUQ4zDdmRTN"
+  },
+  {
+   "at": "2026-11-18T17:22:21",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1217,
+   "output": 263,
+   "cost": 0.010128,
+   "note": "req_011ChBQnsimDPrcMabWYBCTG"
+  },
+  {
+   "at": "2026-11-18T17:22:21",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 731,
+   "output": 46,
+   "cost": 0.007688,
+   "note": "req_011ChBQoBgG5uf3zLrKNs3FT"
+  },
+  {
+   "at": "2026-11-18T17:22:22",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 712,
+   "output": 50,
+   "cost": 0.007696,
+   "note": "req_011ChBQoEPxo1aBm3WeRU151"
+  },
+  {
+   "at": "2026-11-18T17:22:22",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1465,
+   "output": 614,
+   "cost": 0.01814,
+   "note": "req_011ChBQnpnQg1DNFDf88NWiw"
+  },
+  {
+   "at": "2026-11-18T17:22:23",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1215,
+   "output": 425,
+   "cost": 0.01336,
+   "note": "req_011ChBQo4jJVHTmWxYz1fEX1"
+  },
+  {
+   "at": "2026-11-18T17:22:23",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 751,
+   "output": 55,
+   "cost": 0.008208,
+   "note": "req_011ChBQoLLQ13XW57fYa6o3Y"
+  },
+  {
+   "at": "2026-11-18T17:22:23",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1370,
+   "output": 427,
+   "cost": 0.01402,
+   "note": "req_011ChBQo4JFRJUDmvZi46A5f"
+  },
+  {
+   "at": "2026-11-18T17:22:24",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 732,
+   "output": 48,
+   "cost": 0.007776,
+   "note": "req_011ChBQoQSiMgKEQhXgNfMtC"
+  },
+  {
+   "at": "2026-11-18T17:22:24",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 776,
+   "output": 52,
+   "cost": 0.008288,
+   "note": "req_011ChBQoSaCmcshXTTrePWoy"
+  },
+  {
+   "at": "2026-11-18T17:22:25",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1147,
+   "output": 169,
+   "cost": 0.007968,
+   "note": "req_011ChBQoJeTevJbUhrQBUL8Z"
+  },
+  {
+   "at": "2026-11-18T17:22:25",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1396,
+   "output": 619,
+   "cost": 0.017964,
+   "note": "req_011ChBQo2KS94XbiPWZN97RL"
+  },
+  {
+   "at": "2026-11-18T17:22:25",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1394,
+   "output": 357,
+   "cost": 0.012716,
+   "note": "req_011ChBQoFgrhfCiymSYQDTHP"
+  },
+  {
+   "at": "2026-11-18T17:22:25",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 685,
+   "output": 35,
+   "cost": 0.00688,
+   "note": "req_011ChBQoX6ok7f3sppir2tbN"
+  },
+  {
+   "at": "2026-11-18T17:22:25",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 778,
+   "output": 56,
+   "cost": 0.008464,
+   "note": "req_011ChBQoX6K7usDTA6A3kxNr"
+  },
+  {
+   "at": "2026-11-18T17:22:26",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 691,
+   "output": 64,
+   "cost": 0.008088,
+   "note": "req_011ChBQoYDXhp1N1RtKqQhg6"
+  },
+  {
+   "at": "2026-11-18T17:22:27",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1463,
+   "output": 305,
+   "cost": 0.011952,
+   "note": "req_011ChBQoQRicu5v9Et2Jtwuu"
+  },
+  {
+   "at": "2026-11-18T17:22:27",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1453,
+   "output": 177,
+   "cost": 0.009352,
+   "note": "req_011ChBQoWiVTPXTg3hYmUqBK"
+  },
+  {
+   "at": "2026-11-18T17:22:27",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1260,
+   "output": 206,
+   "cost": 0.00916,
+   "note": "req_011ChBQoUmQbcHd8bCiBqNbF"
+  },
+  {
+   "at": "2026-11-18T17:22:28",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 707,
+   "output": 48,
+   "cost": 0.007576,
+   "note": "req_011ChBQogKwXCbFfdn3bBqvb"
+  },
+  {
+   "at": "2026-11-18T17:22:28",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 624,
+   "output": 48,
+   "cost": 0.006912,
+   "note": "req_011ChBQoijJYGC9NNaHCk1bZ"
+  },
+  {
+   "at": "2026-11-18T17:22:28",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 708,
+   "output": 51,
+   "cost": 0.007704,
+   "note": "req_011ChBQoioWMkVdEGucjZz1j"
+  },
+  {
+   "at": "2026-11-18T17:22:28",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1253,
+   "output": 193,
+   "cost": 0.008872,
+   "note": "req_011ChBQob5uz4rba8TTJBsrh"
+  },
+  {
+   "at": "2026-11-18T17:22:28",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1290,
+   "output": 177,
+   "cost": 0.0087,
+   "note": "req_011ChBQocKqSo1oyLsLU8PLt"
+  },
+  {
+   "at": "2026-11-18T17:22:29",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1207,
+   "output": 190,
+   "cost": 0.008628,
+   "note": "req_011ChBQoatkcT63hC5at1n6q"
+  },
+  {
+   "at": "2026-11-18T17:22:29",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 710,
+   "output": 48,
+   "cost": 0.0076,
+   "note": "req_011ChBQoo4Vpu3sioC7hkBnB"
+  },
+  {
+   "at": "2026-11-18T17:22:29",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 663,
+   "output": 37,
+   "cost": 0.006784,
+   "note": "req_011ChBQooH938SmUrn9ZcBXT"
+  },
+  {
+   "at": "2026-11-18T17:22:30",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 718,
+   "output": 65,
+   "cost": 0.008344,
+   "note": "req_011ChBQoqiypPZo24GNime1y"
+  },
+  {
+   "at": "2026-11-18T17:22:33",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1391,
+   "output": 313,
+   "cost": 0.011824,
+   "note": "req_011ChBQoo5EsvYv9bPrEU3wd"
+  },
+  {
+   "at": "2026-11-18T17:22:33",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1161,
+   "output": 212,
+   "cost": 0.008884,
+   "note": "req_011ChBQovRFi37WxSkXAUrQq"
+  },
+  {
+   "at": "2026-11-18T17:22:33",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1328,
+   "output": 407,
+   "cost": 0.013452,
+   "note": "req_011ChBQokB7gWKHWw9tRffCe"
+  },
+  {
+   "at": "2026-11-18T17:22:34",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 712,
+   "output": 70,
+   "cost": 0.008496,
+   "note": "req_011ChBQp73imuEhfMHQrDAc6"
+  },
+  {
+   "at": "2026-11-18T17:22:34",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1429,
+   "output": 361,
+   "cost": 0.012936,
+   "note": "req_011ChBQoo1mdRMhp77vEe9Zo"
+  },
+  {
+   "at": "2026-11-18T17:22:34",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 658,
+   "output": 20,
+   "cost": 0.006064,
+   "note": "req_011ChBQp8fDLxxfXhiCLYhKz"
+  },
+  {
+   "at": "2026-11-18T17:22:34",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1452,
+   "output": 381,
+   "cost": 0.013428,
+   "note": "req_011ChBQorwQxpNGNocmx5JBo"
+  },
+  {
+   "at": "2026-11-18T17:22:34",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 787,
+   "output": 73,
+   "cost": 0.009216,
+   "note": "req_011ChBQp9NsBs8GrjaYZs1R4"
+  },
+  {
+   "at": "2026-11-18T17:22:35",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1233,
+   "output": 482,
+   "cost": 0.014572,
+   "note": "req_011ChBQosZ7NWZ79BCD9iRbF"
+  },
+  {
+   "at": "2026-11-18T17:22:35",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 748,
+   "output": 55,
+   "cost": 0.008184,
+   "note": "req_011ChBQpCjXhMRD4e5XXFMtt"
+  },
+  {
+   "at": "2026-11-18T17:22:35",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 725,
+   "output": 59,
+   "cost": 0.00816,
+   "note": "req_011ChBQpBbKd7GAvDwM9mFGm"
+  },
+  {
+   "at": "2026-11-18T17:22:36",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 811,
+   "output": 68,
+   "cost": 0.009208,
+   "note": "req_011ChBQpFykKq6cpxQtFUG9Q"
+  },
+  {
+   "at": "2026-11-18T17:22:36",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1319,
+   "output": 160,
+   "cost": 0.008476,
+   "note": "req_011ChBQpCG12tDrfzksNrAQs"
+  },
+  {
+   "at": "2026-11-18T17:22:37",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1415,
+   "output": 160,
+   "cost": 0.00886,
+   "note": "req_011ChBQpEHHwR19qEPCH1cm9"
+  },
+  {
+   "at": "2026-11-18T17:22:37",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 679,
+   "output": 20,
+   "cost": 0.006232,
+   "note": "req_011ChBQpPCpSGbeKTdbz52yh"
+  },
+  {
+   "at": "2026-11-18T17:22:38",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 651,
+   "output": 51,
+   "cost": 0.007248,
+   "note": "req_011ChBQpQxVMsTE6kYo17sA5"
+  },
+  {
+   "at": "2026-11-18T17:22:38",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1243,
+   "output": 183,
+   "cost": 0.008632,
+   "note": "req_011ChBQpJmfsRnkZ7gP4LZv3"
+  },
+  {
+   "at": "2026-11-18T17:22:38",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1425,
+   "output": 193,
+   "cost": 0.00956,
+   "note": "req_011ChBQpGymaTJJcStJ68qce"
+  },
+  {
+   "at": "2026-11-18T17:22:39",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 683,
+   "output": 34,
+   "cost": 0.006824,
+   "note": "req_011ChBQpWTPfu1c9Nnxod9WJ"
+  },
+  {
+   "at": "2026-11-18T17:22:40",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 697,
+   "output": 50,
+   "cost": 0.007576,
+   "note": "req_011ChBQpWFFEQ8Kw4sLd1ji4"
+  },
+  {
+   "at": "2026-11-18T17:22:40",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1148,
+   "output": 159,
+   "cost": 0.007772,
+   "note": "req_011ChBQpTZkZ75H596gMtDa8"
+  },
+  {
+   "at": "2026-11-18T17:22:40",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1303,
+   "output": 334,
+   "cost": 0.011892,
+   "note": "req_011ChBQpLPQpXc7qJkMUBndA"
+  },
+  {
+   "at": "2026-11-18T17:22:40",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1448,
+   "output": 154,
+   "cost": 0.008872,
+   "note": "req_011ChBQpVd2peqnRb68rKbuf"
+  },
+  {
+   "at": "2026-11-18T17:22:41",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1139,
+   "output": 366,
+   "cost": 0.011876,
+   "note": "req_011ChBQpBbpp9mtJhWCUdtkw"
+  },
+  {
+   "at": "2026-11-18T17:22:41",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 659,
+   "output": 50,
+   "cost": 0.007272,
+   "note": "req_011ChBQpePdssZJ5fNnsQD3q"
+  },
+  {
+   "at": "2026-11-18T17:22:41",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 755,
+   "output": 53,
+   "cost": 0.00816,
+   "note": "req_011ChBQpeSroFCc5uRAANYwJ"
+  },
+  {
+   "at": "2026-11-18T17:22:41",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 655,
+   "output": 61,
+   "cost": 0.00768,
+   "note": "req_011ChBQpgYMu2shL4RYNR5tS"
+  },
+  {
+   "at": "2026-11-18T17:22:43",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 725,
+   "output": 56,
+   "cost": 0.00804,
+   "note": "req_011ChBQpioYC1WkXQYzRxZ4q"
+  },
+  {
+   "at": "2026-11-18T17:22:43",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1460,
+   "output": 240,
+   "cost": 0.01064,
+   "note": "req_011ChBQpdLsdaWJVDDAV9kkR"
+  },
+  {
+   "at": "2026-11-18T17:22:44",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1275,
+   "output": 258,
+   "cost": 0.01026,
+   "note": "req_011ChBQpipmrGbouEgCFtzDE"
+  },
+  {
+   "at": "2026-11-18T17:22:44",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 740,
+   "output": 46,
+   "cost": 0.00776,
+   "note": "req_011ChBQps8b9QJpcjG7e6XrL"
+  },
+  {
+   "at": "2026-11-18T17:22:45",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1451,
+   "output": 191,
+   "cost": 0.009624,
+   "note": "req_011ChBQpaZCGVnpMCpmJtgoV"
+  },
+  {
+   "at": "2026-11-18T17:22:45",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 698,
+   "output": 50,
+   "cost": 0.007584,
+   "note": "req_011ChBQpvNKLCp88EED5onaQ"
+  },
+  {
+   "at": "2026-11-18T17:22:46",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1167,
+   "output": 428,
+   "cost": 0.013228,
+   "note": "req_011ChBQpmABMnEQdrnUViLr9"
+  },
+  {
+   "at": "2026-11-18T17:22:46",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 691,
+   "output": 48,
+   "cost": 0.007448,
+   "note": "req_011ChBQq4SEr5sUHTckjHzLJ"
+  },
+  {
+   "at": "2026-11-18T17:22:47",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1440,
+   "output": 558,
+   "cost": 0.01692,
+   "note": "req_011ChBQpiuyw3nVvqbvW5y6v"
+  },
+  {
+   "at": "2026-11-18T17:22:47",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1415,
+   "output": 366,
+   "cost": 0.01298,
+   "note": "req_011ChBQprTvGLnsM9m69TYVf"
+  },
+  {
+   "at": "2026-11-18T17:22:47",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 707,
+   "output": 48,
+   "cost": 0.007576,
+   "note": "req_011ChBQq89jEEVA6tZ8GqHmd"
+  },
+  {
+   "at": "2026-11-18T17:22:48",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 713,
+   "output": 64,
+   "cost": 0.008264,
+   "note": "req_011ChBQqAb5r9PVZnSCV1jyR"
+  },
+  {
+   "at": "2026-11-18T17:22:49",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 799,
+   "output": 52,
+   "cost": 0.008472,
+   "note": "req_011ChBQq9sfhkoy7rJVrpHGS"
+  },
+  {
+   "at": "2026-11-18T17:22:49",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1487,
+   "output": 281,
+   "cost": 0.011568,
+   "note": "req_011ChBQq4RFbcaVrPQhw4zrk"
+  },
+  {
+   "at": "2026-11-18T17:22:50",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1268,
+   "output": 276,
+   "cost": 0.010592,
+   "note": "req_011ChBQq8Z3nJygSJ5SkrUm4"
+  },
+  {
+   "at": "2026-11-18T17:22:50",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1445,
+   "output": 182,
+   "cost": 0.00942,
+   "note": "req_011ChBQqEE7Nmtbf9GdWC2fb"
+  },
+  {
+   "at": "2026-11-18T17:22:51",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1165,
+   "output": 357,
+   "cost": 0.0118,
+   "note": "req_011ChBQpzap8NNFRA43qkdGK"
+  },
+  {
+   "at": "2026-11-18T17:22:51",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 702,
+   "output": 48,
+   "cost": 0.007536,
+   "note": "req_011ChBQqLAJF5cM1X63idQcN"
+  },
+  {
+   "at": "2026-11-18T17:22:51",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1314,
+   "output": 177,
+   "cost": 0.008796,
+   "note": "req_011ChBQqGbV3qZ3ETAEd9p9k"
+  },
+  {
+   "at": "2026-11-18T17:22:51",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 651,
+   "output": 48,
+   "cost": 0.007128,
+   "note": "req_011ChBQqRQZ1QgkXVATCXKhL"
+  },
+  {
+   "at": "2026-11-18T17:22:51",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 713,
+   "output": 51,
+   "cost": 0.007744,
+   "note": "req_011ChBQqRJrb7ehkjQpV5tce"
+  },
+  {
+   "at": "2026-11-18T17:22:52",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1218,
+   "output": 178,
+   "cost": 0.008432,
+   "note": "req_011ChBQqLBH9nJgF2kAmRgBj"
+  },
+  {
+   "at": "2026-11-18T17:22:52",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 667,
+   "output": 35,
+   "cost": 0.006736,
+   "note": "req_011ChBQqSFuhYTKsYNcnoM4M"
+  },
+  {
+   "at": "2026-11-18T17:22:53",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 705,
+   "output": 65,
+   "cost": 0.00824,
+   "note": "req_011ChBQqUfX927ckUtxw3Sf6"
+  },
+  {
+   "at": "2026-11-18T17:22:53",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 664,
+   "output": 37,
+   "cost": 0.006792,
+   "note": "req_011ChBQqXAqHimoHHcqFYed4"
+  },
+  {
+   "at": "2026-11-18T17:22:56",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1353,
+   "output": 396,
+   "cost": 0.013332,
+   "note": "req_011ChBQqTU5rXQKG2VRnJQ6G"
+  },
+  {
+   "at": "2026-11-18T17:22:56",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1145,
+   "output": 192,
+   "cost": 0.00842,
+   "note": "req_011ChBQqbCfhuR1RMVs3tPNS"
+  },
+  {
+   "at": "2026-11-18T17:22:56",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1415,
+   "output": 332,
+   "cost": 0.0123,
+   "note": "req_011ChBQqWEH3AZkjttctXsyh"
+  },
+  {
+   "at": "2026-11-18T17:22:56",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1434,
+   "output": 440,
+   "cost": 0.014536,
+   "note": "req_011ChBQqW2Nv2HETCzs6jzNv"
+  },
+  {
+   "at": "2026-11-18T17:22:57",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 639,
+   "output": 20,
+   "cost": 0.005912,
+   "note": "req_011ChBQqozNL6K1EKbGcnDJH"
+  },
+  {
+   "at": "2026-11-18T17:22:57",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 775,
+   "output": 73,
+   "cost": 0.00912,
+   "note": "req_011ChBQqoa48ZLyKCdkL8zug"
+  },
+  {
+   "at": "2026-11-18T17:22:57",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1208,
+   "output": 313,
+   "cost": 0.011092,
+   "note": "req_011ChBQqbNq5fDriiy59M9Qo"
+  },
+  {
+   "at": "2026-11-18T17:22:57",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1367,
+   "output": 455,
+   "cost": 0.014568,
+   "note": "req_011ChBQqZMJ5HQintxi4rQhC"
+  },
+  {
+   "at": "2026-11-18T17:22:57",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 782,
+   "output": 59,
+   "cost": 0.008616,
+   "note": "req_011ChBQqq6pz14vfJSHWQMcr"
+  },
+  {
+   "at": "2026-11-18T17:22:58",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 722,
+   "output": 56,
+   "cost": 0.008016,
+   "note": "req_011ChBQqtAdJxXA9WAWaaoVY"
+  },
+  {
+   "at": "2026-11-18T17:22:58",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 826,
+   "output": 68,
+   "cost": 0.009328,
+   "note": "req_011ChBQqtBP6CfvQqZj2gqvA"
+  },
+  {
+   "at": "2026-11-18T17:22:59",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1487,
+   "output": 124,
+   "cost": 0.008428,
+   "note": "req_011ChBQqt991DnSXzryNezXp"
+  },
+  {
+   "at": "2026-11-18T17:22:59",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1239,
+   "output": 177,
+   "cost": 0.008496,
+   "note": "req_011ChBQqt9Py2SdNARH4dVij"
+  },
+  {
+   "at": "2026-11-18T17:22:59",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1558,
+   "output": 163,
+   "cost": 0.009492,
+   "note": "req_011ChBQqu9AcopCTcrh25p54"
+  },
+  {
+   "at": "2026-11-18T17:23:00",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 729,
+   "output": 376,
+   "cost": 0.020872,
+   "note": "req_011ChBQqpoy4mhRYURnk1WBq"
+  },
+  {
+   "at": "2026-11-18T17:23:00",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 625,
+   "output": 51,
+   "cost": 0.00704,
+   "note": "req_011ChBQr3hcqCTRTJGUYhcPV"
+  },
+  {
+   "at": "2026-11-18T17:23:00",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 696,
+   "output": 20,
+   "cost": 0.006368,
+   "note": "req_011ChBQr5MaysMuhVF27W1Xs"
+  },
+  {
+   "at": "2026-11-18T17:23:00",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 675,
+   "output": 39,
+   "cost": 0.00696,
+   "note": "req_011ChBQr6ERKgSWrgrQAqLBS"
+  },
+  {
+   "at": "2026-11-18T17:23:00",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1470,
+   "output": 183,
+   "cost": 0.00954,
+   "note": "req_011ChBQqxdGQKwZhULfc2eFr"
+  },
+  {
+   "at": "2026-11-18T17:23:01",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 670,
+   "output": 34,
+   "cost": 0.00672,
+   "note": "req_011ChBQrAg4vXiNzgvdXfPu7"
+  },
+  {
+   "at": "2026-11-18T17:23:02",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1231,
+   "output": 133,
+   "cost": 0.007584,
+   "note": "req_011ChBQr7hy58SNMYJ8x8U7j"
+  },
+  {
+   "at": "2026-11-18T17:23:03",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1357,
+   "output": 188,
+   "cost": 0.009188,
+   "note": "req_011ChBQr8wt3bNB5t29wEWMB"
+  },
+  {
+   "at": "2026-11-18T17:23:03",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1523,
+   "output": 226,
+   "cost": 0.010612,
+   "note": "req_011ChBQr82KWBJrKsfjF3Zeh"
+  },
+  {
+   "at": "2026-11-18T17:23:03",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 633,
+   "output": 50,
+   "cost": 0.007064,
+   "note": "req_011ChBQrHXpQvbAYjk9MeTVY"
+  },
+  {
+   "at": "2026-11-18T17:23:03",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1278,
+   "output": 209,
+   "cost": 0.009292,
+   "note": "req_011ChBQr9uBWZvm8pq3pjAp5"
+  },
+  {
+   "at": "2026-11-18T17:23:03",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1539,
+   "output": 556,
+   "cost": 0.017276,
+   "note": "req_011ChBQqxdmK3wrCHyoJgziA"
+  },
+  {
+   "at": "2026-11-18T17:23:04",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 702,
+   "output": 46,
+   "cost": 0.007456,
+   "note": "req_011ChBQrM5dqwKVuZSoKLoTA"
+  },
+  {
+   "at": "2026-11-18T17:23:04",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 716,
+   "output": 61,
+   "cost": 0.008168,
+   "note": "req_011ChBQrM5dtNzh7RXTEPFkp"
+  },
+  {
+   "at": "2026-11-18T17:23:05",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 778,
+   "output": 53,
+   "cost": 0.008344,
+   "note": "req_011ChBQrPeBGQ4M5ceW7jVYi"
+  },
+  {
+   "at": "2026-11-18T17:23:05",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 726,
+   "output": 50,
+   "cost": 0.007808,
+   "note": "req_011ChBQrPH6Jn2oZRPg83N4q"
+  },
+  {
+   "at": "2026-11-18T17:23:06",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1331,
+   "output": 360,
+   "cost": 0.012524,
+   "note": "req_011ChBQrEXVC8simXVD5NBnd"
+  },
+  {
+   "at": "2026-11-18T17:23:06",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1255,
+   "output": 149,
+   "cost": 0.008,
+   "note": "req_011ChBQrRVYqB4cKgDmkzWga"
+  },
+  {
+   "at": "2026-11-18T17:23:07",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1483,
+   "output": 163,
+   "cost": 0.009192,
+   "note": "req_011ChBQrU3b5CtCPa9CpxjEN"
+  },
+  {
+   "at": "2026-11-18T17:23:07",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 665,
+   "output": 35,
+   "cost": 0.00672,
+   "note": "req_011ChBQrbnv9DYxAFwfF9ZqZ"
+  },
+  {
+   "at": "2026-11-18T17:23:08",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1513,
+   "output": 370,
+   "cost": 0.013452,
+   "note": "req_011ChBQrMjahySeFG3sBkzeT"
+  },
+  {
+   "at": "2026-11-18T17:23:08",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1497,
+   "output": 286,
+   "cost": 0.011708,
+   "note": "req_011ChBQrRVZ3P2URG5PEunNm"
+  },
+  {
+   "at": "2026-11-18T17:23:08",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1279,
+   "output": 182,
+   "cost": 0.008756,
+   "note": "req_011ChBQrWEYxtJXGie6KtQKP"
+  },
+  {
+   "at": "2026-11-18T17:23:08",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 694,
+   "output": 51,
+   "cost": 0.007592,
+   "note": "req_011ChBQrez9ng7N9HJzqsVHe"
+  },
+  {
+   "at": "2026-11-18T17:23:09",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 717,
+   "output": 64,
+   "cost": 0.008296,
+   "note": "req_011ChBQrhBMmS7tmJDXd938j"
+  },
+  {
+   "at": "2026-11-18T17:23:09",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 710,
+   "output": 65,
+   "cost": 0.00828,
+   "note": "req_011ChBQrhPX8S7Mo5JR3BJuQ"
+  },
+  {
+   "at": "2026-11-18T17:23:09",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 700,
+   "output": 48,
+   "cost": 0.00752,
+   "note": "req_011ChBQrhmbAXgSzbiBnR81g"
+  },
+  {
+   "at": "2026-11-18T17:23:10",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1436,
+   "output": 177,
+   "cost": 0.009284,
+   "note": "req_011ChBQrffb3Wg32HcvBmj5o"
+  },
+  {
+   "at": "2026-11-18T17:23:11",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 663,
+   "output": 37,
+   "cost": 0.006784,
+   "note": "req_011ChBQrrTiLy8DpNCSA45er"
+  },
+  {
+   "at": "2026-11-18T17:23:11",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1202,
+   "output": 121,
+   "cost": 0.007228,
+   "note": "req_011ChBQrmgUyZNpaQHVuHPw4"
+  },
+  {
+   "at": "2026-11-18T17:23:11",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 726,
+   "output": 514,
+   "cost": 0.026368,
+   "note": "req_011ChBQrZJqWeRYhBTkA9vyr"
+  },
+  {
+   "at": "2026-11-18T17:23:12",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 636,
+   "output": 20,
+   "cost": 0.005888,
+   "note": "req_011ChBQrwFwgNNK4rLxXkjsw"
+  },
+  {
+   "at": "2026-11-18T17:23:12",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1235,
+   "output": 114,
+   "cost": 0.00722,
+   "note": "req_011ChBQrmnSFmLYbZVnd8gD5"
+  },
+  {
+   "at": "2026-11-18T17:23:13",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 625,
+   "output": 50,
+   "cost": 0.007,
+   "note": "req_011ChBQs3QnXvfWVCjFJS3b4"
+  },
+  {
+   "at": "2026-11-18T17:23:14",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1367,
+   "output": 455,
+   "cost": 0.014568,
+   "note": "req_011ChBQrmekJt7hS9JBE1d8H"
+  },
+  {
+   "at": "2026-11-18T17:23:14",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1405,
+   "output": 136,
+   "cost": 0.00834,
+   "note": "req_011ChBQryEGPdGm4uDN5iddL"
+  },
+  {
+   "at": "2026-11-18T17:23:15",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1558,
+   "output": 178,
+   "cost": 0.009792,
+   "note": "req_011ChBQs17cXnXKvnd7K4GhD"
+  },
+  {
+   "at": "2026-11-18T17:23:15",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 797,
+   "output": 68,
+   "cost": 0.009096,
+   "note": "req_011ChBQs95MKcGW6zY4XB1V1"
+  },
+  {
+   "at": "2026-11-18T17:23:15",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1459,
+   "output": 548,
+   "cost": 0.016796,
+   "note": "req_011ChBQrjSYZJiMSsp3Q2GGv"
+  },
+  {
+   "at": "2026-11-18T17:23:15",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 639,
+   "output": 48,
+   "cost": 0.007032,
+   "note": "req_011ChBQs9yRRyJAitM7TBBrV"
+  },
+  {
+   "at": "2026-11-18T17:23:16",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 709,
+   "output": 51,
+   "cost": 0.007712,
+   "note": "req_011ChBQsCkrjBW3AJgGXcaJb"
+  },
+  {
+   "at": "2026-11-18T17:23:16",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1368,
+   "output": 447,
+   "cost": 0.014412,
+   "note": "req_011ChBQrvcWCLGV3PuKFhkLW"
+  },
+  {
+   "at": "2026-11-18T17:23:16",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1270,
+   "output": 190,
+   "cost": 0.00888,
+   "note": "req_011ChBQs7sQycByWrAXRCHNg"
+  },
+  {
+   "at": "2026-11-18T17:23:16",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 746,
+   "output": 59,
+   "cost": 0.008328,
+   "note": "req_011ChBQsEY1dz8XQJpMRgjhV"
+  },
+  {
+   "at": "2026-11-18T17:23:17",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 748,
+   "output": 48,
+   "cost": 0.007904,
+   "note": "req_011ChBQsH6Yc9ipoM2EcbM9N"
+  },
+  {
+   "at": "2026-11-18T17:23:17",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1203,
+   "output": 133,
+   "cost": 0.007472,
+   "note": "req_011ChBQsDaxqGw8T76FuYyPS"
+  },
+  {
+   "at": "2026-11-18T17:23:17",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 676,
+   "output": 37,
+   "cost": 0.006888,
+   "note": "req_011ChBQsK5c7pcrMb6gfayj8"
+  },
+  {
+   "at": "2026-11-18T17:23:18",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1551,
+   "output": 174,
+   "cost": 0.009684,
+   "note": "req_011ChBQsEfxNtykqaCFMSb9v"
+  },
+  {
+   "at": "2026-11-18T17:23:18",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 633,
+   "output": 50,
+   "cost": 0.007064,
+   "note": "req_011ChBQsMxzEmAXpmzSXpTHV"
+  },
+  {
+   "at": "2026-11-18T17:23:18",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1694,
+   "output": 158,
+   "cost": 0.009936,
+   "note": "req_011ChBQsH3KaU21zsgAY9eo7"
+  },
+  {
+   "at": "2026-11-18T17:23:18",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1418,
+   "output": 148,
+   "cost": 0.008632,
+   "note": "req_011ChBQsK8LY6KMDSuur1mtd"
+  },
+  {
+   "at": "2026-11-18T17:23:18",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1295,
+   "output": 173,
+   "cost": 0.00864,
+   "note": "req_011ChBQsMELioPaWxnu41dda"
+  },
+  {
+   "at": "2026-11-18T17:23:19",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 674,
+   "output": 51,
+   "cost": 0.007432,
+   "note": "req_011ChBQsS44ZmCGTFcr3e97C"
+  },
+  {
+   "at": "2026-11-18T17:23:19",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 669,
+   "output": 39,
+   "cost": 0.006912,
+   "note": "req_011ChBQsU2NVzpwyd4UFS1ae"
+  },
+  {
+   "at": "2026-11-18T17:23:19",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 644,
+   "output": 34,
+   "cost": 0.006512,
+   "note": "req_011ChBQsUrj7PAwMAHzmzaEQ"
+  },
+  {
+   "at": "2026-11-18T17:23:19",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 696,
+   "output": 50,
+   "cost": 0.007568,
+   "note": "req_011ChBQsVB5GL8sMqfctiEAZ"
+  },
+  {
+   "at": "2026-11-18T17:23:20",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1338,
+   "output": 134,
+   "cost": 0.008032,
+   "note": "req_011ChBQsS4JSautypsWfgnC2"
+  },
+  {
+   "at": "2026-11-18T17:23:21",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 641,
+   "output": 50,
+   "cost": 0.007128,
+   "note": "req_011ChBQscPRLYwUztVmoTBt1"
+  },
+  {
+   "at": "2026-11-18T17:23:21",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1340,
+   "output": 347,
+   "cost": 0.0123,
+   "note": "req_011ChBQsPXFw78c68FH3SkLB"
+  },
+  {
+   "at": "2026-11-18T17:23:21",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1427,
+   "output": 177,
+   "cost": 0.009248,
+   "note": "req_011ChBQsWHonyqFX3oZtbB6u"
+  },
+  {
+   "at": "2026-11-18T17:23:22",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1489,
+   "output": 179,
+   "cost": 0.009536,
+   "note": "req_011ChBQsXqaBPqnFw6KMWtoo"
+  },
+  {
+   "at": "2026-11-18T17:23:22",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 731,
+   "output": 53,
+   "cost": 0.007968,
+   "note": "req_011ChBQsgkqhTxPgJTLUpYz2"
+  },
+  {
+   "at": "2026-11-18T17:23:22",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 678,
+   "output": 61,
+   "cost": 0.007864,
+   "note": "req_011ChBQshTGXjzkpyaYAdmZi"
+  },
+  {
+   "at": "2026-11-18T17:23:23",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 679,
+   "output": 48,
+   "cost": 0.007352,
+   "note": "req_011ChBQsiynqrBVxBQnPkcxm"
+  },
+  {
+   "at": "2026-11-18T17:23:23",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1345,
+   "output": 279,
+   "cost": 0.01096,
+   "note": "req_011ChBQsZig9at62q8RpEJ18"
+  },
+  {
+   "at": "2026-11-18T17:23:24",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1302,
+   "output": 416,
+   "cost": 0.013528,
+   "note": "req_011ChBQsYtp4HLM35RmwQAWv"
+  },
+  {
+   "at": "2026-11-18T17:23:25",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1214,
+   "output": 299,
+   "cost": 0.010836,
+   "note": "req_011ChBQsgSjmXeXfXKxvrekA"
+  },
+  {
+   "at": "2026-11-18T17:23:25",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1460,
+   "output": 287,
+   "cost": 0.01158,
+   "note": "req_011ChBQsmuQ461TFfCJ6MDW6"
+  },
+  {
+   "at": "2026-11-18T17:23:25",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 677,
+   "output": 55,
+   "cost": 0.007616,
+   "note": "req_011ChBQsvrvFHuNhxDGdQEUt"
+  },
+  {
+   "at": "2026-11-18T17:23:26",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 691,
+   "output": 50,
+   "cost": 0.007528,
+   "note": "req_011ChBQsytDw9RrfqD3xxj45"
+  },
+  {
+   "at": "2026-11-18T17:23:26",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 717,
+   "output": 52,
+   "cost": 0.007816,
+   "note": "req_011ChBQsz2f6SuzJu9VPCuLH"
+  },
+  {
+   "at": "2026-11-18T17:23:27",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 695,
+   "output": 380,
+   "cost": 0.02076,
+   "note": "req_011ChBQsrSVy9tnn9eRQ9Eja"
+  },
+  {
+   "at": "2026-11-18T17:23:27",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1281,
+   "output": 417,
+   "cost": 0.013464,
+   "note": "req_011ChBQso5MRtAzUUnUG3hj5"
+  },
+  {
+   "at": "2026-11-18T17:23:28",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1333,
+   "output": 465,
+   "cost": 0.014632,
+   "note": "req_011ChBQskyrH4mz3auaV7zkJ"
+  },
+  {
+   "at": "2026-11-18T17:23:28",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 727,
+   "output": 48,
+   "cost": 0.007736,
+   "note": "req_011ChBQt9jK6LkCKoSV6XC9i"
+  },
+  {
+   "at": "2026-11-18T17:23:29",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1315,
+   "output": 152,
+   "cost": 0.0083,
+   "note": "req_011ChBQt47yFeWfxfpN9EHrR"
+  },
+  {
+   "at": "2026-11-18T17:23:30",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1381,
+   "output": 332,
+   "cost": 0.012164,
+   "note": "req_011ChBQt1PmH64p5W21SGR9q"
+  },
+  {
+   "at": "2026-11-18T17:23:30",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 659,
+   "output": 35,
+   "cost": 0.006672,
+   "note": "req_011ChBQtFqRphTz1jP8RmxBH"
+  },
+  {
+   "at": "2026-11-18T17:23:30",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1327,
+   "output": 138,
+   "cost": 0.008068,
+   "note": "req_011ChBQt8ux6NLS3CShGzpKi"
+  },
+  {
+   "at": "2026-11-18T17:23:30",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 772,
+   "output": 242,
+   "cost": 0.015856,
+   "note": "req_011ChBQtBQ2acbaUmC5CQosm"
+  },
+  {
+   "at": "2026-11-18T17:23:30",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1500,
+   "output": 294,
+   "cost": 0.01188,
+   "note": "req_011ChBQt5Leo3sTb1Ft3axvm"
+  },
+  {
+   "at": "2026-11-18T17:23:31",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 691,
+   "output": 64,
+   "cost": 0.008088,
+   "note": "req_011ChBQtKLGHtG7VzAR9LPWX"
+  },
+  {
+   "at": "2026-11-18T17:23:31",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1378,
+   "output": 150,
+   "cost": 0.008512,
+   "note": "req_011ChBQtDp8rmXrt7vzdaih9"
+  },
+  {
+   "at": "2026-11-18T17:23:31",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 651,
+   "output": 48,
+   "cost": 0.007128,
+   "note": "req_011ChBQtL8Pai49jAz4kn5rj"
+  },
+  {
+   "at": "2026-11-18T17:23:32",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 713,
+   "output": 48,
+   "cost": 0.007624,
+   "note": "req_011ChBQtMbCrAJm5WP54ynhu"
+  },
+  {
+   "at": "2026-11-18T17:23:32",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 681,
+   "output": 51,
+   "cost": 0.007488,
+   "note": "req_011ChBQtR4KAN6e2TdiCh3D8"
+  },
+  {
+   "at": "2026-11-18T17:23:33",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1301,
+   "output": 169,
+   "cost": 0.008584,
+   "note": "req_011ChBQtMWUu5GpqrFLQsHn3"
+  },
+  {
+   "at": "2026-11-18T17:23:33",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1317,
+   "output": 189,
+   "cost": 0.009048,
+   "note": "req_011ChBQtKpn9WCduSbEJi6T3"
+  },
+  {
+   "at": "2026-11-18T17:23:33",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1256,
+   "output": 150,
+   "cost": 0.008024,
+   "note": "req_011ChBQtPmvTLBC62RBRVgVZ"
+  },
+  {
+   "at": "2026-11-18T17:23:34",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 695,
+   "output": 48,
+   "cost": 0.00748,
+   "note": "req_011ChBQtXns8ejL45wjd9j7m"
+  },
+  {
+   "at": "2026-11-18T17:23:34",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 717,
+   "output": 65,
+   "cost": 0.008336,
+   "note": "req_011ChBQtXxHjrPfRzVcHW75q"
+  },
+  {
+   "at": "2026-11-18T17:23:34",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 652,
+   "output": 37,
+   "cost": 0.006696,
+   "note": "req_011ChBQtZYHu6icFrDzBrnXe"
+  },
+  {
+   "at": "2026-11-18T17:23:34",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1311,
+   "output": 168,
+   "cost": 0.008604,
+   "note": "req_011ChBQtUxxA9vMUL8RSGYen"
+  },
+  {
+   "at": "2026-11-18T17:23:35",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 689,
+   "output": 59,
+   "cost": 0.007872,
+   "note": "req_011ChBQtfumLFpeofQQVMrJx"
+  },
+  {
+   "at": "2026-11-18T17:23:37",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1252,
+   "output": 199,
+   "cost": 0.008988,
+   "note": "req_011ChBQtddbzTHsnEZeGByUC"
+  },
+  {
+   "at": "2026-11-18T17:23:38",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1459,
+   "output": 518,
+   "cost": 0.016196,
+   "note": "req_011ChBQtVTDxw8R6iWjhtgyv"
+  },
+  {
+   "at": "2026-11-18T17:23:38",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1364,
+   "output": 530,
+   "cost": 0.016056,
+   "note": "req_011ChBQtT8pzTi4bi2GQGpSS"
+  },
+  {
+   "at": "2026-11-18T17:23:38",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1206,
+   "output": 374,
+   "cost": 0.012304,
+   "note": "req_011ChBQtcNSomNY2CqCcAuFf"
+  },
+  {
+   "at": "2026-11-18T17:23:38",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1234,
+   "output": 147,
+   "cost": 0.007876,
+   "note": "req_011ChBQtkNfUhRvLRKgRqKX9"
+  },
+  {
+   "at": "2026-11-18T17:23:38",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1207,
+   "output": 374,
+   "cost": 0.012308,
+   "note": "req_011ChBQtbvukzDRHj7Tex5f4"
+  },
+  {
+   "at": "2026-11-18T17:23:38",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 641,
+   "output": 20,
+   "cost": 0.005928,
+   "note": "req_011ChBQtqppmevZLx9zHPb2b"
+  },
+  {
+   "at": "2026-11-18T17:23:39",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 790,
+   "output": 70,
+   "cost": 0.00912,
+   "note": "req_011ChBQttybDFCLU4ceQ6Hqv"
+  },
+  {
+   "at": "2026-11-18T17:23:39",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 799,
+   "output": 73,
+   "cost": 0.009312,
+   "note": "req_011ChBQtuU6u69BxfK1RrioW"
+  },
+  {
+   "at": "2026-11-18T17:23:39",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 742,
+   "output": 55,
+   "cost": 0.008136,
+   "note": "req_011ChBQtxFHRWMKkfz27SV7c"
+  },
+  {
+   "at": "2026-11-18T17:23:39",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 760,
+   "output": 68,
+   "cost": 0.0088,
+   "note": "req_011ChBQtuT7GpuVoZSRneZi2"
+  },
+  {
+   "at": "2026-11-18T17:23:39",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 678,
+   "output": 56,
+   "cost": 0.007664,
+   "note": "req_011ChBQtwQBGJXvt4bpsUgty"
+  },
+  {
+   "at": "2026-11-18T17:23:41",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1448,
+   "output": 155,
+   "cost": 0.008892,
+   "note": "req_011ChBQtyRDsWb64tfzsybVN"
+  },
+  {
+   "at": "2026-11-18T17:23:41",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1529,
+   "output": 161,
+   "cost": 0.009336,
+   "note": "req_011ChBQtzVy7FKE3ZBHLprP7"
+  },
+  {
+   "at": "2026-11-18T17:23:41",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1223,
+   "output": 171,
+   "cost": 0.008312,
+   "note": "req_011ChBQtxhZvWsPywgBHvpnt"
+  },
+  {
+   "at": "2026-11-18T17:23:42",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1204,
+   "output": 185,
+   "cost": 0.008516,
+   "note": "req_011ChBQu35z41xVaTiZYLLoC"
+  },
+  {
+   "at": "2026-11-18T17:23:42",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 673,
+   "output": 39,
+   "cost": 0.006944,
+   "note": "req_011ChBQuAAPCLkJApvW9iy54"
+  },
+  {
+   "at": "2026-11-18T17:23:42",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 690,
+   "output": 20,
+   "cost": 0.00632,
+   "note": "req_011ChBQuADN4sWmFQwezt6gF"
+  },
+  {
+   "at": "2026-11-18T17:23:42",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1435,
+   "output": 160,
+   "cost": 0.00894,
+   "note": "req_011ChBQu36jefvbDBeuqGgkr"
+  },
+  {
+   "at": "2026-11-18T17:23:42",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 654,
+   "output": 51,
+   "cost": 0.007272,
+   "note": "req_011ChBQuA8fH278Sh44XRx2Q"
+  },
+  {
+   "at": "2026-11-18T17:23:42",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1215,
+   "output": 231,
+   "cost": 0.00948,
+   "note": "req_011ChBQu3Ch4ciLNJsmvExEH"
+  },
+  {
+   "at": "2026-11-18T17:23:43",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 699,
+   "output": 50,
+   "cost": 0.007592,
+   "note": "req_011ChBQuCscZ7dQWKwhEB4nC"
+  },
+  {
+   "at": "2026-11-18T17:23:43",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 658,
+   "output": 34,
+   "cost": 0.006624,
+   "note": "req_011ChBQuEU6UKpDETGpLvGYE"
+  },
+  {
+   "at": "2026-11-18T17:23:44",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1111,
+   "output": 133,
+   "cost": 0.007104,
+   "note": "req_011ChBQuDz5JAdKywnTACwg6"
+  },
+  {
+   "at": "2026-11-18T17:23:44",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 751,
+   "output": 53,
+   "cost": 0.008128,
+   "note": "req_011ChBQuG9JxCyPxv5VCCd8t"
+  },
+  {
+   "at": "2026-11-18T17:23:44",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1424,
+   "output": 147,
+   "cost": 0.008636,
+   "note": "req_011ChBQuE4JQA4wQTEAVy8eZ"
+  },
+  {
+   "at": "2026-11-18T17:23:45",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 633,
+   "output": 50,
+   "cost": 0.007064,
+   "note": "req_011ChBQuM1kbNDBi26zy5xpD"
+  },
+  {
+   "at": "2026-11-18T17:23:45",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1490,
+   "output": 187,
+   "cost": 0.0097,
+   "note": "req_011ChBQuEUbm24keFXN531kq"
+  },
+  {
+   "at": "2026-11-18T17:23:45",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 655,
+   "output": 61,
+   "cost": 0.00768,
+   "note": "req_011ChBQuQY5JpuLHFf6uJFHi"
+  },
+  {
+   "at": "2026-11-18T17:23:46",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 687,
+   "output": 48,
+   "cost": 0.007416,
+   "note": "req_011ChBQuTPEj3ECpGVJzJSCW"
+  },
+  {
+   "at": "2026-11-18T17:23:47",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1373,
+   "output": 314,
+   "cost": 0.011772,
+   "note": "req_011ChBQuJWgWjHJEFiY1jn4B"
+  },
+  {
+   "at": "2026-11-18T17:23:49",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1217,
+   "output": 361,
+   "cost": 0.012088,
+   "note": "req_011ChBQuPBjHFRynw8iZhtiR"
+  },
+  {
+   "at": "2026-11-18T17:23:49",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1465,
+   "output": 546,
+   "cost": 0.01678,
+   "note": "req_011ChBQuHSw2Mjr53vNm1AAG"
+  },
+  {
+   "at": "2026-11-18T17:23:49",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 717,
+   "output": 46,
+   "cost": 0.007576,
+   "note": "req_011ChBQubyQyFiawZJVPfLzY"
+  },
+  {
+   "at": "2026-11-18T17:23:50",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 700,
+   "output": 50,
+   "cost": 0.0076,
+   "note": "req_011ChBQui52RW31Puw978h2s"
+  },
+  {
+   "at": "2026-11-18T17:23:50",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 759,
+   "output": 55,
+   "cost": 0.008272,
+   "note": "req_011ChBQujGxnVteFK9t9pWwY"
+  },
+  {
+   "at": "2026-11-18T17:23:50",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1396,
+   "output": 489,
+   "cost": 0.015364,
+   "note": "req_011ChBQuRAXxsLs5gsmxeYfN"
+  },
+  {
+   "at": "2026-11-18T17:23:51",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1370,
+   "output": 468,
+   "cost": 0.01484,
+   "note": "req_011ChBQuUwjj59sGi73H4BZ6"
+  },
+  {
+   "at": "2026-11-18T17:23:51",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1215,
+   "output": 463,
+   "cost": 0.01412,
+   "note": "req_011ChBQuXJt7hwYmnCLAcz1B"
+  },
+  {
+   "at": "2026-11-18T17:23:52",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 785,
+   "output": 52,
+   "cost": 0.00836,
+   "note": "req_011ChBQusmS6SbaMHusJ4C6V"
+  },
+  {
+   "at": "2026-11-18T17:23:52",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 803,
+   "output": 56,
+   "cost": 0.008664,
+   "note": "req_011ChBQuqN5ZHQQvud9bK99b"
+  },
+  {
+   "at": "2026-11-18T17:23:52",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1147,
+   "output": 153,
+   "cost": 0.007648,
+   "note": "req_011ChBQunsGBYckbnNfjfyxs"
+  },
+  {
+   "at": "2026-11-18T17:23:52",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 728,
+   "output": 48,
+   "cost": 0.007744,
+   "note": "req_011ChBQuuRQ7r8Fc7R6V12ut"
+  },
+  {
+   "at": "2026-11-18T17:23:53",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1394,
+   "output": 374,
+   "cost": 0.013056,
+   "note": "req_011ChBQujLvdSAWPfiV43Sr9"
+  },
+  {
+   "at": "2026-11-18T17:23:53",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 669,
+   "output": 35,
+   "cost": 0.006752,
+   "note": "req_011ChBQuz1y72uwaTjzVzJua"
+  },
+  {
+   "at": "2026-11-18T17:23:54",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1463,
+   "output": 290,
+   "cost": 0.011652,
+   "note": "req_011ChBQuofNiqPffhcLTBnL5"
+  },
+  {
+   "at": "2026-11-18T17:23:54",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 720,
+   "output": 64,
+   "cost": 0.00832,
+   "note": "req_011ChBQv2yZpUP9PDrQMuNWm"
+  },
+  {
+   "at": "2026-11-18T17:23:55",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 706,
+   "output": 48,
+   "cost": 0.007568,
+   "note": "req_011ChBQv5YN2X3ppJ2q6YDRS"
+  },
+  {
+   "at": "2026-11-18T17:23:55",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1453,
+   "output": 165,
+   "cost": 0.009112,
+   "note": "req_011ChBQuxuWMcbNmq18fJduC"
+  },
+  {
+   "at": "2026-11-18T17:23:55",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1207,
+   "output": 194,
+   "cost": 0.008708,
+   "note": "req_011ChBQuzqq4PrLP1pUd11SA"
+  },
+  {
+   "at": "2026-11-18T17:23:55",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1260,
+   "output": 241,
+   "cost": 0.00986,
+   "note": "req_011ChBQuxAqt2X4ejGLXj9GY"
+  },
+  {
+   "at": "2026-11-18T17:23:56",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 696,
+   "output": 51,
+   "cost": 0.007608,
+   "note": "req_011ChBQv9xGGAJQxXpQD2rtq"
+  },
+  {
+   "at": "2026-11-18T17:23:56",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1253,
+   "output": 171,
+   "cost": 0.008432,
+   "note": "req_011ChBQv4bJqzLmqJWJppDWE"
+  },
+  {
+   "at": "2026-11-18T17:23:56",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 722,
+   "output": 65,
+   "cost": 0.008376,
+   "note": "req_011ChBQvBUnhcTNmgJNa7sqQ"
+  },
+  {
+   "at": "2026-11-18T17:23:56",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 666,
+   "output": 48,
+   "cost": 0.007248,
+   "note": "req_011ChBQvDgzUBQL952qG5Snm"
+  },
+  {
+   "at": "2026-11-18T17:23:57",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1290,
+   "output": 176,
+   "cost": 0.00868,
+   "note": "req_011ChBQv7LGJJn5arPMvr8bN"
+  },
+  {
+   "at": "2026-11-18T17:23:57",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 689,
+   "output": 48,
+   "cost": 0.007432,
+   "note": "req_011ChBQvFe5hXQM3RhCEp9ET"
+  },
+  {
+   "at": "2026-11-18T17:23:58",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 662,
+   "output": 37,
+   "cost": 0.006776,
+   "note": "req_011ChBQvJaS2WC49DWGgL6bZ"
+  },
+  {
+   "at": "2026-11-18T17:23:59",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1328,
+   "output": 387,
+   "cost": 0.013052,
+   "note": "req_011ChBQv9h9EDfuFUKKgT7xq"
+  },
+  {
+   "at": "2026-11-18T17:24:00",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1429,
+   "output": 401,
+   "cost": 0.013736,
+   "note": "req_011ChBQvDve2DhgisLLKxJea"
+  },
+  {
+   "at": "2026-11-18T17:24:00",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 768,
+   "output": 73,
+   "cost": 0.009064,
+   "note": "req_011ChBQvUAtHvPoDyhX66cUe"
+  },
+  {
+   "at": "2026-11-18T17:24:01",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1161,
+   "output": 207,
+   "cost": 0.008784,
+   "note": "req_011ChBQvNyLy4upwKfzZ9shk"
+  },
+  {
+   "at": "2026-11-18T17:24:01",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1391,
+   "output": 401,
+   "cost": 0.013584,
+   "note": "req_011ChBQvG39AGrzgSJHcitqj"
+  },
+  {
+   "at": "2026-11-18T17:24:01",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 740,
+   "output": 59,
+   "cost": 0.00828,
+   "note": "req_011ChBQvXBiD1h1xcWPwy98G"
+  },
+  {
+   "at": "2026-11-18T17:24:02",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 653,
+   "output": 20,
+   "cost": 0.006024,
+   "note": "req_011ChBQvcQEXGP3R3MtvxmSW"
+  },
+  {
+   "at": "2026-11-18T17:24:02",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1452,
+   "output": 410,
+   "cost": 0.014008,
+   "note": "req_011ChBQvJA8Jt58y7sgA1YHD"
+  },
+  {
+   "at": "2026-11-18T17:24:02",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1233,
+   "output": 494,
+   "cost": 0.014812,
+   "note": "req_011ChBQvL1kQaNhWDRPtdHnL"
+  },
+  {
+   "at": "2026-11-18T17:24:02",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 718,
+   "output": 70,
+   "cost": 0.008544,
+   "note": "req_011ChBQvdjc95rvkSD5wLq1n"
+  },
+  {
+   "at": "2026-11-18T17:24:03",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 825,
+   "output": 68,
+   "cost": 0.00932,
+   "note": "req_011ChBQvhoS3DgoBtvtZfojg"
+  },
+  {
+   "at": "2026-11-18T17:24:04",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1319,
+   "output": 151,
+   "cost": 0.008296,
+   "note": "req_011ChBQvf3FEXVQ4ZC1QVmtz"
+  },
+  {
+   "at": "2026-11-18T17:24:04",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1415,
+   "output": 121,
+   "cost": 0.00808,
+   "note": "req_011ChBQvg8isghJzohnyrkr3"
+  },
+  {
+   "at": "2026-11-18T17:24:05",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 670,
+   "output": 20,
+   "cost": 0.00616,
+   "note": "req_011ChBQvr6W2zguHTfMMvgyd"
+  },
+  {
+   "at": "2026-11-18T17:24:05",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 631,
+   "output": 51,
+   "cost": 0.007088,
+   "note": "req_011ChBQvr4mHbWVQvw6F3SG5"
+  },
+  {
+   "at": "2026-11-18T17:24:05",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1139,
+   "output": 420,
+   "cost": 0.012956,
+   "note": "req_011ChBQvYsfdSeh1J2WEazsA"
+  },
+  {
+   "at": "2026-11-18T17:24:05",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1425,
+   "output": 189,
+   "cost": 0.00948,
+   "note": "req_011ChBQviFUVadNF5soPM3jS"
+  },
+  {
+   "at": "2026-11-18T17:24:06",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1243,
+   "output": 193,
+   "cost": 0.008832,
+   "note": "req_011ChBQvnEb4GbcRkuRR7sN8"
+  },
+  {
+   "at": "2026-11-18T17:24:06",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 749,
+   "output": 463,
+   "cost": 0.024512,
+   "note": "req_011ChBQvgT4pZoFeWUZHtVfp"
+  },
+  {
+   "at": "2026-11-18T17:24:07",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 751,
+   "output": 56,
+   "cost": 0.008248,
+   "note": "req_011ChBQvv9LRCE2bpMLpZWcP"
+  },
+  {
+   "at": "2026-11-18T17:24:07",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 679,
+   "output": 34,
+   "cost": 0.006792,
+   "note": "req_011ChBQvw1g5GJEqiJfqe8Sn"
+  },
+  {
+   "at": "2026-11-18T17:24:07",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 707,
+   "output": 50,
+   "cost": 0.007656,
+   "note": "req_011ChBQvzggzMJBJbzVmfkG7"
+  },
+  {
+   "at": "2026-11-18T17:24:07",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1148,
+   "output": 154,
+   "cost": 0.007672,
+   "note": "req_011ChBQvv6rcjRR98nG7GAQv"
+  },
+  {
+   "at": "2026-11-18T17:24:08",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1303,
+   "output": 260,
+   "cost": 0.010412,
+   "note": "req_011ChBQvuvSDHnBLTpyxtPGd"
+  },
+  {
+   "at": "2026-11-18T17:24:08",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 654,
+   "output": 50,
+   "cost": 0.007232,
+   "note": "req_011ChBQw78PUQxA8tcuAXTjb"
+  },
+  {
+   "at": "2026-11-18T17:24:09",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1448,
+   "output": 166,
+   "cost": 0.009112,
+   "note": "req_011ChBQw2jieQcw4BwCov68q"
+  },
+  {
+   "at": "2026-11-18T17:24:09",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 772,
+   "output": 53,
+   "cost": 0.008296,
+   "note": "req_011ChBQw9gvHf3rvNqnM6G7C"
+  },
+  {
+   "at": "2026-11-18T17:24:10",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1460,
+   "output": 234,
+   "cost": 0.01052,
+   "note": "req_011ChBQw3z7mPiwE16qvEJmS"
+  },
+  {
+   "at": "2026-11-18T17:24:11",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 667,
+   "output": 61,
+   "cost": 0.007776,
+   "note": "req_011ChBQwDtBdAdrs3JcGKvK6"
+  },
+  {
+   "at": "2026-11-18T17:24:11",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1275,
+   "output": 316,
+   "cost": 0.01142,
+   "note": "req_011ChBQw4nzTEwzApr9Ynkdv"
+  },
+  {
+   "at": "2026-11-18T17:24:11",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 734,
+   "output": 46,
+   "cost": 0.007712,
+   "note": "req_011ChBQwK1m45icessYKesdJ"
+  },
+  {
+   "at": "2026-11-18T17:24:12",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 689,
+   "output": 50,
+   "cost": 0.007512,
+   "note": "req_011ChBQwMN8oATkBPpioUZk9"
+  },
+  {
+   "at": "2026-11-18T17:24:12",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1451,
+   "output": 508,
+   "cost": 0.015964,
+   "note": "req_011ChBQw3TNGf1JxjA5x7FsX"
+  },
+  {
+   "at": "2026-11-18T17:24:14",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1167,
+   "output": 391,
+   "cost": 0.012488,
+   "note": "req_011ChBQwE27YF26rNZZRwahS"
+  },
+  {
+   "at": "2026-11-18T17:24:14",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 686,
+   "output": 48,
+   "cost": 0.007408,
+   "note": "req_011ChBQwTtYgmxJfjDGtTxPD"
+  },
+  {
+   "at": "2026-11-18T17:24:14",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1440,
+   "output": 526,
+   "cost": 0.01628,
+   "note": "req_011ChBQwBLtjTroirhUypxYq"
+  },
+  {
+   "at": "2026-11-18T17:24:15",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1415,
+   "output": 312,
+   "cost": 0.0119,
+   "note": "req_011ChBQwMKezjorDFVM2Z94K"
+  },
+  {
+   "at": "2026-11-18T17:24:15",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 736,
+   "output": 48,
+   "cost": 0.007808,
+   "note": "req_011ChBQwaRxP29VrbbsrDmnk"
+  },
+  {
+   "at": "2026-11-18T17:24:15",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 797,
+   "output": 52,
+   "cost": 0.008456,
+   "note": "req_011ChBQwcFavWhjSBy5rzx6g"
+  },
+  {
+   "at": "2026-11-18T17:24:16",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1487,
+   "output": 281,
+   "cost": 0.011568,
+   "note": "req_011ChBQwRdsJy69c3XtSPXgU"
+  },
+  {
+   "at": "2026-11-18T17:24:16",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 680,
+   "output": 64,
+   "cost": 0.008,
+   "note": "req_011ChBQweQpEZJ27MBck2Mz5"
+  },
+  {
+   "at": "2026-11-18T17:24:17",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 702,
+   "output": 48,
+   "cost": 0.007536,
+   "note": "req_011ChBQwhhzr49e4nStsVne8"
+  },
+  {
+   "at": "2026-11-18T17:24:17",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1268,
+   "output": 192,
+   "cost": 0.008912,
+   "note": "req_011ChBQwbs22kDGDUsn3TP4V"
+  },
+  {
+   "at": "2026-11-18T17:24:18",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1445,
+   "output": 182,
+   "cost": 0.00942,
+   "note": "req_011ChBQweewzpZQum9pGyeBn"
+  },
+  {
+   "at": "2026-11-18T17:24:18",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1165,
+   "output": 553,
+   "cost": 0.01572,
+   "note": "req_011ChBQwPC2P8Zrn1pWsYpjq"
+  },
+  {
+   "at": "2026-11-18T17:24:18",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1314,
+   "output": 189,
+   "cost": 0.009036,
+   "note": "req_011ChBQwgaJJ2xqxnMPEVbdg"
+  },
+  {
+   "at": "2026-11-18T17:24:18",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 624,
+   "output": 48,
+   "cost": 0.006912,
+   "note": "req_011ChBQwqK9q5zq8QYu1Tsh6"
+  },
+  {
+   "at": "2026-11-18T17:24:19",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 713,
+   "output": 51,
+   "cost": 0.007744,
+   "note": "req_011ChBQwrGSu4TqrneGMr4ws"
+  },
+  {
+   "at": "2026-11-18T17:24:19",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1218,
+   "output": 155,
+   "cost": 0.007972,
+   "note": "req_011ChBQwjqFYJu3w8RazB9Hi"
+  },
+  {
+   "at": "2026-11-18T17:24:19",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 704,
+   "output": 35,
+   "cost": 0.007032,
+   "note": "req_011ChBQwsiGfxuQDkHNwDKXP"
+  },
+  {
+   "at": "2026-11-18T17:24:19",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 717,
+   "output": 65,
+   "cost": 0.008336,
+   "note": "req_011ChBQwswQJDdTiJzxMpFWP"
+  },
+  {
+   "at": "2026-11-18T17:24:20",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 641,
+   "output": 37,
+   "cost": 0.006608,
+   "note": "req_011ChBQww2ws6VYip4Jikhxr"
+  },
+  {
+   "at": "2026-11-18T17:24:21",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1353,
+   "output": 377,
+   "cost": 0.012952,
+   "note": "req_011ChBQwnF7DefjqsbQuqKt2"
+  },
+  {
+   "at": "2026-11-18T17:24:21",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1145,
+   "output": 128,
+   "cost": 0.00714,
+   "note": "req_011ChBQwxXEX4hcp6XKC7m6G"
+  },
+  {
+   "at": "2026-11-18T17:24:22",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 643,
+   "output": 20,
+   "cost": 0.005944,
+   "note": "req_011ChBQx8bxi1LNCuW2NXxth"
+  },
+  {
+   "at": "2026-11-18T17:24:23",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 776,
+   "output": 73,
+   "cost": 0.009128,
+   "note": "req_011ChBQx77AcjkDvB3egmtjf"
+  },
+  {
+   "at": "2026-11-18T17:24:23",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1415,
+   "output": 374,
+   "cost": 0.01314,
+   "note": "req_011ChBQwvWvwXD1SY8cx3tJG"
+  },
+  {
+   "at": "2026-11-18T17:24:24",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1434,
+   "output": 475,
+   "cost": 0.015236,
+   "note": "req_011ChBQwupmGRhDcCnynTDLW"
+  },
+  {
+   "at": "2026-11-18T17:24:24",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1208,
+   "output": 326,
+   "cost": 0.011352,
+   "note": "req_011ChBQwzyKndfqB4XVbsbhC"
+  },
+  {
+   "at": "2026-11-18T17:24:25",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1239,
+   "output": 163,
+   "cost": 0.008216,
+   "note": "req_011ChBQxCBm92nUCoFZZHsaE"
+  },
+  {
+   "at": "2026-11-18T17:24:25",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 771,
+   "output": 59,
+   "cost": 0.008528,
+   "note": "req_011ChBQxJuafwrJr1tZC2MZV"
+  },
+  {
+   "at": "2026-11-18T17:24:25",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 725,
+   "output": 56,
+   "cost": 0.00804,
+   "note": "req_011ChBQxKyaL4qiiFvsbcRnQ"
+  },
+  {
+   "at": "2026-11-18T17:24:25",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1487,
+   "output": 170,
+   "cost": 0.009348,
+   "note": "req_011ChBQxEccmysfjQyFjprtH"
+  },
+  {
+   "at": "2026-11-18T17:24:25",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1367,
+   "output": 696,
+   "cost": 0.019388,
+   "note": "req_011ChBQwwzzGqzvhrLHBv261"
+  },
+  {
+   "at": "2026-11-18T17:24:26",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 682,
+   "output": 20,
+   "cost": 0.006256,
+   "note": "req_011ChBQxNztYS5LCeFXrQgcz"
+  },
+  {
+   "at": "2026-11-18T17:24:26",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 660,
+   "output": 51,
+   "cost": 0.00732,
+   "note": "req_011ChBQxRDbauZadAMbJD9Sa"
+  },
+  {
+   "at": "2026-11-18T17:24:26",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 852,
+   "output": 68,
+   "cost": 0.009536,
+   "note": "req_011ChBQxRDqS9493EGi3gYPA"
+  },
+  {
+   "at": "2026-11-18T17:24:27",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1558,
+   "output": 161,
+   "cost": 0.009452,
+   "note": "req_011ChBQxPJkKavmUPC6yjF3a"
+  },
+  {
+   "at": "2026-11-18T17:24:28",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1470,
+   "output": 217,
+   "cost": 0.01022,
+   "note": "req_011ChBQxQRTw82Ew51dqoEDk"
+  },
+  {
+   "at": "2026-11-18T17:24:28",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 673,
+   "output": 39,
+   "cost": 0.006944,
+   "note": "req_011ChBQxagrz8ATXpNqZBi7K"
+  },
+  {
+   "at": "2026-11-18T17:24:29",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1231,
+   "output": 163,
+   "cost": 0.008184,
+   "note": "req_011ChBQxVejnYReyTcJ5uADG"
+  },
+  {
+   "at": "2026-11-18T17:24:29",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 704,
+   "output": 34,
+   "cost": 0.006992,
+   "note": "req_011ChBQxdHdGHcG6gr1tk6GU"
+  },
+  {
+   "at": "2026-11-18T17:24:29",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1523,
+   "output": 219,
+   "cost": 0.010472,
+   "note": "req_011ChBQxW1pth8189GzFQTC8"
+  },
+  {
+   "at": "2026-11-18T17:24:30",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 663,
+   "output": 50,
+   "cost": 0.007304,
+   "note": "req_011ChBQxgb4hqYmTHtWhhqiB"
+  },
+  {
+   "at": "2026-11-18T17:24:30",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 709,
+   "output": 61,
+   "cost": 0.008112,
+   "note": "req_011ChBQxim2xpjh4cQYiY3kU"
+  },
+  {
+   "at": "2026-11-18T17:24:31",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1539,
+   "output": 444,
+   "cost": 0.015036,
+   "note": "req_011ChBQxT9vX9KxnTWyvpkqb"
+  },
+  {
+   "at": "2026-11-18T17:24:32",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 756,
+   "output": 53,
+   "cost": 0.008168,
+   "note": "req_011ChBQxoYX5C7VYNP8kXHcz"
+  },
+  {
+   "at": "2026-11-18T17:24:32",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 720,
+   "output": 800,
+   "cost": 0.03776,
+   "note": "req_011ChBQxFQzY561mTFusMVz8"
+  },
+  {
+   "at": "2026-11-18T17:24:32",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1357,
+   "output": 253,
+   "cost": 0.010488,
+   "note": "req_011ChBQxev7HCqs8FxX7MeGS"
+  },
+  {
+   "at": "2026-11-18T17:24:32",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1278,
+   "output": 214,
+   "cost": 0.009392,
+   "note": "req_011ChBQxhPBixCgsokV9wSFZ"
+  },
+  {
+   "at": "2026-11-18T17:24:33",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 753,
+   "output": 46,
+   "cost": 0.007864,
+   "note": "req_011ChBQxuyy2m1ZNo6EFdqPN"
+  },
+  {
+   "at": "2026-11-18T17:24:33",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 731,
+   "output": 50,
+   "cost": 0.007848,
+   "note": "req_011ChBQxw5T8P8P9g4CjmWxX"
+  },
+  {
+   "at": "2026-11-18T17:24:34",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1331,
+   "output": 388,
+   "cost": 0.013084,
+   "note": "req_011ChBQxm6BNd7Jbbvv9vYJk"
+  },
+  {
+   "at": "2026-11-18T17:24:35",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1513,
+   "output": 284,
+   "cost": 0.011732,
+   "note": "req_011ChBQxoP6dCBqLEb4T6hgQ"
+  },
+  {
+   "at": "2026-11-18T17:24:35",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1255,
+   "output": 265,
+   "cost": 0.01032,
+   "note": "req_011ChBQxt58261rzWGqPiofT"
+  },
+  {
+   "at": "2026-11-18T17:24:35",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 746,
+   "output": 48,
+   "cost": 0.007888,
+   "note": "req_011ChBQy6TWmXgDnBqmhjzQf"
+  },
+  {
+   "at": "2026-11-18T17:24:35",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1483,
+   "output": 170,
+   "cost": 0.009332,
+   "note": "req_011ChBQxzXpW4egMsn5b8Pjr"
+  },
+  {
+   "at": "2026-11-18T17:24:36",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 699,
+   "output": 64,
+   "cost": 0.008152,
+   "note": "req_011ChBQy6idFHregwgdZrs6H"
+  },
+  {
+   "at": "2026-11-18T17:24:36",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1497,
+   "output": 280,
+   "cost": 0.011588,
+   "note": "req_011ChBQxtr1fuhi2iEhih7LK"
+  },
+  {
+   "at": "2026-11-18T17:24:36",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1279,
+   "output": 180,
+   "cost": 0.008716,
+   "note": "req_011ChBQy1YbFbzmThm7a2nTo"
+  },
+  {
+   "at": "2026-11-18T17:24:36",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 649,
+   "output": 35,
+   "cost": 0.006592,
+   "note": "req_011ChBQy9ii1bqBwYcvTMxpm"
+  },
+  {
+   "at": "2026-11-18T17:24:37",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 701,
+   "output": 51,
+   "cost": 0.007648,
+   "note": "req_011ChBQyBB2exziZwcUtDNso"
+  },
+  {
+   "at": "2026-11-18T17:24:37",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 701,
+   "output": 48,
+   "cost": 0.007528,
+   "note": "req_011ChBQyBuBX7ATT1DRQMVmV"
+  },
+  {
+   "at": "2026-11-18T17:24:38",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 708,
+   "output": 65,
+   "cost": 0.008264,
+   "note": "req_011ChBQyDThPqbETB5YZMtWS"
+  },
+  {
+   "at": "2026-11-18T17:24:38",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1436,
+   "output": 183,
+   "cost": 0.009404,
+   "note": "req_011ChBQyAizWW52kbMxmdHh9"
+  },
+  {
+   "at": "2026-11-18T17:24:39",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1235,
+   "output": 150,
+   "cost": 0.00794,
+   "note": "req_011ChBQyG9fefuPU3ZNYArwm"
+  },
+  {
+   "at": "2026-11-18T17:24:39",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1202,
+   "output": 118,
+   "cost": 0.007168,
+   "note": "req_011ChBQyGAfRfSSH5epvbUEC"
+  },
+  {
+   "at": "2026-11-18T17:24:39",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 669,
+   "output": 37,
+   "cost": 0.006832,
+   "note": "req_011ChBQyNDHoANYLSe4jNYqm"
+  },
+  {
+   "at": "2026-11-18T17:24:40",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 661,
+   "output": 50,
+   "cost": 0.007288,
+   "note": "req_011ChBQyQe9TXPph6UvyJ5q1"
+  },
+  {
+   "at": "2026-11-18T17:24:40",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 633,
+   "output": 20,
+   "cost": 0.005864,
+   "note": "req_011ChBQyRiPLeJ8HYtBMch21"
+  },
+  {
+   "at": "2026-11-18T17:24:40",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1459,
+   "output": 402,
+   "cost": 0.013876,
+   "note": "req_011ChBQyBCkqzdkx7YuUEuiq"
+  },
+  {
+   "at": "2026-11-18T17:24:41",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1367,
+   "output": 379,
+   "cost": 0.013048,
+   "note": "req_011ChBQyE49wfPrMUAVJxXY8"
+  },
+  {
+   "at": "2026-11-18T17:24:41",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1405,
+   "output": 177,
+   "cost": 0.00916,
+   "note": "req_011ChBQySGsq1XAmRnr6dddz"
+  },
+  {
+   "at": "2026-11-18T17:24:41",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 703,
+   "output": 59,
+   "cost": 0.007984,
+   "note": "req_011ChBQyWz941uBbioebfP5K"
+  },
+  {
+   "at": "2026-11-18T17:24:42",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 764,
+   "output": 68,
+   "cost": 0.008832,
+   "note": "req_011ChBQyZN1gEgD9n22bCmG5"
+  },
+  {
+   "at": "2026-11-18T17:24:42",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1270,
+   "output": 160,
+   "cost": 0.00828,
+   "note": "req_011ChBQyVdnMWqhx8f4EFwGv"
+  },
+  {
+   "at": "2026-11-18T17:24:43",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1368,
+   "output": 400,
+   "cost": 0.013472,
+   "note": "req_011ChBQyLxPDVRDKk5VQUG3P"
+  },
+  {
+   "at": "2026-11-18T17:24:43",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1558,
+   "output": 191,
+   "cost": 0.010052,
+   "note": "req_011ChBQyVAFWhTrUPwADM4Wj"
+  },
+  {
+   "at": "2026-11-18T17:24:43",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 671,
+   "output": 48,
+   "cost": 0.007288,
+   "note": "req_011ChBQycZFSAye7Wyq2wK6W"
+  },
+  {
+   "at": "2026-11-18T17:24:43",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 646,
+   "output": 37,
+   "cost": 0.006648,
+   "note": "req_011ChBQyfbZsoY8BnyQ7oXbh"
+  },
+  {
+   "at": "2026-11-18T17:24:44",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 722,
+   "output": 51,
+   "cost": 0.007816,
+   "note": "req_011ChBQyh86DkgNQBkaYmCcS"
+  },
+  {
+   "at": "2026-11-18T17:24:44",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 723,
+   "output": 48,
+   "cost": 0.007704,
+   "note": "req_011ChBQyh8aRxxd2EK4BYxu8"
+  },
+  {
+   "at": "2026-11-18T17:24:45",
+   "script": "answers",
+   "model": "claude-opus-5-5",
+   "input": 1203,
+   "output": 132,
+   "cost": 0.007452,
+   "note": "req_011ChBQycXWQ4SkRGcfufbKo"
+  },
+  {
+   "at": "2026-11-18T17:24:46",
+   "script": "judge",
+   "model": "claude-fable-5-2",
+   "input": 632,
+   "output": 50,
+   "cost": 0.007056,
+   "note": "req_011ChBQyqqhodVWqSniqDMqH"
   }
  ]
 }

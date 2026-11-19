@@ -1,0 +1,48 @@
+{
+ "qid": "q02",
+ "method": "M1",
+ "run": 3,
+ "retrieved": [
+  "payoff_letter__2026",
+  "leased_car__2022",
+  "epayoff_network__2026",
+  "lessor_buyouts__2026",
+  "co_owners__2026"
+ ],
+ "prompt_sha1": "0b9957875404",
+ "answer": "Since it's a lease, sign the lease buyout authorization, form NW-LSE-1, and we'll request the dealer payoff quote from your leasing company for you. Form NW-LPA-1 is for loans only. Before that, check that your leasing company allows third-party buyouts, and bring the quote to your appointment.",
+ "cited_keys": [
+  "payoff_letter__2026",
+  "leased_car__2022",
+  "lessor_buyouts__2026"
+ ],
+ "not_covered": false,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQsH3KaU21zsgAY9eo7",
+  "usage": {
+   "input": 1694,
+   "output": 158
+  },
+  "cost": 0.00994
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "NW-LSE-1",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQsU2NVzpwyd4UFS1ae",
+  "usage": {
+   "input": 669,
+   "output": 39
+  },
+  "cost": 0.00691
+ },
+ "cost": 0.01685
+}

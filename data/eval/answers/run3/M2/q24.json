@@ -1,0 +1,51 @@
+{
+ "qid": "q24",
+ "method": "M2",
+ "run": 3,
+ "retrieved": [
+  "payoff_letter__2026",
+  "inherited_car__2026",
+  "inherited_car__2022",
+  "payoff_letter__2022",
+  "selling_for_someone_else__2022"
+ ],
+ "prompt_sha1": "265e43e49ced",
+ "answer": "Generally yes: a payoff letter from the lender states exactly how much it takes to close the loan, and you should ask for a 15-day payoff amount because daily interest changes the total. The exception is if the lender is in our e-payoff network, in which case no letter is needed, but the help center doesn't say whether Lakeshore Bank is in that network, so please contact a store to check. Because your dad has passed away, you'll also need his death certificate plus either court letters naming you executor or administrator, or the heir and estate affidavit (form NW-EST-1) for a small estate that doesn't go through probate. If there are several heirs, the executor signs or every heir signs NW-EST-1.",
+ "cited_keys": [
+  "payoff_letter__2026",
+  "inherited_car__2026"
+ ],
+ "not_covered": true,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQuUwjj59sGi73H4BZ6",
+  "usage": {
+   "input": 1370,
+   "output": 468
+  },
+  "cost": 0.01484
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "no payoff letter",
+    "present": false
+   },
+   {
+    "fact": "death certificate",
+    "present": true
+   }
+  ],
+  "declines_uncovered": false
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQusmS6SbaMHusJ4C6V",
+  "usage": {
+   "input": 785,
+   "output": 52
+  },
+  "cost": 0.00836
+ },
+ "cost": 0.0232
+}

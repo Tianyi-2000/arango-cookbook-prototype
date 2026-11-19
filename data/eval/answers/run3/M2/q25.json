@@ -1,0 +1,50 @@
+{
+ "qid": "q25",
+ "method": "M2",
+ "run": 3,
+ "retrieved": [
+  "offer_validity__2022",
+  "offer_validity__2026",
+  "reschedule_cancel__2022",
+  "registration_expired__2022",
+  "buy_temp_plates__2022"
+ ],
+ "prompt_sha1": "021f1ab1468d",
+ "answer": "Because your offer was issued before February 1, 2026, it keeps the original terms of 7 days or 300 additional miles, whichever comes first, rather than the newer 5-day limit. Your exact expiration date is shown on your offer page and in your confirmation email. If your February 4 appraisal appointment is on or before that date and you haven't driven more than 300 additional miles, we'll honor your offer. If it has expired, you can request a new offer at any time, though the amount may be higher or lower based on current market prices.",
+ "cited_keys": [
+  "offer_validity__2026"
+ ],
+ "not_covered": false,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQuXJt7hwYmnCLAcz1B",
+  "usage": {
+   "input": 1215,
+   "output": 463
+  },
+  "cost": 0.01412
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "still valid",
+    "present": false
+   },
+   {
+    "fact": "7 days",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQuuRQ7r8Fc7R6V12ut",
+  "usage": {
+   "input": 728,
+   "output": 48
+  },
+  "cost": 0.00774
+ },
+ "cost": 0.02186
+}

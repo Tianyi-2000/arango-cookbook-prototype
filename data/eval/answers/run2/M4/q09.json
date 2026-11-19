@@ -1,0 +1,52 @@
+{
+ "qid": "q09",
+ "method": "M4",
+ "run": 2,
+ "retrieved": [
+  "negative_equity__2026",
+  "selling_with_loan__2022",
+  "lost_title__2022",
+  "registration_expired__2022",
+  "returns__2026"
+ ],
+ "prompt_sha1": "0e26260e1606",
+ "answer": "Yes, you can sell us a car you're still paying off. While the loan is open, your lender holds the title (or the electronic title record), so you don't need it in hand. At the appointment we confirm what you owe and pay the lender directly from your offer: if the offer is more than the payoff you get the difference, and if it's less you pay the difference by cashier's check or debit card. To speed things up, get a payoff letter from your lender before you come in.",
+ "cited_keys": [
+  "selling_with_loan__2022",
+  "negative_equity__2026"
+ ],
+ "not_covered": false,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQpJmfsRnkZ7gP4LZv3",
+  "usage": {
+   "input": 1243,
+   "output": 183
+  },
+  "cost": 0.00863
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "yes",
+    "present": true
+   },
+   {
+    "fact": "pay off the lender",
+    "present": true
+   }
+  ],
+  "declines_uncovered": true
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQpWFFEQ8Kw4sLd1ji4",
+  "usage": {
+   "input": 697,
+   "output": 50
+  },
+  "cost": 0.00758
+ },
+ "cost": 0.0,
+ "shared_from": "M3"
+}

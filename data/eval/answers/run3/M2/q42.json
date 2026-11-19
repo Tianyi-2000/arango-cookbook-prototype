@@ -1,0 +1,52 @@
+{
+ "qid": "q42",
+ "method": "M2",
+ "run": 3,
+ "retrieved": [
+  "home_pickup__2026",
+  "home_pickup__2022",
+  "how_selling_works__2022",
+  "leased_car__2022",
+  "how_selling_works__2026"
+ ],
+ "prompt_sha1": "c24ec7453b55",
+ "answer": "Home pickup isn't available in Texas, so you would need to book your appraisal appointment at a store instead. For a leased car, first check that your leasing company allows third-party buyouts, then ask them for a dealer payoff quote (which can differ from the payoff they quote you), or sign the lease buyout authorization, form NW-LSE-1, and we'll request it for you. Bring that quote to your appointment, along with everything on the appointment checklist. The help center doesn't list what's on the appointment checklist, so please contact a store for those details.",
+ "cited_keys": [
+  "home_pickup__2026",
+  "how_selling_works__2026",
+  "leased_car__2022"
+ ],
+ "not_covered": true,
+ "answer_meta": {
+  "model": "claude-opus-5-5",
+  "request_id": "req_011ChBQvDve2DhgisLLKxJea",
+  "usage": {
+   "input": 1429,
+   "output": 401
+  },
+  "cost": 0.01374
+ },
+ "judge": {
+  "facts": [
+   {
+    "fact": "no home pickup in Texas",
+    "present": true
+   },
+   {
+    "fact": "dealer payoff quote",
+    "present": true
+   }
+  ],
+  "declines_uncovered": false
+ },
+ "judge_meta": {
+  "model": "claude-fable-5-2",
+  "request_id": "req_011ChBQvXBiD1h1xcWPwy98G",
+  "usage": {
+   "input": 740,
+   "output": 59
+  },
+  "cost": 0.00828
+ },
+ "cost": 0.02202
+}
