@@ -88,12 +88,15 @@ CHAPTERS = {
              "from cookbook.entities import link_entities\nfrom cookbook import retrieve as R\n"
              "db = get_db()\ngold = {q['id']: q for q in load_gold_v2()}\nq = gold['v2c01']\n"
              "print(q['question'])\nprint('names found:', link_entities(q['question']))"),
-        md("**M7**: the lender's name is an entry point into the graph. The article it reaches carries the path."),
-        code("for r in R.retrieve(db, 'M7', q, k=5):\n    print(r['key'], round(r['score'], 3), r.get('via') or '')"),
+        md("**M7**: the lender's name is an entry point into the graph, and it reaches the e-payoff network article (the path "
+           "is printed). But a hit reached this way inherits 0.8 x the best vector score, so it lands 10th: the graph found "
+           "the article, the score rule buried it. M8 separates the two jobs: the graph only has to get it into the pool."),
+        code("for i, r in enumerate(R.retrieve(db, 'M7', q, k=10), 1):\n    print(i, r['key'], round(r['score'], 3), r.get('via') or '')"),
         md("**M8, wide**: one AQL query collects candidates from BM25, vector search, graph neighbours and named entities, "
            "each tagged with where it came from."),
         code("pool = R.pool(db, 'M8', q, show=True)\nfor c in pool:\n    print(c['key'], c['sources'])"),
-        md("**M8, narrow**: a cross-encoder reads (question, article) pairs and ranks the pool."),
+        md("**M8, narrow**: a cross-encoder reads (question, article) pairs and ranks the pool. The e-payoff network article, "
+           "which only the graph and the name brought in, moves up to 4th (gold articles are starred)."),
         code("for r in R.retrieve(db, 'M8', q, k=5):\n    print(r['key'], r['score'], r['sources'], '*' if r['key'] in q['gold_keys'] else '')"),
         md("**M9's tools** are fixed AQL templates. The model chooses which to call; it never writes AQL."),
         code("from cookbook.tools import execute\nout, _ = execute(db, 'lookup', {'kind': 'form', 'name': 'NW-POA-1'}, q, show=True)\nprint(out)"),
