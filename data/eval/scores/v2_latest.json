@@ -1,0 +1,5994 @@
+{
+ "ran_at": "2026-11-18T20:00:52",
+ "commit": "c3b8a50",
+ "gold_sha256": "59bba6c5881ed650026b876fd95ac05a280f2ea20db982d8990bf79e96fccc61",
+ "params": {
+  "k": 10,
+  "n_entry": 5,
+  "decay": 0.8,
+  "graph_edges": [
+   "links_to",
+   "uses_form",
+   "replaced_by",
+   "about_lender",
+   "about_lessor"
+  ],
+  "embedding": "sentence-transformers/all-MiniLM-L6-v2",
+  "pool_k": 10,
+  "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+ },
+ "aggregate": {
+  "all": {
+   "n": 20,
+   "M1": {
+    "recall@5": 0.805952380952381,
+    "recall@10": 0.8547619047619047,
+    "all_gold@5": 0.7,
+    "mrr@10": 0.6625,
+    "ndcg@5": 0.6668229767918651,
+    "stale@5": 0.85,
+    "trap@5": 0.1
+   },
+   "M2": {
+    "recall@5": 0.675,
+    "recall@10": 0.8238095238095238,
+    "all_gold@5": 0.6,
+    "mrr@10": 0.5883333333333333,
+    "ndcg@5": 0.5661431867100871,
+    "stale@5": 0.7,
+    "trap@5": 0.1
+   },
+   "M3": {
+    "recall@5": 0.6916666666666667,
+    "recall@10": 0.8238095238095238,
+    "all_gold@5": 0.6,
+    "mrr@10": 0.6461111111111111,
+    "ndcg@5": 0.6058776359752277,
+    "stale@5": 0.0,
+    "trap@5": 0.1
+   },
+   "M4": {
+    "recall@5": 0.7166666666666667,
+    "recall@10": 0.7833333333333333,
+    "all_gold@5": 0.65,
+    "mrr@10": 0.6295833333333334,
+    "ndcg@5": 0.6212063157943641,
+    "stale@5": 0.0,
+    "trap@5": 0.1
+   },
+   "M5": {
+    "recall@5": 0.6916666666666667,
+    "recall@10": 0.7738095238095238,
+    "all_gold@5": 0.6,
+    "mrr@10": 0.6252777777777777,
+    "ndcg@5": 0.5958649762003245,
+    "stale@5": 0.0,
+    "trap@5": 0.1
+   },
+   "M6": {
+    "recall@5": 0.7166666666666667,
+    "recall@10": 0.7833333333333333,
+    "all_gold@5": 0.65,
+    "mrr@10": 0.6295833333333334,
+    "ndcg@5": 0.6212063157943641,
+    "stale@5": 0.0,
+    "trap@5": 0.1
+   },
+   "M7": {
+    "recall@5": 0.7166666666666667,
+    "recall@10": 0.8083333333333333,
+    "all_gold@5": 0.65,
+    "mrr@10": 0.6295833333333334,
+    "ndcg@5": 0.6212063157943641,
+    "stale@5": 0.0,
+    "trap@5": 0.1
+   },
+   "M8": {
+    "recall@5": 0.8476190476190476,
+    "recall@10": 0.9047619047619048,
+    "all_gold@5": 0.7,
+    "mrr@10": 0.7125,
+    "ndcg@5": 0.7214142338939433,
+    "stale@5": 0.0,
+    "trap@5": 0.1
+   },
+   "M8n": {
+    "recall@5": 0.830952380952381,
+    "recall@10": 0.8880952380952382,
+    "all_gold@5": 0.7,
+    "mrr@10": 0.7125,
+    "ndcg@5": 0.7123371442670757,
+    "stale@5": 0.0,
+    "trap@5": 0.1
+   },
+   "CE*": {
+    "recall@5": 0.8726190476190476,
+    "recall@10": 0.9297619047619048,
+    "all_gold@5": 0.75,
+    "mrr@10": 0.7125,
+    "ndcg@5": 0.7332741195324082,
+    "stale@5": 0.0,
+    "trap@5": 0.1
+   }
+  },
+  "chain": {
+   "n": 12,
+   "M1": {
+    "recall@5": 0.8194444444444445,
+    "recall@10": 0.8888888888888888,
+    "all_gold@5": 0.6666666666666666,
+    "mrr@10": 0.5625,
+    "ndcg@5": 0.5813670767716722,
+    "stale@5": 0.8333333333333334,
+    "trap@5": 0.16666666666666666
+   },
+   "M2": {
+    "recall@5": 0.7916666666666666,
+    "recall@10": 0.9027777777777778,
+    "all_gold@5": 0.6666666666666666,
+    "mrr@10": 0.6527777777777778,
+    "ndcg@5": 0.6409944983858571,
+    "stale@5": 0.75,
+    "trap@5": 0.16666666666666666
+   },
+   "M3": {
+    "recall@5": 0.8194444444444445,
+    "recall@10": 0.8611111111111112,
+    "all_gold@5": 0.6666666666666666,
+    "mrr@10": 0.7388888888888889,
+    "ndcg@5": 0.7072185804944247,
+    "stale@5": 0.0,
+    "trap@5": 0.16666666666666666
+   },
+   "M4": {
+    "recall@5": 0.8611111111111112,
+    "recall@10": 0.8888888888888888,
+    "all_gold@5": 0.75,
+    "mrr@10": 0.7388888888888889,
+    "ndcg@5": 0.7327663801929855,
+    "stale@5": 0.0,
+    "trap@5": 0.16666666666666666
+   },
+   "M5": {
+    "recall@5": 0.8194444444444445,
+    "recall@10": 0.8611111111111112,
+    "all_gold@5": 0.6666666666666666,
+    "mrr@10": 0.7180555555555556,
+    "ndcg@5": 0.6905308142029193,
+    "stale@5": 0.0,
+    "trap@5": 0.16666666666666666
+   },
+   "M6": {
+    "recall@5": 0.8611111111111112,
+    "recall@10": 0.8888888888888888,
+    "all_gold@5": 0.75,
+    "mrr@10": 0.7388888888888889,
+    "ndcg@5": 0.7327663801929855,
+    "stale@5": 0.0,
+    "trap@5": 0.16666666666666666
+   },
+   "M7": {
+    "recall@5": 0.8611111111111112,
+    "recall@10": 0.8888888888888888,
+    "all_gold@5": 0.75,
+    "mrr@10": 0.7388888888888889,
+    "ndcg@5": 0.7327663801929855,
+    "stale@5": 0.0,
+    "trap@5": 0.16666666666666666
+   },
+   "M8": {
+    "recall@5": 0.8888888888888888,
+    "recall@10": 0.8888888888888888,
+    "all_gold@5": 0.75,
+    "mrr@10": 0.75,
+    "ndcg@5": 0.7510905391351977,
+    "stale@5": 0.0,
+    "trap@5": 0.16666666666666666
+   },
+   "M8n": {
+    "recall@5": 0.8611111111111112,
+    "recall@10": 0.8611111111111112,
+    "all_gold@5": 0.75,
+    "mrr@10": 0.75,
+    "ndcg@5": 0.7359620564237517,
+    "stale@5": 0.0,
+    "trap@5": 0.16666666666666666
+   },
+   "CE*": {
+    "recall@5": 0.9305555555555555,
+    "recall@10": 0.9305555555555555,
+    "all_gold@5": 0.8333333333333334,
+    "mrr@10": 0.75,
+    "ndcg@5": 0.7708570151993057,
+    "stale@5": 0.0,
+    "trap@5": 0.16666666666666666
+   }
+  },
+  "structural": {
+   "n": 8,
+   "M1": {
+    "recall@5": 0.7857142857142857,
+    "recall@10": 0.8035714285714286,
+    "all_gold@5": 0.75,
+    "mrr@10": 0.8125,
+    "ndcg@5": 0.7950068268221543,
+    "stale@5": 0.875,
+    "trap@5": 0.0
+   },
+   "M2": {
+    "recall@5": 0.5,
+    "recall@10": 0.7053571428571429,
+    "all_gold@5": 0.5,
+    "mrr@10": 0.49166666666666664,
+    "ndcg@5": 0.4538662191964322,
+    "stale@5": 0.625,
+    "trap@5": 0.0
+   },
+   "M3": {
+    "recall@5": 0.5,
+    "recall@10": 0.7678571428571429,
+    "all_gold@5": 0.5,
+    "mrr@10": 0.5069444444444444,
+    "ndcg@5": 0.4538662191964322,
+    "stale@5": 0.0,
+    "trap@5": 0.0
+   },
+   "M4": {
+    "recall@5": 0.5,
+    "recall@10": 0.625,
+    "all_gold@5": 0.5,
+    "mrr@10": 0.465625,
+    "ndcg@5": 0.4538662191964322,
+    "stale@5": 0.0,
+    "trap@5": 0.0
+   },
+   "M5": {
+    "recall@5": 0.5,
+    "recall@10": 0.6428571428571429,
+    "all_gold@5": 0.5,
+    "mrr@10": 0.4861111111111111,
+    "ndcg@5": 0.4538662191964322,
+    "stale@5": 0.0,
+    "trap@5": 0.0
+   },
+   "M6": {
+    "recall@5": 0.5,
+    "recall@10": 0.625,
+    "all_gold@5": 0.5,
+    "mrr@10": 0.465625,
+    "ndcg@5": 0.4538662191964322,
+    "stale@5": 0.0,
+    "trap@5": 0.0
+   },
+   "M7": {
+    "recall@5": 0.5,
+    "recall@10": 0.6875,
+    "all_gold@5": 0.5,
+    "mrr@10": 0.465625,
+    "ndcg@5": 0.4538662191964322,
+    "stale@5": 0.0,
+    "trap@5": 0.0
+   },
+   "M8": {
+    "recall@5": 0.7857142857142857,
+    "recall@10": 0.9285714285714286,
+    "all_gold@5": 0.625,
+    "mrr@10": 0.65625,
+    "ndcg@5": 0.6768997760320619,
+    "stale@5": 0.0,
+    "trap@5": 0.0
+   },
+   "M8n": {
+    "recall@5": 0.7857142857142857,
+    "recall@10": 0.9285714285714286,
+    "all_gold@5": 0.625,
+    "mrr@10": 0.65625,
+    "ndcg@5": 0.6768997760320619,
+    "stale@5": 0.0,
+    "trap@5": 0.0
+   },
+   "CE*": {
+    "recall@5": 0.7857142857142857,
+    "recall@10": 0.9285714285714286,
+    "all_gold@5": 0.625,
+    "mrr@10": 0.65625,
+    "ndcg@5": 0.6768997760320619,
+    "stale@5": 0.0,
+    "trap@5": 0.0
+   }
+  }
+ },
+ "per_question": {
+  "v2c01": {
+   "M1": {
+    "ranked": [
+     "buy_title_northwind_finance__2022",
+     "keep_paying_until_confirmed__2022",
+     "lien_still_on_title__2022",
+     "lost_title__2022",
+     "buy_title_outside_lender__2022",
+     "how_selling_works__2022",
+     "getting_paid__2022",
+     "getting_paid__2026",
+     "lender_overpayment_refund__2022",
+     "how_selling_works__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.3333333333333333,
+     "recall@10": 0.6666666666666666,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.2960819109658652,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M2": {
+    "ranked": [
+     "getting_paid__2022",
+     "lender_overpayment_refund__2022",
+     "payoff_letter__2026",
+     "buy_title_northwind_finance__2022",
+     "buy_title_outside_lender__2022",
+     "getting_paid__2026",
+     "selling_with_loan__2022",
+     "negative_equity__2026",
+     "how_selling_works__2022",
+     "negative_equity__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.0,
+     "recall@10": 0.3333333333333333,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.16666666666666666,
+     "ndcg@5": 0.0,
+     "stale@5": 1.0,
+     "trap@5": 0.0
+    }
+   },
+   "M3": {
+    "ranked": [
+     "lender_overpayment_refund__2022",
+     "payoff_letter__2026",
+     "buy_title_northwind_finance__2022",
+     "buy_title_outside_lender__2022",
+     "getting_paid__2026",
+     "selling_with_loan__2022",
+     "negative_equity__2026",
+     "how_selling_works__2026",
+     "returns__2026",
+     "lost_title__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.3333333333333333,
+     "recall@10": 0.3333333333333333,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.2,
+     "ndcg@5": 0.18154179253735267,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M4": {
+    "ranked": [
+     "lender_overpayment_refund__2022",
+     "payoff_letter__2026",
+     "buy_title_northwind_finance__2022",
+     "buy_title_outside_lender__2022",
+     "getting_paid__2026",
+     "selling_with_loan__2022",
+     "negative_equity__2026",
+     "how_selling_works__2026",
+     "returns__2026",
+     "keep_paying_until_confirmed__2022"
+    ],
+    "via": {
+     "keep_paying_until_confirmed__2022": "lender_overpayment_refund__2022 > keep_paying_until_confirmed__2022"
+    },
+    "scores": {
+     "recall@5": 0.3333333333333333,
+     "recall@10": 0.6666666666666666,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.2,
+     "ndcg@5": 0.18154179253735267,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M5": {
+    "ranked": [
+     "lender_overpayment_refund__2022",
+     "payoff_letter__2026",
+     "buy_title_northwind_finance__2022",
+     "buy_title_outside_lender__2022",
+     "getting_paid__2026",
+     "selling_with_loan__2022",
+     "negative_equity__2026",
+     "how_selling_works__2026",
+     "returns__2026",
+     "lost_title__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.3333333333333333,
+     "recall@10": 0.3333333333333333,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.2,
+     "ndcg@5": 0.18154179253735267,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M6": {
+    "ranked": [
+     "lender_overpayment_refund__2022",
+     "payoff_letter__2026",
+     "buy_title_northwind_finance__2022",
+     "buy_title_outside_lender__2022",
+     "getting_paid__2026",
+     "selling_with_loan__2022",
+     "negative_equity__2026",
+     "how_selling_works__2026",
+     "returns__2026",
+     "keep_paying_until_confirmed__2022"
+    ],
+    "via": {
+     "keep_paying_until_confirmed__2022": "lender_overpayment_refund__2022 > keep_paying_until_confirmed__2022"
+    },
+    "scores": {
+     "recall@5": 0.3333333333333333,
+     "recall@10": 0.6666666666666666,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.2,
+     "ndcg@5": 0.18154179253735267,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M7": {
+    "ranked": [
+     "lender_overpayment_refund__2022",
+     "payoff_letter__2026",
+     "buy_title_northwind_finance__2022",
+     "buy_title_outside_lender__2022",
+     "getting_paid__2026",
+     "selling_with_loan__2022",
+     "negative_equity__2026",
+     "how_selling_works__2026",
+     "returns__2026",
+     "epayoff_network__2026"
+    ],
+    "via": {
+     "epayoff_network__2026": "(question) > northwind_finance > epayoff_network__2026"
+    },
+    "scores": {
+     "recall@5": 0.3333333333333333,
+     "recall@10": 0.6666666666666666,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.2,
+     "ndcg@5": 0.18154179253735267,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M8": {
+    "ranked": [
+     "lender_overpayment_refund__2022",
+     "buy_title_northwind_finance__2022",
+     "buy_title_outside_lender__2022",
+     "epayoff_network__2026",
+     "keep_paying_until_confirmed__2022",
+     "selling_with_loan__2022",
+     "payoff_letter__2026",
+     "how_selling_works__2026",
+     "lien_still_on_title__2022",
+     "lost_title__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.6666666666666666,
+     "recall@10": 0.6666666666666666,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.25,
+     "ndcg@5": 0.38364913903790027,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 20,
+     "gold_sources": {
+      "getting_paid__2026": [
+       "bm25",
+       "vector",
+       "graph"
+      ],
+      "epayoff_network__2026": [
+       "graph",
+       "name"
+      ],
+      "keep_paying_until_confirmed__2022": [
+       "bm25",
+       "graph"
+      ]
+     }
+    }
+   },
+   "M8n": {
+    "ranked": [
+     "lender_overpayment_refund__2022",
+     "buy_title_northwind_finance__2022",
+     "buy_title_outside_lender__2022",
+     "keep_paying_until_confirmed__2022",
+     "selling_with_loan__2022",
+     "payoff_letter__2026",
+     "how_selling_works__2026",
+     "lien_still_on_title__2022",
+     "lost_title__2022",
+     "negative_equity__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.3333333333333333,
+     "recall@10": 0.3333333333333333,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.25,
+     "ndcg@5": 0.20210734650054757,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 14,
+     "gold_sources": {
+      "getting_paid__2026": [
+       "bm25",
+       "vector"
+      ],
+      "epayoff_network__2026": [],
+      "keep_paying_until_confirmed__2022": [
+       "bm25"
+      ]
+     }
+    }
+   },
+   "CE*": {
+    "ranked": [
+     "lender_overpayment_refund__2022",
+     "buy_title_northwind_finance__2022",
+     "buy_title_outside_lender__2022",
+     "epayoff_network__2026",
+     "keep_paying_until_confirmed__2022",
+     "selling_with_loan__2022",
+     "payoff_letter__2026",
+     "offer_scams__2026",
+     "how_selling_works__2026",
+     "lien_still_on_title__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.6666666666666666,
+     "recall@10": 0.6666666666666666,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.25,
+     "ndcg@5": 0.38364913903790027,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   }
+  },
+  "v2c02": {
+   "M1": {
+    "ranked": [
+     "lien_still_on_title__2022",
+     "lost_title__2022",
+     "buy_title_northwind_finance__2022",
+     "electronic_titles__2022",
+     "buy_title_outside_lender__2022",
+     "selling_with_loan__2022",
+     "how_selling_works__2022",
+     "selling_without_buying__2022",
+     "divorce_ex_on_title__2022",
+     "duplicate_title_texas__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.8772153153380493,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M2": {
+    "ranked": [
+     "lien_still_on_title__2022",
+     "buy_title_outside_lender__2022",
+     "buy_title_northwind_finance__2022",
+     "electronic_titles__2022",
+     "selling_with_loan__2022",
+     "lost_title__2022",
+     "inherited_car__2026",
+     "out_of_state__2022",
+     "business_car__2022",
+     "out_of_state__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.8772153153380493,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M3": {
+    "ranked": [
+     "lien_still_on_title__2022",
+     "buy_title_outside_lender__2022",
+     "buy_title_northwind_finance__2022",
+     "electronic_titles__2022",
+     "selling_with_loan__2022",
+     "lost_title__2022",
+     "inherited_car__2026",
+     "business_car__2022",
+     "out_of_state__2026",
+     "appointment_checklist__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.8772153153380493,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M4": {
+    "ranked": [
+     "lien_still_on_title__2022",
+     "buy_title_outside_lender__2022",
+     "buy_title_northwind_finance__2022",
+     "electronic_titles__2022",
+     "selling_with_loan__2022",
+     "lost_title__2022",
+     "inherited_car__2026",
+     "duplicate_title_texas__2022",
+     "business_car__2022",
+     "getting_paid__2026"
+    ],
+    "via": {
+     "duplicate_title_texas__2022": "electronic_titles__2022 > duplicate_title_texas__2022",
+     "getting_paid__2026": "selling_with_loan__2022 > getting_paid__2026"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.8772153153380493,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M5": {
+    "ranked": [
+     "lien_still_on_title__2022",
+     "buy_title_outside_lender__2022",
+     "buy_title_northwind_finance__2022",
+     "electronic_titles__2022",
+     "selling_with_loan__2022",
+     "lost_title__2022",
+     "inherited_car__2026",
+     "business_car__2022",
+     "out_of_state__2026",
+     "appointment_checklist__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.8772153153380493,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M6": {
+    "ranked": [
+     "lien_still_on_title__2022",
+     "buy_title_outside_lender__2022",
+     "buy_title_northwind_finance__2022",
+     "electronic_titles__2022",
+     "selling_with_loan__2022",
+     "lost_title__2022",
+     "inherited_car__2026",
+     "duplicate_title_texas__2022",
+     "business_car__2022",
+     "getting_paid__2026"
+    ],
+    "via": {
+     "duplicate_title_texas__2022": "electronic_titles__2022 > duplicate_title_texas__2022",
+     "getting_paid__2026": "selling_with_loan__2022 > getting_paid__2026"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.8772153153380493,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M7": {
+    "ranked": [
+     "lien_still_on_title__2022",
+     "buy_title_outside_lender__2022",
+     "buy_title_northwind_finance__2022",
+     "electronic_titles__2022",
+     "selling_with_loan__2022",
+     "lost_title__2022",
+     "inherited_car__2026",
+     "duplicate_title_texas__2022",
+     "business_car__2022",
+     "getting_paid__2026"
+    ],
+    "via": {
+     "duplicate_title_texas__2022": "electronic_titles__2022 > duplicate_title_texas__2022",
+     "getting_paid__2026": "selling_with_loan__2022 > getting_paid__2026"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.8772153153380493,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M8": {
+    "ranked": [
+     "lien_still_on_title__2022",
+     "selling_with_loan__2022",
+     "electronic_titles__2022",
+     "lost_title__2022",
+     "buy_title_northwind_finance__2022",
+     "buy_title_outside_lender__2022",
+     "inherited_car__2026",
+     "duplicate_title_texas__2022",
+     "negative_equity__2026",
+     "out_of_state__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.9197207891481876,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 18,
+     "gold_sources": {
+      "lien_still_on_title__2022": [
+       "bm25",
+       "vector",
+       "graph"
+      ],
+      "electronic_titles__2022": [
+       "bm25",
+       "vector",
+       "graph"
+      ]
+     }
+    }
+   },
+   "M8n": {
+    "ranked": [
+     "lien_still_on_title__2022",
+     "selling_with_loan__2022",
+     "electronic_titles__2022",
+     "lost_title__2022",
+     "buy_title_northwind_finance__2022",
+     "buy_title_outside_lender__2022",
+     "inherited_car__2026",
+     "duplicate_title_texas__2022",
+     "out_of_state__2026",
+     "divorce_ex_on_title__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.9197207891481876,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 14,
+     "gold_sources": {
+      "lien_still_on_title__2022": [
+       "bm25",
+       "vector"
+      ],
+      "electronic_titles__2022": [
+       "bm25",
+       "vector"
+      ]
+     }
+    }
+   },
+   "CE*": {
+    "ranked": [
+     "lien_still_on_title__2022",
+     "selling_with_loan__2022",
+     "electronic_titles__2022",
+     "lost_title__2022",
+     "buy_title_northwind_finance__2022",
+     "buy_title_outside_lender__2022",
+     "inherited_car__2026",
+     "duplicate_title_texas__2022",
+     "negative_equity__2026",
+     "out_of_state__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.9197207891481876,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   }
+  },
+  "v2c03": {
+   "M1": {
+    "ranked": [
+     "duplicate_title_north_carolina__2022",
+     "out_of_state__2022",
+     "out_of_state__2026",
+     "registration_expired__2022",
+     "license_plates__2026",
+     "lost_title__2022",
+     "electronic_titles__2022",
+     "how_selling_works__2022",
+     "walk_in_quotes__2022",
+     "lien_still_on_title__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.3333333333333333,
+     "ndcg@5": 0.5706417189553201,
+     "stale@5": 1.0,
+     "trap@5": 0.0
+    }
+   },
+   "M2": {
+    "ranked": [
+     "out_of_state__2022",
+     "registration_expired__2022",
+     "out_of_state__2026",
+     "non_running_cars__2022",
+     "license_plates__2026",
+     "how_selling_works__2022",
+     "duplicate_title_north_carolina__2022",
+     "how_selling_works__2026",
+     "lost_title__2022",
+     "buy_temp_plates__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6934264036172708,
+     "stale@5": 1.0,
+     "trap@5": 0.0
+    }
+   },
+   "M3": {
+    "ranked": [
+     "registration_expired__2022",
+     "out_of_state__2026",
+     "license_plates__2026",
+     "duplicate_title_north_carolina__2022",
+     "how_selling_works__2026",
+     "lost_title__2022",
+     "buy_temp_plates__2022",
+     "selling_without_buying__2022",
+     "returns__2026",
+     "military_deployed__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M4": {
+    "ranked": [
+     "registration_expired__2022",
+     "out_of_state__2026",
+     "license_plates__2026",
+     "lost_title__2022",
+     "duplicate_title_north_carolina__2022",
+     "how_selling_works__2026",
+     "buy_temp_plates__2022",
+     "selling_without_buying__2022",
+     "returns__2026",
+     "military_deployed__2026"
+    ],
+    "via": {
+     "license_plates__2026": "out_of_state__2026 > license_plates__2026",
+     "lost_title__2022": "out_of_state__2026 > lost_title__2022"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M5": {
+    "ranked": [
+     "registration_expired__2022",
+     "out_of_state__2026",
+     "license_plates__2026",
+     "duplicate_title_north_carolina__2022",
+     "how_selling_works__2026",
+     "lost_title__2022",
+     "buy_temp_plates__2022",
+     "selling_without_buying__2022",
+     "returns__2026",
+     "military_deployed__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M6": {
+    "ranked": [
+     "registration_expired__2022",
+     "out_of_state__2026",
+     "license_plates__2026",
+     "lost_title__2022",
+     "duplicate_title_north_carolina__2022",
+     "how_selling_works__2026",
+     "buy_temp_plates__2022",
+     "selling_without_buying__2022",
+     "returns__2026",
+     "military_deployed__2026"
+    ],
+    "via": {
+     "license_plates__2026": "out_of_state__2026 > license_plates__2026",
+     "lost_title__2022": "out_of_state__2026 > lost_title__2022"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M7": {
+    "ranked": [
+     "registration_expired__2022",
+     "out_of_state__2026",
+     "license_plates__2026",
+     "lost_title__2022",
+     "duplicate_title_north_carolina__2022",
+     "how_selling_works__2026",
+     "buy_temp_plates__2022",
+     "selling_without_buying__2022",
+     "returns__2026",
+     "military_deployed__2026"
+    ],
+    "via": {
+     "license_plates__2026": "out_of_state__2026 > license_plates__2026",
+     "lost_title__2022": "out_of_state__2026 > lost_title__2022"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M8": {
+    "ranked": [
+     "registration_expired__2022",
+     "out_of_state__2026",
+     "license_plates__2026",
+     "duplicate_title_north_carolina__2022",
+     "lost_title__2022",
+     "appointment_checklist__2026",
+     "buy_temp_plates__2022",
+     "selling_without_buying__2022",
+     "how_selling_works__2026",
+     "home_pickup__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 18,
+     "gold_sources": {
+      "registration_expired__2022": [
+       "bm25",
+       "vector",
+       "graph"
+      ],
+      "out_of_state__2026": [
+       "bm25",
+       "vector",
+       "graph"
+      ]
+     }
+    }
+   },
+   "M8n": {
+    "ranked": [
+     "registration_expired__2022",
+     "out_of_state__2026",
+     "license_plates__2026",
+     "duplicate_title_north_carolina__2022",
+     "lost_title__2022",
+     "buy_temp_plates__2022",
+     "selling_without_buying__2022",
+     "how_selling_works__2026",
+     "returns__2026",
+     "military_deployed__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 13,
+     "gold_sources": {
+      "registration_expired__2022": [
+       "bm25",
+       "vector"
+      ],
+      "out_of_state__2026": [
+       "bm25",
+       "vector"
+      ]
+     }
+    }
+   },
+   "CE*": {
+    "ranked": [
+     "registration_expired__2022",
+     "out_of_state__2026",
+     "license_plates__2026",
+     "duplicate_title_north_carolina__2022",
+     "lost_title__2022",
+     "appointment_checklist__2026",
+     "buy_temp_plates__2022",
+     "open_recalls__2022",
+     "selling_without_buying__2022",
+     "how_selling_works__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   }
+  },
+  "v2c04": {
+   "M1": {
+    "ranked": [
+     "title_name_mismatch__2022",
+     "divorce_ex_on_title__2022",
+     "lien_still_on_title__2022",
+     "how_selling_works__2022",
+     "lost_title__2022",
+     "duplicate_title_north_carolina__2022",
+     "registration_expired__2022",
+     "buy_title_northwind_finance__2022",
+     "co_owners__2022",
+     "co_owners__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 1.0,
+     "trap@5": 0.0
+    }
+   },
+   "M2": {
+    "ranked": [
+     "divorce_ex_on_title__2022",
+     "title_name_mismatch__2022",
+     "lost_title__2022",
+     "out_of_state__2026",
+     "selling_for_someone_else__2022",
+     "out_of_state__2022",
+     "inherited_car__2026",
+     "inherited_car__2022",
+     "electronic_titles__2022",
+     "branded_title__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M3": {
+    "ranked": [
+     "divorce_ex_on_title__2022",
+     "title_name_mismatch__2022",
+     "lost_title__2022",
+     "out_of_state__2026",
+     "selling_for_someone_else__2022",
+     "inherited_car__2026",
+     "electronic_titles__2022",
+     "branded_title__2026",
+     "buy_title_outside_lender__2022",
+     "business_car__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M4": {
+    "ranked": [
+     "divorce_ex_on_title__2022",
+     "title_name_mismatch__2022",
+     "co_owners__2026",
+     "lost_title__2022",
+     "out_of_state__2026",
+     "selling_for_someone_else__2022",
+     "inherited_car__2026",
+     "electronic_titles__2022",
+     "branded_title__2026",
+     "buy_title_outside_lender__2022"
+    ],
+    "via": {
+     "co_owners__2026": "divorce_ex_on_title__2022 > co_owners__2026"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M5": {
+    "ranked": [
+     "divorce_ex_on_title__2022",
+     "title_name_mismatch__2022",
+     "lost_title__2022",
+     "out_of_state__2026",
+     "selling_for_someone_else__2022",
+     "inherited_car__2026",
+     "electronic_titles__2022",
+     "branded_title__2026",
+     "buy_title_outside_lender__2022",
+     "business_car__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M6": {
+    "ranked": [
+     "divorce_ex_on_title__2022",
+     "title_name_mismatch__2022",
+     "co_owners__2026",
+     "lost_title__2022",
+     "out_of_state__2026",
+     "selling_for_someone_else__2022",
+     "inherited_car__2026",
+     "electronic_titles__2022",
+     "branded_title__2026",
+     "buy_title_outside_lender__2022"
+    ],
+    "via": {
+     "co_owners__2026": "divorce_ex_on_title__2022 > co_owners__2026"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M7": {
+    "ranked": [
+     "divorce_ex_on_title__2022",
+     "title_name_mismatch__2022",
+     "co_owners__2026",
+     "lost_title__2022",
+     "out_of_state__2026",
+     "selling_for_someone_else__2022",
+     "inherited_car__2026",
+     "electronic_titles__2022",
+     "branded_title__2026",
+     "buy_title_outside_lender__2022"
+    ],
+    "via": {
+     "co_owners__2026": "divorce_ex_on_title__2022 > co_owners__2026"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M8": {
+    "ranked": [
+     "divorce_ex_on_title__2022",
+     "title_name_mismatch__2022",
+     "lien_still_on_title__2022",
+     "inherited_car__2026",
+     "electronic_titles__2022",
+     "selling_with_loan__2022",
+     "buy_title_outside_lender__2022",
+     "branded_title__2026",
+     "lost_title__2022",
+     "registration_expired__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 22,
+     "gold_sources": {
+      "divorce_ex_on_title__2022": [
+       "bm25",
+       "vector",
+       "graph"
+      ],
+      "title_name_mismatch__2022": [
+       "bm25",
+       "vector",
+       "graph"
+      ]
+     }
+    }
+   },
+   "M8n": {
+    "ranked": [
+     "divorce_ex_on_title__2022",
+     "title_name_mismatch__2022",
+     "lien_still_on_title__2022",
+     "inherited_car__2026",
+     "electronic_titles__2022",
+     "buy_title_outside_lender__2022",
+     "branded_title__2026",
+     "lost_title__2022",
+     "registration_expired__2022",
+     "buy_title_northwind_finance__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 15,
+     "gold_sources": {
+      "divorce_ex_on_title__2022": [
+       "bm25",
+       "vector"
+      ],
+      "title_name_mismatch__2022": [
+       "bm25",
+       "vector"
+      ]
+     }
+    }
+   },
+   "CE*": {
+    "ranked": [
+     "divorce_ex_on_title__2022",
+     "title_name_mismatch__2022",
+     "lien_still_on_title__2022",
+     "inherited_car__2026",
+     "electronic_titles__2022",
+     "selling_with_loan__2022",
+     "buy_title_outside_lender__2022",
+     "branded_title__2026",
+     "lost_title__2022",
+     "registration_expired__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   }
+  },
+  "v2c05": {
+   "M1": {
+    "ranked": [
+     "getting_paid__2022",
+     "getting_paid__2026",
+     "how_selling_works__2022",
+     "epayoff_network__2026",
+     "payoff_letter__2026",
+     "keep_paying_until_confirmed__2022",
+     "license_plates__2022",
+     "lien_still_on_title__2022",
+     "selling_without_buying__2022",
+     "buy_title_northwind_finance__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 0.5,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.25,
+     "ndcg@5": 0.2640681225725909,
+     "stale@5": 1.0,
+     "trap@5": 0.0
+    }
+   },
+   "M2": {
+    "ranked": [
+     "payoff_letter__2026",
+     "selling_with_loan__2022",
+     "epayoff_network__2026",
+     "payoff_letter__2022",
+     "lien_still_on_title__2022",
+     "lost_title__2022",
+     "negative_equity__2026",
+     "buy_title_outside_lender__2022",
+     "negative_equity__2022",
+     "getting_paid__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 0.5,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.3333333333333333,
+     "ndcg@5": 0.3065735963827292,
+     "stale@5": 1.0,
+     "trap@5": 0.0
+    }
+   },
+   "M3": {
+    "ranked": [
+     "payoff_letter__2026",
+     "selling_with_loan__2022",
+     "epayoff_network__2026",
+     "lien_still_on_title__2022",
+     "lost_title__2022",
+     "negative_equity__2026",
+     "buy_title_outside_lender__2022",
+     "buy_title_northwind_finance__2022",
+     "appointment_checklist__2026",
+     "inherited_car__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 0.5,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.3333333333333333,
+     "ndcg@5": 0.3065735963827292,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M4": {
+    "ranked": [
+     "payoff_letter__2026",
+     "selling_with_loan__2022",
+     "epayoff_network__2026",
+     "lien_still_on_title__2022",
+     "lost_title__2022",
+     "negative_equity__2026",
+     "buy_title_outside_lender__2022",
+     "appointment_checklist__2026",
+     "leased_car__2022",
+     "getting_paid__2026"
+    ],
+    "via": {
+     "appointment_checklist__2026": "payoff_letter__2026 > appointment_checklist__2026",
+     "leased_car__2022": "payoff_letter__2026 > leased_car__2022",
+     "getting_paid__2026": "selling_with_loan__2022 > getting_paid__2026"
+    },
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 0.5,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.3333333333333333,
+     "ndcg@5": 0.3065735963827292,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M5": {
+    "ranked": [
+     "payoff_letter__2026",
+     "selling_with_loan__2022",
+     "epayoff_network__2026",
+     "lien_still_on_title__2022",
+     "lost_title__2022",
+     "negative_equity__2026",
+     "buy_title_outside_lender__2022",
+     "buy_title_northwind_finance__2022",
+     "appointment_checklist__2026",
+     "inherited_car__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 0.5,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.3333333333333333,
+     "ndcg@5": 0.3065735963827292,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M6": {
+    "ranked": [
+     "payoff_letter__2026",
+     "selling_with_loan__2022",
+     "epayoff_network__2026",
+     "lien_still_on_title__2022",
+     "lost_title__2022",
+     "negative_equity__2026",
+     "buy_title_outside_lender__2022",
+     "appointment_checklist__2026",
+     "leased_car__2022",
+     "getting_paid__2026"
+    ],
+    "via": {
+     "appointment_checklist__2026": "payoff_letter__2026 > appointment_checklist__2026",
+     "leased_car__2022": "payoff_letter__2026 > leased_car__2022",
+     "getting_paid__2026": "selling_with_loan__2022 > getting_paid__2026"
+    },
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 0.5,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.3333333333333333,
+     "ndcg@5": 0.3065735963827292,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M7": {
+    "ranked": [
+     "payoff_letter__2026",
+     "selling_with_loan__2022",
+     "epayoff_network__2026",
+     "lien_still_on_title__2022",
+     "lost_title__2022",
+     "negative_equity__2026",
+     "buy_title_outside_lender__2022",
+     "appointment_checklist__2026",
+     "leased_car__2022",
+     "getting_paid__2026"
+    ],
+    "via": {
+     "appointment_checklist__2026": "payoff_letter__2026 > appointment_checklist__2026",
+     "leased_car__2022": "payoff_letter__2026 > leased_car__2022",
+     "getting_paid__2026": "selling_with_loan__2022 > getting_paid__2026"
+    },
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 0.5,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.3333333333333333,
+     "ndcg@5": 0.3065735963827292,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M8": {
+    "ranked": [
+     "epayoff_network__2026",
+     "selling_with_loan__2022",
+     "negative_equity__2026",
+     "payoff_letter__2026",
+     "buy_title_northwind_finance__2022",
+     "buy_title_outside_lender__2022",
+     "appointment_checklist__2026",
+     "lost_title__2022",
+     "inherited_car__2026",
+     "lender_overpayment_refund__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 0.5,
+     "all_gold@5": 0.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.6131471927654584,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 22,
+     "gold_sources": {
+      "non_running_cars__2026": [],
+      "epayoff_network__2026": [
+       "bm25",
+       "vector",
+       "graph",
+       "name"
+      ]
+     }
+    }
+   },
+   "M8n": {
+    "ranked": [
+     "epayoff_network__2026",
+     "selling_with_loan__2022",
+     "negative_equity__2026",
+     "payoff_letter__2026",
+     "buy_title_northwind_finance__2022",
+     "buy_title_outside_lender__2022",
+     "appointment_checklist__2026",
+     "lost_title__2022",
+     "inherited_car__2026",
+     "lender_overpayment_refund__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 0.5,
+     "all_gold@5": 0.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.6131471927654584,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 14,
+     "gold_sources": {
+      "non_running_cars__2026": [],
+      "epayoff_network__2026": [
+       "bm25",
+       "vector"
+      ]
+     }
+    }
+   },
+   "CE*": {
+    "ranked": [
+     "epayoff_network__2026",
+     "selling_with_loan__2022",
+     "negative_equity__2026",
+     "payoff_letter__2026",
+     "non_running_cars__2026",
+     "buy_title_northwind_finance__2022",
+     "buy_title_outside_lender__2022",
+     "appointment_checklist__2026",
+     "lost_title__2022",
+     "inherited_car__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.8503449055347546,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   }
+  },
+  "v2c06": {
+   "M1": {
+    "ranked": [
+     "appointment_checklist__2022",
+     "odometer_problems__2022",
+     "appointment_checklist__2026",
+     "reschedule_cancel__2022",
+     "title_name_mismatch__2022",
+     "how_selling_works__2022",
+     "duplicate_title_north_carolina__2022",
+     "getting_paid__2026",
+     "lien_still_on_title__2022",
+     "buy_title_outside_lender__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.3333333333333333,
+     "ndcg@5": 0.5,
+     "stale@5": 1.0,
+     "trap@5": 1.0
+    }
+   },
+   "M2": {
+    "ranked": [
+     "odometer_problems__2022",
+     "appointment_checklist__2026",
+     "walk_in_quotes__2022",
+     "appointment_checklist__2022",
+     "how_selling_works__2026",
+     "payoff_letter__2026",
+     "registration_expired__2022",
+     "out_of_state__2026",
+     "co_owners__2026",
+     "duplicate_title_north_carolina__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6309297535714575,
+     "stale@5": 1.0,
+     "trap@5": 1.0
+    }
+   },
+   "M3": {
+    "ranked": [
+     "odometer_problems__2022",
+     "appointment_checklist__2026",
+     "how_selling_works__2026",
+     "payoff_letter__2026",
+     "registration_expired__2022",
+     "out_of_state__2026",
+     "co_owners__2026",
+     "duplicate_title_north_carolina__2022",
+     "home_pickup__2026",
+     "what_changes_offer__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6309297535714575,
+     "stale@5": 0.0,
+     "trap@5": 1.0
+    }
+   },
+   "M4": {
+    "ranked": [
+     "odometer_problems__2022",
+     "appointment_checklist__2026",
+     "how_selling_works__2026",
+     "payoff_letter__2026",
+     "co_owners__2026",
+     "epayoff_network__2026",
+     "home_pickup__2026",
+     "leased_car__2022",
+     "selling_for_someone_else__2022",
+     "registration_expired__2022"
+    ],
+    "via": {
+     "appointment_checklist__2026": "odometer_problems__2022 > NW-ODO-1 > appointment_checklist__2026",
+     "co_owners__2026": "appointment_checklist__2026 > co_owners__2026",
+     "epayoff_network__2026": "appointment_checklist__2026 > epayoff_network__2026",
+     "home_pickup__2026": "appointment_checklist__2026 > home_pickup__2026",
+     "leased_car__2022": "appointment_checklist__2026 > leased_car__2022",
+     "selling_for_someone_else__2022": "appointment_checklist__2026 > selling_for_someone_else__2022"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6309297535714575,
+     "stale@5": 0.0,
+     "trap@5": 1.0
+    }
+   },
+   "M5": {
+    "ranked": [
+     "odometer_problems__2022",
+     "branded_title__2026",
+     "flood_damage__2022",
+     "appointment_checklist__2026",
+     "how_selling_works__2026",
+     "offer_validity__2026",
+     "reschedule_cancel__2022",
+     "payoff_letter__2026",
+     "registration_expired__2022",
+     "out_of_state__2026"
+    ],
+    "via": {
+     "branded_title__2026": "odometer_problems__2022 > offer_request > branded_title__2026",
+     "flood_damage__2022": "odometer_problems__2022 > offer_request > flood_damage__2022",
+     "how_selling_works__2026": "odometer_problems__2022 > odometer_statement > appraisal_appointment > how_selling_works__2026",
+     "offer_validity__2026": "odometer_problems__2022 > odometer_statement > appraisal_appointment > offer_validity__2026",
+     "reschedule_cancel__2022": "odometer_problems__2022 > odometer_statement > appraisal_appointment > reschedule_cancel__2022"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.25,
+     "ndcg@5": 0.43067655807339306,
+     "stale@5": 0.0,
+     "trap@5": 1.0
+    }
+   },
+   "M6": {
+    "ranked": [
+     "odometer_problems__2022",
+     "appointment_checklist__2026",
+     "branded_title__2026",
+     "flood_damage__2022",
+     "how_selling_works__2026",
+     "offer_validity__2026",
+     "reschedule_cancel__2022",
+     "payoff_letter__2026",
+     "co_owners__2026",
+     "epayoff_network__2026"
+    ],
+    "via": {
+     "appointment_checklist__2026": "odometer_problems__2022 > NW-ODO-1 > appointment_checklist__2026",
+     "branded_title__2026": "odometer_problems__2022 > offer_request > branded_title__2026",
+     "flood_damage__2022": "odometer_problems__2022 > offer_request > flood_damage__2022",
+     "how_selling_works__2026": "odometer_problems__2022 > odometer_statement > appraisal_appointment > how_selling_works__2026",
+     "offer_validity__2026": "odometer_problems__2022 > odometer_statement > appraisal_appointment > offer_validity__2026",
+     "reschedule_cancel__2022": "odometer_problems__2022 > odometer_statement > appraisal_appointment > reschedule_cancel__2022",
+     "co_owners__2026": "appointment_checklist__2026 > co_owners__2026",
+     "epayoff_network__2026": "appointment_checklist__2026 > epayoff_network__2026"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6309297535714575,
+     "stale@5": 0.0,
+     "trap@5": 1.0
+    }
+   },
+   "M7": {
+    "ranked": [
+     "odometer_problems__2022",
+     "appointment_checklist__2026",
+     "how_selling_works__2026",
+     "payoff_letter__2026",
+     "co_owners__2026",
+     "epayoff_network__2026",
+     "home_pickup__2026",
+     "leased_car__2022",
+     "selling_for_someone_else__2022",
+     "registration_expired__2022"
+    ],
+    "via": {
+     "appointment_checklist__2026": "(question) > NW-ODO-1 > appointment_checklist__2026",
+     "co_owners__2026": "appointment_checklist__2026 > co_owners__2026",
+     "epayoff_network__2026": "appointment_checklist__2026 > epayoff_network__2026",
+     "home_pickup__2026": "appointment_checklist__2026 > home_pickup__2026",
+     "leased_car__2022": "appointment_checklist__2026 > leased_car__2022",
+     "selling_for_someone_else__2022": "appointment_checklist__2026 > selling_for_someone_else__2022"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6309297535714575,
+     "stale@5": 0.0,
+     "trap@5": 1.0
+    }
+   },
+   "M8": {
+    "ranked": [
+     "odometer_problems__2022",
+     "appointment_checklist__2026",
+     "co_owners__2026",
+     "lien_still_on_title__2022",
+     "title_name_mismatch__2022",
+     "what_changes_offer__2026",
+     "home_pickup__2026",
+     "payoff_letter__2026",
+     "epayoff_network__2026",
+     "selling_for_someone_else__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6309297535714575,
+     "stale@5": 0.0,
+     "trap@5": 1.0
+    },
+    "pool": {
+     "size": 22,
+     "gold_sources": {
+      "appointment_checklist__2026": [
+       "bm25",
+       "vector",
+       "graph",
+       "name"
+      ]
+     }
+    }
+   },
+   "M8n": {
+    "ranked": [
+     "odometer_problems__2022",
+     "appointment_checklist__2026",
+     "co_owners__2026",
+     "lien_still_on_title__2022",
+     "title_name_mismatch__2022",
+     "what_changes_offer__2026",
+     "home_pickup__2026",
+     "payoff_letter__2026",
+     "duplicate_title_north_carolina__2022",
+     "out_of_state__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6309297535714575,
+     "stale@5": 0.0,
+     "trap@5": 1.0
+    },
+    "pool": {
+     "size": 16,
+     "gold_sources": {
+      "appointment_checklist__2026": [
+       "bm25",
+       "vector"
+      ]
+     }
+    }
+   },
+   "CE*": {
+    "ranked": [
+     "odometer_problems__2022",
+     "appointment_checklist__2026",
+     "co_owners__2026",
+     "lien_still_on_title__2022",
+     "title_name_mismatch__2022",
+     "what_changes_offer__2026",
+     "military_deployed__2026",
+     "home_pickup__2026",
+     "payoff_letter__2026",
+     "epayoff_network__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6309297535714575,
+     "stale@5": 0.0,
+     "trap@5": 1.0
+    }
+   }
+  },
+  "v2c07": {
+   "M1": {
+    "ranked": [
+     "selling_for_someone_else__2022",
+     "selling_without_buying__2022",
+     "co_owners__2026",
+     "inherited_car__2022",
+     "out_of_state__2022",
+     "out_of_state__2026",
+     "military_deployed__2026",
+     "how_selling_works__2022",
+     "duplicate_title_virginia__2022",
+     "trade_in_vs_sell__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.3333333333333333,
+     "ndcg@5": 0.5,
+     "stale@5": 1.0,
+     "trap@5": 1.0
+    }
+   },
+   "M2": {
+    "ranked": [
+     "co_owners__2026",
+     "selling_for_someone_else__2022",
+     "inherited_car__2026",
+     "co_owners__2022",
+     "military_deployed__2026",
+     "inherited_car__2022",
+     "business_car__2022",
+     "divorce_ex_on_title__2022",
+     "appointment_checklist__2026",
+     "lost_title__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 1.0,
+     "trap@5": 1.0
+    }
+   },
+   "M3": {
+    "ranked": [
+     "co_owners__2026",
+     "selling_for_someone_else__2022",
+     "inherited_car__2026",
+     "military_deployed__2026",
+     "business_car__2022",
+     "divorce_ex_on_title__2022",
+     "appointment_checklist__2026",
+     "lost_title__2022",
+     "how_selling_works__2026",
+     "electronic_titles__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 1.0
+    }
+   },
+   "M4": {
+    "ranked": [
+     "co_owners__2026",
+     "selling_for_someone_else__2022",
+     "inherited_car__2026",
+     "military_deployed__2026",
+     "appointment_checklist__2026",
+     "divorce_ex_on_title__2022",
+     "business_car__2022",
+     "lost_title__2022",
+     "selling_with_loan__2022",
+     "how_selling_works__2026"
+    ],
+    "via": {
+     "appointment_checklist__2026": "co_owners__2026 > appointment_checklist__2026",
+     "divorce_ex_on_title__2022": "co_owners__2026 > divorce_ex_on_title__2022",
+     "lost_title__2022": "inherited_car__2026 > lost_title__2022",
+     "selling_with_loan__2022": "inherited_car__2026 > selling_with_loan__2022"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 1.0
+    }
+   },
+   "M5": {
+    "ranked": [
+     "co_owners__2026",
+     "selling_for_someone_else__2022",
+     "inherited_car__2026",
+     "military_deployed__2026",
+     "business_car__2022",
+     "divorce_ex_on_title__2022",
+     "appointment_checklist__2026",
+     "title_name_mismatch__2022",
+     "lost_title__2022",
+     "how_selling_works__2026"
+    ],
+    "via": {
+     "title_name_mismatch__2022": "co_owners__2026 > photo_id > title_name_mismatch__2022"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 1.0
+    }
+   },
+   "M6": {
+    "ranked": [
+     "co_owners__2026",
+     "selling_for_someone_else__2022",
+     "inherited_car__2026",
+     "military_deployed__2026",
+     "appointment_checklist__2026",
+     "divorce_ex_on_title__2022",
+     "business_car__2022",
+     "lost_title__2022",
+     "selling_with_loan__2022",
+     "title_name_mismatch__2022"
+    ],
+    "via": {
+     "appointment_checklist__2026": "co_owners__2026 > appointment_checklist__2026",
+     "divorce_ex_on_title__2022": "co_owners__2026 > divorce_ex_on_title__2022",
+     "lost_title__2022": "inherited_car__2026 > lost_title__2022",
+     "selling_with_loan__2022": "inherited_car__2026 > selling_with_loan__2022",
+     "title_name_mismatch__2022": "co_owners__2026 > photo_id > title_name_mismatch__2022"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 1.0
+    }
+   },
+   "M7": {
+    "ranked": [
+     "co_owners__2026",
+     "selling_for_someone_else__2022",
+     "inherited_car__2026",
+     "military_deployed__2026",
+     "appointment_checklist__2026",
+     "divorce_ex_on_title__2022",
+     "business_car__2022",
+     "lost_title__2022",
+     "selling_with_loan__2022",
+     "how_selling_works__2026"
+    ],
+    "via": {
+     "appointment_checklist__2026": "co_owners__2026 > appointment_checklist__2026",
+     "divorce_ex_on_title__2022": "co_owners__2026 > divorce_ex_on_title__2022",
+     "lost_title__2022": "inherited_car__2026 > lost_title__2022",
+     "selling_with_loan__2022": "inherited_car__2026 > selling_with_loan__2022"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 1.0
+    }
+   },
+   "M8": {
+    "ranked": [
+     "selling_for_someone_else__2022",
+     "co_owners__2026",
+     "military_deployed__2026",
+     "inherited_car__2026",
+     "business_car__2022",
+     "selling_without_buying__2022",
+     "divorce_ex_on_title__2022",
+     "lost_title__2022",
+     "electronic_titles__2022",
+     "selling_with_loan__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6309297535714575,
+     "stale@5": 0.0,
+     "trap@5": 1.0
+    },
+    "pool": {
+     "size": 17,
+     "gold_sources": {
+      "co_owners__2026": [
+       "bm25",
+       "vector",
+       "graph"
+      ]
+     }
+    }
+   },
+   "M8n": {
+    "ranked": [
+     "selling_for_someone_else__2022",
+     "co_owners__2026",
+     "military_deployed__2026",
+     "inherited_car__2026",
+     "business_car__2022",
+     "selling_without_buying__2022",
+     "divorce_ex_on_title__2022",
+     "lost_title__2022",
+     "electronic_titles__2022",
+     "appointment_checklist__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6309297535714575,
+     "stale@5": 0.0,
+     "trap@5": 1.0
+    },
+    "pool": {
+     "size": 15,
+     "gold_sources": {
+      "co_owners__2026": [
+       "bm25",
+       "vector"
+      ]
+     }
+    }
+   },
+   "CE*": {
+    "ranked": [
+     "selling_for_someone_else__2022",
+     "co_owners__2026",
+     "military_deployed__2026",
+     "inherited_car__2026",
+     "business_car__2022",
+     "selling_without_buying__2022",
+     "divorce_ex_on_title__2022",
+     "registration_expired__2022",
+     "lost_title__2022",
+     "open_recalls__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6309297535714575,
+     "stale@5": 0.0,
+     "trap@5": 1.0
+    }
+   }
+  },
+  "v2c08": {
+   "M1": {
+    "ranked": [
+     "lost_title__2022",
+     "duplicate_title_texas__2022",
+     "out_of_state__2022",
+     "how_selling_works__2022",
+     "out_of_state__2026",
+     "duplicate_title_georgia__2022",
+     "selling_with_loan__2022",
+     "lien_still_on_title__2022",
+     "duplicate_title_north_carolina__2022",
+     "how_selling_works__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6240505200038379,
+     "stale@5": 1.0,
+     "trap@5": 0.0
+    }
+   },
+   "M2": {
+    "ranked": [
+     "lost_title__2022",
+     "duplicate_title_georgia__2022",
+     "duplicate_title_texas__2022",
+     "out_of_state__2026",
+     "out_of_state__2022",
+     "duplicate_title_california__2022",
+     "duplicate_title_north_carolina__2022",
+     "electronic_titles__2022",
+     "duplicate_title_virginia__2022",
+     "buy_title_outside_lender__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.3333333333333333,
+     "ndcg@5": 0.5706417189553201,
+     "stale@5": 1.0,
+     "trap@5": 0.0
+    }
+   },
+   "M3": {
+    "ranked": [
+     "lost_title__2022",
+     "duplicate_title_georgia__2022",
+     "out_of_state__2026",
+     "buy_title_outside_lender__2022",
+     "buy_title_northwind_finance__2022",
+     "selling_with_loan__2022",
+     "buy_temp_plates__2022",
+     "divorce_ex_on_title__2022",
+     "title_name_mismatch__2022",
+     "license_plates__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 0.5,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.3333333333333333,
+     "ndcg@5": 0.3065735963827292,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M4": {
+    "ranked": [
+     "lost_title__2022",
+     "duplicate_title_georgia__2022",
+     "out_of_state__2026",
+     "inherited_car__2026",
+     "selling_with_loan__2022",
+     "co_owners__2026",
+     "buy_title_outside_lender__2022",
+     "buy_title_northwind_finance__2022",
+     "license_plates__2026",
+     "registration_expired__2022"
+    ],
+    "via": {
+     "inherited_car__2026": "lost_title__2022 > inherited_car__2026",
+     "selling_with_loan__2022": "lost_title__2022 > selling_with_loan__2022",
+     "co_owners__2026": "duplicate_title_georgia__2022 > co_owners__2026",
+     "license_plates__2026": "out_of_state__2026 > license_plates__2026",
+     "registration_expired__2022": "out_of_state__2026 > registration_expired__2022"
+    },
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 0.5,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.3333333333333333,
+     "ndcg@5": 0.3065735963827292,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M5": {
+    "ranked": [
+     "lost_title__2022",
+     "duplicate_title_georgia__2022",
+     "out_of_state__2026",
+     "buy_title_outside_lender__2022",
+     "buy_title_northwind_finance__2022",
+     "selling_with_loan__2022",
+     "buy_temp_plates__2022",
+     "divorce_ex_on_title__2022",
+     "title_name_mismatch__2022",
+     "license_plates__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 0.5,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.3333333333333333,
+     "ndcg@5": 0.3065735963827292,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M6": {
+    "ranked": [
+     "lost_title__2022",
+     "duplicate_title_georgia__2022",
+     "out_of_state__2026",
+     "inherited_car__2026",
+     "selling_with_loan__2022",
+     "co_owners__2026",
+     "buy_title_outside_lender__2022",
+     "buy_title_northwind_finance__2022",
+     "license_plates__2026",
+     "registration_expired__2022"
+    ],
+    "via": {
+     "inherited_car__2026": "lost_title__2022 > inherited_car__2026",
+     "selling_with_loan__2022": "lost_title__2022 > selling_with_loan__2022",
+     "co_owners__2026": "duplicate_title_georgia__2022 > co_owners__2026",
+     "license_plates__2026": "out_of_state__2026 > license_plates__2026",
+     "registration_expired__2022": "out_of_state__2026 > registration_expired__2022"
+    },
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 0.5,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.3333333333333333,
+     "ndcg@5": 0.3065735963827292,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M7": {
+    "ranked": [
+     "lost_title__2022",
+     "duplicate_title_georgia__2022",
+     "out_of_state__2026",
+     "inherited_car__2026",
+     "selling_with_loan__2022",
+     "co_owners__2026",
+     "buy_title_outside_lender__2022",
+     "buy_title_northwind_finance__2022",
+     "license_plates__2026",
+     "registration_expired__2022"
+    ],
+    "via": {
+     "inherited_car__2026": "lost_title__2022 > inherited_car__2026",
+     "selling_with_loan__2022": "lost_title__2022 > selling_with_loan__2022",
+     "co_owners__2026": "duplicate_title_georgia__2022 > co_owners__2026",
+     "license_plates__2026": "out_of_state__2026 > license_plates__2026",
+     "registration_expired__2022": "out_of_state__2026 > registration_expired__2022"
+    },
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 0.5,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.3333333333333333,
+     "ndcg@5": 0.3065735963827292,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M8": {
+    "ranked": [
+     "lost_title__2022",
+     "duplicate_title_georgia__2022",
+     "license_plates__2026",
+     "out_of_state__2026",
+     "selling_with_loan__2022",
+     "inherited_car__2026",
+     "lien_still_on_title__2022",
+     "buy_title_outside_lender__2022",
+     "registration_expired__2022",
+     "buy_title_northwind_finance__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 0.5,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.25,
+     "ndcg@5": 0.2640681225725909,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 17,
+     "gold_sources": {
+      "out_of_state__2026": [
+       "bm25",
+       "vector",
+       "graph"
+      ],
+      "duplicate_title_texas__2022": []
+     }
+    }
+   },
+   "M8n": {
+    "ranked": [
+     "lost_title__2022",
+     "duplicate_title_georgia__2022",
+     "license_plates__2026",
+     "out_of_state__2026",
+     "selling_with_loan__2022",
+     "lien_still_on_title__2022",
+     "buy_title_outside_lender__2022",
+     "buy_title_northwind_finance__2022",
+     "divorce_ex_on_title__2022",
+     "buy_temp_plates__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 0.5,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.25,
+     "ndcg@5": 0.2640681225725909,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 13,
+     "gold_sources": {
+      "out_of_state__2026": [
+       "bm25",
+       "vector"
+      ],
+      "duplicate_title_texas__2022": []
+     }
+    }
+   },
+   "CE*": {
+    "ranked": [
+     "lost_title__2022",
+     "duplicate_title_georgia__2022",
+     "license_plates__2026",
+     "out_of_state__2026",
+     "selling_with_loan__2022",
+     "inherited_car__2026",
+     "lien_still_on_title__2022",
+     "buy_title_outside_lender__2022",
+     "registration_expired__2022",
+     "appointment_checklist__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 0.5,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.25,
+     "ndcg@5": 0.2640681225725909,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   }
+  },
+  "v2c09": {
+   "M1": {
+    "ranked": [
+     "how_selling_works__2022",
+     "reschedule_cancel__2022",
+     "offer_validity__2026",
+     "offer_validity__2022",
+     "how_selling_works__2026",
+     "divorce_ex_on_title__2022",
+     "title_name_mismatch__2022",
+     "duplicate_title_north_carolina__2022",
+     "what_changes_offer__2022",
+     "getting_paid__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6934264036172708,
+     "stale@5": 1.0,
+     "trap@5": 0.0
+    }
+   },
+   "M2": {
+    "ranked": [
+     "reschedule_cancel__2022",
+     "offer_validity__2022",
+     "offer_validity__2026",
+     "negative_equity__2026",
+     "negative_equity__2022",
+     "selling_with_loan__2022",
+     "what_changes_offer__2022",
+     "registration_expired__2022",
+     "leased_car__2022",
+     "how_selling_works__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.9197207891481876,
+     "stale@5": 1.0,
+     "trap@5": 0.0
+    }
+   },
+   "M3": {
+    "ranked": [
+     "reschedule_cancel__2022",
+     "offer_validity__2026",
+     "negative_equity__2026",
+     "selling_with_loan__2022",
+     "registration_expired__2022",
+     "leased_car__2022",
+     "how_selling_works__2026",
+     "what_changes_offer__2026",
+     "lease_vs_turn_in__2022",
+     "lease_equity__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M4": {
+    "ranked": [
+     "reschedule_cancel__2022",
+     "offer_validity__2026",
+     "negative_equity__2026",
+     "selling_with_loan__2022",
+     "registration_expired__2022",
+     "duplicate_title_north_carolina__2022",
+     "how_selling_works__2026",
+     "leased_car__2022",
+     "what_changes_offer__2026",
+     "lease_equity__2022"
+    ],
+    "via": {
+     "duplicate_title_north_carolina__2022": "offer_validity__2026 > duplicate_title_north_carolina__2022",
+     "how_selling_works__2026": "offer_validity__2026 > how_selling_works__2026",
+     "lease_equity__2022": "negative_equity__2026 > lease_equity__2022"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M5": {
+    "ranked": [
+     "reschedule_cancel__2022",
+     "offer_validity__2026",
+     "negative_equity__2026",
+     "selling_with_loan__2022",
+     "registration_expired__2022",
+     "leased_car__2022",
+     "how_selling_works__2026",
+     "what_changes_offer__2026",
+     "appointment_checklist__2026",
+     "duplicate_title_north_carolina__2022"
+    ],
+    "via": {
+     "appointment_checklist__2026": "reschedule_cancel__2022 > appraisal_appointment > appointment_checklist__2026",
+     "duplicate_title_north_carolina__2022": "reschedule_cancel__2022 > offer_expiration > duplicate_title_north_carolina__2022"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M6": {
+    "ranked": [
+     "reschedule_cancel__2022",
+     "offer_validity__2026",
+     "negative_equity__2026",
+     "selling_with_loan__2022",
+     "registration_expired__2022",
+     "duplicate_title_north_carolina__2022",
+     "how_selling_works__2026",
+     "leased_car__2022",
+     "what_changes_offer__2026",
+     "appointment_checklist__2026"
+    ],
+    "via": {
+     "duplicate_title_north_carolina__2022": "offer_validity__2026 > duplicate_title_north_carolina__2022",
+     "how_selling_works__2026": "offer_validity__2026 > how_selling_works__2026",
+     "appointment_checklist__2026": "reschedule_cancel__2022 > appraisal_appointment > appointment_checklist__2026"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M7": {
+    "ranked": [
+     "reschedule_cancel__2022",
+     "offer_validity__2026",
+     "negative_equity__2026",
+     "selling_with_loan__2022",
+     "registration_expired__2022",
+     "duplicate_title_north_carolina__2022",
+     "how_selling_works__2026",
+     "leased_car__2022",
+     "what_changes_offer__2026",
+     "lease_equity__2022"
+    ],
+    "via": {
+     "duplicate_title_north_carolina__2022": "offer_validity__2026 > duplicate_title_north_carolina__2022",
+     "how_selling_works__2026": "offer_validity__2026 > how_selling_works__2026",
+     "lease_equity__2022": "negative_equity__2026 > lease_equity__2022"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M8": {
+    "ranked": [
+     "reschedule_cancel__2022",
+     "offer_validity__2026",
+     "negative_equity__2026",
+     "selling_with_loan__2022",
+     "registration_expired__2022",
+     "duplicate_title_north_carolina__2022",
+     "how_selling_works__2026",
+     "lease_equity__2022",
+     "selling_without_buying__2022",
+     "offer_scams__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 21,
+     "gold_sources": {
+      "reschedule_cancel__2022": [
+       "bm25",
+       "vector",
+       "graph"
+      ],
+      "offer_validity__2026": [
+       "bm25",
+       "vector",
+       "graph"
+      ]
+     }
+    }
+   },
+   "M8n": {
+    "ranked": [
+     "reschedule_cancel__2022",
+     "offer_validity__2026",
+     "negative_equity__2026",
+     "selling_with_loan__2022",
+     "registration_expired__2022",
+     "duplicate_title_north_carolina__2022",
+     "how_selling_works__2026",
+     "lease_equity__2022",
+     "selling_without_buying__2022",
+     "leased_car__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 16,
+     "gold_sources": {
+      "reschedule_cancel__2022": [
+       "bm25",
+       "vector"
+      ],
+      "offer_validity__2026": [
+       "bm25",
+       "vector"
+      ]
+     }
+    }
+   },
+   "CE*": {
+    "ranked": [
+     "reschedule_cancel__2022",
+     "offer_validity__2026",
+     "negative_equity__2026",
+     "selling_with_loan__2022",
+     "registration_expired__2022",
+     "lien_still_on_title__2022",
+     "duplicate_title_north_carolina__2022",
+     "how_selling_works__2026",
+     "odometer_problems__2022",
+     "lease_equity__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   }
+  },
+  "v2c10": {
+   "M1": {
+    "ranked": [
+     "offer_scams__2026",
+     "how_selling_works__2022",
+     "divorce_ex_on_title__2022",
+     "lease_equity__2022",
+     "offer_validity__2022",
+     "offer_validity__2026",
+     "reschedule_cancel__2022",
+     "leased_car__2022",
+     "selling_with_loan__2022",
+     "negative_equity__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 0.5,
+     "all_gold@5": 0.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.6131471927654584,
+     "stale@5": 1.0,
+     "trap@5": 0.0
+    }
+   },
+   "M2": {
+    "ranked": [
+     "offer_scams__2026",
+     "epayoff_network__2026",
+     "negative_equity__2022",
+     "lender_overpayment_refund__2022",
+     "payoff_letter__2026",
+     "getting_paid__2026",
+     "negative_equity__2026",
+     "how_selling_works__2026",
+     "selling_with_loan__2022",
+     "payoff_letter__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 1.0,
+     "all_gold@5": 0.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.6131471927654584,
+     "stale@5": 1.0,
+     "trap@5": 0.0
+    }
+   },
+   "M3": {
+    "ranked": [
+     "offer_scams__2026",
+     "epayoff_network__2026",
+     "lender_overpayment_refund__2022",
+     "payoff_letter__2026",
+     "getting_paid__2026",
+     "negative_equity__2026",
+     "how_selling_works__2026",
+     "selling_with_loan__2022",
+     "home_pickup__2026",
+     "lien_still_on_title__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 1.0,
+     "all_gold@5": 0.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.6131471927654584,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M4": {
+    "ranked": [
+     "offer_scams__2026",
+     "epayoff_network__2026",
+     "negative_equity__2026",
+     "lender_overpayment_refund__2022",
+     "payoff_letter__2026",
+     "getting_paid__2026",
+     "how_selling_works__2026",
+     "selling_with_loan__2022",
+     "home_pickup__2026",
+     "appointment_checklist__2026"
+    ],
+    "via": {
+     "negative_equity__2026": "offer_scams__2026 > negative_equity__2026",
+     "appointment_checklist__2026": "epayoff_network__2026 > appointment_checklist__2026"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.9197207891481876,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M5": {
+    "ranked": [
+     "offer_scams__2026",
+     "epayoff_network__2026",
+     "lender_overpayment_refund__2022",
+     "payoff_letter__2026",
+     "getting_paid__2026",
+     "negative_equity__2026",
+     "how_selling_works__2026",
+     "selling_with_loan__2022",
+     "home_pickup__2026",
+     "lien_still_on_title__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 1.0,
+     "all_gold@5": 0.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.6131471927654584,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M6": {
+    "ranked": [
+     "offer_scams__2026",
+     "epayoff_network__2026",
+     "negative_equity__2026",
+     "lender_overpayment_refund__2022",
+     "payoff_letter__2026",
+     "getting_paid__2026",
+     "how_selling_works__2026",
+     "selling_with_loan__2022",
+     "home_pickup__2026",
+     "appointment_checklist__2026"
+    ],
+    "via": {
+     "negative_equity__2026": "offer_scams__2026 > negative_equity__2026",
+     "appointment_checklist__2026": "epayoff_network__2026 > appointment_checklist__2026"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.9197207891481876,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M7": {
+    "ranked": [
+     "offer_scams__2026",
+     "epayoff_network__2026",
+     "negative_equity__2026",
+     "lender_overpayment_refund__2022",
+     "payoff_letter__2026",
+     "getting_paid__2026",
+     "how_selling_works__2026",
+     "selling_with_loan__2022",
+     "home_pickup__2026",
+     "appointment_checklist__2026"
+    ],
+    "via": {
+     "negative_equity__2026": "offer_scams__2026 > negative_equity__2026",
+     "appointment_checklist__2026": "epayoff_network__2026 > appointment_checklist__2026"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.9197207891481876,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M8": {
+    "ranked": [
+     "offer_scams__2026",
+     "negative_equity__2026",
+     "lender_overpayment_refund__2022",
+     "epayoff_network__2026",
+     "selling_with_loan__2022",
+     "lease_equity__2022",
+     "buy_title_northwind_finance__2022",
+     "how_selling_works__2026",
+     "lien_still_on_title__2022",
+     "home_pickup__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 21,
+     "gold_sources": {
+      "offer_scams__2026": [
+       "bm25",
+       "vector"
+      ],
+      "negative_equity__2026": [
+       "bm25",
+       "vector",
+       "graph"
+      ]
+     }
+    }
+   },
+   "M8n": {
+    "ranked": [
+     "offer_scams__2026",
+     "negative_equity__2026",
+     "lender_overpayment_refund__2022",
+     "epayoff_network__2026",
+     "selling_with_loan__2022",
+     "lease_equity__2022",
+     "how_selling_works__2026",
+     "lien_still_on_title__2022",
+     "home_pickup__2026",
+     "reschedule_cancel__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 17,
+     "gold_sources": {
+      "offer_scams__2026": [
+       "bm25",
+       "vector"
+      ],
+      "negative_equity__2026": [
+       "bm25",
+       "vector"
+      ]
+     }
+    }
+   },
+   "CE*": {
+    "ranked": [
+     "offer_scams__2026",
+     "negative_equity__2026",
+     "lender_overpayment_refund__2022",
+     "epayoff_network__2026",
+     "selling_with_loan__2022",
+     "lease_equity__2022",
+     "buy_title_outside_lender__2022",
+     "buy_title_northwind_finance__2022",
+     "how_selling_works__2026",
+     "lien_still_on_title__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   }
+  },
+  "v2c11": {
+   "M1": {
+    "ranked": [
+     "selling_with_loan__2022",
+     "negative_equity__2026",
+     "payoff_letter__2026",
+     "payoff_letter__2022",
+     "how_selling_works__2022",
+     "negative_equity__2022",
+     "selling_without_buying__2022",
+     "getting_paid__2022",
+     "getting_paid__2026",
+     "epayoff_network__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 1.0,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.38685280723454163,
+     "stale@5": 1.0,
+     "trap@5": 0.0
+    }
+   },
+   "M2": {
+    "ranked": [
+     "payoff_letter__2022",
+     "epayoff_network__2026",
+     "payoff_letter__2026",
+     "getting_paid__2026",
+     "negative_equity__2022",
+     "negative_equity__2026",
+     "selling_with_loan__2022",
+     "lien_still_on_title__2022",
+     "lease_equity__2022",
+     "keep_paying_until_confirmed__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 1.0,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.38685280723454163,
+     "stale@5": 1.0,
+     "trap@5": 0.0
+    }
+   },
+   "M3": {
+    "ranked": [
+     "epayoff_network__2026",
+     "payoff_letter__2026",
+     "getting_paid__2026",
+     "negative_equity__2026",
+     "selling_with_loan__2022",
+     "lien_still_on_title__2022",
+     "lease_equity__2022",
+     "keep_paying_until_confirmed__2022",
+     "lender_overpayment_refund__2022",
+     "appointment_checklist__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.8772153153380493,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M4": {
+    "ranked": [
+     "epayoff_network__2026",
+     "payoff_letter__2026",
+     "getting_paid__2026",
+     "negative_equity__2026",
+     "selling_with_loan__2022",
+     "appointment_checklist__2026",
+     "leased_car__2022",
+     "business_car__2022",
+     "home_pickup__2026",
+     "how_selling_works__2026"
+    ],
+    "via": {
+     "appointment_checklist__2026": "epayoff_network__2026 > appointment_checklist__2026",
+     "leased_car__2022": "payoff_letter__2026 > leased_car__2022",
+     "business_car__2022": "getting_paid__2026 > business_car__2022",
+     "home_pickup__2026": "getting_paid__2026 > home_pickup__2026",
+     "how_selling_works__2026": "getting_paid__2026 > how_selling_works__2026"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.8772153153380493,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M5": {
+    "ranked": [
+     "epayoff_network__2026",
+     "payoff_letter__2026",
+     "getting_paid__2026",
+     "negative_equity__2026",
+     "selling_with_loan__2022",
+     "lien_still_on_title__2022",
+     "lease_equity__2022",
+     "keep_paying_until_confirmed__2022",
+     "lender_overpayment_refund__2022",
+     "appointment_checklist__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.8772153153380493,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M6": {
+    "ranked": [
+     "epayoff_network__2026",
+     "payoff_letter__2026",
+     "getting_paid__2026",
+     "negative_equity__2026",
+     "selling_with_loan__2022",
+     "appointment_checklist__2026",
+     "leased_car__2022",
+     "business_car__2022",
+     "home_pickup__2026",
+     "how_selling_works__2026"
+    ],
+    "via": {
+     "appointment_checklist__2026": "epayoff_network__2026 > appointment_checklist__2026",
+     "leased_car__2022": "payoff_letter__2026 > leased_car__2022",
+     "business_car__2022": "getting_paid__2026 > business_car__2022",
+     "home_pickup__2026": "getting_paid__2026 > home_pickup__2026",
+     "how_selling_works__2026": "getting_paid__2026 > how_selling_works__2026"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.8772153153380493,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M7": {
+    "ranked": [
+     "epayoff_network__2026",
+     "payoff_letter__2026",
+     "getting_paid__2026",
+     "negative_equity__2026",
+     "selling_with_loan__2022",
+     "appointment_checklist__2026",
+     "leased_car__2022",
+     "business_car__2022",
+     "home_pickup__2026",
+     "how_selling_works__2026"
+    ],
+    "via": {
+     "appointment_checklist__2026": "epayoff_network__2026 > appointment_checklist__2026",
+     "leased_car__2022": "payoff_letter__2026 > leased_car__2022",
+     "business_car__2022": "getting_paid__2026 > business_car__2022",
+     "home_pickup__2026": "getting_paid__2026 > home_pickup__2026",
+     "how_selling_works__2026": "getting_paid__2026 > how_selling_works__2026"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.8772153153380493,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M8": {
+    "ranked": [
+     "negative_equity__2026",
+     "selling_with_loan__2022",
+     "epayoff_network__2026",
+     "lease_equity__2022",
+     "payoff_letter__2026",
+     "leased_car__2022",
+     "lender_overpayment_refund__2022",
+     "getting_paid__2026",
+     "offer_scams__2026",
+     "lien_still_on_title__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.9197207891481876,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 21,
+     "gold_sources": {
+      "negative_equity__2026": [
+       "bm25",
+       "vector",
+       "graph"
+      ],
+      "epayoff_network__2026": [
+       "bm25",
+       "vector",
+       "graph",
+       "name"
+      ]
+     }
+    }
+   },
+   "M8n": {
+    "ranked": [
+     "negative_equity__2026",
+     "selling_with_loan__2022",
+     "epayoff_network__2026",
+     "lease_equity__2022",
+     "payoff_letter__2026",
+     "leased_car__2022",
+     "lender_overpayment_refund__2022",
+     "getting_paid__2026",
+     "lien_still_on_title__2022",
+     "trade_in_vs_sell__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.9197207891481876,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 14,
+     "gold_sources": {
+      "negative_equity__2026": [
+       "bm25",
+       "vector"
+      ],
+      "epayoff_network__2026": [
+       "bm25",
+       "vector"
+      ]
+     }
+    }
+   },
+   "CE*": {
+    "ranked": [
+     "negative_equity__2026",
+     "selling_with_loan__2022",
+     "epayoff_network__2026",
+     "lease_equity__2022",
+     "payoff_letter__2026",
+     "leased_car__2022",
+     "lender_overpayment_refund__2022",
+     "getting_paid__2026",
+     "offer_scams__2026",
+     "lien_still_on_title__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 0.9197207891481876,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   }
+  },
+  "v2c12": {
+   "M1": {
+    "ranked": [
+     "lessor_buyouts__2022",
+     "lessor_buyouts__2026",
+     "lease_equity__2022",
+     "leased_car__2022",
+     "payoff_letter__2026",
+     "lease_vs_turn_in__2022",
+     "epayoff_network__2026",
+     "payoff_letter__2022",
+     "negative_equity__2026",
+     "selling_for_someone_else__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6509209298071326,
+     "stale@5": 1.0,
+     "trap@5": 0.0
+    }
+   },
+   "M2": {
+    "ranked": [
+     "payoff_letter__2026",
+     "lessor_buyouts__2026",
+     "leased_car__2022",
+     "epayoff_network__2026",
+     "lease_equity__2022",
+     "appointment_checklist__2026",
+     "lessor_buyouts__2022",
+     "negative_equity__2022",
+     "negative_equity__2026",
+     "selling_with_loan__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6934264036172708,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M3": {
+    "ranked": [
+     "payoff_letter__2026",
+     "lessor_buyouts__2026",
+     "leased_car__2022",
+     "epayoff_network__2026",
+     "lease_equity__2022",
+     "appointment_checklist__2026",
+     "negative_equity__2026",
+     "selling_with_loan__2022",
+     "how_selling_works__2026",
+     "lien_still_on_title__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6934264036172708,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M4": {
+    "ranked": [
+     "payoff_letter__2026",
+     "lessor_buyouts__2026",
+     "leased_car__2022",
+     "epayoff_network__2026",
+     "lease_equity__2022",
+     "appointment_checklist__2026",
+     "negative_equity__2026",
+     "selling_with_loan__2022",
+     "lease_vs_turn_in__2022",
+     "getting_paid__2026"
+    ],
+    "via": {
+     "negative_equity__2026": "payoff_letter__2026 > negative_equity__2026",
+     "selling_with_loan__2022": "payoff_letter__2026 > selling_with_loan__2022",
+     "lease_vs_turn_in__2022": "lessor_buyouts__2026 > lease_vs_turn_in__2022",
+     "getting_paid__2026": "epayoff_network__2026 > getting_paid__2026"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6934264036172708,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M5": {
+    "ranked": [
+     "payoff_letter__2026",
+     "lessor_buyouts__2026",
+     "leased_car__2022",
+     "epayoff_network__2026",
+     "lease_equity__2022",
+     "appointment_checklist__2026",
+     "negative_equity__2026",
+     "selling_with_loan__2022",
+     "how_selling_works__2026",
+     "lien_still_on_title__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6934264036172708,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M6": {
+    "ranked": [
+     "payoff_letter__2026",
+     "lessor_buyouts__2026",
+     "leased_car__2022",
+     "epayoff_network__2026",
+     "lease_equity__2022",
+     "appointment_checklist__2026",
+     "negative_equity__2026",
+     "selling_with_loan__2022",
+     "lease_vs_turn_in__2022",
+     "getting_paid__2026"
+    ],
+    "via": {
+     "negative_equity__2026": "payoff_letter__2026 > negative_equity__2026",
+     "selling_with_loan__2022": "payoff_letter__2026 > selling_with_loan__2022",
+     "lease_vs_turn_in__2022": "lessor_buyouts__2026 > lease_vs_turn_in__2022",
+     "getting_paid__2026": "epayoff_network__2026 > getting_paid__2026"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6934264036172708,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M7": {
+    "ranked": [
+     "payoff_letter__2026",
+     "lessor_buyouts__2026",
+     "leased_car__2022",
+     "epayoff_network__2026",
+     "lease_equity__2022",
+     "appointment_checklist__2026",
+     "negative_equity__2026",
+     "selling_with_loan__2022",
+     "lease_vs_turn_in__2022",
+     "getting_paid__2026"
+    ],
+    "via": {
+     "negative_equity__2026": "payoff_letter__2026 > negative_equity__2026",
+     "selling_with_loan__2022": "payoff_letter__2026 > selling_with_loan__2022",
+     "lease_vs_turn_in__2022": "lessor_buyouts__2026 > lease_vs_turn_in__2022",
+     "getting_paid__2026": "epayoff_network__2026 > getting_paid__2026"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6934264036172708,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M8": {
+    "ranked": [
+     "lease_equity__2022",
+     "lessor_buyouts__2026",
+     "payoff_letter__2026",
+     "leased_car__2022",
+     "negative_equity__2026",
+     "appointment_checklist__2026",
+     "epayoff_network__2026",
+     "selling_with_loan__2022",
+     "lease_vs_turn_in__2022",
+     "buy_title_northwind_finance__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6509209298071326,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 15,
+     "gold_sources": {
+      "leased_car__2022": [
+       "bm25",
+       "vector",
+       "graph"
+      ],
+      "lessor_buyouts__2026": [
+       "bm25",
+       "vector",
+       "graph",
+       "name"
+      ]
+     }
+    }
+   },
+   "M8n": {
+    "ranked": [
+     "lease_equity__2022",
+     "lessor_buyouts__2026",
+     "payoff_letter__2026",
+     "leased_car__2022",
+     "negative_equity__2026",
+     "appointment_checklist__2026",
+     "epayoff_network__2026",
+     "selling_with_loan__2022",
+     "lease_vs_turn_in__2022",
+     "lien_still_on_title__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6509209298071326,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 13,
+     "gold_sources": {
+      "leased_car__2022": [
+       "bm25",
+       "vector"
+      ],
+      "lessor_buyouts__2026": [
+       "bm25",
+       "vector"
+      ]
+     }
+    }
+   },
+   "CE*": {
+    "ranked": [
+     "lease_equity__2022",
+     "lessor_buyouts__2026",
+     "payoff_letter__2026",
+     "leased_car__2022",
+     "negative_equity__2026",
+     "appointment_checklist__2026",
+     "epayoff_network__2026",
+     "selling_with_loan__2022",
+     "lease_vs_turn_in__2022",
+     "keep_paying_until_confirmed__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6509209298071326,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   }
+  },
+  "v2s01": {
+   "M1": {
+    "ranked": [
+     "appointment_checklist__2026",
+     "co_owners__2026",
+     "what_changes_offer__2026",
+     "what_changes_offer__2022",
+     "odometer_problems__2022",
+     "license_plates__2026",
+     "lessor_buyouts__2026",
+     "how_selling_works__2022",
+     "epayoff_network__2026",
+     "trade_in_vs_sell__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 1.0,
+     "trap@5": 0.0
+    }
+   },
+   "M2": {
+    "ranked": [
+     "branded_title__2022",
+     "lender_overpayment_refund__2022",
+     "buy_title_northwind_finance__2022",
+     "offer_scams__2026",
+     "walk_in_quotes__2022",
+     "buy_title_outside_lender__2022",
+     "home_pickup__2022",
+     "duplicate_title_texas__2022",
+     "how_selling_works__2022",
+     "how_selling_works__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.0,
+     "recall@10": 0.0,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.0,
+     "ndcg@5": 0.0,
+     "stale@5": 1.0,
+     "trap@5": 0.0
+    }
+   },
+   "M3": {
+    "ranked": [
+     "lender_overpayment_refund__2022",
+     "buy_title_northwind_finance__2022",
+     "offer_scams__2026",
+     "buy_title_outside_lender__2022",
+     "duplicate_title_texas__2022",
+     "how_selling_works__2026",
+     "toll_tags_personal_data__2022",
+     "home_pickup__2026",
+     "co_owners__2026",
+     "out_of_state__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.0,
+     "recall@10": 0.5,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.1111111111111111,
+     "ndcg@5": 0.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M4": {
+    "ranked": [
+     "lender_overpayment_refund__2022",
+     "buy_title_northwind_finance__2022",
+     "getting_paid__2026",
+     "keep_paying_until_confirmed__2022",
+     "offer_scams__2026",
+     "buy_title_outside_lender__2022",
+     "duplicate_title_texas__2022",
+     "electronic_titles__2022",
+     "how_selling_works__2026",
+     "toll_tags_personal_data__2022"
+    ],
+    "via": {
+     "getting_paid__2026": "lender_overpayment_refund__2022 > getting_paid__2026",
+     "keep_paying_until_confirmed__2022": "lender_overpayment_refund__2022 > keep_paying_until_confirmed__2022",
+     "electronic_titles__2022": "buy_title_northwind_finance__2022 > electronic_titles__2022"
+    },
+    "scores": {
+     "recall@5": 0.0,
+     "recall@10": 0.0,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.0,
+     "ndcg@5": 0.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M5": {
+    "ranked": [
+     "lender_overpayment_refund__2022",
+     "buy_title_northwind_finance__2022",
+     "offer_scams__2026",
+     "buy_title_outside_lender__2022",
+     "duplicate_title_texas__2022",
+     "how_selling_works__2026",
+     "toll_tags_personal_data__2022",
+     "home_pickup__2026",
+     "appointment_checklist__2026",
+     "electronic_titles__2022"
+    ],
+    "via": {
+     "appointment_checklist__2026": "lender_overpayment_refund__2022 > lender > appointment_checklist__2026",
+     "electronic_titles__2022": "lender_overpayment_refund__2022 > lender > electronic_titles__2022"
+    },
+    "scores": {
+     "recall@5": 0.0,
+     "recall@10": 0.5,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.1111111111111111,
+     "ndcg@5": 0.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M6": {
+    "ranked": [
+     "lender_overpayment_refund__2022",
+     "buy_title_northwind_finance__2022",
+     "getting_paid__2026",
+     "keep_paying_until_confirmed__2022",
+     "offer_scams__2026",
+     "buy_title_outside_lender__2022",
+     "duplicate_title_texas__2022",
+     "electronic_titles__2022",
+     "how_selling_works__2026",
+     "toll_tags_personal_data__2022"
+    ],
+    "via": {
+     "getting_paid__2026": "lender_overpayment_refund__2022 > getting_paid__2026",
+     "keep_paying_until_confirmed__2022": "lender_overpayment_refund__2022 > keep_paying_until_confirmed__2022",
+     "electronic_titles__2022": "buy_title_northwind_finance__2022 > electronic_titles__2022"
+    },
+    "scores": {
+     "recall@5": 0.0,
+     "recall@10": 0.0,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.0,
+     "ndcg@5": 0.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M7": {
+    "ranked": [
+     "lender_overpayment_refund__2022",
+     "buy_title_northwind_finance__2022",
+     "getting_paid__2026",
+     "keep_paying_until_confirmed__2022",
+     "offer_scams__2026",
+     "buy_title_outside_lender__2022",
+     "duplicate_title_texas__2022",
+     "electronic_titles__2022",
+     "how_selling_works__2026",
+     "toll_tags_personal_data__2022"
+    ],
+    "via": {
+     "getting_paid__2026": "lender_overpayment_refund__2022 > getting_paid__2026",
+     "keep_paying_until_confirmed__2022": "lender_overpayment_refund__2022 > keep_paying_until_confirmed__2022",
+     "electronic_titles__2022": "buy_title_northwind_finance__2022 > electronic_titles__2022"
+    },
+    "scores": {
+     "recall@5": 0.0,
+     "recall@10": 0.0,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.0,
+     "ndcg@5": 0.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M8": {
+    "ranked": [
+     "lessor_buyouts__2026",
+     "epayoff_network__2026",
+     "co_owners__2026",
+     "lender_overpayment_refund__2022",
+     "appointment_checklist__2026",
+     "buy_title_northwind_finance__2022",
+     "buy_title_outside_lender__2022",
+     "home_pickup__2026",
+     "offer_scams__2026",
+     "duplicate_title_texas__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.3333333333333333,
+     "ndcg@5": 0.5437713091520254,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 22,
+     "gold_sources": {
+      "co_owners__2026": [
+       "bm25",
+       "vector"
+      ],
+      "appointment_checklist__2026": [
+       "bm25"
+      ]
+     }
+    }
+   },
+   "M8n": {
+    "ranked": [
+     "lessor_buyouts__2026",
+     "epayoff_network__2026",
+     "co_owners__2026",
+     "lender_overpayment_refund__2022",
+     "appointment_checklist__2026",
+     "buy_title_northwind_finance__2022",
+     "buy_title_outside_lender__2022",
+     "home_pickup__2026",
+     "offer_scams__2026",
+     "duplicate_title_texas__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.3333333333333333,
+     "ndcg@5": 0.5437713091520254,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 17,
+     "gold_sources": {
+      "co_owners__2026": [
+       "bm25",
+       "vector"
+      ],
+      "appointment_checklist__2026": [
+       "bm25"
+      ]
+     }
+    }
+   },
+   "CE*": {
+    "ranked": [
+     "lessor_buyouts__2026",
+     "epayoff_network__2026",
+     "co_owners__2026",
+     "lender_overpayment_refund__2022",
+     "appointment_checklist__2026",
+     "buy_title_northwind_finance__2022",
+     "buy_title_outside_lender__2022",
+     "home_pickup__2026",
+     "offer_scams__2026",
+     "duplicate_title_texas__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.3333333333333333,
+     "ndcg@5": 0.5437713091520254,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   }
+  },
+  "v2s02": {
+   "M1": {
+    "ranked": [
+     "lessor_buyouts__2026",
+     "co_owners__2026",
+     "offer_validity__2026",
+     "appointment_checklist__2026",
+     "trade_in_vs_sell__2026",
+     "co_owners__2022",
+     "lien_still_on_title__2022",
+     "title_name_mismatch__2022",
+     "what_changes_offer__2026",
+     "divorce_ex_on_title__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.2857142857142857,
+     "recall@10": 0.42857142857142855,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.36005461457723403,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M2": {
+    "ranked": [
+     "duplicate_title_north_carolina__2022",
+     "branded_title__2026",
+     "duplicate_title_california__2022",
+     "electronic_titles__2022",
+     "buy_title_northwind_finance__2022",
+     "branded_title__2022",
+     "duplicate_title_texas__2022",
+     "how_selling_works__2026",
+     "odometer_problems__2022",
+     "what_changes_offer__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.0,
+     "recall@10": 0.14285714285714285,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.1,
+     "ndcg@5": 0.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M3": {
+    "ranked": [
+     "duplicate_title_north_carolina__2022",
+     "branded_title__2026",
+     "duplicate_title_california__2022",
+     "electronic_titles__2022",
+     "buy_title_northwind_finance__2022",
+     "duplicate_title_texas__2022",
+     "how_selling_works__2026",
+     "odometer_problems__2022",
+     "what_changes_offer__2026",
+     "duplicate_title_virginia__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.0,
+     "recall@10": 0.14285714285714285,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.1111111111111111,
+     "ndcg@5": 0.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M4": {
+    "ranked": [
+     "duplicate_title_north_carolina__2022",
+     "branded_title__2026",
+     "duplicate_title_california__2022",
+     "electronic_titles__2022",
+     "lost_title__2022",
+     "offer_validity__2026",
+     "buy_title_northwind_finance__2022",
+     "duplicate_title_texas__2022",
+     "how_selling_works__2026",
+     "flood_damage__2022"
+    ],
+    "via": {
+     "lost_title__2022": "duplicate_title_north_carolina__2022 > lost_title__2022",
+     "offer_validity__2026": "duplicate_title_north_carolina__2022 > offer_validity__2026",
+     "flood_damage__2022": "branded_title__2026 > flood_damage__2022"
+    },
+    "scores": {
+     "recall@5": 0.0,
+     "recall@10": 0.0,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.0,
+     "ndcg@5": 0.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M5": {
+    "ranked": [
+     "duplicate_title_north_carolina__2022",
+     "branded_title__2026",
+     "duplicate_title_california__2022",
+     "electronic_titles__2022",
+     "buy_title_northwind_finance__2022",
+     "duplicate_title_texas__2022",
+     "how_selling_works__2026",
+     "odometer_problems__2022",
+     "what_changes_offer__2026",
+     "duplicate_title_virginia__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.0,
+     "recall@10": 0.14285714285714285,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.1111111111111111,
+     "ndcg@5": 0.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M6": {
+    "ranked": [
+     "duplicate_title_north_carolina__2022",
+     "branded_title__2026",
+     "duplicate_title_california__2022",
+     "electronic_titles__2022",
+     "lost_title__2022",
+     "offer_validity__2026",
+     "buy_title_northwind_finance__2022",
+     "duplicate_title_texas__2022",
+     "how_selling_works__2026",
+     "flood_damage__2022"
+    ],
+    "via": {
+     "lost_title__2022": "duplicate_title_north_carolina__2022 > lost_title__2022",
+     "offer_validity__2026": "duplicate_title_north_carolina__2022 > offer_validity__2026",
+     "flood_damage__2022": "branded_title__2026 > flood_damage__2022"
+    },
+    "scores": {
+     "recall@5": 0.0,
+     "recall@10": 0.0,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.0,
+     "ndcg@5": 0.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M7": {
+    "ranked": [
+     "duplicate_title_north_carolina__2022",
+     "branded_title__2026",
+     "duplicate_title_california__2022",
+     "electronic_titles__2022",
+     "lost_title__2022",
+     "offer_validity__2026",
+     "buy_title_northwind_finance__2022",
+     "duplicate_title_texas__2022",
+     "how_selling_works__2026",
+     "flood_damage__2022"
+    ],
+    "via": {
+     "lost_title__2022": "duplicate_title_north_carolina__2022 > lost_title__2022",
+     "offer_validity__2026": "duplicate_title_north_carolina__2022 > offer_validity__2026",
+     "flood_damage__2022": "branded_title__2026 > flood_damage__2022"
+    },
+    "scores": {
+     "recall@5": 0.0,
+     "recall@10": 0.0,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.0,
+     "ndcg@5": 0.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M8": {
+    "ranked": [
+     "trade_in_vs_sell__2026",
+     "lessor_buyouts__2026",
+     "co_owners__2026",
+     "offer_validity__2026",
+     "appointment_checklist__2026",
+     "epayoff_network__2026",
+     "what_changes_offer__2026",
+     "title_name_mismatch__2022",
+     "lien_still_on_title__2022",
+     "odometer_problems__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.2857142857142857,
+     "recall@10": 0.42857142857142855,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.3333333333333333,
+     "ndcg@5": 0.30078518014914984,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 22,
+     "gold_sources": {
+      "co_owners__2026": [
+       "bm25"
+      ],
+      "appointment_checklist__2026": [
+       "bm25"
+      ],
+      "what_changes_offer__2026": [
+       "bm25",
+       "vector",
+       "graph"
+      ],
+      "payoff_letter__2026": [],
+      "inherited_car__2026": [],
+      "military_deployed__2026": [],
+      "license_plates__2026": []
+     }
+    }
+   },
+   "M8n": {
+    "ranked": [
+     "trade_in_vs_sell__2026",
+     "lessor_buyouts__2026",
+     "co_owners__2026",
+     "offer_validity__2026",
+     "appointment_checklist__2026",
+     "what_changes_offer__2026",
+     "title_name_mismatch__2022",
+     "lien_still_on_title__2022",
+     "odometer_problems__2022",
+     "branded_title__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.2857142857142857,
+     "recall@10": 0.42857142857142855,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.3333333333333333,
+     "ndcg@5": 0.30078518014914984,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 19,
+     "gold_sources": {
+      "co_owners__2026": [
+       "bm25"
+      ],
+      "appointment_checklist__2026": [
+       "bm25"
+      ],
+      "what_changes_offer__2026": [
+       "bm25",
+       "vector"
+      ],
+      "payoff_letter__2026": [],
+      "inherited_car__2026": [],
+      "military_deployed__2026": [],
+      "license_plates__2026": []
+     }
+    }
+   },
+   "CE*": {
+    "ranked": [
+     "trade_in_vs_sell__2026",
+     "lessor_buyouts__2026",
+     "co_owners__2026",
+     "offer_validity__2026",
+     "appointment_checklist__2026",
+     "returns__2026",
+     "epayoff_network__2026",
+     "what_changes_offer__2026",
+     "title_name_mismatch__2022",
+     "lien_still_on_title__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.2857142857142857,
+     "recall@10": 0.42857142857142855,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.3333333333333333,
+     "ndcg@5": 0.30078518014914984,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   }
+  },
+  "v2s03": {
+   "M1": {
+    "ranked": [
+     "offer_scams__2026",
+     "appointment_checklist__2022",
+     "non_running_cars__2026",
+     "selling_without_buying__2022",
+     "lost_title__2022",
+     "appointment_checklist__2026",
+     "trade_in_vs_sell__2022",
+     "license_plates__2026",
+     "trade_in_vs_sell__2026",
+     "lien_still_on_title__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.0,
+     "recall@10": 0.0,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.0,
+     "ndcg@5": 0.0,
+     "stale@5": 1.0,
+     "trap@5": 0.0
+    }
+   },
+   "M2": {
+    "ranked": [
+     "electronic_titles__2022",
+     "inherited_car__2026",
+     "epayoff_network__2026",
+     "co_owners__2026",
+     "home_pickup__2026",
+     "odometer_problems__2022",
+     "payoff_letter__2022",
+     "selling_for_someone_else__2022",
+     "registration_expired__2022",
+     "inherited_car__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.0,
+     "recall@10": 1.0,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.16666666666666666,
+     "ndcg@5": 0.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M3": {
+    "ranked": [
+     "electronic_titles__2022",
+     "inherited_car__2026",
+     "epayoff_network__2026",
+     "co_owners__2026",
+     "home_pickup__2026",
+     "odometer_problems__2022",
+     "selling_for_someone_else__2022",
+     "registration_expired__2022",
+     "payoff_letter__2026",
+     "duplicate_title_north_carolina__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.0,
+     "recall@10": 1.0,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.16666666666666666,
+     "ndcg@5": 0.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M4": {
+    "ranked": [
+     "electronic_titles__2022",
+     "inherited_car__2026",
+     "epayoff_network__2026",
+     "buy_title_northwind_finance__2022",
+     "duplicate_title_texas__2022",
+     "duplicate_title_virginia__2022",
+     "lien_still_on_title__2022",
+     "co_owners__2026",
+     "lost_title__2022",
+     "selling_for_someone_else__2022"
+    ],
+    "via": {
+     "buy_title_northwind_finance__2022": "electronic_titles__2022 > buy_title_northwind_finance__2022",
+     "duplicate_title_texas__2022": "electronic_titles__2022 > duplicate_title_texas__2022",
+     "duplicate_title_virginia__2022": "electronic_titles__2022 > duplicate_title_virginia__2022",
+     "lien_still_on_title__2022": "electronic_titles__2022 > lien_still_on_title__2022",
+     "co_owners__2026": "inherited_car__2026 > co_owners__2026",
+     "lost_title__2022": "inherited_car__2026 > lost_title__2022",
+     "selling_for_someone_else__2022": "inherited_car__2026 > selling_for_someone_else__2022"
+    },
+    "scores": {
+     "recall@5": 0.0,
+     "recall@10": 0.5,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.1,
+     "ndcg@5": 0.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M5": {
+    "ranked": [
+     "electronic_titles__2022",
+     "inherited_car__2026",
+     "epayoff_network__2026",
+     "co_owners__2026",
+     "home_pickup__2026",
+     "appointment_checklist__2026",
+     "buy_temp_plates__2022",
+     "buy_title_northwind_finance__2022",
+     "buy_title_outside_lender__2022",
+     "duplicate_title_california__2022"
+    ],
+    "via": {
+     "appointment_checklist__2026": "electronic_titles__2022 > lender > appointment_checklist__2026",
+     "buy_temp_plates__2022": "electronic_titles__2022 > state > buy_temp_plates__2022",
+     "buy_title_northwind_finance__2022": "electronic_titles__2022 > electronic_title > buy_title_northwind_finance__2022",
+     "buy_title_outside_lender__2022": "electronic_titles__2022 > lender > buy_title_outside_lender__2022",
+     "duplicate_title_california__2022": "electronic_titles__2022 > paper_title > duplicate_title_california__2022"
+    },
+    "scores": {
+     "recall@5": 0.0,
+     "recall@10": 0.0,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.0,
+     "ndcg@5": 0.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M6": {
+    "ranked": [
+     "electronic_titles__2022",
+     "inherited_car__2026",
+     "epayoff_network__2026",
+     "buy_title_northwind_finance__2022",
+     "duplicate_title_texas__2022",
+     "duplicate_title_virginia__2022",
+     "lien_still_on_title__2022",
+     "co_owners__2026",
+     "lost_title__2022",
+     "selling_for_someone_else__2022"
+    ],
+    "via": {
+     "buy_title_northwind_finance__2022": "electronic_titles__2022 > buy_title_northwind_finance__2022",
+     "duplicate_title_texas__2022": "electronic_titles__2022 > duplicate_title_texas__2022",
+     "duplicate_title_virginia__2022": "electronic_titles__2022 > duplicate_title_virginia__2022",
+     "lien_still_on_title__2022": "electronic_titles__2022 > lien_still_on_title__2022",
+     "co_owners__2026": "inherited_car__2026 > co_owners__2026",
+     "lost_title__2022": "inherited_car__2026 > lost_title__2022",
+     "selling_for_someone_else__2022": "inherited_car__2026 > selling_for_someone_else__2022"
+    },
+    "scores": {
+     "recall@5": 0.0,
+     "recall@10": 0.5,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.1,
+     "ndcg@5": 0.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M7": {
+    "ranked": [
+     "electronic_titles__2022",
+     "inherited_car__2026",
+     "epayoff_network__2026",
+     "buy_title_northwind_finance__2022",
+     "duplicate_title_texas__2022",
+     "duplicate_title_virginia__2022",
+     "lien_still_on_title__2022",
+     "co_owners__2026",
+     "lost_title__2022",
+     "selling_for_someone_else__2022"
+    ],
+    "via": {
+     "buy_title_northwind_finance__2022": "electronic_titles__2022 > buy_title_northwind_finance__2022",
+     "duplicate_title_texas__2022": "electronic_titles__2022 > duplicate_title_texas__2022",
+     "duplicate_title_virginia__2022": "electronic_titles__2022 > duplicate_title_virginia__2022",
+     "lien_still_on_title__2022": "electronic_titles__2022 > lien_still_on_title__2022",
+     "co_owners__2026": "inherited_car__2026 > co_owners__2026",
+     "lost_title__2022": "inherited_car__2026 > lost_title__2022",
+     "selling_for_someone_else__2022": "inherited_car__2026 > selling_for_someone_else__2022"
+    },
+    "scores": {
+     "recall@5": 0.0,
+     "recall@10": 0.5,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.1,
+     "ndcg@5": 0.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M8": {
+    "ranked": [
+     "co_owners__2026",
+     "offer_scams__2026",
+     "lien_still_on_title__2022",
+     "odometer_problems__2022",
+     "electronic_titles__2022",
+     "military_deployed__2026",
+     "lost_title__2022",
+     "selling_for_someone_else__2022",
+     "registration_expired__2022",
+     "inherited_car__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 1.0,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.25,
+     "ndcg@5": 0.2640681225725909,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 28,
+     "gold_sources": {
+      "selling_for_someone_else__2022": [
+       "vector",
+       "graph"
+      ],
+      "odometer_problems__2022": [
+       "vector"
+      ]
+     }
+    }
+   },
+   "M8n": {
+    "ranked": [
+     "co_owners__2026",
+     "offer_scams__2026",
+     "lien_still_on_title__2022",
+     "odometer_problems__2022",
+     "electronic_titles__2022",
+     "lost_title__2022",
+     "selling_for_someone_else__2022",
+     "registration_expired__2022",
+     "inherited_car__2026",
+     "non_running_cars__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 1.0,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.25,
+     "ndcg@5": 0.2640681225725909,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 20,
+     "gold_sources": {
+      "selling_for_someone_else__2022": [
+       "vector"
+      ],
+      "odometer_problems__2022": [
+       "vector"
+      ]
+     }
+    }
+   },
+   "CE*": {
+    "ranked": [
+     "co_owners__2026",
+     "offer_scams__2026",
+     "lien_still_on_title__2022",
+     "odometer_problems__2022",
+     "electronic_titles__2022",
+     "military_deployed__2026",
+     "lost_title__2022",
+     "reschedule_cancel__2022",
+     "selling_for_someone_else__2022",
+     "branded_title__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 1.0,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.25,
+     "ndcg@5": 0.2640681225725909,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   }
+  },
+  "v2s04": {
+   "M1": {
+    "ranked": [
+     "epayoff_network__2026",
+     "payoff_letter__2026",
+     "selling_with_loan__2022",
+     "payoff_letter__2022",
+     "appointment_checklist__2026",
+     "getting_paid__2026",
+     "negative_equity__2026",
+     "leased_car__2022",
+     "lien_still_on_title__2022",
+     "negative_equity__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 1.0,
+     "trap@5": 0.0
+    }
+   },
+   "M2": {
+    "ranked": [
+     "epayoff_network__2026",
+     "payoff_letter__2026",
+     "payoff_letter__2022",
+     "lien_still_on_title__2022",
+     "selling_with_loan__2022",
+     "getting_paid__2026",
+     "negative_equity__2022",
+     "keep_paying_until_confirmed__2022",
+     "negative_equity__2026",
+     "offer_scams__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 1.0,
+     "trap@5": 0.0
+    }
+   },
+   "M3": {
+    "ranked": [
+     "epayoff_network__2026",
+     "payoff_letter__2026",
+     "lien_still_on_title__2022",
+     "selling_with_loan__2022",
+     "getting_paid__2026",
+     "keep_paying_until_confirmed__2022",
+     "negative_equity__2026",
+     "offer_scams__2026",
+     "electronic_titles__2022",
+     "appointment_checklist__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M4": {
+    "ranked": [
+     "epayoff_network__2026",
+     "payoff_letter__2026",
+     "appointment_checklist__2026",
+     "getting_paid__2026",
+     "leased_car__2022",
+     "negative_equity__2026",
+     "selling_with_loan__2022",
+     "lien_still_on_title__2022",
+     "buy_title_northwind_finance__2022",
+     "keep_paying_until_confirmed__2022"
+    ],
+    "via": {
+     "appointment_checklist__2026": "epayoff_network__2026 > appointment_checklist__2026",
+     "getting_paid__2026": "epayoff_network__2026 > getting_paid__2026",
+     "leased_car__2022": "payoff_letter__2026 > leased_car__2022",
+     "negative_equity__2026": "payoff_letter__2026 > negative_equity__2026",
+     "selling_with_loan__2022": "payoff_letter__2026 > selling_with_loan__2022",
+     "buy_title_northwind_finance__2022": "epayoff_network__2026 > northwind_finance > buy_title_northwind_finance__2022"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M5": {
+    "ranked": [
+     "epayoff_network__2026",
+     "payoff_letter__2026",
+     "lien_still_on_title__2022",
+     "appointment_checklist__2026",
+     "buy_title_outside_lender__2022",
+     "electronic_titles__2022",
+     "getting_paid__2026",
+     "keep_paying_until_confirmed__2022",
+     "lender_overpayment_refund__2022",
+     "negative_equity__2026"
+    ],
+    "via": {
+     "appointment_checklist__2026": "epayoff_network__2026 > e_payoff_network > appointment_checklist__2026",
+     "buy_title_outside_lender__2022": "epayoff_network__2026 > lender > buy_title_outside_lender__2022",
+     "electronic_titles__2022": "epayoff_network__2026 > lender > electronic_titles__2022",
+     "getting_paid__2026": "epayoff_network__2026 > e_payoff_network > getting_paid__2026",
+     "keep_paying_until_confirmed__2022": "epayoff_network__2026 > lender > keep_paying_until_confirmed__2022",
+     "lender_overpayment_refund__2022": "epayoff_network__2026 > lender > lender_overpayment_refund__2022",
+     "negative_equity__2026": "epayoff_network__2026 > payoff_letter > negative_equity__2026"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M6": {
+    "ranked": [
+     "epayoff_network__2026",
+     "payoff_letter__2026",
+     "appointment_checklist__2026",
+     "getting_paid__2026",
+     "leased_car__2022",
+     "negative_equity__2026",
+     "selling_with_loan__2022",
+     "lien_still_on_title__2022",
+     "buy_title_northwind_finance__2022",
+     "buy_title_outside_lender__2022"
+    ],
+    "via": {
+     "appointment_checklist__2026": "epayoff_network__2026 > appointment_checklist__2026",
+     "getting_paid__2026": "epayoff_network__2026 > getting_paid__2026",
+     "leased_car__2022": "payoff_letter__2026 > leased_car__2022",
+     "negative_equity__2026": "payoff_letter__2026 > negative_equity__2026",
+     "selling_with_loan__2022": "payoff_letter__2026 > selling_with_loan__2022",
+     "buy_title_northwind_finance__2022": "epayoff_network__2026 > northwind_finance > buy_title_northwind_finance__2022",
+     "buy_title_outside_lender__2022": "epayoff_network__2026 > lender > buy_title_outside_lender__2022"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M7": {
+    "ranked": [
+     "epayoff_network__2026",
+     "payoff_letter__2026",
+     "appointment_checklist__2026",
+     "getting_paid__2026",
+     "leased_car__2022",
+     "negative_equity__2026",
+     "selling_with_loan__2022",
+     "lien_still_on_title__2022",
+     "buy_title_northwind_finance__2022",
+     "keep_paying_until_confirmed__2022"
+    ],
+    "via": {
+     "appointment_checklist__2026": "epayoff_network__2026 > appointment_checklist__2026",
+     "getting_paid__2026": "epayoff_network__2026 > getting_paid__2026",
+     "leased_car__2022": "payoff_letter__2026 > leased_car__2022",
+     "negative_equity__2026": "payoff_letter__2026 > negative_equity__2026",
+     "selling_with_loan__2022": "payoff_letter__2026 > selling_with_loan__2022",
+     "buy_title_northwind_finance__2022": "epayoff_network__2026 > northwind_finance > buy_title_northwind_finance__2022"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M8": {
+    "ranked": [
+     "epayoff_network__2026",
+     "payoff_letter__2026",
+     "selling_with_loan__2022",
+     "getting_paid__2026",
+     "appointment_checklist__2026",
+     "keep_paying_until_confirmed__2022",
+     "lien_still_on_title__2022",
+     "lender_overpayment_refund__2022",
+     "negative_equity__2026",
+     "electronic_titles__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 19,
+     "gold_sources": {
+      "epayoff_network__2026": [
+       "bm25",
+       "vector",
+       "graph"
+      ]
+     }
+    }
+   },
+   "M8n": {
+    "ranked": [
+     "epayoff_network__2026",
+     "payoff_letter__2026",
+     "selling_with_loan__2022",
+     "getting_paid__2026",
+     "appointment_checklist__2026",
+     "keep_paying_until_confirmed__2022",
+     "lien_still_on_title__2022",
+     "negative_equity__2026",
+     "electronic_titles__2022",
+     "leased_car__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 12,
+     "gold_sources": {
+      "epayoff_network__2026": [
+       "bm25",
+       "vector"
+      ]
+     }
+    }
+   },
+   "CE*": {
+    "ranked": [
+     "epayoff_network__2026",
+     "payoff_letter__2026",
+     "selling_with_loan__2022",
+     "getting_paid__2026",
+     "appointment_checklist__2026",
+     "keep_paying_until_confirmed__2022",
+     "lien_still_on_title__2022",
+     "lender_overpayment_refund__2022",
+     "negative_equity__2026",
+     "electronic_titles__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   }
+  },
+  "v2s05": {
+   "M1": {
+    "ranked": [
+     "lease_equity__2022",
+     "lessor_buyouts__2022",
+     "lessor_buyouts__2026",
+     "leased_car__2022",
+     "lease_vs_turn_in__2022",
+     "appointment_checklist__2026",
+     "modified_cars__2022",
+     "co_owners__2022",
+     "payoff_letter__2026",
+     "co_owners__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 1.0,
+     "trap@5": 0.0
+    }
+   },
+   "M2": {
+    "ranked": [
+     "leased_car__2022",
+     "lease_equity__2022",
+     "lessor_buyouts__2026",
+     "lessor_buyouts__2022",
+     "lease_vs_turn_in__2022",
+     "appointment_checklist__2026",
+     "payoff_letter__2026",
+     "negative_equity__2022",
+     "business_car__2022",
+     "negative_equity__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6309297535714575,
+     "stale@5": 1.0,
+     "trap@5": 0.0
+    }
+   },
+   "M3": {
+    "ranked": [
+     "leased_car__2022",
+     "lease_equity__2022",
+     "lessor_buyouts__2026",
+     "lease_vs_turn_in__2022",
+     "appointment_checklist__2026",
+     "payoff_letter__2026",
+     "business_car__2022",
+     "negative_equity__2026",
+     "epayoff_network__2026",
+     "selling_with_loan__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6309297535714575,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M4": {
+    "ranked": [
+     "leased_car__2022",
+     "lease_equity__2022",
+     "lessor_buyouts__2026",
+     "appointment_checklist__2026",
+     "payoff_letter__2026",
+     "lease_vs_turn_in__2022",
+     "negative_equity__2026",
+     "business_car__2022",
+     "co_owners__2026",
+     "epayoff_network__2026"
+    ],
+    "via": {
+     "appointment_checklist__2026": "leased_car__2022 > appointment_checklist__2026",
+     "payoff_letter__2026": "leased_car__2022 > payoff_letter__2026",
+     "lease_vs_turn_in__2022": "lease_equity__2022 > lease_vs_turn_in__2022",
+     "negative_equity__2026": "lease_equity__2022 > negative_equity__2026",
+     "co_owners__2026": "appointment_checklist__2026 > co_owners__2026",
+     "epayoff_network__2026": "appointment_checklist__2026 > epayoff_network__2026"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6309297535714575,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M5": {
+    "ranked": [
+     "leased_car__2022",
+     "lease_equity__2022",
+     "lessor_buyouts__2026",
+     "lease_vs_turn_in__2022",
+     "appointment_checklist__2026",
+     "selling_with_loan__2022",
+     "buy_title_outside_lender__2022",
+     "negative_equity__2026",
+     "offer_scams__2026",
+     "payoff_letter__2026"
+    ],
+    "via": {
+     "selling_with_loan__2022": "leased_car__2022 > positive_equity > selling_with_loan__2022",
+     "buy_title_outside_lender__2022": "lease_equity__2022 > vehicle_purchase > buy_title_outside_lender__2022",
+     "negative_equity__2026": "lease_equity__2022 > negative_equity > negative_equity__2026",
+     "offer_scams__2026": "lease_equity__2022 > negative_equity > offer_scams__2026"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6309297535714575,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M6": {
+    "ranked": [
+     "leased_car__2022",
+     "lease_equity__2022",
+     "lessor_buyouts__2026",
+     "appointment_checklist__2026",
+     "payoff_letter__2026",
+     "lease_vs_turn_in__2022",
+     "negative_equity__2026",
+     "selling_with_loan__2022",
+     "buy_title_outside_lender__2022",
+     "offer_scams__2026"
+    ],
+    "via": {
+     "appointment_checklist__2026": "leased_car__2022 > appointment_checklist__2026",
+     "payoff_letter__2026": "leased_car__2022 > payoff_letter__2026",
+     "lease_vs_turn_in__2022": "lease_equity__2022 > lease_vs_turn_in__2022",
+     "negative_equity__2026": "lease_equity__2022 > negative_equity__2026",
+     "selling_with_loan__2022": "leased_car__2022 > positive_equity > selling_with_loan__2022",
+     "buy_title_outside_lender__2022": "lease_equity__2022 > vehicle_purchase > buy_title_outside_lender__2022",
+     "offer_scams__2026": "lease_equity__2022 > negative_equity > offer_scams__2026"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6309297535714575,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M7": {
+    "ranked": [
+     "leased_car__2022",
+     "lease_equity__2022",
+     "lessor_buyouts__2026",
+     "appointment_checklist__2026",
+     "payoff_letter__2026",
+     "lease_vs_turn_in__2022",
+     "negative_equity__2026",
+     "business_car__2022",
+     "co_owners__2026",
+     "epayoff_network__2026"
+    ],
+    "via": {
+     "appointment_checklist__2026": "leased_car__2022 > appointment_checklist__2026",
+     "payoff_letter__2026": "leased_car__2022 > payoff_letter__2026",
+     "lease_vs_turn_in__2022": "lease_equity__2022 > lease_vs_turn_in__2022",
+     "negative_equity__2026": "lease_equity__2022 > negative_equity__2026",
+     "co_owners__2026": "appointment_checklist__2026 > co_owners__2026",
+     "epayoff_network__2026": "appointment_checklist__2026 > epayoff_network__2026"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 0.5,
+     "ndcg@5": 0.6309297535714575,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M8": {
+    "ranked": [
+     "lease_equity__2022",
+     "lessor_buyouts__2026",
+     "leased_car__2022",
+     "lease_vs_turn_in__2022",
+     "appointment_checklist__2026",
+     "payoff_letter__2026",
+     "negative_equity__2026",
+     "epayoff_network__2026",
+     "business_car__2022",
+     "selling_with_loan__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 18,
+     "gold_sources": {
+      "lease_equity__2022": [
+       "bm25",
+       "vector",
+       "graph"
+      ]
+     }
+    }
+   },
+   "M8n": {
+    "ranked": [
+     "lease_equity__2022",
+     "lessor_buyouts__2026",
+     "leased_car__2022",
+     "lease_vs_turn_in__2022",
+     "appointment_checklist__2026",
+     "payoff_letter__2026",
+     "negative_equity__2026",
+     "epayoff_network__2026",
+     "business_car__2022",
+     "selling_with_loan__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 14,
+     "gold_sources": {
+      "lease_equity__2022": [
+       "bm25",
+       "vector"
+      ]
+     }
+    }
+   },
+   "CE*": {
+    "ranked": [
+     "lease_equity__2022",
+     "lessor_buyouts__2026",
+     "leased_car__2022",
+     "lease_vs_turn_in__2022",
+     "appointment_checklist__2026",
+     "payoff_letter__2026",
+     "offer_scams__2026",
+     "negative_equity__2026",
+     "buy_title_northwind_finance__2022",
+     "epayoff_network__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   }
+  },
+  "v2s06": {
+   "M1": {
+    "ranked": [
+     "leased_car__2022",
+     "payoff_letter__2026",
+     "co_owners__2026",
+     "co_owners__2022",
+     "offer_scams__2026",
+     "appointment_checklist__2022",
+     "appointment_checklist__2026",
+     "lost_title__2022",
+     "military_deployed__2026",
+     "out_of_state__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 1.0,
+     "trap@5": 0.0
+    }
+   },
+   "M2": {
+    "ranked": [
+     "epayoff_network__2026",
+     "odometer_problems__2022",
+     "co_owners__2026",
+     "buy_title_northwind_finance__2022",
+     "inherited_car__2026",
+     "payoff_letter__2026",
+     "branded_title__2022",
+     "what_changes_offer__2026",
+     "how_selling_works__2022",
+     "lien_still_on_title__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.0,
+     "recall@10": 0.5,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.16666666666666666,
+     "ndcg@5": 0.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M3": {
+    "ranked": [
+     "epayoff_network__2026",
+     "odometer_problems__2022",
+     "co_owners__2026",
+     "buy_title_northwind_finance__2022",
+     "inherited_car__2026",
+     "payoff_letter__2026",
+     "what_changes_offer__2026",
+     "lien_still_on_title__2022",
+     "branded_title__2026",
+     "duplicate_title_north_carolina__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.0,
+     "recall@10": 0.5,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.16666666666666666,
+     "ndcg@5": 0.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M4": {
+    "ranked": [
+     "epayoff_network__2026",
+     "odometer_problems__2022",
+     "co_owners__2026",
+     "buy_title_northwind_finance__2022",
+     "inherited_car__2026",
+     "appointment_checklist__2026",
+     "getting_paid__2026",
+     "payoff_letter__2026",
+     "what_changes_offer__2026",
+     "divorce_ex_on_title__2022"
+    ],
+    "via": {
+     "appointment_checklist__2026": "epayoff_network__2026 > appointment_checklist__2026",
+     "getting_paid__2026": "epayoff_network__2026 > getting_paid__2026",
+     "payoff_letter__2026": "epayoff_network__2026 > payoff_letter__2026",
+     "divorce_ex_on_title__2022": "co_owners__2026 > divorce_ex_on_title__2022"
+    },
+    "scores": {
+     "recall@5": 0.0,
+     "recall@10": 0.5,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.125,
+     "ndcg@5": 0.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M5": {
+    "ranked": [
+     "epayoff_network__2026",
+     "odometer_problems__2022",
+     "co_owners__2026",
+     "buy_title_northwind_finance__2022",
+     "inherited_car__2026",
+     "payoff_letter__2026",
+     "what_changes_offer__2026",
+     "lien_still_on_title__2022",
+     "appointment_checklist__2026",
+     "buy_title_outside_lender__2022"
+    ],
+    "via": {
+     "appointment_checklist__2026": "epayoff_network__2026 > e_payoff_network > appointment_checklist__2026",
+     "buy_title_outside_lender__2022": "epayoff_network__2026 > lender > buy_title_outside_lender__2022"
+    },
+    "scores": {
+     "recall@5": 0.0,
+     "recall@10": 0.5,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.16666666666666666,
+     "ndcg@5": 0.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M6": {
+    "ranked": [
+     "epayoff_network__2026",
+     "odometer_problems__2022",
+     "co_owners__2026",
+     "buy_title_northwind_finance__2022",
+     "inherited_car__2026",
+     "appointment_checklist__2026",
+     "getting_paid__2026",
+     "payoff_letter__2026",
+     "what_changes_offer__2026",
+     "divorce_ex_on_title__2022"
+    ],
+    "via": {
+     "appointment_checklist__2026": "epayoff_network__2026 > appointment_checklist__2026",
+     "getting_paid__2026": "epayoff_network__2026 > getting_paid__2026",
+     "payoff_letter__2026": "epayoff_network__2026 > payoff_letter__2026",
+     "divorce_ex_on_title__2022": "co_owners__2026 > divorce_ex_on_title__2022"
+    },
+    "scores": {
+     "recall@5": 0.0,
+     "recall@10": 0.5,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.125,
+     "ndcg@5": 0.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M7": {
+    "ranked": [
+     "epayoff_network__2026",
+     "odometer_problems__2022",
+     "co_owners__2026",
+     "buy_title_northwind_finance__2022",
+     "inherited_car__2026",
+     "appointment_checklist__2026",
+     "getting_paid__2026",
+     "leased_car__2022",
+     "payoff_letter__2026",
+     "what_changes_offer__2026"
+    ],
+    "via": {
+     "appointment_checklist__2026": "epayoff_network__2026 > appointment_checklist__2026",
+     "getting_paid__2026": "epayoff_network__2026 > getting_paid__2026",
+     "leased_car__2022": "(question) > NW-LSE-1 > leased_car__2022",
+     "payoff_letter__2026": "(question) > NW-LSE-1 > payoff_letter__2026"
+    },
+    "scores": {
+     "recall@5": 0.0,
+     "recall@10": 1.0,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.125,
+     "ndcg@5": 0.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M8": {
+    "ranked": [
+     "what_changes_offer__2026",
+     "military_deployed__2026",
+     "payoff_letter__2026",
+     "odometer_problems__2022",
+     "co_owners__2026",
+     "inherited_car__2026",
+     "selling_for_someone_else__2022",
+     "lien_still_on_title__2022",
+     "leased_car__2022",
+     "appointment_checklist__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 1.0,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.3333333333333333,
+     "ndcg@5": 0.3065735963827292,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 23,
+     "gold_sources": {
+      "payoff_letter__2026": [
+       "bm25",
+       "vector",
+       "graph",
+       "name"
+      ],
+      "leased_car__2022": [
+       "bm25",
+       "name"
+      ]
+     }
+    }
+   },
+   "M8n": {
+    "ranked": [
+     "what_changes_offer__2026",
+     "military_deployed__2026",
+     "payoff_letter__2026",
+     "odometer_problems__2022",
+     "co_owners__2026",
+     "inherited_car__2026",
+     "lien_still_on_title__2022",
+     "leased_car__2022",
+     "appointment_checklist__2026",
+     "out_of_state__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 1.0,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.3333333333333333,
+     "ndcg@5": 0.3065735963827292,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 17,
+     "gold_sources": {
+      "payoff_letter__2026": [
+       "bm25",
+       "vector"
+      ],
+      "leased_car__2022": [
+       "bm25"
+      ]
+     }
+    }
+   },
+   "CE*": {
+    "ranked": [
+     "what_changes_offer__2026",
+     "military_deployed__2026",
+     "payoff_letter__2026",
+     "odometer_problems__2022",
+     "co_owners__2026",
+     "inherited_car__2026",
+     "selling_for_someone_else__2022",
+     "lien_still_on_title__2022",
+     "leased_car__2022",
+     "business_car__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 0.5,
+     "recall@10": 1.0,
+     "all_gold@5": 0.0,
+     "mrr@10": 0.3333333333333333,
+     "ndcg@5": 0.3065735963827292,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   }
+  },
+  "v2s07": {
+   "M1": {
+    "ranked": [
+     "lessor_buyouts__2026",
+     "lease_equity__2022",
+     "leased_car__2022",
+     "lessor_buyouts__2022",
+     "lease_vs_turn_in__2022",
+     "appointment_checklist__2026",
+     "co_owners__2026",
+     "offer_validity__2026",
+     "title_name_mismatch__2022",
+     "co_owners__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 1.0,
+     "trap@5": 0.0
+    }
+   },
+   "M2": {
+    "ranked": [
+     "lessor_buyouts__2026",
+     "lessor_buyouts__2022",
+     "lease_equity__2022",
+     "leased_car__2022",
+     "lease_vs_turn_in__2022",
+     "payoff_letter__2026",
+     "appointment_checklist__2026",
+     "buy_title_northwind_finance__2022",
+     "buy_title_outside_lender__2022",
+     "epayoff_network__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 1.0,
+     "trap@5": 0.0
+    }
+   },
+   "M3": {
+    "ranked": [
+     "lessor_buyouts__2026",
+     "lease_equity__2022",
+     "leased_car__2022",
+     "lease_vs_turn_in__2022",
+     "payoff_letter__2026",
+     "appointment_checklist__2026",
+     "buy_title_northwind_finance__2022",
+     "buy_title_outside_lender__2022",
+     "epayoff_network__2026",
+     "what_changes_offer__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M4": {
+    "ranked": [
+     "lessor_buyouts__2026",
+     "lease_equity__2022",
+     "lease_vs_turn_in__2022",
+     "leased_car__2022",
+     "negative_equity__2026",
+     "appointment_checklist__2026",
+     "payoff_letter__2026",
+     "buy_title_northwind_finance__2022",
+     "buy_title_outside_lender__2022",
+     "epayoff_network__2026"
+    ],
+    "via": {
+     "lease_vs_turn_in__2022": "lessor_buyouts__2026 > lease_vs_turn_in__2022",
+     "leased_car__2022": "lessor_buyouts__2026 > leased_car__2022",
+     "negative_equity__2026": "lease_equity__2022 > negative_equity__2026",
+     "appointment_checklist__2026": "leased_car__2022 > appointment_checklist__2026",
+     "payoff_letter__2026": "leased_car__2022 > payoff_letter__2026"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M5": {
+    "ranked": [
+     "lessor_buyouts__2026",
+     "lease_equity__2022",
+     "leased_car__2022",
+     "lease_vs_turn_in__2022",
+     "buy_title_outside_lender__2022",
+     "negative_equity__2026",
+     "offer_scams__2026",
+     "selling_with_loan__2022",
+     "appointment_checklist__2026",
+     "payoff_letter__2026"
+    ],
+    "via": {
+     "buy_title_outside_lender__2022": "lease_equity__2022 > vehicle_purchase > buy_title_outside_lender__2022",
+     "negative_equity__2026": "lease_equity__2022 > negative_equity > negative_equity__2026",
+     "offer_scams__2026": "lease_equity__2022 > negative_equity > offer_scams__2026",
+     "selling_with_loan__2022": "lease_equity__2022 > negative_equity > selling_with_loan__2022",
+     "appointment_checklist__2026": "lessor_buyouts__2026 > leasing_company > dealer_payoff_quote > appointment_checklist__2026"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M6": {
+    "ranked": [
+     "lessor_buyouts__2026",
+     "lease_equity__2022",
+     "lease_vs_turn_in__2022",
+     "leased_car__2022",
+     "negative_equity__2026",
+     "appointment_checklist__2026",
+     "payoff_letter__2026",
+     "buy_title_outside_lender__2022",
+     "offer_scams__2026",
+     "selling_with_loan__2022"
+    ],
+    "via": {
+     "lease_vs_turn_in__2022": "lessor_buyouts__2026 > lease_vs_turn_in__2022",
+     "leased_car__2022": "lessor_buyouts__2026 > leased_car__2022",
+     "negative_equity__2026": "lease_equity__2022 > negative_equity__2026",
+     "appointment_checklist__2026": "leased_car__2022 > appointment_checklist__2026",
+     "payoff_letter__2026": "leased_car__2022 > payoff_letter__2026",
+     "buy_title_outside_lender__2022": "lease_equity__2022 > vehicle_purchase > buy_title_outside_lender__2022",
+     "offer_scams__2026": "lease_equity__2022 > negative_equity > offer_scams__2026",
+     "selling_with_loan__2022": "lease_equity__2022 > negative_equity > selling_with_loan__2022"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M7": {
+    "ranked": [
+     "lessor_buyouts__2026",
+     "lease_equity__2022",
+     "lease_vs_turn_in__2022",
+     "leased_car__2022",
+     "negative_equity__2026",
+     "appointment_checklist__2026",
+     "payoff_letter__2026",
+     "buy_title_northwind_finance__2022",
+     "buy_title_outside_lender__2022",
+     "epayoff_network__2026"
+    ],
+    "via": {
+     "lease_vs_turn_in__2022": "lessor_buyouts__2026 > lease_vs_turn_in__2022",
+     "leased_car__2022": "lessor_buyouts__2026 > leased_car__2022",
+     "negative_equity__2026": "lease_equity__2022 > negative_equity__2026",
+     "appointment_checklist__2026": "leased_car__2022 > appointment_checklist__2026",
+     "payoff_letter__2026": "leased_car__2022 > payoff_letter__2026"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M8": {
+    "ranked": [
+     "lessor_buyouts__2026",
+     "leased_car__2022",
+     "lease_equity__2022",
+     "appointment_checklist__2026",
+     "offer_validity__2026",
+     "returns__2026",
+     "co_owners__2026",
+     "lease_vs_turn_in__2022",
+     "epayoff_network__2026",
+     "payoff_letter__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 16,
+     "gold_sources": {
+      "lessor_buyouts__2026": [
+       "bm25",
+       "vector",
+       "graph"
+      ]
+     }
+    }
+   },
+   "M8n": {
+    "ranked": [
+     "lessor_buyouts__2026",
+     "leased_car__2022",
+     "lease_equity__2022",
+     "appointment_checklist__2026",
+     "offer_validity__2026",
+     "returns__2026",
+     "co_owners__2026",
+     "lease_vs_turn_in__2022",
+     "epayoff_network__2026",
+     "payoff_letter__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 14,
+     "gold_sources": {
+      "lessor_buyouts__2026": [
+       "bm25",
+       "vector"
+      ]
+     }
+    }
+   },
+   "CE*": {
+    "ranked": [
+     "lessor_buyouts__2026",
+     "leased_car__2022",
+     "lease_equity__2022",
+     "trade_in_vs_sell__2026",
+     "appointment_checklist__2026",
+     "offer_validity__2026",
+     "returns__2026",
+     "co_owners__2026",
+     "lease_vs_turn_in__2022",
+     "epayoff_network__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   }
+  },
+  "v2s08": {
+   "M1": {
+    "ranked": [
+     "electronic_titles__2022",
+     "out_of_state__2022",
+     "out_of_state__2026",
+     "duplicate_title_virginia__2022",
+     "lost_title__2022",
+     "duplicate_title_texas__2022",
+     "lien_still_on_title__2022",
+     "co_owners__2026",
+     "title_name_mismatch__2022",
+     "trade_in_vs_sell__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 1.0,
+     "trap@5": 0.0
+    }
+   },
+   "M2": {
+    "ranked": [
+     "electronic_titles__2022",
+     "duplicate_title_virginia__2022",
+     "duplicate_title_california__2022",
+     "duplicate_title_texas__2022",
+     "out_of_state__2022",
+     "lost_title__2022",
+     "out_of_state__2026",
+     "divorce_ex_on_title__2022",
+     "title_name_mismatch__2022",
+     "duplicate_title_north_carolina__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 1.0,
+     "trap@5": 0.0
+    }
+   },
+   "M3": {
+    "ranked": [
+     "electronic_titles__2022",
+     "duplicate_title_virginia__2022",
+     "duplicate_title_california__2022",
+     "duplicate_title_texas__2022",
+     "lost_title__2022",
+     "out_of_state__2026",
+     "divorce_ex_on_title__2022",
+     "title_name_mismatch__2022",
+     "duplicate_title_north_carolina__2022",
+     "co_owners__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M4": {
+    "ranked": [
+     "electronic_titles__2022",
+     "buy_title_northwind_finance__2022",
+     "duplicate_title_texas__2022",
+     "duplicate_title_virginia__2022",
+     "lien_still_on_title__2022",
+     "duplicate_title_california__2022",
+     "lost_title__2022",
+     "out_of_state__2026",
+     "divorce_ex_on_title__2022",
+     "title_name_mismatch__2022"
+    ],
+    "via": {
+     "buy_title_northwind_finance__2022": "electronic_titles__2022 > buy_title_northwind_finance__2022",
+     "duplicate_title_texas__2022": "electronic_titles__2022 > duplicate_title_texas__2022",
+     "duplicate_title_virginia__2022": "electronic_titles__2022 > duplicate_title_virginia__2022",
+     "lien_still_on_title__2022": "electronic_titles__2022 > lien_still_on_title__2022"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M5": {
+    "ranked": [
+     "electronic_titles__2022",
+     "duplicate_title_virginia__2022",
+     "appointment_checklist__2026",
+     "buy_temp_plates__2022",
+     "buy_title_northwind_finance__2022",
+     "buy_title_outside_lender__2022",
+     "duplicate_title_california__2022",
+     "duplicate_title_georgia__2022",
+     "duplicate_title_north_carolina__2022",
+     "duplicate_title_texas__2022"
+    ],
+    "via": {
+     "appointment_checklist__2026": "electronic_titles__2022 > lender > appointment_checklist__2026",
+     "buy_temp_plates__2022": "electronic_titles__2022 > state > buy_temp_plates__2022",
+     "buy_title_northwind_finance__2022": "electronic_titles__2022 > electronic_title > buy_title_northwind_finance__2022",
+     "buy_title_outside_lender__2022": "electronic_titles__2022 > lender > buy_title_outside_lender__2022",
+     "duplicate_title_california__2022": "electronic_titles__2022 > paper_title > duplicate_title_california__2022",
+     "duplicate_title_georgia__2022": "electronic_titles__2022 > paper_title > duplicate_title_georgia__2022",
+     "duplicate_title_north_carolina__2022": "electronic_titles__2022 > paper_title > duplicate_title_north_carolina__2022",
+     "duplicate_title_texas__2022": "electronic_titles__2022 > electronic_title > duplicate_title_texas__2022"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M6": {
+    "ranked": [
+     "electronic_titles__2022",
+     "buy_title_northwind_finance__2022",
+     "duplicate_title_texas__2022",
+     "duplicate_title_virginia__2022",
+     "lien_still_on_title__2022",
+     "appointment_checklist__2026",
+     "buy_temp_plates__2022",
+     "buy_title_outside_lender__2022",
+     "duplicate_title_california__2022",
+     "duplicate_title_georgia__2022"
+    ],
+    "via": {
+     "buy_title_northwind_finance__2022": "electronic_titles__2022 > buy_title_northwind_finance__2022",
+     "duplicate_title_texas__2022": "electronic_titles__2022 > duplicate_title_texas__2022",
+     "duplicate_title_virginia__2022": "electronic_titles__2022 > duplicate_title_virginia__2022",
+     "lien_still_on_title__2022": "electronic_titles__2022 > lien_still_on_title__2022",
+     "appointment_checklist__2026": "electronic_titles__2022 > lender > appointment_checklist__2026",
+     "buy_temp_plates__2022": "electronic_titles__2022 > state > buy_temp_plates__2022",
+     "buy_title_outside_lender__2022": "electronic_titles__2022 > lender > buy_title_outside_lender__2022",
+     "duplicate_title_california__2022": "electronic_titles__2022 > paper_title > duplicate_title_california__2022",
+     "duplicate_title_georgia__2022": "electronic_titles__2022 > paper_title > duplicate_title_georgia__2022"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M7": {
+    "ranked": [
+     "electronic_titles__2022",
+     "buy_title_northwind_finance__2022",
+     "duplicate_title_texas__2022",
+     "duplicate_title_virginia__2022",
+     "lien_still_on_title__2022",
+     "duplicate_title_california__2022",
+     "lost_title__2022",
+     "out_of_state__2026",
+     "divorce_ex_on_title__2022",
+     "title_name_mismatch__2022"
+    ],
+    "via": {
+     "buy_title_northwind_finance__2022": "electronic_titles__2022 > buy_title_northwind_finance__2022",
+     "duplicate_title_texas__2022": "electronic_titles__2022 > duplicate_title_texas__2022",
+     "duplicate_title_virginia__2022": "electronic_titles__2022 > duplicate_title_virginia__2022",
+     "lien_still_on_title__2022": "electronic_titles__2022 > lien_still_on_title__2022"
+    },
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   },
+   "M8": {
+    "ranked": [
+     "electronic_titles__2022",
+     "duplicate_title_virginia__2022",
+     "lost_title__2022",
+     "duplicate_title_california__2022",
+     "duplicate_title_texas__2022",
+     "duplicate_title_north_carolina__2022",
+     "duplicate_title_georgia__2022",
+     "buy_title_northwind_finance__2022",
+     "out_of_state__2026",
+     "lien_still_on_title__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 16,
+     "gold_sources": {
+      "electronic_titles__2022": [
+       "bm25",
+       "vector",
+       "graph"
+      ]
+     }
+    }
+   },
+   "M8n": {
+    "ranked": [
+     "electronic_titles__2022",
+     "duplicate_title_virginia__2022",
+     "lost_title__2022",
+     "duplicate_title_california__2022",
+     "duplicate_title_texas__2022",
+     "duplicate_title_north_carolina__2022",
+     "buy_title_northwind_finance__2022",
+     "out_of_state__2026",
+     "lien_still_on_title__2022",
+     "trade_in_vs_sell__2026"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    },
+    "pool": {
+     "size": 13,
+     "gold_sources": {
+      "electronic_titles__2022": [
+       "bm25",
+       "vector"
+      ]
+     }
+    }
+   },
+   "CE*": {
+    "ranked": [
+     "electronic_titles__2022",
+     "duplicate_title_virginia__2022",
+     "lost_title__2022",
+     "duplicate_title_california__2022",
+     "duplicate_title_texas__2022",
+     "duplicate_title_north_carolina__2022",
+     "duplicate_title_georgia__2022",
+     "buy_title_northwind_finance__2022",
+     "out_of_state__2026",
+     "lien_still_on_title__2022"
+    ],
+    "via": {},
+    "scores": {
+     "recall@5": 1.0,
+     "recall@10": 1.0,
+     "all_gold@5": 1.0,
+     "mrr@10": 1.0,
+     "ndcg@5": 1.0,
+     "stale@5": 0.0,
+     "trap@5": 0.0
+    }
+   }
+  }
+ }
+}
