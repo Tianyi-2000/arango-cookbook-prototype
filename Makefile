@@ -1,6 +1,6 @@
 PY := .venv/bin/python
 
-.PHONY: freeze-v2 up down venv verify check test-checks review tickets-plan tickets-one tickets load test-retrieve freeze eval eval-reserve fresh answers answers-run answers-report extract check-semantic nb
+.PHONY: freeze-v2 eval-v2 eval-v2-dev up down venv verify check test-checks review tickets-plan tickets-one tickets load test-retrieve freeze eval eval-reserve fresh answers answers-run answers-report extract check-semantic nb
 up:      ## start ArangoDB on localhost:8535
 	docker compose up -d
 down:
@@ -23,7 +23,7 @@ tickets:       ## generate all missing tickets (needs ANTHROPIC_API_KEY in .env)
 	$(PY) scripts/generate_tickets.py --all
 load:    ## rebuild database northwind_kb from data/: documents, parsed edges, graph, BM25 view, vector index
 	$(PY) -m cookbook.build
-test-retrieve:  ## run M1-M4 on the reserve questions: index use, no stale or wrong-state hits (needs make load)
+test-retrieve:  ## run M1-M8n on the reserve + v2 dev questions: index use, no stale or wrong-state hits, determinism (needs make load)
 	$(PY) scripts/test_retrieve.py
 freeze:  ## freeze the gold set: write data/eval/FROZEN (sha256 of gold.json)
 	$(PY) scripts/freeze_gold.py
@@ -33,6 +33,10 @@ eval:    ## retrieval eval on the frozen gold set -> data/eval/scores/latest.{js
 	$(PY) scripts/run_eval.py
 eval-reserve:  ## the same eval on the reserve questions, for debugging (writes nothing)
 	$(PY) scripts/run_eval.py --reserve
+eval-v2:  ## retrieval eval on gold v2 (chain + structural, D-031) -> data/eval/scores/v2_latest.{json,md}
+	$(PY) scripts/run_eval.py --v2
+eval-v2-dev:  ## the same on the gold v2 dev questions, for debugging (writes nothing)
+	$(PY) scripts/run_eval.py --v2-dev
 fresh:   ## freshness demo in northwind_kb_demo: change a policy, ask again -> data/eval/fresh_demo.md
 	$(PY) scripts/fresh_demo.py
 answers:  ## dry run of the answer eval: cost estimate and one prompt, no API calls

@@ -18,6 +18,11 @@ LINK_RE = re.compile(r"\[([^\]]+)\]\(kb:([a-z0-9_]+)\)")
 CODE_RE = re.compile(r"\bNW-[A-Z]{2,3}-\d+\b")
 
 
+def plain(text: str) -> str:
+    """Article text with `[label](kb:doc_id)` links reduced to their label (what a reader sees)."""
+    return LINK_RE.sub(lambda m: m.group(1), text)
+
+
 def load_json(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 

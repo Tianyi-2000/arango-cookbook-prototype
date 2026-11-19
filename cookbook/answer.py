@@ -7,7 +7,7 @@ The judge checks each required fact by meaning (D-020) and whether unsupported q
 import json
 
 from cookbook import spend
-from cookbook.load import LINK_RE
+from cookbook.load import plain  # noqa: F401 (used here and re-exported)
 
 MODEL = "claude-opus-5-5"         # answers (and semantic extraction)
 JUDGE_MODEL = "claude-fable-5-2"  # a different, stronger model grades the answers (D-029)
@@ -41,11 +41,6 @@ JUDGE_SCHEMA = {
     "required": ["facts", "declines_uncovered"],
     "additionalProperties": False,
 }
-
-
-def plain(text: str) -> str:
-    """Article text with `[label](kb:doc_id)` links reduced to their label."""
-    return LINK_RE.sub(lambda m: m.group(1), text)
 
 
 def answer_prompt(q: dict, articles: list[dict]) -> str:
