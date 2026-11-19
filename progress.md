@@ -4,6 +4,14 @@ A detailed log, newest first. Add an entry after every working session or run: *
 
 ---
 
+## 2026-11-18 · Semantic layer, M5/M6, first retrieval eval on the frozen 30
+- **Did:** spend ledger with a $50 cap (D-029). Wrote the expected concepts for 10 versions and committed them before extracting (60867bf). Extracted concepts and relations for all 68 versions with Opus 5.5: $0.85. `make check-semantic`: recall 0.88, agreement 0.72; misses are mostly synonyms. Loaded the layer (365 concepts, 689 mentions, 453 relates). M4–M6 now share one query with the edge set as a bind variable (D-030). A snapshot of M1–M4 on the reserve caught a non-deterministic tie order (I-021), fixed with a key tie-break. Rules committed (284abe1) before `make eval` ran on the gold set.
+- **Result (frozen 30, 27 answerable):** Recall@5 M1 0.63 · M2 0.77 · M3 0.80 · M4 0.80 · M5 0.80 · M6 0.80. Recall@10: 0.75 / 0.84 / 0.88 / 0.88 / 0.88 / 0.88. **stale@5: M1 0.78, M2 0.78, M3–M6 0.00.** Multi-hop Recall@5: M3 0.83, M4 0.90, M5 0.83, M6 0.90. Per question, M3 → M4: q22 gained `offer_validity__2026` through `duplicate_title_north_carolina__2022` (a structural link); q42 lost `leased_car__2022`, pushed out by four neighbours of a strong first hit (`home_pickup__2026`), each inheriting 0.8 × its score. M5 changed no question's Recall@5.
+- **Reading:** on this KB the big, clean win is filtering by date and state inside the vector query (stale hits 78% → 0%). Graph expansion as defined in D-025 is about neutral at K=5 (one win, one loss); the semantic layer adds nothing measurable. Nothing was tuned after the run; ideas for a better expansion are for a later version with new questions.
+- **Stuck / waiting:** nothing; next is the answer eval (D-029).
+
+---
+
 ## 2026-11-18 · Gold set frozen
 - **Did:** Tianyi reviewed the 14 drafts and kept all of them. Marked them `kept` (`reviewed_by: tianyi 2026-11-18`), `make check` passes, `make test-checks` 8/8, `make freeze` wrote `data/eval/FROZEN` (30 questions, sha256 5935c443…). Stage 2 done.
 - **Also decided today:** API budget raised to $50 (D-029): answers for every method, Fable 5.2 as an independent judge, an LLM-extracted semantic graph with methods M5/M6, three answer runs. M5/M6 rules are written before the first gold eval.

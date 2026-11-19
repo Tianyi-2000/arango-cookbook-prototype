@@ -28,7 +28,7 @@ SCORES = DATA / "eval" / "scores"
 TYPES = ["exact", "semantic", "multi_hop", "temporal", "conditional", "checklist"]
 SLICES = {"all": TYPES, "multi_hop + checklist": ["multi_hop", "checklist"],
           "temporal + conditional": ["temporal", "conditional"]}
-HEADLINE = [("all", "recall@5"), ("multi_hop + checklist", "recall@5"), ("multi_hop + checklist", "all_gold@5"),
+HEADLINE = [("all", "recall@5"), ("all", "recall@10"), ("multi_hop + checklist", "recall@5"), ("multi_hop + checklist", "all_gold@5"),
             ("all", "mrr@10"), ("all", "ndcg@5"), ("all", "stale@5"), ("all", "trap@5")]
 
 
@@ -86,7 +86,8 @@ def tables(agg: dict, results: dict, questions: list[dict]) -> str:
     for t in TYPES:
         L.append(f"| {t} | {agg[t]['n']} | " + " | ".join(f"{agg[t][m]['recall@5']:.2f}" for m in R.METHODS) + " |")
     L += ["", "### Per question: where each step changed Recall@5", ""]
-    for a, b in [("M2", "M3"), ("M3", "M4")]:
+    steps = [("M1", "M2"), ("M2", "M3")] + [("M3", g) for g in R.METHODS if g not in {"M1", "M2", "M3"}]
+    for a, b in steps:
         wins, losses = [], []
         for i, r in results.items():
             d = r[b]["scores"]["recall@5"] - r[a]["scores"]["recall@5"]
