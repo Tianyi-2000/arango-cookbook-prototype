@@ -52,6 +52,12 @@ def load_reserve() -> list[dict]:
     return load_json(path)["questions"] if path.exists() else []
 
 
+def load_gold_v2(dev: bool = False) -> list[dict]:
+    """Gold v2 (D-031): chain and structural questions. dev=True gives the 8 debugging questions."""
+    path = DATA / "eval" / ("gold_v2_dev.json" if dev else "gold_v2.json")
+    return load_json(path)["questions"] if path.exists() else []
+
+
 def load_candidates() -> dict:
     """Draft questions not yet in the gold set (messy variants, off-topic, vague); empty if none."""
     path = DATA / "eval" / "candidates.json"

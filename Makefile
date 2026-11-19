@@ -1,6 +1,6 @@
 PY := .venv/bin/python
 
-.PHONY: up down venv verify check test-checks review tickets-plan tickets-one tickets load test-retrieve freeze eval eval-reserve fresh answers answers-run answers-report extract check-semantic nb
+.PHONY: freeze-v2 up down venv verify check test-checks review tickets-plan tickets-one tickets load test-retrieve freeze eval eval-reserve fresh answers answers-run answers-report extract check-semantic nb
 up:      ## start ArangoDB on localhost:8535
 	docker compose up -d
 down:
@@ -27,6 +27,8 @@ test-retrieve:  ## run M1-M4 on the reserve questions: index use, no stale or wr
 	$(PY) scripts/test_retrieve.py
 freeze:  ## freeze the gold set: write data/eval/FROZEN (sha256 of gold.json)
 	$(PY) scripts/freeze_gold.py
+freeze-v2:  ## freeze gold v2: write data/eval/FROZEN_v2 (sha256 of gold_v2.json)
+	$(PY) scripts/freeze_gold.py --v2
 eval:    ## retrieval eval on the frozen gold set -> data/eval/scores/latest.{json,md} (needs make load)
 	$(PY) scripts/run_eval.py
 eval-reserve:  ## the same eval on the reserve questions, for debugging (writes nothing)

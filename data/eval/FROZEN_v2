@@ -1,0 +1,10 @@
+{
+ "file": "gold_v2.json",
+ "sha256": "59bba6c5881ed650026b876fd95ac05a280f2ea20db982d8990bf79e96fccc61",
+ "frozen_on": "2026-11-18",
+ "questions": 20,
+ "per_type": {
+  "chain": 12,
+  "structural": 8
+ }
+}

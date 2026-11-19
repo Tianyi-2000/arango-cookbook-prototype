@@ -11,7 +11,7 @@ from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from cookbook.load import REWRITE_DATE, TODAY, in_effect, load_candidates, load_gold, load_kb, load_reserve, load_tickets  # noqa: E402
+from cookbook.load import REWRITE_DATE, TODAY, in_effect, load_candidates, load_gold, load_gold_v2, load_kb, load_reserve, load_tickets  # noqa: E402
 
 EXPECTED = {"articles": 68, "doc_ids": 51, "forms": 15, "states": 5, "lenders": 12, "lessors": 6, "stores": 25}
 GOLD_TYPES = ["exact", "semantic", "multi_hop", "temporal", "conditional", "checklist", "unanswerable"]
@@ -51,6 +51,29 @@ def valid_date(s) -> bool:
         return True
     except (TypeError, ValueError):
         return False
+
+
+def structural_answers(kb: dict, arts: list[dict]) -> dict[str, set]:
+    """Each structural gold v2 question's answer, recomputed from the records (D-031), so the gold can't drift."""
+    cur = [a for a in arts if in_effect(a, TODAY)]
+    forms = {f["_key"]: f for f in kb["forms"]}
+    def now(periods):
+        return next(p for p in periods if p["from"] <= TODAY and (p["to"] is None or TODAY <= p["to"]))
+    return {
+        "v2s01": {f["_key"] for f in kb["forms"] if f["status"] == "retired" and (f["retired_on"] or "").startswith("2026")},
+        "v2s02": {f["_key"] for f in kb["forms"] if f["effective_from"] == REWRITE_DATE},
+        "v2s03": {a["doc_id"] for a in cur for c in a["codes"]
+                  if forms[c]["status"] == "retired" and forms[c]["replaced_by"] not in a["codes"]},
+        "v2s04": {x["_key"] for x in kb["lenders"] if not x["epayoff_network"]},
+        "v2s05": {x["_key"] for x in kb["lessors"] if x["equity"] == "to customer"},
+        "v2s06": {a["doc_id"] for a in cur if "NW-LSE-1" in a["codes"]},
+        "v2s07": {x["_key"] for x in kb["lessors"]
+                  if any(p["from"] == REWRITE_DATE for p in x["third_party_buyout"] + x["buyout_fee"])},
+        "v2s08": {s["_key"] for s in kb["states"] if s["title_system"] == "paper"},
+        "v2d05": {x["_key"] for x in kb["lessors"] if now(x["third_party_buyout"])["allowed"] == "no"},
+        "v2d06": {s["_key"] for s in kb["states"] if s["mobile_id_accepted"]},
+        "v2d07": {a["doc_id"] for a in cur if "NW-LPA-1" in a["codes"]},
+    }
 
 
 def main() -> int:
@@ -220,6 +243,43 @@ def main() -> int:
                 if not q.get(field):
                     probs.append(f"{qid}: missing {field}")
         check(f"gold set ({len(gold)} questions) and reserve ({len(reserve)})", probs)
+
+    # --- gold v2 (D-031): chain + structural, test and dev ------------------------------------------
+    v2, v2dev = load_gold_v2(), load_gold_v2(dev=True)
+    if v2:
+        probs = []
+        ids = Counter(q["id"] for q in v2 + v2dev + gold + load_reserve())
+        probs += [f"duplicate id {i}" for i, n in ids.items() if n > 1]
+        per_type = Counter(q["type"] for q in v2)
+        if dict(per_type) != {"chain": 12, "structural": 8}:
+            probs.append(f"gold v2 mix is {dict(per_type)}, expected 12 chain + 8 structural")
+        expected = structural_answers(kb, arts)
+        item_keys = {"form": {f["_key"] for f in kb["forms"]}, "lender": {x["_key"] for x in kb["lenders"]},
+                     "lessor": {x["_key"] for x in kb["lessors"]}, "state": states, "article": {a["doc_id"] for a in arts}}
+        for q in v2 + v2dev:
+            qid = q["id"]
+            if q["type"] not in {"chain", "structural"}:
+                probs.append(f"{qid}: unknown type {q['type']}")
+            if q.get("state") is not None and q["state"] not in states:
+                probs.append(f"{qid}: unknown state {q['state']}")
+            for k in q["gold_keys"] + q["trap_keys"]:
+                if k not in by_key:
+                    probs.append(f"{qid}: unknown article {k}")
+                elif not in_effect(by_key[k], q["as_of"]):
+                    probs.append(f"{qid}: {k} isn't in effect on as_of {q['as_of']}")
+            if not q["gold_keys"] or not q["answer_facts"]:
+                probs.append(f"{qid}: needs gold_keys and answer_facts")
+            if q["type"] == "structural":
+                kind = q.get("item_kind")
+                if kind not in item_keys:
+                    probs.append(f"{qid}: unknown item_kind {kind}")
+                    continue
+                probs += [f"{qid}: unknown {kind} {i}" for i in q["answer_items"] if i not in item_keys[kind]]
+                if qid not in expected:
+                    probs.append(f"{qid}: no recomputation from the records (structural_answers)")
+                elif set(q["answer_items"]) != expected[qid]:
+                    probs.append(f"{qid}: answer_items {sorted(q['answer_items'])} != records {sorted(expected[qid])}")
+        check(f"gold v2 ({len(v2)} test, {len(v2dev)} dev), structural answers recomputed from the records", probs)
 
     # --- candidates (drafts not yet in the gold set) --------------------------------------------------
     # loaded through cookbook.load like everything else, so tests can point it at a copy (I-018)

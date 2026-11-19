@@ -1,0 +1,599 @@
+{
+ "version": "v2",
+ "today": "2026-11-01",
+ "note": "Gold v2 (D-031): questions that need a graph. 12 chain + 8 structural test questions; frozen in FROZEN_v2 before any method ran on them. Same author as the KB, and written to need a graph: results show how methods handle this kind of question, not how often customers ask it.",
+ "questions": [
+  {
+   "id": "v2c01",
+   "type": "chain",
+   "question": "My loan is through Northwind Auto Finance. After I sell you the car, how soon is the loan paid off, and can I skip my next payment?",
+   "asked_on": "2026-11-01",
+   "as_of": "2026-11-01",
+   "state": null,
+   "asker": "customer",
+   "bridge": "lender name + link",
+   "gold_keys": [
+    "getting_paid__2026",
+    "epayoff_network__2026",
+    "keep_paying_until_confirmed__2022"
+   ],
+   "require_all": true,
+   "trap_keys": [],
+   "answer_facts": [
+    "the payoff goes to the lender the same day, because Northwind Auto Finance is in the e-payoff network",
+    "keep making payments until the lender confirms the loan is paid off"
+   ],
+   "answerable": "yes",
+   "perfect_answer": "Northwind Auto Finance is in our e-payoff network, so we send your payoff the same day. Don't skip the next payment: keep paying until the lender confirms the loan is closed. If an extra payment goes through, the lender refunds it to you.",
+   "what_makes_it_hard": "The lender's name is the only link to the e-payoff network article; payment timing is in getting_paid, and the 'keep paying' rule in a third article linked from it. 'Northwind' alone appears in 16 articles, so only the full name identifies the lender.",
+   "author": "claude",
+   "status": "kept",
+   "reviewed_by": "tianyi 2026-11-18 (approved without a separate review)"
+  },
+  {
+   "id": "v2c02",
+   "type": "chain",
+   "question": "I paid off my car, but the title still shows the bank as lienholder. I'm in Texas. Do I need a paper lien release before I can sell it to you?",
+   "asked_on": "2026-11-01",
+   "as_of": "2026-11-01",
+   "state": "texas",
+   "asker": "customer",
+   "bridge": "link",
+   "gold_keys": [
+    "lien_still_on_title__2022",
+    "electronic_titles__2022"
+   ],
+   "require_all": true,
+   "trap_keys": [],
+   "answer_facts": [
+    "Texas uses electronic titles, so the lender sends the lien release to the state electronically",
+    "ask the lender for a lien release, or sign NW-LRL-1 so Northwind contacts the lender (this can add 1 to 2 weeks)",
+    "you can still get an offer and book an appointment while you wait"
+   ],
+   "answerable": "yes",
+   "perfect_answer": "The lien still has to be released, but Texas uses electronic titles, so your lender sends the release to the state electronically; there's no paper release to bring. Ask the lender to release it, or sign NW-LRL-1 and we contact them (this can add 1 to 2 weeks). You can get an offer and book your appointment meanwhile.",
+   "what_makes_it_hard": "lien_still_on_title only says 'in states with electronic titles'; which states those are is in the linked article.",
+   "author": "claude",
+   "status": "kept",
+   "reviewed_by": "tianyi 2026-11-18 (approved without a separate review)"
+  },
+  {
+   "id": "v2c03",
+   "type": "chain",
+   "question": "I moved to North Carolina, but my car is still registered in Virginia and the registration ran out in September. Can I sell it at a North Carolina store?",
+   "asked_on": "2026-11-01",
+   "as_of": "2026-11-01",
+   "state": "north_carolina",
+   "asker": "customer",
+   "bridge": "link",
+   "gold_keys": [
+    "registration_expired__2022",
+    "out_of_state__2026"
+   ],
+   "require_all": true,
+   "trap_keys": [],
+   "answer_facts": [
+    "renew the registration before the appointment, because in North Carolina it must be current on the day of the sale",
+    "get an emissions certificate from a North Carolina inspection station"
+   ],
+   "answerable": "yes",
+   "perfect_answer": "Yes, after two steps. In North Carolina the registration must be current on the day of the sale, so renew it before your appointment. And a car registered in another state needs an emissions certificate from a North Carolina inspection station before a North Carolina store can buy it. Bring the Virginia registration.",
+   "what_makes_it_hard": "The expired-registration article answers half and links to the out-of-state article, which holds the emissions rule; the question never mentions emissions.",
+   "author": "claude",
+   "status": "kept",
+   "reviewed_by": "tianyi 2026-11-18 (approved without a separate review)"
+  },
+  {
+   "id": "v2c04",
+   "type": "chain",
+   "question": "My ex is still on the title, and I changed my last name back after the divorce, so my ID doesn't match the title either. What do I need to sell the car?",
+   "asked_on": "2026-11-01",
+   "as_of": "2026-11-01",
+   "state": null,
+   "asker": "customer",
+   "bridge": "link",
+   "gold_keys": [
+    "divorce_ex_on_title__2022",
+    "title_name_mismatch__2022"
+   ],
+   "require_all": true,
+   "trap_keys": [],
+   "answer_facts": [
+    "your ex has to sign too, unless the divorce decree awards the car to you (then bring a certified copy of the decree)",
+    "bring the document that shows the name change, such as the divorce decree",
+    "sign the name change affidavit, form NW-NMC-1"
+   ],
+   "answerable": "yes",
+   "perfect_answer": "Your ex has to sign as a co-owner, unless your divorce decree awards the car to you; then bring a certified copy and their signature isn't needed. For the name, bring the document that shows the change (the divorce decree) and sign the name change affidavit, NW-NMC-1, at the appointment.",
+   "what_makes_it_hard": "Two situations in one question; the divorce article links to the name-mismatch article, which has the form.",
+   "author": "claude",
+   "status": "kept",
+   "reviewed_by": "tianyi 2026-11-18 (approved without a separate review)"
+  },
+  {
+   "id": "v2c05",
+   "type": "chain",
+   "question": "My car doesn't run anymore and the loan is with Meridian Auto Loans. How do I get the car to you, and do I need a payoff letter?",
+   "asked_on": "2026-11-01",
+   "as_of": "2026-11-01",
+   "state": null,
+   "asker": "customer",
+   "bridge": "lender name",
+   "gold_keys": [
+    "non_running_cars__2026",
+    "epayoff_network__2026"
+   ],
+   "require_all": true,
+   "trap_keys": [],
+   "answer_facts": [
+    "cars that don't run can't use home pickup",
+    "select stores tow it to the store at no charge",
+    "no payoff letter is needed, because Meridian Auto Loans is in the e-payoff network"
+   ],
+   "answerable": "yes",
+   "perfect_answer": "Home pickup isn't available for cars that don't run, but select stores tow your car to the store at no charge; your offer page shows which ones. Meridian Auto Loans is in our e-payoff network, so you don't need a payoff letter: we confirm the payoff with them at the appointment.",
+   "what_makes_it_hard": "Two topics; the payoff part depends only on the lender's name, which links to the e-payoff network article.",
+   "author": "claude",
+   "status": "kept",
+   "reviewed_by": "tianyi 2026-11-18 (approved without a separate review)"
+  },
+  {
+   "id": "v2c06",
+   "type": "chain",
+   "question": "I found an NW-ODO-1 odometer statement in my old paperwork. Can I fill that out for my appointment next week?",
+   "asked_on": "2026-11-01",
+   "as_of": "2026-11-01",
+   "state": null,
+   "asker": "customer",
+   "bridge": "form replaced_by",
+   "gold_keys": [
+    "appointment_checklist__2026"
+   ],
+   "require_all": true,
+   "trap_keys": [
+    "odometer_problems__2022"
+   ],
+   "answer_facts": [
+    "no: NW-ODO-1 was replaced on February 1, 2026",
+    "use the odometer disclosure statement, form NW-ODO-2"
+   ],
+   "answerable": "yes",
+   "perfect_answer": "No. NW-ODO-1 was replaced by the odometer disclosure statement, NW-ODO-2, on February 1, 2026. Bring NW-ODO-2 with the rest of the appointment checklist.",
+   "what_makes_it_hard": "odometer_problems__2022 is current and still tells readers to use NW-ODO-1 (known issue KI-2). The replacement is in the form record (replaced_by) and in the checklist.",
+   "author": "claude",
+   "status": "kept",
+   "reviewed_by": "tianyi 2026-11-18 (approved without a separate review)"
+  },
+  {
+   "id": "v2c07",
+   "type": "chain",
+   "question": "My dad wants me to sell his car for him. Does he have to sign the power of attorney in front of a notary? We live in Virginia.",
+   "asked_on": "2026-11-01",
+   "as_of": "2026-11-01",
+   "state": "virginia",
+   "asker": "customer",
+   "bridge": "form replaced_by",
+   "gold_keys": [
+    "co_owners__2026"
+   ],
+   "require_all": true,
+   "trap_keys": [
+    "selling_for_someone_else__2022"
+   ],
+   "answer_facts": [
+    "no notary is needed in Virginia (only Georgia requires one)",
+    "he can sign power of attorney form NW-POA-2 electronically"
+   ],
+   "answerable": "yes",
+   "perfect_answer": "No. Since February 1, 2026 the power of attorney is form NW-POA-2, which he can sign electronically with no notary; only Georgia still requires a notary. The old notarized NW-POA-1 is retired.",
+   "what_makes_it_hard": "selling_for_someone_else__2022 matches the question best and is current, but still says to sign NW-POA-1 in front of a notary (known issue KI-1). The current rule is reached through NW-POA-1 → replaced_by → NW-POA-2.",
+   "author": "claude",
+   "status": "kept",
+   "reviewed_by": "tianyi 2026-11-18 (approved without a separate review)"
+  },
+  {
+   "id": "v2c08",
+   "type": "chain",
+   "question": "I moved from Texas to Georgia. My paid-off car is still registered in Texas, and I can't find the title. Whose rules apply for a duplicate, and how long will it take?",
+   "asked_on": "2026-11-01",
+   "as_of": "2026-11-01",
+   "state": "georgia",
+   "asker": "customer",
+   "bridge": "link + state filter",
+   "gold_keys": [
+    "out_of_state__2026",
+    "duplicate_title_texas__2022"
+   ],
+   "require_all": true,
+   "trap_keys": [],
+   "answer_facts": [
+    "the duplicate rules of the state that issued the title (Texas) apply",
+    "Texas titles are electronic, so for the sale you usually don't need a printed duplicate",
+    "a printed Texas duplicate takes 5 to 7 business days online"
+   ],
+   "answerable": "yes",
+   "perfect_answer": "Texas rules apply, because the duplicate rules of the state that issued the title apply. Texas uses electronic titles, so for a sale to us you usually don't need a printout: we transfer the electronic title at the appointment. If you want a printed duplicate, request it online; it takes 5 to 7 business days.",
+   "what_makes_it_hard": "The state filter uses the customer's state (Georgia), so it removes the Texas article that answers the question; the graph can walk to it (out_of_state → lost_title → duplicate_title_texas), but neighbours pass the same filter.",
+   "author": "claude",
+   "status": "kept",
+   "reviewed_by": "tianyi 2026-11-18 (approved without a separate review)"
+  },
+  {
+   "id": "v2c09",
+   "type": "chain",
+   "question": "I got my offer on October 29 and booked my appointment for October 31. Can I move it to November 4 and keep the same offer?",
+   "asked_on": "2026-10-30",
+   "as_of": "2026-10-30",
+   "state": null,
+   "asker": "customer",
+   "bridge": "link",
+   "gold_keys": [
+    "reschedule_cancel__2022",
+    "offer_validity__2026"
+   ],
+   "require_all": true,
+   "trap_keys": [],
+   "answer_facts": [
+    "no: rescheduling keeps the offer only if the new time is on or before the offer's expiration date",
+    "offers are valid for 5 days (or 250 miles), so this one expires before November 4",
+    "you can request a new offer, which may be higher or lower"
+   ],
+   "answerable": "yes",
+   "perfect_answer": "Not with the same offer. Offers are valid for 5 days or 250 miles, so an offer from October 29 expires before November 4, and rescheduling keeps the offer only if the new time is on or before the expiration date. Keep October 31, or request a new offer for November 4; the new amount may be higher or lower.",
+   "what_makes_it_hard": "The rescheduling rule and the validity period are in two articles that link to each other; the answer needs both and a date calculation.",
+   "author": "claude",
+   "status": "kept",
+   "reviewed_by": "tianyi 2026-11-18 (approved without a separate review)"
+  },
+  {
+   "id": "v2c10",
+   "type": "chain",
+   "question": "Someone texted me saying they're from Northwind and that I have to wire the money I owe before my appointment, because my loan is higher than your offer. Is that legit?",
+   "asked_on": "2026-11-01",
+   "as_of": "2026-11-01",
+   "state": null,
+   "asker": "customer",
+   "bridge": "link",
+   "gold_keys": [
+    "offer_scams__2026",
+    "negative_equity__2026"
+   ],
+   "require_all": true,
+   "trap_keys": [],
+   "answer_facts": [
+    "no: Northwind never asks for wire transfers",
+    "the difference (negative equity) is paid only in person at the appointment",
+    "by cashier's check or debit card"
+   ],
+   "answerable": "yes",
+   "perfect_answer": "No, that's a scam: Northwind never asks for wire transfers, gift cards or crypto. If you owe more than the offer, you pay the difference only in person at the appointment, by cashier's check or debit card. Don't respond, and report the message through the Help Center.",
+   "what_makes_it_hard": "The scam article links to the negative-equity article, which says how the real payment works.",
+   "author": "claude",
+   "status": "kept",
+   "reviewed_by": "tianyi 2026-11-18 (approved without a separate review)"
+  },
+  {
+   "id": "v2c11",
+   "type": "chain",
+   "question": "I owe Lakeshore Bank about $1,000 more than your offer. How do I pay the difference, and do I need a payoff letter from them?",
+   "asked_on": "2026-11-01",
+   "as_of": "2026-11-01",
+   "state": null,
+   "asker": "customer",
+   "bridge": "lender name",
+   "gold_keys": [
+    "negative_equity__2026",
+    "epayoff_network__2026"
+   ],
+   "require_all": true,
+   "trap_keys": [],
+   "answer_facts": [
+    "pay the difference at the appointment by cashier's check or debit card (no personal checks or credit cards)",
+    "no payoff letter is needed, because Lakeshore Bank is in the e-payoff network"
+   ],
+   "answerable": "yes",
+   "perfect_answer": "You pay the difference at the appointment with a cashier's check or a debit card; we don't accept personal checks or credit cards. Lakeshore Bank is in our e-payoff network, so you don't need a payoff letter: we confirm the payoff with them at the appointment.",
+   "what_makes_it_hard": "negative_equity says 'after we compare the offer with your payoff letter'; whether this lender needs one depends on its name, which only the e-payoff network article lists.",
+   "author": "claude",
+   "status": "kept",
+   "reviewed_by": "tianyi 2026-11-18 (approved without a separate review)"
+  },
+  {
+   "id": "v2c12",
+   "type": "chain",
+   "question": "My lease is with Summit Auto Lease and I'd rather not call them again. Can you get the payoff number for me?",
+   "asked_on": "2026-11-01",
+   "as_of": "2026-11-01",
+   "state": null,
+   "asker": "customer",
+   "bridge": "lessor name + shared form",
+   "gold_keys": [
+    "leased_car__2022",
+    "lessor_buyouts__2026"
+   ],
+   "require_all": true,
+   "trap_keys": [],
+   "answer_facts": [
+    "sign the lease buyout authorization, form NW-LSE-1, and Northwind requests the dealer payoff quote",
+    "Summit Auto Lease allows third-party buyouts"
+   ],
+   "answerable": "yes",
+   "perfect_answer": "Yes. Sign the lease buyout authorization, NW-LSE-1, and we request the dealer payoff quote from Summit for you. Summit Auto Lease allows third-party buyouts, so we can buy the car from them.",
+   "what_makes_it_hard": "The payoff-letter article (the closest text match) offers NW-LPA-1, which is for loans only; the lease form is in the leased-car article, and whether Summit allows a buyout is in the leasing-company article.",
+   "author": "claude",
+   "status": "kept",
+   "reviewed_by": "tianyi 2026-11-18 (approved without a separate review)"
+  },
+  {
+   "id": "v2s01",
+   "type": "structural",
+   "question": "Which forms did Northwind retire in 2026, and what replaced each one?",
+   "asked_on": "2026-11-01",
+   "as_of": "2026-11-01",
+   "state": null,
+   "asker": "support_agent",
+   "bridge": "records",
+   "gold_keys": [
+    "co_owners__2026",
+    "appointment_checklist__2026"
+   ],
+   "require_all": true,
+   "trap_keys": [],
+   "answer_facts": [
+    "NW-POA-1 was replaced by NW-POA-2",
+    "NW-ODO-1 was replaced by NW-ODO-2"
+   ],
+   "answerable": "yes",
+   "perfect_answer": "Two: the notarized power of attorney NW-POA-1, replaced by the e-sign NW-POA-2, and the odometer statement NW-ODO-1, replaced by the odometer disclosure statement NW-ODO-2, both on February 1, 2026.",
+   "what_makes_it_hard": "The facts are in two unrelated articles; the form records hold them in one place (status, replaced_by).",
+   "item_kind": "form",
+   "answer_items": [
+    "NW-POA-1",
+    "NW-ODO-1"
+   ],
+   "author": "claude",
+   "status": "kept",
+   "reviewed_by": "tianyi 2026-11-18 (approved without a separate review)"
+  },
+  {
+   "id": "v2s02",
+   "type": "structural",
+   "question": "List every form that is new since the February 1, 2026 rewrite.",
+   "asked_on": "2026-11-01",
+   "as_of": "2026-11-01",
+   "state": null,
+   "asker": "support_agent",
+   "bridge": "records",
+   "gold_keys": [
+    "co_owners__2026",
+    "appointment_checklist__2026",
+    "what_changes_offer__2026",
+    "payoff_letter__2026",
+    "inherited_car__2026",
+    "military_deployed__2026",
+    "license_plates__2026"
+   ],
+   "require_all": true,
+   "trap_keys": [],
+   "answer_facts": [
+    "NW-POA-2",
+    "NW-ODO-2",
+    "NW-DMG-1",
+    "NW-LPA-1",
+    "NW-EST-1",
+    "NW-MIL-1",
+    "NW-PLT-1"
+   ],
+   "answerable": "yes",
+   "perfect_answer": "Seven: NW-POA-2, NW-ODO-2, NW-DMG-1, NW-LPA-1, NW-EST-1, NW-MIL-1 and NW-PLT-1.",
+   "what_makes_it_hard": "Seven forms in seven articles, more than any top 5; most articles don't say a form is new.",
+   "item_kind": "form",
+   "answer_items": [
+    "NW-POA-2",
+    "NW-ODO-2",
+    "NW-DMG-1",
+    "NW-LPA-1",
+    "NW-EST-1",
+    "NW-MIL-1",
+    "NW-PLT-1"
+   ],
+   "author": "claude",
+   "status": "kept",
+   "reviewed_by": "tianyi 2026-11-18 (approved without a separate review)"
+  },
+  {
+   "id": "v2s03",
+   "type": "structural",
+   "question": "Which help-center articles in effect today still tell customers to use a retired form?",
+   "asked_on": "2026-11-01",
+   "as_of": "2026-11-01",
+   "state": null,
+   "asker": "kb_maintainer",
+   "bridge": "records + edges",
+   "gold_keys": [
+    "selling_for_someone_else__2022",
+    "odometer_problems__2022"
+   ],
+   "require_all": true,
+   "trap_keys": [],
+   "answer_facts": [
+    "Selling a family member's car for them (still says NW-POA-1)",
+    "Broken or replaced odometer (still says NW-ODO-1)"
+   ],
+   "answerable": "yes",
+   "perfect_answer": "Two: 'Selling a family member's car for them' still tells readers to sign NW-POA-1, and 'Broken or replaced odometer' still names NW-ODO-1. Both forms were replaced on February 1, 2026.",
+   "what_makes_it_hard": "Needs every current article's form codes compared with the forms' status; an article that names the old form next to its replacement (the checklist, co-owners) doesn't count.",
+   "item_kind": "article",
+   "answer_items": [
+    "selling_for_someone_else",
+    "odometer_problems"
+   ],
+   "author": "claude",
+   "status": "kept",
+   "reviewed_by": "tianyi 2026-11-18 (approved without a separate review)"
+  },
+  {
+   "id": "v2s04",
+   "type": "structural",
+   "question": "Which lenders in our records are not in the e-payoff network, so their customers still need a payoff letter?",
+   "asked_on": "2026-11-01",
+   "as_of": "2026-11-01",
+   "state": null,
+   "asker": "support_agent",
+   "bridge": "records",
+   "gold_keys": [
+    "epayoff_network__2026"
+   ],
+   "require_all": true,
+   "trap_keys": [],
+   "answer_facts": [
+    "Redstone Credit",
+    "Coastal Credit Union",
+    "Oakline Finance",
+    "Valley Motor Credit",
+    "Harbor Trust Bank",
+    "Summit Peak Bank"
+   ],
+   "answerable": "yes",
+   "perfect_answer": "Six: Redstone Credit, Coastal Credit Union, Oakline Finance, Valley Motor Credit, Harbor Trust Bank and Summit Peak Bank.",
+   "what_makes_it_hard": "The help center lists only the lenders that are in the network; the others exist only in the lender records.",
+   "item_kind": "lender",
+   "answer_items": [
+    "redstone_credit",
+    "coastal_cu",
+    "oakline_finance",
+    "valley_motor_credit",
+    "harbor_trust_bank",
+    "summit_peak_bank"
+   ],
+   "author": "claude",
+   "status": "kept",
+   "reviewed_by": "tianyi 2026-11-18 (approved without a separate review)"
+  },
+  {
+   "id": "v2s05",
+   "type": "structural",
+   "question": "Which leasing companies pass the lease equity to the customer?",
+   "asked_on": "2026-11-01",
+   "as_of": "2026-11-01",
+   "state": null,
+   "asker": "support_agent",
+   "bridge": "control (one article)",
+   "gold_keys": [
+    "lease_equity__2022"
+   ],
+   "require_all": true,
+   "trap_keys": [],
+   "answer_facts": [
+    "Summit Auto Lease",
+    "Crescent Motor Credit",
+    "Apex Lease Co"
+   ],
+   "answerable": "yes",
+   "perfect_answer": "Summit Auto Lease, Crescent Motor Credit and Apex Lease Co. Bluewater Leasing applies it to a Northwind purchase instead, and Harbor Leasing and Ironwood Lease don't allow third-party buyouts.",
+   "what_makes_it_hard": "Control: one article lists the answer.",
+   "item_kind": "lessor",
+   "answer_items": [
+    "summit_auto_lease",
+    "crescent_motor_credit",
+    "apex_lease"
+   ],
+   "author": "claude",
+   "status": "kept",
+   "reviewed_by": "tianyi 2026-11-18 (approved without a separate review)"
+  },
+  {
+   "id": "v2s06",
+   "type": "structural",
+   "question": "Which help-center articles would need an update if form NW-LSE-1 were retired?",
+   "asked_on": "2026-11-01",
+   "as_of": "2026-11-01",
+   "state": null,
+   "asker": "kb_maintainer",
+   "bridge": "control (codes)",
+   "gold_keys": [
+    "payoff_letter__2026",
+    "leased_car__2022"
+   ],
+   "require_all": true,
+   "trap_keys": [],
+   "answer_facts": [
+    "Getting a payoff letter from your lender",
+    "Selling a car that you lease"
+   ],
+   "answerable": "yes",
+   "perfect_answer": "Two current articles name NW-LSE-1: 'Getting a payoff letter from your lender' and 'Selling a car that you lease'.",
+   "what_makes_it_hard": "Control for the graph: BM25 matches form codes exactly, so keyword search may already find both.",
+   "item_kind": "article",
+   "answer_items": [
+    "payoff_letter",
+    "leased_car"
+   ],
+   "author": "claude",
+   "status": "kept",
+   "reviewed_by": "tianyi 2026-11-18 (approved without a separate review)"
+  },
+  {
+   "id": "v2s07",
+   "type": "structural",
+   "question": "Which leasing companies changed their third-party buyout rules on February 1, 2026?",
+   "asked_on": "2026-11-01",
+   "as_of": "2026-11-01",
+   "state": null,
+   "asker": "support_agent",
+   "bridge": "control (one article)",
+   "gold_keys": [
+    "lessor_buyouts__2026"
+   ],
+   "require_all": true,
+   "trap_keys": [],
+   "answer_facts": [
+    "Crescent Motor Credit (buyouts allowed since then)",
+    "Apex Lease Co (a $350 buyout fee since then)"
+   ],
+   "answerable": "yes",
+   "perfect_answer": "Two: Crescent Motor Credit started allowing third-party buyouts, and Apex Lease Co added a $350 third-party buyout fee.",
+   "what_makes_it_hard": "Control: one article states both changes.",
+   "item_kind": "lessor",
+   "answer_items": [
+    "crescent_motor_credit",
+    "apex_lease"
+   ],
+   "author": "claude",
+   "status": "kept",
+   "reviewed_by": "tianyi 2026-11-18 (approved without a separate review)"
+  },
+  {
+   "id": "v2s08",
+   "type": "structural",
+   "question": "Which of the states we serve use paper titles?",
+   "asked_on": "2026-11-01",
+   "as_of": "2026-11-01",
+   "state": null,
+   "asker": "support_agent",
+   "bridge": "control (one article)",
+   "gold_keys": [
+    "electronic_titles__2022"
+   ],
+   "require_all": true,
+   "trap_keys": [],
+   "answer_facts": [
+    "North Carolina",
+    "Georgia",
+    "California"
+   ],
+   "answerable": "yes",
+   "perfect_answer": "North Carolina, Georgia and California; Virginia and Texas use electronic titles.",
+   "what_makes_it_hard": "Control: one article lists both groups.",
+   "item_kind": "state",
+   "answer_items": [
+    "north_carolina",
+    "georgia",
+    "california"
+   ],
+   "author": "claude",
+   "status": "kept",
+   "reviewed_by": "tianyi 2026-11-18 (approved without a separate review)"
+  }
+ ]
+}

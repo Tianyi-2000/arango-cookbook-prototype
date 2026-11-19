@@ -1,0 +1,222 @@
+{
+ "version": "v2-dev",
+ "today": "2026-11-01",
+ "note": "Dev questions for gold v2 (D-031): for debugging M7-M9 only, never in a headline number.",
+ "questions": [
+  {
+   "id": "v2d01",
+   "type": "chain",
+   "question": "My loan is with Pinewood Federal Credit Union. Do I need to bring anything from them to my appointment?",
+   "asked_on": "2026-11-01",
+   "as_of": "2026-11-01",
+   "state": null,
+   "asker": "customer",
+   "bridge": "lender name",
+   "gold_keys": [
+    "epayoff_network__2026",
+    "appointment_checklist__2026"
+   ],
+   "require_all": true,
+   "trap_keys": [],
+   "answer_facts": [
+    "no payoff letter is needed, because Pinewood Federal Credit Union is in the e-payoff network"
+   ],
+   "answerable": "yes",
+   "perfect_answer": "No payoff letter: Pinewood is in our e-payoff network, so we confirm the payoff with them at the appointment. Bring the usual checklist items.",
+   "what_makes_it_hard": "dev",
+   "author": "claude",
+   "status": "kept",
+   "reviewed_by": "tianyi 2026-11-18 (approved without a separate review)"
+  },
+  {
+   "id": "v2d02",
+   "type": "chain",
+   "question": "I listed the dent on my bumper on NW-DMG-1. Can the specialist still lower my offer because of it?",
+   "asked_on": "2026-11-01",
+   "as_of": "2026-11-01",
+   "state": null,
+   "asker": "customer",
+   "bridge": "form code",
+   "gold_keys": [
+    "what_changes_offer__2026"
+   ],
+   "require_all": true,
+   "trap_keys": [],
+   "answer_facts": [
+    "no: damage listed on NW-DMG-1 is already priced into the offer"
+   ],
+   "answerable": "yes",
+   "perfect_answer": "No. Damage you list on NW-DMG-1 is already priced into your offer and doesn't lower it again.",
+   "what_makes_it_hard": "dev",
+   "author": "claude",
+   "status": "kept",
+   "reviewed_by": "tianyi 2026-11-18 (approved without a separate review)"
+  },
+  {
+   "id": "v2d03",
+   "type": "chain",
+   "question": "Crescent Motor Credit told me in 2024 that they don't allow outside buyouts. Can you buy my leased car now?",
+   "asked_on": "2026-11-01",
+   "as_of": "2026-11-01",
+   "state": null,
+   "asker": "customer",
+   "bridge": "lessor name",
+   "gold_keys": [
+    "lessor_buyouts__2026"
+   ],
+   "require_all": true,
+   "trap_keys": [],
+   "answer_facts": [
+    "yes: Crescent Motor Credit allows third-party buyouts since February 1, 2026"
+   ],
+   "answerable": "yes",
+   "perfect_answer": "Yes. Crescent Motor Credit has allowed third-party buyouts since February 1, 2026.",
+   "what_makes_it_hard": "dev",
+   "author": "claude",
+   "status": "kept",
+   "reviewed_by": "tianyi 2026-11-18 (approved without a separate review)"
+  },
+  {
+   "id": "v2d04",
+   "type": "chain",
+   "question": "My car won't start. Can someone pick it up from my house?",
+   "asked_on": "2026-11-01",
+   "as_of": "2026-11-01",
+   "state": "california",
+   "asker": "customer",
+   "bridge": "link",
+   "gold_keys": [
+    "non_running_cars__2026",
+    "home_pickup__2026"
+   ],
+   "require_all": true,
+   "trap_keys": [],
+   "answer_facts": [
+    "cars that don't run can't use home pickup",
+    "select stores tow it to the store at no charge"
+   ],
+   "answerable": "yes",
+   "perfect_answer": "Home pickup isn't available for cars that don't run, but select stores tow them at no charge.",
+   "what_makes_it_hard": "dev",
+   "author": "claude",
+   "status": "kept",
+   "reviewed_by": "tianyi 2026-11-18 (approved without a separate review)"
+  },
+  {
+   "id": "v2d05",
+   "type": "structural",
+   "question": "Which leasing companies don't allow third-party buyouts at all?",
+   "asked_on": "2026-11-01",
+   "as_of": "2026-11-01",
+   "state": null,
+   "asker": "support_agent",
+   "bridge": "control (one article)",
+   "gold_keys": [
+    "lessor_buyouts__2026"
+   ],
+   "require_all": true,
+   "trap_keys": [],
+   "answer_facts": [
+    "Harbor Leasing",
+    "Ironwood Lease"
+   ],
+   "answerable": "yes",
+   "perfect_answer": "Harbor Leasing and Ironwood Lease.",
+   "what_makes_it_hard": "dev",
+   "item_kind": "lessor",
+   "answer_items": [
+    "harbor_leasing",
+    "ironwood_lease"
+   ],
+   "author": "claude",
+   "status": "kept",
+   "reviewed_by": "tianyi 2026-11-18 (approved without a separate review)"
+  },
+  {
+   "id": "v2d06",
+   "type": "structural",
+   "question": "In which states do you accept a mobile ID on the customer's phone?",
+   "asked_on": "2026-11-01",
+   "as_of": "2026-11-01",
+   "state": null,
+   "asker": "support_agent",
+   "bridge": "control (one article)",
+   "gold_keys": [
+    "appointment_checklist__2026"
+   ],
+   "require_all": true,
+   "trap_keys": [],
+   "answer_facts": [
+    "Virginia"
+   ],
+   "answerable": "yes",
+   "perfect_answer": "Only Virginia.",
+   "what_makes_it_hard": "dev",
+   "item_kind": "state",
+   "answer_items": [
+    "virginia"
+   ],
+   "author": "claude",
+   "status": "kept",
+   "reviewed_by": "tianyi 2026-11-18 (approved without a separate review)"
+  },
+  {
+   "id": "v2d07",
+   "type": "structural",
+   "question": "Which current help-center articles mention form NW-LPA-1?",
+   "asked_on": "2026-11-01",
+   "as_of": "2026-11-01",
+   "state": null,
+   "asker": "kb_maintainer",
+   "bridge": "control (codes)",
+   "gold_keys": [
+    "payoff_letter__2026",
+    "epayoff_network__2026"
+   ],
+   "require_all": true,
+   "trap_keys": [],
+   "answer_facts": [
+    "Getting a payoff letter from your lender",
+    "Lenders in our e-payoff network"
+   ],
+   "answerable": "yes",
+   "perfect_answer": "Two: the payoff-letter article and the e-payoff network article.",
+   "what_makes_it_hard": "dev",
+   "item_kind": "article",
+   "answer_items": [
+    "payoff_letter",
+    "epayoff_network"
+   ],
+   "author": "claude",
+   "status": "kept",
+   "reviewed_by": "tianyi 2026-11-18 (approved without a separate review)"
+  },
+  {
+   "id": "v2d08",
+   "type": "chain",
+   "question": "Our company owns the car and the loan is with Bayline Credit Union. How is the payoff handled, and who gets the rest of the money?",
+   "asked_on": "2026-11-01",
+   "as_of": "2026-11-01",
+   "state": null,
+   "asker": "customer",
+   "bridge": "lender name + link",
+   "gold_keys": [
+    "business_car__2022",
+    "getting_paid__2026",
+    "epayoff_network__2026"
+   ],
+   "require_all": true,
+   "trap_keys": [],
+   "answer_facts": [
+    "the payoff goes to Bayline the same day, because it is in the e-payoff network",
+    "the rest is paid to the business by direct deposit into the business bank account"
+   ],
+   "answerable": "yes",
+   "perfect_answer": "We pay Bayline the same day through the e-payoff network, and the rest goes to the business by direct deposit into its bank account.",
+   "what_makes_it_hard": "dev",
+   "author": "claude",
+   "status": "kept",
+   "reviewed_by": "tianyi 2026-11-18 (approved without a separate review)"
+  }
+ ]
+}
