@@ -2,7 +2,7 @@
 
 For each: does the judge's verdict match what the answer says? Mark agree / disagree.
 
-Claude's own read (not a human check): agrees with all 5. In q44 and q47 the answer says part of the question isn't covered because retrieval missed an article; the judge marks `declines uncovered parts: False`, as its instructions say for a fully covered question. **Tianyi to confirm.**
+Claude's own read (not a human check): agrees with all 5. In q44 and q47 the answer says part of the question isn't covered because retrieval missed an article; the judge marks `declines uncovered parts: False`, as its instructions say for a fully covered question. **Tianyi agreed with all 5 on 2026-11-18.**
 
 ## q29 · M2 · temporal
 **Question:** Is Granite Bank in your e-payoff network? My appointment is next week.

@@ -147,7 +147,7 @@ Key choices and why we made them: the "why" only. What changed is in [progress.m
 
 ### D-029 · 2026-11-18 · $50 for API work, one spend ledger, an independent judge
 - **What:** a $50 cap on all API calls from 2026-11-18, enforced in code: every call goes through `cookbook.answer.call`, which checks `data/eval/spend.json` before the call and records the real `usage` after it (`cookbook/spend.py`; prices: Opus 5.5 $4/$20, Fable 5.2 $8/$40 per million tokens; an unknown fallback model is counted at the highest price). Uses: semantic extraction (Opus 5.5), answers for every method (Opus 5.5, effort medium), a judge from a different, stronger model (Fable 5.2, effort low), three answer runs to show variance. Replaces D-028's $6 cap and two-method scope.
-- **Why:** Tianyi has $216.94 of API credits (auto-reload off) and asked for good quality within $50. A judge that is not the answering model removes the "grading its own work" objection; three runs show whether differences are bigger than run-to-run noise.
+- **Why:** Tianyi asked for good quality within a $50 API budget. A judge that is not the answering model removes the "grading its own work" objection; three runs show whether differences are bigger than run-to-run noise.
 - **Decided by:** Tianyi (budget and the four uses, 2026-11-18); Claude (ledger, models, effort)
 
 ### D-030 · 2026-11-18 · Semantic layer and methods M5/M6, fixed before the first gold run
