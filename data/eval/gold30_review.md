@@ -1,6 +1,6 @@
 # Gold set review: the 30 questions to freeze
 
-**30 questions** (exact 3 · semantic 3 · multi_hop 7 · temporal 5 · conditional 4 · checklist 5 · unanswerable 3). **14 drafts to review** (below, by type), then 16 seeds you kept on 2026-11-13, then the 26 questions in reserve.
+**30 questions** (exact 3 · semantic 3 · multi_hop 7 · temporal 5 · conditional 4 · checklist 5 · unanswerable 3). **0 drafts to review** (below, by type), then 30 seeds you kept on 2026-11-13, then the 26 questions in reserve.
 Generated from `data/eval/gold.json` and `gold_reserve.json` by `scripts/render_gold_review.py` (`make review`); edit the JSON, not this file. "Today" is 2026-11-01; a tag like `[2026]` is the article version.
 
 > [!todo] Your review (about 25 minutes)
@@ -9,171 +9,9 @@ Generated from `data/eval/gold.json` and `gold_reserve.json` by `scripts/render_
 > The 30 were chosen from the questions alone: no retrieval method existed yet (D-024). After your review the set is frozen (commit + sha256).
 > State names were changed to real ones today (D-023); the seeds differ from what you kept only in those names.
 
-## exact (1 to review)
-
-### q04 · exact
-**"What's form NW-LRL-1 for?"**
-- Perfect answer: It's the lien release request. If your loan is paid off but the title still lists the lender, sign NW-LRL-1 and Northwind contacts the lender for the release; it can add 1 to 2 weeks.
-- Must-include: `lien release`
-- Gold articles (all needed): My loan is paid off but the lien is still on the title `[2022]`
-- Traps: Getting a payoff letter from your lender `[2026]`
-- What makes it hard: The question is only a code. Other lender-related forms (NW-LPA-1 in the payoff-letter article) look close to an embedding.
-- Why it's in the 30: A bare form code: tests the exact-match `codes` field (I-002). The payoff-letter article is a look-alike trap.
-- Your call: keep / edit / drop
-
-## semantic (1 to review)
-
-### q16 · semantic
-**"Do I need to get rid of my stuff in the car's computer before you take it?"**
-- Perfect answer: Yes. Unpair your phone, clear garage door codes, remove toll tags, and remove the car from any connected-car app.
-- Must-include: `unpair your phone` · `garage`
-- Gold articles (all needed): Toll tags, garage codes and paired phones `[2022]`
-- Traps: When to cancel your insurance `[2022]`
-- What makes it hard: 'Stuff in the car's computer' never says phone, toll tag or data.
-- Why it's in the 30: Shares almost no words with its article ('stuff in the car's computer' = personal data, paired phones): the purest paraphrase test.
-- Your call: keep / edit / drop
-
-## multi_hop (4 to review)
-
-### q21 · multi_hop
-**"I'm using home pickup and I still owe Pinewood Federal. When does Pinewood get paid, and is anything taken out of what I get?"**
-- Perfect answer: Pinewood Federal Credit Union is in the e-payoff network, so it's paid the same day. You get the offer minus the payoff, minus the $99 home pickup fee.
-- Must-include: `same day` · `$99`
-- Gold articles (all needed): Home pickup service `[2026]`; When and how you get paid `[2026]`; Lenders in our e-payoff network `[2026]`
-- Traps: When and how you get paid `[2022]`
-- What makes it hard: Three facts in three articles: the fee (home pickup), the payment timing (getting paid) and whether Pinewood is a network lender (e-payoff).
-- Why it's in the 30: Needs three articles (home pickup, getting paid, e-payoff network); only the first looks like the question. The lender name is the bridge.
-- Your call: keep / edit / drop
-
-### q22 · multi_hop
-**"My offer expired while I was waiting for a duplicate title from North Carolina. Do I have to start over, and will the price be the same?"**
-- state: north_carolina
-- Perfect answer: Yes, request a new offer; the amount reflects current market prices and may be higher or lower. North Carolina duplicates take 4 to 6 weeks, so book the appointment for when it arrives.
-- Must-include: `new offer` · `higher or lower`
-- Gold articles (all needed): Getting a duplicate title in North Carolina `[2022]`; How long is my offer good for? `[2026]`
-- Traps: —
-- What makes it hard: The duplicate-title article only says you 'may need a new one'; what happens to the price is in the offer article.
-- Why it's in the 30: A state article (duplicate title in North Carolina) plus the offer-validity article; the price answer is only in the second.
-- Your call: keep / edit / drop
-
-### q23 · multi_hop
-**"I bought my car from you with a loan from Bayline Credit Union. Now I want to sell it back before it's paid off. Who has my title, and do I need a payoff letter?"**
-- tricky: rule_conflict
-- Perfect answer: Bayline holds the title until the loan is paid off. You can still sell: Northwind pays Bayline from your offer, and because Bayline is in the e-payoff network, no payoff letter is needed.
-- Must-include: `Bayline holds the title` · `no payoff letter`
-- Gold articles (all needed): When will I get my title? (outside lender) `[2022]`; Selling a car you are still paying off `[2022]`; Lenders in our e-payoff network `[2026]`
-- Traps: When will I get my title? (financed with Northwind) `[2022]`
-- What makes it hard: It starts on the buying side and ends on the selling side. The Northwind-financing title article looks closer but is the wrong lender.
-- Why it's in the 30: Starts on the buying side and ends on the selling side, with a trap that looks closer (Northwind-financed titles).
-- Your call: keep / edit / drop
-
-### q24 · multi_hop
-**"My dad passed away and his car is still financed with Lakeshore Bank. Do I need a payoff letter to sell it?"**
-- Perfect answer: No payoff letter: Lakeshore Bank is in the e-payoff network. You still need the death certificate plus court letters or NW-EST-1, and Northwind pays the loan off from the offer.
-- Must-include: `no payoff letter` · `death certificate`
-- Gold articles (all needed): Selling a car you inherited `[2026]`; Selling a car you are still paying off `[2022]`; Lenders in our e-payoff network `[2026]`
-- Traps: Selling a family member's car for them `[2022]`
-- What makes it hard: Inherited → loan → network lender: three hops, and the family-car article (power of attorney) is a confident wrong turn.
-- Why it's in the 30: Inheritance + loan + e-payoff network; the lender name is the only path to the third article.
-- Your call: keep / edit / drop
-
-## temporal (3 to review)
-
-### q28 · temporal
-**"Back in December 2025 I got an offer. How many miles could I put on the car before it expired?"**
-- rules as of 2025-12-15 · tricky: time_boundary
-- Perfect answer: 300 miles, or 7 days, whichever came first. That was the rule until January 31, 2026.
-- Must-include: `300 miles`
-- Gold articles (all needed): How long is my offer good for? `[2022]`
-- Traps: —
-- What makes it hard: The question is about the past: the current 2026 version (250 miles) is the trap here, and filtering to 'today' picks it.
-- Why it's in the 30: About December 2025, so the 2022 version is right; a method that filters on 'today' instead of as_of fails on purpose (D-019).
-- Your call: keep / edit / drop
-
-### q29 · temporal
-**"Is Granite Bank in your e-payoff network? My appointment is next week."**
-- asked on 2026-02-20 · rules as of 2026-02-27 · tricky: time_boundary
-- Perfect answer: Not yet: Granite Bank joins on March 15, 2026. For next week's appointment, bring a payoff letter or sign NW-LPA-1 so Northwind requests one.
-- Must-include: `not yet` · `March 15`
-- Gold articles (all needed): Lenders in our e-payoff network `[2026]`
-- Traps: —
-- What makes it hard: The article lists Granite next to the network lenders; the joining date is the whole answer.
-- Why it's in the 30: The answer is a lender's joining date in the e-payoff network, checked against the appointment date.
-- Your call: keep / edit / drop
-
-### q31 · temporal
-**"Can you mail me a check for my car like you did for my friend in 2023?"**
-- tricky: time_boundary
-- Perfect answer: Not anymore. Northwind stopped mailing checks on February 1, 2026; you get a bank draft or a direct deposit (1 to 3 business days).
-- Must-include: `no` · `direct deposit`
-- Gold articles (all needed): When and how you get paid `[2026]`
-- Traps: —
-- What makes it hard: The friend's 2023 story matches the 2022 version, which offered mailed checks.
-- Why it's in the 30: The friend's 2023 mailed check matches the old version: the 'agent repeats an outdated answer' case this cookbook is about.
-- Your call: keep / edit / drop
-
-## conditional (1 to review)
-
-### q36 · conditional
-**"I live in Texas. Can someone come pick up my car?"**
-- Perfect answer: Not in Texas: home pickup isn't available there, so bring the car to a store.
-- Must-include: `not available in Texas`
-- Gold articles (all needed): Home pickup service `[2026]`
-- Traps: —
-- What makes it hard: The 2022 version says pickup is available in every state.
-- Why it's in the 30: The 2022 version says pickup works in every state; the current one excludes Texas.
-- Your call: keep / edit / drop
-
-## checklist (3 to review)
-
-### q44 · checklist
-**"My car is paid off but I lost the title, and I'm in California. Walk me through everything I need to do to sell it."**
-- state: california
-- Perfect answer: Get a duplicate title at a California motor vehicle office (same day at the main offices, 2 to 3 weeks by mail); you can get an offer and book meanwhile. Bring your photo ID, the registration, all keys, the duplicate title and NW-ODO-2. After the sale, return the plates to California within 10 days with the NW-PLT-1 receipt.
-- Must-include: `duplicate title` · `NW-ODO-2` · `return the plates`
-- Gold articles (all needed): Selling a paid-off car when the title is lost `[2022]`; Getting a duplicate title in California `[2022]`; What to bring to your appraisal appointment `[2026]`; What to do with your license plates `[2026]`
-- Traps: Selling a car you are still paying off `[2022]`
-- What makes it hard: Four articles, and the plate rule is easy to forget because it applies after the sale.
-- Why it's in the 30: Four articles across titles, a state's duplicate-title process and plates: the list is spread out.
-- Your call: keep / edit / drop
-
-### q47 · checklist
-**"I owe more on my car than your offer, and my loan is with Coastal Credit Union. What do I bring to finish the sale?"**
-- tricky: time_boundary
-- Perfect answer: A 15-day payoff letter from Coastal (it isn't in the e-payoff network; or sign NW-LPA-1 so Northwind requests it), plus a cashier's check or debit card for the difference, your photo ID, the registration, all keys and NW-ODO-2.
-- Must-include: `payoff letter` · `cashier's check or debit`
-- Gold articles (all needed): If you owe more than our offer `[2026]`; Getting a payoff letter from your lender `[2026]`; Lenders in our e-payoff network `[2026]`; What to bring to your appraisal appointment `[2026]`
-- Traps: —
-- What makes it hard: Whether Coastal needs a letter depends on the network list, and the 2022 version still allows personal checks.
-- Why it's in the 30: Negative equity, payoff letter, e-payoff network and the appointment checklist: four articles from one lender name.
-- Your call: keep / edit / drop
-
-### q48 · checklist
-**"Before I hand my car over to you, what should I do about my insurance, plates, toll tag and all that? I'm in North Carolina."**
-- state: north_carolina · tricky: rule_conflict
-- Perfect answer: Keep the car insured until the sale is complete, then cancel. Leave the plates on the car (in North Carolina, plates stay with the vehicle). Remove the toll tag, clear garage codes and unpair your phone.
-- Must-include: `keep insurance until` · `leave the plates` · `toll tag`
-- Gold articles (all needed): When to cancel your insurance `[2022]`; What to do with your license plates `[2026]`; Toll tags, garage codes and paired phones `[2022]`
-- Traps: —
-- What makes it hard: The 2022 plates article says always remove them, and three small topics live in three articles.
-- Why it's in the 30: Insurance, plates and toll tags: three articles that look unrelated, plus a state rule.
-- Your call: keep / edit / drop
-
-## unanswerable (1 to review)
-
-### q52 · unanswerable
-**"What interest rate would I get if I finance my next car with Northwind Auto Finance?"**
-- Perfect answer: The help center doesn't cover financing rates or credit checks; please ask a store or Northwind Auto Finance.
-- Must-include: (says it is not covered)
-- Gold articles (all needed): —
-- Traps: When will I get my title? (financed with Northwind) `[2022]`
-- What makes it hard: The Northwind-financing title article names Northwind Auto Finance, so it looks like the place to answer from.
-- Why it's in the 30: The Northwind-financing article looks like the place to answer from, but the KB never gives rates: should refuse.
-- Your call: keep / edit / drop
-
 ---
 
-## Seeds already kept (16), for reference
+## Seeds already kept (30), for reference
 
 ### q01 · exact · seed 1A
 **"My car is leased through Harbor. Can I sell it to you?"**
@@ -193,6 +31,14 @@ Generated from `data/eval/gold.json` and `gold_reserve.json` by `scripts/render_
 - Traps: —
 - What makes it hard: The two codes differ by two letters and both 'let Northwind get a payoff number'. text_en splits codes into tokens and embeddings blur them; lease vs. loan is the only real difference.
 
+### q04 · exact
+**"What's form NW-LRL-1 for?"**
+- Perfect answer: It's the lien release request. If your loan is paid off but the title still lists the lender, sign NW-LRL-1 and Northwind contacts the lender for the release; it can add 1 to 2 weeks.
+- Must-include: `lien release`
+- Gold articles (all needed): My loan is paid off but the lien is still on the title `[2022]`
+- Traps: Getting a payoff letter from your lender `[2026]`
+- What makes it hard: The question is only a code. Other lender-related forms (NW-LPA-1 in the payoff-letter article) look close to an embedding.
+
 ### q09 · semantic · seed 2A
 **"The bank still has the pink slip because I haven't finished paying the car off. Can I still sell it to you?"**
 - tricky: messy_input
@@ -210,6 +56,14 @@ Generated from `data/eval/gold.json` and `gold_reserve.json` by `scripts/render_
 - Gold articles (all needed): Selling a car you inherited `[2026]`
 - Traps: Selling a family member's car for them `[2022]`
 - What makes it hard: No 'inherit', 'heir' or 'estate' in the question. The family-car article looks like a perfect match but needs a power of attorney, which ends when the person dies.
+
+### q16 · semantic
+**"Do I need to get rid of my stuff in the car's computer before you take it?"**
+- Perfect answer: Yes. Unpair your phone, clear garage door codes, remove toll tags, and remove the car from any connected-car app.
+- Must-include: `unpair your phone` · `garage`
+- Gold articles (all needed): Toll tags, garage codes and paired phones `[2022]`
+- Traps: When to cancel your insurance `[2022]`
+- What makes it hard: 'Stuff in the car's computer' never says phone, toll tag or data.
 
 ### q17 · multi_hop · seed 3A
 **"I still have a loan with Bayline Credit Union. Do I need to get a payoff letter before I come in?"**
@@ -238,6 +92,40 @@ Generated from `data/eval/gold.json` and `gold_reserve.json` by `scripts/render_
 - Traps: Which leasing companies allow third-party buyouts `[2026]`; Selling a car that you lease `[2022]`
 - What makes it hard: Two typos ('lein', 'payof') and an ambiguous 'harbor'. 'Lienholder' means a loan, so it's Harbor Trust Bank, not Harbor Leasing.
 
+### q21 · multi_hop
+**"I'm using home pickup and I still owe Pinewood Federal. When does Pinewood get paid, and is anything taken out of what I get?"**
+- Perfect answer: Pinewood Federal Credit Union is in the e-payoff network, so it's paid the same day. You get the offer minus the payoff, minus the $99 home pickup fee.
+- Must-include: `same day` · `$99`
+- Gold articles (all needed): Home pickup service `[2026]`; When and how you get paid `[2026]`; Lenders in our e-payoff network `[2026]`
+- Traps: When and how you get paid `[2022]`
+- What makes it hard: Three facts in three articles: the fee (home pickup), the payment timing (getting paid) and whether Pinewood is a network lender (e-payoff).
+
+### q22 · multi_hop
+**"My offer expired while I was waiting for a duplicate title from North Carolina. Do I have to start over, and will the price be the same?"**
+- state: north_carolina
+- Perfect answer: Yes, request a new offer; the amount reflects current market prices and may be higher or lower. North Carolina duplicates take 4 to 6 weeks, so book the appointment for when it arrives.
+- Must-include: `new offer` · `higher or lower`
+- Gold articles (all needed): Getting a duplicate title in North Carolina `[2022]`; How long is my offer good for? `[2026]`
+- Traps: —
+- What makes it hard: The duplicate-title article only says you 'may need a new one'; what happens to the price is in the offer article.
+
+### q23 · multi_hop
+**"I bought my car from you with a loan from Bayline Credit Union. Now I want to sell it back before it's paid off. Who has my title, and do I need a payoff letter?"**
+- tricky: rule_conflict
+- Perfect answer: Bayline holds the title until the loan is paid off. You can still sell: Northwind pays Bayline from your offer, and because Bayline is in the e-payoff network, no payoff letter is needed.
+- Must-include: `Bayline holds the title` · `no payoff letter`
+- Gold articles (all needed): When will I get my title? (outside lender) `[2022]`; Selling a car you are still paying off `[2022]`; Lenders in our e-payoff network `[2026]`
+- Traps: When will I get my title? (financed with Northwind) `[2022]`
+- What makes it hard: It starts on the buying side and ends on the selling side. The Northwind-financing title article looks closer but is the wrong lender.
+
+### q24 · multi_hop
+**"My dad passed away and his car is still financed with Lakeshore Bank. Do I need a payoff letter to sell it?"**
+- Perfect answer: No payoff letter: Lakeshore Bank is in the e-payoff network. You still need the death certificate plus court letters or NW-EST-1, and Northwind pays the loan off from the offer.
+- Must-include: `no payoff letter` · `death certificate`
+- Gold articles (all needed): Selling a car you inherited `[2026]`; Selling a car you are still paying off `[2022]`; Lenders in our e-payoff network `[2026]`
+- Traps: Selling a family member's car for them `[2022]`
+- What makes it hard: Inherited → loan → network lender: three hops, and the family-car article (power of attorney) is a confident wrong turn.
+
 ### q25 · temporal · seed 4A
 **"I got my offer on January 28 and I can't come in until February 4. The website says offers last 5 days. Did mine expire?"**
 - asked on 2026-02-02 · tricky: time_boundary
@@ -255,6 +143,33 @@ Generated from `data/eval/gold.json` and `gold_reserve.json` by `scripts/render_
 - Gold articles (all needed): When more than one person owns the car `[2026]`
 - Traps: Selling a family member's car for them `[2022]`
 - What makes it hard: The code is never said ('the old notarized one' = NW-POA-1), the deadline falls between the question and the appointment, and an unchanged article still cites NW-POA-1 as current.
+
+### q28 · temporal
+**"Back in December 2025 I got an offer. How many miles could I put on the car before it expired?"**
+- rules as of 2025-12-15 · tricky: time_boundary
+- Perfect answer: 300 miles, or 7 days, whichever came first. That was the rule until January 31, 2026.
+- Must-include: `300 miles`
+- Gold articles (all needed): How long is my offer good for? `[2022]`
+- Traps: —
+- What makes it hard: The question is about the past: the current 2026 version (250 miles) is the trap here, and filtering to 'today' picks it.
+
+### q29 · temporal
+**"Is Granite Bank in your e-payoff network? My appointment is next week."**
+- asked on 2026-02-20 · rules as of 2026-02-27 · tricky: time_boundary
+- Perfect answer: Not yet: Granite Bank joins on March 15, 2026. For next week's appointment, bring a payoff letter or sign NW-LPA-1 so Northwind requests one.
+- Must-include: `not yet` · `March 15`
+- Gold articles (all needed): Lenders in our e-payoff network `[2026]`
+- Traps: —
+- What makes it hard: The article lists Granite next to the network lenders; the joining date is the whole answer.
+
+### q31 · temporal
+**"Can you mail me a check for my car like you did for my friend in 2023?"**
+- tricky: time_boundary
+- Perfect answer: Not anymore. Northwind stopped mailing checks on February 1, 2026; you get a bank draft or a direct deposit (1 to 3 business days).
+- Must-include: `no` · `direct deposit`
+- Gold articles (all needed): When and how you get paid `[2026]`
+- Traps: —
+- What makes it hard: The friend's 2023 story matches the 2022 version, which offered mailed checks.
 
 ### q33 · conditional · seed 5A
 **"I live in Georgia. My brother co-owns the car but he's deployed overseas with the Army. Does his power of attorney have to be notarized?"**
@@ -283,6 +198,14 @@ Generated from `data/eval/gold.json` and `gold_reserve.json` by `scripts/render_
 - Traps: Selling a paid-off car when the title is lost `[2022]`
 - What makes it hard: A false premise. The lost-title article seems to confirm it ('we cannot buy ... without a title'), and bots tend to agree with the user.
 
+### q36 · conditional
+**"I live in Texas. Can someone come pick up my car?"**
+- Perfect answer: Not in Texas: home pickup isn't available there, so bring the car to a store.
+- Must-include: `not available in Texas`
+- Gold articles (all needed): Home pickup service `[2026]`
+- Traps: —
+- What makes it hard: The 2022 version says pickup is available in every state.
+
 ### q41 · checklist · seed 6A
 **"I inherited my uncle's car in North Carolina. There's still a loan on it and nobody can find the title. What do I need to bring to sell it?"**
 - state: north_carolina · tricky: rule_conflict
@@ -301,6 +224,33 @@ Generated from `data/eval/gold.json` and `gold_reserve.json` by `scripts/render_
 - Traps: —
 - What makes it hard: The checklist rests on a premise that's false in this state; a bot that just collects requirements lists NW-PU-1 and pickup steps.
 
+### q44 · checklist
+**"My car is paid off but I lost the title, and I'm in California. Walk me through everything I need to do to sell it."**
+- state: california
+- Perfect answer: Get a duplicate title at a California motor vehicle office (same day at the main offices, 2 to 3 weeks by mail); you can get an offer and book meanwhile. Bring your photo ID, the registration, all keys, the duplicate title and NW-ODO-2. After the sale, return the plates to California within 10 days with the NW-PLT-1 receipt.
+- Must-include: `duplicate title` · `NW-ODO-2` · `return the plates`
+- Gold articles (all needed): Selling a paid-off car when the title is lost `[2022]`; Getting a duplicate title in California `[2022]`; What to bring to your appraisal appointment `[2026]`; What to do with your license plates `[2026]`
+- Traps: Selling a car you are still paying off `[2022]`
+- What makes it hard: Four articles, and the plate rule is easy to forget because it applies after the sale.
+
+### q47 · checklist
+**"I owe more on my car than your offer, and my loan is with Coastal Credit Union. What do I bring to finish the sale?"**
+- tricky: time_boundary
+- Perfect answer: A 15-day payoff letter from Coastal (it isn't in the e-payoff network; or sign NW-LPA-1 so Northwind requests it), plus a cashier's check or debit card for the difference, your photo ID, the registration, all keys and NW-ODO-2.
+- Must-include: `payoff letter` · `cashier's check or debit`
+- Gold articles (all needed): If you owe more than our offer `[2026]`; Getting a payoff letter from your lender `[2026]`; Lenders in our e-payoff network `[2026]`; What to bring to your appraisal appointment `[2026]`
+- Traps: —
+- What makes it hard: Whether Coastal needs a letter depends on the network list, and the 2022 version still allows personal checks.
+
+### q48 · checklist
+**"Before I hand my car over to you, what should I do about my insurance, plates, toll tag and all that? I'm in North Carolina."**
+- state: north_carolina · tricky: rule_conflict
+- Perfect answer: Keep the car insured until the sale is complete, then cancel. Leave the plates on the car (in North Carolina, plates stay with the vehicle). Remove the toll tag, clear garage codes and unpair your phone.
+- Must-include: `keep insurance until` · `leave the plates` · `toll tag`
+- Gold articles (all needed): When to cancel your insurance `[2022]`; What to do with your license plates `[2026]`; Toll tags, garage codes and paired phones `[2022]`
+- Traps: —
+- What makes it hard: The 2022 plates article says always remove them, and three small topics live in three articles.
+
 ### q49 · unanswerable · seed 7A
 **"Can you buy my car if it's registered in Canada?"**
 - Perfect answer: The help center doesn't cover cars registered outside the country; please contact a store.
@@ -317,6 +267,14 @@ Generated from `data/eval/gold.json` and `gold_reserve.json` by `scripts/render_
 - Gold articles (all needed): Selling a car with an open recall `[2022]`
 - Traps: When to cancel your insurance `[2022]`
 - What makes it hard: Half of it is answerable; bots tend to answer everything from the half they found, or refuse everything.
+
+### q52 · unanswerable
+**"What interest rate would I get if I finance my next car with Northwind Auto Finance?"**
+- Perfect answer: The help center doesn't cover financing rates or credit checks; please ask a store or Northwind Auto Finance.
+- Must-include: (says it is not covered)
+- Gold articles (all needed): —
+- Traps: When will I get my title? (financed with Northwind) `[2022]`
+- What makes it hard: The Northwind-financing title article names Northwind Auto Finance, so it looks like the place to answer from.
 
 ---
 

@@ -1,0 +1,14 @@
+{
+ "sha256": "5935c443e31ebd060299999a5b9d8c26e21bd592c39da589a64cd01f8620d473",
+ "frozen_on": "2026-11-18",
+ "questions": 30,
+ "per_type": {
+  "exact": 3,
+  "semantic": 3,
+  "multi_hop": 7,
+  "temporal": 5,
+  "conditional": 4,
+  "checklist": 5,
+  "unanswerable": 3
+ }
+}

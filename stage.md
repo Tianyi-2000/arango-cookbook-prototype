@@ -2,12 +2,12 @@
 
 The high-level plan: what each stage is for, when it counts as done, and what it must not touch. Work-by-work detail goes in [progress.md](progress.md); the design itself is in [architecture.md](architecture.md).
 
-**Current design:** architecture **v3.0** (2026-11-17) · **Current stage:** 2 → 3 (gold freeze waiting on Tianyi; stage 3 code done)
+**Current design:** architecture **v3.0** (2026-11-17) · **Current stage:** 3 (gold frozen 2026-11-18; semantic layer and eval runs today)
 
 | # | Stage | Status |
 |---|---|---|
 | 1 | Spec, KB outline, environment check | done 2026-11-12 |
-| 2 | Knowledge-base data, data checks, gold set | **almost done**: freeze waiting on Tianyi's review of 14 drafts |
+| 2 | Knowledge-base data, data checks, gold set | done 2026-11-18 (gold frozen) |
 | 3 | Retrieval in ArangoDB: load, M1–M4, retrieval eval, freshness demo | **code done**; eval runs after the freeze |
 | 4 | Grounded answers and answer eval (Opus 5.5, under $6) | code done, dry run only |
 | 5 | Extras: LLM-extracted graph, hybrid RRF, entering the graph from names, geo, text-to-AQL, clarifying questions | planned, not scheduled |
@@ -27,7 +27,7 @@ Rule for every stage: when it ends, run the checks in [eval.md](eval.md). If a s
 
 **Out of scope:** writing article text; any retrieval code.
 
-## Stage 2: knowledge-base data, data checks, gold set (almost done)
+## Stage 2: knowledge-base data, data checks, gold set (done 2026-11-18)
 **Goal:** all the data the cookbook runs on exists, matches `docs/KB_OUTLINE.md`, and a script checks it.
 **Done when:**
 - [x] 51 articles / 68 versions, `forms` (15), `states` (5), `lenders` (12), `lessors` (6), `stores` (25), known KB issues present
@@ -35,7 +35,7 @@ Rule for every stage: when it ends, run the checks in [eval.md](eval.md). If a s
 - [x] about 200 tickets generated, cached, committed, and covered by `make check`
 - [x] real state and city names, rules unchanged, disclaimer on top (D-023, 2026-11-17)
 - [x] gold set cut to 30 in a fixed mix, 26 kept in reserve (D-024)
-- [ ] **Tianyi has reviewed the 14 drafts in `data/eval/gold30_review.md`**, and `make freeze` has written `data/eval/FROZEN`
+- [x] Tianyi reviewed the 14 drafts and kept all (2026-11-18); `make freeze` wrote `data/eval/FROZEN` (sha256 5935c443…)
 
 **Moved to later (D-024):** messy wording, off-topic and vague questions (35 drafts in `data/eval/candidates.json`). They join in a second gold version, not this freeze.
 

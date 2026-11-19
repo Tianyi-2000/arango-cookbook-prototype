@@ -79,9 +79,9 @@
    "perfect_answer": "It's the lien release request. If your loan is paid off but the title still lists the lender, sign NW-LRL-1 and Northwind contacts the lender for the release; it can add 1 to 2 weeks.",
    "what_makes_it_hard": "The question is only a code. Other lender-related forms (NW-LPA-1 in the payoff-letter article) look close to an embedding.",
    "author": "claude",
-   "status": "draft",
+   "status": "kept",
    "seed": null,
-   "reviewed_by": null,
+   "reviewed_by": "tianyi 2026-11-18",
    "why_in_30": "A bare form code: tests the exact-match `codes` field (I-002). The payoff-letter article is a look-alike trap."
   },
   {
@@ -165,9 +165,9 @@
    "perfect_answer": "Yes. Unpair your phone, clear garage door codes, remove toll tags, and remove the car from any connected-car app.",
    "what_makes_it_hard": "'Stuff in the car's computer' never says phone, toll tag or data.",
    "author": "claude",
-   "status": "draft",
+   "status": "kept",
    "seed": null,
-   "reviewed_by": null,
+   "reviewed_by": "tianyi 2026-11-18",
    "why_in_30": "Shares almost no words with its article ('stuff in the car's computer' = personal data, paired phones): the purest paraphrase test."
   },
   {
@@ -282,9 +282,9 @@
    "perfect_answer": "Pinewood Federal Credit Union is in the e-payoff network, so it's paid the same day. You get the offer minus the payoff, minus the $99 home pickup fee.",
    "what_makes_it_hard": "Three facts in three articles: the fee (home pickup), the payment timing (getting paid) and whether Pinewood is a network lender (e-payoff).",
    "author": "claude",
-   "status": "draft",
+   "status": "kept",
    "seed": null,
-   "reviewed_by": null,
+   "reviewed_by": "tianyi 2026-11-18",
    "why_in_30": "Needs three articles (home pickup, getting paid, e-payoff network); only the first looks like the question. The lender name is the bridge."
   },
   {
@@ -309,9 +309,9 @@
    "perfect_answer": "Yes, request a new offer; the amount reflects current market prices and may be higher or lower. North Carolina duplicates take 4 to 6 weeks, so book the appointment for when it arrives.",
    "what_makes_it_hard": "The duplicate-title article only says you 'may need a new one'; what happens to the price is in the offer article.",
    "author": "claude",
-   "status": "draft",
+   "status": "kept",
    "seed": null,
-   "reviewed_by": null,
+   "reviewed_by": "tianyi 2026-11-18",
    "why_in_30": "A state article (duplicate title in North Carolina) plus the offer-validity article; the price answer is only in the second."
   },
   {
@@ -341,9 +341,9 @@
    "perfect_answer": "Bayline holds the title until the loan is paid off. You can still sell: Northwind pays Bayline from your offer, and because Bayline is in the e-payoff network, no payoff letter is needed.",
    "what_makes_it_hard": "It starts on the buying side and ends on the selling side. The Northwind-financing title article looks closer but is the wrong lender.",
    "author": "claude",
-   "status": "draft",
+   "status": "kept",
    "seed": null,
-   "reviewed_by": null,
+   "reviewed_by": "tianyi 2026-11-18",
    "why_in_30": "Starts on the buying side and ends on the selling side, with a trap that looks closer (Northwind-financed titles)."
   },
   {
@@ -371,9 +371,9 @@
    "perfect_answer": "No payoff letter: Lakeshore Bank is in the e-payoff network. You still need the death certificate plus court letters or NW-EST-1, and Northwind pays the loan off from the offer.",
    "what_makes_it_hard": "Inherited → loan → network lender: three hops, and the family-car article (power of attorney) is a confident wrong turn.",
    "author": "claude",
-   "status": "draft",
+   "status": "kept",
    "seed": null,
-   "reviewed_by": null,
+   "reviewed_by": "tianyi 2026-11-18",
    "why_in_30": "Inheritance + loan + e-payoff network; the lender name is the only path to the third article."
   },
   {
@@ -456,9 +456,9 @@
    "perfect_answer": "300 miles, or 7 days, whichever came first. That was the rule until January 31, 2026.",
    "what_makes_it_hard": "The question is about the past: the current 2026 version (250 miles) is the trap here, and filtering to 'today' picks it.",
    "author": "claude",
-   "status": "draft",
+   "status": "kept",
    "seed": null,
-   "reviewed_by": null,
+   "reviewed_by": "tianyi 2026-11-18",
    "why_in_30": "About December 2025, so the 2022 version is right; a method that filters on 'today' instead of as_of fails on purpose (D-019)."
   },
   {
@@ -484,9 +484,9 @@
    "perfect_answer": "Not yet: Granite Bank joins on March 15, 2026. For next week's appointment, bring a payoff letter or sign NW-LPA-1 so Northwind requests one.",
    "what_makes_it_hard": "The article lists Granite next to the network lenders; the joining date is the whole answer.",
    "author": "claude",
-   "status": "draft",
+   "status": "kept",
    "seed": null,
-   "reviewed_by": null,
+   "reviewed_by": "tianyi 2026-11-18",
    "why_in_30": "The answer is a lender's joining date in the e-payoff network, checked against the appointment date."
   },
   {
@@ -512,9 +512,9 @@
    "perfect_answer": "Not anymore. Northwind stopped mailing checks on February 1, 2026; you get a bank draft or a direct deposit (1 to 3 business days).",
    "what_makes_it_hard": "The friend's 2023 story matches the 2022 version, which offered mailed checks.",
    "author": "claude",
-   "status": "draft",
+   "status": "kept",
    "seed": null,
-   "reviewed_by": null,
+   "reviewed_by": "tianyi 2026-11-18",
    "why_in_30": "The friend's 2023 mailed check matches the old version: the 'agent repeats an outdated answer' case this cookbook is about."
   },
   {
@@ -626,9 +626,9 @@
    "perfect_answer": "Not in Texas: home pickup isn't available there, so bring the car to a store.",
    "what_makes_it_hard": "The 2022 version says pickup is available in every state.",
    "author": "claude",
-   "status": "draft",
+   "status": "kept",
    "seed": null,
-   "reviewed_by": null,
+   "reviewed_by": "tianyi 2026-11-18",
    "why_in_30": "The 2022 version says pickup works in every state; the current one excludes Texas."
   },
   {
@@ -722,9 +722,9 @@
    "perfect_answer": "Get a duplicate title at a California motor vehicle office (same day at the main offices, 2 to 3 weeks by mail); you can get an offer and book meanwhile. Bring your photo ID, the registration, all keys, the duplicate title and NW-ODO-2. After the sale, return the plates to California within 10 days with the NW-PLT-1 receipt.",
    "what_makes_it_hard": "Four articles, and the plate rule is easy to forget because it applies after the sale.",
    "author": "claude",
-   "status": "draft",
+   "status": "kept",
    "seed": null,
-   "reviewed_by": null,
+   "reviewed_by": "tianyi 2026-11-18",
    "why_in_30": "Four articles across titles, a state's duplicate-title process and plates: the list is spread out."
   },
   {
@@ -753,9 +753,9 @@
    "perfect_answer": "A 15-day payoff letter from Coastal (it isn't in the e-payoff network; or sign NW-LPA-1 so Northwind requests it), plus a cashier's check or debit card for the difference, your photo ID, the registration, all keys and NW-ODO-2.",
    "what_makes_it_hard": "Whether Coastal needs a letter depends on the network list, and the 2022 version still allows personal checks.",
    "author": "claude",
-   "status": "draft",
+   "status": "kept",
    "seed": null,
-   "reviewed_by": null,
+   "reviewed_by": "tianyi 2026-11-18",
    "why_in_30": "Negative equity, payoff letter, e-payoff network and the appointment checklist: four articles from one lender name."
   },
   {
@@ -784,9 +784,9 @@
    "perfect_answer": "Keep the car insured until the sale is complete, then cancel. Leave the plates on the car (in North Carolina, plates stay with the vehicle). Remove the toll tag, clear garage codes and unpair your phone.",
    "what_makes_it_hard": "The 2022 plates article says always remove them, and three small topics live in three articles.",
    "author": "claude",
-   "status": "draft",
+   "status": "kept",
    "seed": null,
-   "reviewed_by": null,
+   "reviewed_by": "tianyi 2026-11-18",
    "why_in_30": "Insurance, plates and toll tags: three articles that look unrelated, plus a state rule."
   },
   {
@@ -858,9 +858,9 @@
    "perfect_answer": "The help center doesn't cover financing rates or credit checks; please ask a store or Northwind Auto Finance.",
    "what_makes_it_hard": "The Northwind-financing title article names Northwind Auto Finance, so it looks like the place to answer from.",
    "author": "claude",
-   "status": "draft",
+   "status": "kept",
    "seed": null,
-   "reviewed_by": null,
+   "reviewed_by": "tianyi 2026-11-18",
    "why_in_30": "The Northwind-financing article looks like the place to answer from, but the KB never gives rates: should refuse."
   }
  ]

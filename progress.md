@@ -4,6 +4,12 @@ A detailed log, newest first. Add an entry after every working session or run: *
 
 ---
 
+## 2026-11-18 · Gold set frozen
+- **Did:** Tianyi reviewed the 14 drafts and kept all of them. Marked them `kept` (`reviewed_by: tianyi 2026-11-18`), `make check` passes, `make test-checks` 8/8, `make freeze` wrote `data/eval/FROZEN` (30 questions, sha256 5935c443…). Stage 2 done.
+- **Also decided today:** API budget raised to $50 (D-029): answers for every method, Fable 5.2 as an independent judge, an LLM-extracted semantic graph with methods M5/M6, three answer runs. M5/M6 rules are written before the first gold eval.
+
+---
+
 ## 2026-11-17 · Loaded into ArangoDB; M1–M4; freshness demo; eval and answer code ready
 - **Did:** (1) `make load` (`cookbook/build.py`) rebuilds `northwind_kb` from data/ in about 25 s: 7 document and 8 edge collections, `kb_graph`, `kb_view` (BM25; `codes` exact), a vector index (MiniLM, nLists 4, probe all). A graph query finds exactly the 2 current articles that still cite a retired form (KI-1, KI-2). (2) `verify_env.py` check 5: a document inserted after the vector index was built is found by the next query; `COSINE_SIMILARITY` exists. (3) `cookbook/retrieve.py`: M1–M4, one AQL each (D-025). Two bugs, found on the reserve questions: a 1e-8 score tie credited the graph (I-019), and two FILTER statements break vector search once a state is set (I-020). `make test-retrieve` guards both. (4) `cookbook/metrics.py` (6 hand-computed cases pass), `scripts/run_eval.py` (refuses unless gold.json matches FROZEN; D-018 comparison), `make freeze`. Reserve run, for debugging only: stale@5 is 0.90 (M1) and 0.95 (M2), 0.00 for M3/M4; M4 = M3 on the reserve (only 1 multi-hop question there). Nothing was tuned. (5) `make fresh` (D-027): the policy change is one 8 ms transaction; right after it, M3/M4 return the new version and M2 still ranks the 2022 version first. The first demo question didn't reach the article with any vector method, so it was reworded once (logged in D-027). (6) `cookbook/answer.py` + `scripts/run_answers.py` (D-028), dry run by default, $6 cap.
 - **Auto-adjustments:** answer spend cap lowered from the plan's $8 to $6, so tickets ($3.10) + answers stay under $10.
