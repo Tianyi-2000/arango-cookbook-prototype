@@ -1,0 +1,88 @@
+{
+ "key": "lost_title__2022",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011ChBPtAowjEWKG2Yhzj2eP",
+ "usage": {
+  "input": 1077,
+  "output": 357
+ },
+ "concepts": [
+  {
+   "name": "lost title",
+   "kind": "situation"
+  },
+  {
+   "name": "damaged title",
+   "kind": "situation"
+  },
+  {
+   "name": "paid-off car",
+   "kind": "situation"
+  },
+  {
+   "name": "duplicate title",
+   "kind": "document"
+  },
+  {
+   "name": "state",
+   "kind": "party"
+  },
+  {
+   "name": "title",
+   "kind": "document"
+  },
+  {
+   "name": "offer",
+   "kind": "service"
+  },
+  {
+   "name": "appointment",
+   "kind": "service"
+  },
+  {
+   "name": "car with loan",
+   "kind": "situation"
+  },
+  {
+   "name": "selling a car",
+   "kind": "action"
+  }
+ ],
+ "relations": [
+  {
+   "source": "lost title",
+   "target": "duplicate title",
+   "type": "requires"
+  },
+  {
+   "source": "damaged title",
+   "target": "duplicate title",
+   "type": "requires"
+  },
+  {
+   "source": "duplicate title",
+   "target": "state",
+   "type": "issued_by"
+  },
+  {
+   "source": "paid-off car",
+   "target": "title",
+   "type": "requires"
+  },
+  {
+   "source": "selling a car",
+   "target": "title",
+   "type": "requires"
+  },
+  {
+   "source": "duplicate title",
+   "target": "title",
+   "type": "alternative_to"
+  },
+  {
+   "source": "lost title",
+   "target": "paid-off car",
+   "type": "applies_when"
+  }
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "key": "lien_still_on_title__2022",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011ChBPsqfWapQb3Ns5HXRGS",
+ "usage": {
+  "input": 1070,
+  "output": 485
+ },
+ "concepts": [
+  {
+   "name": "paid-off loan with lien on title",
+   "kind": "situation"
+  },
+  {
+   "name": "title",
+   "kind": "document"
+  },
+  {
+   "name": "lienholder",
+   "kind": "party"
+  },
+  {
+   "name": "lender",
+   "kind": "party"
+  },
+  {
+   "name": "lien release",
+   "kind": "action"
+  },
+  {
+   "name": "lien release letter",
+   "kind": "document"
+  },
+  {
+   "name": "lien release request",
+   "kind": "document"
+  },
+  {
+   "name": "contact lender",
+   "kind": "service"
+  },
+  {
+   "name": "offer",
+   "kind": "service"
+  },
+  {
+   "name": "appointment booking",
+   "kind": "service"
+  },
+  {
+   "name": "electronic title",
+   "kind": "situation"
+  },
+  {
+   "name": "electronic lien release",
+   "kind": "action"
+  }
+ ],
+ "relations": [
+  {
+   "source": "paid-off loan with lien on title",
+   "target": "lien release",
+   "type": "requires"
+  },
+  {
+   "source": "lien release",
+   "target": "lien release letter",
+   "type": "requires"
+  },
+  {
+   "source": "lien release letter",
+   "target": "lender",
+   "type": "issued_by"
+  },
+  {
+   "source": "lien release request",
+   "target": "lien release letter",
+   "type": "alternative_to"
+  },
+  {
+   "source": "contact lender",
+   "target": "lien release request",
+   "type": "requires"
+  },
+  {
+   "source": "electronic lien release",
+   "target": "electronic title",
+   "type": "applies_when"
+  },
+  {
+   "source": "electronic lien release",
+   "target": "lender",
+   "type": "issued_by"
+  },
+  {
+   "source": "offer",
+   "target": "paid-off loan with lien on title",
+   "type": "applies_when"
+  },
+  {
+   "source": "appointment booking",
+   "target": "paid-off loan with lien on title",
+   "type": "applies_when"
+  }
+ ]
+}

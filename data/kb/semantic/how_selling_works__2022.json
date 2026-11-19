@@ -1,0 +1,116 @@
+{
+ "key": "how_selling_works__2022",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011ChBPi9M7C5CdJEw78f6AN",
+ "usage": {
+  "input": 1112,
+  "output": 510
+ },
+ "concepts": [
+  {
+   "name": "selling a car",
+   "kind": "situation"
+  },
+  {
+   "name": "online offer",
+   "kind": "service"
+  },
+  {
+   "name": "in-store quote",
+   "kind": "service"
+  },
+  {
+   "name": "vin",
+   "kind": "document"
+  },
+  {
+   "name": "license plate",
+   "kind": "document"
+  },
+  {
+   "name": "appraisal appointment",
+   "kind": "action"
+  },
+  {
+   "name": "inspection",
+   "kind": "action"
+  },
+  {
+   "name": "appraisal specialist",
+   "kind": "party"
+  },
+  {
+   "name": "paperwork",
+   "kind": "document"
+  },
+  {
+   "name": "payment",
+   "kind": "action"
+  },
+  {
+   "name": "offer expiration",
+   "kind": "requirement"
+  },
+  {
+   "name": "purchase not required",
+   "kind": "requirement"
+  }
+ ],
+ "relations": [
+  {
+   "source": "selling a car",
+   "target": "online offer",
+   "type": "requires"
+  },
+  {
+   "source": "online offer",
+   "target": "in-store quote",
+   "type": "alternative_to"
+  },
+  {
+   "source": "online offer",
+   "target": "vin",
+   "type": "requires"
+  },
+  {
+   "source": "online offer",
+   "target": "license plate",
+   "type": "requires"
+  },
+  {
+   "source": "vin",
+   "target": "license plate",
+   "type": "alternative_to"
+  },
+  {
+   "source": "selling a car",
+   "target": "appraisal appointment",
+   "type": "requires"
+  },
+  {
+   "source": "inspection",
+   "target": "appraisal appointment",
+   "type": "part_of"
+  },
+  {
+   "source": "selling a car",
+   "target": "paperwork",
+   "type": "requires"
+  },
+  {
+   "source": "payment",
+   "target": "selling a car",
+   "type": "part_of"
+  },
+  {
+   "source": "offer expiration",
+   "target": "online offer",
+   "type": "applies_when"
+  },
+  {
+   "source": "purchase not required",
+   "target": "selling a car",
+   "type": "applies_when"
+  }
+ ]
+}

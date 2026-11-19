@@ -1,0 +1,57 @@
+{
+ "key": "license_plates__2022",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011ChBQ1zczdcXBKf1XbuVyt",
+ "usage": {
+  "input": 978,
+  "output": 234
+ },
+ "concepts": [
+  {
+   "name": "license plate",
+   "kind": "document"
+  },
+  {
+   "name": "remove license plates",
+   "kind": "action"
+  },
+  {
+   "name": "vehicle handover",
+   "kind": "action"
+  },
+  {
+   "name": "motor vehicle agency",
+   "kind": "party"
+  },
+  {
+   "name": "plate transfer",
+   "kind": "action"
+  },
+  {
+   "name": "next car",
+   "kind": "situation"
+  }
+ ],
+ "relations": [
+  {
+   "source": "vehicle handover",
+   "target": "remove license plates",
+   "type": "requires"
+  },
+  {
+   "source": "license plate",
+   "target": "motor vehicle agency",
+   "type": "issued_by"
+  },
+  {
+   "source": "plate transfer",
+   "target": "next car",
+   "type": "applies_when"
+  },
+  {
+   "source": "plate transfer",
+   "target": "license plate",
+   "type": "requires"
+  }
+ ]
+}

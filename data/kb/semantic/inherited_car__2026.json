@@ -1,0 +1,119 @@
+{
+ "key": "inherited_car__2026",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011ChBPxTfaFSeDUdYeKwsyS",
+ "usage": {
+  "input": 1121,
+  "output": 544
+ },
+ "concepts": [
+  {
+   "name": "inherited car",
+   "kind": "situation"
+  },
+  {
+   "name": "death certificate",
+   "kind": "document"
+  },
+  {
+   "name": "letters testamentary",
+   "kind": "document"
+  },
+  {
+   "name": "executor",
+   "kind": "party"
+  },
+  {
+   "name": "probate court",
+   "kind": "party"
+  },
+  {
+   "name": "small estate",
+   "kind": "situation"
+  },
+  {
+   "name": "heir and estate affidavit",
+   "kind": "document"
+  },
+  {
+   "name": "heir",
+   "kind": "party"
+  },
+  {
+   "name": "multiple heirs",
+   "kind": "situation"
+  },
+  {
+   "name": "power of attorney",
+   "kind": "document"
+  },
+  {
+   "name": "outstanding loan",
+   "kind": "situation"
+  },
+  {
+   "name": "lienholder",
+   "kind": "party"
+  },
+  {
+   "name": "title",
+   "kind": "document"
+  },
+  {
+   "name": "lost title",
+   "kind": "situation"
+  }
+ ],
+ "relations": [
+  {
+   "source": "inherited car",
+   "target": "death certificate",
+   "type": "requires"
+  },
+  {
+   "source": "inherited car",
+   "target": "letters testamentary",
+   "type": "requires"
+  },
+  {
+   "source": "inherited car",
+   "target": "heir and estate affidavit",
+   "type": "requires"
+  },
+  {
+   "source": "letters testamentary",
+   "target": "heir and estate affidavit",
+   "type": "alternative_to"
+  },
+  {
+   "source": "letters testamentary",
+   "target": "probate court",
+   "type": "issued_by"
+  },
+  {
+   "source": "heir and estate affidavit",
+   "target": "small estate",
+   "type": "applies_when"
+  },
+  {
+   "source": "heir and estate affidavit",
+   "target": "heir",
+   "type": "issued_by"
+  },
+  {
+   "source": "multiple heirs",
+   "target": "executor",
+   "type": "requires"
+  },
+  {
+   "source": "title",
+   "target": "lienholder",
+   "type": "issued_by"
+  },
+  {
+   "source": "outstanding loan",
+   "target": "lienholder",
+   "type": "requires"
+  }
+ ]
+}

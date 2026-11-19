@@ -1,0 +1,79 @@
+{
+ "key": "buy_temp_plates__2022",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011ChBQ7HMwojAHpaawhAH8H",
+ "usage": {
+  "input": 1000,
+  "output": 338
+ },
+ "concepts": [
+  {
+   "name": "temporary plate",
+   "kind": "document"
+  },
+  {
+   "name": "permanent plate",
+   "kind": "document"
+  },
+  {
+   "name": "registration",
+   "kind": "document"
+  },
+  {
+   "name": "state",
+   "kind": "party"
+  },
+  {
+   "name": "car purchase",
+   "kind": "situation"
+  },
+  {
+   "name": "plates not arrived",
+   "kind": "situation"
+  },
+  {
+   "name": "temporary plate expiration",
+   "kind": "requirement"
+  },
+  {
+   "name": "contact us",
+   "kind": "action"
+  },
+  {
+   "name": "state follow-up",
+   "kind": "service"
+  }
+ ],
+ "relations": [
+  {
+   "source": "car purchase",
+   "target": "temporary plate",
+   "type": "requires"
+  },
+  {
+   "source": "permanent plate",
+   "target": "state",
+   "type": "issued_by"
+  },
+  {
+   "source": "registration",
+   "target": "state",
+   "type": "issued_by"
+  },
+  {
+   "source": "temporary plate expiration",
+   "target": "temporary plate",
+   "type": "applies_when"
+  },
+  {
+   "source": "plates not arrived",
+   "target": "contact us",
+   "type": "requires"
+  },
+  {
+   "source": "state follow-up",
+   "target": "plates not arrived",
+   "type": "applies_when"
+  }
+ ]
+}

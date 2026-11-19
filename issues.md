@@ -134,6 +134,13 @@ Problems we hit and how we fixed them. Each entry: symptom → root cause → fi
 - **Verified:** all 26 reserve questions × 4 methods run; `scripts/test_retrieve.py` (`make test-retrieve`) checks index use with a state set, and that M3/M4 return no stale or wrong-state version.
 - **Lesson:** a query that works on some inputs can fail on others when the optimizer folds bind variables. Test with every kind of input, including the non-null ones.
 
+### I-021 · Tied scores made M4's top 10 change between runs
+- **Symptom:** after adding the semantic layer and rebuilding, M4's results changed on 10 of 26 reserve questions, although M4's edges hadn't changed.
+- **Root cause:** several neighbours inherit exactly the same score (parent × 0.8), and `SORT best.score DESC` leaves their order to the engine. After a rebuild the engine returned tied rows in another order, so different articles fell on either side of the top-10 cut. The check that caught it was a snapshot of M1–M4 on the reserve taken before the change.
+- **Fix:** ties are broken by key (`SORT best.score DESC, key ASC`; the same for BM25).
+- **Verified:** against the snapshot, every question has the same score sequence and the same articles above the tied group at the cut; only the order inside tied groups changed. `make test-retrieve` now runs M4–M6 twice and fails if the lists differ.
+- **Lesson:** a ranking with ties isn't reproducible until the tie-break is explicit. Snapshot outputs before a refactor and compare after.
+
 ---
 
 ## Checked and fine

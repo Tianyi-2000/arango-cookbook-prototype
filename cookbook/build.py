@@ -12,6 +12,9 @@ Nothing in the graph is written by hand. Each edge comes from something already 
   about_lender  article -> lender    the lender's full name in the text
   about_lessor  article -> lessor    the lessor's full name in the text
   cites         ticket -> article    tickets.cites
+Semantic layer (D-030), from Claude's per-article extraction in data/kb/semantic/ (scripts/extract_semantic.py):
+  mentions      article -> concept   a concept the article names (concept key = normalised name)
+  relates       concept -> concept   a relation the article states (requires, issued_by, ...)
 """
 import time
 from collections import defaultdict
@@ -19,8 +22,9 @@ from collections import defaultdict
 from cookbook.db import DB_NAME, get_db, run
 from cookbook.embed import DIM, article_text, embed
 from cookbook.load import load_kb, load_tickets
+from cookbook.semantic import concept_key, load_semantic, normalize
 
-DOCS = ["articles", "tickets", "forms", "states", "lenders", "lessors", "stores"]
+DOCS = ["articles", "tickets", "forms", "states", "lenders", "lessors", "stores", "concepts"]
 EDGES = {  # edge collection: (from collections, to collections)
     "links_to": (["articles"], ["articles"]),
     "supersedes": (["articles"], ["articles"]),
@@ -30,6 +34,8 @@ EDGES = {  # edge collection: (from collections, to collections)
     "about_lender": (["articles"], ["lenders"]),
     "about_lessor": (["articles"], ["lessors"]),
     "cites": (["tickets"], ["articles"]),
+    "mentions": (["articles"], ["concepts"]),
+    "relates": (["concepts"], ["concepts"]),
 }
 GRAPH = "kb_graph"
 VIEW = "kb_view"
@@ -83,6 +89,35 @@ def parse_edges(kb: dict, tickets: list[dict]) -> dict[str, list[dict]]:
     return dict(e)
 
 
+def semantic_layer(arts: list[dict]) -> tuple[list[dict], dict[str, list[dict]]]:
+    """Concepts and their edges from the cached extractions. Names are merged by `normalize` only."""
+    doc_of = {a["_key"]: a["doc_id"] for a in arts}
+    concepts, mentions, relates, skipped = {}, set(), {}, 0
+    for key, body in load_semantic().items():
+        names = {}
+        for c in body["concepts"]:
+            ck = concept_key(c["name"])
+            if not ck:
+                continue
+            names[normalize(c["name"])] = ck
+            row = concepts.setdefault(ck, {"_key": ck, "name": normalize(c["name"]), "kinds": set(), "seen_as": set(), "docs": set()})
+            row["kinds"].add(c["kind"]); row["seen_as"].add(c["name"]); row["docs"].add(doc_of[key])
+            mentions.add((key, ck))
+        for r in body["relations"]:
+            a, b = names.get(normalize(r["source"])), names.get(normalize(r["target"]))
+            if not a or not b or a == b:
+                skipped += 1  # the relation names a concept the article didn't list
+                continue
+            relates.setdefault((a, b, r["type"]), key)
+    docs = [{**{k: v for k, v in c.items() if k not in {"kinds", "seen_as", "docs"}}, "kinds": sorted(c["kinds"]),
+             "seen_as": sorted(c["seen_as"]), "n_articles": len(c["docs"])} for c in concepts.values()]
+    edges = {"mentions": [{"_from": f"articles/{k}", "_to": f"concepts/{c}"} for k, c in sorted(mentions)],
+             "relates": [{"_from": f"concepts/{a}", "_to": f"concepts/{b}", "type": t, "source": src}
+                         for (a, b, t), src in sorted(relates.items())]}
+    edges["_skipped_relations"] = skipped
+    return docs, edges
+
+
 def build(db_name: str = DB_NAME, verbose: bool = True) -> dict:
     """Drop and rebuild database `db_name` from data/. Returns the counts."""
     t0 = time.time()
@@ -96,12 +131,15 @@ def build(db_name: str = DB_NAME, verbose: bool = True) -> dict:
     for a, v in zip(arts, embed([article_text(a) for a in arts])):
         a["embedding"] = v
         a.pop("links", None)  # links become edges; `codes` stays (the exact-match search field)
-    rows = {"articles": arts, "tickets": tickets, **{k: kb[k] for k in ["forms", "states", "lenders", "lessors", "stores"]}}
+    concepts, sem_edges = semantic_layer(kb["articles"])
+    skipped = sem_edges.pop("_skipped_relations")
+    rows = {"articles": arts, "tickets": tickets, "concepts": concepts,
+            **{k: kb[k] for k in ["forms", "states", "lenders", "lessors", "stores"]}}
     for name in DOCS:
         db.create_collection(name).import_bulk(rows[name], on_duplicate="error")
 
     # 2. edges and the named graph
-    edges = parse_edges(kb, tickets)
+    edges = {**parse_edges(kb, tickets), **sem_edges}
     for name in EDGES:
         db.create_collection(name, edge=True).import_bulk(edges.get(name, []), on_duplicate="error")
     db.create_graph(GRAPH, edge_definitions=[
@@ -124,7 +162,8 @@ def build(db_name: str = DB_NAME, verbose: bool = True) -> dict:
         print(f"database {db_name}: built in {time.time() - t0:.1f}s")
         for n in DOCS + list(EDGES):
             print(f"  {n:13} {counts[n]:4}  {'edge' if n in EDGES else 'document'}")
-        print(f"  graph {GRAPH}, view {VIEW}, vector index {VECTOR_INDEX} (nLists={N_LISTS})\n")
+        print(f"  graph {GRAPH}, view {VIEW}, vector index {VECTOR_INDEX} (nLists={N_LISTS})")
+        print(f"  semantic layer: {skipped} extracted relations skipped (they named a concept the article didn't list)\n")
     return counts
 
 

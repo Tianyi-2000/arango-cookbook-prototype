@@ -1,0 +1,93 @@
+{
+ "key": "lessor_buyouts__2026",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011ChBPzZHTnpScTTFU22VxN",
+ "usage": {
+  "input": 1156,
+  "output": 442
+ },
+ "concepts": [
+  {
+   "name": "third-party buyout",
+   "kind": "service"
+  },
+  {
+   "name": "leasing company",
+   "kind": "party"
+  },
+  {
+   "name": "leased car",
+   "kind": "situation"
+  },
+  {
+   "name": "third-party buyout fee",
+   "kind": "requirement"
+  },
+  {
+   "name": "buyout amount",
+   "kind": "requirement"
+  },
+  {
+   "name": "car purchase requirement",
+   "kind": "requirement"
+  },
+  {
+   "name": "customer buyout",
+   "kind": "action"
+  },
+  {
+   "name": "lease return",
+   "kind": "action"
+  },
+  {
+   "name": "lease end",
+   "kind": "situation"
+  },
+  {
+   "name": "selling a leased car",
+   "kind": "action"
+  }
+ ],
+ "relations": [
+  {
+   "source": "third-party buyout",
+   "target": "leased car",
+   "type": "applies_when"
+  },
+  {
+   "source": "third-party buyout fee",
+   "target": "buyout amount",
+   "type": "part_of"
+  },
+  {
+   "source": "third-party buyout fee",
+   "target": "third-party buyout",
+   "type": "applies_when"
+  },
+  {
+   "source": "car purchase requirement",
+   "target": "third-party buyout",
+   "type": "applies_when"
+  },
+  {
+   "source": "customer buyout",
+   "target": "third-party buyout",
+   "type": "alternative_to"
+  },
+  {
+   "source": "lease return",
+   "target": "third-party buyout",
+   "type": "alternative_to"
+  },
+  {
+   "source": "lease return",
+   "target": "lease end",
+   "type": "applies_when"
+  },
+  {
+   "source": "selling a leased car",
+   "target": "customer buyout",
+   "type": "requires"
+  }
+ ]
+}

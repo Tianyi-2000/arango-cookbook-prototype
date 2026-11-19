@@ -1,0 +1,66 @@
+{
+ "key": "buy_title_outside_lender__2022",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011ChBQ617NRiN2XwUpGx7wm",
+ "usage": {
+  "input": 1017,
+  "output": 264
+ },
+ "concepts": [
+  {
+   "name": "outside lender financing",
+   "kind": "situation"
+  },
+  {
+   "name": "title",
+   "kind": "document"
+  },
+  {
+   "name": "lender",
+   "kind": "party"
+  },
+  {
+   "name": "title paperwork",
+   "kind": "document"
+  },
+  {
+   "name": "loan payoff",
+   "kind": "action"
+  },
+  {
+   "name": "lien release",
+   "kind": "action"
+  },
+  {
+   "name": "vehicle purchase",
+   "kind": "situation"
+  }
+ ],
+ "relations": [
+  {
+   "source": "title paperwork",
+   "target": "lender",
+   "type": "applies_when"
+  },
+  {
+   "source": "lien release",
+   "target": "loan payoff",
+   "type": "requires"
+  },
+  {
+   "source": "title",
+   "target": "lender",
+   "type": "issued_by"
+  },
+  {
+   "source": "title",
+   "target": "lien release",
+   "type": "requires"
+  },
+  {
+   "source": "outside lender financing",
+   "target": "vehicle purchase",
+   "type": "part_of"
+  }
+ ]
+}

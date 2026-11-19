@@ -1,0 +1,100 @@
+{
+ "key": "offer_scams__2026",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011ChBPon5LxzepqVq7g58R9",
+ "usage": {
+  "input": 1086,
+  "output": 437
+ },
+ "concepts": [
+  {
+   "name": "offer scam",
+   "kind": "situation"
+  },
+  {
+   "name": "offer",
+   "kind": "service"
+  },
+  {
+   "name": "upfront payment request",
+   "kind": "situation"
+  },
+  {
+   "name": "report scam",
+   "kind": "action"
+  },
+  {
+   "name": "help center",
+   "kind": "service"
+  },
+  {
+   "name": "lender",
+   "kind": "party"
+  },
+  {
+   "name": "negative equity",
+   "kind": "situation"
+  },
+  {
+   "name": "negative equity payment",
+   "kind": "action"
+  },
+  {
+   "name": "in-person payment at appointment",
+   "kind": "requirement"
+  },
+  {
+   "name": "appointment",
+   "kind": "action"
+  },
+  {
+   "name": "bank login",
+   "kind": "document"
+  },
+  {
+   "name": "sale proceeds",
+   "kind": "document"
+  },
+  {
+   "name": "official website or app only",
+   "kind": "requirement"
+  }
+ ],
+ "relations": [
+  {
+   "source": "offer scam",
+   "target": "report scam",
+   "type": "requires"
+  },
+  {
+   "source": "report scam",
+   "target": "help center",
+   "type": "part_of"
+  },
+  {
+   "source": "upfront payment request",
+   "target": "offer scam",
+   "type": "part_of"
+  },
+  {
+   "source": "official website or app only",
+   "target": "offer",
+   "type": "applies_when"
+  },
+  {
+   "source": "negative equity",
+   "target": "negative equity payment",
+   "type": "requires"
+  },
+  {
+   "source": "in-person payment at appointment",
+   "target": "negative equity payment",
+   "type": "applies_when"
+  },
+  {
+   "source": "negative equity payment",
+   "target": "appointment",
+   "type": "part_of"
+  }
+ ]
+}

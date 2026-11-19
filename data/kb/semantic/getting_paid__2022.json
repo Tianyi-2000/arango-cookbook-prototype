@@ -1,0 +1,117 @@
+{
+ "key": "getting_paid__2022",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011ChBPr6xTWGbRE3kvqmqZV",
+ "usage": {
+  "input": 1051,
+  "output": 566
+ },
+ "concepts": [
+  {
+   "name": "payment to seller",
+   "kind": "service"
+  },
+  {
+   "name": "bank draft",
+   "kind": "document"
+  },
+  {
+   "name": "direct deposit",
+   "kind": "service"
+  },
+  {
+   "name": "mailed check",
+   "kind": "document"
+  },
+  {
+   "name": "signed paperwork",
+   "kind": "requirement"
+  },
+  {
+   "name": "car with a loan",
+   "kind": "situation"
+  },
+  {
+   "name": "loan payoff",
+   "kind": "action"
+  },
+  {
+   "name": "lender",
+   "kind": "party"
+  },
+  {
+   "name": "remaining balance payment",
+   "kind": "service"
+  },
+  {
+   "name": "keep making loan payments",
+   "kind": "action"
+  },
+  {
+   "name": "payoff confirmation",
+   "kind": "document"
+  }
+ ],
+ "relations": [
+  {
+   "source": "payment to seller",
+   "target": "signed paperwork",
+   "type": "requires"
+  },
+  {
+   "source": "bank draft",
+   "target": "direct deposit",
+   "type": "alternative_to"
+  },
+  {
+   "source": "direct deposit",
+   "target": "mailed check",
+   "type": "alternative_to"
+  },
+  {
+   "source": "bank draft",
+   "target": "mailed check",
+   "type": "alternative_to"
+  },
+  {
+   "source": "bank draft",
+   "target": "payment to seller",
+   "type": "part_of"
+  },
+  {
+   "source": "direct deposit",
+   "target": "payment to seller",
+   "type": "part_of"
+  },
+  {
+   "source": "mailed check",
+   "target": "payment to seller",
+   "type": "part_of"
+  },
+  {
+   "source": "loan payoff",
+   "target": "car with a loan",
+   "type": "applies_when"
+  },
+  {
+   "source": "remaining balance payment",
+   "target": "car with a loan",
+   "type": "applies_when"
+  },
+  {
+   "source": "keep making loan payments",
+   "target": "car with a loan",
+   "type": "applies_when"
+  },
+  {
+   "source": "payoff confirmation",
+   "target": "lender",
+   "type": "issued_by"
+  },
+  {
+   "source": "keep making loan payments",
+   "target": "payoff confirmation",
+   "type": "requires"
+  }
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "key": "license_plates__2026",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011ChBQ2CoDakiTuF5qQecUk",
+ "usage": {
+  "input": 1086,
+  "output": 435
+ },
+ "concepts": [
+  {
+   "name": "license plate",
+   "kind": "document"
+  },
+  {
+   "name": "issuing state rule",
+   "kind": "requirement"
+  },
+  {
+   "name": "remove and keep plates",
+   "kind": "action"
+  },
+  {
+   "name": "leave plates on car",
+   "kind": "action"
+  },
+  {
+   "name": "return plates",
+   "kind": "action"
+  },
+  {
+   "name": "motor vehicle agency",
+   "kind": "party"
+  },
+  {
+   "name": "plate return receipt",
+   "kind": "document"
+  },
+  {
+   "name": "car registered in another state",
+   "kind": "situation"
+  },
+  {
+   "name": "moved to another state",
+   "kind": "situation"
+  },
+  {
+   "name": "selling a car",
+   "kind": "situation"
+  }
+ ],
+ "relations": [
+  {
+   "source": "issuing state rule",
+   "target": "license plate",
+   "type": "applies_when"
+  },
+  {
+   "source": "remove and keep plates",
+   "target": "issuing state rule",
+   "type": "part_of"
+  },
+  {
+   "source": "leave plates on car",
+   "target": "issuing state rule",
+   "type": "part_of"
+  },
+  {
+   "source": "return plates",
+   "target": "issuing state rule",
+   "type": "part_of"
+  },
+  {
+   "source": "return plates",
+   "target": "motor vehicle agency",
+   "type": "requires"
+  },
+  {
+   "source": "return plates",
+   "target": "plate return receipt",
+   "type": "requires"
+  },
+  {
+   "source": "car registered in another state",
+   "target": "moved to another state",
+   "type": "applies_when"
+  },
+  {
+   "source": "issuing state rule",
+   "target": "selling a car",
+   "type": "applies_when"
+  }
+ ]
+}

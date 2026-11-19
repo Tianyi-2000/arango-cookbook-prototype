@@ -1,0 +1,619 @@
+{
+ "cap": 50.0,
+ "note": "API spend from 2026-11-18 on (D-029); tickets before that cost $3.10 (D-021)",
+ "total": 0.8477,
+ "calls": [
+  {
+   "at": "2026-11-18T17:08:10",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1112,
+   "output": 510,
+   "cost": 0.014648,
+   "note": "req_011ChBPi9M7C5CdJEw78f6AN"
+  },
+  {
+   "at": "2026-11-18T17:08:33",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1110,
+   "output": 554,
+   "cost": 0.01552,
+   "note": "req_011ChBPjrpETKmoUoHhzhnbT"
+  },
+  {
+   "at": "2026-11-18T17:08:38",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1067,
+   "output": 487,
+   "cost": 0.014008,
+   "note": "req_011ChBPkEroHEp8gPQRLpvSA"
+  },
+  {
+   "at": "2026-11-18T17:08:42",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1062,
+   "output": 393,
+   "cost": 0.012108,
+   "note": "req_011ChBPkb6igoMu9zb87FphU"
+  },
+  {
+   "at": "2026-11-18T17:08:49",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1089,
+   "output": 385,
+   "cost": 0.012056,
+   "note": "req_011ChBPkstkx6NbwfTaL1zYe"
+  },
+  {
+   "at": "2026-11-18T17:08:53",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1084,
+   "output": 468,
+   "cost": 0.013696,
+   "note": "req_011ChBPmP6BDH3ZrHAg2TdDF"
+  },
+  {
+   "at": "2026-11-18T17:08:58",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1116,
+   "output": 505,
+   "cost": 0.014564,
+   "note": "req_011ChBPmhPmBi5CrKqrRQhcX"
+  },
+  {
+   "at": "2026-11-18T17:09:02",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1067,
+   "output": 433,
+   "cost": 0.012928,
+   "note": "req_011ChBPn4Edq1kFgjQHbfYgu"
+  },
+  {
+   "at": "2026-11-18T17:09:06",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1146,
+   "output": 579,
+   "cost": 0.016164,
+   "note": "req_011ChBPnL1fcrgnAYUHQcB5c"
+  },
+  {
+   "at": "2026-11-18T17:09:11",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1049,
+   "output": 463,
+   "cost": 0.013456,
+   "note": "req_011ChBPngbv1caozWx9LrzZR"
+  },
+  {
+   "at": "2026-11-18T17:09:14",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1034,
+   "output": 363,
+   "cost": 0.011396,
+   "note": "req_011ChBPo17eMS6JYfr92PPiU"
+  },
+  {
+   "at": "2026-11-18T17:09:19",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1081,
+   "output": 471,
+   "cost": 0.013744,
+   "note": "req_011ChBPoG1b938UFS8ewBCXj"
+  },
+  {
+   "at": "2026-11-18T17:09:21",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1002,
+   "output": 183,
+   "cost": 0.007668,
+   "note": "req_011ChBPoahVKiJrFGXACVVvS"
+  },
+  {
+   "at": "2026-11-18T17:09:26",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1086,
+   "output": 437,
+   "cost": 0.013084,
+   "note": "req_011ChBPon5LxzepqVq7g58R9"
+  },
+  {
+   "at": "2026-11-18T17:09:30",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1084,
+   "output": 420,
+   "cost": 0.012736,
+   "note": "req_011ChBPp8FYX2BptAZKUo7yA"
+  },
+  {
+   "at": "2026-11-18T17:09:35",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1048,
+   "output": 475,
+   "cost": 0.013692,
+   "note": "req_011ChBPpSc6Fe5UiaLDXxZZG"
+  },
+  {
+   "at": "2026-11-18T17:09:40",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1137,
+   "output": 489,
+   "cost": 0.014328,
+   "note": "req_011ChBPpmmGo5UTbr1yPrmVu"
+  },
+  {
+   "at": "2026-11-18T17:09:44",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1116,
+   "output": 474,
+   "cost": 0.013944,
+   "note": "req_011ChBPq8hc5X73UV1fixXHq"
+  },
+  {
+   "at": "2026-11-18T17:09:48",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1029,
+   "output": 402,
+   "cost": 0.012156,
+   "note": "req_011ChBPqTwzSdKT3vwbcZQQv"
+  },
+  {
+   "at": "2026-11-18T17:09:53",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1064,
+   "output": 462,
+   "cost": 0.013496,
+   "note": "req_011ChBPqmSCyqgwTaJpviTCY"
+  },
+  {
+   "at": "2026-11-18T17:09:57",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1051,
+   "output": 566,
+   "cost": 0.015524,
+   "note": "req_011ChBPr6xTWGbRE3kvqmqZV"
+  },
+  {
+   "at": "2026-11-18T17:10:03",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1102,
+   "output": 573,
+   "cost": 0.015868,
+   "note": "req_011ChBPrS3Rairh3zPHLxhdL"
+  },
+  {
+   "at": "2026-11-18T17:10:13",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1031,
+   "output": 347,
+   "cost": 0.011064,
+   "note": "req_011ChBPrqdzvB9VRoSUmxyNM"
+  },
+  {
+   "at": "2026-11-18T17:10:16",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1026,
+   "output": 293,
+   "cost": 0.009964,
+   "note": "req_011ChBPsc1irjgpZSe5mGCn1"
+  },
+  {
+   "at": "2026-11-18T17:10:21",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1070,
+   "output": 485,
+   "cost": 0.01398,
+   "note": "req_011ChBPsqfWapQb3Ns5HXRGS"
+  },
+  {
+   "at": "2026-11-18T17:10:24",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1077,
+   "output": 357,
+   "cost": 0.011448,
+   "note": "req_011ChBPtAowjEWKG2Yhzj2eP"
+  },
+  {
+   "at": "2026-11-18T17:10:28",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1024,
+   "output": 321,
+   "cost": 0.010516,
+   "note": "req_011ChBPtRWjE6vTgYo331o45"
+  },
+  {
+   "at": "2026-11-18T17:10:32",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1063,
+   "output": 426,
+   "cost": 0.012772,
+   "note": "req_011ChBPtgdKNLb6Aoza9fTvS"
+  },
+  {
+   "at": "2026-11-18T17:10:36",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1037,
+   "output": 374,
+   "cost": 0.011628,
+   "note": "req_011ChBPtzEj5S5L5St8bCRcJ"
+  },
+  {
+   "at": "2026-11-18T17:10:46",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1024,
+   "output": 324,
+   "cost": 0.010576,
+   "note": "req_011ChBPuGcDhrVL1yf6opsEY"
+  },
+  {
+   "at": "2026-11-18T17:10:49",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1007,
+   "output": 299,
+   "cost": 0.010008,
+   "note": "req_011ChBPuzkFufqszAV6gVRqD"
+  },
+  {
+   "at": "2026-11-18T17:10:52",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1012,
+   "output": 319,
+   "cost": 0.010428,
+   "note": "req_011ChBPvEjP6nQwrTLibuQG3"
+  },
+  {
+   "at": "2026-11-18T17:10:56",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1081,
+   "output": 476,
+   "cost": 0.013844,
+   "note": "req_011ChBPvVpFMW87F3QiBgB3u"
+  },
+  {
+   "at": "2026-11-18T17:11:01",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1070,
+   "output": 543,
+   "cost": 0.01514,
+   "note": "req_011ChBPvmUpUK1Xknb84qyZN"
+  },
+  {
+   "at": "2026-11-18T17:11:05",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1044,
+   "output": 378,
+   "cost": 0.011736,
+   "note": "req_011ChBPw8SPmE79RP7ubqxLt"
+  },
+  {
+   "at": "2026-11-18T17:11:10",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1044,
+   "output": 527,
+   "cost": 0.014716,
+   "note": "req_011ChBPwRAU4goAFpuM3zMFX"
+  },
+  {
+   "at": "2026-11-18T17:11:15",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1190,
+   "output": 588,
+   "cost": 0.01652,
+   "note": "req_011ChBPwmkinzcBSEf62rrXj"
+  },
+  {
+   "at": "2026-11-18T17:11:19",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1043,
+   "output": 441,
+   "cost": 0.012992,
+   "note": "req_011ChBPx9b8Y9pPxVj35nDyL"
+  },
+  {
+   "at": "2026-11-18T17:11:24",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1121,
+   "output": 544,
+   "cost": 0.015364,
+   "note": "req_011ChBPxTfaFSeDUdYeKwsyS"
+  },
+  {
+   "at": "2026-11-18T17:11:28",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1037,
+   "output": 414,
+   "cost": 0.012428,
+   "note": "req_011ChBPxpYRVxs4SxwFMJejL"
+  },
+  {
+   "at": "2026-11-18T17:11:32",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1033,
+   "output": 376,
+   "cost": 0.011652,
+   "note": "req_011ChBPy7RBMYi8cRKLFdz9R"
+  },
+  {
+   "at": "2026-11-18T17:11:36",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1064,
+   "output": 444,
+   "cost": 0.013136,
+   "note": "req_011ChBPyPqAG6u9Qp5SJPto6"
+  },
+  {
+   "at": "2026-11-18T17:11:40",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1030,
+   "output": 423,
+   "cost": 0.01258,
+   "note": "req_011ChBPyhbVU5bTW4X8jjp2q"
+  },
+  {
+   "at": "2026-11-18T17:11:43",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1104,
+   "output": 371,
+   "cost": 0.011836,
+   "note": "req_011ChBPyyWiK1hsFzqWFC6T2"
+  },
+  {
+   "at": "2026-11-18T17:11:47",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1100,
+   "output": 438,
+   "cost": 0.01316,
+   "note": "req_011ChBPzENAjLUNRMpVvAi5Z"
+  },
+  {
+   "at": "2026-11-18T17:11:52",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1156,
+   "output": 442,
+   "cost": 0.013464,
+   "note": "req_011ChBPzZHTnpScTTFU22VxN"
+  },
+  {
+   "at": "2026-11-18T17:11:59",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1107,
+   "output": 318,
+   "cost": 0.010788,
+   "note": "req_011ChBPzt16QxZLZyVhZwYhg"
+  },
+  {
+   "at": "2026-11-18T17:12:04",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1037,
+   "output": 456,
+   "cost": 0.013268,
+   "note": "req_011ChBQ1PZbDw5vg2WfbWKdV"
+  },
+  {
+   "at": "2026-11-18T17:12:07",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1024,
+   "output": 281,
+   "cost": 0.009716,
+   "note": "req_011ChBQ1m795eAVLiuZeuiKN"
+  },
+  {
+   "at": "2026-11-18T17:12:10",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 978,
+   "output": 234,
+   "cost": 0.008592,
+   "note": "req_011ChBQ1zczdcXBKf1XbuVyt"
+  },
+  {
+   "at": "2026-11-18T17:12:15",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1086,
+   "output": 435,
+   "cost": 0.013044,
+   "note": "req_011ChBQ2CoDakiTuF5qQecUk"
+  },
+  {
+   "at": "2026-11-18T17:12:19",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1042,
+   "output": 469,
+   "cost": 0.013548,
+   "note": "req_011ChBQ2Zgq5xFmbiqYiq3VU"
+  },
+  {
+   "at": "2026-11-18T17:12:24",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1026,
+   "output": 454,
+   "cost": 0.013184,
+   "note": "req_011ChBQ2u2Ay5uJF7U3VMnYd"
+  },
+  {
+   "at": "2026-11-18T17:12:27",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1051,
+   "output": 407,
+   "cost": 0.012344,
+   "note": "req_011ChBQ3Dn2sPj9iwiSVEhEe"
+  },
+  {
+   "at": "2026-11-18T17:12:32",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1097,
+   "output": 435,
+   "cost": 0.013088,
+   "note": "req_011ChBQ3X9JdV2x4QyVuM8j7"
+  },
+  {
+   "at": "2026-11-18T17:12:35",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 995,
+   "output": 227,
+   "cost": 0.00852,
+   "note": "req_011ChBQ3qaKqsdDUxjFm81sq"
+  },
+  {
+   "at": "2026-11-18T17:12:39",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1038,
+   "output": 477,
+   "cost": 0.013692,
+   "note": "req_011ChBQ44D66td1qQp14dyWr"
+  },
+  {
+   "at": "2026-11-18T17:12:43",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 969,
+   "output": 250,
+   "cost": 0.008876,
+   "note": "req_011ChBQ4NA5xNA6Y31RZJ5Tw"
+  },
+  {
+   "at": "2026-11-18T17:12:47",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1029,
+   "output": 335,
+   "cost": 0.010816,
+   "note": "req_011ChBQ4fQvDcMLtceKSEWsL"
+  },
+  {
+   "at": "2026-11-18T17:12:51",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1039,
+   "output": 471,
+   "cost": 0.013576,
+   "note": "req_011ChBQ4vMM3jx5J1DoHWZiM"
+  },
+  {
+   "at": "2026-11-18T17:12:55",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 994,
+   "output": 372,
+   "cost": 0.011416,
+   "note": "req_011ChBQ5FzHXRAPJu3kCqwww"
+  },
+  {
+   "at": "2026-11-18T17:13:01",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1015,
+   "output": 396,
+   "cost": 0.01198,
+   "note": "req_011ChBQ5Xd97XGFCqDDPyytS"
+  },
+  {
+   "at": "2026-11-18T17:13:04",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1017,
+   "output": 264,
+   "cost": 0.009348,
+   "note": "req_011ChBQ617NRiN2XwUpGx7wm"
+  },
+  {
+   "at": "2026-11-18T17:13:08",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 986,
+   "output": 299,
+   "cost": 0.009924,
+   "note": "req_011ChBQ6EaVDfFZw3ZxZ9ADu"
+  },
+  {
+   "at": "2026-11-18T17:13:11",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1017,
+   "output": 316,
+   "cost": 0.010388,
+   "note": "req_011ChBQ6Uwgdq9SCx4v2ixrp"
+  },
+  {
+   "at": "2026-11-18T17:13:15",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1057,
+   "output": 335,
+   "cost": 0.010928,
+   "note": "req_011ChBQ6jLcnd5qsT4EER3sg"
+  },
+  {
+   "at": "2026-11-18T17:13:19",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1087,
+   "output": 391,
+   "cost": 0.012168,
+   "note": "req_011ChBQ6zm4yexX71p4k5vN5"
+  },
+  {
+   "at": "2026-11-18T17:13:22",
+   "script": "extract_semantic",
+   "model": "claude-opus-5-5",
+   "input": 1000,
+   "output": 338,
+   "cost": 0.01076,
+   "note": "req_011ChBQ7HMwojAHpaawhAH8H"
+  }
+ ]
+}

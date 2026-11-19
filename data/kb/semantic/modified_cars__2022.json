@@ -1,0 +1,102 @@
+{
+ "key": "modified_cars__2022",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011ChBQ4vMM3jx5J1DoHWZiM",
+ "usage": {
+  "input": 1039,
+  "output": 471
+ },
+ "concepts": [
+  {
+   "name": "aftermarket modification",
+   "kind": "situation"
+  },
+  {
+   "name": "lift kit",
+   "kind": "situation"
+  },
+  {
+   "name": "engine tuning",
+   "kind": "situation"
+  },
+  {
+   "name": "loud exhaust",
+   "kind": "situation"
+  },
+  {
+   "name": "custom paint",
+   "kind": "situation"
+  },
+  {
+   "name": "custom stereo",
+   "kind": "situation"
+  },
+  {
+   "name": "offer",
+   "kind": "document"
+  },
+  {
+   "name": "factory condition",
+   "kind": "requirement"
+  },
+  {
+   "name": "remove modification",
+   "kind": "action"
+  },
+  {
+   "name": "appraisal",
+   "kind": "service"
+  },
+  {
+   "name": "specialist",
+   "kind": "party"
+  }
+ ],
+ "relations": [
+  {
+   "source": "lift kit",
+   "target": "aftermarket modification",
+   "type": "part_of"
+  },
+  {
+   "source": "engine tuning",
+   "target": "aftermarket modification",
+   "type": "part_of"
+  },
+  {
+   "source": "loud exhaust",
+   "target": "aftermarket modification",
+   "type": "part_of"
+  },
+  {
+   "source": "custom paint",
+   "target": "aftermarket modification",
+   "type": "part_of"
+  },
+  {
+   "source": "custom stereo",
+   "target": "aftermarket modification",
+   "type": "part_of"
+  },
+  {
+   "source": "factory condition",
+   "target": "aftermarket modification",
+   "type": "applies_when"
+  },
+  {
+   "source": "aftermarket modification",
+   "target": "remove modification",
+   "type": "requires"
+  },
+  {
+   "source": "offer",
+   "target": "specialist",
+   "type": "issued_by"
+  },
+  {
+   "source": "offer",
+   "target": "appraisal",
+   "type": "part_of"
+  }
+ ]
+}

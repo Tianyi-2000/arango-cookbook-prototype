@@ -1,0 +1,101 @@
+{
+ "key": "inherited_car__2022",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011ChBPx9b8Y9pPxVj35nDyL",
+ "usage": {
+  "input": 1043,
+  "output": 441
+ },
+ "concepts": [
+  {
+   "name": "inherited car",
+   "kind": "situation"
+  },
+  {
+   "name": "death certificate",
+   "kind": "document"
+  },
+  {
+   "name": "letters testamentary",
+   "kind": "document"
+  },
+  {
+   "name": "letters of administration",
+   "kind": "document"
+  },
+  {
+   "name": "court",
+   "kind": "party"
+  },
+  {
+   "name": "executor",
+   "kind": "party"
+  },
+  {
+   "name": "administrator",
+   "kind": "party"
+  },
+  {
+   "name": "multiple heirs",
+   "kind": "situation"
+  },
+  {
+   "name": "executor signature",
+   "kind": "requirement"
+  },
+  {
+   "name": "power of attorney",
+   "kind": "document"
+  },
+  {
+   "name": "outstanding loan",
+   "kind": "situation"
+  },
+  {
+   "name": "sell car",
+   "kind": "action"
+  }
+ ],
+ "relations": [
+  {
+   "source": "inherited car",
+   "target": "death certificate",
+   "type": "requires"
+  },
+  {
+   "source": "inherited car",
+   "target": "letters testamentary",
+   "type": "requires"
+  },
+  {
+   "source": "letters testamentary",
+   "target": "letters of administration",
+   "type": "alternative_to"
+  },
+  {
+   "source": "letters testamentary",
+   "target": "court",
+   "type": "issued_by"
+  },
+  {
+   "source": "letters of administration",
+   "target": "court",
+   "type": "issued_by"
+  },
+  {
+   "source": "executor",
+   "target": "administrator",
+   "type": "alternative_to"
+  },
+  {
+   "source": "executor signature",
+   "target": "multiple heirs",
+   "type": "applies_when"
+  },
+  {
+   "source": "sell car",
+   "target": "inherited car",
+   "type": "applies_when"
+  }
+ ]
+}

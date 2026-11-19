@@ -1,0 +1,98 @@
+{
+ "key": "lease_vs_turn_in__2022",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011ChBQ1PZbDw5vg2WfbWKdV",
+ "usage": {
+  "input": 1037,
+  "output": 456
+ },
+ "concepts": [
+  {
+   "name": "lease end",
+   "kind": "situation"
+  },
+  {
+   "name": "lease turn-in",
+   "kind": "action"
+  },
+  {
+   "name": "selling the car",
+   "kind": "action"
+  },
+  {
+   "name": "leasing company",
+   "kind": "party"
+  },
+  {
+   "name": "excess mileage charge",
+   "kind": "requirement"
+  },
+  {
+   "name": "wear and tear charge",
+   "kind": "requirement"
+  },
+  {
+   "name": "lease buyout",
+   "kind": "situation"
+  },
+  {
+   "name": "buyout quote",
+   "kind": "document"
+  },
+  {
+   "name": "offer",
+   "kind": "service"
+  },
+  {
+   "name": "turn-in date",
+   "kind": "requirement"
+  }
+ ],
+ "relations": [
+  {
+   "source": "lease turn-in",
+   "target": "selling the car",
+   "type": "alternative_to"
+  },
+  {
+   "source": "lease turn-in",
+   "target": "lease end",
+   "type": "applies_when"
+  },
+  {
+   "source": "selling the car",
+   "target": "lease end",
+   "type": "applies_when"
+  },
+  {
+   "source": "excess mileage charge",
+   "target": "lease turn-in",
+   "type": "applies_when"
+  },
+  {
+   "source": "wear and tear charge",
+   "target": "lease turn-in",
+   "type": "applies_when"
+  },
+  {
+   "source": "buyout quote",
+   "target": "leasing company",
+   "type": "issued_by"
+  },
+  {
+   "source": "selling the car",
+   "target": "offer",
+   "type": "requires"
+  },
+  {
+   "source": "selling the car",
+   "target": "buyout quote",
+   "type": "requires"
+  },
+  {
+   "source": "buyout quote",
+   "target": "lease buyout",
+   "type": "part_of"
+  }
+ ]
+}

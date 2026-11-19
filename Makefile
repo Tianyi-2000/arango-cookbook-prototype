@@ -1,6 +1,6 @@
 PY := .venv/bin/python
 
-.PHONY: up down venv verify check test-checks review tickets-plan tickets-one tickets load test-retrieve freeze eval eval-reserve fresh answers answers-run answers-report
+.PHONY: up down venv verify check test-checks review tickets-plan tickets-one tickets load test-retrieve freeze eval eval-reserve fresh answers answers-run answers-report extract check-semantic
 up:      ## start ArangoDB on localhost:8535
 	docker compose up -d
 down:
@@ -39,3 +39,7 @@ answers-run:  ## answer eval with Claude (M2 vs M4, judged); stops before the $6
 	$(PY) scripts/run_answers.py --run
 answers-report:  ## answer eval tables from the cached answers -> data/eval/scores/answers.md
 	$(PY) scripts/run_answers.py --report
+extract:  ## dry run of the semantic extraction (Claude); --one / --run via scripts/extract_semantic.py
+	$(PY) scripts/extract_semantic.py
+check-semantic:  ## score extracted concepts against the hand-written list for 10 versions
+	$(PY) scripts/check_semantic.py

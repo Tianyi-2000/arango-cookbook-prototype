@@ -1,0 +1,125 @@
+{
+ "key": "how_selling_works__2026",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011ChBPjrpETKmoUoHhzhnbT",
+ "usage": {
+  "input": 1110,
+  "output": 554
+ },
+ "concepts": [
+  {
+   "name": "selling your car",
+   "kind": "situation"
+  },
+  {
+   "name": "instant offer",
+   "kind": "service"
+  },
+  {
+   "name": "vin",
+   "kind": "document"
+  },
+  {
+   "name": "license plate",
+   "kind": "document"
+  },
+  {
+   "name": "walk-in quote",
+   "kind": "service"
+  },
+  {
+   "name": "appraisal appointment",
+   "kind": "action"
+  },
+  {
+   "name": "home pickup",
+   "kind": "service"
+  },
+  {
+   "name": "inspection",
+   "kind": "action"
+  },
+  {
+   "name": "specialist",
+   "kind": "party"
+  },
+  {
+   "name": "paperwork",
+   "kind": "document"
+  },
+  {
+   "name": "payment",
+   "kind": "action"
+  },
+  {
+   "name": "appointment checklist",
+   "kind": "document"
+  },
+  {
+   "name": "offer expiration",
+   "kind": "requirement"
+  }
+ ],
+ "relations": [
+  {
+   "source": "selling your car",
+   "target": "instant offer",
+   "type": "requires"
+  },
+  {
+   "source": "instant offer",
+   "target": "vin",
+   "type": "requires"
+  },
+  {
+   "source": "instant offer",
+   "target": "license plate",
+   "type": "requires"
+  },
+  {
+   "source": "vin",
+   "target": "license plate",
+   "type": "alternative_to"
+  },
+  {
+   "source": "selling your car",
+   "target": "appraisal appointment",
+   "type": "requires"
+  },
+  {
+   "source": "home pickup",
+   "target": "appraisal appointment",
+   "type": "part_of"
+  },
+  {
+   "source": "inspection",
+   "target": "appraisal appointment",
+   "type": "part_of"
+  },
+  {
+   "source": "inspection",
+   "target": "specialist",
+   "type": "requires"
+  },
+  {
+   "source": "selling your car",
+   "target": "paperwork",
+   "type": "requires"
+  },
+  {
+   "source": "payment",
+   "target": "selling your car",
+   "type": "part_of"
+  },
+  {
+   "source": "appraisal appointment",
+   "target": "appointment checklist",
+   "type": "requires"
+  },
+  {
+   "source": "offer expiration",
+   "target": "instant offer",
+   "type": "applies_when"
+  }
+ ]
+}

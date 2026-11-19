@@ -1,0 +1,133 @@
+{
+ "key": "co_owners__2026",
+ "model": "claude-opus-5-5",
+ "request_id": "req_011ChBPwmkinzcBSEf62rrXj",
+ "usage": {
+  "input": 1190,
+  "output": 588
+ },
+ "concepts": [
+  {
+   "name": "multiple owners",
+   "kind": "situation"
+  },
+  {
+   "name": "owner signature",
+   "kind": "requirement"
+  },
+  {
+   "name": "sale document",
+   "kind": "document"
+  },
+  {
+   "name": "appointment",
+   "kind": "action"
+  },
+  {
+   "name": "photo id",
+   "kind": "document"
+  },
+  {
+   "name": "power of attorney",
+   "kind": "document"
+  },
+  {
+   "name": "electronic signature",
+   "kind": "action"
+  },
+  {
+   "name": "notarization",
+   "kind": "requirement"
+  },
+  {
+   "name": "notary",
+   "kind": "party"
+  },
+  {
+   "name": "military deployment",
+   "kind": "situation"
+  },
+  {
+   "name": "military power of attorney",
+   "kind": "document"
+  },
+  {
+   "name": "inherited car",
+   "kind": "situation"
+  },
+  {
+   "name": "death of signer",
+   "kind": "situation"
+  },
+  {
+   "name": "title",
+   "kind": "document"
+  },
+  {
+   "name": "owner",
+   "kind": "party"
+  }
+ ],
+ "relations": [
+  {
+   "source": "multiple owners",
+   "target": "owner signature",
+   "type": "requires"
+  },
+  {
+   "source": "owner signature",
+   "target": "sale document",
+   "type": "part_of"
+  },
+  {
+   "source": "appointment",
+   "target": "photo id",
+   "type": "requires"
+  },
+  {
+   "source": "power of attorney",
+   "target": "appointment",
+   "type": "alternative_to"
+  },
+  {
+   "source": "power of attorney",
+   "target": "owner",
+   "type": "issued_by"
+  },
+  {
+   "source": "power of attorney",
+   "target": "electronic signature",
+   "type": "requires"
+  },
+  {
+   "source": "notarization",
+   "target": "power of attorney",
+   "type": "applies_when"
+  },
+  {
+   "source": "notarization",
+   "target": "notary",
+   "type": "requires"
+  },
+  {
+   "source": "military power of attorney",
+   "target": "power of attorney",
+   "type": "alternative_to"
+  },
+  {
+   "source": "military power of attorney",
+   "target": "military deployment",
+   "type": "applies_when"
+  },
+  {
+   "source": "death of signer",
+   "target": "inherited car",
+   "type": "part_of"
+  },
+  {
+   "source": "owner signature",
+   "target": "title",
+   "type": "applies_when"
+  }
+ ]
+}
