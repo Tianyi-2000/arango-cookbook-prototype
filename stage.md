@@ -2,14 +2,14 @@
 
 The high-level plan: what each stage is for, when it counts as done, and what it must not touch. Work-by-work detail goes in [progress.md](progress.md); the design itself is in [architecture.md](architecture.md).
 
-**Current design:** architecture v3.0, checkpoint **v3.5** (2026-11-18) · **Current stage:** 3 (gold frozen 2026-11-18; semantic layer and eval runs today)
+**Current design:** architecture v3.0, checkpoint **v3.5** (2026-11-18) · **Current stage:** 4 done except Tianyi's spot-check; next: Tianyi's own words in README/notebooks (stage 6), and the v4.0 question in architecture.md
 
 | # | Stage | Status |
 |---|---|---|
 | 1 | Spec, KB outline, environment check | done 2026-11-12 |
 | 2 | Knowledge-base data, data checks, gold set | done 2026-11-18 (gold frozen) |
 | 3 | Retrieval in ArangoDB: load, M1–M6, retrieval eval, freshness demo | done 2026-11-18 (README is a draft) |
-| 4 | Semantic layer; grounded answers and answer eval (Opus 5.5 answers, Fable 5.2 judge, $50 ledger) | in progress |
+| 4 | Semantic layer; grounded answers and answer eval (Opus 5.5 answers, Fable 5.2 judge, $50 ledger) | done 2026-11-18 except the human spot-check |
 | 5 | Extras: hybrid RRF, entering the graph from names, geo, text-to-AQL, clarifying questions | planned, not scheduled |
 | 6 | Publish: five numbered chapter notebooks, README in Tianyi's words, fresh-clone test | not started |
 
@@ -56,15 +56,15 @@ Rule for every stage: when it ends, run the checks in [eval.md](eval.md). If a s
 **Done when:**
 - [x] semantic layer: 68 extractions cached, `make check-semantic` (recall 0.88), loaded into `kb_graph`; M5/M6 (D-030)
 - [x] `cookbook/answer.py`, `scripts/run_answers.py`, spend ledger with a $50 cap (D-029)
-- [ ] `make answers-run`: M1–M6 × 30 × 3 runs, Fable 5.2 judge; `make answers-report`
-- [ ] a human spot-check of about 5 judgements before the numbers go in the README
+- [x] `make answers-run`: M1–M6 × 30 × 3 runs, Fable 5.2 judge; `make answers-report` (2026-11-18, $7.01 in total)
+- [ ] a human spot-check of 5 judgements (`data/eval/scores/judge_spotcheck.md`; Claude agrees 5/5, waiting for Tianyi)
 
 ## Stage 5: extras (planned, not scheduled)
 hybrid BM25 + vector with RRF; entering the graph from names in the question (lenders, lessors, form codes); clarifying follow-ups for ambiguous questions (D-022); geo (`GEO_DISTANCE` + graph); `SHORTEST_PATH` explanations; text-to-AQL; community versions of ArangoDB's AI-suite ideas; comparison with other GraphRAG approaches.
 
 ## Stage 6: publish
 **Done when:**
-- [ ] five numbered chapter notebooks (01 setup · 02 data model · 03 freshness · 04 retrieval · 05 evaluation) that run with `make nb`, outputs saved (written 2026-11-18; 01 runs)
+- [x] five numbered chapter notebooks (01 setup · 02 data model · 03 freshness · 04 retrieval · 05 evaluation) that run with `make nb`, outputs saved (all five run, 2026-11-18)
 - [ ] Tianyi has rewritten the README, SPEC and notebook prose in his own words
 - [ ] a fresh clone in a new folder works by copy-pasting the README commands
 - [ ] a one-page spec is sent to the reviewers
