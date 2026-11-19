@@ -6,10 +6,11 @@
 - There are no 1.1 or 1.2 versions. Smaller changes go in [progress.md](progress.md) (what happened), [decisions.md](decisions.md) (why) and [issues.md](issues.md) (what broke).
 - The newest version is at the top. Older ones stay as they were written.
 
-**Current: v3.5** (2026-11-18), a checkpoint under design v3.0: gold frozen, semantic layer and M5/M6 added, retrieval eval run on the frozen 30, answer eval with an independent judge.
+**Current: v4.0** (2026-11-18), design: questions that need a graph (gold v2), entering the graph from names (M7), retrieve wide and rank narrow with a cross-encoder (M8), and an answer agent with graph tools (M9).
 
 | Version | Date | What | Confirmed by |
 |---|---|---|---|
+| v4.0 | 2026-11-18 | Graph questions: gold v2 (chain + structural), M7 names → graph, M8 wide → narrow (cross-encoder), M9 graph tools | Tianyi ("v4.0 ok", 2026-11-18) |
 | v3.5 | 2026-11-18 | Checkpoint: gold frozen; semantic layer (Claude-extracted concepts) + M5/M6; first eval on the frozen 30; answers judged by Fable 5.2; notebooks | — |
 | v3.0 | 2026-11-17 | Retrieval in ArangoDB: M1–M4 ladder, freshness demo, gold 30, real place names, answer eval | Tianyi (plan approval, 2026-11-17) |
 | v2.5 | 2026-11-13 | Checkpoint: KB data, data checks (mutation-tested), 56-question gold set, ticket plan | — |
@@ -18,6 +19,63 @@
 | v1.0 | 2026-11-12 | A cookbook for developers: versioned KB, structural + LLM graph, gold set with traps | Tianyi (plan approval) |
 | v0.5 | 2026-11-12 | Checkpoint: kitchen steps 0–3 running | — |
 | v0.0 | 2026-11-12 | "GraphRAG kitchen": a step-by-step learning lab | Tianyi (chose the data and the LLM option) |
+
+---
+
+## v4.0: questions that need a graph (2026-11-18)
+**Confirmed by:** Tianyi ("v4.0 ok, lets go!", 2026-11-18; gold v2 approved without a separate review) · **Status:** in progress
+
+### Why this version
+v3.5 measured the graph on questions where vector search already finds most gold articles, so graph expansion came out neutral (one win, one loss) and the semantic layer changed nothing. Tianyi asked for real graph problems, without cheating: (1) chain questions whose bridge isn't a shared word or meaning but a link, a form, a lender or a leasing company; (2) questions vector search can't do at all: lists, "which ones", and checks across records. And "retrieve wide, rank narrow". No bigger or messier KB is built; the README explains, without numbers, why a graph matters more in one.
+
+### What changes from v3.5
+| Area | v3.5 | v4.0 | Why |
+|---|---|---|---|
+| Questions | gold 30 (frozen, seen) | **gold v2**: 20 new test questions (12 chain, 8 structural) + 8 dev questions for debugging; written and frozen before any method runs on them | D-031 |
+| Entering the graph | from the top vector hits only | **M7**: also from lenders, leasing companies and form codes named in the question (dictionary match, no LLM) | D-032 |
+| Ranking | one score (cosine or inherited) | **M8**: a wide candidate pool (BM25 + vector + graph + names) in one AQL query, then a local cross-encoder ranks it; **M8n** = the same without the graph part (ablation) | D-033 |
+| Answers | Opus 5.5 from a fixed top 5 | also **M9**: Opus 5.5 with four tools (search, read an article, look up a record, list records); **M9s** = search tool only (ablation) | D-034 |
+| Scoring | facts by an LLM judge | + **item precision/recall** for list questions, computed in code; v1 30 reported separately as a seen set | D-035 |
+
+### Gold v2 (`data/eval/gold_v2.json`, frozen in `data/eval/FROZEN_v2`)
+- **Chain (12):** the answer needs an article that is reached through a link, a shared form, a form's replacement, or a lender or leasing company named in the question, not through the question's words. Two of them hit known KB conflicts (a current article that still names a retired form), one needs a rule from another state than the customer's.
+- **Structural (8):** list questions for a support agent or KB maintainer ("which forms were retired in 2026, and what replaced them?", "which current articles still tell customers to use a retired form?"). Four need records or many articles at once; four are controls whose answer one article already lists.
+- **Dev (8, `gold_v2_dev.json`):** the same two types, for debugging M7–M9. Never in a headline number.
+- Expected lists are checked against the records by `make check` (forms, lenders, lessors, states, the articles' own codes), so the gold can't disagree with the data.
+
+### M7: entering the graph from names (D-032)
+`cookbook/entities.py` finds form codes (regex), lender and leasing-company names (full name or the name without generic words such as "Bank" or "Leasing"; longest match first; an alias that appears in more than 10 articles, like "Northwind", is dropped). Each match is an extra entry point: M4's query also walks from those nodes, and an article one hop from a named entity inherits the best vector score × 0.8 per hop. States are not entries: every question has one and the filter already uses it.
+
+### M8: retrieve wide, rank narrow (D-033)
+```
+one AQL query (filtered to as_of and state):
+  BM25 top 10 ∪ vector top 10 ∪ graph neighbours of the vector top 5 ∪ articles next to named entities
+     → pool (each candidate tagged with where it came from)
+Python: cross-encoder/ms-marco-MiniLM-L-6-v2 (local CPU) scores (question, title + text) for every candidate → top 10
+```
+M8n uses the same pool without the two graph parts, so M8 − M8n is what the graph adds to the pool. A diagnostic run reranks every current article (possible only in a KB this small) to show whether the pool or the reranker is the limit. Pool recall is reported per source.
+
+### M9: an answer agent with graph tools (D-034)
+Opus 5.5 (effort medium) answers with tools, at most 8 tool calls, final answer in the same JSON as the RAG answers:
+| Tool | AQL template |
+|---|---|
+| `search_help_center(query)` | M8 for the question's date and state, top 5 articles |
+| `read_article(doc_id)` | the version in effect, its links (missing targets marked), forms, states |
+| `lookup(kind, name)` | a form, lender, leasing company or state by name, its record and the current articles connected to it; for forms, what it replaced or was replaced by |
+| `list_records(kind, field?, value?)` | every record of a kind, optionally where one field equals a value |
+All four are generic graph operations with fixed AQL; the model never writes AQL. M9s gets only `search_help_center`, so M9 − M9s is what the graph tools add beyond searching more than once.
+
+### Evaluation (D-035)
+- Retrieval on gold v2: M1–M8n, Recall@5/10, All-gold@5, MRR, stale@5, trap@5, by type; pool recall for M8/M8n.
+- Answers on gold v2: M3, M4, M7, M8, M8n (top 5) and M9s, M9 (agent); Opus 5.5 answers, Fable 5.2 judges facts, 3 runs; list questions also get item precision and recall from the `items` field, in code.
+- v1's 30 questions get the new methods too, labelled "seen": the M7/M8/M9 rules were written after reading their results.
+- Rules (aliases, pool sizes, model, tools, prompts) are committed before the first gold v2 run. Debugging uses the dev set and the v1 reserve only.
+
+### Cookbook quality
+A three-command quickstart, a fresh-clone test, and a "what you'll learn" opening per chapter (DRAFT, for Tianyi to rewrite).
+
+### Not in v4.0
+A bigger or messier KB (argued in the README, not built); text-to-AQL (the agent uses fixed templates); inferring `as_of` and state from the message.
 
 ---
 
