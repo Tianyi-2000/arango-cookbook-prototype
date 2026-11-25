@@ -189,3 +189,9 @@ Key choices and why we made them: the "why" only. What changed is in [progress.m
 ### D-035 · 2026-11-18 · v4.0 scoring and reporting rules
 - **What:** headline numbers come from gold v2's 20 test questions: Recall@5 on the chain questions, item precision and recall on the structural ones (from the answer's `items`, mapped to keys with the same name dictionary as M7; an item that maps to nothing counts as wrong), and facts found for all 20 (Fable 5.2 judge, 3 runs). v1's 30 questions also get M7–M9, reported as a **seen set**: the v4.0 rules were designed after reading v1 results. The D-018 regression rule applies to M1–M6 on v1 (they must not change). Retrieval for M8 also reports pool recall per source.
 - **Decided by:** Claude, before any method ran on gold v2
+
+### D-036 · 2026-11-24 · A short, humble README; the long one archived
+- **What:** `README.md` becomes a short page for reviewers: a disclaimer on top (personal practice project, not real work, not an official ArangoDB cookbook, not affiliated with ArangoDB; synthetic data), one headline results table (gold v2 answers: M3, M8, M9s, M9), one-line takeaways scoped to this small KB, limits right after the results, the walkthrough notebooks as a table, and the long parts (why a graph matters at scale, step-by-step commands, engine notes) in collapsible `<details>`. The title drops "cookbook". The full previous README is kept unchanged at `docs/archive/README_v4.5_full.md` (header added, links re-pointed). The new README does not link the harness files.
+- **Why:** the long README was accurate but hard to read in a couple of minutes, and it read like finished, official work. The harness files carry personal working notes, so the public front page stays away from them.
+- **Rejected:** keeping all six result tables (too dense); keeping the archive only outside the repo (reviewers who want detail should find it one click away).
+- **Decided by:** Tianyi
