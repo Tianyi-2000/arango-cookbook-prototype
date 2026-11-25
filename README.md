@@ -2,7 +2,7 @@
 
 # A small GraphRAG demo on ArangoDB (practice prototype)
 
-> **Personal practice project, not real work.** This is not an official ArangoDB cookbook or product, and it is not affiliated with or endorsed by ArangoDB. It was built to learn and test ideas, laid out like a cookbook recipe. Toy dataset, small self-written question sets, not production-ready.
+> **Personal practice project.** This is not an official ArangoDB cookbook or product, and it is not affiliated with or endorsed by ArangoDB. It was built to learn and test ideas, laid out like a cookbook recipe. Toy dataset, small self-written question sets, not production-ready.
 >
 > **Synthetic data.** State names are real; every rule, policy, company and number is made up and is not legal information. "Northwind Auto" is fictional and not affiliated with any real retailer.
 
